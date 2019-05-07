@@ -1151,13 +1151,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				Shared().Play_sound("warn", 1)
 				return ui.message(_("I can not load the settings!"))
 			except KeyError: pass
-			global _volume
-			_volume = self.volume
+			#*global _volume
+			#*_volume = self.volume
 			if not self.zipCode or self.zipCode.isspace(): return
 			if not self.zipCodesList:
 				#if does not exist the list, picks the name of the city from woeID
 				city, zipCode = Shared().ParseEntry(self.zipCode)
-				if city and city != "no connect": self.city = city.decode("mbcs"); self.tempZipCode = '%s %s' % (city.capitalize(),zipCode.upper()) 
+				if city and city != "no connect":
+					if _pyVersion >= 3:
+						self.tempZipCode = '%s %s' % (city.capitalize(),str(zipCode).upper())
+					else:
+						self.city = city.decode("mbcs"); self.tempZipCode = '%s %s' % (city.capitalize(),str(zipCode).upper())
+
 			else:
 				#search in list
 				city = self.FindCity(self.zipCode)
@@ -1165,9 +1170,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					if _pyVersion == 2:
 						self.defaultZipCode = self.tempZipCode= city =city.decode("mbcs")
 					else:
-						self.defaultZipCode = self.tempZipCode= city =city
+						self.defaultZipCode = self.tempZipCode= city
 
 					self.city = city[:city.find(self.zipCode)-1] #takes the name of city and state
+
+		global _volume
+		_volume = self.volume
 
 
 	def SaveConfig(self):
