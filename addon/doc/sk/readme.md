@@ -9,7 +9,7 @@
 * Tento doplnok umožňuje výber svojho města alebo regiónu a  zistenie stavu počasia a předpovede na 24 hodín až na 9 dní
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Licencované pod GNU GPL (General Public License) v2
-* Verzia: 6.1.
+* Verzia: 6.2.
 
 # Weather Plus pracuje a na svoju funkčnosť využíva následovné služby:: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)

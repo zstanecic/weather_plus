@@ -11,7 +11,7 @@
     para NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Liberado baixo a licenza GNU GPL (General Public License) v2
-* Versión: 6.1.
+* Versión: 6.2.
 
 # Weather Plus funciona a través da presenza e funcionamento dos seguintes servizos:: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)

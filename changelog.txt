@@ -1,10 +1,39 @@
 08-05-2019
+# Download Weather_Plus6.1 last version by Adriano #
+Note please: I have just updated to 6.2 version.
+I added a piece of code that strangely with all the passages and was lost and that allowed to recover the cities created with Apixu.
+I also added the "Palestine" state which a user sent me via a function which I introduced in the add-on and which signals unregistered states.
+http://www.nvda.it/files/plugin/weather_plus6.2.nvda-addon
+@Joseph, I tested it withnvdapy37-20190228, it's ok.
+
+# Changes #2 in the repository by Rémy Ruiz #
+Changed in buildVars.py file version number:
+6.1 to 6.2
+
+Added new __init__.py file for Weather_Plus6.2 changed tonight by Adriano.
+
+Changed in readme.md file version number:
+* Version: 6.1.
+by
+* Version: 6.2.
+
+Changed in others readme.md files for each language version number:
+* Version: 6.1.
+by
+* Version: 6.2.
+
+Changed in installTasks.py file version number:
+#Version 6.1
+by:
+#Version 6.2
+
+# Changes #1 in the repository by Rémy Ruiz #
 Changed in all nvda.po files version number:
 "Project-Id-Version: Weather_Plus 6.0\n"
 by
 "Project-Id-Version: Weather_Plus 6.1\n"
 
-changed in __init__.py file version number:
+Changed in __init__.py file version number:
 #Version 6.0 - python 3 compatible
 by:
 #Version 6.1 - python 3 compatible
@@ -21,7 +50,7 @@ Added:
 
 Modified and Added in others readme.md files for each languages ((including its translation).
 
-changed in installTasks.py file version number:
+Changed in installTasks.py file version number:
 #Version 6.0
 by:
 #Version 6.1

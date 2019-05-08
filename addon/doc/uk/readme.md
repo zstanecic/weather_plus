@@ -9,7 +9,7 @@
 * Цей плагін додає локальну температуру і прогноз на 24 години і на 9 днів.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Аддон випущений під GNU GPL (General Public License) v2
-* Версія: 6.1.
+* Версія: 6.2.
 
 # Weather Plus працює за рахунок використання і наявності наступних служб: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)

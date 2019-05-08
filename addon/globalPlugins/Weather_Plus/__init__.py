@@ -8,7 +8,7 @@
 # Released under GPL 2 
 #This file is covered by the GNU General Public License. 
 #See the file COPYING for more details. 
-#Version 6.1 - python 3 compatible
+#Version 6.2 - python 3 compatible
 import os,sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
 import random, ui, gui, wx,wx.adv, re, calendar, math
@@ -3652,6 +3652,7 @@ class Shared:
 		'OMAN': 'OM',
 		'PAKISTAN': 'PK',
 		'PALAU': 'PW',
+		'PALESTINE': 'PS',
 		'PALESTINIAN TERRITORY, OCCUPIED': 'PS',
 		'PANAMA': 'PA',
 		'PAPUA NEW GUINEA': 'PG',
@@ -4240,6 +4241,11 @@ class Shared:
 								#define data
 								define_dic.update({zc[0][1:]: zc[-1].rstrip('\r\n')})
 							else: zipCodesList.append('%s %s' % (zc[0].capitalize(), zc[-1].rstrip('\r\n').upper()))
+
+						elif len(zc) == 10:
+							#Apixu cities
+							if zc[-1].isdigit() and zc[-1] in ['0', '1', '2', '3', '4']:
+								zipCodesList.append('%s %s,%s %s' % (zc[0], zc[6], zc[7], zc[-1]))
 
 						elif len(zc) == 8:
 							#city details

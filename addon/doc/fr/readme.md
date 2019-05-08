@@ -9,7 +9,7 @@
 * Cette extension ajoute la température locale et les prévisions météo à 24 heures actuelles et les prévisions jusqu'à 9 jours supplémentaires à NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Publié sous la GNU GPL (General Public License) v2
-* Version : 6.1.
+* Version : 6.2.
 
 # Weather Plus fonctionne à travers de l'utilisation et la présence des services suivants : #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
