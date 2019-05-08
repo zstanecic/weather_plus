@@ -9,7 +9,7 @@
 * Tento doplněk umožňuje vybrání svého města či regionu a  zjištění stavu počasí a předpovědi jak na 24 hodin tak až na 9 dnů
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Licencováno pod GNU GPL (General Public License) v2
-* Verze: 6.0.
+* Verze: 6.1.
 
 # Tento doplněk využívá ke své práci následující služby:: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -270,6 +270,9 @@ Pokud jste modifikovali seznam s městy, po stisknutí zrušit, Program si pamat
 --------------------------------------------------------------------------------
 
 # Co je nového: #
+
+# Verze 6.1 #
+* Opravené 2 chyby.
 
 # Verze 6.0 #
 * Počasí Plus se vrací k používání Yahoo Weather API.

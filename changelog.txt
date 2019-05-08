@@ -1,0 +1,27 @@
+08-05-2019
+Changed in all nvda.po files version number:
+"Project-Id-Version: Weather_Plus 6.0\n"
+by
+"Project-Id-Version: Weather_Plus 6.1\n"
+
+changed in __init__.py file version number:
+#Version 6.0 - python 3 compatible
+by:
+#Version 6.1 - python 3 compatible
+
+Changed in readme.md file version number:
+* Version: 6.0.
+by
+* Version: 6.1.
+
+Added:
+
+# Version 6.1 #
+* Fixed 2 bugs.
+
+Modified and Added in others readme.md files for each languages ((including its translation).
+
+changed in installTasks.py file version number:
+#Version 6.0
+by:
+#Version 6.1

@@ -9,7 +9,7 @@
 * Questo plugin aggiunge temperatura locale e previsioni a 24 ore fino a ulteriori 9 giorni per NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Rilasciato sotto licenza GNU GPL (General Public License) v2
-* Versione: 6.0.
+* Versione: 6.1.
 
 # Weather Plus funziona attraverso l'uso e la presenza dei seguenti servizi: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -270,6 +270,9 @@ Se avete modificato la lista delle città, premendo "Annulla", vi sarà ricordat
 --------------------------------------------------------------------------------
 
 # Novità: #
+
+# Versione 6.1 #
+* Coorretti 2 bug.
 
 # Versione 6.0 #
 * Weather Plus torna a utilizzare l'API di Yahoo Weather.

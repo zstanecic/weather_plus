@@ -11,7 +11,7 @@
     para NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Liberado baixo a licenza GNU GPL (General Public License) v2
-* Versión: 6.0.
+* Versión: 6.1.
 
 # Weather Plus funciona a través da presenza e funcionamento dos seguintes servizos:: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -278,6 +278,9 @@ Se modificou a lista de cidades, isto seralle lembrado se preme o botón cancela
 --------------------------------------------------------------------------------
 
 # Que Hai de novo: #
+
+# Versión 6.1 #
+* Arranxados dous erros.
 
 # Versión 6.0 #
 * Weather Plus volve empregar o Yahoo Weather API.

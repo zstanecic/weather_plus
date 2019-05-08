@@ -9,7 +9,7 @@
 * Ovaj NVDA dodatak daje dvadesetčetvoročasovni vremenski izveštaj i prognozu za 9 dana unapred.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Objavljeno u GNU GPL (General Public License; Opšta Javna Licenca) v2
-* Verzija: 6.0.
+* Verzija: 6.1.
 
 # Weather Plus koristi sledeće servise:: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -274,6 +274,9 @@ Pritisnite U redu dugme da potvrdite promene, ili odkaži dugme da odkažete.
 --------------------------------------------------------------------------------
 
 # Šta je novo: #
+
+# Verzija 6.1 #
+* Ispravljene su dve greške.
 
 # Version 6.0 #
 * Weather Plus returns to using the Yahoo Weather API.

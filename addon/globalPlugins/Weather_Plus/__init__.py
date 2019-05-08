@@ -8,7 +8,7 @@
 # Released under GPL 2 
 #This file is covered by the GNU General Public License. 
 #See the file COPYING for more details. 
-#Version 6.0 - python 3 compatible
+#Version 6.1 - python 3 compatible
 import os,sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
 import random, ui, gui, wx,wx.adv, re, calendar, math

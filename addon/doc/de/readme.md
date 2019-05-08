@@ -9,7 +9,7 @@
 * Dieses Plugin zeigt die aktuellen Wetterbedingungen und Vorhersagen für 24 Stunden und bis zu 9 zusätzlichen Tagen
 * Copyright (C) [Adriano Barbieri] (mailto://adrianobarb@yahoo.it)
 * Freigegeben unter der GNU GPL (General Public License) v2
-* Version: 6.0.
+* Version: 6.1.
 
 # Weather Plus funktioniert durch die Nutzung folgender Dienste: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -276,6 +276,9 @@ Wenn Sie die Städte-Liste geändert haben und auf "abbrechen" drücken, werden 
 -------------------------------------------------- ------------------------------
 
 # Änderungsverlauf: #
+
+# Version 6.1 #
+* 2 Fehler behoben.
 
 # Version 6.0 #
 * Weather Plus kehrt zur Verwendung der Yahoo Weather API zurück.

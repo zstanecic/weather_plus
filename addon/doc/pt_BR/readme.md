@@ -9,7 +9,7 @@
 * Este addon para o NVDA fornece a temperatura local e a previsão do tempo actual para as próximas 24 horas e a previsão até 9 días adicionais.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Lançado sob a licença GNU GPL (General Public License) v2
-* Versão: 6.0.
+* Versão: 6.1.
 
 # O Weather Plus funciona com base na utilização e presença dos seguintes serviços: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -276,6 +276,9 @@ Se tiver modificado a lista de cidades, quando pressionar o botão "cancelar", s
 --------------------------------------------------------------------------------
 
 # Novidades: #
+
+# Versão 6.1 #
+* Fixados 2 bugs.
 
 # Versão 6.0 #
 * O Weather Plus retorna ao uso da API do Yahoo Weather.
