@@ -1151,8 +1151,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				Shared().Play_sound("warn", 1)
 				return ui.message(_("I can not load the settings!"))
 			except KeyError: pass
-			#*global _volume
-			#*_volume = self.volume
 			if not self.zipCode or self.zipCode.isspace(): return
 			if not self.zipCodesList:
 				#if does not exist the list, picks the name of the city from woeID
@@ -2986,9 +2984,7 @@ class EnterDataDialog(wx.Dialog):
 	def OnAdd(self, evt):
 		"""Add city button event"""
 		value = self.cbx.GetValue()
-		encoded_value = value
-		if _pyVersion == 2: encoded_value = value.emcode("mbcs")
-		if encoded_value not in self.zipCodesList:
+		if value not in self.zipCodesList:
 			v = Shared().GetZipCode(value)
 
 			if self.testName: value2 = '%s %s' % (self.testName.capitalize(), v.upper())
