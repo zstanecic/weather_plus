@@ -1,3 +1,22 @@
+09-05-2019
+Added sconstruct file.
+
+Renamed this file
+changelog.txt
+by:
+changelogrepository.txt
+for a better compression, and not to think that it is the changes in the part of the changes that are in the file readme.md of the addon Weather_Plus.
+
+Added: Weather_Plus.pot file
+for the version 6.2 including the modifications in the number of Version in the sources files.
+
+Corrected all nvda.po files in locale with the good number version 6.1 to 6.2.
+"Project-Id-Version: Weather_Plus 6.1\n"
+by:
+"Project-Id-Version: Weather_Plus 6.2\n"
+
+Added new Weather_Plus6.2included last modifications in sources
+
 08-05-2019
 # Download Weather_Plus6.1 last version by Adriano #
 Note please: I have just updated to 6.2 version.
