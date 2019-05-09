@@ -1,4 +1,27 @@
 09-05-2019
+Added in .gitignore file after the line 
+*.lnk
+the names of the following files:
+
+manifest.ini
+buildVars.pyc
+installTasks.pyc
+installTasks.pyo
+__init__.pyc
+__init__.pyo
+hmac.pyc
+hmac.pyo
+oauth.pyc
+oauth.pyo
+platform.pyc
+platform.pyo
+pybass.pyc
+pybass.pyo
+Weather_Plus.pot
+
+That will allow to me be able to author my 2 files "oauth.pyc" and "oauth.pyc" during my next commits.
+Thanks to Abdel.
+
 Added sconstruct file.
 
 Renamed this file
