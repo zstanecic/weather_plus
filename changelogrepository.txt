@@ -1,25 +1,15 @@
+10-05-2019
+I have updated the changelogrepository file with the good information made yesterday about the .gitignore file.
 09-05-2019
-Added in .gitignore file after the line 
-*.lnk
-the names of the following files:
-
-manifest.ini
-buildVars.pyc
-installTasks.pyc
-installTasks.pyo
-__init__.pyc
-__init__.pyo
-hmac.pyc
-hmac.pyo
-oauth.pyc
-oauth.pyo
-platform.pyc
-platform.pyo
-pybass.pyc
-pybass.pyo
-Weather_Plus.pot
-
+I just have to pass this .gitignore  file modified to Abdel to the root of my local repo and confirm the replacement.
 That will allow to me be able to author my 2 files "oauth.pyc" and "oauth.pyc" during my next commits.
+If the files oauth.pyc and oauth.pyo are present in my local repo, i juste have to do the following commands. 
+
+git add .
+git commit -a -m "Corrected the .gitignore file"
+git push -u origin master
+
+Now everything works fine.
 Thanks to Abdel.
 
 Added sconstruct file.
