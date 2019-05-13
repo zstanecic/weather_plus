@@ -8,7 +8,7 @@
 # Released under GPL 2 
 #This file is covered by the GNU General Public License. 
 #See the file COPYING for more details. 
-#Version 6.2 - python 3 compatible
+#Version 6.3 - python 3 compatible
 import os,sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
 import random, ui, gui, wx,wx.adv, re, calendar, math
@@ -97,6 +97,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if self.toUpgrade: self.onUpgrade()
 		#delete the update file from the temporary folder
 		self.Removeupdate()
+		#update acronym database
+		self.DbaseUpdate()
 
 
 	def terminate(self):
@@ -109,6 +111,27 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except: pass #(wx.PyDeadObjectError, RuntimeError, AttributeError)
 		#frees the memory allocated by the audio sample
 		Shared().FreeHandle()
+
+
+	def DbaseUpdate(self):
+		"""online update of acronym database"""
+		global _acronym_dic
+		#assign addon base url
+		if "_addonBaseUrl" not in globals():
+			data = Shared().GetUrlData(_addonPage)
+			if not data or data == "no connect": _acronym_dic = {}; return
+			global _addonBaseUrl
+			_addonBaseUrl = Shared().GetAddonBaseUrl(data)
+
+		#load acronym database updates
+		_acronym_dic = {}
+		try:
+			dbase = Shared().GetUrlData('%s/%s' % (_addonBaseUrl, "weather.dbase"))
+			dbase = dbase.split('\n')
+			for i in dbase:
+				_acronym_dic.update({i.split('\t')[0]: i.split('\t')[-1]})
+
+		except: _acronym_dic = {}
 
 
 	def Removeupdate(self):
@@ -3860,6 +3883,10 @@ class Shared:
 		'YUKON TERRITORY': 'YT',
 		'YUKON': 'YT'
 		}
+		#adds online updates
+		if len(_acronym_dic):
+			acronym_dic.update(_acronym_dic)
+
 		if value in acronym_dic: return acronym_dic[value]
 		elif len(value) > 2: return ""
 		return value
@@ -4321,6 +4348,7 @@ class Shared:
 		data = Shared().GetUrlData(address)
 		if not data: return None
 		if _pyVersion >= 3: data = data.decode()
+		elif _pyVersion == 2: data = data.decode("utf-8")
 		for m in data.split('\n'):
 			if "geonames" and "latitude" in m:
 				pos = latitude = longitude = acronym = country = region = ""
@@ -4351,8 +4379,7 @@ class Shared:
 					break
 
 		line = line.replace(", ,", "").rstrip(", ")
-		if _pyVersion == 2: return line.decode("mbcs")
-		else: return line
+		return line
 
 
 	def GetElevation(self, lat, lon):
@@ -4461,7 +4488,7 @@ class Shared:
 		if not data: return ""
 		elif "noresult" in data: return "noresult"
 		elif data:
-			if _pyVersion == 2: data = data.decode("mbcs")
+			if _pyVersion == 2: data = data.decode("utf-8")
 			import re
 			find_list = []
 			cities = []
@@ -4488,7 +4515,7 @@ class Shared:
 						text = Shared().TranslatePlaces(text)
 						cities.append(text.replace("  ", " ").replace(", ,", ","))
 
-			return cities
+			return list(set(cities))
 		return ""
 
 

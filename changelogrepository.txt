@@ -1,4 +1,14 @@
 13-10-2019
+Added: new __init__.py file sent by Adriano for version 6.3
+Changes all number version in files sources.
+Added: in readme.md file in english the information sent by Adriano on the changes made in version 6.3:
+
+# What's new: #
+
+# Version 6.3 #
+* Fixed the character encoding in the search results window.
+* Fixed the encoding also in the detail report.
+
 Added: in readme.md file in english the information sent by Adriano on the changes made in version 6.2:
 
 # What's new: #
