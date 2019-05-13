@@ -1,0 +1,1424 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Weather_Plus 6.0\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2019-05-06 11:14+0200\n"
+"PO-Revision-Date: 2019-05-10 05:18+0200\n"
+"Last-Translator: Karl Eick <hozosch@web.de>\n"
+"Language-Team: Karl Eick <<hozosch@web.de>> <hozosch@web.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ../../../globalPlugins/Weather_Plus\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: __init__.py\n"
+
+#. Translators: A message informing the user that he has installed an old version that contains a space rather than an underscore.
+msgid ""
+"You have installed the Weather Plus add-on which is incompatible with this "
+"one. The new name of this add-on is Weather_Plus with an underscore. Click "
+"OK to update it."
+msgstr ""
+"Sie haben eine Erweiterung Weather Plus installiert, welche mit dieser "
+"Erweiterung nicht kompatibel ist. Der neue Name ist Weather_Plus mit einem "
+"Unterstrich. Klicken Sie auf OK, um zu aktualisieren."
+
+#. Translators: The title of the dialogbox.
+msgid "Update confirmation"
+msgstr "Aktualisierungsbestätigung"
+
+msgid "Fahrenheit"
+msgstr "Fahrenheit"
+
+msgid "Celsius"
+msgstr "Celsius"
+
+msgid "Kelvin"
+msgstr "Kelvin"
+
+msgid "unknown"
+msgstr "Unbekannt"
+
+msgid "Weather Plus &Settings"
+msgstr "Weather Plus-&Einstellungen"
+
+msgid "Show configuration items."
+msgstr "Konfigurationseinträge anzeigen."
+
+msgid "Set and &manage your cities..."
+msgstr "Einstellungen und Stadt&verwaltung..."
+
+msgid "Displays or allows to set the current cities from a list"
+msgstr "Zeigt das Einstellungsfenster für Weather plus"
+
+msgid "Set a &temporary city..."
+msgstr "Eine &temporäre Stadt festlegen..."
+
+msgid "Allows to set one temporary city from a list"
+msgstr "Erlaubt es Ihnen, eine temporäre Stadt aus einer Liste auszuwälen."
+
+msgid "&Documentation"
+msgstr "&Dokumentation"
+
+msgid "Opens the help file for the current language"
+msgstr "Öffnet den Ordner mit den Hilfedateien für die aktuelle Sprache"
+
+msgid "&Check for Upgrade..."
+msgstr "Nach &Aktualisierungen suchen..."
+
+msgid "Notify if there is an upgraded version available"
+msgstr "Benachrichtigt, ob ein Update zur Verfügung steht"
+
+#. opens the Weather Plus settings window
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Preset"
+msgstr "Voreinstellung"
+
+msgid "None"
+msgstr "Keine"
+
+msgid "Enter a City, woeId or choose one from the list, if available."
+msgstr ""
+"Geben Sie einen Stadtnamen ein oder wählen Sie, falls Sie schon Städte "
+"hinzugefügt haben, eine mit den Pfeiltasten aus."
+
+msgid "The woeID"
+msgstr "Die WOE-ID"
+
+msgid "assigned to"
+msgstr "zugewiesen für"
+
+msgid "has not been preset."
+msgstr "Wurde nicht voreingestellt."
+
+msgid "Will be used in temporary mode!"
+msgstr "Sie wird daher nur temporär verwendet!"
+
+#. offers to save the list changed
+msgid "Notice!"
+msgstr "Hinweis!"
+
+msgid "You have modified the list of your cities"
+msgstr "Sie haben die Städteliste verändert."
+
+msgid "Do you want to save it?"
+msgstr "Möchten Sie die Änderungen speichern?"
+
+msgid "The cities on your list are not compatible with the Yahoo API!"
+msgstr "Die Städte auf Ihrer Liste sind nicht mit der Yahoo-API kompatibel!"
+
+msgid ""
+"They have to be tested and validated, you can do it from the addon settings "
+"window."
+msgstr ""
+"Sie müssen getestet und validiert werden. Sie können dies über das Addon-"
+"Einstellungsfenster tun."
+
+msgid "Setting up a temporary city"
+msgstr "Eine temporäre Stadt festlegen"
+
+msgid "Cities List available:"
+msgstr "Hinzugefügte Städte:"
+
+msgid "Documentation not available for the current language!"
+msgstr "Für die aktuelle Sprache ist keine Hilfe verfügbar!"
+
+msgid ""
+"Sorry, i can not receive data, verify that your internet connection is "
+"active, or try again later!"
+msgstr ""
+"Es konnten keine Daten abgerufen werden. Bitte überprüfen Sie Ihre "
+"Internetverbindung oder versuchen Sie es später nochmals."
+
+msgid "version"
+msgstr "version"
+
+msgid "is available."
+msgstr "ist verfügbar."
+
+msgid "Installed version"
+msgstr "Installiert"
+
+msgid "Do you want to download and install it?"
+msgstr "Möchten sie das Update laden und installieren?"
+
+msgid "Sorry, at the time an update is not available."
+msgstr "Sie haben bereits die aktuellste Version von Weather plus installiert."
+
+msgid "not found!"
+msgstr "nicht gefunden!"
+
+msgid ""
+"You need to upgrade the sound effects by reactivating the appropriate option "
+"from the settings of"
+msgstr ""
+"Sie müssen die Soundeffekte aktualisieren, indem Sie die entsprechende "
+"Option aktivieren in den einstellungen von"
+
+msgid "But if these are already updated, then you need to update"
+msgstr ""
+"Wenn diese jedoch bereits aktuell sind, müssen sie auch folgendes "
+"aktualisieren:"
+
+msgid "I can not load the settings!"
+msgstr "Einstellungen konnten nicht geladen werden."
+
+msgid "I can not save the settings!"
+msgstr "Einstellungen konnten nicht gespeichert werden."
+
+msgid "invalid name"
+msgstr "Ungültiger Name"
+
+msgid "miles"
+msgstr "Meilen"
+
+#. takes the value in mmHg
+msgid "millimeters of mercury"
+msgstr "Millimeter Quecksilbersäule"
+
+msgid "inches of mercury"
+msgstr "Zoll Quecksilbersäule"
+
+msgid "kilometers"
+msgstr "Kilometer"
+
+msgid "millibars"
+msgstr "Millibar"
+
+msgid "the weather report is currently"
+msgstr "lautet der aktuelle Wetterbericht"
+
+msgid "degrees"
+msgstr "Grad"
+
+#. adds wind information to the string
+msgid "The wind direction is from"
+msgstr "Der Wind kommt von"
+
+msgid "with speed of"
+msgstr "mit einer Geschwindigkeit von "
+
+msgid "The wind speed is"
+msgstr "Der wind kommt mit einer Geschwindigkeit von"
+
+msgid "The perceived temperature is"
+msgstr "Die gefühlte Temperatur beträgt"
+
+#. adds information on the atmosphere
+msgid "steady"
+msgstr "ist stabil"
+
+msgid "rising"
+msgstr "steigt"
+
+msgid "falling"
+msgstr "sinkt"
+
+msgid "The humidity is"
+msgstr "Die Luftfeuchtigkeit beträgt"
+
+msgid "and the visibility is up to"
+msgstr "und die Sicht ist bis zu"
+
+msgid "The visibility is up to"
+msgstr "Die Sicht ist bis zu"
+
+msgid "The pressure is"
+msgstr "Der Luftdruck beträgt"
+
+msgid "and the state of the barometric pressure is"
+msgstr "Und er"
+
+msgid "The state of the barometric pressure is"
+msgstr "Der Luftdruck"
+
+msgid "The sun rises at"
+msgstr "Die Sonne geht auf um"
+
+msgid "and sets at"
+msgstr "und geht unter um"
+
+msgid "the forecast for today is"
+msgstr "ist die Wettervorhersage für heute"
+
+msgid "with a maximum temperature of"
+msgstr "Mit höchstwerten von"
+
+msgid "and a minimum of"
+msgstr "und Tiefstwerten von"
+
+msgid "not available"
+msgstr "nicht verfügbar"
+
+#. this does not replace the name of the city
+msgid "In"
+msgstr "Für"
+
+msgid "Unnamed"
+msgstr "unbenannt"
+
+msgid "Sorry, the woeID is not set!"
+msgstr "Es wurde noch keine Stadt festgelegt!"
+
+msgid "kilometers per hour"
+msgstr "Kilometer pro Stunde"
+
+msgid "miles per hour"
+msgstr "Meilen pro Stunde"
+
+#. weather condition
+msgid "in the morning"
+msgstr "morgens"
+
+msgid "in the evening"
+msgstr "abends"
+
+msgid " and "
+msgstr " und "
+
+msgid " to "
+msgstr " zu "
+
+msgid "in the vicinity"
+msgstr "in der Umgebung"
+
+msgid "tornado"
+msgstr "Tornado"
+
+msgid "tropical storm"
+msgstr "tropischer Sturm"
+
+msgid "hurricane"
+msgstr "Hurricane"
+
+msgid "severe thunderstorms"
+msgstr "heftige Gewitter"
+
+msgid "mixed rain and snow"
+msgstr "regen und Schnee"
+
+msgid "mixed rain and hail"
+msgstr "Regen und Hagel"
+
+msgid "mixed rain and sleet"
+msgstr "Regen und Graupel"
+
+msgid "mixed snow and sleet"
+msgstr "Schnee und Graupel"
+
+msgid "snow flurries"
+msgstr "Schneeflocken"
+
+msgid "smoke"
+msgstr "Rauch"
+
+msgid "smoky"
+msgstr "rauchig"
+
+msgid "precipitation"
+msgstr "Fällung"
+
+msgid "sunny intervals"
+msgstr "sonnige Intervalle"
+
+msgid "sunny period"
+msgstr "sonnige Zeit"
+
+msgid "light snow"
+msgstr "leichter Schnee"
+
+msgid "scattered snow showers"
+msgstr "vereinzelte Schneeschauer"
+
+msgid "snow showers"
+msgstr "Schneeschauer"
+
+msgid "snow shower"
+msgstr "Schneeschauer"
+
+msgid "snowstorm"
+msgstr "Schneesturm"
+
+msgid "snowdrift"
+msgstr "Schneewehe"
+
+msgid "drifting snow"
+msgstr "verwehender Schnee"
+
+msgid "wintry Mix"
+msgstr "Graupel"
+
+msgid "ice to rain"
+msgstr "Eis bis Regen "
+
+msgid "ice"
+msgstr "Eis"
+
+msgid "blizzard"
+msgstr "Schneesturm"
+
+msgid "blowing snow"
+msgstr "wehender Schnee"
+
+msgid "snow"
+msgstr "Schnee"
+
+msgid "light rain with thunder"
+msgstr "leichter Regen mit Gewitter"
+
+msgid "few showers"
+msgstr "einzelne Schauer"
+
+msgid "heavy showers"
+msgstr "kräftige Schauer"
+
+msgid "heavy thunderstorms"
+msgstr "heftige Gewitter"
+
+msgid "heavy thunderstorm"
+msgstr "heftiges Gewitter"
+
+msgid "lightning"
+msgstr "Blitz"
+
+msgid "isolated clouds"
+msgstr "isolierte Wolken"
+
+msgid "partly cloudy"
+msgstr "teilweise bewölkt"
+
+msgid "partly bright"
+msgstr "teils klar"
+
+msgid "showers early"
+msgstr "schauer früh"
+
+msgid "light rain"
+msgstr "leichter Regen"
+
+msgid "heavy rain"
+msgstr "kräftiger Regen"
+
+msgid "isolated showers"
+msgstr "isolierte Schauer"
+
+msgid "isolated thunderstorms"
+msgstr "vereinzelte Gewitter"
+
+msgid "isolated thundershowers"
+msgstr "vereinzelte gewittrige Schauer"
+
+msgid "mostly cloudy"
+msgstr "meist bewölkt"
+
+msgid "mostly dry"
+msgstr "meist trocken"
+
+msgid "mostly clear"
+msgstr "meist klar"
+
+msgid "clearing"
+msgstr "aufklarend"
+
+msgid "no rain"
+msgstr "ohne Regen"
+
+msgid "sleet"
+msgstr "Graupel"
+
+msgid "blowing dust"
+msgstr "wehender Staub"
+
+msgid "widespread dust"
+msgstr "weit verbreiteter Staub"
+
+msgid "low drifting sand"
+msgstr "tief treibender Sand"
+
+msgid "sandstorm"
+msgstr "Sandsturm"
+
+msgid "sand storm"
+msgstr "Sandsturm"
+
+msgid "dust"
+msgstr "Staub"
+
+msgid "sand"
+msgstr "Sand"
+
+msgid "thundery showers"
+msgstr "gewittrige Schauer"
+
+msgid "thundershowers"
+msgstr "Gewittrige schauer"
+
+msgid "scattered thunderstorms"
+msgstr "vereinzelte Gewitter"
+
+msgid "scattered showers"
+msgstr "vereinzelte Schauer"
+
+msgid "thunderstorms"
+msgstr "Gewitter"
+
+msgid "thunderstorm"
+msgstr "Gewitter"
+
+msgid "storm"
+msgstr "Sturm"
+
+msgid "hail"
+msgstr "Hagel"
+
+msgid "foggy"
+msgstr "neblig"
+
+msgid "fog"
+msgstr "Nebel"
+
+msgid "haze"
+msgstr "Dunst"
+
+msgid "mist"
+msgstr "Nebel"
+
+msgid "clear"
+msgstr "klar"
+
+msgid "fair"
+msgstr "fair"
+
+msgid "fine"
+msgstr "schön"
+
+msgid "overcast"
+msgstr "bedeckt"
+
+msgid "light showers"
+msgstr "leichte Schauer"
+
+msgid "light drizzle"
+msgstr "leichter Nieselregen"
+
+msgid "freezing rain"
+msgstr "gefrierender Regen"
+
+msgid "frequent showers"
+msgstr "häufige Schauer"
+
+msgid "rain shower"
+msgstr "Regenschauer"
+
+msgid "rain"
+msgstr "Regen"
+
+msgid "freezing drizzle"
+msgstr "gefrierender Nieselregen"
+
+msgid "showers"
+msgstr "Schauer"
+
+msgid "drizzle"
+msgstr "Nieselregen"
+
+msgid "dry"
+msgstr "trocken"
+
+msgid "mild"
+msgstr "mild"
+
+msgid "clouds"
+msgstr "Wolken"
+
+msgid "cloudy"
+msgstr "wolkig"
+
+msgid "mostly sunny"
+msgstr "meist sonnig"
+
+msgid "sunny"
+msgstr "sonnig"
+
+msgid "sun"
+msgstr "Sonne"
+
+msgid "bright"
+msgstr "hell"
+
+msgid "thunder"
+msgstr "Donner"
+
+msgid "shower"
+msgstr "Schauer"
+
+msgid "breezy"
+msgstr "windig"
+
+msgid "blustery"
+msgstr "stürmisch"
+
+msgid "windy"
+msgstr "windig"
+
+msgid "wind"
+msgstr "Wind"
+
+msgid "flurries"
+msgstr "Flocken"
+
+msgid "late"
+msgstr "spät"
+
+msgid "early"
+msgstr "früh"
+
+msgid "isolated"
+msgstr "isoliert"
+
+msgid "shallow fog"
+msgstr "Bodennebel"
+
+msgid "heavy"
+msgstr "schwer"
+
+msgid "cold"
+msgstr "kalt"
+
+msgid "hot"
+msgstr "heis"
+
+msgid "Sorry, it was not possible to load the most recent update!"
+msgstr "Das Update konnte leider nicht heruntergeladen werden."
+
+msgid "Please try again later."
+msgstr "Bitte versuchen Sie es später nochmals."
+
+msgid "meters per second"
+msgstr "Meter pro Sekunde"
+
+msgid "Sorry, the woeID set is not valid or contains incomplete data!"
+msgstr ""
+"Die erhaltenen Daten sind leider ungültig oder enthält unvollständige Daten!"
+
+msgid "north"
+msgstr "Norden"
+
+msgid "north northeast"
+msgstr "Nord Nordost"
+
+msgid "northeast"
+msgstr "Nordosten"
+
+msgid "east northeast"
+msgstr "ost Nordost"
+
+msgid "east"
+msgstr "Osten"
+
+msgid "east southeast"
+msgstr "Ost Südost"
+
+msgid "southeast"
+msgstr "Südosten"
+
+msgid "south southeast"
+msgstr "süd Südost"
+
+msgid "south"
+msgstr "Süden"
+
+msgid "south southwest"
+msgstr "Süd Südwest"
+
+msgid "southwest"
+msgstr "Südwesten"
+
+msgid "west southwest"
+msgstr "West Südwesten"
+
+msgid "west"
+msgstr "Westen"
+
+msgid "west northwest"
+msgstr "West Nordwest"
+
+msgid "northwest"
+msgstr "Nordwesten"
+
+msgid "north northwest"
+msgstr "Nord Nordwest"
+
+msgid ""
+"Is not working properly, contains incomplete data or has been removed from "
+"the database of"
+msgstr ""
+"funktioniert nicht ordnungsgemäß, enthält unvollständige Daten oder wurde "
+"von der Datenbank entfernt von"
+
+msgid "It could be a temporary problem and you may wait a while '..."
+msgstr ""
+"Es könnte nur ein vorübergehendes Problem sein. Warten Sie eine Weile..."
+
+msgid "Do you want to delete it from your list?"
+msgstr "möchten Sie die Stadt aus der Liste entfernen?"
+
+msgid "Provides the current temperature and weather conditions."
+msgstr "Zeigt die aktuellen Wetterbedingungen"
+
+msgid ""
+"Provides the weather forecast and current temperature for 24 hours and the "
+"next 9 days."
+msgstr ""
+"Zeigt die Wettervorhersage für 24 Stunden und die von Ihnen festgelegte "
+"Anzahl von Tagen."
+
+msgid "Sorry, no list available!"
+msgstr "Es ist keine Liste verfügbar."
+
+msgid "Allows you to set a temporary city."
+msgstr "erlaubt es Ihnen, eine temporäre Stadt festzulegen."
+
+msgid "Scale of temperature measurement set into"
+msgstr "Temperaturskala"
+
+msgid "Allows you to set a temporary scale of temperature mesurement."
+msgstr "Legt eine temporäre Temperaturskala fest."
+
+msgid "at"
+msgstr "um"
+
+msgid "Last update of the current weather report"
+msgstr "Letzte Aktualisierung des Wetterberichts"
+
+msgid "Announces the date of the last update of the weather report."
+msgstr "Zeigt das Datum, an dem der Wetterbericht zuletzt aktualisiert wurde."
+
+msgid "Open the Weather Plus settings dialog."
+msgstr "Weather Plus Einstellungen öffnen."
+
+msgid ""
+"f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
+"duration Weather Forecast, f5: volume controls."
+msgstr ""
+"f1: Hilfe, f2: Letzte Auswahl, f3: Stadtauswahl bzw. Suche, f4: Dauer der "
+"Wettervorhersage einstellen, f5: Lautstärkeregler."
+
+msgid ""
+"f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
+"duration Weather Forecast."
+msgstr ""
+"f1: Hilfe, f2: Letzte Auswahl, f3: Stadtauswahl bzw. Suche, f4: Dauer der "
+"Wettervorhersage einstellen."
+
+msgid "Test"
+msgstr "Test"
+
+msgid "Details"
+msgstr "details"
+
+msgid "Define"
+msgstr "Gegend definieren"
+
+msgid "Add"
+msgstr "Hinzufügen"
+
+msgid "Remove"
+msgstr "entfernen"
+
+msgid "Rename"
+msgstr "Umbenennen"
+
+msgid "&Import new cities..."
+msgstr "neue Städte &importieren..."
+
+msgid "&Export your cities..."
+msgstr "Städte &exportieren..."
+
+msgid "Scale of temperature measurement:"
+msgstr "Temperaturskala"
+
+msgid "Degrees shown as:"
+msgstr "Grad anzeigen als"
+
+msgid "C - F - K"
+msgstr "C - F - K"
+
+msgid "Don't specify"
+msgstr "ohne Einheit"
+
+msgid "Weather Forecasts up to days:"
+msgstr "Wettervorhersage bis Tage"
+
+#. check boxes
+msgid ""
+"&Copy the weather report and weather forecast, including city details to "
+"clipboard"
+msgstr "Wetterbericht und Stadtdetails in die zwischenablage &kopieren"
+
+msgid "Enable &audio effects (only for the current weather conditions)"
+msgstr "&Soundeffekte aktivieren (nur für aktuelle Wetterbedingungen)"
+
+msgid "Use only &weather effects"
+msgstr "Nur &Wetter-Effekte benutzen"
+
+msgid "General audio volume"
+msgstr "Standardlautstärke"
+
+msgid "Current audio volume"
+msgstr "aktuelle Lautstärke"
+
+#. check boxes
+msgid "Enable &help buttons in the settings window"
+msgstr "&Hilfetexte für die Schalter in den Einstellungen zeigen"
+
+msgid "Read &wind informations"
+msgstr "&Windinformationen ausgeben"
+
+msgid "Add wind directi&on"
+msgstr "wind&richtung ausgeben"
+
+msgid "Add wi&nd speed"
+msgstr "Wi&ndgeschwindigkeit ausgeben"
+
+msgid "Add speed in &meters per second of the wind"
+msgstr "&Meter pro Sekunde bei der Ausgabe der Windgeschwindigkeit hinzufügen"
+
+msgid "Add perceived &temperature"
+msgstr "Gef&ühlte Temperatur ausgeben"
+
+msgid "&Read atmospherical informations"
+msgstr "Atmosphärische Informa&tionen ausgeben"
+
+msgid "Add humidity va&lue"
+msgstr "&Luftfeuchtigkeit ausgeben"
+
+msgid "Add &visibility value"
+msgstr "Sichtweite aus&geben"
+
+msgid "Add atmospheric &pressure value"
+msgstr "Luftdru&ck ausgeben"
+
+msgid "Indicates the atmospheric pressure in millimeters of mercur&y (mmHg)"
+msgstr "in Millimeter &Quecksilbersäule (mmHg) ausgeben"
+
+msgid "Add status of &barometric pressure"
+msgstr "Stat&us des luftdrucks ausgeben"
+
+msgid "Read a&stronomical informations"
+msgstr "astr&onomische Informationen ausgeben"
+
+msgid "Enable reading of the hours in &24-hour format"
+msgstr "Stunden im &24-Stunden-Format ausgeben"
+
+msgid "Use the comma to separate decimals, example (4,&15)"
+msgstr "Komma als De&zimaltrennzeichen benutzen, z.B. 1,15"
+
+msgid "Check for &upgrade"
+msgstr "&automatisch nach Updates suchen"
+
+msgid ""
+"Testing the validity of city woeID entry and find the name of city assigned, "
+"or viceversa."
+msgstr ""
+"Testet die Gültigkeit der WOE-ID und findet den Namen der Stadt heraus, und "
+"umgekehrt."
+
+msgid "Displays information on the current city."
+msgstr "Zeigt Informationen zur aktuellen Stadt."
+
+msgid "Allows you to define the area, in order to adapt the sound effects."
+msgstr ""
+"Dies lässt Sie die Gegend definieren, um die Soundeffekte entsprechend "
+"anzupassen."
+
+msgid "Add the current city into your list."
+msgstr "fügt die ausgewählte Stadt Ihrer Liste hinzu."
+
+msgid ""
+"Presets the current city as the default, will be used every time you restart "
+"the plugin."
+msgstr ""
+"dies lässt Sie die ausgewählte Stadt als standard einstellen, sodass sie "
+"immer verwendet wird, wenn Sie das Plugin neu laden."
+
+msgid "Delete  the current city from your list."
+msgstr "entfernt die Stadt aus der Liste."
+
+msgid "Rename the current city."
+msgstr "Benennt die Stadt um."
+
+msgid ""
+"Permits to incorporate in your list new cities importing them from another "
+"list with the extension *.zipcodes; you can select the city you want to "
+"import, by turning on the check box associated."
+msgstr ""
+"Hiermit kann eine Städteliste durch Importieren von Dateien mit der "
+"Erweiterung *.zipcodes hinzugefügt werden. Sie können die zu importierenden "
+"Städte auswählen, indem Sie das entsprechende Kontrollfeld für die Stadt "
+"aktivieren."
+
+msgid "Permits to save your list of cities in a specified path."
+msgstr ""
+"Hiermit kann die Städteliste an einem bestimmten Ort gespeichert werden."
+
+msgid "You can enter or search for a city"
+msgstr "Sie können eine Stadt eingeben oder nach einer suchen"
+
+msgid "By city woeID: 715399"
+msgstr "Nach WOE-ID der Stadt: 715399"
+
+msgid "By only city name: Ferrara"
+msgstr "Nach Stadtname: Ferrara"
+
+msgid "By state or region and city name: Emilia Romagna Ferrara"
+msgstr "Nach Bundesland/Staat/Region und Stadtname: Emilia Romagna Ferrara"
+
+msgid "By city name and country: Ferrara,it"
+msgstr "Nach Stadtname und Land: ferrara it"
+
+msgid "By postal code: 44100,it"
+msgstr "Nach Postleitzahl: 44100,it"
+
+msgid "By geographic coordinates: latitude, longitude"
+msgstr "Nach geographischen Koordinaten: Breitengrad, Längengrad"
+
+msgid "If the city is not found"
+msgstr "Wenn die Stadt nicht gefunden wird"
+
+msgid "Try with or without the country of origin"
+msgstr "Versuchen Sie es mit oder ohne Herkunftsland"
+
+msgid "Try to merge the name with hyphens, or separate it with spaces"
+msgstr "Versuchen Sie den Namen mit Leerzeichen oder Bindestrichen abzutrennen"
+
+msgid "Try deleting apostrophes"
+msgstr "Vermeiden Sie Apostrofs"
+
+msgid "Try changing the vowels accented with normal vowels"
+msgstr ""
+"Versuchen Sie, nur normale Vokale statt Vokale mit Akzentzeichen zu benutzen"
+
+msgid "Try with a closest location"
+msgstr "Versuchen Sie es mit dem nächst gelegenen Ort"
+
+msgid "Help placing"
+msgstr "Hilfe"
+
+msgid "No sound effect in memory!"
+msgstr "Soundeffekt nicht gefunden."
+
+msgid "I can't reproduce the sound."
+msgstr "Der Sound konnte nicht reproduziert werden."
+
+msgid "not found! Press F1 for help on entering data."
+msgstr ""
+"Nicht gefunden! Drücken Sie F1, um Hilfe für das Eingeben von Daten zu "
+"erhalten"
+
+msgid "Is not working properly or has been removed from the database of"
+msgstr ""
+"funktioniert nicht ordnungsgemäß oder wurde von der Datenbank entfernt von"
+
+msgid "Is no longer valid!"
+msgstr "Ist nicht mehr gültig."
+
+msgid "This option requires the installation of some audio effects"
+msgstr "Sie haben noch keine Soundeffekte installiert."
+
+msgid "Do you want to install them?"
+msgstr "Möchten Sie sie jetzt Installlieren?"
+
+msgid "The audio effects are installed!"
+msgstr "Die Soundeffekte sind bereits installiert."
+
+msgid "Would you like to update?"
+msgstr "Möchten Sie sie aktualisieren?"
+
+msgid "Or do you want to uninstall them?"
+msgstr "Oder möchten Sie sie entfernen?"
+
+msgid "Are you sure you want to uninstall the sound effects?"
+msgstr "Sind Sie sicher, dass Sie die Soundeffekte entfernen möchten?"
+
+msgid "Update in progress"
+msgstr "Aktualisierung läuft"
+
+msgid "Installation in progress"
+msgstr "Installation läuft"
+
+msgid "Please wait..."
+msgstr "bitte warten..."
+
+#. Installation Complete
+msgid "The installation of audio effects has been completed successfully!"
+msgstr "Die installation der Soundeffekte wurde erfolgreich abgeschlossen."
+
+msgid "Adding folder:"
+msgstr "Ordner wird Hinzugefügt:"
+
+msgid "The upgrade of audio effects has been completed successfully!"
+msgstr "Das Upgrade der Soundeffekte wurde erfolgreich abgeschlossen."
+
+msgid "These sound effects are subject to change by the author."
+msgstr "Diese Soundeffekte können vom Autor geändert werden."
+
+msgid "Disable and re-enable this option in order to update or uninstall them."
+msgstr "Zum Updaten oder Entfernen reaktivieren Sie diese Option erneut."
+
+msgid "Verify that your internet connection is active, or try again later."
+msgstr ""
+"Bitte überprüfen Sie Ihre Internetverbindung oder versuchen Sie es später "
+"erneut."
+
+msgid "File corrupted or not available!"
+msgstr "Datei beschädigt oder nicht verfügbar"
+
+msgid "Sorry, i could not complete the installation of the sound effects!"
+msgstr "Die Installation der Soundeffekte konnte nicht fertiggestellt werden."
+
+msgid "Installation Error!"
+msgstr "Fehler beim Installieren!"
+
+msgid ""
+"The details of this city are not in the database and so I added them to the "
+"list. Try again!"
+msgstr ""
+"Da die Details dieser Stadt nicht in der Datenbank enthalten sind, habe ich "
+"sie der Liste hinzugefügt. Versuchen Sie es nochmal!"
+
+msgid "Cannot identify your location, due to insufficient data."
+msgstr ""
+"Ihr Standort konnte auf Grund unzureichender Daten nicht identifiziert "
+"werden."
+
+#. if there is daylight saving time
+msgid "Daylight saving time"
+msgstr "Sommerzeit"
+
+msgid "ahead"
+msgstr "vor"
+
+msgid "back"
+msgstr "zurück"
+
+msgid "Starts on"
+msgstr "Beginnt am"
+
+msgid "set your clock"
+msgstr "Ihre Uhr stellen"
+
+msgid "hour"
+msgstr "Stunde"
+
+msgid "Ends on"
+msgstr "Endet am"
+
+msgid "Details of"
+msgstr "Details für"
+
+msgid "Place"
+msgstr "Platz"
+
+msgid "Current local time"
+msgstr "Aktuelle Uhrzeit"
+
+msgid "Degrees latitude"
+msgstr "Breitengrad"
+
+msgid "Degrees longitude"
+msgstr "Längengrad"
+
+msgid "Elevation above sea level"
+msgstr "Höhe über dem Meeresspiegel"
+
+msgid "meters"
+msgstr "Meter"
+
+msgid "Define the area for"
+msgstr "Gegend definieren für"
+
+msgid "Hinterland"
+msgstr "Hinterland"
+
+msgid "Maritime area"
+msgstr "Meeresgebiet"
+
+msgid "Desert zone"
+msgstr "Wüste"
+
+msgid "Arctic zone"
+msgstr "Arktisches Gebiet"
+
+msgid "Mountain zone"
+msgstr "Gebirge"
+
+msgid "Enter new name."
+msgstr "Geben Sie einen neuen Namen ein."
+
+msgid "it can't be used because it already exists!"
+msgstr "Er kann nicht genutzt werden, weil er bereits existiert!"
+
+msgid "is correct"
+msgstr "ist richtig"
+
+msgid "But the name"
+msgstr "aber der Name"
+
+msgid "already exists"
+msgstr "existiert bereits"
+
+msgid "You have to change it!"
+msgstr "Sie müssen ihn verändern."
+
+msgid "The city proper is"
+msgstr "die eigendliche Stadt ist"
+
+msgid "Want to use the suggested name?"
+msgstr "Möchten Sie den vorgeschlagenen Namen verwenden?"
+
+msgid "Import cities"
+msgstr "Städte importieren"
+
+msgid "Do you want to replace your list with this?"
+msgstr "Möchten Sie Ihre Liste damit ersetzen?"
+
+msgid "If you select yes, your list will be completely replaced."
+msgstr "Wenn Sie auf Ja klicken, wird Ihre komplette Liste ersetzt."
+
+msgid "If you select no, the new cities will be added to your list."
+msgstr ""
+"Wenn Sie auf nein klicken, werden die neuen Städte Ihrer bestehenden Liste "
+"hinzugefügt."
+
+msgid "Select import mode"
+msgstr "Importmodus auswählen"
+
+msgid "File contents"
+msgstr "Datei-Inhalt"
+
+msgid "cities"
+msgstr "Städte"
+
+msgid "Activate the check boxes of the cities you want to import."
+msgstr ""
+"aktivieren Sie die Kontrollfelder der Städte, die Sie importieren möchten."
+
+msgid "Importing cities in progress"
+msgstr "Import läuft"
+
+msgid "Were added"
+msgstr "hinzugefügt wurden"
+
+msgid "new cities to the list"
+msgstr "neue Städte zur Liste"
+
+msgid "Have been ignored because existing"
+msgstr "Ignoriert weil schon vorhanden:"
+
+msgid "Content of imported list"
+msgstr "Listeninhalt:"
+
+msgid "selected by the user"
+msgstr "Vom Benutzer gewählt:"
+
+msgid "Import finished"
+msgstr "Import abgeschlossen"
+
+msgid "A copy of"
+msgstr "Eine Kopie von"
+
+msgid "It will be exported"
+msgstr "wird exportiert"
+
+msgid "But it does not yet contain the changes you just made the list!"
+msgstr ""
+"Aber sie enthält noch nicht die Veränderungen, die Sie an der Liste "
+"durchgeführt haben."
+
+msgid "I proceed?"
+msgstr "Fortsetzen?"
+
+msgid "Export cities"
+msgstr "Städte exportieren"
+
+msgid "You can not export the same file at the same path!"
+msgstr "Sie können nicht dieselbe Datei am selben Ort speichern"
+
+msgid "january"
+msgstr "Januar"
+
+msgid "february"
+msgstr "Februar"
+
+msgid "march"
+msgstr "März"
+
+msgid "april"
+msgstr "April"
+
+msgid "may"
+msgstr "Mai"
+
+msgid "june"
+msgstr "Juni"
+
+msgid "july"
+msgstr "Juli"
+
+msgid "august"
+msgstr "August"
+
+msgid "september"
+msgstr "September"
+
+msgid "october"
+msgstr "Oktober"
+
+msgid "november"
+msgstr "November"
+
+msgid "december"
+msgstr "Dezember"
+
+msgid "Monday"
+msgstr "Montag"
+
+msgid "Tuesday"
+msgstr "Dienstag"
+
+msgid "Wednesday"
+msgstr "Mittwoch"
+
+msgid "Thursday"
+msgstr "Donnerstag"
+
+msgid "Friday"
+msgstr "Freitag"
+
+msgid "Saturday"
+msgstr "Samstag"
+
+msgid "Sunday"
+msgstr "Sonntag"
+
+#, python-format
+msgid "It was not possible find the acronym of %s!"
+msgstr "Das Akronym von %s konnte nicht gefunden werden!"
+
+msgid ""
+"This does not allow to get the city local time, the sound effects will not "
+"be consistent."
+msgstr ""
+"Dies ermöglicht nicht, die Ortszeit der Stadt zu ermitteln, die Soundeffekte "
+"sind nicht konsistent."
+
+msgid ""
+"Please report this to the author so he can add this country in database."
+msgstr ""
+"Bitte melden Sie dies dem Autor, damit er dieses Land in die Datenbank "
+"aufnehmen kann."
+
+#, python-format
+msgid "Send an email to %s"
+msgstr "Senden Sie eine E-Mail an %s"
+
+msgid "With  object the line below, thanks."
+msgstr "Mit Objekt die Zeile unten, danke."
+
+msgid "Downloaded"
+msgstr "heruntergeladen"
+
+msgid "of"
+msgstr "von"
+
+msgid "Find..."
+msgstr "Suchen"
+
+msgid "Find next"
+msgstr "Weitersuchen"
+
+msgid "Find previous"
+msgstr "Rückwärts suchen"
+
+msgid "Empty file or not in cities woeID format compatible!"
+msgstr "Leere Datei oder nicht mit WOE-ID der Stadt kompatibel."
+
+msgid "Be an error has occurred."
+msgstr "Es ist ein Fehler aufgetreten!"
+
+msgid "See the log for more information."
+msgstr "Siehe protokoll für mehr Hinweis"
+
+msgid "Error: failure writing file!"
+msgstr "Fehler: Datei konnte nicht geschrieben werden!"
+
+msgid "occurrences found"
+msgstr "Ergebnisse gefunden"
+
+msgid "for"
+msgstr "für"
+
+msgid "Choose a city."
+msgstr "Wählen Sie eine Stadt aus."
+
+msgid "List of availables Cities"
+msgstr "Liste der verfügbaren Städte"
+
+msgid "Do not show this message again!"
+msgstr "Diese Meldung nicht mehr anzeigen"
+
+msgid "&Install..."
+msgstr "&Installieren..."
+
+msgid "Upd&ate..."
+msgstr "&Aktualisieren..."
+
+msgid "&Close"
+msgstr "&Schließen"
+
+msgid "&Uninstall..."
+msgstr "&Deinstallieren..."
+
+msgid "Type the search string"
+msgstr "Geben Sie ein, wonach Sie suchen"
+
+msgid "Find"
+msgstr "Suchen"
+
+msgid "next"
+msgstr "Weiter"
+
+msgid "previous"
+msgstr "Zurück"
+
+msgid "No results next for"
+msgstr "Keine weiteren Ergebnisse für"
+
+msgid "No previous results for"
+msgstr "Keine vorherigen Ergebnisse für"
+
+msgid "&Select all"
+msgstr "Alles &markieren"
+
+msgid "&Deselect all"
+msgstr "&Markierungen aufheben"
+
+msgid "not checked"
+msgstr "nicht aktiviert"
+
+msgid "checked"
+msgstr "aktiviert"
+
+msgid "check box"
+msgstr "Kontrollfeld"
+
+msgid "check boxes checked"
+msgstr "Aktivierte Kontrollfelder"
+
+msgid "check boxes not checked"
+msgstr "Deaktivierte Kontrollfelder"
+
+msgid "Saving in progress"
+msgstr "Speichervorgang läuft"
+
+msgid "Download canceled."
+msgstr "Download abgebrochen."
+
+msgid "&Copy to clipboard"
+msgstr "In die Zwischenablage &kopieren"
+
+msgid ""
+"Adds local temperature and forecast 24 ours and prediction up to 9 days.\n"
+msgstr ""
+"Fügt die Wetterbedingungen für 24 Stunden und die Wettervorhersage für 9 "
+"zusätzliche Tage für eine Stadt ihrer Wahl hinzu.\n"
+
+msgid "NVDA+w for the current bulletin.\n"
+msgstr "NVDA+W zeigt die aktuellen Wetterbedingungen an.\n"
+
+msgid ""
+"NVDA+shift+w for the prediction in the current 24 hours and prediction up to "
+"9 days.\n"
+msgstr ""
+"NVDA+Umschalt+W zeigt die Wettervorhersage für 24 Stunden und die von Ihnen "
+"festgelegte Anzahl von Tagen an (höchstens 9, voreingestellt ist 3).\n"
+
+msgid "NVDA+shift+control+w for quickly enter a temporary city.\n"
+msgstr "NVDA+Umschalt+Strg+W legt eine temporäre Stadt fest.\n"
+
+msgid "NVDA + shift + control + alt + w for open the Weather Plus settings.\n"
+msgstr ""
+"NVDA+Umschalt+Strg+Alt+W öffnet das Einstellungsfenster für weather Plus.\n"
+
+msgid ""
+"NVDA+alt+w announces the date of the last update of the weather report.\n"
+msgstr ""
+"NVDA+Alt+W zeigt das Datum der Aktualisierung des letzten Wetterberichts.\n"
+
+msgid "Shift+control+w alternates between Fahrenheit, Celsius and Kelvin.\n"
+msgstr ""
+"Strg+Umschalt+W schalttet temporär zwischen den Temperaturskalen Celsius, "
+"Fahrenheit und Kelvin um.\n"
+
+msgid ""
+"For other instructions, you can also press Add-on Help button in Add-ons "
+"manager."
+msgstr ""
+"Für mehr Details lesen sie bitte die Benutzerhandbücher, die im menü von "
+"Weather plus zu finden sind."
+
+#~ msgid ""
+#~ "In&dicates the wait with a beep while you search for the latest bulletin"
+#~ msgstr "Signalton a&bspielen, wenn das suchen von Daten länger dauert"
+
+#~ msgid "The disc is full, or the file is write protected."
+#~ msgstr "Der Datenträger ist voll, oder die Datei ist schreibgeschützt"
+
+#~ msgid "Disable and re-enable this option to update them."
+#~ msgstr "Zum Updaten reaktivieren Sie diese Option erneut."
+
+#~ msgid "Download complete."
+#~ msgstr "Download erfolgreich."
+
+#~ msgid "An upgrade is available for"
+#~ msgstr "Ein Update steht zur Verfügung für"
+
+#~ msgid "Click on the Check for upgrades menu to download it."
+#~ msgstr ""
+#~ "Gehen Sie in das Menü von Weather plus und wählen Sie den Menüpunkt "
+#~ "\"Nach Updates suchen\", um es zu laden"
+
+#~ msgid "Save file"
+#~ msgstr "Datei speichern"
+
+#~ msgid ""
+#~ "Have been detected earlier settings of a higher version of the addon."
+#~ msgstr ""
+#~ "wurden frühere Einstellungen aus einer neueren Version des Add-Ons "
+#~ "gefunden."
+
+#~ msgid ""
+#~ "Probably you used an outdated version! To save the new settings i have to "
+#~ "override them."
+#~ msgstr ""
+#~ "Sie haben bestimmt eine alte Version benutzt! Um die neuen Einstellungen "
+#~ "zu speichern, müssen die alten überschrieben werden."
+
+#~ msgid "Can i proceed?"
+#~ msgstr "Soll dies jetzt getan werden?"
+
+#~ msgid "Request to proceed!"
+#~ msgstr "Anfrage zum Fortsetzen"
+
+#~ msgid "The settings of the addon have been moved to this new location:"
+#~ msgstr "Die Einstellungen wurden an diesen neuen Ort verschoben:"
+
+#~ msgid "Insufficient data! I can not identify the location of belonging."
+#~ msgstr ""
+#~ "Unzureichende Daten! Konnte den Zugehörigkeitsort nicht identifizieren."
