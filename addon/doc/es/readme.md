@@ -277,6 +277,13 @@ Si has modificado la lista de ciudades, pulsando "Cancelar", se te recordará y 
 
 # Que Hay de nuevo: #
 
+# Versión 6.2 #
+* Solucionado el error en la función "Añadir".
+* Se corrigió un error que no asignaba la variable "_volume" al iniciar el complemento.
+* Añadido código faltante de la versión 6.0;
+	* Ahora puede recuperar las ciudades guardadas de la versión que utiliza la API de Apixu;
+	* Los botones "Prueba" y "Quitar" y las ciudades no compatibles están disponibles en el formato: "Ferrara, iter 44.83,11.58 0" (ciudad, coordenadas geográficas, definición de área).
+
 # Versión 6.1 #
 * Se han corregido 2 errores.
 

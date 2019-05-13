@@ -275,6 +275,13 @@ Si vous avez modifié la liste des villes, en appuyant sur "Annuler", vous serez
 
 # Quoi de neuf : #
 
+# Version 6.2 #
+* Correction d'un bug dans la fonction "Ajouter".
+* Correction d'un bug qui n'attribuait pas la variable "_volume" lors du démarrage de l'extension.
+* Ajout du code manquant à partir de la version 6.0;
+	* Vous pouvez maintenant récupérer les villes enregistrées à partir de la version utilisant l'API Apixu.
+	* Les boutons "Test" et "Supprimer", ainsi que les villes non compatibles, sont disponibles au format: "Ferrara, iter 44.83,11.58 0" (ville, coordonnées géographiques, définition de la zone).
+
 # Version 6.1 #
 * Correction de 2 bogues.
 

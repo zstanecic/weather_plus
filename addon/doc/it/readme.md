@@ -271,6 +271,13 @@ Se avete modificato la lista delle città, premendo "Annulla", vi sarà ricordat
 
 # Novità: #
 
+# Versione 6.2 #
+* Corretto bug nella funzione "Aggiungi".
+* Corretto bug che non assegnava la variabile "_volume" all'avvio dell'addon.
+* Aggiunto codice mancante dalla versione 6.0;
+	* Ora è possibile recuperare le città salvate dalla versione che utilizza l'API di Apixu;
+	* Vengono resi disponibili i pulsanti "Testa" e "Rimuovi" e le città non compatibili nel formato :"Ferrara, iter 44.83,11.58 0" (città, coordinategeografiche, definizione area).
+
 # Versione 6.1 #
 * Coorretti 2 bug.
 
