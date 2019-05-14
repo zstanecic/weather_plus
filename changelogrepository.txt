@@ -1,3 +1,16 @@
+14.05.2019
+Modified sconstruct file by Abdel.
+The sconstruct file i have does not include the command to copy the readme.md file to the doc / en directory.
+I just have to replace the one i have in the root of your local repo. 
+
+This done, execute the following commands: 
+
+git commit -a -m "Fixed the sconstruct file so that the scons command can copy the English readme.md file to the doc / en directory"
+git push -u origin master
+
+Now everything works fine.
+Thanks to Abdel.
+
 13-10-2019
 Added: new __init__.py file sent by Adriano for version 6.3
 Changes all number version in files sources.

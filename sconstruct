@@ -5,6 +5,8 @@
 #See the file COPYING.txt for more details.
 
 import codecs
+import sys
+sys.dont_write_bytecode = True
 import gettext
 import os
 import os.path
@@ -106,9 +108,9 @@ def createAddonHelp(dir):
 		cssPath = os.path.join(docsDir, "style.css")
 		cssTarget = env.Command(cssPath, "style.css", Copy("$TARGET", "$SOURCE"))
 		env.Depends(addon, cssTarget)
-	if os.path.isfile("readme.*"):
-		readmePath = os.path.join(docsDir, "en", "readme.*")
-		readmeTarget = env.Command(readmePath, "readme.*", Copy("$TARGET", "$SOURCE"))
+	if os.path.isfile("readme.md"):
+		readmePath = os.path.join(docsDir, "en", "readme.md")
+		readmeTarget = env.Command(readmePath, "readme.md", Copy("$TARGET", "$SOURCE"))
 		env.Depends(addon, readmeTarget)
 
 def createAddonBundleFromPath(path, dest):
@@ -201,3 +203,4 @@ env.Depends(manifest, "buildVars.py")
 
 env.Depends(addon, manifest)
 env.Default(addon)
+env.Clean (addon, ['.sconsign.dblite', 'addon/doc/en/'])
