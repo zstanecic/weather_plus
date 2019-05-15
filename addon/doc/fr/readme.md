@@ -10,7 +10,7 @@
   à 24 heures et les prévisions jusqu'à 9 jours supplémentaires
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Publié sous la GNU GPL (General Public License) v2
-* Version: 6.2.
+* Version: 6.3.
 
 # Weather Plus fonctionne grâce à l'utilisation et la présence des services suivants : #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -302,6 +302,19 @@ averti et vous pourrez quand-même sauvegarder la liste.
 --------------------------------------------------------------------------------
 
 # Quoi de neuf : #
+
+# Version 6.3 #
+* Correction de l'encodage de caractères dans la fenêtre de résultats de
+  recherche.
+* Correction de l'encodage également dans le rapport détaillé.
+
+# Version 6.2 #
+* Fixed bug in the "Add" function.
+* Correction d'un bogue qui n'assignait pas la variable "_volume" au
+  démarrage de l'extension.
+* Ajout de code manquant de la version 6.0;
+	* Maintenant vous pouvez récupérer les villes sauvegardées de la version utilisant l'API Apixu;
+	* Les boutons "Test" et "Supprimer" et les villes non compatibles sont disponibles dans le format : "Ferrara, iter 44.83,11.58 0" (ville, coordonnées géographiques, définition de zone).
 
 # Version 6.1 #
 * Correction de 2 bogues.
@@ -624,24 +637,24 @@ called recursively.
 	* Cela vous permet d'entre ou modifier votre clé API.
 
 # Version 3.5 #
-* Added Croatian translation (thanks to Gordan Radić).
-* Added control for no longer valid WoeId and Zip Code found in the network;
-	* There have been reports of codes that have stopped working from one day to another, WP now warns if one of these has been inserted from the windows of search on the net.
-	* If this occurs using the function "Find your city...", please report it to me so that I can update the Weather_buffer and remove them from the list.
-* Fixed a bug in the search function the next and previous; lacked the mbcs encoding and could not recognize accented characters.
-* Updated the window to set one temporary zip code;
-	* Added feature "Find" As in the other windows of Weather Plus:
-	* Control+F3 = Find..., F3 = Find next, Shift+F3 = Find previous.
+* Ajout de la traduction en Croate (merci à Gordan Radić).
+* Ajout d'un contrôle des woeIds et zip codes trouvés sur le réseau et qui ne sont plus valides;
+	* Il y a eu des rapports de codes ayant cessé de fonctionner d'un jour à l'autre, maintenant WP signale si l'un d'entre eux a été inséré depuis les fenêtres de recherche sur le net.
+	* Si cela arrive en utilisant la fonction "Rechercher votre ville...", veuillez me le signaler pour que je puisse mettre à jour Weather_buffer et les retirer de la liste.
+* Correction d'un bogue dans la fonction de recherche, précédent et suivant n'étaient pas encodées en mbcs et ne pouvaient pas reconnaître les caractères accentués.
+* Mise à jour de la fenêtre pour définir un zip code temporaire;
+	* Ajout de la fonction "Rechercher" comme dans les autres fenêtres de Weather Plus:
+	* Contrôle+F3 = Rechercher..., F3 = Suivant, Maj+F3 = Pt"v"frny.
 
 # Version 3.4 #
-* Added Galician translation (thanks to Iván Novegil).
-* Added Portuguese translation (thanks to Ângelo Miguel Abrantes).
-* Added German translation (incomplete).
+* Ajout de la traduction en Galicien (merci à Iván Novegil).
+* Ajout de la traduction en Portugais (merci à Ângelo Miguel Abrantes).
+* Ajout de la traduction en Allemand (incomplète)
 
 # Version 3.3 #
-* Added the measure of the speed of wind in meters per second.
-* Modified the encode in "mbcs";
-	* This permits to use also the diacritical marks in the city names.
+* Ajout de la mesure de la vitesse du vent en mètres par seconde.
+* Modification de l'encodage en "mbcs";
+	* Cela permet d'utiliser les signes diacritiques dans les noms de villes.
 
 # Version 3.2 #
 * Updated the reading of the weather forecast, current weather report and reading of the date of the current weather report;
@@ -652,7 +665,7 @@ called recursively.
 * Forecasts of the time extended to 10 days.
 
 # Version 3.1 #
-* Added translation in Serbian (thanks to the kind cooperation of Gašić
+* Ajout de la traduction en Serbe (grâce à l'aimable coopération de Gašić
   Dejan `-` Gashich Deyan).
 * Fixed command insert+alt+w;
 	* It did not check the validity of the zipcode in use and did not check if the connection was active as the other commands do.
@@ -678,7 +691,7 @@ called recursively.
 * Added ability to set the system time in 12-hour format (12:30 AM `-` 12:30 PM) , or the 24-hour system (12:30 `-` 00:30).
 
 # Version 3.0 #
-* Added translation in Slovak (thanks to the kind cooperation of Vitek
+* Ajout de la traduction en Slovaque (grâce à l'aimable coopération de Vitek
   Jirasek).
 * Added translation in Portuguese-Brazilian and Portuguese-Portugal (thanks
   to the kind cooperation of Adair Knaesel).
@@ -830,6 +843,8 @@ called recursively.
 * provisional translation inside the source.
 
 --------------------------------------------------------------------------------
+
+[[!tag dev stable]]
 
 [[!tag dev stable]]
 

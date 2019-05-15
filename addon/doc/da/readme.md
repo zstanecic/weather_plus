@@ -10,7 +10,7 @@
   additional days for NVDA
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Released under the GNU GPL (General Public License) v2
-* Version: 6.2.
+* Version: 6.3.
 
 # Vejret Plus fungerer gennem brug og tilstedeværelse af følgende tjenesteydelser: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -291,6 +291,18 @@ du kan stadig gemme den.
 --------------------------------------------------------------------------------
 
 # What's new: #
+
+# Version 6.3 #
+* Fixed the character encoding in the search results window.
+* Fixed the encoding also in the detail report.
+
+# Version 6.2 #
+* Fixed bug in the "Add" function.
+* Fixed bug that did not assign the variable "_volume" when starting the
+  addon.
+* Added missing code from version 6.0;
+	* Now you can recover the saved cities from the version that uses the Apixu API;
+	* The "Test" and "Remove" buttons and non-compatible cities are available in the format: "Ferrara, iter 44.83,11.58 0" (city, geographic coordinates, area definition).
 
 # Version 6.1 #
 * Fixed 2 bugs.
@@ -814,6 +826,8 @@ kaldes rekursivt.
 * foreløbig oversættelse i kilden.
 
 --------------------------------------------------------------------------------
+
+[[!tag dev stable]]
 
 [[!tag dev stable]]
 

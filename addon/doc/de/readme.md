@@ -10,7 +10,7 @@
   Vorhersagen für 24 Stunden und bis zu 9 zusätzlichen Tagen zu NVDA hinzu
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Freigegeben unter der GNU GPL (General Public License) v2
-* Version: 6.2.
+* Version: 6.3.
 
 # Weather Plus funktioniert durch die Nutzung und Präsenz folgender Dienste: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -304,6 +304,18 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 --------------------------------------------------------------------------------
 
 # Änderungsverlauf: #
+
+# Version 6.3 #
+* Fixed the character encoding in the search results window.
+* Fixed the encoding also in the detail report.
+
+# Version 6.2 #
+* Fixed bug in the "Add" function.
+* Fixed bug that did not assign the variable "_volume" when starting the
+  addon.
+* Added missing code from version 6.0;
+	* Now you can recover the saved cities from the version that uses the Apixu API;
+	* The "Test" and "Remove" buttons and non-compatible cities are available in the format: "Ferrara, iter 44.83,11.58 0" (city, geographic coordinates, area definition).
 
 # Version 6.1 #
 * 2 Fehler behoben.
@@ -833,6 +845,8 @@ Steuerung + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = rückwärts suchen.
 * provisorische Übersetzung in der Quelle.
 
 --------------------------------------------------------------------------------
+
+[[!tag dev stable]]
 
 [[!tag dev stable]]
 
