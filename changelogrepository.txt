@@ -1,3 +1,38 @@
+14.05.2019
+Modified sconstruct file by Abdel.
+The sconstruct file i have does not include the command to copy the readme.md file to the doc / en directory.
+I just have to replace the one i have in the root of your local repo. 
+
+This done, execute the following commands: 
+
+git commit -a -m "Fixed the sconstruct file so that the scons command can copy the English readme.md file to the doc / en directory"
+git push -u origin master
+
+Now everything works fine.
+Thanks to Abdel.
+
+13-10-2019
+Added: new __init__.py file sent by Adriano for version 6.3
+Changes all number version in files sources.
+Added: in readme.md file in english the information sent by Adriano on the changes made in version 6.3:
+
+# What's new: #
+
+# Version 6.3 #
+* Fixed the character encoding in the search results window.
+* Fixed the encoding also in the detail report.
+
+Added: in readme.md file in english the information sent by Adriano on the changes made in version 6.2:
+
+# What's new: #
+
+# Version 6.2 #
+* Fixed bug in the "Add" function.
+* Fixed bug that did not assign the variable "_volume" when starting the addon.
+* Added missing code from version 6.0;
+	* Now you can recover the saved cities from the version that uses the Apixu API;
+	* The "Test" and "Remove" buttons and non-compatible cities are available in the format: "Ferrara, iter 44.83,11.58 0" (city, geographic coordinates, area definition).
+
 10-05-2019
 I have updated the changelogrepository file with the good information made yesterday about the .gitignore file.
 09-05-2019
