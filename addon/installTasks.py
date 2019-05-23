@@ -6,7 +6,7 @@
 #Author: Adriano Barbieri
 #Email: adrianobarb@yahoo.it
 #License GNU GPL2
-#Version 6.3
+#Version 6.4
 
 import addonHandler
 import gui

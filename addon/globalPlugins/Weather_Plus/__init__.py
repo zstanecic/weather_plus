@@ -8,7 +8,7 @@
 # Released under GPL 2 
 #This file is covered by the GNU General Public License. 
 #See the file COPYING for more details. 
-#Version 6.3 - python 3 compatible
+#Version 6.4 - python 3 compatible
 import os,sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
 import random, ui, gui, wx,wx.adv, re, calendar, math
@@ -22,6 +22,7 @@ from contextlib import closing
 api, winsound, zipfile, tempfile, shutil"""
 #include the modules directory to the path
 sys.path.append(os.path.dirname(__file__))
+import dateutil.tz, dateutil.zoneinfo
 from oauth import Parse
 from pybass  import *
 try:
@@ -69,6 +70,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.defaultString = "" #the last search string
 		self.randomizedSamples = [] #used by Play_samples()
 		self.current_zipCode = "" #used by Play_samples()
+		self.current_condition = "" #used by Play_samples()
 		#load woeID list and definitions
 		z, self.define_dic, self.details_dic = Shared().LoadZipCodes()
 		#exclude the wrong lines
@@ -664,16 +666,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 		def RandomizeSamples(samples_list):
 			#Delete alwais from the list the last sample played
-			if (self.zipCode == self.current_zipCode) and len(self.randomizedSamples) > 1 and _curSample in self.randomizedSamples: self.randomizedSamples.remove(_curSample); return No_double(self.randomizedSamples)
+			if (self.zipCode == self.current_zipCode) and (self.current_condition == condition)and len(self.randomizedSamples) > 1 and _curSample in self.randomizedSamples: self.randomizedSamples.remove(_curSample); return No_double(self.randomizedSamples)
 			self.current_zipCode = self.zipCode
+			self.current_condition = condition
 			#when the list is empty or zipCode is changed, is rebuilt
 			self.randomizedSamples = SampleShuffle(samples_list)
 			return No_double(self.randomizedSamples)
 
 		def WindParse():
 			#Delete alwais from the list the last sample played
-			if (self.zipCode == self.current_zipCode) and len(self.randomizedSamples) > 1 and _curSample in self.randomizedSamples: self.randomizedSamples.remove(_curSample); return No_double(self.randomizedSamples)
+			if (self.zipCode == self.current_zipCode) and (self.current_condition == condition) and len(self.randomizedSamples) > 1 and _curSample in self.randomizedSamples: self.randomizedSamples.remove(_curSample); return No_double(self.randomizedSamples)
 			self.current_zipCode = self.zipCode
+			self.current_condition = condition
 			#when the list is empty or zipCode is changed, is rebuilt
 			if define == '3' or define == '4':
 				# arctic zone or mountain zone
@@ -1065,7 +1069,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		current_month = datetime.today().date().month
 		current_day = datetime.today().date().day
 		if return_date: return current_month, current_day
-		current_hour = self.current_hour
+		current_hour = int(self.current_hour[:2])
 		if current_hour is None:
 			current_hour = datetime.today().time().hour
 
@@ -1693,15 +1697,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 		if error: return self.ZipCodeError(), ""
 		try:
-			country_acronym = Shared().GetAcronym(dom['location']['country'])
-			region = dom['location']['region']
-			city = dom['location']['city']
+			timezone_id = dom['location']['timezone_id']
 		except KeyError: return dom, ""
-		self.current_hour, n, n = Shared().GetTimezone(country_acronym, region, city, to24Hours = True)
-		if not self.current_hour:
-			#probable non-codable city
-			self.current_hour, n, n = Shared().GetTimezone(country_acronym, region, region, self.to24Hours, full = True)
-
+		self.current_hour = Shared().GetTimezone(timezone_id, to24Hours = True)[:2]
 		return dom, message
 
 
@@ -1898,7 +1896,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if not self.setZipCodeItem.IsEnabled():
 			try:
 				self.openedTemporary.Raise()
-				self.openedTemporary.Show()
 			except AttributeError: pass
 			return wx.Bell()
 
@@ -1956,7 +1953,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if not self.setZipCodeItem.IsEnabled():
 			try:
 				self.dlg.Raise()
-				self.dlg.Show()
 				self.dlg.cbx.SetFocus()
 			except: pass
 			return wx.Bell()
@@ -2862,11 +2858,7 @@ class EnterDataDialog(wx.Dialog):
 			return self.cbx.SetFocus()
 
 		ui.message(_("Please wait..."))
-		current_hour, dst_starts, dst_ends = Shared().GetTimezone(country_acronym, region, city, self.to24Hours, full = True)
-		if not current_hour:
-			#probable non-codable city
-			current_hour, dst_starts, dst_ends = Shared().GetTimezone(country_acronym, region, region, self.to24Hours, full = True)
-
+		current_hour = Shared().GetTimezone(timezone_id, self.to24Hours)
 		lat = lon = ''
 		if latitude: lat = (math.ceil(float(latitude)*100)/100)
 		if longitude: lon = (math.ceil(float(longitude)*100)/100)
@@ -2881,7 +2873,7 @@ class EnterDataDialog(wx.Dialog):
 			ui.message(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"))
 			return self.cbx.SetFocus()
 
-		dst = city_details = ""
+		city_details = ""
 		if not value[-4:].startswith(','):
 			city_name = value[:-2] #usny = us
 			real_city_name = '%s, %s' % (city, country_acronym)
@@ -2889,17 +2881,6 @@ class EnterDataDialog(wx.Dialog):
 		city_details = self.FindForGeoName(real_city_name, city_name, latitude, longitude)
 		if not city_details: city_details = '%s, %s, %s, %s' % (city, region, country, country_acronym)
 		city_details += ', %s' % timezone_id
-		if dst_starts:
-			#if there is daylight saving time
-			dst = "%s:" % _("Daylight saving time")
-			action_dic = {"ahead": _("ahead"), "back": _("back")}
-			date, time, action, hours = Shared().Get_dst(self.to24Hours, dst_starts)
-			dst +="\r\n%s %s %s %s, %s %s %s %s." % (
-			_("Starts on"), date, _("at"), time, _("set your clock"), hours, _("hour"), action_dic[action])
-			date, time, action, hours = Shared().Get_dst(self.to24Hours, dst_ends)
-			dst += "\r\n%s %s %s %s, %s %s %s %s." % (
-			_("Ends on"), date, _("at"), time, _("set your clock"), hours, _("hour"), action_dic[action])
-
 		Shared().Play_sound("details", 1)
 		title = "%s %s" % (_("Details of"), value)
 		ui.message(title)
@@ -2909,7 +2890,6 @@ class EnterDataDialog(wx.Dialog):
 		_("Degrees latitude"), lat or _nr,
 		_("Degrees longitude"), lon or _nr,
 		_("Elevation above sea level"), elevation, _("meters"))
-		message += "\r\n%s" % dst or ""
 		ui.message(message) 
 		self.cbx.SetFocus()
 		if self.toClip:
@@ -3942,18 +3922,18 @@ class Shared:
 
 	def To24h(self, hour, viceversa = None):
 		"""Convert from 12 to 24 hours and viceversa"""
-		if 'datetime.datetime' in str(type(hour)):
+		if 'datetime' in str(type(hour)):
 			#datetime format get from lastbuilddate returned in 24 hour format
-			hour = '%s:%s:%s' % (hour.hour, hour.minute, hour.second)
+			hour = '%s:%s' % (hour.hour, hour.minute)
 		else:
 			m = hour[-2:] #pm or am
-			hour = str(hour[:-3]) #hour and minute
+			hour = hour[:-3] #hour and minute
 
 		if viceversa:
-			#only for lastbuilddate
-			t = datetime.strptime(hour, '%H:%M:%S')
-			t1 =t.strftime('%H:%M:%S') #get time in 24 hour format
-			t2 =t.strftime('%I:%M:%S') #get time in 12 hour format
+			#only for lastbuilddate and details
+			t = datetime.strptime(hour, '%H:%M')
+			t1 =t.strftime('%H:%M') #get time in 24 hour format
+			t2 =t.strftime('%I:%M') #get time in 12 hour format
 			h = int(t1[:t1.find(":")]) #get hour in 24 hour format
 			if h == 0: t1 = "AM"
 			elif h >= 12: t1 = "PM"
@@ -3975,52 +3955,11 @@ class Shared:
 		return t
 
 
-	def GetTimezone(self, country_acronym, region, city,to24Hours, full = None):
-		"""reads city local time, daylight saving time start and end"""
-		if country_acronym == "US":  country_acronym = '%s-%s' % (country_acronym, region) #combines with a hyphen cauntry and region
-		data = self.GetUrlData("https://www.worldtimeserver.com/current_time_in_%s.aspx?city=%s" % (country_acronym, city.replace(" ", "-").title()))
-		if not data or data is "no connect": return [""] * 3
-		if _pyVersion >= 3: data = data.decode()
-		p = re.compile('<!-- Server Time:   \d{1,2}:\d{1,2}:\d{1,2} [AP]M -->') #12 hours format
-		p1 = re.compile('<!-- Server Time with seconds:   \d{2}:\d{2}:\d{2} -->') #24 hours format
-		#Daylight saving time
-		s = re.compile('Starts On [A-Z][a-z]+ \d{1,2}, \d{4} at \d{1,2}:\d{1,2} [AP]M <br /> Set your clock ahead \d{1} hour.')
-		e = re.compile('Ends On [A-Z][a-z]+ \d{1,2}, \d{4} at \d{1,2}:\d{1,2} [AP]M <br /> Set your clock back \d{1} hour.')
-
-		def GetHour(pattern):
-			try:
-				m = re.search(pattern, data).group()
-			except AttributeError: m = ""
-			return m
-
-		#Daylight saving time
-		dst_starts = dst_ends = ""
-		if "Starts" in data:
-			dst_starts = GetHour(s)
-			dst_ends = GetHour(e)
-		if not to24Hours:
-			m =GetHour(p)
-			if m != "":
-				if full:
-					m = m[20:-4]
-					return (Shared().Add_zero(m[:5].rstrip(":")+m[-3:], False), #hour and minutes as string
-					dst_starts, dst_ends #Daylight saving times
-					)
-
-				return int(m[20:][:2].rstrip(":")), "", "" #hour value as int
-
-			return "", "", [""] * 3
-		else:
-			m =GetHour(p1)
-			if m != "":
-				if full:
-					return (m[33:-7][:5].rstrip(":"), #hour and minutes as string
-					dst_starts, dst_ends #Daylight saving times
-					)
-
-				return int(m[33:][:2].rstrip(":")), "", "" #hour value as int
-
-			return "", "", [""] * 3
+	def GetTimezone(self, timezone_id,to24Hours): 
+		"""reads city local time"""
+		hour = str(datetime.now(dateutil.tz.gettz(timezone_id))).split()[-1][:5]
+		if not to24Hours: hour = Shared().To24h(hour, viceversa=True)
+		return hour
 
 
 	def Month2Num(self, text):

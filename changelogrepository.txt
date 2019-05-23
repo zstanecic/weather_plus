@@ -1,3 +1,35 @@
+23/05/2019
+Weather__Plus 6.4 update
+Adriano said:
+You may not have noticed, but for some days the local time in the cities is no longer working ...
+Changes in add-on:
+readme.md (en)
+Changed version number (en):
+* Version: 6.4.
+Removed line (en):
+* [https://www.timeanddate.com/](https://www.timeanddate.com/)
+Added lines (en):
+# Version 6.4 #
+* Removed daily saving time function in details;
+	* The service used by this function has changed, so it has been removed.
+* Improved audio effects reproduction;
+	* Now they update regularly if the weather conditions change.
+
+Note by Adriano:
+All the remaining doc locations must be updated as described above.
+Some strings have been removed from the code(daylight savings time, etc), therefore all nvda.po files must be updated.
+
+I also forgot to advise that in Weather_plus I added the "dateutil" folder to remedy the service I had to remove
+For reasons of space the library contains only what is needed to calculate the timezone, otherwise it alone weighed more than 600kb.
+
+# Changes #2 in the repository by Rémy Ruiz #
+Changed in buildVars.py file version number:
+6.3 to 6.4
+
+I just replaced the files sent by Adriano with his modifications, and I added the folder mentioned above.
+
+Added the information mentioned above in the readme.md file in English, and corrected some typographical errors.
+
 14.05.2019
 Modified sconstruct file by Abdel.
 The sconstruct file i have does not include the command to copy the readme.md file to the doc / en directory.
