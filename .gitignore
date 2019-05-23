@@ -1,5 +1,6 @@
 addon/doc/*.css
 addon/doc/en/
+__pycache__/
 *_docHandler.py
 *.html
 *.mo
@@ -31,3 +32,13 @@ platform.pyc
 platform.pyo
 pybass.pyc
 pybass.pyo
+_common.pyc
+_common.pyo
+_factories.pyc
+_factories.pyo
+tz.pyc
+tz.pyo
+win.pyc
+win.pyo
+rebuild.pyc
+rebuild.pyo
