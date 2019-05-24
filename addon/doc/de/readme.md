@@ -7,17 +7,16 @@
 # Über WEATHER PLUS: #
 
 * Dieses Plugin fügt die Anzeige der aktuellen Wetterbedingungen und
-  Vorhersagen für 24 Stunden und bis zu 9 zusätzlichen Tagen zu NVDA hinzu
+  Vorhersagen für 24 Stunden und bis zu 9 zusätzlichen Tagen zu NVDA hinzu.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Freigegeben unter der GNU GPL (General Public License) v2
-* Version: 6.3.
+* Version: 6.4.
 
 # Weather Plus funktioniert durch die Nutzung und Präsenz folgender Dienste: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
 * [http://woeid.rosselliot.co.nz/lookup/](http://woeid.rosselliot.co.nz/lookup/)
 * [http://www.geonames.org/](http://www.geonames.org/)
 * [http://veloroutes.org/elevation/](http://veloroutes.org/elevation/)
-* [https://www.timeanddate.com/](https://www.timeanddate.com/)
 * [http://www.nvda.it/](http://www.nvda.it/)
 
 # Nutzung: #
@@ -305,17 +304,23 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 
 # Änderungsverlauf: #
 
+# Version 6.4 #
+* Sommerzeit in der Funktion "Details" entfernt.
+	* Der von dieser Funktion verwendete Dienst wurde geändert und daher entfernt.
+* Verbesserte Wiedergabe von Audioeffekten;
+	* Jetzt werden sie regelmäßig aktualisiert, wenn sich die Wetterbedingungen ändern.
+
 # Version 6.3 #
-* Fixed the character encoding in the search results window.
-* Fixed the encoding also in the detail report.
+* Zeichenkodierung im Fenster der Suchergebnisse behoben.
+* In der Detailausgabe ebenfalls.
 
 # Version 6.2 #
-* Fixed bug in the "Add" function.
-* Fixed bug that did not assign the variable "_volume" when starting the
-  addon.
-* Added missing code from version 6.0;
-	* Now you can recover the saved cities from the version that uses the Apixu API;
-	* The "Test" and "Remove" buttons and non-compatible cities are available in the format: "Ferrara, iter 44.83,11.58 0" (city, geographic coordinates, area definition).
+* Fehler in der Funktion "hinzufügen" behoben.
+* Fehler behoben, bei dem die Variable "_volume" beim Start der Erweiterung
+  nicht zugewiesen wurde.
+* Fehlender Code aus Version 6.0 hinzugefügt;
+	* Jetzt können Sie die gespeicherten Städte von der Version wiederherstellen, die die Apixu-API verwendet.
+	* Die Schaltflächen "Test" und "Entfernen" sowie nicht kompatible Städte sind im folgenden Format verfügbar: "Ferrara, iter 44.83,11.58 0" (Stadt, geografische Koordinaten, Gebietsdefinition).
 
 # Version 6.1 #
 * 2 Fehler behoben.
@@ -845,8 +850,6 @@ Steuerung + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = rückwärts suchen.
 * provisorische Übersetzung in der Quelle.
 
 --------------------------------------------------------------------------------
-
-[[!tag dev stable]]
 
 [[!tag dev stable]]
 

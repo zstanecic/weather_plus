@@ -7,17 +7,16 @@
 # ABOUT WEATHER PLUS: #
 
 * This plugin adds local temperature and forecasts to 24 hours up to 9
-  additional days for NVDA
+  additional days for NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Released under the GNU GPL (General Public License) v2
-* Version: 6.3.
+* Version: 6.4.
 
-# Vejret Plus fungerer gennem brug og tilstedeværelse af følgende tjenesteydelser: #
+# Weather Plus works through the use and presence of the following services: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
 * [http://woeid.rosselliot.co.nz/lookup/](http://woeid.rosselliot.co.nz/lookup/)
 * [http://www.geonames.org/](http://www.geonames.org/)
 * [http://veloroutes.org/elevation/](http://veloroutes.org/elevation/)
-* [https://www.timeanddate.com/](https://www.timeanddate.com/)
 * [http://www.nvda.it/](http://www.nvda.it/)
 
 # Brug: #
@@ -291,6 +290,12 @@ du kan stadig gemme den.
 --------------------------------------------------------------------------------
 
 # What's new: #
+
+# Version 6.4 #
+* Daylight saving time removed in the "Details" function;
+	* The service used by this function has changed, so it has been removed.
+* Improved audio effects reproduction;
+	* Now they update regularly if the weather conditions change.
 
 # Version 6.3 #
 * Fixed the character encoding in the search results window.
@@ -763,8 +768,8 @@ kaldes rekursivt.
 * Tilføjet knap for at åbne en forskningswebside for at kontrollere de
   verdensomspændende Zip Codes.
 * Tilføjet muligheden for at importere / eksportere postkoderne fra venner.
-* Tilføjet mulighed for at kopiere hvirvelrapporten eller vejrudsigten til
-  udklipsholderen.
+* Added possibility to copy the weather report or the weather forecast to
+  the clipboard.
 * Tilføjet mulighed for at lytte til de meteorologiske lydeffekter, mulighed
   for mulighed for installation / opgradering af lydeffekter.
 * Tilføjet evne til hjælpeknapper til styring af postnummer.
@@ -826,8 +831,6 @@ kaldes rekursivt.
 * foreløbig oversættelse i kilden.
 
 --------------------------------------------------------------------------------
-
-[[!tag dev stable]]
 
 [[!tag dev stable]]
 

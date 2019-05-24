@@ -7,17 +7,16 @@
 # À propos de Weather Plus : #
 
 * Cette extension ajoute à NVDA la température locale, les prévisions météo
-  à 24 heures et les prévisions jusqu'à 9 jours supplémentaires
+  à 24 heures et les prévisions jusqu'à 9 jours supplémentaires.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Publié sous la GNU GPL (General Public License) v2
-* Version: 6.3.
+* Version: 6.4.
 
 # Weather Plus fonctionne grâce à l'utilisation et la présence des services suivants : #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
 * [http://woeid.rosselliot.co.nz/lookup/](http://woeid.rosselliot.co.nz/lookup/)
 * [http://www.geonames.org/](http://www.geonames.org/)
 * [http://veloroutes.org/elevation/](http://veloroutes.org/elevation/)
-* [https://www.timeanddate.com/](https://www.timeanddate.com/)
 * [http://www.nvda.it/](http://www.nvda.it/)
 
 # UTILISATION : #
@@ -63,7 +62,7 @@ Appuyez sur l'élément :
 
 # Définir et Gérer Vos Villes... #
 
-Afficher ou définir la ville en cours depuis une liste  
+Afficher ou définir la ville en cours depuis une liste
 
 Le message suivant est affiché seulement la première fois !
 
@@ -71,11 +70,12 @@ Paramètres Prédéfinis
 
 Aucun
 
-F1: aide à la localisation, F2: dernière sélection TAB, F3: liste et zone
-d'édition, F4: contrôle de la durée des Prévisions Météo, F5: contrôles du
-volume.
+F1: aide à la localisation, F2: dernière sélection avec TAB, F3: liste et
+zone d'édition, F4: contrôle de la durée des Prévisions Météo, F5: contrôles
+du volume.
 
-Saisissez une ville ou choisissez-en une dans la liste, si disponible.
+Saisissez une ville, un weoID ou choisissez-en une dans la liste, si
+disponible.
 
 Remarque : La touche f5 est disponible si les effets sonores sont activés.
 
@@ -84,7 +84,8 @@ les boutons suivants :
 
 # Tester #
 
-Teste la validité de la saisie et cherche le nom de la ville.
+Test de la validité du woeID de ville saisi et recherche du nom de la ville
+assignée, ou viceversa.
 
 # Ajouter #
 
@@ -95,15 +96,14 @@ qu'elle a passé le test.
 
 # Détails #
 
-Affiche des informations sur la ville sélectionnée.
+Affiche les informations sur la ville en cours.
 
 Ce bouton est activé si vous sélectionnez une ville dans la liste, et
 qu'elle a passé le test.
 
 # Définir #
 
-Cela vous permet de définir la région, dans le but d'adapter les effets
-sonores.
+Vous permet de définir la région, afin d'adapter les effets sonores.
 
 Ce bouton est activé si les effets sonores sont installés et activés, et si
 vous sélectionnez une ville dans la liste.
@@ -134,7 +134,7 @@ dans votre liste.
 
 Vous permet d'intégrer dans votre liste de nouvelles villes importées d'une
 autre liste avec l'extension *.zipcodes ; vous pouvez choisir la ville que
-vous souhaitez importer, en activant la case à cocher associée
+vous souhaitez importer, en activant la case à cocher associée.
 
 # Exporter vos villes... #
 
@@ -182,14 +182,14 @@ touche F5 et les paramètres de volume deviennent disponibles.
 
 Une case à cocher supplémentaire sera également disponible :
 
-* N'utiliser que les effets sonores.
+* N'utiliser que des effets météo.
 
 Vous pouvez modifier le volume général ou modifier le dernier effet sonore
 entendu et filtrer les autres sons de votre environnement.
 
 case à cocher non cochée (par défaut)
 
-# N'utiliser que les effets sonores #
+# N'utiliser que des effets météo #
 
 est disponible si les effets sonores sont activés;
 
@@ -227,7 +227,7 @@ Indique la vitesse en kilomètres ou milles par heure.
 
 case à cocher cochée (par défaut)
 
-* Ajout de la vitesse du vent en mètres par seconde;
+* Ajouter la vitesse du vent en mètres par seconde;
 
 case à cocher cochée (par défaut)
 
@@ -247,13 +247,13 @@ Indique le taux d'humidité.
 
 Case à cocher cochée (par défaut)
 
-* Ajout de la valeur de visibilité;
+* Ajouter la valeur de visibilité;
 
 Indique en kilomètres ou milles la distance de visibilité.
 
 Case à cocher cochée (par défaut)
 
-* Ajout de la valeur de la pression atmosphérique;
+* Ajouter la valeur de la pression atmosphérique;
 
 Indique la valeur de la pression atmosphérique en millibars ou pouces de
 mercure.
@@ -263,7 +263,7 @@ atmosphériques en millimètres de mercure.
 
 Case à cocher cochée (par défaut)
 
-* Ajoute l'état de la pression barométrique;
+* Ajouter l'état de la pression barométrique;
 
 Case à cocher cochée (par défaut)
 
@@ -303,13 +303,19 @@ averti et vous pourrez quand-même sauvegarder la liste.
 
 # Quoi de neuf : #
 
+# Version 6.4 #
+* Heure d'été supprimée dans la fonction "Détails";
+	* Le service utilisé par cette fonction a changé, il a donc été supprimé.
+* Amélioration de la reproduction  des effets sonores;
+	* Maintenant, ils se mettent à jour régulièrement si les conditions météorologiques changent.
+
 # Version 6.3 #
 * Correction de l'encodage de caractères dans la fenêtre de résultats de
   recherche.
 * Correction de l'encodage également dans le rapport détaillé.
 
 # Version 6.2 #
-* Fixed bug in the "Add" function.
+* Correction d'un bug dans la fonction "Ajouter".
 * Correction d'un bogue qui n'assignait pas la variable "_volume" au
   démarrage de l'extension.
 * Ajout de code manquant de la version 6.0;
@@ -376,7 +382,7 @@ Il sera nécessaire de les mettre à jour depuis les paramètres de l'extension.
 
 # Version 4.7.6 #
 * Correction d'un bogue mineur dans la fonction GetCoords();
-2 valeurs n'étaient pas retournées par manque de connexion.
+	* 2 valeurs n'étaient pas retournées par manque de connexion.
 
 # Version 4.7.5 #
 * MenuItem.GetLabel() est déprécié et a été remplacé par
@@ -436,7 +442,7 @@ Il sera nécessaire de les mettre à jour depuis les paramètres de l'extension.
 	* Maintenant la fenêtre de paramètres renverra toujours la valeur par défaut.
 * Amélioration de la protection contre des ouvertures multiples de la fenêtre principale;
 	* Si l'une d'entre elles est déjà ouverte, en plus de l'alerte sonore, elle sera mise en avant-plan.
-* Amélioration des effets audio;
+* Amélioration des effets sonores;
 	* Ils sont maintenant basés sur l'heure locale de la ville en cours.
 
 `#`Changements dans la fonction du bouton détails dans la fenêtre de
@@ -471,8 +477,9 @@ paramètres :
 `#`Changements dans la fenêtre de paramètres Weather Plus :
 
 * Ajout de 8 nouvelles cases à cocher;
-	* Il est maintenant possible de personnaliser davantage le rapport : * direction du vent.  * vitesse du vent.  * * Direction du vent.
-* vitesse du vent.
+	* Il est maintenant possible de personnaliser davantage le rapport :
+* Direction du vent.
+* Vitesse du vent.
 * Température ressentie.
 * Taux d'humidité.
 * Visibilité.
@@ -637,18 +644,18 @@ called recursively.
 	* Cela vous permet d'entre ou modifier votre clé API.
 
 # Version 3.5 #
-* Ajout de la traduction en Croate (merci à Gordan Radić).
+* Ajout de la traduction en Croate (grâce à Gordan Radić).
 * Ajout d'un contrôle des woeIds et zip codes trouvés sur le réseau et qui ne sont plus valides;
 	* Il y a eu des rapports de codes ayant cessé de fonctionner d'un jour à l'autre, maintenant WP signale si l'un d'entre eux a été inséré depuis les fenêtres de recherche sur le net.
-	* Si cela arrive en utilisant la fonction "Rechercher votre ville...", veuillez me le signaler pour que je puisse mettre à jour Weather_buffer et les retirer de la liste.
+	* Si cela arrive en utilisant la fonction "Trouver votre ville...", veuillez me le signaler pour que je puisse mettre à jour Weather_buffer et les retirer de la liste.
 * Correction d'un bogue dans la fonction de recherche, précédent et suivant n'étaient pas encodées en mbcs et ne pouvaient pas reconnaître les caractères accentués.
 * Mise à jour de la fenêtre pour définir un zip code temporaire;
-	* Ajout de la fonction "Rechercher" comme dans les autres fenêtres de Weather Plus:
-	* Contrôle+F3 = Rechercher..., F3 = Suivant, Maj+F3 = Pt"v"frny.
+	* Ajout de la fonction "Trouver" comme dans les autres fenêtres de Weather Plus:
+	* Contrôle+F3 = Trouver..., F3 = Trouver  suivant, Maj+F3 = Trouver  précédent.
 
 # Version 3.4 #
-* Ajout de la traduction en Galicien (merci à Iván Novegil).
-* Ajout de la traduction en Portugais (merci à Ângelo Miguel Abrantes).
+* Ajout de la traduction en Galicien (grâce à Iván Novegil).
+* Ajout de la traduction en Portugais (grâce à Ângelo Miguel Abrantes).
 * Ajout de la traduction en Allemand (incomplète)
 
 # Version 3.3 #
@@ -657,194 +664,198 @@ called recursively.
 	* Cela permet d'utiliser les signes diacritiques dans les noms de villes.
 
 # Version 3.2 #
-* Updated the reading of the weather forecast, current weather report and reading of the date of the current weather report;
-	* Yahoo weather forecast, from a bit of time and in random amounts, allows it to pass a historic from -10 to -5 days of weather forecast to be inserted between the updated data that we want to read;
-	* It was added a filter that allows you to read only the last weather data updated, and a discreet beep alerts when it intervenes;
-	* This beep, if you want, can be disabled by using a check box by Weather Plus settings.
-	* Obviously, the filtering of data sometimes involves a short delay in reply, but is still acceptable.
-* Forecasts of the time extended to 10 days.
+* Mise à jour de la lecture des prévisions météo, bulletin météo en cours et lecture de la date du bulletin météo en cours;
+	* Yahoo weather forecast, ddepuis un peu de temps et en quantités aléatoires, permet de passer d'un historique de -10 à -5 jours pour les prévisions météo qui doivent être insérés entre les données mises à jour que nous voulons lire;
+	* Il a été ajouté un filtre qui permet de lire uniquement la dernière mise à jour des données météorologiques, et un discret bip des alertes lorsque ceci intervient;
+	* Ce bip, Si vous le souhaitez, peut être désactivée à l'aide d'une case à cocher dans les paramètres de Weather Plus.
+	* Évidemment, le filtrage des données parfois implique un léger retard dans la réponse, mais ceci est toujours acceptable.
+* Prévisions météo étendue jusq'à 10 jours.
 
 # Version 3.1 #
 * Ajout de la traduction en Serbe (grâce à l'aimable coopération de Gašić
   Dejan `-` Gashich Deyan).
-* Fixed command insert+alt+w;
-	* It did not check the validity of the zipcode in use and did not check if the connection was active as the other commands do.
-* Updated the playback function of sound effects;
-	* Mp3 are now used, with a considerable saving on the download time and disk space, thanks to the reduced size of compressed files.
-* Added 55 new sound effects;
-	* It will be necessary to update them from the settings of the plugin.
+* Correction de la commande insert+alt+w;
+	* Ni la validité du code postal en cours d'utilisation ni la validité de la connexion n'étaient vérifiées comme le font les autres commandes.
+* Mise à jour de la fonction de lecture des effets audio;
+	* Maintenant les MP3 sont utilisés, avec une grande économie sur l'espace de disque et de temps de téléchargement, grâce à la taille réduite des fichiers compressés.
+* Ajout de 55 nouveaux effets audio;
+	* Il sera nécessaire de les mettre à jour depuis les paramètres de l'extension.
 
 `#`Changements dans la fenêtre de paramètres de Weather Plus :
 
-* Fixed display help on the buttons;
-	* Now disables / enables real-time through the appropriate check box.
-* Added 3 shortcut commands to navigate more quickly in the window:
-* F1 jumps into list and edit box of zip code.
-* F2 returns to the last selection reached with TAB.
-* F3 jumps into volume controls (if the sound effects are installed and activated).
-* Added shortcut commands for all check boxes and buttons;
-	* Omitted the two radio buttons as they are present in succession and the first is reachable with the command control+shift+w.
-* Changed, the button "define" is now disabled if the sound effects are not installed and activated.
-* Added volume controls;
-	* You can adjust the overall volume and the last heard sound effect;
-	* This option is enabled if the sound effects are installed and activated.
-* Added ability to set the system time in 12-hour format (12:30 AM `-` 12:30 PM) , or the 24-hour system (12:30 `-` 00:30).
+* Correction de l'affichage de l'aide sur les boutons;
+	* Maintenant l'extension désactive / active en temps réel via la case à cocher correspondante.
+* Ajout de 3 raccourcis claviers pour naviguer plus rapidement dans la fenêtre:
+* F1 saute dans la liste et la zone d'édition du code postal.
+* F2 renvoie à la dernière sélection réalisé avec TAB.
+* F3 saute dans les contrôles du volume (si les effets sonores sont installés et activés).
+* Ajout d'un raccourcis clavier pour toutes les cases à cocher et les boutons;
+	* Omis des deux boutons radio car ils sont présents dans la succession et le premier est accessible avec la commande contrôle+maj+w.
+* Modifié: le bouton "Définir" est maintenant désactivée si les effets sonores ne sont pas installés et activés.
+* Ajout du Contrôles du volume;
+	* Vous pouvez régler le volume général et le dernier effet sonore entendue;
+	* Cette option est activée si les effets sonores sont installés et activés.
+* Ajout de la possibilité de définir l'heure du système au format 12 heures (12:30 AM - 12:30 PM) , ou le système 24 heures(12:30 - 00:30).
 
 # Version 3.0 #
 * Ajout de la traduction en Slovaque (grâce à l'aimable coopération de Vitek
   Jirasek).
-* Added translation in Portuguese-Brazilian and Portuguese-Portugal (thanks
-  to the kind cooperation of Adair Knaesel).
-* Added new strings to the list weather reports.
-* Added 171 new sound effects, now the total amount is 213.
-* Added command insert+alt+w in the gesture to announce last update of
-  current bulletin.
-* Added scriptCategory which shifts in the correct position the rapid keys
-  of Weather Plus in "Input gestures..."
+* Ajout de la traduction en Portugais-Brésilien et en Portugais-Portugal
+  (grâce à l'aimable coopération de Adair Knaesel).
+* Ajout de nouvelles chaînes à la liste bulletin météo.
+* Ajout de 171 nouveaux effets audio, il y en a désormais 213.
+* Ajout de la commande insert+alt+w dans le gest, annonce la date de la
+  dernière mise à jour du bulletin météo actuel.
+* Ajout d'un scriptCategory qui permet de configurer les raccourcis claviers
+  de Weather Plus dans les "Gestes de commandes" de NVDA.
 
 `#`Changements dans la fenêtre de paramètres de Weather Plus :
 
-* Added radio button to set how to indicate the temperature scale;
-	* The choice is between:
-* Celsius `-` Fahrenheit
-* C `-` F
-* No indication
-* Added button " Define";
-	* It permits to define the zone of one city between:
-* Hinterland
-* Maritime area
-* Desert zone
-* Arctic zone
-* Mountain zone
-	* The choice will consent to Weather Plus to use more appropriate sound effects for every single city;
-	* This is the reason for the boost of the number of new sound effects in this versione of the addon;
-	* Many of the new sound effects I got them from Tapin, whom I thank sincerely.
+* Ajout d'un bouton radio pour définir comment il faut indiquer l'échelle de température;
+	* Les différents choix sont:
+* Celsius - Fahrenheit
+* C - F
+* Aucune indication
+* Ajout du bouton "Définir";
+	* Il permet de définir la zone d'une ville entre:
+* Arrière-pays
+* Zone maritime
+* Zone de désert
+* Zone arctique
+* Zone de montagne
+	* Le choix permettra à Weather Plus d'utiliser des effets sonores plus appropriés pour chaque ville individuel;
+	* Voici la raison de l'augmentation du nombre de nouveaux effets sonores dans cette version de l'extension;
+	* Beaucoup de nouveaux effets sonores que j'ai obtenu de Tapin, que je remercie sincèrement.
 
 # Version 2.9 #
-* Added option when importing to select the contents of the imported file.
-* Four new sounds effects were added.
-* Adding translation into Russian (thanks to Alex Yeshanu).
-* Adding translation into Czech (thanks to Jirimu Holzingerovi).
+* Ajout d'une option lors de l'importation pour sélectionner le contenu du
+  fichier importé.
+* Quatre nouveaux effets de sons ont été ajoutés.
+* Ajout de la traduction russe (grâce à Alex Yeshanu).
+* Ajout de la traduction tchèque (grâce à Jirimu Holzingerovi).
 
 # Version 2.8 #
-* Fixed bug in "details", it used to open the window of the occurrences when
-  he could not find the city.
-* Fixed regexp to search for the altitude;
-	* It did not accept parameters of single digits.
-* Improved parser of the edit box;
-	* It should find more easily the city.
-* Connections now handled by urllib2, instead of urllib;
-	* This should allow the functioning of the addon even on a computer connected to the corporate network protected by proxy.
-* Added feature "Find";
-	* Control+F3 = Find..., F3 = Find next, Shift+F3 = Find previous.
+* Correction d'un bug dans "Détails", il ouvrait la fenêtre des occurrences
+  lorsqu'il ne pouvait pas trouver la ville.
+* Correction de regexp pour la recherche de l'altitude;
+	* Il n'acceptait pas les paramètres d'un seul chiffre.
+* Amélioration de l'analyseur de la zone d'édition;
+	* Il devrait retrouver plus facilement la ville.
+* Connexions maintenant gérées par urllib2, Au lieu de urllib;
+	* Cela devrait permettre le fonctionnement de l'extension même sur un ordinateur connecté au réseau d'entreprise protégé par un proxy.
+* Ajout de la fonction "Trouver";
+	* Contrôle+F3 = Trouver..., F3 = Trouver suivant, Maj+F3 = Trouver précédent.
 
 # Version 2.7 #
-* Fixed wrong name of a string "Motorcycle" in "Motorcycle00";
-	* He asked updated sound effects because they could not find the file.
-* Added ability to read about wind ;
-	* Direction, speed and temperature of the wind.
-* Added ability to read atmospherical informations;
-	* Humidity, visibility, pressure and state of the barometric pressure.
-* Added ability to read the Astronomic informations;
-	* Time of sunrise and sunset.
+* Correction d'un nom incorrect d'une chaîne "Motorcycle" en "Motorcycle00"
+	* Il a demandé la mise à jour des effets sonores parce qu'il ne pouvait pas trouver le fichier.
+* Ajout de la possibilité de lire à propos du vent ;
+	* Direction, vitesse et température du vent.
+* Ajout de la possibilité de lire les informations atmosphériques ;
+	* Humidité, la visibilité, la pression et l'état de la pression barométrique.
+* Ajout de la possibilité de lire les informations astronomiques ;
+	* Heure du lever et du coucher du soleil.
 
 `#`Changements dans la fenêtre de paramètres de Weather Plus :
 
-* Added 3 check boxes to manage their information listed above.
-* Added button " Details ";
-	* Provides some informations such as the real name of the city ( assigned by Yahoo Weather Forecast), the state / region and the nation to which it belongs;
-	* With geographic coordinates, and height above sea level.
-* Added recognition of WoeID (location codes, eg. Bologna it corresponds to 711080).
-* Now you can type the name of the city, in this case, if any, the occurrences will be listed and you will be able to choose.
+* Ajout de 3 cases à cocher pour gérer les informations énumérées ci-dessus.
+* Ajout du bouton "Détails" ;
+	* Fournit des informations telles que le vrai nom de la ville (assigné par YahooWeather Forecast), l'état / région et la nation à laquelle il appartien ;
+	* Avec les coordonnées géographiques et la hauteur au-dessus du niveau de la mer.
+* Ajout de la reconnaissance des WoeID (codes de localisation, par exemple. Bologna correspond à 711080).
+* Maintenant, vous pouvez taper le nom de la ville, dans ce cas, si le cas se présente, les occurrences seront répertoriés et vous serez en mesure de choisir.
 
 # Version 2.6 #
-* The functions of the buttons "Add" and "Remove" were optimized in the zip code's list management;
-	* Now the operation are a lot more fast!
-* The function of the button "Test" was optimized, now it exploits until 13 research keys;
-	* Now if it doesn't find the name of the city it is a real bad luck!
-* The function of the button "Find your city...", now finds more countries;
-	* It was added an automatic test that collects the functioning zip codes, and it further consents a rapid visualization thanks to the creation of a little buffer corresponding to the name of the specific country.
-* Three new sounds effects were added;
-	* It will be necessary to update them from the settings of the plugin.
+* Les fonctions des boutons "Ajouter" et "Supprimer" ont été optimisées dans la gestion de la liste des codes postaux;
+	* Maintenant les opérations sont beaucoup plus rapide !
+* La fonction du bouton "Tester" a été optimisé, maintenant jusqu'à 13 Mots clés sont utilisés;
+	* Maintenant, si il ne trouve pas le nom de la ville, c'est une véritable malchance !
+* La fonction du bouton "Trouver votre ville...", maintenant trouve davantage de pays;
+	* Un testeur automatique qui reprend les codes postaux qui fonctionnent, et permet un affichage rapide plus tard grâce à la création d'un petit tampon correspondant au nom du pays spécifique a été ajouté.
+* Trois nouveaux effets de sons ont été ajoutés;
+	* Il sera nécessaire de les mettre à jour depuis les paramètres de l'extension.
 
 # Version 2.5 #
-* Added command in the gesture to switch temporarily the temperature scale
-  from Celsius to Fahrenheit, the command is also effective in the settings
-  window.
-* Fixed bug, if the user did not press the "Add" or "Preset" buttons, it did
-  not allow to vocalize the name of the city since it was not included in
-  the list.
-* Added new strings to the list weather reports.
+* Ajout d'une commande dans le geste pour basculer temporairement l'échelle
+  de la température de Celsius en Fahrenheit, la commande est également
+  effective dans la fenêtre des paramètres.
+* Correction d'un bug, si l'utilisateur n'appuie pas sur les boutons
+  "Ajouter" ou "Prédéfini" il n'été pas permis de prononcer le nom de la
+  ville, puisqu'elle ne figurait pas dans la liste.
+* Ajout de nouvelles chaînes à la liste bulletin météo.
 
 `#`Changements dans la fenêtre de paramètres de Weather Plus :
 
-* Added button to open a research web page in order to check for the
-  world-wide Zip Codes.
-* Added the possibility to import / export the Zip Codes from friends.
-* Added possibility to copy the wheather report or the weather forecast to
-  the clipboard.
-* Added possibility to listen to the meteorological audio effects, the
-  option also allows the installation / upgrade of the audio effects.
-* Added ability help buttons on the management of Zip Code.
-* Change to the display mode of the window, the menus of nvda are
-  unrestrained when it is open.
+* Ajout d'un bouton pour ouvrir une page web de recherche afin de vérifier
+  dans le monde entier les Codes postaux.
+* Ajout de la possibilité d'importer / exporter les Codes Postaux des amis.
+* Ajout de la possibilité de copier le bulletin météo ou la prévisions météo
+  dans le presse-papiers.
+* Ajout de la possibilité d'écouter les effets sonores météorologiques,
+  l'option permet également l'installation / mise à jour des effets sonores.
+* Ajout d'un boutons d'aide sur la gestion du Code postal.
+* Changement du mode d'affichage de la fenêtre, les menus de nvda sont
+  débridé lorsqu'il est ouvert.
 
 # Version 2.4.4 #
 * Ajout de deux nouvelles chaînes à la liste bulletin météo.
-* Adding translation into Spanish and French (thanks to Pablo Vargas and
+* Ajout de traduction en espagnol et en français (grâce à Pablo Vargas et
   Rémy Ruiz).
 
 # Version 2.4.3 #
-* Adding up the weather forecast for the next 4 days.
-* Adding a string to the list weather report.
-* The list of temporary zipcode is now ordered to each new insertion.
+* Ajout de la prévisions météo pour les 4 prochains jours.
+* Ajout d'une chaîne à la liste bulletin météo.
+* La liste Code postal temporaire est maintenant réordonnée à chaque
+  nouvelle insertion.
 
 # Version 2.4 #
-* Fixed a bug that prevented to save and manage properly the city names
-  containing accented vowels.
+* Correction d'un bug qui empêchait d'enregistrer et gérer correctement les
+  noms de ville contenant des voyelles accentuées.
 
 # Version 2.3 #
-* Eliminated dialog box to set the scale of temperature measurement, has now
-  been added a new gui that allows you to set all in one window.
-* You will then also possible to test / add / delete / preset as the default
-  Zip Code collected as a list.
-* Modified the dialog box for entering typed a Zip Code, now in temporary
-  mode allows you to set a Zip Code previously added to the list in
-  Preferences from the menu.
-* Now the documentation can be read in English if the language setting is
-  not included in the documents.
+* Élimination de la boîte de dialogue pour définir l'échelle de mesure de la
+  température, une nouvelle interface graphique qui vous permet de définir
+  tous dans une seule fenêtre a été ajoutée.
+* Maintenant vous pouvez tester/ajouter/supprimer/prédéfinir comme la valeur
+  par défaut le Code Postal recueillies sous forme de liste.
+* Modification de la boîte de dialogue pour la saisie lorsque vous avez tapé
+  un Code Postal, maintenant en mode temporaire il vous permet de définir un
+  Code Postal précédemment ajoutés à la liste dans le menu À partir du menu
+  Préférences.
+* Maintenant la documentation peut être lu en anglais si le paramètre de
+  langue n'est pas inclus dans les documents.
 
 # Version 2.2 #
-* Fixed bug that did not allow you to open the documentation for the
-  definitive versions of NVDA.
+* Correction d'un bug qui ne permettait pas d'ouvrir la documentation pour
+  les versions définitives de NVDA.
 
 # Version 2.1 #
-* Fixed a bug that did not close properly the plugin, this prevented the
-  NVDAupdate the icon in the system tray.
+* Correction d'un bug qui n'a pas fermer correctement l'extension, cela a
+  empêché la mise à jour de l'icône dans la barre d'état système.
 
 # Version 2.0 #
-* Weather Plus Settings menu in Preferences submenu moved.
-* correct input on the fly is no longer saved, so it is temporary;
-	* To call the city set in the preferences, press INSERT + control + f3.
+* Le Menu Paramètres Weather Plus dans le sous-menu préférences a été
+  déplacé.
+* l'entrée correct n'est plus enregistrée à la volée, il est donc temporaire.
+	* Pour appeler la ville définie dans les préférences, appuyez sur INSERT + Ctrl + f3.
 
 # Version 1.9 #
-* added help entering functions.
-* added a new function for quick entry of Zip Code.
-* added read / write configuration weather.ini, now no longer need to edit
-  the source file.
-* Weather menu added in the System Tray.
-* added setting submenu Zip Code .
-* added sub-setting temperature scale (Fahrenheit or Celsius).
-* added menu Documentation.
-* Added Italian localization.
+* ajout de la fonction aide a la saisie.
+* ajout d'une nouvelle fonction pour une saisie rapide de Code Postal.
+* ajout de la lecture / écriture pour la configuration weather.ini,
+  maintenant, plus besoin d'éditer le fichier source.
+* Menu Weather ajouté dans la barre d'état système.
+* ajout du sous-menu Code Postal dans le menu paramètres.
+* ajout dans le sous-menu paramètres l'échelle de la température (Fahrenheit
+  ou Celsius).
+* ajout du menu Documentation.
+* ajout de la localisation Italienne.
 
-# Previous Version 1.1 #
-* updated NVDA-addon.
-* provisional translation inside the source.
+# Précédente version 1.1 #
+* mise à jour NVDA-addon.
+* traduction provisoire à l'intérieur de la source.
 
 --------------------------------------------------------------------------------
-
-[[!tag dev stable]]
 
 [[!tag dev stable]]
 
