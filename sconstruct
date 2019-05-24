@@ -55,7 +55,7 @@ def generateHelpFiles (source, target, env, for_signature):
 env = Environment(ENV=os.environ, tools=['gettexttool'])
 env.Append(**buildVars.addon_info)
 
-addonFile = env.File("${addon_name}-${addon_version}.nvda-addon")
+addonFile = env.File("${addon_name}${addon_version}.nvda-addon")
 
 def addonGenerator(target, source, env, for_signature):
 	action = env.Action(lambda target, source, env : createAddonBundleFromPath(source[0].abspath, target[0].abspath) and None,
