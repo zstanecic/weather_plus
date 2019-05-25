@@ -1,4 +1,22 @@
 23/05/2019
+# Changes #4 in the repository by Rémy Ruiz #
+Corrected in readme.md file by Adriano:
+* Removed daily saving time function in details;
+in:
+* Daylight saving time removed in the "Details" function;
+
+# Changes #3 in the repository by Rémy Ruiz #
+I removed in dateutil folder, the .pyo, if it recreates it by itself.
+Removed also the installTask.py because the author judges it useless.
+command to send the file to the stable branch of the repository:
+git status
+or
+git checkout stable
+git add .
+git commit -a -m "Added the dateutil folder"
+
+Thanks to Abdel.
+
 Weather__Plus 6.4 update
 Adriano said:
 You may not have noticed, but for some days the local time in the cities is no longer working ...
