@@ -9,7 +9,7 @@
 * This plugin adds local temperature and forecasts to 24 hours up to 9 additional days for NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Released under the GNU GPL (General Public License) v2
-* Version: 6.4.
+* Version: 6.5.
 
 # Weather Plus works through the use and presence of the following services: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -270,8 +270,12 @@ If you have modified the cities list, by pressing "Cancel", you will be remember
 
 # What's new: #
 
+# Version 6.5 #
+* Fixed bug in local time in "details";
+	* 12-hour time conversion gave a error.
+
 # Version 6.4 #
-* Removed daily saving time function in details;
+* Daylight saving time removed in the "Details" function;
 	* The service used by this function has changed, so it has been removed.
 * Improved audio effects reproduction;
 	* Now they update regularly if the weather conditions change.

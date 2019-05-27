@@ -8,7 +8,7 @@
 # Released under GPL 2 
 #This file is covered by the GNU General Public License. 
 #See the file COPYING for more details. 
-#Version 6.4 - python 3 compatible
+#Version 6.5 - python 3 compatible
 import os,sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
 import random, ui, gui, wx,wx.adv, re, calendar, math
@@ -37,7 +37,7 @@ del sys.path[-1]
 addonHandler.initTranslation()
 
 #global constants
-if _pyVersion == 2:
+if _pyVersion <= 2:
 	_addonDir = os.path.join(os.path.dirname(__file__), "..", "..").decode("mbcs")
 else:
 	_addonDir = os.path.join(os.path.dirname(__file__), "..", "..")
@@ -104,7 +104,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 
 	def terminate(self):
-		super(GlobalPlugin, self).terminate()
 		try:
 			if wx.version().split(".")[0] >= "4":
 				self.menu.Remove(self.mainItem)
@@ -139,7 +138,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def Removeupdate(self):
 		"""Delete the update file from the temporary folder"""
 		import tempfile
-		if _pyVersion == 2:
+		if _pyVersion <= 2:
 			temp = tempfile.gettempdir().decode("mbcs")
 		else: temp = tempfile.gettempdir()
 		files = [
@@ -156,7 +155,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.OpenedSettings = True; self.EnableMenu(False)
 		try:
 			#set the correct encoding in the title
-			if _pyVersion == 2:
+			if _pyVersion <= 2:
 				preset = self.defaultZipCode.decode("mbcs")
 			else:
 				preset = self.defaultZipCode
@@ -362,7 +361,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		def Find_index(cityList, city):
 			"""Try to find index from list"""
 			s = None
-			if _pyVersion == 2:
+			if _pyVersion <= 2:
 				try:
 					s = cityList.index(city.encode("mbcs"))
 				except (AttributeError, IndexError, ValueError): pass
@@ -440,7 +439,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		availableLangs = languageHandler.getAvailableLanguages()
 		langs = [i[-2].split('_')[-1] for i in availableLangs if i[-2].split('_')[-1].isupper()]
 		if '_' in lang and pre not in langs: lang = lang.split('_')[0]
-		if _pyVersion == 2:
+		if _pyVersion <= 2:
 			docFolder = os.path.dirname(__file__).decode("mbcs")
 		else:
 			docFolder = os.path.dirname(__file__)
@@ -515,7 +514,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 		test= '%s %s' % (self.city.capitalize(), self.zipCode.upper())
 		encoded_test = test
-		if _pyVersion == 2: encoded_test = test.encode("mbcs")
+		if _pyVersion <= 2: encoded_test = test.encode("mbcs")
 		if self.zipCodesList and encoded_test in self.zipCodesList: return test
 		else:
 			#not in list
@@ -1045,7 +1044,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					BASS_ChannelPlay(_handle, False)
 					BASS_ChannelSetAttribute(_handle, BASS_ATTRIB_VOL, _volume_dic[playVol]) #set volume (0 = mute, 1 = full)
 				except Exception as e:
-					Shared().SendToLog(e)
+					if _pyVersion >= 3: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
+					else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
 
 			else:
 				#sample not found, notify and disable audio check box
@@ -1192,7 +1192,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				#search in list
 				city = self.FindCity(self.zipCode)
 				if city:
-					if _pyVersion == 2:
+					if _pyVersion <= 2:
 						self.defaultZipCode = self.tempZipCode= city =city.decode("mbcs")
 					else:
 						self.defaultZipCode = self.tempZipCode= city
@@ -1699,7 +1699,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		try:
 			timezone_id = dom['location']['timezone_id']
 		except KeyError: return dom, ""
-		self.current_hour = Shared().GetTimezone(timezone_id, to24Hours = True)[:2]
+		self.current_hour = Shared().GetTimezone(timezone_id, to24Hours = True)
 		return dom, message
 
 
@@ -1725,14 +1725,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if not v: return ""
 		v = vm = float(v)
 		if convert:
-			v = v * 1.61 #Convert miles to kilometers
+			#Convert miles to kilometers
+			v = v * 1.61
 
 		if meters:
-			ms = 0.44704*vm #convert miles into meters per second
+			#convert miles into meters per second
+			ms = 0.44704*vm
 			ms = (math.ceil(ms*100)/100) #round to 2 decimals
 			if ms == 0.0: return ""
 			ms = self.IntClean(ms)
-
 			if self.toComma:
 				return ' (%s %s)' % (ms.replace('.', ','), _("meters per second"))
 			else: return ' (%s %s)' % (str(ms), _("meters per second"))
@@ -1749,11 +1750,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		pressure = float(pressure)
 		c = 33.863782
 		if mmHg: c = 25.4
-		pre = (round((c*pressure)*100)/100) #round to 2 decimals
+		pre = round((c*pressure)*100/100) #round to 2 decimals
 		pre = self.IntClean(pre)
-		if self.toComma:
-			return pre.replace('.', ',')
-		else: return pre
+		if self.toComma: pre = pre.replace('.', ',')
+		return pre
 
 
 	def Temperature_convert(self, temperature, scale):
@@ -1825,7 +1825,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					else:
 						zc = self.zipCodesList.pop(index)
 						decoded_zc = zc
-						if _pyVersion == 2: decoded_zc = zc.decode("mbcs")
+						if _pyVersion <= 2: decoded_zc = zc.decode("mbcs")
 						code = Shared().GetZipCode(zc)
 						if code in self.define_dic: del self.define_dic[code]
 						if decoded_zc == self.defaultZipCode:
@@ -2005,20 +2005,20 @@ class EnterDataDialog(wx.Dialog):
 			sizer.Add(wx.StaticLine(self), 0, wx.EXPAND|wx.LEFT|wx.RIGHT|wx.BOTTOM, 5)
 
 		hbox=wx.BoxSizer(wx.HORIZONTAL)
-		if _pyVersion == 2:
+		if _pyVersion <= 2:
 			cbx=wx.ComboBox(self, -1, style=wx.CB_DROPDOWN|wx.TE_RICH, choices = [i.decode("mbcs") for i in zipCodesList])
 		else:
 			cbx=wx.ComboBox(self, -1, style=wx.CB_DROPDOWN|wx.TE_RICH, choices = zipCodesList)
 
 		s = tempZipCode
 		if not s: s = defaultZipCode
-		if _pyVersion == 2:
+		if _pyVersion <= 2:
 			try:
 				s = s.encode("mbcs")
 			except (UnicodeDecodeError, UnicodeEncodeError): pass
 
 		if zipCodesList and s in zipCodesList:
-			if _pyVersion == 2:
+			if _pyVersion <= 2:
 				cbx.SetStringSelection(s.decode("mbcs"))
 			else:
 				cbx.SetStringSelection(s)
@@ -2431,7 +2431,8 @@ class EnterDataDialog(wx.Dialog):
 			BASS_ChannelPlay(_handle, True)
 			BASS_ChannelSetAttribute(_handle, BASS_ATTRIB_VOL, _volume_dic[volTest]) #set vol (0 = mute, 1 = full)
 		except Exception as e:
-			Shared().SendToLog(e)
+			if _pyVersion >= 3: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
+			else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
 
 		evt.Skip()
 
@@ -2475,7 +2476,7 @@ class EnterDataDialog(wx.Dialog):
 
 		else:
 			#value is in list
-			if _pyVersion == 2:zcs = self.zipCodesList[i].decode("mbcs")
+			if _pyVersion <= 2:zcs = self.zipCodesList[i].decode("mbcs")
 			else: zcs = self.zipCodesList[i]
 			spl = self.zipCodesList[i].split()
 			if len(spl[-1]) == 1:
@@ -2664,7 +2665,8 @@ class EnterDataDialog(wx.Dialog):
 					with zipfile.ZipFile(target, "r") as z:
 						z.extractall(unZip)
 				except Exception as e:
-					Shared().SendToLog(e)
+					if _pyVersion >= 3: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
+					else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
 					self.ErrorMessage(True)
 					self.cbt_toSample.SetValue(False) #disable audio check box
 					self.AudioControlsEnable(False)
@@ -2814,7 +2816,7 @@ class EnterDataDialog(wx.Dialog):
 		"""Displays information on the selected city"""
 		value = self.cbx.GetValue()
 		encoded_value = value
-		if _pyVersion == 2: encoded_value = value.encode("mbcs")
+		if _pyVersion <= 2: encoded_value = value.encode("mbcs")
 		code = Shared().GetZipCode(value)
 		if encoded_value in self.zipCodesList and not code.isdigit():
 			self.Yahoo_API_error(code, True)
@@ -3002,7 +3004,7 @@ class EnterDataDialog(wx.Dialog):
 
 			elif name == value2: value = value2
 			else: value = name
-			if _pyVersion == 2:
+			if _pyVersion <= 2:
 				try:
 					value = value.encode("mbcs")
 				except (UnicodeEncodeError, UnicodeDecodeError): pass
@@ -3027,7 +3029,7 @@ class EnterDataDialog(wx.Dialog):
 		"""Apply predefined city button event"""
 		value = self.cbx.GetValue()
 		encoded_value = value
-		if _pyVersion == 2: encoded_value = value.encode("mbcs")
+		if _pyVersion <= 2: encoded_value = value.encode("mbcs")
 		if encoded_value not in self.zipCodesList:
 			v = Shared().GetZipCode(value)
 
@@ -3043,7 +3045,7 @@ class EnterDataDialog(wx.Dialog):
 
 			elif name == value2: value = value2
 			else: value = name
-			if _pyVersion == 2:
+			if _pyVersion <= 2:
 				try:
 					value = value.encode("mbcs")
 				except (UnicodeEncodeError, UnicodeDecodeError): pass
@@ -3073,7 +3075,7 @@ class EnterDataDialog(wx.Dialog):
 		"""Remove the city from cities list button event"""
 		value = self.cbx.GetValue()
 		encoded_value = value
-		if _pyVersion == 2: encoded_value = value.encode("mbcs")
+		if _pyVersion <= 2: encoded_value = value.encode("mbcs")
 		if encoded_value in self.zipCodesList:
 			index = self.GetIndex(value, self.zipCodesList)
 			self.zipCodesList.remove(encoded_value)
@@ -3111,7 +3113,7 @@ class EnterDataDialog(wx.Dialog):
 		if dl.ShowModal() == wx.ID_OK:
 			new_name = '%s, %s' % (dl.GetValue().lstrip(' ').rstrip(' ').capitalize(), part_right)
 			encoded_new_name = new_name
-			if _pyVersion == 2: encoded_new_name = new_name.encode("mbcs")
+			if _pyVersion <= 2: encoded_new_name = new_name.encode("mbcs")
 			if encoded_new_name in self.zipCodesList:
 				if value != new_name: wx.MessageBox('%s %s' % (new_name, _("it can't be used because it already exists!")), '%s %s' % (_addonSummary, _("Notice!")), wx.ICON_EXCLAMATION)
 			else:
@@ -3147,7 +3149,7 @@ class EnterDataDialog(wx.Dialog):
 		"""Change title window"""
 
 		t = self.GetLabel()
-		if _pyVersion == 2:
+		if _pyVersion <= 2:
 			try:
 				s = s.decode("mbcs")
 			except (UnicodeEncodeError, UnicodeDecodeError): pass
@@ -3200,7 +3202,7 @@ class EnterDataDialog(wx.Dialog):
 		value = name[:-len(name.split()[-1])-1]
 		for zc in self.zipCodesList:
 			part = zc[:-len(zc.split()[-1])-1]
-			if _pyVersion == 2: part = part.decode("mbcs")
+			if _pyVersion <= 2: part = part.decode("mbcs")
 			if part == value:
 				double = True
 				break
@@ -3315,7 +3317,7 @@ checkbox_values = [],
 				i = zImport[c]
 				t, zc, n = Shared().ZipCodeInList(i, self.zipCodesList)
 				encoded_v = v; encoded_defaultZipCode = self.defaultZipCode
-				if _pyVersion == 2: encoded_v = v.encode("mbcs"); encoded_defaultZipCode = self.defaultZipCode.encode("mbcs")
+				if _pyVersion <= 2: encoded_v = v.encode("mbcs"); encoded_defaultZipCode = self.defaultZipCode.encode("mbcs")
 				if zc1 == zc and i == encoded_v and i == encoded_defaultZipCode:
 					#The WoeId found in the list it's set to default
 					found = True
@@ -3420,14 +3422,16 @@ checkbox_values = [],
 				shutil .copy(_zipCodes_path, destPath)
 				winsound.MessageBeep(winsound.MB_ICONASTERISK)
 			except Exception as e:
-				Shared().SendToLog(e)
+				if _pyVersion >= 3: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
+				else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
 				return Shared().WriteError(_addonSummary)
+
 			evt.GetEventObject().SetFocus()
 
 
 	def ComboSet(self, v, add = None):
 		"""Update choices List ComboBox"""
-		if _pyVersion == 2:
+		if _pyVersion <= 2:
 			try:
 				v = v.decode("mbcs")
 			except (UnicodeEncodeError, UnicodeDecodeError): pass
@@ -3444,12 +3448,7 @@ checkbox_values = [],
 
 
 class Shared:
-	"""Global functions"""
-	def SendToLog(self, e):
-		if _pyVersion == 2: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
-		else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
-
-
+	"""shared functions"""
 	def GetCoords(self, v):
 		"""Checks if the value contains the geographic coordinates"""
 		try:
@@ -3926,11 +3925,12 @@ class Shared:
 			#datetime format get from lastbuilddate returned in 24 hour format
 			hour = '%s:%s' % (hour.hour, hour.minute)
 		else:
-			m = hour[-2:] #pm or am
-			hour = hour[:-3] #hour and minute
+			if hour.split(' ')[-1] in ('am', 'pm'):
+				m = hour[-2:] #pm or am
+				hour = hour[:-3] #hour and minute without am|pm
 
 		if viceversa:
-			#only for lastbuilddate and details
+			#only for lastbuilddate
 			t = datetime.strptime(hour, '%H:%M')
 			t1 =t.strftime('%H:%M') #get time in 24 hour format
 			t2 =t.strftime('%I:%M') #get time in 12 hour format
@@ -3955,9 +3955,10 @@ class Shared:
 		return t
 
 
-	def GetTimezone(self, timezone_id,to24Hours): 
+	def GetTimezone(self, timezone_id,to24Hours):
 		"""reads city local time"""
-		hour = str(datetime.now(dateutil.tz.gettz(timezone_id))).split()[-1][:5]
+		hour = datetime.now(dateutil.tz.gettz(timezone_id)).time()
+		hour = hour.strftime('%H:%M')
 		if not to24Hours: hour = Shared().To24h(hour, viceversa=True)
 		return hour
 
@@ -4045,7 +4046,7 @@ class Shared:
 		if country and not country_acronym:
 			dl = HelpEntryDialog(gui.mainFrame,message ='%s' % (
 			_("It was not possible find the acronym of %s!") % country+'\n'+
-			_("This does not allow to get the city local time, the sound effects will not be consistent.")+'\n'+
+			_("This does not allow to get the city details.")+'\n'+
 			_("Please report this to the author so he can add this country in database.")+'\n'+
 			_("Send an email to %s") % _addonAuthor+'\n'+
 			_("With  object the line below, thanks.")),
@@ -4138,7 +4139,8 @@ class Shared:
 				Shared().WriteError(title)
 
 			dlg.Hide(); dlg.Destroy()
-			Shared().SendToLog(e)
+			if _pyVersion >= 3: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
+			else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
 			return "Error"
 
 
@@ -4287,7 +4289,7 @@ class Shared:
 		data = Shared().GetUrlData(address)
 		if not data: return None
 		if _pyVersion >= 3: data = data.decode()
-		elif _pyVersion == 2: data = data.decode("utf-8")
+		elif _pyVersion <= 2: data = data.decode("utf-8")
 		for m in data.split('\n'):
 			if "geonames" and "latitude" in m:
 				pos = latitude = longitude = acronym = country = region = ""
@@ -4356,7 +4358,7 @@ class Shared:
 		}
 		if t in sound_dic:
 			filename = '%s\\%s.wav' % (_sounds_path, sound_dic[t])
-			if _pyVersion == 2:
+			if _pyVersion <= 2:
 				winsound.PlaySound(filename.encode("mbcs"), s)
 			else:
 				winsound.PlaySound(filename, s)
@@ -4410,7 +4412,8 @@ class Shared:
 			elif "failed" in repr(e): data = "no connect"
 
 		if "e" in locals() and e:
-			Shared().SendToLog(e)
+			if _pyVersion >= 3: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
+			else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
 
 		return data
 
@@ -4420,14 +4423,14 @@ class Shared:
 		city2 = city
 		if "," in city: city2 = city[:city.rfind(",")] #remove the region and country
 		if not city2.isdigit(): city = city2 #else it's a postal code
-		if _pyVersion == 2: city = city.encode("mbcs")
+		if _pyVersion <= 2: city = city.encode("mbcs")
 		address ="http://woeid.rosselliot.co.nz/lookup/%s" % city
 		data = self.GetUrlData(address)
 		if data and _pyVersion >= 3: data = data.decode()
 		if not data: return ""
 		elif "noresult" in data: return "noresult"
 		elif data:
-			if _pyVersion == 2: data = data.decode("utf-8")
+			if _pyVersion <= 2: data = data.decode("utf-8")
 			import re
 			find_list = []
 			cities = []
@@ -4665,7 +4668,7 @@ class SelectDialog(wx.Dialog):
 			t = self.chb.GetStringSelection()
 			s = strings.index(t) + direction
 		except ValueError:
-			if _pyVersion == 2: s = strings.index(t.encode("mbcs")) +direction
+			if _pyVersion <= 2: s = strings.index(t.encode("mbcs")) +direction
 
 		return s
 
@@ -4680,7 +4683,7 @@ class SelectImportDialog(wx.Dialog):
 		size=size, style=style)
 
 		sizer = wx.BoxSizer(wx.VERTICAL)
-		if _pyVersion == 2: zip_list = [i.decode("mbcs") for i in zip_list]
+		if _pyVersion <= 2: zip_list = [i.decode("mbcs") for i in zip_list]
 		clb = wx.CheckListBox(self, -1, pos = wx.DefaultPosition, size = wx.DefaultSize, choices = zip_list, style = 0)
 		clb.Bind(wx.EVT_CHECKLISTBOX, self.Hit_Item)
 		clb.Bind(wx.EVT_LISTBOX, self.ListBoxEvent)
@@ -4838,6 +4841,7 @@ class MyDialog(wx.Dialog):
 				wx.MessageBox(message, title)
 
 			#Start update addon
+			Shared().FreeHandle()
 			try:
 				os.startfile(target)
 			except WindowsError: pass
