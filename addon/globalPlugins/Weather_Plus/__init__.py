@@ -472,6 +472,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		title = self.UpgradeAddonItem.GetItemLabelText().rstrip('.').replace("&", "")
 		#read the version from addon page
 		data = Shared().GetUrlData(_addonPage)
+		if _pyVersion >= 3: data = data.decode()
 		if not data or data == "no connect":
 			if evt:
 				Shared().Play_sound("warn", 1)
@@ -487,7 +488,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		#search for new version string
 		try:
 			newVersion = re.search(r'Version\: (\d\.\d( - \d{1,2}\.\d{1,2}\.\d{4})*)', data).group(1)
-		except: newVersion = ""
+		except AttributeError: newVersion = ""
 		#finally checks to see if a new version is available
 		if newVersion and (float(newVersion.split()[0]) > float(_addonVersion.split()[0])):
 			message = '%s %s %s %s\r\n%s: %s.\n%s' % (
@@ -657,7 +658,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		def SampleShuffle(sample_list):
 			#mix list contents
 			shuffled_list = []
-			while len(sample_list) > 0:
+			while len(sample_list) != 0:
 				i = random.choice(sample_list)
 				shuffled_list.append(i);
 				sample_list.remove(i)
@@ -1044,8 +1045,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					BASS_ChannelPlay(_handle, False)
 					BASS_ChannelSetAttribute(_handle, BASS_ATTRIB_VOL, _volume_dic[playVol]) #set volume (0 = mute, 1 = full)
 				except Exception as e:
-					if _pyVersion >= 3: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
-					else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
+					e = str(e)
+					if _pyVersion <= 2: e = e.decode("mbcs")
+					log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))
 
 			else:
 				#sample not found, notify and disable audio check box
@@ -2431,8 +2433,9 @@ class EnterDataDialog(wx.Dialog):
 			BASS_ChannelPlay(_handle, True)
 			BASS_ChannelSetAttribute(_handle, BASS_ATTRIB_VOL, _volume_dic[volTest]) #set vol (0 = mute, 1 = full)
 		except Exception as e:
-			if _pyVersion >= 3: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
-			else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
+			e = str(e)
+			if _pyVersion <= 2: e = e.decode("mbcs")
+			log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))
 
 		evt.Skip()
 
@@ -2645,7 +2648,9 @@ class EnterDataDialog(wx.Dialog):
 
 			source = "/".join((_addonBaseUrl, 'weather_samples2.zip?download=1'))
 			import tempfile
-			target = "/".join((tempfile.gettempdir().decode("mbcs"), 'Weather_samples.zip'))
+			if _pyVersion >= 3:
+				target = "/".join((tempfile.gettempdir(), 'Weather_samples.zip'))
+			else: target = "/".join((tempfile.gettempdir().decode("mbcs"), 'Weather_samples.zip'))
 			title = _("Update in progress")
 			if not reload: title = _("Installation in progress")
 			message = _("Please wait...")
@@ -2665,8 +2670,9 @@ class EnterDataDialog(wx.Dialog):
 					with zipfile.ZipFile(target, "r") as z:
 						z.extractall(unZip)
 				except Exception as e:
-					if _pyVersion >= 3: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
-					else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
+					e = str(e)
+					if _pyVersion <= 2: e = e.decode("mbcs")
+					log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))
 					self.ErrorMessage(True)
 					self.cbt_toSample.SetValue(False) #disable audio check box
 					self.AudioControlsEnable(False)
@@ -3422,8 +3428,9 @@ checkbox_values = [],
 				shutil .copy(_zipCodes_path, destPath)
 				winsound.MessageBeep(winsound.MB_ICONASTERISK)
 			except Exception as e:
-				if _pyVersion >= 3: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
-				else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
+				e = str(e)
+				if _pyVersion <= 2: e = e.decode("mbcs")
+				log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))
 				return Shared().WriteError(_addonSummary)
 
 			evt.GetEventObject().SetFocus()
@@ -3893,22 +3900,19 @@ class Shared:
 
 	def GetAddonBaseUrl(self, data = None):
 		"""search addon base url from addon page"""
-
 		if not data:
 			data = self.GetUrlData(_addonPage)
 			if not data or data == "no connect": return ""
 
 		try:
 			abl = re.search('<a href="(http([s]*)://www\..+/[Ww]eather.+\d+(\.\d*)\.nvda-addon)"', data).group(1)
-			abm = abl.upper()
-			abl = abl[:abm.find('/WEATHER')]
-		except: return ""
-		return abl
+		except AttributeError: return ""
+		abm = abl.upper()
+		return abl[:abm.find('/WEATHER')]
 
 
 	def Add_zero(self, hour, p = True):
 		""" add zero  to left of number with len 1"""
-
 		if p:
 			p = hour[-2:] #pm or am
 			hour = hour[:-3] # hour and minute
@@ -3986,7 +3990,6 @@ class Shared:
 
 	def TranslateCalendar(self, text):
 		"""Translates months or days"""
-
 		calendar_dic = {
 		"01": _("january"),
 		"02": _("february"),
@@ -4023,7 +4026,6 @@ class Shared:
 
 	def ParseEntry(self, value, dom = None):
 		"""parse type city nameor woeid"""
-
 		yql_query = ""
 		if value.isdigit(): yql_query = 'woeid=%s' % value
 		elif Shared().GetCoords(value):
@@ -4078,7 +4080,6 @@ class Shared:
 
 	def Download_file(self, url, target, title, message):
 		"""Download files using the progress bar"""
-
 		if "_addonBaseUrl" not in globals(): return "Error"
 		max = 100
 		dlg = wx.ProgressDialog(title,
@@ -4100,7 +4101,7 @@ class Shared:
 			if "Content-Length" in header:
 				size = int(header["Content-Length"])
 				kBytes = size/1024
-				downloadBytes = size/max
+				downloadBytes = int(size/max)
 				count = 0
 				while keepGoing:
 					count += 1
@@ -4135,12 +4136,13 @@ class Shared:
 				outFile.close()
 				fURL.close()
 			except: pass
-			if not "failed" in str(e) and not "Not Found" in str(e) and not "unknown url type" in str(e):
+			e = str(e)
+			if not "failed" in e and not "Not Found" in e and not "unknown url type" in e:
 				Shared().WriteError(title)
 
 			dlg.Hide(); dlg.Destroy()
-			if _pyVersion >= 3: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
-			else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
+			if _pyVersion <= 2: e = e.decode("mbcs")
+			log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))
 			return "Error"
 
 
@@ -4174,7 +4176,6 @@ class Shared:
 
 	def Check_content(self, z, title = "", verbose = True):
 		"""Check file contents weather.zipcodes"""
-
 		zImport = []
 		for i in z:
 			zc = i.split()[-1]
@@ -4264,8 +4265,7 @@ class Shared:
 
 
 	def TranslatePlaces(self, place):
-		"""It translates the Italian regions"""
-
+		"""translate the Italian regions"""
 		place = place.replace("Abruzzi", "Abruzzo")
 		place = place.replace("Basilicate", "Basilicata")
 		place = place.replace("Latium", "Lazio")
@@ -4395,7 +4395,7 @@ class Shared:
 
 	def GetUrlData(self, address):
 		"""Gets the contents of a web page"""
-		e, data = "", None
+		e = data = ""
 		try:
 			with closing(urlopen(address)) as response:
 				data = response.read()
@@ -4405,15 +4405,15 @@ class Shared:
 				data = "no connect"
 				gcontext = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
 				try:
-					e, data = "", None
 					with closing(urlopen(address, context=gcontext)) as response:
 						data = response.read()
 				except Exception as e: pass
-			elif "failed" in repr(e): data = "no connect"
 
-		if "e" in locals() and e:
-			if _pyVersion >= 3: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e)))
-			else: log.info('%s %s: %s' % (_addonSummary, _addonVersion, str(e).decode("mbcs")))
+			elif "failed" in repr(e): data = "no connect"
+			if e:
+				e = str(e)
+				if _pyVersion <= 2: e = e.decode("mbcs")
+				log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))
 
 		return data
 
@@ -4467,7 +4467,6 @@ class Shared:
 			#try to filter the old zipcode
 			if not cityName[-2].isalpha():
 				return "Error", defaultString
-
 		woeIDList = self.FindWoeID(cityName)
 		if woeIDList == "noresult": return woeIDList, defaultString
 		wl = len(woeIDList)

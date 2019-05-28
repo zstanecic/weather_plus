@@ -1,16 +1,20 @@
+28/05/2019
+Adriano updated the __init__.py module.
+He said:
+Code in attachment!
+I've only optimized few line,deeI haven't changed any string in the code, you don't have to worry
+To next Friday :)
+
 Weather__Plus 6.5 update
 Adriano sayd:
 I fixed the last bug (I hope) really be the last one.)
 I corrected a string in the code and I also corrected it in the locale/it, and updated in the 6.5 version.
 Added the following lines in the readme 'en' and 'it', and changed to 6.5.
-
 [it]
 * Versione: 6.5.
-
 # Versione 6.5 #
 * Corretto bug nell'ora locale in "dettagli";
     * La conversione del tempo in 12 ore dava un errore.
-
 [en]
 * Version: 6.5.
 
