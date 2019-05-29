@@ -3904,6 +3904,7 @@ class Shared:
 			data = self.GetUrlData(_addonPage)
 			if not data or data == "no connect": return ""
 
+		if _pyVersion >= 3: data = data.decode()
 		try:
 			abl = re.search('<a href="(http([s]*)://www\..+/[Ww]eather.+\d+(\.\d*)\.nvda-addon)"', data).group(1)
 		except AttributeError: return ""

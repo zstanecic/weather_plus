@@ -1,3 +1,9 @@
+29/05/2019
+Adriano made a little update on the __init__.py module.
+He said:
+I just fixed a little part about python 3.7 compatibility.
+Everything else is unchanged, the strings are like before.
+
 28/05/2019
 Adriano updated the __init__.py module.
 He said:
