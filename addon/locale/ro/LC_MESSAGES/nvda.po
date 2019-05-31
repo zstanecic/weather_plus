@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Weather_Plus 6.2\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2019-05-06 11:36+0200\n"
-"PO-Revision-Date: 2019-05-13 18:29+0200\n"
+"POT-Creation-Date: 2019-05-06 11:49+0200\n"
+"PO-Revision-Date: 2019-05-25 13:21+0200\n"
 "Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
-"Language-Team: Adriano Barbieri <adrianobarb@yahoo.it>\n"
-"Language: it\n"
+"Language-Team: Florian Ionașcu <florianionascu@hotmail.com>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,573 +20,573 @@ msgid "Fahrenheit"
 msgstr "Fahrenheit"
 
 msgid "Celsius"
-msgstr "Centigradi"
+msgstr "Celsius"
 
 msgid "Kelvin"
 msgstr "Kelvin"
 
 msgid "unknown"
-msgstr "Sconosciuto"
+msgstr "necunoscut"
 
 msgid "Weather Plus &Settings"
-msgstr "Impostazioni &Weather Plus"
+msgstr "Setări &Weather Plus"
 
 msgid "Show configuration items."
-msgstr "Mostra gli elementi di configurazione."
+msgstr "Afișează elementele de configurare."
 
 msgid "Set and &manage your cities..."
-msgstr "Impostazioni e &Gestione delle tue città..."
+msgstr "&Setează și administrează-ți orașele..."
 
 msgid "Displays or allows to set the current cities from a list"
-msgstr "Visualizza o consente di impostare una città da un elenco"
+msgstr "Afișează sau permite setarea orașelor curente dintr-o listă"
 
 msgid "Set a &temporary city..."
-msgstr "Imposta una città temporanea..."
+msgstr "&Setează un oraș temporar"
 
 msgid "Allows to set one temporary city from a list"
-msgstr "Consente di impostare temporaneamente una città da un elenco"
+msgstr "Permite setarea unui oraș temporar dintr-o listă."
 
 msgid "&Documentation"
-msgstr "&Documentazione"
+msgstr "&Documentație"
 
 msgid "Opens the help file for the current language"
-msgstr "Apre la documentazione per la lingua corrente"
+msgstr "Deschide fișierul de ajutor pentru limba curentă"
 
 msgid "&Check for Upgrade..."
-msgstr "&Controllo presenza aggiornamenti..."
+msgstr "Ca&ută actualizări..."
 
 msgid "Notify if there is an upgraded version available"
-msgstr "Notifica se è disponibile una versione aggiornata"
+msgstr "Anunță dacă există o versiune actualizată disponibilă"
 
 #. opens the Weather Plus settings window
 msgid "Settings"
-msgstr "Impostazioni"
+msgstr "Setări"
 
 msgid "Preset"
-msgstr "Preimpostato"
+msgstr "Presetat"
 
 msgid "None"
-msgstr "Nessuno"
+msgstr "Fără"
 
 msgid "Enter a City, woeId or choose one from the list, if available."
-msgstr ""
-"Immettere una città, woeID o sceglierne una dall'elenco, se disponibile."
+msgstr "Introdu un oraș, woeId, sau alege unul din listă dacă este disponibil."
 
 msgid "The woeID"
-msgstr "Il woeID"
+msgstr "WoeID-ul "
 
 msgid "assigned to"
-msgstr "assegnato a"
+msgstr "Alocat la"
 
 msgid "has not been preset."
-msgstr "non è stato preimpostato."
+msgstr "Nu a fost presetat."
 
 msgid "Will be used in temporary mode!"
-msgstr "sarà usato in modalità temporanea!"
+msgstr "Va fi utilizat temporar!"
 
 #. offers to save the list changed
 msgid "Notice!"
-msgstr "Avviso!"
+msgstr "Avertisment!"
 
 msgid "You have modified the list of your cities"
-msgstr "Hai modificato la lista delle tue città"
+msgstr "Ai modificat lista orașelor tale"
 
 msgid "Do you want to save it?"
-msgstr "Vuoi salvarla?"
+msgstr "Vrei s-o salvezi?"
 
 msgid "The cities on your list are not compatible with the Yahoo API!"
-msgstr "Le città nella tua lista non sono compatibili con l'API di Yahoo!"
+msgstr "Orașele din lista dvs. nu sunt compatibile cu API-ul Yahoo!"
 
 msgid ""
 "They have to be tested and validated, you can do it from the addon settings "
 "window."
 msgstr ""
-"Devono essere testate e convalidate, puoi farlo dalla finestra delle "
-"impostazioni dell'addon."
+"Ele trebuie să fie testate și validate, o puteți face din fereastra de "
+"setări a addonului."
 
 msgid "Setting up a temporary city"
-msgstr "Impostazione di una città temporanea"
+msgstr "Setarea unui oraș temporar"
 
 msgid "Cities List available:"
-msgstr "Elenco delle città disponibili:"
+msgstr "Lista orașelor disponibile:"
 
 msgid "Documentation not available for the current language!"
-msgstr "Documentazione non disponibile per la lingua corrente!"
+msgstr "Documentația nu este disponibilă pentru limba curentă!"
 
 msgid ""
 "Sorry, i can not receive data, verify that your internet connection is "
 "active, or try again later!"
 msgstr ""
-"Spiacente, non riesco a ricevere i dati, verificare che la connessione a "
-"Internet sia attiva, o riprovare più tardi!"
+"Îmi pare rău, nu pot primi data, verifică dacă conecsiunea ta la internet "
+"este activă, sau încearcă din nou mai târziu!"
 
 msgid "version"
-msgstr "versione"
+msgstr "versiune"
 
 msgid "is available."
-msgstr "è disponibile."
+msgstr "este disponibilă."
 
 msgid "Installed version"
-msgstr "Versione installata"
+msgstr "Versiunea instalată"
 
 msgid "Do you want to download and install it?"
-msgstr "Vuoi scaricarlo e installarlo?"
+msgstr "Vrei s-o descarci și s-o instalezi?"
 
 msgid "Sorry, at the time an update is not available."
-msgstr "Spiacente, ma al momento non è disponibile un aggiornamento."
+msgstr "Ne pare rău, nicio actualizare nu este disponibilă momentan."
 
 msgid "not found!"
-msgstr "non trovato!"
+msgstr "Negăsit!"
 
 msgid ""
 "You need to upgrade the sound effects by reactivating the appropriate option "
 "from the settings of"
 msgstr ""
-"È necessario aggiornare gli effetti sonori riattivando l'opzione appropriata "
-"dalle impostazioni di"
+"Este necesar să actualizați efectele de sunet activând opțiunea apropiată "
+"din setările lor"
 
 msgid "But if these are already updated, then you need to update"
-msgstr "Ma se questi sono già aggiornati, allora avete bisogno di aggiornare"
+msgstr "Dar dacă acestea sunt deja actualizate, atunci trebuie să actualizați"
 
 msgid "I can not load the settings!"
-msgstr "Non posso caricare le impostazioni!"
+msgstr "Nu pot încărca setările!"
 
 msgid "I can not save the settings!"
-msgstr "Non posso salvare le impostazioni!"
+msgstr "Nu pot salva setările!"
 
 msgid "invalid name"
-msgstr "nome non valido"
+msgstr "Nume invalid"
 
 msgid "miles"
-msgstr "miglia"
+msgstr "mile"
 
 #. takes the value in mmHg
 msgid "millimeters of mercury"
-msgstr "millimetri di mercurio"
+msgstr "milimetri coloană de mercur"
 
 msgid "inches of mercury"
-msgstr "pollici di mercurio"
+msgstr "inci de mercur"
 
 msgid "kilometers"
-msgstr "chilometri"
+msgstr "kilometri"
 
 msgid "millibars"
-msgstr "millibars"
+msgstr "Milibare"
 
 msgid "the weather report is currently"
-msgstr "il bollettino meteo è attualmente"
+msgstr "Buletinul meteo este actual"
 
 msgid "degrees"
-msgstr "gradi"
+msgstr "grade"
 
 #. adds wind information to the string
 msgid "The wind direction is from"
-msgstr "La direzione del vento è da"
+msgstr "Direcția vântului este dinspre"
 
 msgid "with speed of"
-msgstr "con velocità di"
+msgstr "cu viteza de"
 
 msgid "The wind speed is"
-msgstr "La velocità del vento è di"
+msgstr "Viteza vântului este de"
 
 msgid "The perceived temperature is"
-msgstr "La temperatura percepita è di"
+msgstr "Temperatura percepută este de"
 
 #. adds information on the atmosphere
 msgid "steady"
-msgstr "stabile"
+msgstr "stabilă"
 
 msgid "rising"
-msgstr "crescente"
+msgstr "în creștere"
 
 msgid "falling"
-msgstr "in caduta"
+msgstr "în scădere"
 
 msgid "The humidity is"
-msgstr "L'umidità è del"
+msgstr "Umiditatea este de"
 
 msgid "and the visibility is up to"
-msgstr "e la visibilità è fino a"
+msgstr "și vizibilitatea este până la"
 
 msgid "The visibility is up to"
-msgstr "La visibilità è fino a"
+msgstr "Vizibilitatea este până la"
 
 msgid "The pressure is"
-msgstr "La pressione è di"
+msgstr "Presiunea este de"
 
 msgid "and the state of the barometric pressure is"
-msgstr "e lo stato della pressione barometrica è"
+msgstr "și starea presiunii barometrice este "
 
 msgid "The state of the barometric pressure is"
-msgstr "Lo stato della pressione barometrica è"
+msgstr "Starea presiunii barometrice este de"
 
 msgid "The sun rises at"
-msgstr "Il sole sorge alle"
+msgstr "Soarele răsare la"
 
 msgid "and sets at"
-msgstr "e tramonta alle"
+msgstr "și apune la"
 
 msgid "the forecast for today is"
-msgstr "la previsione per oggi è"
+msgstr "Prognoza pentru astăzi este"
 
 msgid "with a maximum temperature of"
-msgstr "con una temperatura massima di"
+msgstr "cu o temperatură maximă de"
 
 msgid "and a minimum of"
-msgstr "e una minima di"
+msgstr "și o minimă de"
 
 msgid "not available"
-msgstr "non disponibile"
+msgstr "nedisponibil"
 
 #. this does not replace the name of the city
 msgid "In"
-msgstr "A"
+msgstr "În"
 
 msgid "Unnamed"
-msgstr "Senza nome"
+msgstr "Fără nume"
 
 msgid "Sorry, the woeID is not set!"
-msgstr "Spiacente, il woeID non e' impostato!"
+msgstr "Ne pare rău, woeID-ul nu este setat!"
 
 msgid "kilometers per hour"
-msgstr "chilometri all'ora"
+msgstr "kilometri pe oră"
 
 msgid "miles per hour"
-msgstr "miglia all'ora"
+msgstr "mile pe oră"
 
 #. weather condition
 msgid "in the morning"
-msgstr "al mattino"
+msgstr "dimineața"
 
 msgid "in the evening"
-msgstr "in serata"
+msgstr "seara"
 
 msgid " and "
-msgstr " e "
+msgstr " și "
 
 msgid " to "
-msgstr " verso "
+msgstr " la "
 
 msgid "in the vicinity"
-msgstr "in prossimità"
+msgstr "în vecinătatea"
 
 msgid "tornado"
-msgstr "tromba d'aria"
+msgstr "tornadă"
 
 msgid "tropical storm"
-msgstr "tempesta tropicale"
+msgstr "furtună tropicală"
 
 msgid "hurricane"
-msgstr "uragano"
+msgstr "uragan"
 
 msgid "severe thunderstorms"
-msgstr "forti temporali"
+msgstr "furtuni severe"
 
 msgid "mixed rain and snow"
-msgstr "misto di pioggia e neve"
+msgstr "burniță"
 
 msgid "mixed rain and hail"
-msgstr "misto di pioggia e grandine"
+msgstr "ploaie cu grindină"
 
 msgid "mixed rain and sleet"
-msgstr "misto di pioggia e nevischio"
+msgstr "lapoviță"
 
 msgid "mixed snow and sleet"
-msgstr "misto di neve e grandine"
+msgstr "lapoviță și ninsoare"
 
 msgid "snow flurries"
-msgstr "leggera nevicata"
+msgstr "rafale de zăpadă"
 
 msgid "smoke"
-msgstr "fumo nell'aria"
+msgstr "ceață"
 
 msgid "smoky"
-msgstr "fumo nell'aria"
+msgstr "cețos"
 
 msgid "precipitation"
-msgstr "precipitazione"
+msgstr "precipitație"
 
 msgid "sunny intervals"
-msgstr "intervalli di sole"
+msgstr "intervale însorite"
 
 msgid "sunny period"
-msgstr "periodi di sole"
+msgstr "perioadă însorită"
 
 msgid "light snow"
-msgstr "lievi nevicate"
+msgstr "ninsoare ușoară"
 
 msgid "scattered snow showers"
-msgstr "sporadiche nevicate"
+msgstr "ninsori răzlețe"
 
 msgid "snow showers"
-msgstr "nevicate"
+msgstr "averse de zăpadă"
 
 msgid "snow shower"
-msgstr "pioggia di neve"
+msgstr "aversă de zăpadă"
 
 msgid "snowstorm"
-msgstr "tempesta di neve"
+msgstr "furtună de zăpadă"
 
 msgid "snowdrift"
-msgstr "Cumuli di neve"
+msgstr "troian de zăpadă"
 
 msgid "drifting snow"
-msgstr "cumuli di neve"
+msgstr "înzăpezire"
 
 msgid "wintry Mix"
-msgstr "nevischio"
+msgstr "chiciură"
 
 msgid "ice to rain"
-msgstr "ghiaccio misto a pioggia"
+msgstr "ploaie înghețată"
 
 msgid "ice"
-msgstr "ghiaccio"
+msgstr "gheață"
 
 msgid "blizzard"
-msgstr "bufera di neve"
+msgstr "viscol"
 
 msgid "blowing snow"
-msgstr "burrasche di neve"
+msgstr "zăpadă viscolită"
 
 msgid "snow"
-msgstr "neve"
+msgstr "zăpadă"
 
 msgid "light rain with thunder"
-msgstr "lievi piogge temporalesche"
+msgstr "ploaie cu descărcări electrice"
 
 msgid "few showers"
-msgstr "piogge sparse"
+msgstr "averse scurte"
 
 msgid "heavy showers"
-msgstr "densi rovesci"
+msgstr "averse puternice"
 
 msgid "heavy thunderstorms"
-msgstr "pesanti temporali"
+msgstr "furtuni cu descărcări electrice"
 
 msgid "heavy thunderstorm"
-msgstr "pesante temporale"
+msgstr "furtună cu descărcări electrice"
 
 msgid "lightning"
-msgstr "rovesci temporaleschi"
+msgstr "fulger"
 
 msgid "isolated clouds"
-msgstr "nuvole isolate"
+msgstr "nori izolați"
 
 msgid "partly cloudy"
-msgstr "poco nuvoloso"
+msgstr "parțial noros"
 
 msgid "partly bright"
-msgstr "cielo in parte chiaro"
+msgstr "parțial senin"
 
 msgid "showers early"
-msgstr "piovviginoso"
+msgstr "averse timpurii"
 
 msgid "light rain"
-msgstr "deboli piogge"
+msgstr "ploaie ușoară"
 
 msgid "heavy rain"
-msgstr "forte pioggia"
+msgstr "ploaie torențială"
 
 msgid "isolated showers"
-msgstr "piogge isolate"
+msgstr "averse izolate"
 
 msgid "isolated thunderstorms"
-msgstr "isolati temporali"
+msgstr "furtuni cu descărcări electrice izolate"
 
 msgid "isolated thundershowers"
-msgstr "piogge isolate"
+msgstr "averse izolate cu tunete și fulgere"
 
 msgid "mostly cloudy"
-msgstr "prevalentemente coperto"
+msgstr "cer acoperit"
 
 msgid "mostly dry"
-msgstr "piuttosto secco"
+msgstr "aproape uscat"
 
 msgid "mostly clear"
-msgstr "schiarite"
+msgstr "aproape senin"
 
 msgid "clearing"
-msgstr "nuvole in dissipazione"
+msgstr "cer limpede"
 
 msgid "no rain"
-msgstr "niente pioggia"
+msgstr "fără ploaie"
 
 msgid "sleet"
-msgstr "grandinate"
+msgstr "lapoviță"
 
 msgid "blowing dust"
-msgstr "tempesta di polvere"
+msgstr "furtună de praf"
 
 msgid "widespread dust"
-msgstr "polvere molto diffusa"
+msgstr "praf pe suprafețe întinse"
 
 msgid "low drifting sand"
-msgstr "tempesta di sabbia bassa"
+msgstr "nisip aluvionar în cantități reduse"
 
 msgid "sandstorm"
-msgstr "tempesta di sabbia | tempesta di sabbia"
+msgstr "furtună de nisip"
 
 msgid "sand storm"
-msgstr "tempesta di sabbia | tempesta di sabbia"
+msgstr "furtună de nisip"
 
 msgid "dust"
-msgstr "tempesta di polvere"
+msgstr "praf"
 
 msgid "sand"
-msgstr "tempesta di sabbia"
+msgstr "nisipp"
 
 msgid "thundery showers"
-msgstr "rovesci temporaleschi"
+msgstr "averse cu descărcări electrice"
 
 msgid "thundershowers"
-msgstr "rovesci temporaleschi"
+msgstr "averse cu descărcări electrice"
 
 msgid "scattered thunderstorms"
-msgstr "temporali sparsi"
+msgstr "furtuni răzlețe cu descărcări electrice"
 
 msgid "scattered showers"
-msgstr "sporadici rovesci"
+msgstr "averse răzlețe"
 
 msgid "thunderstorms"
-msgstr "temporali"
+msgstr "furtuni cu descărcări electrice"
 
 msgid "thunderstorm"
-msgstr "temporali"
+msgstr "furtună cu descărcări electrice"
 
 msgid "storm"
-msgstr "tempesta"
+msgstr "furtună"
 
 msgid "hail"
-msgstr "grandine"
+msgstr "grindină"
 
 msgid "foggy"
-msgstr "nebbioso"
+msgstr "cețos"
 
 msgid "fog"
-msgstr "nebbia"
+msgstr "ceață"
 
 msgid "haze"
-msgstr "nebbia leggera"
+msgstr "pâclă"
 
 msgid "mist"
-msgstr "nebbioso"
+msgstr "ceață"
 
 msgid "clear"
-msgstr "chiaro"
+msgstr "senin"
 
 msgid "fair"
-msgstr "bel tempo"
+msgstr "timp frumos"
 
 msgid "fine"
-msgstr "bel tempo"
+msgstr "vreme bună"
 
 msgid "overcast"
-msgstr "coperto"
+msgstr "cer noros"
 
 msgid "light showers"
-msgstr "deboli pioggie"
+msgstr "averse ușoare"
 
 msgid "light drizzle"
-msgstr "debole pioviggine"
+msgstr "burniță ușoară"
 
 msgid "freezing rain"
-msgstr "pioggia congelata"
+msgstr "ploaie înghețată"
 
 msgid "frequent showers"
-msgstr "piogge frequenti"
+msgstr "aversă frecventă"
 
 msgid "rain shower"
-msgstr "pioggia sparsa"
+msgstr "aversă de ploaie"
 
 msgid "rain"
-msgstr "pioggia"
+msgstr "ploaie"
 
 msgid "freezing drizzle"
-msgstr "pioviggine congelata"
+msgstr "burniță înghețată"
 
 msgid "showers"
-msgstr "rovesci"
+msgstr "averse"
 
 msgid "drizzle"
-msgstr "pioviggine"
+msgstr "burniță"
 
 msgid "dry"
-msgstr "secco"
+msgstr "uscat"
 
 msgid "mild"
-msgstr "mite"
+msgstr "climă blândă"
 
 msgid "clouds"
-msgstr "nuvoloso"
+msgstr "nori"
 
 msgid "cloudy"
-msgstr "nuvoloso"
+msgstr "noros"
 
 msgid "mostly sunny"
-msgstr "piuttosto soleggiato"
+msgstr "parțial însorit"
 
 msgid "sunny"
-msgstr "soleggiato"
+msgstr "însorit"
 
 msgid "sun"
-msgstr "soleggiato"
+msgstr "soare"
 
 msgid "bright"
-msgstr "cielo sereno"
+msgstr "luminos"
 
 msgid "thunder"
-msgstr "tuoni"
+msgstr "descărcare electrică"
 
 msgid "shower"
-msgstr "temporale"
+msgstr "aversă"
 
 msgid "breezy"
-msgstr "ventoso"
+msgstr "răcoros"
 
 msgid "blustery"
-msgstr "ventoso"
+msgstr "vântos"
 
 msgid "windy"
-msgstr "ventoso"
+msgstr "vântos"
 
 msgid "wind"
-msgstr "ventoso"
+msgstr "vânt"
 
 msgid "flurries"
-msgstr "raffiche"
+msgstr "fulgi"
 
 msgid "late"
-msgstr "in serata"
+msgstr "târziu"
 
 msgid "early"
-msgstr "al mattino"
+msgstr "devreme"
 
 msgid "isolated"
-msgstr "isolati"
+msgstr "izolat"
 
 msgid "shallow fog"
-msgstr "nebbia superficiale"
+msgstr "ceață superficială"
 
 msgid "heavy"
-msgstr "forte"
+msgstr "greu"
 
 msgid "cold"
-msgstr "freddo"
+msgstr "frig"
 
 msgid "hot"
-msgstr "caldo"
+msgstr "cald"
 
 msgid "Sorry, it was not possible to load the most recent update!"
-msgstr "Spiacente, non è stato possibile caricare l'aggiornamento più recente!"
+msgstr ""
+"Ne pare rău, nu a fost posibilă încărcarea celei mai recente actualizări!"
 
 msgid "Please try again later."
-msgstr "Si prega di riprovare più tardi."
+msgstr "Te rugăm să încerci din nou mai târziu."
 
 msgid "meters per second"
-msgstr "metri al secondo"
+msgstr "metri pe secundă"
 
 msgid "Sorry, the woeID set is not valid or contains incomplete data!"
-msgstr "Spiacente, il woeID impostato non è valido o contiene dati incompleti!"
+msgstr "Ne pare rău, setul de foame nu este valid sau conține date incomplete!"
 
 msgid "north"
 msgstr "nord"
@@ -616,809 +616,787 @@ msgid "south"
 msgstr "sud"
 
 msgid "south southwest"
-msgstr "sud sudovest"
+msgstr "sud sudvest"
 
 msgid "southwest"
-msgstr "sudovest"
+msgstr "sudvest"
 
 msgid "west southwest"
-msgstr "ovest sudovest"
+msgstr "vest sudvest"
 
 msgid "west"
-msgstr "ovest"
+msgstr "vest"
 
 msgid "west northwest"
-msgstr "ovest nordovest"
+msgstr "vest nordvest"
 
 msgid "northwest"
-msgstr "nordovest"
+msgstr "nordvest"
 
 msgid "north northwest"
-msgstr "nord nordovest"
+msgstr "nord nordvest"
 
 msgid ""
 "Is not working properly, contains incomplete data or has been removed from "
 "the database of"
 msgstr ""
-"Non funziona correttamente, contiene dati incompleti o è stato rimosso dal "
-"database di"
+"Nu funcționează corespunzător, conține date incomplete sau a fost eliminat "
+"din baza de date"
 
 msgid "It could be a temporary problem and you may wait a while '..."
-msgstr "Potrebbe essere un problema temporaneo e si può aspettare un po'..."
+msgstr "Ar putea să fie o problemă temporară, iar tu poți aștepta un timp '..."
 
 msgid "Do you want to delete it from your list?"
-msgstr "Vuoi eliminarlo dalla tua lista?"
+msgstr "Vrei să-l elimini din listă?"
 
 msgid "Provides the current temperature and weather conditions."
-msgstr "Da' la temperatura e condizione meteo attuale."
+msgstr "Furnizează temperatura curentă și condițiile meteo."
 
 msgid ""
 "Provides the weather forecast and current temperature for 24 hours and the "
 "next 9 days."
 msgstr ""
-"Da la previsione meteo e temperatura per le attuali 24 ore e i successivi 9 "
-"giorni."
+"Furnizează prognoza meteo și temperatura curentă pentru 24 de ore și pentru "
+"următoarele 9 zile."
 
 msgid "Sorry, no list available!"
-msgstr "Spiacente, nessuna lista disponibile!"
+msgstr "Ne pare rău, nicio listă disponibilă!"
 
 msgid "Allows you to set a temporary city."
-msgstr "Consente di impostare una città temporanea."
+msgstr "Îți permite să setezi un oraș temporar."
 
 msgid "Scale of temperature measurement set into"
-msgstr "Scala di misura della temperatura impostata in"
+msgstr "Unitate de măsură a temperaturii setată în"
 
 msgid "Allows you to set a temporary scale of temperature mesurement."
-msgstr ""
-"Consente di impostare temporaneamente una scala di misura della temperatura."
+msgstr "Îți permite să setezi o unitate de măsură temporară a temperaturii."
 
 msgid "at"
-msgstr "alle"
+msgstr "la"
 
 msgid "Last update of the current weather report"
-msgstr "Ultimo aggiornamento del attuale bollettino meteo"
+msgstr "Ultima actualizare a buletinului meteo actual"
 
 msgid "Announces the date of the last update of the weather report."
-msgstr ""
-"Annuncia la data dell'ultimo aggiornamento del bollettino meteorologico."
+msgstr "Anunță data ultimei actualizări a buletinului meteo."
 
 msgid "Open the Weather Plus settings dialog."
-msgstr "Apre la finestra impostazioni di Weather Plus."
+msgstr "&Deschide dialogul de setări Weather Plus."
 
 msgid ""
 "f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
 "duration Weather Forecast, f5: volume controls."
 msgstr ""
-"f1: aiuto immissione, f2: ultima selezione con TAB, f3: elenco e casella di "
-"editazione, f4: controllo durata previsioni meteo, f5: controlli volume."
+"f1: ajutor, f2: ultima selecție cu Tab, f3: lista și caseta de editare, f4: "
+"controlează durata prognozei meteo, f5: setarea volumului."
 
 msgid ""
 "f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
 "duration Weather Forecast."
 msgstr ""
-"f1: aiuto immissione, f2: ultima selezione con TAB, f3: elenco e casella di "
-"editazione, f4: controllo durata previsioni meteo."
+"f1: ajutor, f2: ultima selecție cu Tab, f3: lista și caseta de editare, f4: "
+"controlează durata prognozei meteo."
 
 msgid "Test"
-msgstr "Testa"
+msgstr "Test"
 
 msgid "Details"
-msgstr "Dettagli"
+msgstr "Detalii"
 
 msgid "Define"
-msgstr "Definisci"
+msgstr "Definește"
 
 msgid "Add"
-msgstr "Aggiungi"
+msgstr "Adaugă"
 
 msgid "Remove"
-msgstr "Rimuovi"
+msgstr "Elimină"
 
 msgid "Rename"
-msgstr "Rinomina"
+msgstr "Redenumiți"
 
 msgid "&Import new cities..."
-msgstr "&Importa nuove città..."
+msgstr "&Importă orașe noi..."
 
 msgid "&Export your cities..."
-msgstr "&Esporta le tue città..."
+msgstr "&exportă-ți orașele..."
 
 msgid "Scale of temperature measurement:"
-msgstr "Scala di misura della temperatura:"
+msgstr "Unitatea de măsură a temperaturii:"
 
 msgid "Degrees shown as:"
-msgstr "Indica i gradi come:"
+msgstr "Indică gradele ca:"
 
 msgid "C - F - K"
 msgstr "C - F - K"
 
 msgid "Don't specify"
-msgstr "Non specificare"
+msgstr "Nu specifica"
 
 msgid "Weather Forecasts up to days:"
-msgstr "Previsioni del tempo fino a giorni:"
+msgstr "Prognozele meteo până la zile:"
 
 #. check boxes
 msgid ""
 "&Copy the weather report and weather forecast, including city details to "
 "clipboard"
 msgstr ""
-"&Copia il bollettino meteo e previsioni del tempo, compresi i dettagli della "
-"città negli appunti"
+"&Copiază buletinul meteo și prognoza vremii, incluzând detaliile orașului pe "
+"planșetă"
 
 msgid "Enable &audio effects (only for the current weather conditions)"
-msgstr "Abilita effetti &audio (solo per le attuali condizioni meteo)"
+msgstr "Activează efectele &audio (doar pentru condițiile meteo actuale)"
 
 msgid "Use only &weather effects"
-msgstr "&Usa solo effetti atmosferici"
+msgstr "Utilizați numai &efecte meteorologice"
 
 msgid "General audio volume"
-msgstr "Volume audio generale"
+msgstr "Volum audio general"
 
 msgid "Current audio volume"
-msgstr "Volume audio corrente"
+msgstr "Volum audio curent"
 
 #. check boxes
 msgid "Enable &help buttons in the settings window"
-msgstr "Abilita aiuto &pulsanti nella finestra delle impostazioni"
+msgstr "\vActivează butoanele de a&jutor în fereastra de setări"
 
 msgid "Read &wind informations"
-msgstr "Leggi le informazioni del &vento"
+msgstr "Citește informațiile &vântului"
 
 msgid "Add wind directi&on"
-msgstr "Aggiungi la &direzione del vento"
+msgstr "Adaugă &direcția vântului"
 
 msgid "Add wi&nd speed"
-msgstr "Aggiu&ngi la velocità del vento"
+msgstr "Adaugă viteza vâ&ntului"
 
 msgid "Add speed in &meters per second of the wind"
-msgstr "Aggiungi la velocità in &metri al secondo del vento"
+msgstr "Adaugă viteza în &metri pe secundă a vântului"
 
 msgid "Add perceived &temperature"
-msgstr "Aggiungi la &temperatura percepita"
+msgstr "Adaugă &temperatura percepută"
 
 msgid "&Read atmospherical informations"
-msgstr "&Leggi informazioni atmosferiche"
+msgstr "Citește informațiile atmosfe&rice"
 
 msgid "Add humidity va&lue"
-msgstr "Aggiungi valore dell'&umidità"
+msgstr "Adaugă va&loarea umidității"
 
 msgid "Add &visibility value"
-msgstr "A&ggiungi valore della visibilità"
+msgstr "Adau&gă valoarea vizibilității"
 
 msgid "Add atmospheric &pressure value"
-msgstr "Aggiungi valore della pressione atmos&ferica"
+msgstr "Adaugă valoarea &presiunii atmosferice"
 
 msgid "Indicates the atmospheric pressure in millimeters of mercur&y (mmHg)"
-msgstr "Indica la pressione atmosferica in millimetri di mercurio (mm&Hg)"
+msgstr "Indică presiunea atmosferică în milimetri coloană de mercur (mm&Hg)"
 
 msgid "Add status of &barometric pressure"
-msgstr "Aggiungi lo stato della pressione ba&rometrica"
+msgstr "Adaugă starea presiunii &barometrice"
 
 msgid "Read a&stronomical informations"
-msgstr "Leggi le informazioni a&stronomiche"
+msgstr "Citește informațiile a&stronomice"
 
 msgid "Enable reading of the hours in &24-hour format"
-msgstr "Abilita la lettura delle &ore in formato 24 ore"
+msgstr "Activează citirea orelor în &formatul de 24 de ore"
 
 msgid "Use the comma to separate decimals, example (4,&15)"
-msgstr "Usa una virgola per separare i decimali, per esempio, (4,&15)"
+msgstr "Utilizați o virgulă pentru a separa zecimale, exemplu (4,&15)"
 
 msgid "Check for &upgrade"
-msgstr "Controllo presen&za aggiornamenti"
+msgstr "Caută actuali&zări"
 
 msgid ""
 "Testing the validity of city woeID entry and find the name of city assigned, "
 "or viceversa."
 msgstr ""
-"Testa la validità del woeID immesso e trova il nome della città "
-"assegnatogli, o viceversa."
+"Testarea valabilității intrării în oraș și identificarea orașului, sau "
+"viceversa."
 
 msgid "Displays information on the current city."
-msgstr "Visualizza le informazioni sulla città corrente."
+msgstr "Afișează informații despre orașul curent."
 
 msgid "Allows you to define the area, in order to adapt the sound effects."
-msgstr "Permette di definire l'area, al fine di adeguare gli effetti sonori."
+msgstr "Îți permite să definești zona, ca să adapteze efectele de sunete."
 
 msgid "Add the current city into your list."
-msgstr "Aggiunge la città corrente al tuo elenco."
+msgstr "Adaugă orașul curent în lista ta."
 
 msgid ""
 "Presets the current city as the default, will be used every time you restart "
 "the plugin."
 msgstr ""
-"Predispone la città come predefinita, verrà utilizzata ogni volta che si "
-"riavvia il plugin."
+"Presetează orașul curent ca implicit, va fi utilizat de fiecare dată când "
+"reporniți suplimentul."
 
 msgid "Delete  the current city from your list."
-msgstr "Elimina la città corrente dall'elenco."
+msgstr "Șterge un oraș curent din lista ta."
 
 msgid "Rename the current city."
-msgstr "Permette di impostare una città temporanea da un elenco."
+msgstr "Redenumiți orașul curent."
 
 msgid ""
 "Permits to incorporate in your list new cities importing them from another "
 "list with the extension *.zipcodes; you can select the city you want to "
 "import, by turning on the check box associated."
 msgstr ""
-"Permette di incorporare nella tua lista nuove città importandole da un altro "
-"elenco con estensione * .zipcodes; puoi selezionare la città che vuoi "
-"importare, attivando la casella di controllo associata."
+"Permite includerea în lista dvs. a unor orașe noi care le importă dintr-o "
+"altă listă cu extensia * .zipcodes; puteți selecta orașul pe care doriți să-"
+"l importați, activând caseta de validare asociată."
 
 msgid "Permits to save your list of cities in a specified path."
-msgstr "Permette di salvare la lista delle città in un percorso specificato."
+msgstr "Permite salvarea listei de orașe într-o cale specificată."
 
 msgid "You can enter or search for a city"
-msgstr "È possibile immettere o ricercare una città"
+msgstr "Poți să introduci sau să cauți un oraș"
 
 msgid "By city woeID: 715399"
-msgstr "Da woeID della città: 715399"
+msgstr "Prin woeID-ul orașului: 715399"
 
 msgid "By only city name: Ferrara"
-msgstr "Dal solo nome della città: Ferrara"
+msgstr "Doar prin numele orașului: Ferrara"
 
 msgid "By state or region and city name: Emilia Romagna Ferrara"
-msgstr "Dalla regione o stato e città: Emilia Romagna Ferrara"
+msgstr ""
+"După numele statului sau al regiunii și al orașului: Emilia Romagna Ferrara"
 
 msgid "By city name and country: Ferrara,it"
-msgstr "Dal nome della città e del paese: Ferrara,it"
+msgstr "Prin numele orașului și al țării: Ferrara,it"
 
 msgid "By postal code: 44100,it"
-msgstr "Dal codice postale: 44100,it"
+msgstr "Prin codul poștal: 44100,it"
 
 msgid "By geographic coordinates: latitude, longitude"
-msgstr "Dalle coordinate geografiche: latitudine,longitudine)"
+msgstr "Prin coordonatele geografice: longitudine, latitudine"
 
 msgid "If the city is not found"
-msgstr "Se la città non viene trovata"
+msgstr "Dacă orașul nu este găsit"
 
 msgid "Try with or without the country of origin"
-msgstr "Provare con o senza il paese di origine"
+msgstr "Încearcă cu sau fără țara de origine"
 
 msgid "Try to merge the name with hyphens, or separate it with spaces"
-msgstr "Provare a unire il nome con i trattini o separarlo con spazi"
+msgstr "Încearcă să unești numele cu cratime, sau separă-l cu spații"
 
 msgid "Try deleting apostrophes"
-msgstr "Provare a eliminare gli apostrofi"
+msgstr "Încearcă să ștergi apostrofurile"
 
 msgid "Try changing the vowels accented with normal vowels"
-msgstr "Provare a cambiare le vocali accentate con vocali normali"
+msgstr "Încercați să schimbați vocalele accentuate cu vocalele normale"
 
 msgid "Try with a closest location"
-msgstr "Provare con una posizione più vicina"
+msgstr "Încearcă cu o locație învecinată"
 
 msgid "Help placing"
-msgstr "Aiuto immissione"
+msgstr "Ajutor"
 
 msgid "No sound effect in memory!"
-msgstr "Nessun effetto sonoro in memoria!"
+msgstr "Fără efecte de sunete în memorie!"
 
 msgid "I can't reproduce the sound."
-msgstr "Non posso a riprodurre il suono."
+msgstr "Nu pot să redau sunetul."
 
 msgid "not found! Press F1 for help on entering data."
-msgstr ""
-"non trovato! Premere il tasto F1 per la guida sull'immissione dei dati."
+msgstr "Negăsit! Apasă F1 pentru ajutor."
 
 msgid "Is not working properly or has been removed from the database of"
-msgstr "Non funziona correttamente o è stato rimosso dal database di"
+msgstr "Nu funcționează corect sau a fost eliminat din baza de date a"
 
 msgid "Is no longer valid!"
-msgstr "Non è più valido!"
+msgstr "Nu mai e valid!"
 
 msgid "This option requires the installation of some audio effects"
-msgstr "Questa opzione richiede l'installazione di alcuni effetti audio"
+msgstr "Această opțiune necesită instalarea unor efecte audio"
 
 msgid "Do you want to install them?"
-msgstr "Vuoi installarli?"
+msgstr "Vrei să le instalezi?"
 
 msgid "The audio effects are installed!"
-msgstr "Gli effetti audio sono installati!"
+msgstr "Efectele audio sunt instalate!"
 
 msgid "Would you like to update?"
-msgstr "Vuoi aggiornarli?"
+msgstr "Vreți să le actualizați?"
 
 msgid "Or do you want to uninstall them?"
-msgstr "Oppure vuoi disinstallarli?"
+msgstr "Sau vrei să le dezinstalezi?"
 
 msgid "Are you sure you want to uninstall the sound effects?"
-msgstr "Sei sicuro di voler disinstallare gli effetti sonori?"
+msgstr "Ești sigur că vrei să dezinstalezi efectele de sunet?"
 
 msgid "Update in progress"
-msgstr "Aggiornamento in corso"
+msgstr "Actualizare în curs"
 
 msgid "Installation in progress"
-msgstr "Installazione in corso"
+msgstr "Instalare în curs"
 
 msgid "Please wait..."
-msgstr "Attendere prego..."
+msgstr "Te rugăm să aștepți."
 
 #. Installation Complete
 msgid "The installation of audio effects has been completed successfully!"
-msgstr "L'installazione degli effetti audio è stata completata con successo!"
+msgstr "Instalarea efectelor audio a fost completată cu succes!"
 
 msgid "Adding folder:"
-msgstr "Aggiunta della cartella:"
+msgstr "Adăugare dosar:"
 
 msgid "The upgrade of audio effects has been completed successfully!"
-msgstr "L'aggiornamento degli effetti audio è stato completato con successo!"
+msgstr "Actualizarea efectelor audio a fost completată cu succes!"
 
 msgid "These sound effects are subject to change by the author."
-msgstr "Questi effetti sonori sono soggetti a modifiche da parte dell'autore."
+msgstr "Aceste efecte de sunet pot fi modificate de către autor."
 
 msgid "Disable and re-enable this option in order to update or uninstall them."
 msgstr ""
-"Disattivare e riattivare questa opzione per aggiornarli o disinstallarli."
+"Dezactivează sau reactivează această opțiune pentru a le actualiza sau "
+"dezinstala."
 
 msgid "Verify that your internet connection is active, or try again later."
 msgstr ""
-"Verificare che la connessione a internet sia attiva, o riprovare più tardi!"
+"Verifică dacă conexiunea la internet este activă, sau încearcă din nou mai "
+"târziu."
 
 msgid "File corrupted or not available!"
-msgstr "File danneggiato o non disponibile!"
+msgstr "Fișier corupt sau indisponibil!"
 
 msgid "Sorry, i could not complete the installation of the sound effects!"
-msgstr ""
-"Spiacente, non ho potuto completare l'installazione degli effetti sonori!"
+msgstr "Îmi pare rău, nu aș putea să completez instalarea efectelor de sunet!"
 
 msgid "Installation Error!"
-msgstr "Errore di installazione!"
+msgstr "Eroare la instalare!"
 
 msgid ""
 "The details of this city are not in the database and so I added them to the "
 "list. Try again!"
 msgstr ""
-"I dettagli di questa città non sono nel database e quindi li ho aggiunti "
-"alla lista. Riprova!"
+"Detaliile acestui oraș nu sunt în baza de date și am adăugat-o pe listă. "
+"Încearcă din nou!"
 
 msgid "Cannot identify your location, due to insufficient data."
-msgstr "Non posso individuare la località, a causa di dati insufficienti."
+msgstr "Nu-ți pot identifica locația datorită datelor insuficiente."
 
 msgid "Details of"
-msgstr "Dettagli di"
+msgstr "Detalii ale"
 
 msgid "Place"
-msgstr "Località"
+msgstr "Loc"
 
 msgid "Current local time"
-msgstr "Ora locale corrente"
+msgstr "Oră locală curentă"
 
 msgid "Degrees latitude"
-msgstr "Gradi di latitudine"
+msgstr "grade latitudine"
 
 msgid "Degrees longitude"
-msgstr "Gradi di longitudine"
+msgstr "grade longitudine"
 
 msgid "Elevation above sea level"
-msgstr "Altitudine sul livello del mare"
+msgstr "Altitudine deasupra nivelului mării"
 
 msgid "meters"
 msgstr "metri"
 
 msgid "Define the area for"
-msgstr "Definire l'area per"
+msgstr "Definește ținutul pentru"
 
 msgid "Hinterland"
-msgstr "Entroterra"
+msgstr "Hinterland"
 
 msgid "Maritime area"
-msgstr "Zona marittima"
+msgstr "Zonă maritimă"
 
 msgid "Desert zone"
-msgstr "Zona del deserto"
+msgstr "Zonă deșertică"
 
 msgid "Arctic zone"
-msgstr "Zona artica"
+msgstr "Zonă arctică"
 
 msgid "Mountain zone"
-msgstr "Zona montana"
+msgstr "Zonă montană"
 
 msgid "Enter new name."
-msgstr "Inserisci un nuovo nome."
+msgstr "Introduceți un nume nou."
 
 msgid "it can't be used because it already exists!"
-msgstr "non può essere usato perché esiste già!"
+msgstr "nu poate fi folosit deoarece există deja!"
 
 msgid "is correct"
-msgstr "è corretto"
+msgstr "este corect"
 
 msgid "But the name"
-msgstr "Ma il nome"
+msgstr "Dar numele"
 
 msgid "already exists"
-msgstr "esiste già"
+msgstr "există deja"
 
 msgid "You have to change it!"
-msgstr "Bisogna cambiarlo!"
+msgstr "Este necesar să-l modifici!"
 
 msgid "The city proper is"
-msgstr "La città vera e propria è"
+msgstr "Orașul corect este"
 
 msgid "Want to use the suggested name?"
-msgstr "Vuoi utilizzare il nome suggerito?"
+msgstr "Vrei să folosești numele sugerat?"
 
 msgid "Import cities"
-msgstr "Importa città"
+msgstr "Importă orașe"
 
 msgid "Do you want to replace your list with this?"
-msgstr "Vuoi sostituire la tua lista con questa?"
+msgstr "Vrei să înlocuiești lista ta cu aceasta?"
 
 msgid "If you select yes, your list will be completely replaced."
-msgstr "Se si seleziona sì, la lista verrà completamente sostituita."
+msgstr "Dacă selectezi da, lista ta va fi complet înlocuită."
 
 msgid "If you select no, the new cities will be added to your list."
-msgstr "Se si seleziona no, la nuova città sarà aggiunta alla tua lista."
+msgstr "Dacă selectezi da, noile orașe vor fi adăugate în lista ta."
 
 msgid "Select import mode"
-msgstr "Selezionare la modalità di importazione"
+msgstr "Selectează modalitatea de importare"
 
 msgid "File contents"
-msgstr "Contenuto del file"
+msgstr "Conținutul fișierelor"
 
 msgid "cities"
-msgstr "città"
+msgstr "orașe"
 
 msgid "Activate the check boxes of the cities you want to import."
-msgstr ""
-"Attivare le caselle di controllo delle città che si desidera importare."
+msgstr "Activează casetele de bifat ale orașelor pe care vrei să le imporți."
 
 msgid "Importing cities in progress"
-msgstr "Importazione delle città in corso"
+msgstr "Importarea orașelor este în curs"
 
 msgid "Were added"
-msgstr "Sono stati aggiunti"
+msgstr "Au fost adăugate"
 
 msgid "new cities to the list"
-msgstr "nuove città alla lista"
+msgstr "Noi orașe la listă"
 
 msgid "Have been ignored because existing"
-msgstr "Sono stati ignorati perché già esistenti"
+msgstr "Au fost ignorate pentru că există deja"
 
 msgid "Content of imported list"
-msgstr "Contenuto dell'elenco importato"
+msgstr "Conținutul listei importate"
 
 msgid "selected by the user"
-msgstr "selezionati dall'utente"
+msgstr "Selectat de utilizator"
 
 msgid "Import finished"
-msgstr "Importazione terminata"
+msgstr "Importare terminată"
 
 msgid "A copy of"
-msgstr "Una copia di"
+msgstr "O copie a"
 
 msgid "It will be exported"
-msgstr "verrà esportata"
+msgstr "Va fi exportat"
 
 msgid "But it does not yet contain the changes you just made the list!"
-msgstr "Ma non contiene ancora le modifiche appena apportate alla lista!"
+msgstr "Dar nu conține încă modificările pe care tocmai le-ai făcut în listă!"
 
 msgid "I proceed?"
-msgstr "Procedo?"
+msgstr "Continui?"
 
 msgid "Export cities"
-msgstr "Esporta città"
+msgstr "Exportă orașe"
 
 msgid "You can not export the same file at the same path!"
-msgstr "Non è possibile esportare lo stesso file nello stesso percorso!"
+msgstr "Nu poți exporta același fișier pe aceeași cale!"
 
 msgid "january"
-msgstr "gennaio"
+msgstr "ianuarie"
 
 msgid "february"
-msgstr "febbraio"
+msgstr "februarie"
 
 msgid "march"
-msgstr "Marzo"
+msgstr "martie"
 
 msgid "april"
-msgstr "aprile"
+msgstr "aprilie"
 
 msgid "may"
-msgstr "maggio"
+msgstr "mai"
 
 msgid "june"
-msgstr "giugno"
+msgstr "iunie"
 
 msgid "july"
-msgstr "luglio"
+msgstr "iulie"
 
 msgid "august"
-msgstr "agosto"
+msgstr "august"
 
 msgid "september"
-msgstr "settembre"
+msgstr "septembrie"
 
 msgid "october"
-msgstr "ottobre"
+msgstr "octombrie"
 
 msgid "november"
-msgstr "novembre"
+msgstr "noiembrie"
 
 msgid "december"
-msgstr "dicembre"
+msgstr "decembrie"
 
 msgid "Monday"
-msgstr "Lunedì"
+msgstr "Luni"
 
 msgid "Tuesday"
-msgstr "Martedì"
+msgstr "Marți"
 
 msgid "Wednesday"
-msgstr "Mercoledì"
+msgstr "Miercuri"
 
 msgid "Thursday"
-msgstr "Giovedì"
+msgstr "Joi"
 
 msgid "Friday"
-msgstr "Venerdì"
+msgstr "Vineri"
 
 msgid "Saturday"
-msgstr "Sabato"
+msgstr "Sâmbătă"
 
 msgid "Sunday"
-msgstr "Domenica"
+msgstr "Duminică"
 
 #, python-format
 msgid "It was not possible find the acronym of %s!"
-msgstr "Non è stato possibile trovare l'acronimo di%s!"
+msgstr "Nu a fost posibil să găsiți acronimul %s!"
 
 #, fuzzy
 msgid "This does not allow to get the city details."
 msgstr ""
-"Ciò non consente di ottenere l'ora locale della città, gli effetti sonori "
-"non saranno coerenti."
+"Acest lucru nu permite să obțineți ora locală, efectele sonore nu vor fi "
+"consecvente."
 
 msgid ""
 "Please report this to the author so he can add this country in database."
 msgstr ""
-"Per favore segnalalo all'autore in modo che possa aggiungere questo paese "
-"nel database."
+"Raportați acest lucru autorului pentru a putea adăuga această țară în baza "
+"de date."
 
 #, python-format
 msgid "Send an email to %s"
-msgstr "Invia una mail a%s"
+msgstr "Trimiteți un e-mail la %s"
 
 msgid "With  object the line below, thanks."
-msgstr "Con oggetto la riga qui sotto, grazie."
+msgstr "Cu obiectul linia de mai jos, mulțumesc."
 
 msgid "Downloaded"
-msgstr "Scaricati"
+msgstr "Descărcat"
 
 msgid "of"
-msgstr "di"
+msgstr "din"
 
 msgid "Find..."
-msgstr "Trova..."
+msgstr "Găsește"
 
 msgid "Find next"
-msgstr "Trova successivo"
+msgstr "Găsește succedentul"
 
 msgid "Find previous"
-msgstr "Trova precedente"
+msgstr "Găsește precedentul"
 
 msgid "Empty file or not in cities woeID format compatible!"
-msgstr "File vuoto o non compatibile con il formato woeID città!"
+msgstr "Fișier gol sau formatul woeID pentru orașe nu este compatibil!"
 
 msgid "Be an error has occurred."
-msgstr "Si è verificato un errore."
+msgstr "A apărut o eroare."
 
 msgid "See the log for more information."
-msgstr "Vedere il log per ulteriori informazioni."
+msgstr "Consultați jurnalul pentru mai multe informații."
 
 msgid "Error: failure writing file!"
-msgstr "Errore: la scrittura del file è fallita!"
+msgstr "Eroare: eșuare la scrierea fișierului!"
 
 msgid "occurrences found"
-msgstr "occorrenze trovate"
+msgstr "apariții găsite"
 
 msgid "for"
-msgstr "per"
+msgstr "pentru"
 
 msgid "Choose a city."
-msgstr "Scegli una città"
+msgstr "Alege un oraș."
 
 msgid "List of availables Cities"
-msgstr "Lista delle città disponibili"
+msgstr "Lista orașelor disponibile"
 
 msgid "Do not show this message again!"
-msgstr "Non mostrare più questo messaggio!"
+msgstr "Nu afișați acest mesaj din nou!"
 
 msgid "&Install..."
-msgstr "&Installa..."
+msgstr "&Instalează..."
 
 msgid "Upd&ate..."
-msgstr "&Aggiorna..."
+msgstr "&Actualizează."
 
 msgid "&Close"
-msgstr "&Chiudi"
+msgstr "&Închide"
 
 msgid "&Uninstall..."
-msgstr "&Disinstalla..."
+msgstr "&Dezinstalează..."
 
 msgid "Type the search string"
-msgstr "Digitare il testo da cercare"
+msgstr "Tastează textul de căutare"
 
 msgid "Find"
-msgstr "Trova"
+msgstr "Găsește"
 
 msgid "next"
-msgstr "successivo"
+msgstr "succesiv"
 
 msgid "previous"
-msgstr "precedente"
+msgstr "precedent"
 
 msgid "No results next for"
-msgstr "Nessun risultato successivo per"
+msgstr "fără rezultate succedente pentru"
 
 msgid "No previous results for"
-msgstr "Nessun risultato precedenti per"
+msgstr "Fără rezultate precedente pentru"
 
 msgid "&Select all"
-msgstr "&Seleziona tutto"
+msgstr "&Selectare tot"
 
 msgid "&Deselect all"
-msgstr "&Deseleziona tutto"
+msgstr "&Deselectare tot"
 
 msgid "not checked"
-msgstr "non attivato"
+msgstr "nebifat"
 
 msgid "checked"
-msgstr "attivato"
+msgstr "bifat"
 
 msgid "check box"
-msgstr "casella di controllo"
+msgstr "casetă de bifat"
 
 msgid "check boxes checked"
-msgstr "caselle di controllo attivate"
+msgstr "casete de bifat bifate"
 
 msgid "check boxes not checked"
-msgstr "caselle di controllo non attivate"
+msgstr "casete de bifat nebifate"
 
 msgid "Saving in progress"
-msgstr "Salvataggio in corso"
+msgstr "Salvare în curs"
 
 msgid "Download canceled."
-msgstr "Download annullato."
+msgstr "Descărcare anulată."
 
 msgid "&Copy to clipboard"
-msgstr "&Copia negli appunti"
+msgstr "&Copiați în clipboard"
 
 msgid ""
 "Adds local temperature and forecast 24 ours and prediction up to 9 days.\n"
 msgstr ""
-"Aggiunge temperatura locale e previsione nelle attuali 24 ore e previsione "
-"fino a 9 giorni.\n"
+"Adaugă temperatura locală și prognoza pentru 24 de ore până la 9 zile.\n"
 
 msgid "NVDA+w for the current bulletin.\n"
-msgstr "NVDA+w per bollettino attuale.\n"
+msgstr "NVDA+w pentru buletinul actual.\n"
 
 msgid ""
 "NVDA+shift+w for the prediction in the current 24 hours and prediction up to "
 "9 days.\n"
 msgstr ""
-"NVDA+shift+w per la previsione nelle attuali 24 ore e previsione fino a 9 "
-"giorni.\n"
+"NVDA+shift+w pentru prognoza pe 24 de ore și prognoza până la 9 zile.\n"
 
 msgid "NVDA+shift+control+w for quickly enter a temporary city.\n"
-msgstr "NVDA+shift+control+w immissione rapida di una città temporanea.\n"
+msgstr "NVDA+shift+control+w alege un oraș temporar.\n"
 
 msgid "NVDA + shift + control + alt + w for open the Weather Plus settings.\n"
-msgstr ""
-"NVDA+shift+control+alt+w Apre la finestra impostazioni di Weather Plus.\n"
+msgstr "NVDA+shift+control+alt+w Deschide dialogul de setări Weather Plus.\n"
 
 msgid ""
 "NVDA+alt+w announces the date of the last update of the weather report.\n"
 msgstr ""
-"NVDA+alt+w Annuncia la data dell'ultimo aggiornamento del bollettino "
-"metereologico.\n"
+"NVDA+alt+w anunță data ultimei actualizări a buletinului meteorologic.\n"
 
 msgid "Shift+control+w alternates between Fahrenheit, Celsius and Kelvin.\n"
-msgstr "Shift+control+w alterna tra Fahrenheit, Centigradi e Kelvin.\n"
+msgstr "Shift+control+w comută între Fahrenheit, Celsius și Kelvin.\n"
 
 msgid ""
 "For other instructions, you can also press Add-on Help button in Add-ons "
 "manager."
 msgstr ""
-"Per altre istruzioni, è anche possibile premere il pulsante Aiuto sul "
-"componente aggiuntivo Nel Gestore componenti aggiuntivi."
+"Pentru alte instrucțiuni, puteți apăsa butonul de ajutor care se găsește în "
+"administratorul de suplimente."
 
 #~ msgid ""
 #~ "You have installed the Weather Plus add-on which is incompatible with "
 #~ "this one. The new name of this add-on is Weather_Plus with an underscore. "
 #~ "Click OK to update it."
 #~ msgstr ""
-#~ "Hai installato l'add-on Weather Plus che è incompatibile con questo. Il "
-#~ "nuovo nome di questo componente aggiuntivo è Weather_Plus con un trattino "
-#~ "basso. Fare clic su OK per aggiornarlo."
+#~ "Ai instalat suplimentul Weather Plus, care nu este compatibil cu acesta. "
+#~ "Noul nume al acestui supliment este Weather_Plus cu o liniuță joasă. Dă "
+#~ "click pe OK pentru a-l actualiza."
 
 #~ msgid "Update confirmation"
-#~ msgstr "Conferma dell'aggiornamento"
+#~ msgstr "Confirmare actualizare"
 
 #~ msgid "Daylight saving time"
-#~ msgstr "Ora legale"
+#~ msgstr "Ora de vară"
 
 #~ msgid "ahead"
-#~ msgstr "avanti"
+#~ msgstr "înainte"
 
 #~ msgid "back"
-#~ msgstr "indietro"
+#~ msgstr "înapoi"
 
 #~ msgid "Starts on"
-#~ msgstr "Inizia il"
+#~ msgstr "Începe pe"
 
 #~ msgid "set your clock"
-#~ msgstr "impostare l'orologio"
+#~ msgstr "setează-ți ceasul"
 
 #~ msgid "hour"
-#~ msgstr "ora"
+#~ msgstr "oră"
 
 #~ msgid "Ends on"
-#~ msgstr "Termina il"
-
-#~ msgid "Thanks!"
-#~ msgstr "Grazie!"
-
-#, fuzzy
-#~| msgid "Notice!"
-#~ msgid "notice!"
-#~ msgstr "Avviso!"
+#~ msgstr "Se termină pe"
 
 #~ msgid ""
 #~ "In&dicates the wait with a beep while you search for the latest bulletin"
 #~ msgstr ""
-#~ "Indica l'attesa con un segnale acustico mentre si cerca l'ultimo "
-#~ "&bollettino"
-
-#~ msgid "The disc is full, or the file is write protected."
-#~ msgstr "Il disco è pieno, o il file è protetto da scrittura."
+#~ "Indică așteptarea cu un semnal sonor în timpul căutării ultimului b&uletin"
 
 #~ msgid "Disable and re-enable this option to update them."
-#~ msgstr "Disattivare e riattivare questa opzione per aggiornarli."
+#~ msgstr "Dezactivează și reactivează această opțiune pentru a le actualiza."
+
+#~ msgid "The disc is full, or the file is write protected."
+#~ msgstr "Discul e plin, sau fișierul este protejat în potriva scrierii."
 
 #~ msgid "Download complete."
-#~ msgstr "Download completato."
+#~ msgstr "Descărcare completă."
 
 #~ msgid "An upgrade is available for"
-#~ msgstr "È disponibile un aggiornamento per"
+#~ msgstr "O nouă actualizare este disponibilă pentru"
 
 #~ msgid "Click on the Check for upgrades menu to download it."
-#~ msgstr "Fare clic sul menu Controlla presenza aggiornamenti per scaricarlo."
+#~ msgstr ""
+#~ "Clichează pe meniul de căutare a actualizărilor pentru a o descărca."
 
 #~ msgid "Save file"
-#~ msgstr "Salva il file"
-
-#~ msgid "Approximate local time"
-#~ msgstr "Ora locale approssimativa"
+#~ msgstr "Salvează fișierul"
 
 #~ msgid ""
 #~ "Have been detected earlier settings of a higher version of the addon."
 #~ msgstr ""
-#~ "Sono state rilevate delle precedenti impostazioni di una versione "
-#~ "superiore dell'addon."
+#~ "Au fost detectate setări mai vechi la o versiune mai nouă a acestui "
+#~ "supliment."
 
 #~ msgid ""
 #~ "Probably you used an outdated version! To save the new settings i have to "
 #~ "override them."
 #~ msgstr ""
-#~ "Probabilmente avete utilizzato una versione obsoleta! Per salvare le "
-#~ "nuove impostazioni devo sovrascriverle."
+#~ "Probabil ați utilizat o versiune neactualizată! Pentru a salva setările "
+#~ "trebuie să le înlocuiesc."
 
 #~ msgid "Can i proceed?"
-#~ msgstr "Posso procedere?"
+#~ msgstr "Pot să continui?"
 
 #~ msgid "Request to proceed!"
-#~ msgstr "Richiesta per procedere!"
+#~ msgstr "Solicitare pentru a continua"
 
 #~ msgid "The settings of the addon have been moved to this new location:"
-#~ msgstr ""
-#~ "Le impostazioni del addon sono state spostate in questa nuova posizione:"
-
-#~ msgid "The humidity is of"
-#~ msgstr "L'umidità è del"
+#~ msgstr "Setările suplimentului au fost mutate la această locație nouă:"
 
 #~ msgid "Insufficient data! I can not identify the location of belonging."
-#~ msgstr ""
-#~ "Dati insufficienti! Non posso identificare la località di appartenenza."
+#~ msgstr "Date insuficiente! Nu pott să identific locația apartenenței."
 
 #~ msgid "The index of cooling of the wind is"
 #~ msgstr "L'indice di raffreddamento del vento è di"

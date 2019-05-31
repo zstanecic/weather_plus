@@ -16,20 +16,6 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: __init__.py\n"
 
-#. Translators: A message informing the user that he has installed an old version that contains a space rather than an underscore.
-msgid ""
-"You have installed the Weather Plus add-on which is incompatible with this "
-"one. The new name of this add-on is Weather_Plus with an underscore. Click "
-"OK to update it."
-msgstr ""
-"Has instalado el complemento Weather Plus que es incompatible con este. El "
-"nuevo nombre de este complemento es Weather_Plus con un guión bajo. Pulsa "
-"Aceptar para actualizarlo."
-
-#. Translators: The title of the dialogbox.
-msgid "Update confirmation"
-msgstr "Confirmación de actualización"
-
 msgid "Fahrenheit"
 msgstr "Fahrenheit"
 
@@ -995,28 +981,6 @@ msgid "Cannot identify your location, due to insufficient data."
 msgstr ""
 "No se puede identificar su ubicación, debido a la insuficiencia de datos."
 
-#. if there is daylight saving time
-msgid "Daylight saving time"
-msgstr "Horario de verano"
-
-msgid "ahead"
-msgstr "de adelanto"
-
-msgid "back"
-msgstr "de atraso"
-
-msgid "Starts on"
-msgstr "Empieza el"
-
-msgid "set your clock"
-msgstr "ajusta el reloj"
-
-msgid "hour"
-msgstr "hora"
-
-msgid "Ends on"
-msgstr "Acaba el"
-
 msgid "Details of"
 msgstr "Detalles de"
 
@@ -1205,9 +1169,8 @@ msgstr "Domingo"
 msgid "It was not possible find the acronym of %s!"
 msgstr "¡No fue posible encontrar el acrónimo de %s!"
 
-msgid ""
-"This does not allow to get the city local time, the sound effects will not "
-"be consistent."
+#, fuzzy
+msgid "This does not allow to get the city details."
 msgstr ""
 "Esto no permite obtener la hora local de la ciudad, los efectos de sonido no "
 "serán consistentes."
@@ -1366,6 +1329,39 @@ msgid ""
 msgstr ""
 "Para otras instrucciones, también puedes pulsar el botón Ayuda del "
 "Complemento en el Administrador de Complementos."
+
+#~ msgid ""
+#~ "You have installed the Weather Plus add-on which is incompatible with "
+#~ "this one. The new name of this add-on is Weather_Plus with an underscore. "
+#~ "Click OK to update it."
+#~ msgstr ""
+#~ "Has instalado el complemento Weather Plus que es incompatible con este. "
+#~ "El nuevo nombre de este complemento es Weather_Plus con un guión bajo. "
+#~ "Pulsa Aceptar para actualizarlo."
+
+#~ msgid "Update confirmation"
+#~ msgstr "Confirmación de actualización"
+
+#~ msgid "Daylight saving time"
+#~ msgstr "Horario de verano"
+
+#~ msgid "ahead"
+#~ msgstr "de adelanto"
+
+#~ msgid "back"
+#~ msgstr "de atraso"
+
+#~ msgid "Starts on"
+#~ msgstr "Empieza el"
+
+#~ msgid "set your clock"
+#~ msgstr "ajusta el reloj"
+
+#~ msgid "hour"
+#~ msgstr "hora"
+
+#~ msgid "Ends on"
+#~ msgstr "Acaba el"
 
 #~ msgid ""
 #~ "In&dicates the wait with a beep while you search for the latest bulletin"

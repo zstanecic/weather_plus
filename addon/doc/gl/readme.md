@@ -1,4 +1,4 @@
-#Weather Plus #
+# Weather Plus #
 
 * Autor: Adriano Barbieri
 * Compatibilidade con NVDA: da 2017.3 á 2019.1
@@ -6,13 +6,13 @@
 
 # ACERCA DE WEATHER PLUS: #
 
-* This plugin adds local temperature and forecasts to 24 hours up to 9
-  additional days for NVDA.
+* Este complemento engade a temperatura local e o pronóstico do tempo actual
+  a 24 horas e a predición ata 9 días adicionais para NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Liberado baixo a licenza GNU GPL (General Public License) v2
-* Version: 6.4.
+* Versión: 6.5.
 
-# Weather Plus works through the use and presence of the following services: #
+# Weather Plus funciona a través da presenza e funcionamento dos seguintes servizos: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
 * [http://woeid.rosselliot.co.nz/lookup/](http://woeid.rosselliot.co.nz/lookup/)
 * [http://www.geonames.org/](http://www.geonames.org/)
@@ -295,11 +295,15 @@ aínda podes gardalo.
 
 # Que Hai de novo: #
 
-# Version 6.4 #
-* Daylight saving time removed in the "Details" function;
-	* The service used by this function has changed, so it has been removed.
-* Improved audio effects reproduction;
-	* Now they update regularly if the weather conditions change.
+# Versión 6.5 #
+* Arranxado erro na hora local en "detalles";
+	* A conversión a formato de 12 horas daba un erro.
+
+# Versión 6.4 #
+* Hora de verán eliminado na función "Detalles";
+	* O servizo utilizado por esta función cambiou, polo que se eliminou.
+* Mellora da reprodución de efectos de audio;
+	* Agora se actualizan regularmente se as condicións meteorolóxicas cambian.
 
 # Versión 6.3 #
 * Arranxouse a codificación de caracteres na xanela de resultados da busca.
@@ -776,8 +780,8 @@ Zona ártica
   se hai códigos postais mundiais.
 * Engadiu a posibilidade de importar / exportar os códigos de código postal
   de amigos.
-* Added possibility to copy the weather report or the weather forecast to
-  the clipboard.
+* Engadido a posibilidade de copiar o informe do tempo ou a previsión do
+  tempo no portapapeis.
 * Engadida a posibilidade de escoitar os efectos de son meteorolóxicos, a
   opción tamén permite a instalación / actualización dos efectos de son.
 * Engadido botóns de axuda na xestión do código postal.

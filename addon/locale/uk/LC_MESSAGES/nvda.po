@@ -16,19 +16,6 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: __init__.py\n"
 
-#. Translators: A message informing the user that he has installed an old version that contains a space rather than an underscore.
-msgid ""
-"You have installed the Weather Plus add-on which is incompatible with this "
-"one. The new name of this add-on is Weather_Plus with an underscore. Click "
-"OK to update it."
-msgstr ""
-"У Вас встановлено додаток Weather Plus несумісний з цим. Нове ім'я цього "
-"додатку - Weather_Plus з підкресленням. Натисніть OK, щоб оновити його."
-
-#. Translators: The title of the dialogbox.
-msgid "Update confirmation"
-msgstr "Підтвердження оновлення"
-
 msgid "Fahrenheit"
 msgstr "Фаренгейта"
 
@@ -979,28 +966,6 @@ msgstr ""
 msgid "Cannot identify your location, due to insufficient data."
 msgstr "Неможливо визначити місце розташування через нестачу даних."
 
-#. if there is daylight saving time
-msgid "Daylight saving time"
-msgstr "Перехід на літній час"
-
-msgid "ahead"
-msgstr "вперед"
-
-msgid "back"
-msgstr "назад"
-
-msgid "Starts on"
-msgstr "Починається"
-
-msgid "set your clock"
-msgstr "переведіть ваші годинники на"
-
-msgid "hour"
-msgstr "годину"
-
-msgid "Ends on"
-msgstr "Закінчується"
-
 msgid "Details of"
 msgstr "Подробиці"
 
@@ -1188,9 +1153,8 @@ msgstr "У неділю"
 msgid "It was not possible find the acronym of %s!"
 msgstr "Не вдалося знайти абревіатуру %s!"
 
-msgid ""
-"This does not allow to get the city local time, the sound effects will not "
-"be consistent."
+#, fuzzy
+msgid "This does not allow to get the city details."
 msgstr ""
 "Неможливо отримати міський місцевий час, звукові ефекти не будуть "
 "узгодженими."
@@ -1341,3 +1305,35 @@ msgid ""
 msgstr ""
 "Для отримання додаткових інструкцій, ви можете натиснути кнопку \"Довідка\" "
 "в менеджері додатків."
+
+#~ msgid ""
+#~ "You have installed the Weather Plus add-on which is incompatible with "
+#~ "this one. The new name of this add-on is Weather_Plus with an underscore. "
+#~ "Click OK to update it."
+#~ msgstr ""
+#~ "У Вас встановлено додаток Weather Plus несумісний з цим. Нове ім'я цього "
+#~ "додатку - Weather_Plus з підкресленням. Натисніть OK, щоб оновити його."
+
+#~ msgid "Update confirmation"
+#~ msgstr "Підтвердження оновлення"
+
+#~ msgid "Daylight saving time"
+#~ msgstr "Перехід на літній час"
+
+#~ msgid "ahead"
+#~ msgstr "вперед"
+
+#~ msgid "back"
+#~ msgstr "назад"
+
+#~ msgid "Starts on"
+#~ msgstr "Починається"
+
+#~ msgid "set your clock"
+#~ msgstr "переведіть ваші годинники на"
+
+#~ msgid "hour"
+#~ msgstr "годину"
+
+#~ msgid "Ends on"
+#~ msgstr "Закінчується"

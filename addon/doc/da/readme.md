@@ -1,4 +1,4 @@
-#Weather Plus #
+# Vejret Plus #
 
 * Forfatter: Adriano Barbieri
 * NVDA compatibility: 2017.3 to 2019.1
@@ -10,7 +10,7 @@
   additional days for NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Released under the GNU GPL (General Public License) v2
-* Version: 6.4.
+* Version: 6.5.
 
 # Weather Plus works through the use and presence of the following services: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -290,6 +290,10 @@ du kan stadig gemme den.
 --------------------------------------------------------------------------------
 
 # What's new: #
+
+# Version 6.5 #
+* Fixed bug in local time in "details";
+	* 12-hour time conversion gave a error.
 
 # Version 6.4 #
 * Daylight saving time removed in the "Details" function;

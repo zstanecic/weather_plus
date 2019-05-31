@@ -16,20 +16,6 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: __init__.py\n"
 
-#. Translators: A message informing the user that he has installed an old version that contains a space rather than an underscore.
-msgid ""
-"You have installed the Weather Plus add-on which is incompatible with this "
-"one. The new name of this add-on is Weather_Plus with an underscore. Click "
-"OK to update it."
-msgstr ""
-"Nainstalovali jste doplněk Weather Plus, který není kompatibilní s tímto "
-"doplňkem. Nový název tohoto doplňku je Weather_Plus s podtržítkem. Klepnutím "
-"na tlačítko OK jej aktualizujte."
-
-#. Translators: The title of the dialogbox.
-msgid "Update confirmation"
-msgstr "Potvrzení aktualizace"
-
 msgid "Fahrenheit"
 msgstr "Fahrenheit"
 
@@ -980,28 +966,6 @@ msgstr ""
 msgid "Cannot identify your location, due to insufficient data."
 msgstr "Nedostatečná data! Nelze identifikovat složku, do které data náleží."
 
-#. if there is daylight saving time
-msgid "Daylight saving time"
-msgstr "Změna času"
-
-msgid "ahead"
-msgstr "Doba"
-
-msgid "back"
-msgstr "Zpět"
-
-msgid "Starts on"
-msgstr "Začíná v"
-
-msgid "set your clock"
-msgstr "čas se posune"
-
-msgid "hour"
-msgstr "hodin"
-
-msgid "Ends on"
-msgstr "Končí v"
-
 msgid "Details of"
 msgstr "Podrobnosti"
 
@@ -1190,9 +1154,8 @@ msgstr "Neděle"
 msgid "It was not possible find the acronym of %s!"
 msgstr "Nebylo možné najít zkratku %s!"
 
-msgid ""
-"This does not allow to get the city local time, the sound effects will not "
-"be consistent."
+#, fuzzy
+msgid "This does not allow to get the city details."
 msgstr "To neumožňuje získat místní čas, zvukové efekty nebudou konzistentní."
 
 msgid ""
@@ -1340,6 +1303,39 @@ msgid ""
 "For other instructions, you can also press Add-on Help button in Add-ons "
 "manager."
 msgstr "Pro dalsi informace otevrete napovedu ve spravci doplnku."
+
+#~ msgid ""
+#~ "You have installed the Weather Plus add-on which is incompatible with "
+#~ "this one. The new name of this add-on is Weather_Plus with an underscore. "
+#~ "Click OK to update it."
+#~ msgstr ""
+#~ "Nainstalovali jste doplněk Weather Plus, který není kompatibilní s tímto "
+#~ "doplňkem. Nový název tohoto doplňku je Weather_Plus s podtržítkem. "
+#~ "Klepnutím na tlačítko OK jej aktualizujte."
+
+#~ msgid "Update confirmation"
+#~ msgstr "Potvrzení aktualizace"
+
+#~ msgid "Daylight saving time"
+#~ msgstr "Změna času"
+
+#~ msgid "ahead"
+#~ msgstr "Doba"
+
+#~ msgid "back"
+#~ msgstr "Zpět"
+
+#~ msgid "Starts on"
+#~ msgstr "Začíná v"
+
+#~ msgid "set your clock"
+#~ msgstr "čas se posune"
+
+#~ msgid "hour"
+#~ msgstr "hodin"
+
+#~ msgid "Ends on"
+#~ msgstr "Končí v"
 
 #~ msgid ""
 #~ "In&dicates the wait with a beep while you search for the latest bulletin"

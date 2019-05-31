@@ -1,0 +1,1302 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Weather_Plus 6.4\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2019-05-23 18:36+0200\n"
+"PO-Revision-Date: 2019-05-28 15:47+0200\n"
+"Last-Translator: wafiqtaher <wafiqtaher@gmail.com>\n"
+"Language-Team: Wafik immaculate <fatma.mehanna@gmail.com>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.11\n"
+"X-Poedit-Basepath: ../../../globalPlugins/Weather_Plus\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: __init__.py\n"
+
+msgid "Fahrenheit"
+msgstr "فهرنهايت"
+
+msgid "Celsius"
+msgstr "مئوية "
+
+msgid "Kelvin"
+msgstr "كلفن"
+
+msgid "unknown"
+msgstr "غير معروف "
+
+msgid "Weather Plus &Settings"
+msgstr "إعدادات الط&قس "
+
+msgid "Show configuration items."
+msgstr "إظهار عناصر التكوين."
+
+msgid "Set and &manage your cities..."
+msgstr "إ&دارة تعين المدن..."
+
+msgid "Displays or allows to set the current cities from a list"
+msgstr "لعرض أو تعيين الرمز البريدي الحالي في القائمة"
+
+msgid "Set a &temporary city..."
+msgstr "ضبط المدينة المؤ&قتة..."
+
+msgid "Allows to set one temporary city from a list"
+msgstr "يسمح لك بتعيين الرمز  مؤقتا"
+
+msgid "&Documentation"
+msgstr "الم&ساعدة "
+
+msgid "Opens the help file for the current language"
+msgstr "فتح ملف المساعدة للغة الحالية."
+
+msgid "&Check for Upgrade..."
+msgstr "البح&ث عن التاحديث"
+
+msgid "Notify if there is an upgraded version available"
+msgstr "عفواً لا يوجد تحديث في الوقت الحالي"
+
+#. opens the Weather Plus settings window
+msgid "Settings"
+msgstr "الإعدادات"
+
+msgid "Preset"
+msgstr "ضبط كافتراضي"
+
+msgid "None"
+msgstr "غير معروف "
+
+msgid "Enter a City, woeId or choose one from the list, if available."
+msgstr "أدخل اسم مدينة، أو i d  أو اختر واحدة m من القائمة، إذا كانت متوفرة."
+
+msgid "The woeID"
+msgstr "المُعرِف"
+
+msgid "assigned to"
+msgstr "تعيين إلى"
+
+msgid "has not been preset."
+msgstr "عدم الإعداد المسبق."
+
+msgid "Will be used in temporary mode!"
+msgstr "ستستخدم في وضع مؤقت!"
+
+#. offers to save the list changed
+msgid "Notice!"
+msgstr "تنبيه "
+
+msgid "You have modified the list of your cities"
+msgstr "لقد قمت بتعديل قائمة المدن الخاصة بك"
+
+msgid "Do you want to save it?"
+msgstr "هل تريد حفظها ا؟"
+
+msgid "The cities on your list are not compatible with the Yahoo API!"
+msgstr "المدن في قائمتك غير متوافقة مع Yahoo API!"
+
+msgid ""
+"They have to be tested and validated, you can do it from the addon settings "
+"window."
+msgstr ""
+"يجب اختبارها والتحقق من صحتها ، يمكنك القيام بذلك من نافذة إعدادات الملحق."
+
+msgid "Setting up a temporary city"
+msgstr "ضبط مؤقت"
+
+msgid "Cities List available:"
+msgstr "قائمة بالمدن المتاحة"
+
+msgid "Documentation not available for the current language!"
+msgstr "المساعدة غير متوفرة للغة الحالية!"
+
+msgid ""
+"Sorry, i can not receive data, verify that your internet connection is "
+"active, or try again later!"
+msgstr ""
+"عذراً لا يمكن تلقي البيانات، تحقق من أن اتصال الإنترنت بك نشط، أو حاول مرة "
+"أخرى في وقت لاحق!"
+
+msgid "version"
+msgstr "إصدار"
+
+msgid "is available."
+msgstr "متاح."
+
+msgid "Installed version"
+msgstr "الاصدار المثبت هو:"
+
+msgid "Do you want to download and install it?"
+msgstr "هل تريد تحميل الإضافة وتثبيتها؟"
+
+msgid "Sorry, at the time an update is not available."
+msgstr "عفواً, لا يوجد تحديث في الوقت الحالي."
+
+msgid "not found!"
+msgstr "لم يتم العصور !"
+
+msgid ""
+"You need to upgrade the sound effects by reactivating the appropriate option "
+"from the settings of"
+msgstr ""
+"تحتاج إلى ترقية المؤثرات الصوتية عن طريق إعادة تنشيط الخيار المناسب من "
+"الإعدادات"
+
+msgid "But if these are already updated, then you need to update"
+msgstr "ولكن إذا تم تحديثها بالفعل ، فأنت بحاجة إلى تحديث"
+
+msgid "I can not load the settings!"
+msgstr "لم يتم تحميل الإعدادات!"
+
+msgid "I can not save the settings!"
+msgstr "لم يتم حفظ المدينة!"
+
+msgid "invalid name"
+msgstr "الإسم غير موجود !"
+
+msgid "miles"
+msgstr "أميال "
+
+#. takes the value in mmHg
+msgid "millimeters of mercury"
+msgstr "مليمتر زئبقي"
+
+msgid "inches of mercury"
+msgstr "مليمتر زئبقي"
+
+msgid "kilometers"
+msgstr "كيلو متر "
+
+msgid "millibars"
+msgstr "مِلْي بار "
+
+msgid "the weather report is currently"
+msgstr "تقرير حالة الطقس الحاليه."
+
+msgid "degrees"
+msgstr "درجات"
+
+#. adds wind information to the string
+msgid "The wind direction is from"
+msgstr "إتجاه الرياح هو من"
+
+msgid "with speed of"
+msgstr "مع سرعة "
+
+msgid "The wind speed is"
+msgstr "وسرعة الرياح"
+
+msgid "The perceived temperature is"
+msgstr "درجات الحرارة المتوقعة هي"
+
+#. adds information on the atmosphere
+msgid "steady"
+msgstr "ثابت."
+
+msgid "rising"
+msgstr "إرتفاع"
+
+msgid "falling"
+msgstr "هبوط "
+
+msgid "The humidity is"
+msgstr "والرطوبة هي"
+
+msgid "and the visibility is up to"
+msgstr "وضوح تصل إلى"
+
+msgid "The visibility is up to"
+msgstr "وضوح تصل إلى"
+
+msgid "The pressure is"
+msgstr "والضغط هو"
+
+msgid "and the state of the barometric pressure is"
+msgstr "حالة الضغط الجوي هي"
+
+msgid "The state of the barometric pressure is"
+msgstr "حالة الضغط الجوي هي"
+
+msgid "The sun rises at"
+msgstr "تُشرق  الشمس في "
+
+msgid "and sets at"
+msgstr "والغروب في"
+
+msgid "the forecast for today is"
+msgstr "هي ."
+
+msgid "with a maximum temperature of"
+msgstr "درجة الحرارة القصوى هي"
+
+msgid "and a minimum of"
+msgstr "الصغرى "
+
+msgid "not available"
+msgstr "غير متاح."
+
+#. this does not replace the name of the city
+msgid "In"
+msgstr "التوقعات لهذا اليوم في:"
+
+msgid "Unnamed"
+msgstr "غير مسمى "
+
+msgid "Sorry, the woeID is not set!"
+msgstr "عفوا لم يتم ضبط المعرف؟"
+
+msgid "kilometers per hour"
+msgstr "كيلومتر في الساعة"
+
+msgid "miles per hour"
+msgstr "ميل في الساعة"
+
+#. weather condition
+msgid "in the morning"
+msgstr "في الصباح "
+
+msgid "in the evening"
+msgstr "في المساء"
+
+msgid " and "
+msgstr " و "
+
+msgid " to "
+msgstr "إلى"
+
+msgid "in the vicinity"
+msgstr "في محيط"
+
+msgid "tornado"
+msgstr "اعصار "
+
+msgid "tropical storm"
+msgstr "العاصفة الاستوائية "
+
+msgid "hurricane"
+msgstr "إعصار "
+
+msgid "severe thunderstorms"
+msgstr "عواصف رعدية متفرقة"
+
+msgid "mixed rain and snow"
+msgstr "مختلطة الأمطار والثلوج "
+
+msgid "mixed rain and hail"
+msgstr "مختلطة المطر والبرد "
+
+msgid "mixed rain and sleet"
+msgstr "مختلطة المطر والصقيع "
+
+msgid "mixed snow and sleet"
+msgstr "مختلطة الثلوج و الصقيع "
+
+msgid "snow flurries"
+msgstr "هبات"
+
+msgid "smoke"
+msgstr "دخان "
+
+msgid "smoky"
+msgstr "دخان"
+
+msgid "precipitation"
+msgstr "هطول "
+
+msgid "sunny intervals"
+msgstr "فترات مشمسة"
+
+msgid "sunny period"
+msgstr "فترة مشمسة"
+
+msgid "light snow"
+msgstr "ثلوج خفيفة"
+
+msgid "scattered snow showers"
+msgstr "سقوط ثلوج متفرقة"
+
+msgid "snow showers"
+msgstr "زخات الثلوج"
+
+msgid "snow shower"
+msgstr "تساقط أمطار ثلجية"
+
+msgid "snowstorm"
+msgstr "عاصفة ثلجية "
+
+msgid "snowdrift"
+msgstr "الثلج"
+
+msgid "drifting snow"
+msgstr "انجراف الثلوج"
+
+msgid "wintry Mix"
+msgstr "مزيج شتوي"
+
+msgid "ice to rain"
+msgstr "الثلج المطر"
+
+msgid "ice"
+msgstr "الجليد"
+
+msgid "blizzard"
+msgstr "عاصفة ثلجية "
+
+msgid "blowing snow"
+msgstr "تهب الثلوج"
+
+msgid "snow"
+msgstr "الثلج"
+
+msgid "light rain with thunder"
+msgstr "أمطار خفيفة مع الرعد"
+
+msgid "few showers"
+msgstr "بعض زخات من المطر"
+
+msgid "heavy showers"
+msgstr "أمطار غزيرة"
+
+msgid "heavy thunderstorms"
+msgstr "العواصف الرعدية الغزيرة"
+
+msgid "heavy thunderstorm"
+msgstr "عاصفة رعدية غزيرة"
+
+msgid "lightning"
+msgstr "صاعقة"
+
+msgid "isolated clouds"
+msgstr "غيوم متفرقة"
+
+msgid "partly cloudy"
+msgstr "غائم جزئيا "
+
+msgid "partly bright"
+msgstr "مشرق جزئيا"
+
+msgid "showers early"
+msgstr "الإستحمام في وقت مبكر "
+
+msgid "light rain"
+msgstr "أمطار خفيفة"
+
+msgid "heavy rain"
+msgstr "مطر غزير"
+
+msgid "isolated showers"
+msgstr "زخات متفرقة"
+
+msgid "isolated thunderstorms"
+msgstr "عواصف رعدية متفرقة"
+
+msgid "isolated thundershowers"
+msgstr "زخات متفرقة"
+
+msgid "mostly cloudy"
+msgstr "غائم"
+
+msgid "mostly dry"
+msgstr "جاف غالبا "
+
+msgid "mostly clear"
+msgstr "معظمها واضحة أو مشمس "
+
+msgid "clearing"
+msgstr "مسح "
+
+msgid "no rain"
+msgstr "لا توجد أمطار "
+
+msgid "sleet"
+msgstr "قطرات من الثلج "
+
+msgid "blowing dust"
+msgstr "تهب الغبار"
+
+msgid "widespread dust"
+msgstr "غبار على نطاق واسع "
+
+msgid "low drifting sand"
+msgstr "انخفاض في الرمال المنجرفة"
+
+msgid "sandstorm"
+msgstr "عاصفة رملية "
+
+msgid "sand storm"
+msgstr "عاصفة رملية"
+
+msgid "dust"
+msgstr "الغبار"
+
+msgid "sand"
+msgstr "رمل "
+
+msgid "thundery showers"
+msgstr "زخات رعدية "
+
+msgid "thundershowers"
+msgstr "عواصف رعدية "
+
+msgid "scattered thunderstorms"
+msgstr "عواصف رعدية متفرقة "
+
+msgid "scattered showers"
+msgstr "سقوط ثلوج متفرقة"
+
+msgid "thunderstorms"
+msgstr "عواصف رعدية "
+
+msgid "thunderstorm"
+msgstr "عاصفة رعدية "
+
+msgid "storm"
+msgstr "العاصفة "
+
+msgid "hail"
+msgstr "حائل او وابل "
+
+msgid "foggy"
+msgstr "ضبابي غير واضح "
+
+msgid "fog"
+msgstr "مكسو بالضباب "
+
+msgid "haze"
+msgstr "ضباب"
+
+msgid "mist"
+msgstr "ضباب"
+
+msgid "clear"
+msgstr "صافي "
+
+msgid "fair"
+msgstr "مناسب أو جميل "
+
+msgid "fine"
+msgstr "راءع "
+
+msgid "overcast"
+msgstr "مُلَبَد بالغيوم "
+
+msgid "light showers"
+msgstr "امطار خفيفة"
+
+msgid "light drizzle"
+msgstr "رذاذ خفيف"
+
+msgid "freezing rain"
+msgstr "مطر متجمد "
+
+msgid "frequent showers"
+msgstr "إستحمام متكرر"
+
+msgid "rain shower"
+msgstr "صوت المطر"
+
+msgid "rain"
+msgstr "المطر "
+
+msgid "freezing drizzle"
+msgstr "رذاذ متجمد "
+
+msgid "showers"
+msgstr "زخات المطر "
+
+msgid "drizzle"
+msgstr "تمطر رذاذاً "
+
+msgid "dry"
+msgstr "الجافة"
+
+msgid "mild"
+msgstr "خفيف"
+
+msgid "clouds"
+msgstr "السُحُبْ "
+
+msgid "cloudy"
+msgstr "غائم "
+
+msgid "mostly sunny"
+msgstr "مُشْمِس غالبا "
+
+msgid "sunny"
+msgstr "مُشْمِس"
+
+msgid "sun"
+msgstr "الشمس "
+
+msgid "bright"
+msgstr "مشرق "
+
+msgid "thunder"
+msgstr "صوت رعد"
+
+msgid "shower"
+msgstr "دش "
+
+msgid "breezy"
+msgstr "نسيم"
+
+msgid "blustery"
+msgstr "عاصف "
+
+msgid "windy"
+msgstr "عاصف"
+
+msgid "wind"
+msgstr "الرياح "
+
+msgid "flurries"
+msgstr "هبات "
+
+msgid "late"
+msgstr "متأخر"
+
+msgid "early"
+msgstr "مبكراً"
+
+msgid "isolated"
+msgstr "معزول"
+
+msgid "shallow fog"
+msgstr "غاءم  بسبب الضباب "
+
+msgid "heavy"
+msgstr "ثقيل"
+
+msgid "cold"
+msgstr "البرد "
+
+msgid "hot"
+msgstr "الدافئة"
+
+msgid "Sorry, it was not possible to load the most recent update!"
+msgstr "عفوا,لم نتمكن  من التحقق من اسم المدينة !"
+
+msgid "Please try again later."
+msgstr "يرجى المحاولة مرة أخرى في وقت لاحق. "
+
+msgid "meters per second"
+msgstr "أمتار في الثانية "
+
+msgid "Sorry, the woeID set is not valid or contains incomplete data!"
+msgstr "عذرًا ، مجموعة woeID غير صالحة أو تحتوي على بيانات غير كاملة!"
+
+msgid "north"
+msgstr "الشمال "
+
+msgid "north northeast"
+msgstr "شمالية شرقية"
+
+msgid "northeast"
+msgstr "شمال شرقي "
+
+msgid "east northeast"
+msgstr "شمال شرق "
+
+msgid "east"
+msgstr "الشرق "
+
+msgid "east southeast"
+msgstr "الجنوب الشرقي"
+
+msgid "southeast"
+msgstr "الجنوب الشرقي "
+
+msgid "south southeast"
+msgstr "جنوب شرقي "
+
+msgid "south"
+msgstr "جنوب"
+
+msgid "south southwest"
+msgstr "جنوب غرب "
+
+msgid "southwest"
+msgstr "جنوب غرب"
+
+msgid "west southwest"
+msgstr "جنوب غرب "
+
+msgid "west"
+msgstr "غرب"
+
+msgid "west northwest"
+msgstr "شمال غرب"
+
+msgid "northwest"
+msgstr "من الشمال الغربي "
+
+msgid "north northwest"
+msgstr "شمال غربي "
+
+msgid ""
+"Is not working properly, contains incomplete data or has been removed from "
+"the database of"
+msgstr ""
+"لا يعمل بشكل صحيح أو يحتوي على بيانات غير كاملة أو تمت إزالته من قاعدة بيانات"
+
+msgid "It could be a temporary problem and you may wait a while '..."
+msgstr "يمكن ان تكون مشكلة مؤقتة  يمكنك  الانتظار لبعض الوقت ,..."
+
+msgid "Do you want to delete it from your list?"
+msgstr "هل تريد حذفه من القائمة الخاصة بك؟"
+
+msgid "Provides the current temperature and weather conditions."
+msgstr "يوفر درجة الحرارة وظروف الطقس الحالية."
+
+msgid ""
+"Provides the weather forecast and current temperature for 24 hours and the "
+"next 9 days."
+msgstr "يوفر توقعات الطقس ودرجة الحرارة الحالية لمدة 24 ساعة و 9 أيام القادمة."
+
+msgid "Sorry, no list available!"
+msgstr "عذراً، لا توجد قائمة متوفرة!"
+
+msgid "Allows you to set a temporary city."
+msgstr "يسمح لك بتعيين الرمز  مؤقتا."
+
+msgid "Scale of temperature measurement set into"
+msgstr "تحديد قياس درجة الحرارة "
+
+msgid "Allows you to set a temporary scale of temperature mesurement."
+msgstr "يسمح لك تعيين مقياس مؤقتة من ميسوريمينت درجة الحرارة."
+
+msgid "at"
+msgstr "الساعة "
+
+msgid "Last update of the current weather report"
+msgstr "آخر تحديث للتقرير الحالي للطقس هو"
+
+msgid "Announces the date of the last update of the weather report."
+msgstr "للإعلان عن تاريخ آخر تحديث لِتقرير الطقس."
+
+msgid "Open the Weather Plus settings dialog."
+msgstr "إعدادات الط&قس."
+
+msgid ""
+"f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
+"duration Weather Forecast, f5: volume controls."
+msgstr ""
+"f1: المساعدة في إضافة موضع, f2: الإنتقال إلى أخرة نافذة, f3: القائمة وصندوق "
+"التحرير, f4:إختيار مجموع الأيام لمعرفة الطقس, f5 :التحكم في الصوت, "
+
+msgid ""
+"f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
+"duration Weather Forecast."
+msgstr ""
+"f1: المساعدة في إضافة موضع, f2: الإنتقال إلى أخرة نافذة, f3: القائمة وصندوق "
+"التحرير, f4:إختيار مجموع الأيام لمعرفة الطقس,"
+
+msgid "Test"
+msgstr "إختبار"
+
+msgid "Details"
+msgstr "التفاصيل"
+
+msgid "Define"
+msgstr "بيئة المن&طقة "
+
+msgid "Add"
+msgstr "إضافة "
+
+msgid "Remove"
+msgstr "إ&زالة"
+
+msgid "Rename"
+msgstr "إ&عادة تسمية"
+
+msgid "&Import new cities..."
+msgstr "ا&ستيراد المدن"
+
+msgid "&Export your cities..."
+msgstr "ت&صدير المدن... "
+
+msgid "Scale of temperature measurement:"
+msgstr "إختيار المقياس لقياس درجة الحرارة:"
+
+msgid "Degrees shown as:"
+msgstr "درجات كما هو موضح:"
+
+msgid "C - F - K"
+msgstr "م - ف - ك"
+
+msgid "Don't specify"
+msgstr "لم تُحدد"
+
+msgid "Weather Forecasts up to days:"
+msgstr "عدد الأيام لمعرفة الطقس فيها"
+
+#. check boxes
+msgid ""
+"&Copy the weather report and weather forecast, including city details to "
+"clipboard"
+msgstr ""
+"نسخ تقرير الأحوال الجوية وحالة الطقس، بما في ذلك تفاصيل المدينة إلى الحافظة"
+
+msgid "Enable &audio effects (only for the current weather conditions)"
+msgstr "تمكين المء&ثرات الصوتية فقط لمعرفة الطقس الحالي ."
+
+msgid "Use only &weather effects"
+msgstr "است&خدم الصوت فقط دون المؤثرات"
+
+msgid "General audio volume"
+msgstr "حجم الصوت العام"
+
+msgid "Current audio volume"
+msgstr "حجم الصوت الحالي:"
+
+#. check boxes
+msgid "Enable &help buttons in the settings window"
+msgstr "تمكين أزرار المسا&عدة في نافذة الإعدادات."
+
+msgid "Read &wind informations"
+msgstr "قراءة معلومات الريا&ح "
+
+msgid "Add wind directi&on"
+msgstr "إضافة ات&جاه الرياح "
+
+msgid "Add wi&nd speed"
+msgstr "إضافة &سرعة الرياح"
+
+msgid "Add speed in &meters per second of the wind"
+msgstr "إضافة سرعة الرياح &مترا في الثانية "
+
+msgid "Add perceived &temperature"
+msgstr "إضافة درجة الحرارة ال&متوقعة"
+
+msgid "&Read atmospherical informations"
+msgstr "قراءة المعلومات ال&جويه "
+
+msgid "Add humidity va&lue"
+msgstr "إضافة قيمة الر&طوبة"
+
+msgid "Add &visibility value"
+msgstr "إضافة قيمة ال&رؤية"
+
+msgid "Add atmospheric &pressure value"
+msgstr "إضافة قيمة ال&ضغط الجوي "
+
+msgid "Indicates the atmospheric pressure in millimeters of mercur&y (mmHg)"
+msgstr "&قيمة الضغط الجوي مصحوبة بوحد القياس  (من الزئبق)"
+
+msgid "Add status of &barometric pressure"
+msgstr "إضافة حالة ال&ضغط الجوي"
+
+msgid "Read a&stronomical informations"
+msgstr "قراءة المعلومات ال&فلكية "
+
+msgid "Enable reading of the hours in &24-hour format"
+msgstr "تمكين قراءة الوقت بنظام &24 ساعة"
+
+msgid "Use the comma to separate decimals, example (4,&15)"
+msgstr "استخدام الفاصلة للفصل بين لالأرقام العشرية ، على سبيل المثال (4,&15)"
+
+msgid "Check for &upgrade"
+msgstr "للكشف عن وجود تحدي&ث"
+
+msgid ""
+"Testing the validity of city woeID entry and find the name of city assigned, "
+"or viceversa."
+msgstr ""
+"اختبار صلاحية إدخال woeID للمدينة وابحث عن اسم المدينة المعينة أو viceversa."
+
+msgid "Displays information on the current city."
+msgstr "يعرض معلومات عن المدينة الحالية."
+
+msgid "Allows you to define the area, in order to adapt the sound effects."
+msgstr "يتيح لك تحديد المنطقة ، من أجل تكييف المؤثرات الصوتية"
+
+msgid "Add the current city into your list."
+msgstr "إضافة المدينة الحالية في قائمتك"
+
+msgid ""
+"Presets the current city as the default, will be used every time you restart "
+"the plugin."
+msgstr ""
+"الإعدادات المسبقة للمدينة الحالية كإعداد إفتراضي, سيتم إستخدامها كل مرة تقوم "
+"فيها بإعادة تشغيل الإضافة."
+
+msgid "Delete  the current city from your list."
+msgstr "إحذف المدينة الحالية من قائمتك."
+
+msgid "Rename the current city."
+msgstr "إعداة تسمية المدينة الحالية."
+
+msgid ""
+"Permits to incorporate in your list new cities importing them from another "
+"list with the extension *.zipcodes; you can select the city you want to "
+"import, by turning on the check box associated."
+msgstr ""
+"يسمح بإدراج في قائمتك مدن جديدة تستوردها من قائمة أخرى مع الامتداد *."
+"zipcodes; يمكنك تحديد المدينة التي تريد استيرادها، عن طريق تشغيل خانة "
+"الاختيار."
+
+msgid "Permits to save your list of cities in a specified path."
+msgstr "يسمح بحفظ قائمة المدن الخاصة بك في مسار محدد."
+
+msgid "You can enter or search for a city"
+msgstr "يمكنك إدخال  المعرف أوالبحث عن مدينة"
+
+msgid "By city woeID: 715399"
+msgstr "بواسطة  معرف  المدينةمثال : 1979608"
+
+msgid "By only city name: Ferrara"
+msgstr "باسم المدينة فقط مثال: غزة gaza "
+
+msgid "By state or region and city name: Emilia Romagna Ferrara"
+msgstr "من قبل الدولة أو المنطقة اسم المدينة: إميليا رومانيا فيرارا "
+
+msgid "By city name and country: Ferrara,it"
+msgstr "اسم المدينة والبلد مثال : gaza,ps"
+
+msgid "By postal code: 44100,it"
+msgstr "بواسطة الكود مثال :44100,it "
+
+msgid "By geographic coordinates: latitude, longitude"
+msgstr "بواسطة الإحداثيات الجغرافية: خطوط الطول والعرض"
+
+msgid "If the city is not found"
+msgstr "إذا لم يتم العثور على المدينة"
+
+msgid "Try with or without the country of origin"
+msgstr "حاول  بدون كتابة البلد"
+
+msgid "Try to merge the name with hyphens, or separate it with spaces"
+msgstr "أو حاول لدمج الاسم مع  المنطقة بفاصلة ، أو فصلهما بمسافات"
+
+msgid "Try deleting apostrophes"
+msgstr "أو حاول حذف الفاصلة "
+
+msgid "Try changing the vowels accented with normal vowels"
+msgstr "حاول تغيير حروف العلة معلمة طبيعية مع حروف العلة "
+
+msgid "Try with a closest location"
+msgstr "أو حاول مع موقع أقرب منك "
+
+msgid "Help placing"
+msgstr "المساعدة "
+
+msgid "No sound effect in memory!"
+msgstr "لا توجد مؤثرات في الذاكرة"
+
+msgid "I can't reproduce the sound."
+msgstr "لا يستطيع اخراج الصوت ."
+
+msgid "not found! Press F1 for help on entering data."
+msgstr "لم يتم العصور ! إضغط f1 للمساعدة في كيفية إدخال المعلومات"
+
+msgid "Is not working properly or has been removed from the database of"
+msgstr "لا يعمل بشكل صحيح أو تمت الإزالة من قاعدة البيانات"
+
+msgid "Is no longer valid!"
+msgstr "غير متاح!"
+
+msgid "This option requires the installation of some audio effects"
+msgstr "يتطلب هذا الخيار تثبيت بعض التأثيرات الصوتية"
+
+msgid "Do you want to install them?"
+msgstr "هل تريد تثبيتها؟"
+
+msgid "The audio effects are installed!"
+msgstr "يتم تثبيت التأثيرات الصوتية!"
+
+msgid "Would you like to update?"
+msgstr "هل ترغب في التحديث؟"
+
+msgid "Or do you want to uninstall them?"
+msgstr "هل تريد إزالة التثبيت؟"
+
+msgid "Are you sure you want to uninstall the sound effects?"
+msgstr "هل أنت متأكد من تثبيت المؤثرات الصوتية "
+
+msgid "Update in progress"
+msgstr "تقدم التحديث."
+
+msgid "Installation in progress"
+msgstr "جاري التثبيت "
+
+msgid "Please wait..."
+msgstr "الرجاء الإنتظار..."
+
+#. Installation Complete
+msgid "The installation of audio effects has been completed successfully!"
+msgstr "تم الانتهاء من تركيب التأثيرات الصوتية بنجاح!"
+
+msgid "Adding folder:"
+msgstr "إضافة مجلد:"
+
+msgid "The upgrade of audio effects has been completed successfully!"
+msgstr "تم الانتهاء من ترقية من التأثيرات الصوتية بنجاح!"
+
+msgid "These sound effects are subject to change by the author."
+msgstr "هذه المؤثرات الصوتية هي عرضة للتغيير من قبل المؤلف."
+
+msgid "Disable and re-enable this option in order to update or uninstall them."
+msgstr "تعطيل وإعادة تمكين هذا الخيار لتحديثها."
+
+msgid "Verify that your internet connection is active, or try again later."
+msgstr "تحقق من أن الإتصال بالإإنترنت نشط، أو حاول مرة أخرى لاحقاً."
+
+msgid "File corrupted or not available!"
+msgstr "الملف تالف أو أنه غير متوفر!"
+
+msgid "Sorry, i could not complete the installation of the sound effects!"
+msgstr "عذراً يتعذر إكمال تثبيت التأثيرات الصوتية!"
+
+msgid "Installation Error!"
+msgstr "خطأ في التثبيت "
+
+msgid ""
+"The details of this city are not in the database and so I added them to the "
+"list. Try again!"
+msgstr ""
+"تفاصيل هذه المدينة ليست في قاعدة البيانات ولذا أضفتها إلى القائمة. حاول مرة "
+"أخري!"
+
+msgid "Cannot identify your location, due to insufficient data."
+msgstr "لا يمكن تحديد موقعك نظرا لعدم كفاية البيانات. "
+
+msgid "Details of"
+msgstr "تفاصيل من :"
+
+msgid "Place"
+msgstr "الموضع "
+
+msgid "Current local time"
+msgstr "الوقت المحلي الآن"
+
+msgid "Degrees latitude"
+msgstr "خط العرض"
+
+msgid "Degrees longitude"
+msgstr "خط الطول"
+
+msgid "Elevation above sea level"
+msgstr "الارتفاع فوق مستوى سطح البحر"
+
+msgid "meters"
+msgstr "أمتار "
+
+msgid "Define the area for"
+msgstr "تحديد منطقة "
+
+msgid "Hinterland"
+msgstr "منطقة نائية "
+
+msgid "Maritime area"
+msgstr "منطقة بَحْرِيَّة "
+
+msgid "Desert zone"
+msgstr "منطقة صحراوية "
+
+msgid "Arctic zone"
+msgstr "منطقة القطب الشمالي"
+
+msgid "Mountain zone"
+msgstr "منطقة جبلية "
+
+msgid "Enter new name."
+msgstr "أدخل اسمًا جديدًا."
+
+msgid "it can't be used because it already exists!"
+msgstr "لا يمكن استخدامه لأنه موجود بالفعل !"
+
+msgid "is correct"
+msgstr "تم التصحيح "
+
+msgid "But the name"
+msgstr "الإسم "
+
+msgid "already exists"
+msgstr "موجود بالفعل"
+
+msgid "You have to change it!"
+msgstr "لديك لتغيير ذلك! "
+
+msgid "The city proper is"
+msgstr "المدينة الصحيح هو "
+
+msgid "Want to use the suggested name?"
+msgstr "هل ترغب في استخدام الاسم المقترح؟"
+
+msgid "Import cities"
+msgstr "إ&ستيراد... المدينة"
+
+msgid "Do you want to replace your list with this?"
+msgstr "هل تريد حذفه من القائمة الخاصة بك؟"
+
+msgid "If you select yes, your list will be completely replaced."
+msgstr "إذا قمت بتحديد نعم ، سيتم استبدال تماما. "
+
+msgid "If you select no, the new cities will be added to your list."
+msgstr "إذا قمت بتحديد لا, المدن الجديدة ستضاف إلى القائمة الخاصة بك."
+
+msgid "Select import mode"
+msgstr "حدد استيراد الوضعية ، "
+
+msgid "File contents"
+msgstr "محتوى الملف "
+
+msgid "cities"
+msgstr "لا توجد مدن ليتم العصور عليها "
+
+msgid "Activate the check boxes of the cities you want to import."
+msgstr "تنشيط خانات الاختيار من المدن التي تريد استيرادها."
+
+msgid "Importing cities in progress"
+msgstr "جاري الإستيراد المدن"
+
+msgid "Were added"
+msgstr "تم اضافته"
+
+msgid "new cities to the list"
+msgstr "رمز جديد الى القائمة"
+
+msgid "Have been ignored because existing"
+msgstr "تم تجاهل للقائمة"
+
+msgid "Content of imported list"
+msgstr "محتوى قائمة الإستيراد "
+
+msgid "selected by the user"
+msgstr "تحديد من قبل المستخدم"
+
+msgid "Import finished"
+msgstr "تم الإستيراد "
+
+msgid "A copy of"
+msgstr "نسخة من"
+
+msgid "It will be exported"
+msgstr "سيتم تصديره"
+
+msgid "But it does not yet contain the changes you just made the list!"
+msgstr "ولكنه لا يحتوي على بعد التغييرات التي أدلى به للتو القائمة!"
+
+msgid "I proceed?"
+msgstr "انتقل؟"
+
+msgid "Export cities"
+msgstr "تصدير المدن ت"
+
+msgid "You can not export the same file at the same path!"
+msgstr "لا يمكنك تصدير نفس الملف في نفس المسار!"
+
+msgid "january"
+msgstr "كانون الثاني/يناير"
+
+msgid "february"
+msgstr "شباط/فبراير"
+
+msgid "march"
+msgstr "آذار مارس"
+
+msgid "april"
+msgstr "نيسان/أبريل"
+
+msgid "may"
+msgstr "أيار/مايو"
+
+msgid "june"
+msgstr "حزيران/يونيه"
+
+msgid "july"
+msgstr "تموز/يوليه"
+
+msgid "august"
+msgstr "آب/أغسطس"
+
+msgid "september"
+msgstr "أيلول/سبتمبر"
+
+msgid "october"
+msgstr "تشرين الأول/أكتوبر"
+
+msgid "november"
+msgstr "تشرين الثاني/نوفمبر"
+
+msgid "december"
+msgstr "كانون الأول ديسمبر"
+
+msgid "Monday"
+msgstr "الإثنين "
+
+msgid "Tuesday"
+msgstr "الثلاثاء "
+
+msgid "Wednesday"
+msgstr "الأربعاء "
+
+msgid "Thursday"
+msgstr "الخميس "
+
+msgid "Friday"
+msgstr "الجمعة "
+
+msgid "Saturday"
+msgstr "السبت"
+
+msgid "Sunday"
+msgstr "الأحد "
+
+#, python-format
+msgid "It was not possible find the acronym of %s!"
+msgstr "لم يكن من الممكن العثور على اختصار %s!"
+
+#, fuzzy
+msgid "This does not allow to get the city details."
+msgstr ""
+"هذا لا يسمح للحصول على المدينة بالتوقيت المحلي ، والمؤثرات الصوتية لن تكون "
+"متسقة."
+
+msgid ""
+"Please report this to the author so he can add this country in database."
+msgstr ""
+"الرجاء الإبلاغ عن هذا للمؤلف حتى يتمكن من إضافة هذا البلد في قاعدة البيانات."
+
+#, python-format
+msgid "Send an email to %s"
+msgstr "إرسال بريد إلكتروني إلى %s"
+
+msgid "With  object the line below, thanks."
+msgstr "مع كائن السطر أدناه ، شكرا."
+
+msgid "Downloaded"
+msgstr "تم التحميل "
+
+msgid "of"
+msgstr "من"
+
+msgid "Find..."
+msgstr "بحث "
+
+msgid "Find next"
+msgstr "البحث التالي "
+
+msgid "Find previous"
+msgstr "البحث السابق "
+
+msgid "Empty file or not in cities woeID format compatible!"
+msgstr "الملف فارغ أو لا يوجد تنسيق مناسب لمعرف المدن!"
+
+msgid "Be an error has occurred."
+msgstr "كن حدث خطأ."
+
+msgid "See the log for more information."
+msgstr "انظر السجل لمزيد من المعلومات."
+
+msgid "Error: failure writing file!"
+msgstr "خطأ: فشل ملف الكتابة!"
+
+msgid "occurrences found"
+msgstr "تم العصور على الأحداث"
+
+msgid "for"
+msgstr "من أجل "
+
+msgid "Choose a city."
+msgstr "اختر المدينة."
+
+msgid "List of availables Cities"
+msgstr "قائمة بالمدن المتاحة "
+
+msgid "Do not show this message again!"
+msgstr "لا تظهر هذه الرسالة مرة أخرى!"
+
+msgid "&Install..."
+msgstr "&تثبيت..."
+
+msgid "Upd&ate..."
+msgstr "الت&حديث..."
+
+msgid "&Close"
+msgstr "إ&غلاق "
+
+msgid "&Uninstall..."
+msgstr "&الغاء التثبيت "
+
+msgid "Type the search string"
+msgstr "اكتب سلسلة البحث"
+
+msgid "Find"
+msgstr "البحث "
+
+msgid "next"
+msgstr "التالي "
+
+msgid "previous"
+msgstr "السابق"
+
+msgid "No results next for"
+msgstr "لا توجد نتائج تالية "
+
+msgid "No previous results for"
+msgstr "لا توجد نتائج سابقة"
+
+msgid "&Select all"
+msgstr "&تحديد الكل "
+
+msgid "&Deselect all"
+msgstr "إل&غاء تحديد الكل "
+
+msgid "not checked"
+msgstr "غير محدد"
+
+msgid "checked"
+msgstr "محدد"
+
+msgid "check box"
+msgstr "خانة الاختيار"
+
+msgid "check boxes checked"
+msgstr "التحقق من إلغاء تحديد خانات الاختيار"
+
+msgid "check boxes not checked"
+msgstr "خانة إختيار غير محدد "
+
+msgid "Saving in progress"
+msgstr "جاري الحفظ"
+
+msgid "Download canceled."
+msgstr "تم إلغاء التحميل"
+
+msgid "&Copy to clipboard"
+msgstr "&نسخ إلى الحافظة"
+
+msgid ""
+"Adds local temperature and forecast 24 ours and prediction up to 9 days.\n"
+msgstr ""
+"يضيف درجات الحرارة المحلية والتنبؤات 24 لدينا والتنبؤ تصل إلى 9 أيام.\\n\n"
+
+msgid "NVDA+w for the current bulletin.\n"
+msgstr "NVDA+w لمعرفة النشرة الجوية  الحالية.\n"
+
+msgid ""
+"NVDA+shift+w for the prediction in the current 24 hours and prediction up to "
+"9 days.\n"
+msgstr "NVDA + shift + w لرؤية التوقعات الحالية وأيضًا الأيام التسعة التالية.\n"
+
+msgid "NVDA+shift+control+w for quickly enter a temporary city.\n"
+msgstr "NVDA+shift+control+w لضبط مدينة مؤقتة.\n"
+
+msgid "NVDA + shift + control + alt + w for open the Weather Plus settings.\n"
+msgstr "NVDA + shift + control + alt + w لفتح أعدادات إدارة المدن.\n"
+
+msgid ""
+"NVDA+alt+w announces the date of the last update of the weather report.\n"
+msgstr "NVDA+alt+w للإعلان عن آخر تحديث للنشرة الجوية.\n"
+
+msgid "Shift+control+w alternates between Fahrenheit, Celsius and Kelvin.\n"
+msgstr "Shift+control+w للتبديل بين وحدة القياس .\n"
+
+msgid ""
+"For other instructions, you can also press Add-on Help button in Add-ons "
+"manager."
+msgstr ""
+"للحصول على تعليمات أخرى ، يمكنك أيضا الضغط على زر المساعدة للإضافة في مدير "
+"الإضافات."

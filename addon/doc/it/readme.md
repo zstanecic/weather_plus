@@ -1,4 +1,4 @@
-#Weather Plus #
+# Weather Plus #
 
 * Autore: Adriano Barbieri
 * Compatibilità con NVDA: dalla 2017.3 alla 2019.1
@@ -10,7 +10,7 @@
   ulteriori 9 giorni per NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Rilasciato sotto licenza GNU GPL (General Public License) v2
-* Versione: 6.4.
+* Versione: 6.5.
 
 # Weather Plus funziona attraverso l'uso e la presenza dei seguenti servizi: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -296,6 +296,10 @@ ricordato e potrete ancora salvarla.
 --------------------------------------------------------------------------------
 
 # Novità: #
+
+# Versione 6.5 #
+* Corretto bug nell'ora locale in "dettagli";
+	* La conversione del tempo in 12 ore dava un errore.
 
 # Versione 6.4 #
 * Rimossa l'ora legale nella funzione "Dettagli";

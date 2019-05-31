@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Weather_Plus 6.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2019-05-06 11:14+0200\n"
-"PO-Revision-Date: 2019-05-21 20:11+0200\n"
+"PO-Revision-Date: 2019-05-31 09:06+0200\n"
 "Last-Translator: Karl Eick <hozosch@web.de>\n"
 "Language-Team: Karl Eick <<hozosch@web.de>> <hozosch@web.de>\n"
 "Language: de\n"
@@ -15,20 +15,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: __init__.py\n"
-
-#. Translators: A message informing the user that he has installed an old version that contains a space rather than an underscore.
-msgid ""
-"You have installed the Weather Plus add-on which is incompatible with this "
-"one. The new name of this add-on is Weather_Plus with an underscore. Click "
-"OK to update it."
-msgstr ""
-"Sie haben eine Erweiterung Weather Plus installiert, welche mit dieser "
-"Erweiterung nicht kompatibel ist. Der neue Name ist Weather_Plus mit einem "
-"Unterstrich. Klicken Sie auf OK, um zu aktualisieren."
-
-#. Translators: The title of the dialogbox.
-msgid "Update confirmation"
-msgstr "Aktualisierungsbestätigung"
 
 msgid "Fahrenheit"
 msgstr "Fahrenheit"
@@ -997,33 +983,11 @@ msgstr ""
 "Ihr Standort konnte auf Grund unzureichender Daten nicht identifiziert "
 "werden."
 
-#. if there is daylight saving time
-msgid "Daylight saving time"
-msgstr "Sommerzeit"
-
-msgid "ahead"
-msgstr "vor"
-
-msgid "back"
-msgstr "zurück"
-
-msgid "Starts on"
-msgstr "Beginnt am"
-
-msgid "set your clock"
-msgstr "Ihre Uhr stellen"
-
-msgid "hour"
-msgstr "Stunde"
-
-msgid "Ends on"
-msgstr "Endet am"
-
 msgid "Details of"
 msgstr "Details für"
 
 msgid "Place"
-msgstr "Platz"
+msgstr "Ort"
 
 msgid "Current local time"
 msgstr "Aktuelle Uhrzeit"
@@ -1211,9 +1175,8 @@ msgstr "Sonntag"
 msgid "It was not possible find the acronym of %s!"
 msgstr "Das Akronym von %s konnte nicht gefunden werden!"
 
-msgid ""
-"This does not allow to get the city local time, the sound effects will not "
-"be consistent."
+#, fuzzy
+msgid "This does not allow to get the city details."
 msgstr ""
 "Dies ermöglicht nicht, die Ortszeit der Stadt zu ermitteln, die Soundeffekte "
 "sind nicht konsistent."
@@ -1370,8 +1333,41 @@ msgid ""
 "For other instructions, you can also press Add-on Help button in Add-ons "
 "manager."
 msgstr ""
-"Für mehr Details lesen sie bitte die Benutzerhandbücher, die im menü von "
-"Weather plus zu finden sind."
+"Für weitere Anweisungen können Sie auch die Schaltfläche \"Hilfe\" im Menü "
+"\"Erweiterung verwalten\" drücken."
+
+#~ msgid ""
+#~ "You have installed the Weather Plus add-on which is incompatible with "
+#~ "this one. The new name of this add-on is Weather_Plus with an underscore. "
+#~ "Click OK to update it."
+#~ msgstr ""
+#~ "Sie haben eine Erweiterung Weather Plus installiert, welche mit dieser "
+#~ "Erweiterung nicht kompatibel ist. Der neue Name ist Weather_Plus mit "
+#~ "einem Unterstrich. Klicken Sie auf \"OK\", um zu aktualisieren."
+
+#~ msgid "Update confirmation"
+#~ msgstr "Aktualisierungsbestätigung"
+
+#~ msgid "Daylight saving time"
+#~ msgstr "Sommerzeit"
+
+#~ msgid "ahead"
+#~ msgstr "vor"
+
+#~ msgid "back"
+#~ msgstr "zurück"
+
+#~ msgid "Starts on"
+#~ msgstr "Beginnt am"
+
+#~ msgid "set your clock"
+#~ msgstr "Ihre Uhr stellen"
+
+#~ msgid "hour"
+#~ msgstr "Stunde"
+
+#~ msgid "Ends on"
+#~ msgstr "Endet am"
 
 #~ msgid ""
 #~ "In&dicates the wait with a beep while you search for the latest bulletin"

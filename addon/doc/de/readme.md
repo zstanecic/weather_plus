@@ -1,4 +1,4 @@
-#Weather Plus #
+# Weather Plus #
 
 * Autor: Adriano Barbieri
 * NVDA-Kompatibilität: 2017.3 bis 2019.1
@@ -10,7 +10,7 @@
   Vorhersagen für 24 Stunden und bis zu 9 zusätzlichen Tagen zu NVDA hinzu.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Freigegeben unter der GNU GPL (General Public License) v2
-* Version: 6.4.
+* Version: 6.5.
 
 # Weather Plus funktioniert durch die Nutzung und Präsenz folgender Dienste: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -303,6 +303,10 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 --------------------------------------------------------------------------------
 
 # Änderungsverlauf: #
+
+# Version 6.5 #
+* Fehler in der Uhrzeitausgabe in "Details" behoben;
+	* Bei der Umwandlung in das 12-Stunden-Format trat ein Fehler auf.
 
 # Version 6.4 #
 * Sommerzeit in der Funktion "Details" entfernt.
