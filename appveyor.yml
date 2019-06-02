@@ -1,4 +1,5 @@
-version: '{branch}-{build}'
+version: "'{branch}-{build}'"
+skip_non_tags: true
 environment:
   PY_PYTHON: 3.7-32
 install:
@@ -8,28 +9,41 @@ install:
     python -m pip install -U pip
 
     pip install wheel
-    
+
     pip install scons
 
     pip install markdown
 build_script:
 - cmd: scons
-
+test_script:
+- ps: >-
+    if ($env:APPVEYOR_REPO_TAG_NAME.StartsWith("v")) {
+        Add-AppveyorMessage $env:APPVEYOR_REPO_TAG_NAME.substring(1)
+    } else {
+        Add-AppveyorMessage $env:APPVEYOR_REPO_TAG_NAME
+    }
 artifacts:
 - path: '*.nvda-addon'
   name: addon
   type: WebDeployPackage
-
 deploy:
-  provider: FTP
-  protocol: ftp
-  host:
-    secure: bDtLCP8Qj8t2OTKKDEB9LEH4bSHgjmE94Qd3kmsElrg=
-  username:
-    secure: UdaIlHk5Q87ZnydXu7PpBw==
-  password:
-    secure: jdngQAtlVxo7GQokRXAhAQ==
-  folder: /nvda-addons
-  artifact: addon
+- provider: Environment
+  name: ftp_deployment
   on:
-    appveyor_repo_tag: true
+    APPVEYOR_REPO_TAG: true
+
+notifications:
+- provider: Email
+  to:
+  - abdelkrim.bensaid@free.fr
+  - remyruiz@gmail.com
+  subject: Download Weather_Plus{{#jobs}}{{#messages}}{{message}}{{/messages}}{{/jobs}}
+  message: >-
+    <h1>The add-on Weather_Plus{{#jobs}}{{#messages}}{{message}}{{/messages}}{{/jobs}} is ready!</h1>
+         <p>You can download it from this link :</p>
+         <p><a href="http://cyber25.free.fr/nvda-addons/Weather_Plus{{#jobs}}{{#messages}}{{message}}{{/messages}}{{/jobs}}.nvda-addon">Download Weather_Plus{{#jobs}}{{#messages}}{{message}}{{/messages}}{{/jobs}}.</a></p>
+         <p>This email has been sent to you by appveyor.</p>
+         <p>Best regards.</p>
+  on_build_success: true
+  on_build_failure: false
+  on_build_status_changed: false
