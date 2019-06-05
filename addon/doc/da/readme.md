@@ -292,6 +292,8 @@ du kan stadig gemme den.
 # What's new: #
 
 # Version 6.5 #
+* Fixed a couple of bugs in sound effects reproduction;
+	* a couple of "for" cycles with incorrect maximum values caused the call to a non-existent sound effect.
 * Fixed bug in local time in "details";
 	* 12-hour time conversion gave a error.
 

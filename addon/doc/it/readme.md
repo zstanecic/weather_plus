@@ -298,6 +298,8 @@ ricordato e potrete ancora salvarla.
 # Novità: #
 
 # Versione 6.5 #
+* Corretti un paio di bug nella riproduzione degli effetti sonori;
+	* un paio di cicli "for" con valore massimo errato causavano la chiamata ad un effetto sonoro inesistente.
 * Corretto bug nell'ora locale in "dettagli";
 	* La conversione del tempo in 12 ore dava un errore.
 
