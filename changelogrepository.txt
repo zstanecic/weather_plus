@@ -1,4 +1,19 @@
-29/05/2019
+05/06/2019
+Weather_Plus6.5 source updated #3
+Adriano updated the __init__.py module.
+He said:
+Can you add any 2 lines in the version 6.5 readme changes please?
+[italian]
+* Corretti un paio di bug nella riproduzione degli effetti sonori;
+	* un paio di cicli "for" con valore massimo errato causavano la chiamata ad un effetto sonoro inesistente.
+[inglish]
+* Fixed a couple of bugs in sound effects reproduction;
+	* a couple of "for" cycles with incorrect maximum values caused the call to a non-existent sound effect.
+
+In attachment the source code.
+No string has changed in the file.
+
+	29/05/2019
 Adriano made a little update on the __init__.py module.
 He said:
 I just fixed a little part about python 3.7 compatibility.

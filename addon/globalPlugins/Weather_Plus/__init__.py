@@ -783,8 +783,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			bikers = ['Bike' + str(i).rjust(2, '0') for i in range(4)]\
 			+['Motorcycle' + str(i).rjust(2,'0') for i in range(11)]
 			sport_bikers =['Bike trial', 'Mountain bike00', 'Mountain bike01']
-			birds = ['Birds' + str(i).rjust(2, '0') for i in range(5)]\
-			+['Birds' + str(i).rjust(2, '0') for i in range(7,13)]\
+			birds = ['Birds' + str(i).rjust(2, '0') for i in range(6)]\
+			+['Birds' + str(i).rjust(2, '0') for i in range(7, 13)]\
 			+['Birds' + str(i).rjust(2, '0') for i in range(14, 29)]\
 			+['Robin', 'Solitary sparrow', 'Swallows']
 			trains = ['Level crossing', 'Train passing00', 'Train passing01', 'Train passing02']
@@ -793,8 +793,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			"summer": bikers,
 			"autumn": ['Motorcycle00', 'Motorcycle03', 'Motorcycle04']}
 			sea_light = ['Sea light00', 'Sea light01', 'Sea light02', 'Sea light03', 'Sea light04', 'Sea medium03']
-			seaShips = ['Motorboat' + str(i).rjust(2, '0') for i in range(7)]\
-			+['Jet ski' + str(i).rjust(2, '0') for i in range(4)]\
+			seaShips = ['Motorboat' + str(i).rjust(2, '0') for i in range(6)]\
+			+['Jet ski' + str(i).rjust(2, '0') for i in range(3)]\
 			+['Ferryboat', 'Ship']
 			seagulls = ['Seagulls00', 'Seagulls01', 'Seagulls02']
 			sea_dic = {
@@ -4076,6 +4076,8 @@ class Shared:
 		if request == "not authorized": return request
 		data = self.GetUrlData(request)
 		if not data or data == "no connect": return data
+		#with open('E:\packed\Documenti xp\Downloads\prova_crete_yahoo.txt', 'w') as w: #*
+			#w.write(data) #*
 		return json.loads(data)
 
 
