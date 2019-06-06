@@ -305,10 +305,10 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 # Änderungsverlauf: #
 
 # Version 6.5 #
-* Fixed a couple of bugs in sound effects reproduction;
-	* a couple of "for" cycles with incorrect maximum values caused the call to a non-existent sound effect.
-* Fixed bug in local time in "details";
-	* 12-hour time conversion gave a error.
+* Einige Fehler bei der Wiedergabe von Soundeffekten wurden behoben.
+	* Einige "for" -Motorradsounds mit falschen Maximalwerten verursachten einen nicht existierenden Soundeffekt.
+* Fehler in der Ortszeit in "Details" behoben;
+	* Bei der  12-Stunden-Zeitumrechnung trat ein Fehler auf.
 
 # Version 6.4 #
 * Sommerzeit in der Funktion "Details" entfernt.
