@@ -1466,22 +1466,33 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 			else:
 				#gets forecast from Yahoo API
+				curr_day = Shared().GetLastUpdate(self.dom).day
+				start_forecastDay = error = 0
+				for i in range(0, int(self.forecast_days)):
+					#some woeids for a bug start the forecasts with the the previous day
+					#then let's make sure to start from  the current day
+					try:
+						start_forecastDay = date.fromtimestamp(self.dom['forecasts'][i]['date']).day
+						if start_forecastDay == curr_day: start_forecastDay = increment = i; break
+					except IndexError: pass
+
+				#if there is a bug and forecast days is maximum, it reports it at the end of the forecasts as not available
+				if int(self.forecast_days) == 10: error = int(self.forecast_days) - start_forecastDay; increment = 0
 				month1 = ""
-				high = self.dom['forecasts'][0]['high']
-				low = self.dom['forecasts'][0]['low']
+				high = self.dom['forecasts'][start_forecastDay]['high']
+				low = self.dom['forecasts'][start_forecastDay]['low']
 				if self.celsius != 0: #conversion only for Celsius and Kelvin degrees scale
 					high = self.Temperature_convert(high, self.celsius)
 					low = self.Temperature_convert(low, self.celsius)
 				weatherReport = '%s %s %s %s %s %s %s %s.' % \
 				(_("the forecast for today is"),
-				self.dom['forecasts'][0]['text'],
+				self.dom['forecasts'][start_forecastDay]['text'],
 				_("with a maximum temperature of"), high,
 				_("and a minimum of"), low,
 				_("degrees"), scale_as)
 				weatherReport = weatherReport.replace(" .", ".")
-				#Adds the remaining days set from user into the string
-				error = 0
-				for i in range(1, int(self.forecast_days)):
+				#Adds the remaining days set from user
+				for i in range(start_forecastDay+1, int(self.forecast_days)+increment):
 					try:
 						week_day = date.fromtimestamp(self.dom['forecasts'][i]['date'])
 					except IndexError:
@@ -1511,7 +1522,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				if error:
 					for i in range(int(self.forecast_days) - error):
 						weatherReport += '\n%s, %s.' % (_nr, _("not available"))
-					self.forecast_days = str(error) #sets the maximum limit of forecast days
 
 				weatherReport = self.WeatherReport(weatherReport)
 			#this does not replace the name of the city
@@ -4076,8 +4086,6 @@ class Shared:
 		if request == "not authorized": return request
 		data = self.GetUrlData(request)
 		if not data or data == "no connect": return data
-		#with open('E:\packed\Documenti xp\Downloads\prova_crete_yahoo.txt', 'w') as w: #*
-			#w.write(data) #*
 		return json.loads(data)
 
 
