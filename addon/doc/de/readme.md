@@ -305,8 +305,10 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 # Änderungsverlauf: #
 
 # Version 6.5 #
-* Fehler in der Uhrzeitausgabe in "Details" behoben;
-	* Bei der Umwandlung in das 12-Stunden-Format trat ein Fehler auf.
+* Einige Fehler bei der Wiedergabe von Soundeffekten wurden behoben.
+	* Einige "for" -Motorradsounds mit falschen Maximalwerten verursachten einen nicht existierenden Soundeffekt.
+* Fehler in der Ortszeit in "Details" behoben;
+	* Bei der  12-Stunden-Zeitumrechnung trat ein Fehler auf.
 
 # Version 6.4 #
 * Sommerzeit in der Funktion "Details" entfernt.
@@ -812,8 +814,8 @@ Steuerung + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = rückwärts suchen.
   Vokalen nicht richtig gespeichert und verwaltet werden konnten.
 
 # Version 2.3 #
-* Das Dialogfeld zum Einstellen der Temperatturskala wurde entfernt; Es
-  wurde ein neues GUI hinzugefügt, was es erlaubt, alles in einem Fenster
+* Das Dialogfeld zum Einstellen der Temperaturskala wurde entfernt; Es wurde
+  ein neues GUI hinzugefügt, was es erlaubt, alles in einem Fenster
   festzulegen.
 * Sie können dann auch als Standard-Postleitzahl, die als Liste gesammelt
   wurde, testen / hinzufügen / löschen / voreingestellt werden.

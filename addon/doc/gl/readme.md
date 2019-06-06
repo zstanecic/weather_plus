@@ -296,8 +296,10 @@ aínda podes gardalo.
 # Que Hai de novo: #
 
 # Versión 6.5 #
-* Arranxado erro na hora local en "detalles";
-	* A conversión a formato de 12 horas daba un erro.
+* Fixed a couple of bugs in sound effects reproduction;
+	* a couple of "for" cycles with incorrect maximum values caused the call to a non-existent sound effect.
+* Fixed bug in local time in "details";
+	* 12-hour time conversion gave a error.
 
 # Versión 6.4 #
 * Hora de verán eliminado na función "Detalles";

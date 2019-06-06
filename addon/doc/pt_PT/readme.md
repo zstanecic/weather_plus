@@ -302,8 +302,10 @@ alertado para a guardar.
 # Novidades: (As mensagens seguintes, até ao final da tradução, são da responsabilidade do Senhor Rémy Ruiz, que as traduziu à revelia da Equipa Portuguesa do NVDA) #
 
 # Versão 6.5 #
-* Corrigido o erro na hora local em "detalhes";
-	* A conversão de 12 horas deu um erro.
+* Fixed a couple of bugs in sound effects reproduction;
+	* a couple of "for" cycles with incorrect maximum values caused the call to a non-existent sound effect.
+* Fixed bug in local time in "details";
+	* 12-hour time conversion gave a error.
 
 # Versão 6.4 #
 * Hora de Verão foi removido na função "Detalhes";
