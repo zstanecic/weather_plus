@@ -304,10 +304,10 @@ averti et vous pourrez quand-même sauvegarder la liste.
 # Quoi de neuf : #
 
 # Version 6.5 #
-* Fixed a couple of bugs in sound effects reproduction;
-	* a couple of "for" cycles with incorrect maximum values caused the call to a non-existent sound effect.
-* Fixed bug in local time in "details";
-	* 12-hour time conversion gave a error.
+* Correction de quelques bugs dans la reproduction des effets sonores;
+	* quelques cycles "for" avec des valeurs maximales incorrectes ont provoqué l'appel d'un effet sonore inexistant.
+* Correction d'un bogue d'heure locale dans "détails";
+	* La conversion au format 12-heures donnait une erreur.
 
 # Version 6.4 #
 * Heure d'été supprimée dans la fonction "Détails";

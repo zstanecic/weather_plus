@@ -302,10 +302,10 @@ y podrás guardarla.
 # Que Hay de nuevo: #
 
 # Versión 6.5 #
-* Fixed a couple of bugs in sound effects reproduction;
-	* a couple of "for" cycles with incorrect maximum values caused the call to a non-existent sound effect.
-* Fixed bug in local time in "details";
-	* 12-hour time conversion gave a error.
+* Se corrigió un par de errores en la reproducción de efectos de sonido;
+	* un par de ciclos "for" con valores máximos incorrectos causaron la llamada a un efecto de sonido inexistente.
+* Solucionado el error en la hora local en "detalles";
+	* La conversión de tiempo de 12 horas dio un error.
 
 # Versión 6.4 #
 * El horario de verano eliminado en la función "Detalles";
