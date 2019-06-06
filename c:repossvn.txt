@@ -1,0 +1,127 @@
+mr svn2addon: /home/nvdal10n/mr/addons/Weather_Plus
+Running svn2addon for Weather_Plus
+Already on 'stable'
+Your branch is up-to-date with 'origin/stable'.
+HEAD is now at 76a0c53 l10n updates
+Processing ar
+ar has 404/405
+ar doc 0/332
+Processing bg
+srt/bg/add-ons/Weather_Plus/nvda.po: warning: Charset "CHARSET" is not a portable encoding name.
+                                              Message conversion to user's charset might not work.
+msgfmt: srt/bg/add-ons/Weather_Plus/nvda.po: warning: PO file header fuzzy
+                                             warning: older versions of msgfmt will give an error on this
+srt/bg/add-ons/Weather_Plus/nvda.po:8: warning: header field 'PO-Revision-Date' still has the initial default value
+srt/bg/add-ons/Weather_Plus/nvda.po:8: warning: header field 'Last-Translator' still has the initial default value
+srt/bg/add-ons/Weather_Plus/nvda.po:8: warning: header field 'Language-Team' still has the initial default value
+srt/bg/add-ons/Weather_Plus/nvda.po:8: warning: header field 'Content-Type' still has the initial default value
+bg has 0/405
+bg doc 0/332
+Processing cs
+cs has 404/405
+Processing da
+da has 258/405
+da doc 195/332
+Will transform doc data.
+Processing de
+de has 405/405
+de doc 332/332
+Will transform doc data.
+Processing es
+es has 405/405
+es doc 331/332
+Will transform doc data.
+Processing fa
+srt/fa/add-ons/Weather_Plus/nvda.po: warning: Charset "CHARSET" is not a portable encoding name.
+                                              Message conversion to user's charset might not work.
+msgfmt: srt/fa/add-ons/Weather_Plus/nvda.po: warning: PO file header fuzzy
+                                             warning: older versions of msgfmt will give an error on this
+srt/fa/add-ons/Weather_Plus/nvda.po:8: warning: header field 'PO-Revision-Date' still has the initial default value
+srt/fa/add-ons/Weather_Plus/nvda.po:8: warning: header field 'Last-Translator' still has the initial default value
+srt/fa/add-ons/Weather_Plus/nvda.po:8: warning: header field 'Language-Team' still has the initial default value
+srt/fa/add-ons/Weather_Plus/nvda.po:8: warning: header field 'Content-Type' still has the initial default value
+fa has 0/405
+fa doc 0/332
+Processing fi
+fi has 7/407
+fi doc 0/332
+Processing fr
+fr has 405/405
+fr doc 331/332
+Will transform doc data.
+Processing gl
+gl has 404/405
+gl doc 331/332
+Will transform doc data.
+Processing hr
+hr has 405/405
+hr doc 0/332
+Processing hu
+srt/hu/add-ons/Weather_Plus/nvda.po: warning: Charset "CHARSET" is not a portable encoding name.
+                                              Message conversion to user's charset might not work.
+msgfmt: srt/hu/add-ons/Weather_Plus/nvda.po: warning: PO file header fuzzy
+                                             warning: older versions of msgfmt will give an error on this
+srt/hu/add-ons/Weather_Plus/nvda.po:8: warning: header field 'PO-Revision-Date' still has the initial default value
+srt/hu/add-ons/Weather_Plus/nvda.po:8: warning: header field 'Last-Translator' still has the initial default value
+srt/hu/add-ons/Weather_Plus/nvda.po:8: warning: header field 'Language-Team' still has the initial default value
+srt/hu/add-ons/Weather_Plus/nvda.po:8: warning: header field 'Content-Type' still has the initial default value
+hu has 0/405
+hu doc 0/332
+Processing it
+it has 405/405
+it doc 332/332
+Will transform doc data.
+Processing pl
+pl has 404/405
+pl doc 14/332
+Will transform doc data.
+Discard the translation of srt/website/addons/Weather_Plus.mdwn (only 3.87% translated; need 40%).
+Processing pt_BR
+pt_BR has 404/405
+pt_BR doc 331/332
+Will transform doc data.
+Processing pt_PT
+pt_PT has 404/405
+pt_PT doc 331/332
+Will transform doc data.
+Processing ro
+ro has 405/405
+ro doc 0/332
+Processing ru
+ru has 404/405
+ru doc 0/332
+Processing sk
+sk has 405/405
+sk doc 0/332
+Processing sl
+srt/sl/add-ons/Weather_Plus/nvda.po: warning: Charset "CHARSET" is not a portable encoding name.
+                                              Message conversion to user's charset might not work.
+msgfmt: srt/sl/add-ons/Weather_Plus/nvda.po: warning: PO file header fuzzy
+                                             warning: older versions of msgfmt will give an error on this
+srt/sl/add-ons/Weather_Plus/nvda.po:8: warning: header field 'PO-Revision-Date' still has the initial default value
+srt/sl/add-ons/Weather_Plus/nvda.po:8: warning: header field 'Last-Translator' still has the initial default value
+srt/sl/add-ons/Weather_Plus/nvda.po:8: warning: header field 'Language-Team' still has the initial default value
+srt/sl/add-ons/Weather_Plus/nvda.po:8: warning: header field 'Content-Type' still has the initial default value
+sl has 0/405
+sl doc 0/332
+Processing sr
+sr has 404/405
+sr doc 0/332
+Processing tr
+tr has 405/405
+tr doc 0/332
+Processing uk
+uk has 404/405
+uk doc 0/332
+On branch stable
+Your branch is up-to-date with 'origin/stable'.
+Changes not staged for commit:
+	modified:   addon/locale/da/LC_MESSAGES/nvda.po
+
+Untracked files:
+	c:repossvn.txt
+
+no changes added to commit
+HEAD is now at 76a0c53 l10n updates
+
+mr svn2addon: finished (1 ok)
