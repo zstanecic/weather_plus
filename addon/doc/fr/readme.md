@@ -308,6 +308,9 @@ averti et vous pourrez quand-même sauvegarder la liste.
 	* quelques cycles "for" avec des valeurs maximales incorrectes ont provoqué l'appel d'un effet sonore inexistant.
 * Correction d'un bogue d'heure locale dans "détails";
 	* La conversion au format 12-heures donnait une erreur.
+* Correction d'un bug dans le rapport Yahoo Weather Forecast;
+	* Dans certaines villes, les prévisions partent de la veille et non de la date actuelle.
+	* La correction de ces villes entraîne la perte des derniers jours de prévision proportionnelle au décalage des dates (si les jours de prévision sont définis à 10).
 
 # Version 6.4 #
 * Heure d'été supprimée dans la fonction "Détails";

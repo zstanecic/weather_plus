@@ -302,6 +302,9 @@ ricordato e potrete ancora salvarla.
 	* un paio di cicli "for" con valore massimo errato causavano la chiamata ad un effetto sonoro inesistente.
 * Corretto bug nell'ora locale in "dettagli";
 	* La conversione del tempo in 12 ore dava un errore.
+* Corretto un bug nelreport di Yahoo Weather Forecast;
+	* In alcune città le previsioni partono dal giorno precedente e non da quello attuale.
+	* La correzione di queste città comporta la perdita degli ultimi giorni di previsione proporzionale alla mancata corrispondenza delle date (se i giorni di previsione sono impostati su 10).
 
 # Versione 6.4 #
 * Rimossa l'ora legale nella funzione "Dettagli";

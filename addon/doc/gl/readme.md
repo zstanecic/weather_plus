@@ -300,6 +300,9 @@ aínda podes gardalo.
 	* a couple of "for" cycles with incorrect maximum values caused the call to a non-existent sound effect.
 * Fixed bug in local time in "details";
 	* 12-hour time conversion gave a error.
+* Fixed a bug in the Yahoo Weather Forecast report;
+	* In some cities the forecasts start from the previous day and not from the current one.
+	* The correction of these cities entails the loss of the last days of forecast proportionate to the mismatch of dates (if the forecast days are set to 10).
 
 # Versión 6.4 #
 * Hora de verán eliminado na función "Detalles";

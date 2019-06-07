@@ -306,6 +306,9 @@ y podrás guardarla.
 	* un par de ciclos "for" con valores máximos incorrectos causaron la llamada a un efecto de sonido inexistente.
 * Solucionado el error en la hora local en "detalles";
 	* La conversión de tiempo de 12 horas dio un error.
+* Se ha corregido un error en el informe de pronóstico del tiempo de Yahoo;
+	* En algunas ciudades los pronósticos comienzan desde el día anterior y no desde el actual.
+	* La corrección de estas ciudades conlleva la pérdida de los últimos días de pronóstico proporcional al desajuste de fechas (si los días de pronóstico se establecen en 10).
 
 # Versión 6.4 #
 * El horario de verano eliminado en la función "Detalles";
