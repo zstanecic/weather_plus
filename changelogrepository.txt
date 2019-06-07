@@ -1,3 +1,15 @@
+07/06/2019
+Adriano said:
+So out of curiosity, if you want to see a couple of cities with the Yahoo bug, try the previous source code before the patch and then the patch, with watch the 10-day forecast:
+12577885 or 1968222
+
+Abdel just added the correction made by Noelia for the Danish and Finnish languages.
+He said:
+You must merge these fixes as follow:
+
+git status for checking your current branch, if it's not stable, git checkout stable to switch to stable.
+git pull origin stable to import the Danish and Finnish fixes.
+
 06/06/2019
 Weather_Plus6.5 source updated #4
 Adriano updated the __init__.py module.
@@ -5,7 +17,8 @@ He said:
 Peter Alada reported this to me, I reported it to the Yahoo Weather team, but in the meantime I got a patch :)
 Can you also add these lines in readme please?
 [italian]
-* Corretto un bug nelreport di Yahoo Weather Forecast;	* In alcune città le previsioni partono dal giorno precedente e non da quello attuale.
+* Corretto un bug nelreport di Yahoo Weather Forecast;
+	* In alcune città le previsioni partono dal giorno precedente e non da quello attuale.
 * La correzione di queste città comporta la perdita degli ultimi giorni di previsione proporzionale alla mancata corrispondenza delle date (se i giorni di previsione sono impostati su 10).
 
 [inglish]
