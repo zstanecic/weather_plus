@@ -1442,7 +1442,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					elif self.toBarometric and not self.toPressure:
 						weatherReport += '\n%s %s.' % (
 						_("The state of the barometric pressure is"),
-						rising_dic[self.dom['current_observation']['atmosphere']['rising']] or _nr
+						rising_dic[str(self.dom['current_observation']['atmosphere']['rising'])] or _nr
 						)
 
 				weatherReport = self.WeatherReport(weatherReport)

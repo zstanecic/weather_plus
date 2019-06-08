@@ -1,4 +1,9 @@
 08/06/2019
+Weather_Plus6.5 source updated #6
+Adriano said:
+Thanks for report, now is fixed.
+
+Weather_Plus6.5 source updated #5
 Adriano said:
 I wanted to wait until next Friday, but from what you tell me then it's the case to publish the update now, but I made a small change to the code, can you redo the package please?
 in attachment the last code.
