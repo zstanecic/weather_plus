@@ -1467,7 +1467,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			else:
 				#gets forecast from Yahoo API
 				curr_day = Shared().GetLastUpdate(self.dom).day
-				start_forecastDay = error = 0
+				start_forecastDay = error = increment = 0
 				for i in range(0, int(self.forecast_days)):
 					#some woeids for a bug start the forecasts with the the previous day
 					#then let's make sure to start from  the current day

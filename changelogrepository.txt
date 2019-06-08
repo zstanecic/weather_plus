@@ -1,3 +1,9 @@
+08/06/2019
+Adriano said:
+I wanted to wait until next Friday, but from what you tell me then it's the case to publish the update now, but I made a small change to the code, can you redo the package please?
+in attachment the last code.
+I only initialized a variable to wipe out a potential nameError in the case of Yahoo returning me a wrong or null "pubdate", with Yahoo you never know.
+
 07/06/2019
 Adriano said:
 So out of curiosity, if you want to see a couple of cities with the Yahoo bug, try the previous source code before the patch and then the patch, with watch the 10-day forecast:
