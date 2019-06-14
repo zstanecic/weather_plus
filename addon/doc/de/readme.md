@@ -305,13 +305,13 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 # Änderungsverlauf: #
 
 # Version 6.5 #
-* Fixed a couple of bugs in sound effects reproduction;
-	* a couple of "for" cycles with incorrect maximum values caused the call to a non-existent sound effect.
-* Fixed bug in local time in "details";
-	* 12-hour time conversion gave a error.
-* Fixed a bug in the Yahoo Weather Forecast report;
-	* In some cities the forecasts start from the previous day and not from the current one.
-	* The correction of these cities entails the loss of the last days of forecast proportionate to the mismatch of dates (if the forecast days are set to 10).
+* Einige Fehler bei der Wiedergabe von Soundeffekten wurden behoben.
+	* Einige "for" -Motorradsounds mit falschen Maximalwerten verursachten einen nicht existierenden Soundeffekt.
+* Fehler in der Ortszeit in "Details" behoben;
+	* Bei der  12-Stunden-Zeitumrechnung trat ein Fehler auf.
+* Ein Fehler im Yahoo-Wetterbericht wurde behoben;
+	* In einigen Städten beginnen die Vorhersagen mit dem Vortag und nicht mit dem aktuellen.
+	* Die Korrektur dieser Städte hat den Verlust der letzten Tage der Vorhersage proportional zur Nichtübereinstimmung der Daten zur Folge (wenn die Prognosetage auf 10 gesetzt sind).
 
 # Version 6.4 #
 * Sommerzeit in der Funktion "Details" entfernt.
