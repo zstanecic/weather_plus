@@ -1,4 +1,9 @@
 17/06/2019
+Adriano said:
+@Rémy, ok, let's remove it.
+Removed from the documentation readme.md the line where the version number is announced:
+* Version: 6.6.
+
 Updated Weather_Plus to version 6.6.
 Adriano said:
 @Abdel, I could do the update, but I have to increase the version to 6.6.
