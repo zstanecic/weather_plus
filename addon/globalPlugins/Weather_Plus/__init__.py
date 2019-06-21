@@ -2003,7 +2003,7 @@ class EnterDataDialog(wx.Dialog):
 		zipCodesList = Shared().Check_content(z, "", False) or []
 		del z
 		self.defaultString = defaultString
-		self.testCode = self.testName = self.last_tab = ""
+		self.testCode = self.testName = self.last_tab =self.apixuValue = ""
 		if message:
 			self.hotkeys_dic = {
 			True: _("f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control duration Weather Forecast, f5: volume controls."),

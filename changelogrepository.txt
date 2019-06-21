@@ -1,5 +1,10 @@
 21/06/2019
+Weather_Plus6.7 update #2
+Adriano said:
+Fixed a bug.
+
 Updated Weather_Plus to version 6.7.
+Weather_Plus6.7 update #1
 Adriano said:
 I added a country acronym to the database:
 'South Georgia and the South Sandwich Islands': 'GS'.
