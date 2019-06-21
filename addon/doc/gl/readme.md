@@ -10,7 +10,6 @@
   a 24 horas e a predición ata 9 días adicionais para NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Liberado baixo a licenza GNU GPL (General Public License) v2
-* Versión: 6.5.
 
 # Weather Plus funciona a través da presenza e funcionamento dos seguintes servizos: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
@@ -296,13 +295,13 @@ aínda podes gardalo.
 # Que Hai de novo: #
 
 # Versión 6.5 #
-* Fixed a couple of bugs in sound effects reproduction;
-	* a couple of "for" cycles with incorrect maximum values caused the call to a non-existent sound effect.
-* Fixed bug in local time in "details";
-	* 12-hour time conversion gave a error.
-* Fixed a bug in the Yahoo Weather Forecast report;
-	* In some cities the forecasts start from the previous day and not from the current one.
-	* The correction of these cities entails the loss of the last days of forecast proportionate to the mismatch of dates (if the forecast days are set to 10).
+* Arranxados algúns erros na reprodución de efectos de son;
+	* algúns bucles "for" con valores máximos incorrectos causaron chamadas a un efecto de son inexistente.
+* Arranxado erro na hora local en "Detalles";
+	* A conversión de hora a 12 horas deu un error.
+* Arranxado un erro no informe de Yahoo Weather Forecast;
+	En algunhas cidades as predicións comezan dende o día anterior e non dende o actual.
+	* A corrección destas cidades implica a perda dos últimos días de previsión proporcionalmente ó desaxuste de datas (se os días de previsión están configurados en 10).
 
 # Versión 6.4 #
 * Hora de verán eliminado na función "Detalles";

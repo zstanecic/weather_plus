@@ -10,7 +10,6 @@
   à 24 heures et les prévisions jusqu'à 9 jours supplémentaires.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Publié sous la GNU GPL (General Public License) v2
-* Version: 6.5.
 
 # Weather Plus fonctionne grâce à l'utilisation et la présence des services suivants : #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)

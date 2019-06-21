@@ -10,7 +10,6 @@
   9 dní.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Vydané pod GNU GPL (General Public License) v2
-* Verzia: 6.5.
 
 # Služba Weather Plus funguje prostredníctvom a za prítomnosti nasledujúcich služieb: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)

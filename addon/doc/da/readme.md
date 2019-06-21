@@ -10,7 +10,6 @@
   additional days for NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Released under the GNU GPL (General Public License) v2
-* Version: 6.5.
 
 # Weather Plus works through the use and presence of the following services: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)

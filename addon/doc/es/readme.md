@@ -10,7 +10,6 @@
   actual a 24 horas y la predicción hasta 9 días adicionales para NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Liberado bajo la licencia GNU GPL (General Public License) v2
-* Versión: 6.5.
 
 # Weather Plus funciona a través del uso y la presencia de los siguientes servicios: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
