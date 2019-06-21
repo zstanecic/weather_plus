@@ -8,7 +8,7 @@
 # Released under GPL 2 
 #This file is covered by the GNU General Public License. 
 #See the file COPYING for more details. 
-#Version 6.6 - python 3 compatible
+#Version 6.7 - python 3 compatible
 import os,sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
 import random, ui, gui, wx,wx.adv, re, calendar, math
@@ -1466,7 +1466,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 			else:
 				#gets forecast from Yahoo API
-				curr_day = Shared().GetLastUpdate(self.dom).day
+				curr_day = datetime.now().day
 				start_forecastDay = error = increment = 0
 				for i in range(0, int(self.forecast_days)):
 					#some woeids for a bug start the forecasts with the the previous day
@@ -3711,6 +3711,7 @@ class Shared:
 		'SOLOMON ISLANDS': 'SB',
 		'SOMALIA': 'SO',
 		'SOUTH AFRICA': 'ZA',
+		'SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS': 'GS',
 		'SOUTH GEORGIA AND SOUTH SANDWICH ISLANDS': 'GS',
 		'SPAIN': 'ES',
 		'SRI LANKA': 'LK',
@@ -4063,7 +4064,7 @@ class Shared:
 			_("Please report this to the author so he can add this country in database.")+'\n'+
 			_("Send an email to %s") % _addonAuthor+'\n'+
 			_("With  object the line below, thanks.")),
-			title = '%s %s' % (_addonSummary, _("Notice!")), clip = '%s %s' % (_addonSummary, 'acronym missing=%s' % woeid), verbose=False)
+			title = '%s %s' % (_addonSummary, _("Notice!")), clip = '%s %s' % (_addonSummary, 'acronym missing = %s' % woeid), verbose=False)
 			if dl.ShowModal(): dl.Destroy()
 
 		if country_acronym not in ["US", "CA"]: region = ""

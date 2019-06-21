@@ -1,3 +1,11 @@
+21/06/2019
+Updated Weather_Plus to version 6.7.
+Adriano said:
+I added a country acronym to the database:
+'South Georgia and the South Sandwich Islands': 'GS'.
+It is not necessary to add this type of updates to changes.
+Can you also correct the translations as I explained earlier and then send me the package?
+
 17/06/2019
 Adriano said:
 @Rémy, ok, let's remove it.
