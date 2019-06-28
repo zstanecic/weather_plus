@@ -305,7 +305,7 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 
 # Version 6.5 #
 * Einige Fehler bei der Wiedergabe von Soundeffekten wurden behoben.
-	* Einige "for" -Motorradsounds mit falschen Maximalwerten verursachten einen nicht existierenden Soundeffekt.
+	* Einige "for" -Zyklen mit falschen Maximalwerten verursachten einen nicht existierenden Soundeffekt.
 * Fehler in der Ortszeit in "Details" behoben;
 	* Bei der  12-Stunden-Zeitumrechnung trat ein Fehler auf.
 * Ein Fehler im Yahoo-Wetterbericht wurde behoben;
