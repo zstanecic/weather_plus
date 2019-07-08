@@ -1,3 +1,22 @@
+07/07/2019
+Weather_Plus6.8
+Adriano said:
+Important changes in 6.8 version:
+• Removed platform.py;
+It needed addiction of Win32con: gone in latest Threshold snapshots, and it won’t come back;
+Replaced with sys.plattform in pybass.py.
+• renamed oauth.pyc and oauth.pyo in: oauth2.pyc and oauth2.pyo #imported for python 2
+• added hmac2.py #imported for python 2
+• added oauth.pyc #imported for python 3
+• Updated __init__.py
+• updated pybass.py
+• updated hmac.py
+• updated flag: lastTestedNVDAVersion = 2019.4 necessary for the branches below;
+nvda_snapshot_threshold and nvda_snapshot_threshold_py3_staging.
+IMPORTANT DO NOT CANCEL:
+oauth.pyc, oauth2.pyc, oauth2.pyo
+No new strings have been added to the code
+
 21/06/2019
 Weather_Plus6.7 update #2
 Adriano said:

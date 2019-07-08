@@ -30,7 +30,7 @@ addon_info = {
 	_("For other instructions, you can also press Add-on Help button in Add-ons manager."),
 	],
 	# version
-	"addon_version" : "6.7",
+	"addon_version" : "6.8",
 	# Author(s)
 	"addon_author" : "Adriano Barbieri <adrianobarb@yahoo.it>",
 	# URL for the add-on documentation support
@@ -40,7 +40,7 @@ addon_info = {
 	# Minimum NVDA version supported (e.g. "2012.2.1")
 	"addon_minimumNVDAVersion" : "2017.3.0",
 	# Last NVDA version supported/tested (e.g. "2018.4", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion" : "2019.2",
+	"addon_lastTestedNVDAVersion" : "2019.4",
 	# Add-on update channel (default is stable or None)
 	"addon_updateChannel" : None,
 }

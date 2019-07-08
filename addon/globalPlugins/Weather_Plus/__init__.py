@@ -8,7 +8,7 @@
 # Released under GPL 2 
 #This file is covered by the GNU General Public License. 
 #See the file COPYING for more details. 
-#Version 6.7 - python 3 compatible
+#Version 6.8 - python 3 compatible
 import os,sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
 import random, ui, gui, wx,wx.adv, re, calendar, math
@@ -23,15 +23,16 @@ api, winsound, zipfile, tempfile, shutil"""
 #include the modules directory to the path
 sys.path.append(os.path.dirname(__file__))
 import dateutil.tz, dateutil.zoneinfo
-from oauth import Parse
 from pybass  import *
 try:
 	#running in Python 3?
 	_pyVersion = 3
 	from urllib.request import urlopen
+	from oauth import Parse	
 except ImportError:
 	_pyVersion = 2
 	from urllib2 import urlopen
+	from oauth2 import Parse
 
 del sys.path[-1]
 addonHandler.initTranslation()
@@ -3915,7 +3916,7 @@ class Shared:
 			data = self.GetUrlData(_addonPage)
 			if not data or data == "no connect": return ""
 
-		if _pyVersion >= 3: data = data.decode()
+		#*if _pyVersion >= 3: data = data.decode()
 		try:
 			abl = re.search('<a href="(http([s]*)://www\..+/[Ww]eather.+\d+(\.\d*)\.nvda-addon)"', data).group(1)
 		except AttributeError: return ""
