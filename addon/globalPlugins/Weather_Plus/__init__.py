@@ -3916,12 +3916,13 @@ class Shared:
 			data = self.GetUrlData(_addonPage)
 			if not data or data == "no connect": return ""
 
-		#*if _pyVersion >= 3: data = data.decode()
+		if 'bytes' in str(type(data)): data = data.decode()
 		try:
 			abl = re.search('<a href="(http([s]*)://www\..+/[Ww]eather.+\d+(\.\d*)\.nvda-addon)"', data).group(1)
 		except AttributeError: return ""
 		abm = abl.upper()
-		return abl[:abm.find('/WEATHER')]
+		#*return abl[:abm.find('/WEATHER')]
+		return "http://www.nvda.it/files/plugin/"
 
 
 	def Add_zero(self, hour, p = True):
