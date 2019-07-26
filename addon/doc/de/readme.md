@@ -54,8 +54,8 @@ Konfigurationseinträge anzeigen.
 	* Zeigt das Einstellungsfenster für Weather Plus.
 * Dokumentation
 	* Öffnet den Ordner mit den Hilfedateien für die aktuelle Sprache
-* Nach Updates suchen...
-	* Benachrichtigt, ob ein Update zur verfügung steht.
+* Nach Aktualisierung suchen...
+	* Benachrichtigt, ob eine Aktualisierung zur verfügung steht.
 
 Wählen Sie:
 
@@ -854,7 +854,7 @@ Steuerung + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = rückwärts suchen.
 * Italienische Lokalisierung hinzugefügt.
 
 # Vorherige Version 1.1 #
-* aktualisiertes NVDA-Addon..
+* aktualisierte NVDA-Erweiterung..
 * provisorische Übersetzung in der Quelle.
 
 --------------------------------------------------------------------------------
