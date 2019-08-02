@@ -1,4 +1,4 @@
-# Weather Plus #
+# Wetter Plus #
 
 * Autor: Adriano Barbieri
 * NVDA-Kompatibilität: 2017.3 bis 2019.1
@@ -175,7 +175,7 @@ standardmäßig nicht aktiviert
 # Soundeffekte aktivieren (nur für aktuelle Wetterbedingungen) #
 
 Mit diesem Kontrollkästchen können Sie auch die Installation von
-Soundeffekten verwalten.
+Soundeffekten verwalten;
 
 Wenn die Soundeffekte installiert sind und das Kontrollkästchen aktiviert
 ist, stehen die Taste F5 und somit die Lautstärkeregelung zur Verfügung.
