@@ -8,22 +8,31 @@
 # Released under GPL 2 
 #This file is covered by the GNU General Public License. 
 #See the file COPYING for more details. 
-#Version 6.8 - python 3 compatible
+#Version 6.9 - python 3 compatible
 import os,sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
 import random, ui, gui, wx,wx.adv, re, calendar, math
 from logHandler import log
 from gui import guiHelper
 from datetime import *
-import time
+import time, zipfile
 from configobj import ConfigObj
 from contextlib import closing
 """other temporary imported libraries in the code
-api, winsound, zipfile, tempfile, shutil"""
+api, winsound, tempfile, shutil"""
 #include the modules directory to the path
 sys.path.append(os.path.dirname(__file__))
 import dateutil.tz, dateutil.zoneinfo
 from pybass  import *
+		#Loads oauth modules
+target = os.path.dirname(__file__)
+if not os.path.isfile( '%s\%s' % (target, 'oauth.pyo')):
+	unZip = os.path.dirname(__file__)
+	try:
+		with zipfile.ZipFile('%s\%s' % (target, 'oauth.zip'), "r") as z:
+			z.extractall(unZip)
+	except Exception: pass
+
 try:
 	#running in Python 3?
 	_pyVersion = 3
@@ -38,6 +47,7 @@ del sys.path[-1]
 addonHandler.initTranslation()
 
 #global constants
+_searchEngine =0 #0 = use geonames for cities recurrences, higher instead use Yahoo locup (for the moment no longer in operation)
 if _pyVersion <= 2:
 	_addonDir = os.path.join(os.path.dirname(__file__), "..", "..").decode("mbcs")
 else:
@@ -47,6 +57,7 @@ _addonAuthor = _curAddon.manifest['author']
 _addonSummary = _curAddon.manifest['summary']
 _addonVersion = _curAddon.manifest['version']
 _addonPage = _curAddon.manifest['url']
+_weatherOauth_path = os.path.join(globalVars.appArgs.configPath,"oauth.zip")
 _zipCodes_path = os.path.join(globalVars.appArgs.configPath,"Weather.zipcodes")
 _volumes_path = os.path.join(globalVars.appArgs.configPath,"Weather.volumes")
 _samples_path = os.path.join(globalVars.appArgs.configPath,"Weather_samples")
@@ -2360,7 +2371,14 @@ class EnterDataDialog(wx.Dialog):
 
 		elif key == wx.WXK_F1:
 			#help input
-			helpDialog = HelpEntryDialog(gui.mainFrame, message = '%s:\n%s:\n%s.\n%s.\n%s.\n%s.\n%s.\n%s:\n%s.\n%s.\n%s.\n%s.\n%s.' % (
+			geoNames = ''
+			if _searchEngine is 0:
+				geoNames = '\n%s:\n%s.\n%s.\n%s.\n' % (
+				_("You can indicate how to proceed by prefixing the following commands"),
+			_("Direct (cities with the same name, will not listed), by typing D:City: D:Paris"),
+			_("Geographic coordinates, by typing G:City: G:Venezia"),
+			_("Text string, by typing T:City: T:Bologna"))
+			helpDialog = HelpEntryDialog(gui.mainFrame, message = '%s:\n%s.\n%s.\n%s.\n%s.\n%s.\n%s.\n%s\n%s:\n%s.\n%s.\n%s.\n%s.\n%s.\n%s.' % (
 			_("You can enter or search for a city"),
 			_("By city woeID: 715399"),
 			_("By only city name: Ferrara"),
@@ -2368,11 +2386,13 @@ class EnterDataDialog(wx.Dialog):
 			_("By city name and country: Ferrara,it"),
 			_("By postal code: 44100,it"),
 			_("By geographic coordinates: latitude, longitude"),
+			geoNames,
 			_("If the city is not found"),
 			_("Try with or without the country of origin"),
 			_("Try to merge the name with hyphens, or separate it with spaces"),
 			_("Try deleting apostrophes"),
 			_("Try changing the vowels accented with normal vowels"),
+			_("Try to change in English some parts"),
 			_("Try with a closest location")
 			),
 			title = _("Help placing")
@@ -2546,8 +2566,12 @@ class EnterDataDialog(wx.Dialog):
 			value = coords
 
 		if not value.isdigit() and not coords:
-			#search for city recurrences
-			woeID, self.defaultString = Shared().Search_cities(value, self.defaultString)
+			if _searchEngine:
+				#search for city recurrences with Yahoo WOEID Lookup
+				woeID, self.defaultString = Shared().Search_cities(value, self.defaultString)
+			else:
+				#search for city recurrences with geonames
+				woeID, self.defaultString = Shared().Search_cities2(value, self.defaultString)
 			if not woeID: return
 			elif woeID not in ["Error", "noresult"]: value = woeID
 
@@ -2559,7 +2583,7 @@ class EnterDataDialog(wx.Dialog):
 			return ui.message(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"))
 		elif not cityName:
 			self.Disable_all()
-			if woeID == value:
+			if (woeID == value) and value.isdigit() and not ',' in value:
 				return self.Yahoo_API_error(woeID, True)
 			else:
 				self.f1 = (self.f1 + 1) % 3
@@ -2864,9 +2888,10 @@ class EnterDataDialog(wx.Dialog):
 
 				if "ramdetails_dic" in globals() and code in ramdetails_dic:
 					self.details_dic.update(ramdetails_dic)
-					Shared().Play_sound(True, 1)
-					self.modifiedList = True
-					ui.message(_("The details of this city are not in the database and so I added them to the list. Try again!"))
+					if encoded_value in self.zipCodesList:
+						Shared().Play_sound(True, 1)
+						self.modifiedList = True
+						ui.message(_("The details of this city are not in the database and so I added them to the list. Try again!"))
 				else:
 					self.Yahoo_API_error(code)
 					return self.cbx.SetFocus()
@@ -2897,7 +2922,7 @@ class EnterDataDialog(wx.Dialog):
 			city_name = value[:-2] #usny = us
 			real_city_name = '%s, %s' % (city, country_acronym)
 
-		city_details = self.FindForGeoName(real_city_name, city_name, latitude, longitude)
+		city_details = Shared().FindForGeoName(real_city_name, city_name, latitude, longitude)
 		if not city_details: city_details = '%s, %s, %s, %s' % (city, region, country, country_acronym)
 		city_details += ', %s' % timezone_id
 		Shared().Play_sound("details", 1)
@@ -2961,48 +2986,6 @@ class EnterDataDialog(wx.Dialog):
 		dic_type[code]['lon'])
 
 
-	def FindForGeoName(self, real_city_name, city_name, latitude, longitude):
-		"""Retrieve details from geo name with geographic coordinates"""
-		def SplitName(c):
-			#separates the city from the state
-			return c.split(',')[0], c.split(',')[-1].lstrip(' ')
-
-		def GetGeo(city, acronym):
-			return Shared().GetGeoName(city, lat = latitude, lon = longitude, acronym=acronym)
-
-		def ParseName(name):
-			city, acronym = SplitName(name)
-			city_details = GetGeo(city, acronym)
-			if not city_details:
-				#try separating the name
-				city = city.replace("-", " ")
-				city = city.replace("_", " ")
-				city_details = GetGeo(city, acronym)
-				if not city_details:
-					city, acronym = SplitName(name)
-					#try by splitting the name
-					city1 = city.split(' ')
-					for city in city1:
-						city_details = GetGeo(city, acronym) 
-						if city_details: break
-
-					if not city_details:
-						#try to join the name
-						city, acronym = SplitName(name)
-						city = city.replace(" ", "-")
-						city_details = GetGeo(city, acronym) 
-
-			return city_details
-
-		#try with the real city name 
-		city_details = ParseName(real_city_name)
-		if not city_details and city_name != real_city_name:
-			#try with the name given by the user
-			city_details = ParseName(city_name)
-
-		if city_details: return '%s, %s' % (SplitName(real_city_name)[0], city_details)
-
-
 	def OnAdd(self, evt):
 		"""Add city button event"""
 		value = self.cbx.GetValue()
@@ -3010,10 +2993,10 @@ class EnterDataDialog(wx.Dialog):
 			v = Shared().GetZipCode(value)
 
 			if self.testName: value2 = '%s %s' % (self.testName.capitalize(), v.upper())
-			else: value2 = self.tempZipCode
+			elif self.tempZipCode: value2 = self.tempZipCode
 			double, name, v1 = self.CheckName(value2, value)
 			if double:
-				result = self.Warning(self.testName,v1,  v)
+				result = self.Warning(value2,v1,  v)
 				if result == wx.ID_CANCEL: return self.cbx.SetFocus()
 				elif result == wx.ID_NO:
 					value = name
@@ -3051,10 +3034,10 @@ class EnterDataDialog(wx.Dialog):
 			v = Shared().GetZipCode(value)
 
 			if self.testName: value2 = '%s %s' % (self.testName.capitalize(), v.upper())
-			else: value2 = self.tempZipCode
+			elif self.tempZipCode: value2 = self.tempZipCode
 			double, name, v1 = self.CheckName(value2, value)
 			if double:
-				result = self.Warning(self.testName,v1,  v)
+				result = self.Warning(value2, v1,  v)
 				if result == wx.ID_CANCEL: return self.cbx.SetFocus()
 				elif result == wx.ID_NO:
 					value = name
@@ -3237,7 +3220,7 @@ class EnterDataDialog(wx.Dialog):
 		_("already exists"),
 		_("You have to change it!"),
 		_("The city proper is"),
-		cityName.rstrip(','),
+		cityName[:cityName.rfind(' ')],
 		_("Want to use the suggested name?")),
 		'%s %s' % (_addonSummary, _("Notice!")),
 		wx.YES_NO |wx.CANCEL| wx.ICON_QUESTION)
@@ -3467,6 +3450,49 @@ checkbox_values = [],
 
 class Shared:
 	"""shared functions"""
+	def FindForGeoName(self, real_city_name, city_name, latitude, longitude):
+		"""Retrieve details from geo name with geographic coordinates"""
+		def SplitName(c):
+			#separates the city from the state
+			return c.split(',')[0], c.split(',')[-1].lstrip(' ')
+
+		def GetGeo(city, acronym):
+			return Shared().GetGeoName(city, lat = latitude, lon = longitude, acronym=acronym)
+
+		def ParseName(name):
+			city, acronym = SplitName(name)
+			city_details = GetGeo(city, acronym)
+			if not city_details:
+				#try separating the name
+				city = city.replace("-", " ")
+				city = city.replace("_", " ")
+				city_details = GetGeo(city, acronym)
+				if not city_details:
+					city, acronym = SplitName(name)
+					#try by splitting the name
+					city1 = city.split(' ')
+					for city in city1:
+						city_details = GetGeo(city, acronym) 
+						if city_details: break
+
+					if not city_details:
+						#try to join the name
+						city, acronym = SplitName(name)
+						city = city.replace(" ", "-")
+						city_details = GetGeo(city, acronym) 
+
+			return city_details
+
+		#try with the real city name 
+		city_details = ParseName(real_city_name)
+		if not city_details and city_name != real_city_name:
+			#try with the name given by the user
+			city_details = ParseName(city_name)
+
+		if city_details: return '%s, %s' % (SplitName(real_city_name)[0], city_details)
+		return ""
+
+
 	def GetCoords(self, v):
 		"""Checks if the value contains the geographic coordinates"""
 		try:
@@ -3616,6 +3642,7 @@ class Shared:
 		'NORTH KOREA': 'KP',
 		'KOREA, REPUBLIC OF': 'KR',
 		'SOUTH KOREA': 'KR',
+		'SPRATLY ISLANDS': 'XS',
 		'KOSOVO': 'XZ',
 		'KUWAIT': 'KW',
 		'KYRGYZSTAN': 'KG',
@@ -3921,8 +3948,7 @@ class Shared:
 			abl = re.search('<a href="(http([s]*)://www\..+/[Ww]eather.+\d+(\.\d*)\.nvda-addon)"', data).group(1)
 		except AttributeError: return ""
 		abm = abl.upper()
-		#*return abl[:abm.find('/WEATHER')]
-		return "http://www.nvda.it/files/plugin/"
+		return abl[:abm.find('/WEATHER')]
 
 
 	def Add_zero(self, hour, p = True):
@@ -4045,7 +4071,11 @@ class Shared:
 		elif Shared().GetCoords(value):
 			 value = value.split(',')
 			 yql_query = 'lat=%s&lon=%s' % (value[0], value[-1].lstrip(' '))
-		else: yql_query = 'location=%s' % value.encode("mbcs")
+		else:
+			if _pyVersion == 2:
+				yql_query = 'location=%s' % value.encode("mbcs")
+			else:
+				yql_query = 'location=%s' % value
 		dom = self.WeatherConnect(yql_query)
 		if dom == "no connect": return dom, None
 		elif not dom: return "", None
@@ -4058,7 +4088,9 @@ class Shared:
 			lat = dom['location']['lat']
 			lon = dom['location']['long']
 		except KeyError: return "", None
-		country_acronym = Shared().GetAcronym(country)
+		country_acronym = self.FindForGeoName(city, city, lat, lon)[-2:]
+		if country and not country_acronym:
+			country_acronym = Shared().GetAcronym(country)
 		if country and not country_acronym:
 			dl = HelpEntryDialog(gui.mainFrame,message ='%s' % (
 			_("It was not possible find the acronym of %s!") % country+'\n'+
@@ -4431,6 +4463,45 @@ class Shared:
 
 		return data
 
+	def Find_cities(self, value):
+		"""get cities recurrences engine"""
+		city = value
+		country = ""
+		if ',' in value:
+			city = value[:value.find(',')]
+			country = value[value.find(',')+1:].lstrip(' ')
+		address = 'http://www.geonames.org/postalcode-search.html?q=%s&country=%s' % (city, country)
+		data = self.GetUrlData(address)
+		if "bytes" in str(type(data)) or _pyVersion == 2: data = data.decode("utf-8")
+		if not data or "noresult" in data: return ""
+		p = re.compile(r'</small></td><td>(.+)</td><td>(.+)</td><td>(.+)</td><td>(.+)</td><td>(.+)</td>.+<small>(-*\d+\.\d+)/(-*\d+\.\d+)</small>')
+		cities_found = []
+		for i in data.split('\n'):
+			try:
+				m = re.search(p, i).group()
+				if m:
+					city1 = '%s, %s, %s, %s, %s, %s, %s' % (
+					re.search(p, m).group(1), #city name
+					re.search(p, m).group(2), #postal code
+					re.search(p, m).group(3), #region
+					re.search(p, m).group(4), #country
+					re.search(p, m).group(5), #province
+					(math.ceil(float(re.search(p, m).group(6))*100)/100), #latitude
+					(math.ceil(float(re.search(p, m).group(7))*100)/100) #longitude
+					)
+			except (AttributeError, ValueError): city1 = None
+			#collects city datas
+			if city1:
+				city1 = city1.replace('</td><td>', ', ').replace('<tr><td>', '').replace('<tr class="odd"><td>, ', ', ').replace(', , ', ', ')
+				#takes coordinates of the city found
+				coords1 = '%s, %s' % (city1.split(', ')[-2], city1.split(', ')[-1])
+				#checks if they are present in the list
+				coordsInList = [True for i in cities_found if coords1 in i]
+				#take only the unique entries with begin with name of the city
+				if city1.startswith(city.title()) and  not coordsInList: cities_found.append(city1)
+
+		return sorted(list(set(cities_found)))
+
 
 	def FindWoeID(self, city):
 		"""Gets data-center_long, data-center_lat, data-city, data-district_county, data-province_state, data-country, data-woeid"""
@@ -4481,6 +4552,7 @@ class Shared:
 			#try to filter the old zipcode
 			if not cityName[-2].isalpha():
 				return "Error", defaultString
+
 		woeIDList = self.FindWoeID(cityName)
 		if woeIDList == "noresult": return woeIDList, defaultString
 		wl = len(woeIDList)
@@ -4506,6 +4578,75 @@ class Shared:
 				dl.Destroy()
 				Shared().Play_sound("subwindow", 1)
 				return woeIDList[select].split(', ')[-1], defaultString
+
+
+	def Search_cities2(self, cityName, defaultString = ""):
+		"""Search for city occurrences"""
+		command = cityName[:cityName.find(':')+1].upper()
+		city = cityName[cityName.find(':')+1:]
+		if not command and (city.replace('.', '').isdigit() or self.GetCoords(cityName)): return cityName, defaultString
+		elif command == 'D:': return city, defaultString #passes search key directly to yahoo
+		elif command == 'P:': mode = 1 #search for postal code
+		elif command == 'G:': mode = 2 #search for geographical coordinates
+		elif command == 'T:': mode = 3 #search for path string
+		else: mode = 1 #default
+
+		def GetValue(v, mode):
+			m = m1 = m2 = ""
+			try:
+				country = v.split(', ')[2]
+			except IndexError: mode, country = 2, ''
+			try:
+				if mode is 1:
+					#get postal code from city
+					m = v.split(', ')[1]
+				elif mode == 2:
+					#get geographical coordinates from city
+					p = re.compile(r'.+, (-*\d+\.\d+), (-*\d+\.\d+)')
+					try:
+						m = re.search(p, v).group(1)
+						m1 = re.search(p, v).group(2)
+					except AttributeError: m = m1 = None
+
+				else:
+					#get path string
+					m = v.split(', ')[0]
+					m1 = v.split(', ')[2]
+					m2 = v.split(', ')[3]
+			except IndexError: m = m1 = m2 = None
+			if m is not None and mode == 1:
+				return '%s,%s' % (m, self.GetAcronym(country))
+			elif (m is not None and m1 is not None) and mode is 2:
+				return '%s, %s' % ((math.ceil(float(m)*100)/100), (math.ceil(float(m1)*100)/100))
+			elif (m is not None and m1 is not None and m2 is not None) and mode == 3:
+				return '%s, %s, %s' % (m, m1, m2)
+
+			return v
+
+		recurrences_list = self.Find_cities(city)
+		if recurrences_list == "": return city, defaultString #passes the search key to Yahoo
+		lrl = len(recurrences_list)
+		if lrl is 0: return city, defaultString #passes the search key to Yahoo
+		elif lrl == 1: return GetValue(recurrences_list[0], mode), defaultString
+		else:
+			title = '%s - %d %s %s %s.' % \
+			(_addonSummary, lrl, _("occurrences found"), _("for"), city)
+			message = '%s.\n%s\n%s:' % (
+			_("Choose a city."),
+			Shared().Find_keys(),
+			_("List of availables Cities"))
+			dl = SelectDialog(gui.mainFrame, title = title, message = message, choices = recurrences_list, last = [0], sel = 0, defaultString = defaultString)
+			Shared().Play_sound("subwindow", 1)
+			if dl.ShowModal() == wx.ID_CANCEL:
+				n, defaultString = dl.GetValue()
+				dl.Destroy()
+				Shared().Play_sound("subwindow", 1)
+				return "", defaultString
+			else:
+				select, defaultString = dl.GetValue()
+				dl.Destroy()
+				Shared().Play_sound("subwindow", 1)
+				return GetValue(recurrences_list[select], mode), defaultString
 
 
 class NoticeAgainDialog(wx.Dialog):
