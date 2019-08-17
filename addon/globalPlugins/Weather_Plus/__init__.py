@@ -15,31 +15,26 @@ import random, ui, gui, wx,wx.adv, re, calendar, math
 from logHandler import log
 from gui import guiHelper
 from datetime import *
-import time, zipfile
+import time
 from configobj import ConfigObj
 from contextlib import closing
 """other temporary imported libraries in the code
-api, winsound, tempfile, shutil"""
+api, winsound, tempfile, zipfile, shutil"""
 #include the modules directory to the path
 sys.path.append(os.path.dirname(__file__))
 import dateutil.tz, dateutil.zoneinfo
 from pybass  import *
-		#Loads oauth modules
-target = os.path.dirname(__file__)
-if not os.path.isfile( '%s\%s' % (target, 'oauth.pyo')):
-	unZip = os.path.dirname(__file__)
-	try:
-		with zipfile.ZipFile('%s\%s' % (target, 'oauth.zip'), "r") as z:
-			z.extractall(unZip)
-	except Exception: pass
-
-try:
-	#running in Python 3?
-	_pyVersion = 3
+#Loads oauth modules
+_pyVersion = int(sys.version[:1])
+import zipimport
+importer = zipimport.zipimporter('%s\%s' % (os.path.dirname(__file__), 'oauth.zip'))
+mod = 'oauth'
+if _pyVersion == 2: mod = mod+str(_pyVersion)
+importer.load_module(mod)
+if _pyVersion >= 3:
 	from urllib.request import urlopen
 	from oauth import Parse	
-except ImportError:
-	_pyVersion = 2
+elif _pyVersion == 2:
 	from urllib2 import urlopen
 	from oauth2 import Parse
 
@@ -2855,6 +2850,8 @@ class EnterDataDialog(wx.Dialog):
 
 	def OnDetails(self, evt):
 		"""Displays information on the selected city"""
+		ui.message(_("Please wait..."))
+		
 		value = self.cbx.GetValue()
 		encoded_value = value
 		if _pyVersion <= 2: encoded_value = value.encode("mbcs")
@@ -2901,7 +2898,6 @@ class EnterDataDialog(wx.Dialog):
 				ui.message(_("Cannot identify your location, due to insufficient data."))
 			return self.cbx.SetFocus()
 
-		ui.message(_("Please wait..."))
 		current_hour = Shared().GetTimezone(timezone_id, self.to24Hours)
 		lat = lon = ''
 		if latitude: lat = (math.ceil(float(latitude)*100)/100)
