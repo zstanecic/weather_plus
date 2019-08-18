@@ -15,7 +15,7 @@ import random, ui, gui, wx,wx.adv, re, calendar, math
 from logHandler import log
 from gui import guiHelper
 from datetime import *
-import time
+import time, zipimport
 from configobj import ConfigObj
 from contextlib import closing
 """other temporary imported libraries in the code
@@ -24,21 +24,19 @@ api, winsound, tempfile, zipfile, shutil"""
 sys.path.append(os.path.dirname(__file__))
 import dateutil.tz, dateutil.zoneinfo
 from pybass  import *
-#Loads oauth modules
 _pyVersion = int(sys.version[:1])
-import zipimport
-importer = zipimport.zipimporter('%s\%s' % (os.path.dirname(__file__), 'oauth.zip'))
-mod = 'oauth'
-if _pyVersion == 2: mod = mod+str(_pyVersion)
-importer.load_module(mod)
+importer = zipimport.zipimporter('%s\%s' % (os.path.dirname(__file__), 'data.oauth'))
+oauth = 'oauth'
+if _pyVersion <= 2: oauth = oauth + str(_pyVersion)
+importer.load_module(oauth)
 if _pyVersion >= 3:
 	from urllib.request import urlopen
 	from oauth import Parse	
-elif _pyVersion == 2:
+elif _pyVersion <= 2:
 	from urllib2 import urlopen
 	from oauth2 import Parse
 
-del sys.path[-1]
+del sys.path[-1], zipimport, importer
 addonHandler.initTranslation()
 
 #global constants
@@ -4068,7 +4066,7 @@ class Shared:
 			 value = value.split(',')
 			 yql_query = 'lat=%s&lon=%s' % (value[0], value[-1].lstrip(' '))
 		else:
-			if _pyVersion == 2:
+			if _pyVersion <= 2:
 				yql_query = 'location=%s' % value.encode("mbcs")
 			else:
 				yql_query = 'location=%s' % value
