@@ -25,7 +25,7 @@ sys.path.append(os.path.dirname(__file__))
 import dateutil.tz, dateutil.zoneinfo
 from pybass  import *
 _pyVersion = int(sys.version[:1])
-importer = zipimport.zipimporter('%s\%s' % (os.path.dirname(__file__), 'data.oauth'))
+importer = zipimport.zipimporter('%s\%s' % (os.path.dirname(__file__), 'oauth.lib'))
 oauth = 'oauth'
 if _pyVersion <= 2: oauth = oauth + str(_pyVersion)
 importer.load_module(oauth)
@@ -50,7 +50,6 @@ _addonAuthor = _curAddon.manifest['author']
 _addonSummary = _curAddon.manifest['summary']
 _addonVersion = _curAddon.manifest['version']
 _addonPage = _curAddon.manifest['url']
-_weatherOauth_path = os.path.join(globalVars.appArgs.configPath,"oauth.zip")
 _zipCodes_path = os.path.join(globalVars.appArgs.configPath,"Weather.zipcodes")
 _volumes_path = os.path.join(globalVars.appArgs.configPath,"Weather.volumes")
 _samples_path = os.path.join(globalVars.appArgs.configPath,"Weather_samples")
