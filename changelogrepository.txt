@@ -1,3 +1,9 @@
+24/08/2019
+Update compatibility in readme.md file by Adriano
+NVDA compatibility: 2017.3 to 2019.1
+with:
+NVDA compatibility: 2017.3 to 2019.3
+
 21/08/2019
 Weather_Plus6.9 change #4
 
