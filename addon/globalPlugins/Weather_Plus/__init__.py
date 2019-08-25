@@ -8,7 +8,7 @@
 # Released under GPL 2 
 #This file is covered by the GNU General Public License. 
 #See the file COPYING for more details. 
-#Version 6.9 - python 3 compatible
+#Version 7.0 python 3 compatible
 import os,sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
 import random, ui, gui, wx,wx.adv, re, calendar, math
@@ -58,6 +58,8 @@ _volume_dic = {'0%': 0, '10%': 0.1, '20%': 0.2, '30%': 0.3, '40%': 0.4, '50%': 0
 _tempScale = [_("Fahrenheit"), _("Celsius"), _("Kelvin")]
 _fields = ['city', 'region', 'country', 'country_acronym', 'timezone_id', 'lat', 'lon']
 _nr = _("unknown")
+helpDialog = None
+downloadDialog = None
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	scriptCategory = _addonSummary
@@ -340,6 +342,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 						if self.WriteList(zipCodesList):
 							self.zipCodesList = zipCodesList
 							Shared().Play_sound(True)
+
 			dlg.Destroy()
 			Shared().Play_sound("winclose", 1)
 			#enable the window for fast access of woeID and Weather setting menu
@@ -1967,11 +1970,27 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"""Call the Weather Plus settings dialog"""
 		#do not proceed if the window settings is open, but puts it in the foreground
 		if not self.setZipCodeItem.IsEnabled():
-			try:
-				self.dlg.Raise()
-				self.dlg.cbx.SetFocus()
-			except: pass
-			return wx.Bell()
+			if helpDialog:
+				try:
+					helpDialog.Raise()
+					helpDialog.Show()
+				except:pass
+				return wx.Bell()
+
+			elif downloadDialog:
+				try:
+					downloadDialog.Raise()
+					downloadDialog.Show()
+				except: pass
+				return wx.Bell()
+
+			else:
+				try:
+					self.dlg.Raise()
+					self.dlg.Show()
+					self.dlg.cbx.SetFocus()
+				except: pass
+				return wx.Bell()
 
 		self.onSetZipCodeDialog(None)
 
@@ -2365,11 +2384,14 @@ class EnterDataDialog(wx.Dialog):
 			#help input
 			geoNames = ''
 			if _searchEngine is 0:
-				geoNames = '\n%s:\n%s.\n%s.\n%s.\n' % (
-				_("You can indicate how to proceed by prefixing the following commands"),
-			_("Direct (cities with the same name, will not listed), by typing D:City: D:Paris"),
-			_("Geographic coordinates, by typing G:City: G:Venezia"),
-			_("Text string, by typing T:City: T:Bologna"))
+				geoNames = '\n%s:\n%s.\n%s.\n%s.\n%s.\n%s:\n%s.\n' % (
+				_("You can also indicate how to proceed by prefixing the following commands"),
+			_("Direct (the Recursive cities they will not appear), by typing D:City"),
+			_("Geographic coordinates, by typing G:City"),
+			_("Postal code, by typing P:City"),
+			_("Text string, by typing T:City"),
+			_("The city can be preceded by the region and / or state, separated by a comma or space"),
+			_("Australia, Queensland, Cona Creek"))
 			helpDialog = HelpEntryDialog(gui.mainFrame, message = '%s:\n%s.\n%s.\n%s.\n%s.\n%s.\n%s.\n%s\n%s:\n%s.\n%s.\n%s.\n%s.\n%s.\n%s.' % (
 			_("You can enter or search for a city"),
 			_("By city woeID: 715399"),
@@ -2392,6 +2414,8 @@ class EnterDataDialog(wx.Dialog):
 			if helpDialog.ShowModal()is not None:
 				helpDialog.Destroy()
 				Shared().Play_sound("subwindow", 1)
+				global helpDialog
+				helpDialog = None
 			cur_tab.SetFocus()
 
 		elif key == wx.WXK_F2:
@@ -4142,6 +4166,7 @@ class Shared:
 				kBytes = size/1024
 				downloadBytes = int(size/max)
 				count = 0
+				global downloadDialog; downloadDialog = dlg
 				while keepGoing:
 					count += 1
 					if count >= max: count = 99
@@ -4169,6 +4194,8 @@ class Shared:
 			dlg.Update(99, '%s %s %s' % (
 			_("Downloaded"), str(os.path.getsize(target)/1024), "KB"))
 			dlg.Hide(); dlg.Destroy()
+			global downloadDialog; downloadDialog = None
+
 			return keepGoing
 		except Exception as e:
 			try:
@@ -4180,6 +4207,8 @@ class Shared:
 				Shared().WriteError(title)
 
 			dlg.Hide(); dlg.Destroy()
+			global downloadDialog; downloadDialog = None
+
 			if _pyVersion <= 2: e = e.decode("mbcs")
 			log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))
 			return "Error"
@@ -4540,7 +4569,7 @@ class Shared:
 
 
 	def Search_cities(self, cityName, defaultString = ""):
-		"""Search for city occurrences"""
+		"""Search for city occurrences with Yahoo woeid lookup"""
 		if len(cityName) == 8 and not "," in cityName:
 			#try to filter the old zipcode
 			if not cityName[-2].isalpha():
@@ -4574,7 +4603,7 @@ class Shared:
 
 
 	def Search_cities2(self, cityName, defaultString = ""):
-		"""Search for city occurrences"""
+		"""Search for city occurrences with geonames"""
 		command = cityName[:cityName.find(':')+1].upper()
 		city = cityName[cityName.find(':')+1:]
 		if not command and (city.replace('.', '').isdigit() or self.GetCoords(cityName)): return cityName, defaultString
@@ -4612,7 +4641,9 @@ class Shared:
 			elif (m is not None and m1 is not None) and mode is 2:
 				return '%s, %s' % ((math.ceil(float(m)*100)/100), (math.ceil(float(m1)*100)/100))
 			elif (m is not None and m1 is not None and m2 is not None) and mode == 3:
-				return '%s, %s, %s' % (m, m1, m2)
+				text = '%s, %s, %s' % (m, m1, m2)
+				text = text.lstrip(',').rstrip(' ').replace(', ,', '')
+				return text
 
 			return v
 
@@ -5021,7 +5052,7 @@ class HelpEntryDialog(wx.Dialog):
 		wx.Dialog.__init__(self, parent = parent, id = id, title = title, pos = pos,
 		size = size, style = style)
 		vbox = wx.BoxSizer(wx.VERTICAL)
-		text = wx.TextCtrl(self, -1, value = message, pos = wx.DefaultPosition, size=(460,480), style = wx.TE_MULTILINE|wx.TE_READONLY)
+		text = wx.TextCtrl(self, -1, value = message, pos = wx.DefaultPosition, size=(600,400), style = wx.TE_MULTILINE|wx.TE_READONLY)
 		vbox.Add(text, 1, wx.EXPAND|wx.ALL, 5)
 		if not verbose:
 			winsound.MessageBeep(winsound.MB_ICONEXCLAMATION)
