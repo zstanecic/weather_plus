@@ -58,8 +58,9 @@ _volume_dic = {'0%': 0, '10%': 0.1, '20%': 0.2, '30%': 0.3, '40%': 0.4, '50%': 0
 _tempScale = [_("Fahrenheit"), _("Celsius"), _("Kelvin")]
 _fields = ['city', 'region', 'country', 'country_acronym', 'timezone_id', 'lat', 'lon']
 _nr = _("unknown")
-helpDialog = None
-downloadDialog = None
+_helpDialog = None
+_downloadDialog = None
+
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	scriptCategory = _addonSummary
@@ -1970,18 +1971,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"""Call the Weather Plus settings dialog"""
 		#do not proceed if the window settings is open, but puts it in the foreground
 		if not self.setZipCodeItem.IsEnabled():
-			if helpDialog:
+			if "_helpDialog" in globals() and _helpDialog:
 				try:
-					helpDialog.Raise()
-					helpDialog.Show()
-				except:pass
+					_helpDialog.Raise()
+					_helpDialog.Show()
+				except:return
 				return wx.Bell()
 
-			elif downloadDialog:
+			elif _downloadDialog:
 				try:
-					downloadDialog.Raise()
-					downloadDialog.Show()
-				except: pass
+					_downloadDialog.Raise()
+					_downloadDialog.Show()
+				except: return
 				return wx.Bell()
 
 			else:
@@ -1989,7 +1990,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					self.dlg.Raise()
 					self.dlg.Show()
 					self.dlg.cbx.SetFocus()
-				except: pass
+				except: return
 				return wx.Bell()
 
 		self.onSetZipCodeDialog(None)
@@ -2392,7 +2393,8 @@ class EnterDataDialog(wx.Dialog):
 			_("Text string, by typing T:City"),
 			_("The city can be preceded by the region and / or state, separated by a comma or space"),
 			_("Australia, Queensland, Cona Creek"))
-			helpDialog = HelpEntryDialog(gui.mainFrame, message = '%s:\n%s.\n%s.\n%s.\n%s.\n%s.\n%s.\n%s\n%s:\n%s.\n%s.\n%s.\n%s.\n%s.\n%s.' % (
+			global _helpDialog
+			_helpDialog = HelpEntryDialog(gui.mainFrame, message = '%s:\n%s.\n%s.\n%s.\n%s.\n%s.\n%s.\n%s\n%s:\n%s.\n%s.\n%s.\n%s.\n%s.\n%s.' % (
 			_("You can enter or search for a city"),
 			_("By city woeID: 715399"),
 			_("By only city name: Ferrara"),
@@ -2411,11 +2413,10 @@ class EnterDataDialog(wx.Dialog):
 			),
 			title = _("Help placing")
 			)
-			if helpDialog.ShowModal()is not None:
-				helpDialog.Destroy()
+			if _helpDialog.ShowModal()is not None:
+				_helpDialog.Destroy()
 				Shared().Play_sound("subwindow", 1)
-				global helpDialog
-				helpDialog = None
+				_helpDialog = None
 			cur_tab.SetFocus()
 
 		elif key == wx.WXK_F2:
@@ -4145,7 +4146,8 @@ class Shared:
 		"""Download files using the progress bar"""
 		if "_addonBaseUrl" not in globals(): return "Error"
 		max = 100
-		dlg = wx.ProgressDialog(title,
+		if "_downloadDialog" not in globals(): global _downloadDialog
+		_downloadDialog = wx.ProgressDialog(title,
 		message,
 		maximum = max,
 		style = 0
@@ -4154,7 +4156,7 @@ class Shared:
 		| wx.PD_ELAPSED_TIME
 		| wx.PD_ESTIMATED_TIME
 		)
-		dlg.Update(0, message)
+		_downloadDialog.Update(0, message)
 		try:
 			fURL = urlopen(url, timeout=6)
 			header = fURL.info()
@@ -4166,13 +4168,12 @@ class Shared:
 				kBytes = size/1024
 				downloadBytes = int(size/max)
 				count = 0
-				global downloadDialog; downloadDialog = dlg
 				while keepGoing:
 					count += 1
 					if count >= max: count = 99
-					wx.MilliSleep(250)
+					wx.MilliSleep(200)
 					wx.Yield()
-					(keepGoing, skip) = dlg.Update(count,
+					(keepGoing, skip) = _downloadDialog.Update(count,
 					'%s %s %s %s %s' %(
 					_("Downloaded"), str(count*downloadBytes/1024),
 					_("of"), str(kBytes), "KB"))
@@ -4183,7 +4184,7 @@ class Shared:
 						break
 			else:
 				while keepGoing:
-					(keepGoing, skip) = dlg.UpdatePulse()
+					(keepGoing, skip) = _downloadDialog.UpdatePulse()
 					b = fURL.read(1024*8)
 					if b:
 						outFile.write(b)
@@ -4191,10 +4192,10 @@ class Shared:
 						break
 			outFile.close()
 			fURL.close()
-			dlg.Update(99, '%s %s %s' % (
+			_downloadDialog.Update(99, '%s %s %s' % (
 			_("Downloaded"), str(os.path.getsize(target)/1024), "KB"))
-			dlg.Hide(); dlg.Destroy()
-			global downloadDialog; downloadDialog = None
+			_downloadDialog.Hide(); _downloadDialog.Destroy()
+			_downloadDialog = None
 
 			return keepGoing
 		except Exception as e:
@@ -4206,8 +4207,8 @@ class Shared:
 			if not "failed" in e and not "Not Found" in e and not "unknown url type" in e:
 				Shared().WriteError(title)
 
-			dlg.Hide(); dlg.Destroy()
-			global downloadDialog; downloadDialog = None
+			_downloadDialog.Hide(); _downloadDialog.Destroy()
+			_downloadDialog = None
 
 			if _pyVersion <= 2: e = e.decode("mbcs")
 			log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))

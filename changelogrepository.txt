@@ -1,3 +1,11 @@
+26/08/2019
+Weather_Plus 7.0 update #2
+
+Adriano said:
+Please excuse me, i'm sorry, but I had not tested on py3, now it's fine!
+The latest updated source code is attached.
+I didn't add any more new strings and the compatibility is the same as the 6.9 version.
+
 25/08/2019
 Weather_Plus 7.0 update #1
 
