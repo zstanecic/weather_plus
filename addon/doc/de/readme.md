@@ -1,7 +1,7 @@
 # Wetter Plus #
 
 * Autor: Adriano Barbieri
-* NVDA-Kompatibilität: 2017.3 bis 2019.1
+* NVDA-Kompatibilität: 2017.3 bis 2019.3
 * Download: [Stabile Version][1]
 
 # Über WEATHER PLUS: #

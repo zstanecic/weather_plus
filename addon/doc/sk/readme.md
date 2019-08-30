@@ -1,7 +1,7 @@
 # Weather Plus #
 
 * Autor: Adriano Barbieri
-* Kompatibilita s NVDA: 2017.3 až 2019.1
+* Kompatibilita s NVDA: 2017.3 až 2019.3
 * Stiahnuť: [Stabilná verzia] [1]
 
 # O WEATHER PLUS: #
