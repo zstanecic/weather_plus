@@ -8,18 +8,18 @@
 # Released under GPL 2 
 #This file is covered by the GNU General Public License. 
 #See the file COPYING for more details. 
-#Version 7.0 python 3 compatible
+#Version 7.0 python 2 and 3 compatible
 import os,sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
 import random, ui, gui, wx,wx.adv, re, calendar, math
 from logHandler import log
 from gui import guiHelper
 from datetime import *
-import time, zipimport
+import api, time, zipimport
 from configobj import ConfigObj
 from contextlib import closing
 """other temporary imported libraries in the code
-api, winsound, tempfile, zipfile, shutil"""
+tempfile, zipfile, shutil"""
 #include the modules directory to the path
 sys.path.append(os.path.dirname(__file__))
 import dateutil.tz, dateutil.zoneinfo
@@ -53,13 +53,19 @@ _addonPage = _curAddon.manifest['url']
 _zipCodes_path = os.path.join(globalVars.appArgs.configPath,"Weather.zipcodes")
 _volumes_path = os.path.join(globalVars.appArgs.configPath,"Weather.volumes")
 _samples_path = os.path.join(globalVars.appArgs.configPath,"Weather_samples")
+_searchKey_path = os.path.join(globalVars.appArgs.configPath,"Weather_searchkey")
 _sounds_path = _addonDir.replace('..\..', "") + "\sounds"
 _volume_dic = {'0%': 0, '10%': 0.1, '20%': 0.2, '30%': 0.3, '40%': 0.4, '50%': 0.5, '60%': 0.6, '70%': 0.7, '80%': 0.8, '90%': 0.9, '100%': 1}
 _tempScale = [_("Fahrenheit"), _("Celsius"), _("Kelvin")]
 _fields = ['city', 'region', 'country', 'country_acronym', 'timezone_id', 'lat', 'lon']
 _nr = _("unknown")
+_mainSettingsDialog = None
+_tempSettingsDialog = None
 _helpDialog = None
 _downloadDialog = None
+_searchDialog = None
+_findDialog = None
+_notifyDialog = None
 
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
@@ -68,8 +74,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	#variables definition
 		self.note = [1, ''] #errors counter and woeId in use
 		self.woeIdDialog = None #woeId error dialog opened
-		self.openedTemporary = None #temporary city setting dialog opened
-		self.OpenedSettings = None #settings dialog opened
 		self.dom = "" #Yahoo weather API data corresponding to the woeID in use
 		self.defaultZipCode = "" #preset woeId
 		self.tempZipCode = "" #temporary woeId
@@ -159,7 +163,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def onSetZipCodeDialog(self, evt):
 		"""Opens the Weather Plus settings window"""
 		#prevents multiple windows open at the same time
-		self.OpenedSettings = True; self.EnableMenu(False)
+		self.EnableMenu(False)
 		try:
 			#set the correct encoding in the title
 			if _pyVersion <= 2:
@@ -171,8 +175,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		title = '%s - %s - (%s: %s)' % (_addonSummary, _("Settings"), _("Preset"), preset or _("None"))
 		message = _("Enter a City, woeId or choose one from the list, if available.")
 		saved_celsius = self.ReadConfig("c") or self.celsius
+		if "_mainSettingsDialog" not in globals(): global _mainSettingsDialog
 		Shared().Play_sound("winopen", 1)
-		dlg = EnterDataDialog(gui.mainFrame, message =message, title = title,
+		_mainSettingsDialog = EnterDataDialog(gui.mainFrame, message =message, title = title,
 		defaultZipCode = self.defaultZipCode,
 		tempZipCode = self.tempZipCode,
 		zipCode = self.zipCode,
@@ -197,7 +202,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		toAstronomy = self.toAstronomy,
 		scaleAs = self.scaleAs,
 		to24Hours = self.to24Hours,
-		defaultString = self.defaultString,
 		define_dic = self.define_dic,
 		details_dic = self.details_dic,
 		forecast_days = self.forecast_days,
@@ -205,7 +209,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		toComma = self.toComma,
 		toWeatherEffects = self.toWeatherEffects
 		)
-		self.dlg = dlg
+
 
 		def callback2(result):
 			if result == wx.ID_OK:
@@ -238,8 +242,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				toMmhgpressure,
 				toComma,
 				toWeatherEffects,
-				toAssign,
-				self.defaultString) = dlg.GetValue()
+				toAssign) = _mainSettingsDialog.GetValue()
 				#save the configuration if some data were changed
 				save = beep = False
 				if modifiedList:
@@ -305,9 +308,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					_("assigned to"), self.city,
 					_("has not been preset."),
 					_("Will be used in temporary mode!"))
-					dl = NoticeAgainDialog(gui.mainFrame, message = message, title = '%s %s' % (_addonSummary, _("Notice!")))
-					if dl.ShowModal():
-						dontShowAgain = dl.GetValue()
+					dlg = NoticeAgainDialog(gui.mainFrame, message = message, title = '%s %s' % (_addonSummary, _("Notice!")))
+					if dlg.ShowModal():
+						dontShowAgain = dlg.GetValue()
 						if dontShowAgain != self.dontShowAgain:
 							self.dontShowAgain = dontShowAgain
 							#preserve the default zip code and celsius values
@@ -321,11 +324,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 							self.celsius = backup_celsius
 							del backup_celsius, backup_zipCode
 
-						dl.Destroy()
+						dlg.Destroy()
 
 			else:
 				#button cancell or eskape key
-				n, n, zipCodesList, define_dic, details_dic, defaultZipCode, n, modifiedList, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, self.defaultString = dlg.GetValue()
+				n, n, zipCodesList, define_dic, details_dic, defaultZipCode, n, modifiedList, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n = _mainSettingsDialog.GetValue()
 				del n
 				volume = self.volume
 				samplesvolumes_dic = dict(self.samplesvolumes_dic)
@@ -334,8 +337,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					title = '%s %s' % (_addonSummary, _("Notice!"))
 					message = '%s.\n%s' % (_("You have modified the list of your cities"), _("Do you want to save it?"))
 					winsound.MessageBeep(winsound.MB_ICONEXCLAMATION)
-					dl= wx.MessageBox(message, title, wx.YES_NO | wx.YES_DEFAULT | wx.ICON_QUESTION)
-					if dl == 2:
+					dlg= wx.MessageBox(message, title, wx.YES_NO | wx.YES_DEFAULT | wx.ICON_QUESTION)
+					if dlg == 2:
 						#Save current list of cities
 						self.defaultZipCode = defaultZipCode
 						self.define_dic = define_dic
@@ -344,14 +347,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 							self.zipCodesList = zipCodesList
 							Shared().Play_sound(True)
 
-			dlg.Destroy()
+			_mainSettingsDialog.Destroy()
 			Shared().Play_sound("winclose", 1)
 			#enable the window for fast access of woeID and Weather setting menu
-			del self.dlg
-			self.OpenedSettings = False
 			self.EnableMenu(True)
 
-		gui.runScriptModalDialog(dlg, callback2)
+		gui.runScriptModalDialog(_mainSettingsDialog, callback2)
 
 
 	def EnableMenu(self, flag):
@@ -411,25 +412,25 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if s!= None: sel, t = s,0
 		else: s, sel, t = 0, 0, -1
 		Shared().Play_sound("winopen", 1)
-		d = SelectDialog(gui.mainFrame, title = title, message = message, choices = choices, last = [s], sel = 0, defaultString = self.defaultString)
-		self.openedTemporary = d
+		if "_tempSettingsDialog" not in globals(): global _tempSettingsDialog
+		_tempSettingsDialog= SelectDialog(gui.mainFrame, title = title, message = message, choices = choices, last = [s], sel = 0)
 		self.EnableMenu(False)
 
 		def callback(result):
 			if result == wx.ID_OK:
-				selection, self.defaultString = d.GetValue()
+				selection = _tempSettingsDialog.GetValue()
 				self.tempZipCode = zipCodesList[selection]
 				self.ExtractData(self.tempZipCode)
 				if t == -1 or s != selection: Shared().Play_sound(True)
 
 			else:
-				n, self.defaultString = d.GetValue()
+				n = _tempSettingsDialog.GetValue()
 
-			d.Destroy()
+			_tempSettingsDialog.Destroy()
 			Shared().Play_sound("winclose", 1)
 			self.EnableMenu(True)
 
-		gui	.runScriptModalDialog(d, callback)
+		gui	.runScriptModalDialog(_tempSettingsDialog, callback)
 
 
 	def onAbout(self, evt):
@@ -1067,11 +1068,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("But if these are already updated, then you need to update"), _addonSummary)
 				wx.CallAfter(gui.messageBox, message, _addonSummary, wx.ICON_EXCLAMATION)
 				#Try to disable the audio controls in the Settings window
-				if self.OpenedSettings:
-					self.dlg.message1.SetLabel(self.dlg.hotkeys[-1])
-					self.dlg.cbt_toSample.SetValue(False)
-					self.dlg.ch_vol.Enable(False)
-					self.dlg.cb_vol.Enable(False)
+				if "_mainSettingsDialog" in globals() and _mainSettingsDialog:
+					_mainSettingsDialog.message1.SetLabel(_mainSettingsDialog.hotkeys[-1])
+					_mainSettingsDialog.cbt_toSample.SetValue(False)
+					_mainSettingsDialog.ch_vol.Enable(False)
+					_mainSettingsDialog.cb_vol.Enable(False)
 
 
 	def Get_Season(self, return_date=None):
@@ -1538,7 +1539,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 			if self.toClip:
 				# Copy the bulletin or weather forecasts to the clipboard.
-				import api
 				weatherReport = weatherReport.replace(". ", ".\r\n")
 				api.copyToClip(weatherReport)
 		else:
@@ -1840,8 +1840,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					e = ''
 					rollBack = list(self.zipCodesList)
 					rollBack2 = dict(self.define_dic)
-					if self.OpenedSettings:
-						self.dlg.OnRemove()
+					if "_mainSettingsDialog" in globals() and _mainSettingsDialog:
+						_mainSettingsDialog.OnRemove()
 					else:
 						zc = self.zipCodesList.pop(index)
 						decoded_zc = zc
@@ -1857,8 +1857,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 				except ValueError as e: pass
 				if not e:
-					if not self.OpenedSettings:
-						self.city = index #Temporarily for EnterDialog, deleted item position
+					if not _mainSettingsDialog:
+						self.city = index #Temporarily for _mainSettingsDialog, deleted item position
 						self.zipCode = self.tempZipCode = ''
 						if self.WriteList(self.zipCodesList): Shared().Play_sound("del", 1)
 
@@ -1866,10 +1866,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 						self.zipCodesList = rollBack
 						self.define_dic = rollBack2
 						del rollBack, rollBack2
-				if not self.OpenedSettings and not self.openedTemporary: self.EnableMenu(True)
+				if not _mainSettingsDialog and not _tempSettingsDialog: self.EnableMenu(True)
 
 			else:
-				if not self.OpenedSettings and not self.openedTemporary: self.EnableMenu(True)
+				if not _mainSettingsDialog and not _tempSettingsDialog: self.EnableMenu(True)
 
 		gui.runScriptModalDialog(self.woeIdDialog, callback3)
 
@@ -1877,19 +1877,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_announceWeather(self, gesture):
 		try:	
 			if self.woeIdDialog or self.woeIdDialog.IsShown():
+				#returns if the woeid error window is open
 				return wx.Bell()
-		except (AttributeError, RuntimeError): pass
+		except: pass
 
 		if self.zipCode != self.note[1]: self.note = [1, self.zipCode]
 		ui.message(self.getWeather(self.zipCode))
 		#try  to update the volume of new played sound effect, if  it's in dictionary 
-		if self.OpenedSettings:
-			select = self.dlg.ch_vol.GetSelection()
+		if "_mainSettingsDialog"in globals() and _mainSettingsDialog:
+			select = _mainSettingsDialog.ch_vol.GetSelection()
 			if select == 1 and _curSample != "":
 				if _curSample in samplesvolumes_dic:
-					self.dlg.cb_vol.SetValue(samplesvolumes_dic[_curSample])
+					_mainSettingsDialog.cb_vol.SetValue(samplesvolumes_dic[_curSample])
 				else:
-					self.dlg.cb_vol.SetValue(_volume)
+					_mainSettingsDialog.cb_vol.SetValue(_volume)
 
 	script_announceWeather.__doc__ = _("Provides the current temperature and weather conditions.")
 
@@ -1897,8 +1898,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_announceForecast(self, gesture):
 		try:
 			if self.woeIdDialog or self.woeIdDialog.IsShown():
+				self.woeIdDialog.Raise()
 				return wx.Bell()
-		except (AttributeError, RuntimeError): pass
+		except: pass
 		if self.zipCode != self.note[1]: self.note = [1, self.zipCode]
 		ui.message(self.getWeather(self.zipCode, True))
 
@@ -1914,10 +1916,31 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except AttributeError: pass
 		#do not proceed if the window settings is open, but puts it in the foreground
 		if not self.setZipCodeItem.IsEnabled():
-			try:
-				self.openedTemporary.Raise()
-			except AttributeError: pass
-			return wx.Bell()
+			if "_notifyDialog" in globals() and _notifyDialog:
+				try:
+					_notifyDialog.Raise()
+					_notifyDialog.Show()
+				except: pass
+				return wx.Bell()
+
+			elif self.woeIdDialog:
+				try:
+					self.woeIdDialog.Raise()
+					self.woeIdDialog.Show()
+				except: pass
+				return wx.Bell()
+			elif "_findDialog" in globals() and _findDialog:
+				try:
+					_findDialog.Raise()
+					_findDialog.Show()
+				except: return
+				return wx.Bell()
+			else:
+				try:
+					_tempSettingsDialog.Raise()
+					_temSettingsDialog.Show()
+				except: pass
+				return wx.Bell()
 
 		self.EnableMenu(False)
 		self.setZipCodeDialog()
@@ -1928,12 +1951,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_swapTempScale(self, gesture):
 		"""set a measurement scale of degrees"""
 		self.celsius = (self.celsius + 1) %3 # This construct cycles between 0, 2
-		if self.OpenedSettings:
+		if _mainSettingsDialog:
 			#change the radio button in the settings window
-			self.celsius = self.dlg.rb.GetSelection()
+			self.celsius = _mainSettingsDialog.rb.GetSelection()
 			self.celsius = (self.celsius + 1) % 3
-			self.dlg.rb.SetSelection(self.celsius)
-			self.dlg.rb.SetFocus()
+			_mainSettingsDialog.rb.SetSelection(self.celsius)
+			_mainSettingsDialog.rb.SetFocus()
 
 		Shared().Play_sound("swap", 1)
 		ui.message('%s %s' % (_("Scale of temperature measurement set into"), _tempScale[self.celsius]))
@@ -1943,7 +1966,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_announceLastBuildDate(self, gesture):
 		"""announces the date and time of last weather report"""
+		try:	
+			#returns if the woeid error window is open
+			if self.woeIdDialog or self.woeIdDialog.IsShown():
+				return wx.Bell()
+		except: pass
 		if not self.zipCode or self.zipCode.isspace():
+			#warn if there is no city set
 			Shared().Play_sound(False, 1)
 			return ui.message(_("Sorry, the woeID is not set!"))
 		if not self.dom: self.dom, n = self.Open_Dom(self.zipCode)
@@ -1971,25 +2000,54 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"""Call the Weather Plus settings dialog"""
 		#do not proceed if the window settings is open, but puts it in the foreground
 		if not self.setZipCodeItem.IsEnabled():
-			if "_helpDialog" in globals() and _helpDialog:
+			if "_notifyDialog" in globals() and _notifyDialog:
 				try:
-					_helpDialog.Raise()
-					_helpDialog.Show()
-				except:return
+					_notifyDialog.Raise()
+					_notifyDialog.Show()
+				except: pass
 				return wx.Bell()
 
-			elif _downloadDialog:
+			elif self.woeIdDialog:
+				try:	
+					self.woeIdDialog.Raise()
+					self.woeIdDialog.Show()
+				except: pass
+				return wx.Bell()
+			elif "_downloadDialog" in globals() and _downloadDialog:
 				try:
 					_downloadDialog.Raise()
 					_downloadDialog.Show()
-				except: return
+				except: pass
+				return wx.Bell()
+
+			elif "_helpDialog" in globals() and _helpDialog:
+				try:
+					_helpDialog.Raise()
+					_helpDialog.Show()
+				except:pass
+				return wx.Bell()
+
+			elif "_findDialog" in globals() and _findDialog:
+				try:
+					_findDialog.Raise()
+					_findDialog.Show()
+				except: pass
+				return wx.Bell()
+
+			elif "_searchDialog" in globals() and _searchDialog:
+				try:
+					_searchDialog.Raise()
+					_searchDialog.Show()
+				except: pass
+				return wx.Bell()
+
+			elif "_tempSettingsDialog" in globals() and _tempSettingsDialog:
 				return wx.Bell()
 
 			else:
 				try:
-					self.dlg.Raise()
-					self.dlg.Show()
-					self.dlg.cbx.SetFocus()
+					_mainSettingsDialog.Raise()
+					_mainSettingsDialog.Show()
 				except: return
 				return wx.Bell()
 
@@ -2017,7 +2075,7 @@ class EnterDataDialog(wx.Dialog):
 			defaultZipCode = '', tempZipCode = '', zipCode = '', city = '', dom = '', celsius = None,
 			toHelp = None, toClip = None, toSample = None, toWind = None, toAtmosphere = None, toAstronomy = None, to24Hours = None,
 			toSpeedmeters = None, toAssign = None, scaleAs = None, volume_dic = {},
-			defaultString = "", define_dic = {}, details_dic = {}, forecast_days = "", toUpgrade = None, toPerceived = None, toUmidity = None, toVisibility = None, toPressure = None, toMmhgpressure = None, toBarometric = None, toWinddir = None, toWindspeed = None, toComma = None, toWeatherEffects = None):
+			define_dic = {}, details_dic = {}, forecast_days = "", toUpgrade = None, toPerceived = None, toUmidity = None, toVisibility = None, toPressure = None, toMmhgpressure = None, toBarometric = None, toWinddir = None, toWindspeed = None, toComma = None, toWeatherEffects = None):
 		wx.Dialog.__init__(self, parent=parent, id=id, title=title, pos=pos,
 		size=size, style=style)
 
@@ -2026,7 +2084,6 @@ class EnterDataDialog(wx.Dialog):
 		z, define_dic, details_dic = Shared().LoadZipCodes()
 		zipCodesList = Shared().Check_content(z, "", False) or []
 		del z
-		self.defaultString = defaultString
 		self.testCode = self.testName = self.last_tab =self.apixuValue = ""
 		if message:
 			self.hotkeys_dic = {
@@ -2585,10 +2642,10 @@ class EnterDataDialog(wx.Dialog):
 		if not value.isdigit() and not coords:
 			if _searchEngine:
 				#search for city recurrences with Yahoo WOEID Lookup
-				woeID, self.defaultString = Shared().Search_cities(value, self.defaultString)
+				woeID = Shared().Search_cities(value)
 			else:
 				#search for city recurrences with geonames
-				woeID, self.defaultString = Shared().Search_cities2(value, self.defaultString)
+				woeID = Shared().Search_cities2(value)
 			if not woeID: return
 			elif woeID not in ["Error", "noresult"]: value = woeID
 
@@ -2866,7 +2923,6 @@ class EnterDataDialog(wx.Dialog):
 		self.cbt_toComma.GetValue(),
 		self.cbt_toWeatherEffects.GetValue(),
 		self.ch_vol.GetSelection(),
-		self.defaultString
 		)
 
 
@@ -2956,7 +3012,6 @@ class EnterDataDialog(wx.Dialog):
 		self.cbx.SetFocus()
 		if self.toClip:
 			# Copy the city details to the clipboard.
-			import api
 			api.copyToClip('%s\r\n%s' % (title, message))
 
 
@@ -4171,7 +4226,7 @@ class Shared:
 				while keepGoing:
 					count += 1
 					if count >= max: count = 99
-					wx.MilliSleep(200)
+					wx.MilliSleep(250)
 					wx.Yield()
 					(keepGoing, skip) = _downloadDialog.Update(count,
 					'%s %s %s %s %s' %(
@@ -4195,8 +4250,6 @@ class Shared:
 			_downloadDialog.Update(99, '%s %s %s' % (
 			_("Downloaded"), str(os.path.getsize(target)/1024), "KB"))
 			_downloadDialog.Hide(); _downloadDialog.Destroy()
-			_downloadDialog = None
-
 			return keepGoing
 		except Exception as e:
 			try:
@@ -4208,8 +4261,6 @@ class Shared:
 				Shared().WriteError(title)
 
 			_downloadDialog.Hide(); _downloadDialog.Destroy()
-			_downloadDialog = None
-
 			if _pyVersion <= 2: e = e.decode("mbcs")
 			log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))
 			return "Error"
@@ -4569,18 +4620,18 @@ class Shared:
 		return ""
 
 
-	def Search_cities(self, cityName, defaultString = ""):
+	def Search_cities(self, cityName):
 		"""Search for city occurrences with Yahoo woeid lookup"""
 		if len(cityName) == 8 and not "," in cityName:
 			#try to filter the old zipcode
 			if not cityName[-2].isalpha():
-				return "Error", defaultString
+				return "Error"
 
 		woeIDList = self.FindWoeID(cityName)
-		if woeIDList == "noresult": return woeIDList, defaultString
+		if woeIDList == "noresult": return woeIDList
 		wl = len(woeIDList)
-		if wl == 0: return "Error", defaultString
-		elif wl == 1: return woeIDList[0].split(', ')[-1], defaultString
+		if wl == 0: return "Error"
+		elif wl == 1: return woeIDList[0].split(', ')[-1]
 		else:
 			title = '%s - %d %s %s %s.' % \
 			(_addonSummary, len(woeIDList), _("occurrences found"), _("for"), cityName)
@@ -4589,21 +4640,22 @@ class Shared:
 			Shared().Find_keys(),
 			_("List of availables Cities")
 			)
-			dl = SelectDialog(gui.mainFrame, title = title, message = message, choices = woeIDList, last = [0], sel = 0, defaultString = defaultString)
+			if "_searchDialog" not in globals(): global _searchDialog
+			_searchDialog = SelectDialog(gui.mainFrame, title = title, message = message, choices = woeIDList, last = [0], sel = 0)
 			Shared().Play_sound("subwindow", 1)
-			if dl.ShowModal() == wx.ID_CANCEL:
-				n, defaultString = dl.GetValue()
-				dl.Destroy()
+			if _searchDialog.ShowModal() == wx.ID_CANCEL:
+				n, defaultString = _searchDialog.GetValue()
+				_searchDialog.Destroy()
 				Shared().Play_sound("subwindow", 1)
-				return "", defaultString
+				return ""
 			else:
-				select, defaultString = dl.GetValue()
-				dl.Destroy()
+				select = _searchDialog.GetValue()
+				_searchDialog.Destroy()
 				Shared().Play_sound("subwindow", 1)
-				return woeIDList[select].split(', ')[-1], defaultString
+				return woeIDList[select].split(', ')[-1]
 
 
-	def Search_cities2(self, cityName, defaultString = ""):
+	def Search_cities2(self, cityName):
 		"""Search for city occurrences with geonames"""
 		command = cityName[:cityName.find(':')+1].upper()
 		city = cityName[cityName.find(':')+1:]
@@ -4649,10 +4701,10 @@ class Shared:
 			return v
 
 		recurrences_list = self.Find_cities(city)
-		if recurrences_list == "": return city, defaultString #passes the search key to Yahoo
+		if recurrences_list == "": return city #passes the search key to Yahoo
 		lrl = len(recurrences_list)
-		if lrl is 0: return city, defaultString #passes the search key to Yahoo
-		elif lrl == 1: return GetValue(recurrences_list[0], mode), defaultString
+		if lrl is 0: return city #passes the search key to Yahoo
+		elif lrl == 1: return GetValue(recurrences_list[0], mode)
 		else:
 			title = '%s - %d %s %s %s.' % \
 			(_addonSummary, lrl, _("occurrences found"), _("for"), city)
@@ -4660,18 +4712,18 @@ class Shared:
 			_("Choose a city."),
 			Shared().Find_keys(),
 			_("List of availables Cities"))
-			dl = SelectDialog(gui.mainFrame, title = title, message = message, choices = recurrences_list, last = [0], sel = 0, defaultString = defaultString)
+			if "_searchDialog" not in globals(): global _searchDialog
+			_searchDialog = SelectDialog(gui.mainFrame, title = title, message = message, choices = recurrences_list, last = [0], sel = 0)
 			Shared().Play_sound("subwindow", 1)
-			if dl.ShowModal() == wx.ID_CANCEL:
-				n, defaultString = dl.GetValue()
-				dl.Destroy()
+			if _searchDialog.ShowModal() == wx.ID_CANCEL:
+				_searchDialog.Destroy()
 				Shared().Play_sound("subwindow", 1)
-				return "", defaultString
+				return ""
 			else:
-				select, defaultString = dl.GetValue()
-				dl.Destroy()
+				select = _searchDialog.GetValue()
+				_searchDialog.Destroy()
 				Shared().Play_sound("subwindow", 1)
-				return GetValue(recurrences_list[select], mode), defaultString
+				return GetValue(recurrences_list[select], mode)
 
 
 class NoticeAgainDialog(wx.Dialog):
@@ -4770,7 +4822,7 @@ class SelectDialog(wx.Dialog):
 
 	def GetValue(self):
 		"""Return the location choice from SelectDialog"""
-		return self.chb.GetSelection(), self.defaultString
+		return self.chb.GetSelection()
 
 
 	def OnKey(self, evt):
@@ -4781,17 +4833,43 @@ class SelectDialog(wx.Dialog):
 		defaultString = self.defaultString
 		if key == wx.WXK_F3 and ctrl:
 			#Enter text to search
-			dl = wx.TextEntryDialog(self,
-			_("Type the search string"),
-			_("Find"),
-			defaultString
-			)
+			if "_itemStatus" not in globals():
+				global _itemStatus
+				_itemStatus = {}
 
-			if dl.ShowModal() == wx.ID_OK:
-				defaultString = self.defaultString = dl.GetValue()
+			if "_undo" not in globals():
+				global _undo
+				_undo = []
+
+			if "_defaultStrings" not in globals():
+				global _defaultStrings
+				_defaultStrings = []
+				#load search keys saved
+				sel = 0
+				if os.path.isfile(_searchKey_path):
+					with open(_searchKey_path, 'r') as r:
+						for i in r:
+							if _pyVersion <= 2: i = i.decode("mbcs")
+							if i.startswith('\t'): sel = int(i.lstrip('\t')); continue
+							_defaultStrings.append(i.rstrip('\n'))
+
+			if "_selected" not in globals():
+				global _selected
+				_selected = sel
+
+			if "_findDialog" not in globals(): global _findDialog
+			_findDialog = FindDialog(self, message = _("Type the search string"), title = _("Find"))
+			if _findDialog.ShowModal() == wx.ID_OK:
+				self.defaultString = defaultString = _findDialog.GetValue()
+				if defaultString and defaultString not in _defaultStrings: _defaultStrings.append(defaultString); _defaultStrings.sort()
+				if defaultString: _selected = _defaultStrings.index(defaultString)
+				else:
+					if _notifyDialog: _notifyDialog.Destroy()
+					_findDialog.Destroy()
+					return
 				self.FindText(self.choices, defaultString, direction = 0)
 
-			dl.Destroy()
+			_findDialog.Destroy()
 
 		elif key == wx.WXK_F3 and shift and defaultString:
 			#Find previous
@@ -4833,7 +4911,10 @@ class SelectDialog(wx.Dialog):
 		if not find:
 			ds= ["", _("next"), _("previous")]
 			if d == 0:
-				wx.MessageBox('"%s" %s' % (text, _("not found!")), _("Find"), wx.ICON_EXCLAMATION)
+				if "_notifyDialog" not in globals(): global _notifyDialog
+				_notifyDialog = wx.MessageDialog(gui.mainFrame, '"%s" %s' % (text, _("not found!")), _("Find"), wx.OK|wx.ICON_EXCLAMATION)
+				if _notifyDialog.ShowModal(): _notifyDialog.Destroy()
+
 			else:
 				ds = ["", _("No results next for"), _("No previous results for")]
 				winsound.MessageBeep(winsound.MB_ICONEXCLAMATION)
@@ -5078,6 +5159,307 @@ class HelpEntryDialog(wx.Dialog):
 
 	def OnCopytoclip(self, evt):
 		"""copy textctrl value to clipboard"""
-		import api
 		api.copyToClip(self.clip)
 		evt.Skip()
+
+
+class FindDialog(wx.Dialog):
+	def __init__(self, parent, id=-1, pos=wx.DefaultPosition, size=wx.DefaultSize, style=wx.DEFAULT_DIALOG_STYLE,
+	title = '', message = ''):
+		wx.Dialog.__init__(self, parent=parent, id=id, title=title, pos=pos, size=size, style=style)
+		sizer = wx.BoxSizer(wx.VERTICAL)
+		if message:
+			sizer.Add(wx.StaticText(self, -1, message), 0, wx.ALL, 10)
+
+		boxSizerH1 = wx.BoxSizer(wx.HORIZONTAL)
+		textEntry = wx.TextCtrl(self)
+		try:
+			textEntry.SetValue(_defaultStrings[_selected])
+		except IndexError: pass
+		sizer.Add(textEntry, 1, wx.EXPAND|wx.ALL, 5)
+		boxSizerH1.Add(self.CreateButtonSizer(wx.OK|wx.CANCEL), 0, wx.CENTRE| wx.ALL|wx.EXPAND, 5)
+		btn_ok = self.FindWindowById(wx.ID_OK, self)
+		btn_canc = self.FindWindowById(wx.ID_CANCEL, self)
+		if not _defaultStrings or not textEntry.GetValue():
+			btn_ok.Enable(False)
+		sizer.Add(boxSizerH1)
+		textEntry.Bind(wx.EVT_CHAR, self.OnKey)
+		textEntry.Bind(wx.EVT_RIGHT_DOWN, self.OnContext)
+		btn_ok.Bind(wx.EVT_CHAR, self.OnKey)
+		btn_canc.Bind(wx.EVT_CHAR, self.OnKey)
+		self.defaultStrings = _defaultStrings
+		self.selected = _selected
+		self.textEntry = textEntry
+		self.btn_ok = btn_ok
+		self.SetSizerAndFit(sizer)
+		self.Center(wx.BOTH|wx.Center)
+		textEntry.SetFocus()
+
+
+	def OnKey(self, evt):
+		"""Control f2, up and down Arrows and ctrl+z, ctrl+x, ctrl+c, ctrl+v and popup menu into FindDialog.textctrl"""
+		key = evt.GetKeyCode()
+		obj = evt.GetEventObject()
+		tegv = self.textEntry
+		if key == wx.WXK_DOWN and obj == tegv:
+			#select the next string
+			if self.selected < len(self.defaultStrings) -1:
+				self.selected += 1
+				tegv.SetValue(self.defaultStrings[self.selected])
+				return tegv.SetSelection(0, -1)
+		elif key == wx.WXK_UP and obj == tegv:
+			#choose the previous string
+			if self.selected > 0:
+				self.selected -= 1
+				if self.selected < 0: self.selected = 0
+				try:
+					tegv.SetValue(self.defaultStrings[self.selected])
+				except (TypeError, IndexError): pass
+				return tegv.SetSelection(0, -1)
+		elif key == wx.WXK_PAGEDOWN and obj == tegv:
+			#page down
+			page = int((len(self.defaultStrings) + 10 - 1) / 10)
+			self.selected += page
+			if self.selected >= len(self.defaultStrings): self.selected = len(self.defaultStrings) -1
+			try:
+				tegv.SetValue(self.defaultStrings[self.selected])
+			except (TypeError, IndexError): pass
+			tegv.SetSelection(0, -1)
+		elif key == wx.WXK_PAGEUP and tegv == obj:
+			#page up
+			page = int((len(self.defaultStrings) + 10 - 1) / 10)
+			self.selected-= page
+			if self.selected < 0: self.selected = 0
+			try:
+				tegv.SetValue(self.defaultStrings[self.selected])
+			except (TypeError, IndexError): pass
+			tegv.SetSelection(0, -1)
+		elif obj == tegv:
+			if key == wx.WXK_DELETE and tegv.CanCut():
+				#delete search key
+				return self.OnDelete()
+			elif key == wx.WXK_CONTROL_Z:
+				#undo
+				return self.OnUndo()
+			elif key == wx.WXK_CONTROL_X and tegv.CanCut():
+				#cut
+				return self.OnCut()
+			elif key == wx.WXK_CONTROL_V and tegv.CanPaste:
+				#paste
+				return self.OnPaste()
+		elif key == wx.WXK_F2:
+			#sett focus in edit field
+			tegv.SetFocus()
+			try:
+				tegv.SetSelection(-1, -1)
+			except AttributeError: pass
+
+		if tegv.GetValue() != '' and not self.btn_ok.IsEnabled(): self.btn_ok.Enable(True)
+		if tegv.GetValue() == '' and self.btn_ok.IsEnabled(): self.btn_ok.Enable(False)
+		evt.Skip()
+
+
+	def OnContext(self, evt):
+		"""Create and display a context menu in FindDialog.textctrl"""
+		self.Bind(wx.EVT_MENU, self.OnUndo, id = wx.ID_UNDO)
+		self.Bind(wx.EVT_MENU, self.OnCut, id = wx.ID_CUT)
+		self.Bind(wx.EVT_MENU, self.OnCopy, id = wx.ID_COPY)
+		self.Bind(wx.EVT_MENU, self.OnPaste, id = wx.ID_PASTE)
+		self.Bind(wx.EVT_MENU, self.OnSelectAll, id = wx.ID_SELECTALL)
+		self.Bind(wx.EVT_MENU, self.OnDelete, id = wx.ID_DELETE)
+		self.Bind(wx.EVT_MENU, self.OnSave, id = wx.ID_SAVE)
+		#Create the popup menu
+		menu = wx.Menu()
+		selected = [
+		self.textEntry.GetSelection()[0],
+		self.textEntry.GetSelection()[-1]
+		]
+		lenValue = len(self.textEntry.GetValue())
+		if selected[0] == selected[-1]:
+			#unselected
+			_itemStatus['cut'] = False
+			_itemStatus['copy'] = False
+			_itemStatus['paste'] = self.TestClipboard()
+			_itemStatus['selectall'] = True
+		elif selected[0] == 0 and selected[-1] == lenValue:
+			#all selected
+			_itemStatus['cut'] = True
+			_itemStatus['copy'] = True
+			_itemStatus['paste'] = self.TestClipboard()
+			_itemStatus['selectall'] = False
+		elif (selected[0] != selected[-1]) and (selected[0] >= 0 and selected[-1] != lenValue):
+			#partial selected
+			_itemStatus['cut'] = True
+			_itemStatus['copy'] = True
+			_itemStatus['paste'] = bool(api.getClipData())
+			_itemStatus['selectall'] = True
+
+		_itemStatus['undo'] = bool(_undo)
+		_itemStatus['save'] = bool(_defaultStrings and self.textEntry.GetValue() in _defaultStrings)
+		if not self.textEntry.GetValue(): _itemStatus['selectall'] = False
+		_itemStatus['delete'] = bool(self.textEntry.GetValue() and self.textEntry.GetStringSelection())
+
+		#append pop menus
+		itemUndo = menu.Append(wx.ID_UNDO, ).Enable(_itemStatus['undo'])
+		itemCut = menu.Append(wx.ID_CUT, ).Enable(_itemStatus['cut'])
+		itemCopy = menu.Append(wx.ID_COPY, ).Enable(_itemStatus['copy'])
+		itemPaste = menu.Append(wx.ID_PASTE, ).Enable(_itemStatus['paste'])
+		itemSelectAll = menu.Append(wx.ID_SELECTALL, ).Enable(_itemStatus['selectall'])
+		itemDelete = menu.Append(wx.ID_DELETE, ).Enable(_itemStatus['delete'])
+		menu.AppendSeparator()
+		itemSave = menu.Append(wx.ID_SAVE, ).Enable(_itemStatus['save'])
+		#Displays the pop-up menu
+		self.PopupMenu(menu)
+		menu.Destroy()
+
+
+	def TestClipboard(self):
+		"""test if a valid clipboard value"""
+		try:
+			api.getClipData()
+		except: return False
+		return True
+
+
+	def OnCopy(self, evt):
+		"""copy popup menu item"""
+		api.copyToClip(self.textEntry.GetValue()[self.textEntry.GetSelection()[0]:self.textEntry.GetSelection()[-1]])
+		evt.Skip()
+
+
+	def OnSelectAll(self, evt):
+		"""select all popup menu item"""
+		self.textEntry.SetSelection(-1, -1)
+		evt.Skip()
+
+
+	def OnDelete(self, evt = None):
+		"""delete popup menu item"""
+		tegv = self.textEntry
+		v = tegv.GetValue()
+		self.ListPreserve(v)
+		index = None
+		if not self.defaultStrings or v not in self.defaultStrings:
+			tegv.SetValue('')
+			self.btn_ok.Enable(False)
+		elif self.defaultStrings:
+			try:
+				index = self.defaultStrings.index(v)
+				del self.defaultStrings[index]
+			except ValueError: pass
+			try:
+				if index is not None: tegv.SetValue(self.defaultStrings[index -1])
+			except IndexError:
+				tegv.SetValue('') 	
+
+			if index is not None: self.selected = index
+
+		tegv.SetFocus()
+		if not self.defaultStrings or not v:
+			tegv.SetValue('')
+			self.btn_ok.Enable(False)
+		if v: self.textEntry.SetSelection(-1, -1)
+
+
+	def OnUndo(self, evt=None):
+		"""undo popup menu item"""
+		if not _undo: return
+		tegv = self.textEntry
+		#removes double keys
+		undo2 = list(set(_undo))
+		[_undo.pop() for i in range(len(_undo))]
+		[_undo.append(i) for i in undo2]
+		#recovers the last key
+		lastUndo = _undo.pop()
+		index = self.ListResume(lastUndo)
+		if index: tegv.SetValue(self.defaultStrings[index])
+		else: tegv.SetValue(lastUndo.lstrip('\t'))
+		#select all and set focus
+		tegv.SetSelection(0, -1)
+		tegv.SetFocus()
+
+
+	def OnCut(self, evt = None):
+		"""cut popup menu item"""
+		tegv = self.textEntry
+		v = tegv.GetValue()
+		selected = tegv.GetStringSelection()
+		tegv.SetValue(v.replace(selected, ''))
+		api.copyToClip(selected)
+		if selected in self.defaultStrings:
+			index = self.defaultStrings.index(selected)
+			if index < len(self.defaultStrings)-1:
+				tegv.SetValue(self.defaultStrings[index + 1])
+			elif index > 0: tegv.SetValue(self.defaultStrings[index - 1])
+			tegv.SetSelection(0, -1)
+			self.ListPreserve(selected)
+			self.defaultStrings.remove(selected)
+		else: self.ListPreserve(v, False)
+
+
+	def OnPaste(self, evt=None):
+		"""paste popup menu item"""
+		tegv = self.textEntry
+		selected = tegv.GetStringSelection()
+		v = tegv.GetValue()
+		pos = tegv.GetInsertionPoint()
+		try:
+			clipData = api.getClipData()
+		except: clipData = None
+		if clipData:
+			if selected:
+				#replace the selected text
+				tegv.SetValue(v.replace(selected, clipData))
+			else:
+				#insert text from insertion point
+				start = v[:pos]
+				end = v[pos:]
+				tegv.SetValue(start+clipData+end)
+
+			self.ListPreserve(v, False)
+			self.btn_ok.Enable(True)
+
+
+	def OnSave(self, evt):
+		"""save popup menu item"""
+		e = None
+		self.defaultStrings.append('\t%s' % self.defaultStrings.index(self.textEntry.GetValue()))
+		with open(_searchKey_path, 'w') as w:
+			for i in self.defaultStrings:
+				if _pyVersion >= 3: i += "\n"
+				else: i =i.encode("mbcs") + "\n"
+				try:
+					w.write(i)
+				except Exception as e:
+					e = str(e)
+					if _pyVersion <= 2: e = e.decode("mbcs")
+					log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))
+
+		if not e: Shared().Play_sound("save")
+		self.defaultStrings.pop() #remove key index from list
+		[_undo.pop() for i in range(len(_undo))] #empty the canceled list
+
+
+	def ListPreserve(self, v, tolist=True):
+		"""adds a pointer to the deleted key"""
+		if tolist and v in self.defaultStrings and (v not in _undo or '\t' + v not in _undo):
+			#in list
+			_undo.append('\t' + v)
+		elif v not in _undo and ('\t' + v not in _undo):
+			#not in list
+			_undo.append(v)
+
+
+	def ListResume(self, lastUndo):
+		"""restore the search key of the list"""
+		if lastUndo.startswith('\t'):
+			#was in the list
+			self.defaultStrings.append(lastUndo.lstrip('\t'))
+			self.defaultStrings.sort()
+			try:
+				return self.defaultStrings.index(lastUndo.lstrip('\t'))
+			except indexError: return None
+
+
+	def GetValue(self):
+		return self.textEntry.GetValue()
