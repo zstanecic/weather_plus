@@ -300,6 +300,39 @@ y podrás guardarla.
 
 # Que Hay de nuevo: #
 
+# Versión 7.0 #
+* Mejorada la ventana de búsqueda. Ahora se pueden gestionar todas las
+  palabras clave insertadas, añadirlas, eliminarlas y guardarlas desde el
+  menú de contexto.
+* Mejorado el control de apertura de ventana.
+* corregidos algunos pequeños fallos.
+
+# Versión 6.9 #
+
+* Se ha implementado la búsqueda recursiva de ciudades con el sistema válido
+  usado anteriormente en la versión de Weather Plus para Apixu.
+
+	* Pulsa f1 en la ventana de opciones para ver una explicación con las
+	  órdenes disponibles.
+
+* Corregido un problema al eliminar algunos módulos *.pyc y *.pyo durante la
+  actualización de NVDA.
+
+# Versión 6.8 #
+
+* se ha actualizado un indicador necesario para las siguientes ramas;
+
+	* nvda_snapshot_threshold y nvda_snapshot_threshold_py3_staging.
+
+# Versión 6.7 #
+* Corregido un fallo que sucedía al probar una nueva ciudad y usarla en modo
+  temporal pulsando simplemente "intro" e intentando añadirla después
+  mediante el botón "Añadir".
+* Se han añadido acrónimos para Georgia del Sur y las Islas Sandwitch del
+  Sur a la base de datos. En este momento, por desgracia, parece que las
+  ciudades de estos estados no funcionan o poseen datos
+  incompletos. Esperamos que esto se resuelva pronto.
+
 # Versión 6.5 #
 * Se corrigió un par de errores en la reproducción de efectos de sonido;
 	* un par de ciclos "for" con valores máximos incorrectos causaron la llamada a un efecto de sonido inexistente.

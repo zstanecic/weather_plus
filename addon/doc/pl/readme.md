@@ -266,33 +266,65 @@ Podaje czas wschodu i zachodu słońca.
 
 Domyślnie odznaczone.
 
-# Use the comma to separate decimals #
+# Użyj przecinka do oddzielania wartości dziesiętnych. #
 
-If enabled, uses the comma as a decimal separator, otherwise, use the point.
+Gdy jest zaznaczone, wartości dziesiętne oddzielane są przecinkiem, w
+przeciwnym razie kropką.
 
-check box not checked (by default)
+Domyślnie odznaczone
 
-# Check for upgrade #
+# Sprawdź aktualizacje #
 
-If is activated this alerts when there is an update of the addon.
+Po uaktywnieniu tej opcji dodatek powiadamia o dostępnych aktualizacjach
 
 Domyślnie zaznaczone.
 
-# Press the OK button to confirm the action or the Cancel button to cancel the action. #
+# Naciśnij przycisk OK aby potwierdzić akcję, lub przycisk Anuluj aby ją anulować. #
 
-If you have modified the cities list, by pressing "Cancel", you will be
-remembered and you can still save it.
+Jeśli po zmodyfikowaniu listy miast naciśniesz "Anuluj", dodatek przypomni
+Ci o zmianach na liście i umożliwi jej zapisanie.
 
-# Note: your settings will be save in the file named: #
+# Uwaga: Twoje ustawienia zostaną zapisane w pliku o nazwie: #
 
-* "Weather.ini": startup settings of Weather Plus.
-* "Weather.volumes": custom audio volume levels, regardless of the overall
-  volume.
-* "Weather.zipcodes": list of cities with their zip code and definitions.
+* "Weather.ini": ustawienia uruchamiania Weather Plus.
+* "Weather.volumes": Dostosuj poziom głośności dźwięku niezależnie od
+  głośności ogólnej.
+* "Weather.zipcodes": Lista miast wraz z kodami pocztowymi i definicjami.
 
 --------------------------------------------------------------------------------
 
-# What's new: #
+# Co nowego: #
+
+# Version 7.0 #
+* Improved search window, now it possible manage all the search key
+  inserted, add, delete and save it from context menu.
+* Improved window opening control.
+* some little bugs fixed.
+
+# Version 6.9 #
+
+* Implemented the recursive cities search with the valid system previously
+  used in Weather_Plus Apixu version.
+
+	* Press f1 in the settings window for an explanation of the available
+	  commands.
+
+* Fixed issue with deleting some * .pyc, * .pyo modules during an NVDA
+  update.
+
+# Version 6.8 #
+
+* updated flag necessary for the branches below;
+
+	* nvda_snapshot_threshold and nvda_snapshot_threshold_py3_staging.
+
+# Version 6.7 #
+* Fixed a bug when it is tested a new city and using it in temporary mode by
+  simply press "enter" and at a later time trying to add it via the "Add"
+  button.
+* Added acronym for SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS to the
+  database, but unfortunately at the moment it seems that the cities of this
+  state do not work or have incomplete data, we hope it will be solved soon.
 
 # Wersja 6.5 #
 * Fixed a couple of bugs in sound effects reproduction;

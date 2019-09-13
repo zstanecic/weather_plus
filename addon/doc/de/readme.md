@@ -303,6 +303,39 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 
 # Änderungsverlauf: #
 
+# Version 7.0 #
+* Verbessertes Suchfenster. Jetzt kann man alle eingegebenen Suchbegriffe
+  verwalten, hinzufügen, löschen und aus dem Kontextmenü speichern.
+* Verbesserte Steuerung beim Öffnen des Fensters.
+* Einige kleinere Fehler behoben.
+
+# Version 6.9 #
+
+* Implemented the recursive cities search with the valid system previously
+  used in Weather_Plus Apixu version.
+
+	* Press f1 in the settings window for an explanation of the available
+	  commands.
+
+* Fixed issue with deleting some * .pyc, * .pyo modules during an NVDA
+  update.
+
+# Version 6.8 #
+
+* Aktualisiertes Flag notwendig für die untenstehenden Zweige;
+
+	* nvda_snapshot_threshold und nvda_snapshot_threshold_py3_staging.
+
+# Version 6.7 #
+* Ein Fehler wurde behoben, wenn eine neue Stadt getestet wurde und sie im
+  temporären Modus verwendet wurde, indem man einfach "Enter" drückte und zu
+  einem späteren Zeitpunkt versuchte, sie über die Schaltfläche "Hinzufügen"
+  ergänzte.
+* Das Akronym für SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS wurde der
+  Datenbank hinzugefügt, aber leider scheinen die Städte dieses Staates
+  nicht zu funktionieren oder sie enthalten unvollständige Daten. Wir
+  hoffen, dass es bald behoben wird.
+
 # Version 6.5 #
 * Einige Fehler bei der Wiedergabe von Soundeffekten wurden behoben.
 	* Einige "for" -Zyklen mit falschen Maximalwerten verursachten einen nicht existierenden Soundeffekt.

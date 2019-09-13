@@ -302,6 +302,39 @@ averti et vous pourrez quand-même sauvegarder la liste.
 
 # Quoi de neuf : #
 
+# Version 7.0 #
+* Fenêtre de recherche améliorée. Vous pouvez maintenant gérer tous les
+  mots-clés insérés, les ajouter, les supprimer et les enregistrer à partir
+  du menu contextuel.
+* Amélioration du contrôle d’ouverture des fenêtres.
+* correction de quelques bugs mineurs.
+
+# Version 6.9 #
+
+* La recherche de ville récursive a été implémentée avec le système valide
+  précédemment utilisé dans la version Weather Plus pour Apixu.
+
+	* Appuyez sur f1 dans la fenêtre des options pour afficher une explication
+	  des commandes disponibles.
+
+* Correction d'un problème lors de la suppression de certains modules .pyc
+  et .pyo lors de la mise à jour de NVDA.
+
+# Version 6.8 #
+
+* un indicateur nécessaire pour les branches suivantes a été mis à jour;
+
+	* nvda_snapshot_threshold et nvda_snapshot_threshold_py3_staging.
+
+# Version 6.7 #
+* Correction d'un bug survenant lors de l'essai d'une nouvelle ville et de
+  l'utiliser temporairement en appuyant simplement sur "Entrée" et en
+  essayant de l'ajouter plus tard en utilisant le bouton "Ajouter".
+* Les acronymes pour la Géorgie du Sud et les îles Sandwitch du Sud ont été
+  ajoutés à la base de données. Malheureusement, à l'heure actuelle, il
+  semble que les villes de ces États ne fonctionnent pas ou disposent de
+  données incomplètes. Nous espérons que cela sera bientôt résolu.
+
 # Version 6.5 #
 * Correction de quelques bugs dans la reproduction des effets sonores;
 	* quelques cycles "for" avec des valeurs maximales incorrectes ont provoqué l'appel d'un effet sonore inexistant.
