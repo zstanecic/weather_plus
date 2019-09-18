@@ -273,14 +273,20 @@ If you have modified the cities list, by pressing "Cancel", you will be remember
 * Improved search window, now it possible manage all the search key inserted, add, delete and save it from context menu.
 * Improved window opening control.
 * some little bugs fixed.
+* Weather_searchkey
 
 # Version 6.9 #
+
 * Implemented the recursive cities search with the valid system previously used in Weather_Plus Apixu version.
+
 	* Press f1 in the settings window for an explanation of the available commands.
+	
 * Fixed issue with deleting some * .pyc, * .pyo modules during an NVDA update.
 
 # Version 6.8 #
+
 * updated flag necessary for the branches below;
+
 	* nvda_snapshot_threshold and nvda_snapshot_threshold_py3_staging.
 
 # Version 6.7 #

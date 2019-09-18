@@ -5201,21 +5201,32 @@ class FindDialog(wx.Dialog):
 		key = evt.GetKeyCode()
 		obj = evt.GetEventObject()
 		tegv = self.textEntry
+		tes = tegv.GetValue()
 		if key == wx.WXK_DOWN and obj == tegv:
 			#select the next string
-			if self.selected < len(self.defaultStrings) -1:
+			if tes and len(tes) == 1:
+				for i in self.defaultStrings:
+					if tes.upper() in i[0].upper(): self.selected = self.defaultStrings.index(i); break
+			elif self.selected < len(self.defaultStrings) -1:
 				self.selected += 1
+
+			try:
 				tegv.SetValue(self.defaultStrings[self.selected])
-				return tegv.SetSelection(0, -1)
+			except (TypeError, IndexError): pass
+			return tegv.SetSelection(0, -1)
 		elif key == wx.WXK_UP and obj == tegv:
 			#choose the previous string
-			if self.selected > 0:
+			if tes and len(tes) == 1:
+				for i in self.defaultStrings:
+					if tes.upper() in i[0].upper(): self.selected = self.defaultStrings.index(i); break
+			elif self.selected > 0:
 				self.selected -= 1
 				if self.selected < 0: self.selected = 0
-				try:
-					tegv.SetValue(self.defaultStrings[self.selected])
-				except (TypeError, IndexError): pass
-				return tegv.SetSelection(0, -1)
+
+			try:
+				tegv.SetValue(self.defaultStrings[self.selected])
+			except (TypeError, IndexError): pass
+			return tegv.SetSelection(0, -1)
 		elif key == wx.WXK_PAGEDOWN and obj == tegv:
 			#page down
 			page = int((len(self.defaultStrings) + 10 - 1) / 10)
