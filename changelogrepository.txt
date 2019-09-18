@@ -1,4 +1,8 @@
 18/09/2019
+Weather_Plus 7.0 source code update #4
+Adriano said:
+Sorry, fixed an unexpected bug
+
 Weather_Plis 7.0 source code update #3 correct
 Adriano said:
 Sorry, I sent the old file.

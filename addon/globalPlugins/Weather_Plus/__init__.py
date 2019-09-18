@@ -157,7 +157,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"/".join((temp, "%s%s.nvda-addon" % ("weather plus", '5.0')))]
 		for file in files:
 			if os.path.isfile(file):
-				os.remove(file)
+				try:
+					os.remove(file)
+				except: pass
 
 
 	def onSetZipCodeDialog(self, evt):
