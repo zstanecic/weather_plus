@@ -19,7 +19,7 @@ import api, time, zipimport
 from configobj import ConfigObj
 from contextlib import closing
 """other temporary imported libraries in the code
-tempfile, zipfile, shutil"""
+tempfile, zipfile, shutil, stat"""
 #include the modules directory to the path
 sys.path.append(os.path.dirname(__file__))
 import dateutil.tz, dateutil.zoneinfo
@@ -66,7 +66,6 @@ _downloadDialog = None
 _searchDialog = None
 _findDialog = None
 _notifyDialog = None
-
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	scriptCategory = _addonSummary
@@ -148,7 +147,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def Removeupdate(self):
 		"""Delete the update file from the temporary folder"""
-		import tempfile
+		import tempfile, stat
 		if _pyVersion <= 2:
 			temp = tempfile.gettempdir().decode("mbcs")
 		else: temp = tempfile.gettempdir()
@@ -158,6 +157,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		for file in files:
 			if os.path.isfile(file):
 				try:
+					os.chmod(file, stat.S_IWRITE )
 					os.remove(file)
 				except: pass
 
