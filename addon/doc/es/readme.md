@@ -306,6 +306,7 @@ y podrás guardarla.
   menú de contexto.
 * Mejorado el control de apertura de ventana.
 * corregidos algunos pequeños fallos.
+* Weather_searchkey
 
 # Versión 6.9 #
 

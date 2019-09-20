@@ -294,36 +294,37 @@ zapamätaní a môžete ho uložiť.
 
 # Čo je nové: #
 
-# Version 7.0 #
-* Improved search window, now it possible manage all the search key
-  inserted, add, delete and save it from context menu.
-* Improved window opening control.
-* some little bugs fixed.
+# Verzia 7.0 #
+* Vylepšené okno vyhľadávania, teraz je možné spravovať celý vložený
+  vyhľadávací kľúč, pridať, odstrániť a uložiť ho z kontextového menu.
+* Vylepšené ovládanie otvárania okien.
+* opravené drobné chyby.
+* Weather_searchkey
 
-# Version 6.9 #
+# Verzia 6.9 #
 
-* Implemented the recursive cities search with the valid system previously
-  used in Weather_Plus Apixu version.
+* Implementovalo sa vyhľadávanie rekurzívnych miest pomocou platného
+  systému, ktorý sa predtým používal vo verzii Weather_Plus Apixu.
 
-	* Press f1 in the settings window for an explanation of the available
-	  commands.
+	* Stlačením klávesu f1 v okne nastavení získate vysvetlenie dostupných
+	  príkazov.
 
-* Fixed issue with deleting some * .pyc, * .pyo modules during an NVDA
-  update.
+* Opravený problém s odstránením niektorých modulov * .pyc, * .pyo počas
+  aktualizácie NVDA.
 
-# Version 6.8 #
+# Verzia 6.8 #
 
-* updated flag necessary for the branches below;
+* aktualizované označenie potrebné pre vetvy uvedené nižšie;
 
-	* nvda_snapshot_threshold and nvda_snapshot_threshold_py3_staging.
+	* nvda_snapshot_threshold a nvda_snapshot_threshold_py3_staging.
 
-# Version 6.7 #
-* Fixed a bug when it is tested a new city and using it in temporary mode by
-  simply press "enter" and at a later time trying to add it via the "Add"
-  button.
-* Added acronym for SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS to the
-  database, but unfortunately at the moment it seems that the cities of this
-  state do not work or have incomplete data, we hope it will be solved soon.
+# Verzia 6.7 #
+* Opravená chyba pri testovaní nového mesta v dočasnom režime jednoduchým
+  stlačením klávesu „Enter“ a neskorší pokus o pridanie pomocou tlačidla
+  „Pridať“.
+* Do databázy bola pridaná skratka pre JUŽNÚ GEORGIU A JUŽNÉ SANDWICHOVÉ
+  OSTROVY, bohužiaľ v súčasnosti sa zdá, že mestá tohto štátu nefungujú
+  alebo nemajú úplné dáta, dúfame však, že toto sa čoskoro vyrieši.
 
 # Verzia 6.5 #
 * Opravených pár chýb pri prehrávaní zvukových efektov;

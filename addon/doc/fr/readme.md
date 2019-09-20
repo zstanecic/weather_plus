@@ -308,6 +308,7 @@ averti et vous pourrez quand-même sauvegarder la liste.
   du menu contextuel.
 * Amélioration du contrôle d’ouverture des fenêtres.
 * correction de quelques bugs mineurs.
+* Weather_searchkey
 
 # Version 6.9 #
 

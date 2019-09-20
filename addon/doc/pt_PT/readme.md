@@ -305,6 +305,7 @@ alertado para a guardar.
   inserted, add, delete and save it from context menu.
 * Improved window opening control.
 * some little bugs fixed.
+* Weather_searchkey
 
 # Version 6.9 #
 

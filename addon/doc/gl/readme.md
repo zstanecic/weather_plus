@@ -294,36 +294,38 @@ aínda podes gardalo.
 
 # Que Hai de novo: #
 
-# Version 7.0 #
-* Improved search window, now it possible manage all the search key
-  inserted, add, delete and save it from context menu.
-* Improved window opening control.
-* some little bugs fixed.
+# Versión 7.0 #
+* Mellorada xanela de busca, agora é posible administrar toda a tecla de
+  procura insertada, engadila, eliminala ou gardala dende o menú de
+  contexto.
+* Mellorado o control de apertura de xanelas.
+* arranxados algúns pequenos erros.
+* Weather_searchkey
 
-# Version 6.9 #
+# Versión 6.9 #
 
-* Implemented the recursive cities search with the valid system previously
-  used in Weather_Plus Apixu version.
+* Implementada a busca recursiva de cidades co sistema válido utilizado
+  anteriormente na versión Apixu de Weather_Plus.
 
-	* Press f1 in the settings window for an explanation of the available
-	  commands.
+	* Prema f1 na xanela de opcións para unha explicación dos comandos
+	  dispoñibles.
 
-* Fixed issue with deleting some * .pyc, * .pyo modules during an NVDA
-  update.
+* Arranxado problema coa eliminación dalgúns módulos .pyc, .pyo durante unha
+  actualización do NVDA.
 
-# Version 6.8 #
+# Versión 6.8 #
 
-* updated flag necessary for the branches below;
+* actualizados os indicadores necesarios para as ramas a seguir;
 
-	* nvda_snapshot_threshold and nvda_snapshot_threshold_py3_staging.
+	* nvda_snapshot_threshold e nvda_snapshot_threshold_py3_staging.
 
-# Version 6.7 #
-* Fixed a bug when it is tested a new city and using it in temporary mode by
-  simply press "enter" and at a later time trying to add it via the "Add"
-  button.
-* Added acronym for SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS to the
-  database, but unfortunately at the moment it seems that the cities of this
-  state do not work or have incomplete data, we hope it will be solved soon.
+# Versión 6.7 #
+* Arranxado un erro ao se proba unha nova cidade e usándoa en modo temporal
+  premendo simplemente "intro" e nun momento posterior tratando de engadila
+  mediante o botón "Engadir".
+* Engadido acrónimo para XEORXIA DO SUR e para as ILLAS SANDWICH DO SUR á
+  base de datos, mais lamentablemente semella que as cidades destes estados
+  non funcionan ou teñen datos incompletos, agardamos que se resolva cedo.
 
 # Versión 6.5 #
 * Arranxados algúns erros na reprodución de efectos de son;

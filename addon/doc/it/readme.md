@@ -296,36 +296,37 @@ ricordato e potrete ancora salvarla.
 
 # Novità: #
 
-# Version 7.0 #
-* Improved search window, now it possible manage all the search key
-  inserted, add, delete and save it from context menu.
-* Improved window opening control.
-* some little bugs fixed.
+# Versione 7.0 #
+* Finestra di ricerca migliorata, ora è possibile gestire le chiavi di
+  ricerca inserire, aggiungere, eliminare e salvarle dal menu contestuale.
+* Controllo dell'apertura delle finestre migliorato.
+* corretti alcuni piccoli bug.
+* Weather_searchkey
 
-# Version 6.9 #
+# Versione 6.9 #
 
-* Implemented the recursive cities search with the valid system previously
-  used in Weather_Plus Apixu version.
+* Implementata la ricerca di città ricorrenti tramite il sistema adottato in
+  precedenza nella versione Apixu di Weather_Plus.
 
-	* Press f1 in the settings window for an explanation of the available
-	  commands.
+	* Premere f1 nella finestra delle impostazioni per una spiegazione dei
+	  comandi disponibili.
 
-* Fixed issue with deleting some * .pyc, * .pyo modules during an NVDA
-  update.
+* Risolto il problema dell'eliminazione di alcuni moduli *.pyc, *.pyo
+  durante l'aggiornamento di NVDA.
 
-# Version 6.8 #
+# Versione 6.8 #
 
-* updated flag necessary for the branches below;
+* flag di compatibilità aggiornato per le versioni seguenti;
 
-	* nvda_snapshot_threshold and nvda_snapshot_threshold_py3_staging.
+	* nvda_snapshot_threshold e nvda_snapshot_threshold_py3_staging.
 
-# Version 6.7 #
-* Fixed a bug when it is tested a new city and using it in temporary mode by
-  simply press "enter" and at a later time trying to add it via the "Add"
-  button.
-* Added acronym for SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS to the
-  database, but unfortunately at the moment it seems that the cities of this
-  state do not work or have incomplete data, we hope it will be solved soon.
+# Versione 6.7 #
+* Risolto un bug che si manifestava testando una nuova città e usandola in
+  modalità temporanea premendo semplicemente "invio" e in un secondo momento
+  provando ad aggiungerla tramite il bottone "Aggiungi".
+* Aggiunto acronimo per SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS al
+  database, ma purtroppo al momento sembra che le città di questo stato non
+  funzioni o ha dati incompleti, speriamo che sarà risolto presto.
 
 # Versione 6.5 #
 * Corretti un paio di bug nella riproduzione degli effetti sonori;

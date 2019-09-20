@@ -308,17 +308,18 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
   verwalten, hinzufügen, löschen und aus dem Kontextmenü speichern.
 * Verbesserte Steuerung beim Öffnen des Fensters.
 * Einige kleinere Fehler behoben.
+* Weather_searchkey
 
 # Version 6.9 #
 
-* Implemented the recursive cities search with the valid system previously
-  used in Weather_Plus Apixu version.
+* Rekursive Städtesuche mit dem  System Implementiert , das zuvor in der
+  Weather_Plus Apixu-Version verwendet wurde.
 
-	* Press f1 in the settings window for an explanation of the available
-	  commands.
+	* Drücken Sie f1 im Einstellungsfenster, um eine Erläuterung der
+	  verfügbaren Befehle zu erhalten.
 
-* Fixed issue with deleting some * .pyc, * .pyo modules during an NVDA
-  update.
+* Es wurde ein Problem beim Löschen einiger *.pyc, * .pyo-Module während
+  eines NVDA-Updates behoben.
 
 # Version 6.8 #
 
