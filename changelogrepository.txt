@@ -1,3 +1,24 @@
+21/09/2019
+Weather_Plus 7.1 update documentation and version number:
+
+* "Weather_searchkey"
+Could you move it to the queue header which lists the files as in the example below?
+
+# Note: your settings will be save in the file named: #
+
+* "Weather.ini": startup settings of Weather Plus.
+* "Weather.volumes": custom audio volume levels, regardless of the overall volume.
+* "Weather.zipcodes": list of cities with their zip code and definitions.
+* "Weather_searchkey": search key saved.
+
+We change the version 7.1 and add in english:
+
+# Version 7.1 #
+* Fixed bug in Removeupdate() during addon restart if the file is set in read only.
+
+* Weather_searchkey
+remove from the change of 7.0!
+
 19/09/2019
 Weather_Plus 7.0 source code update #5
 

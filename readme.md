@@ -264,23 +264,26 @@ If you have modified the cities list, by pressing "Cancel", you will be remember
 * "Weather.ini": startup settings of Weather Plus.
 * "Weather.volumes": custom audio volume levels, regardless of the overall volume.
 * "Weather.zipcodes": list of cities with their zip code and definitions.
+* "Weather_searchkey": search key saved.
 
 --------------------------------------------------------------------------------
 
 # What's new: #
 
+# Version 7.1 #
+* Fixed bug in Removeupdate() during addon restart if the file is set in read only.
+
 # Version 7.0 #
 * Improved search window, now it possible manage all the search key inserted, add, delete and save it from context menu.
 * Improved window opening control.
 * some little bugs fixed.
-* Weather_searchkey
 
 # Version 6.9 #
 
 * Implemented the recursive cities search with the valid system previously used in Weather_Plus Apixu version.
 
 	* Press f1 in the settings window for an explanation of the available commands.
-	
+
 * Fixed issue with deleting some * .pyc, * .pyo modules during an NVDA update.
 
 # Version 6.8 #
