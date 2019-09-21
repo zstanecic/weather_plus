@@ -4646,7 +4646,6 @@ class Shared:
 			_searchDialog = SelectDialog(gui.mainFrame, title = title, message = message, choices = woeIDList, last = [0], sel = 0)
 			Shared().Play_sound("subwindow", 1)
 			if _searchDialog.ShowModal() == wx.ID_CANCEL:
-				n, defaultString = _searchDialog.GetValue()
 				_searchDialog.Destroy()
 				Shared().Play_sound("subwindow", 1)
 				return ""
@@ -4661,7 +4660,7 @@ class Shared:
 		"""Search for city occurrences with geonames"""
 		command = cityName[:cityName.find(':')+1].upper()
 		city = cityName[cityName.find(':')+1:]
-		if not command and (city.replace('.', '').isdigit() or self.GetCoords(cityName)): return cityName, defaultString
+		if not command and (city.replace('.', '').isdigit() or self.GetCoords(cityName)): return cityName
 		elif command == 'D:': return city #passes search key directly to yahoo
 		elif command == 'P:': mode = 1 #search for postal code
 		elif command == 'G:': mode = 2 #search for geographical coordinates

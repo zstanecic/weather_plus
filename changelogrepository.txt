@@ -1,4 +1,6 @@
 21/09/2019
+Weather_Plus7.1 bug fixed #2
+
 Weather_Plus7.1 bug fixed #1
 The bug manifested itself by testing the d city option, now I corrected.
 
