@@ -5,10 +5,12 @@
 #More forecast up to 9 days 
 # Copyright (C) Adriano Barbieri 
 #Email: adrianobarb@yahoo.it
-# Released under GPL 2 
-#This file is covered by the GNU General Public License. 
-#See the file COPYING for more details. 
-#Version 7.1 python 2 and 3 compatible
+# Released under GPL 2
+#This file is covered by the GNU General Public License.
+#See the file COPYING for more details.
+#Version 7.2
+# Python 2 and 3 compatible
+
 import os,sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
 import random, ui, gui, wx,wx.adv, re, calendar, math
@@ -109,8 +111,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if self.toUpgrade: self.onUpgrade()
 		#delete the update file from the temporary folder
 		self.Removeupdate()
-		#update acronym database
-		self.DbaseUpdate()
 
 
 	def terminate(self):
@@ -122,27 +122,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except: pass #(wx.PyDeadObjectError, RuntimeError, AttributeError)
 		#frees the memory allocated by the audio sample
 		Shared().FreeHandle()
-
-
-	def DbaseUpdate(self):
-		"""online update of acronym database"""
-		global _acronym_dic
-		#assign addon base url
-		if "_addonBaseUrl" not in globals():
-			data = Shared().GetUrlData(_addonPage)
-			if not data or data == "no connect": _acronym_dic = {}; return
-			global _addonBaseUrl
-			_addonBaseUrl = Shared().GetAddonBaseUrl(data)
-
-		#load acronym database updates
-		_acronym_dic = {}
-		try:
-			dbase = Shared().GetUrlData('%s/%s' % (_addonBaseUrl, "weather.dbase"))
-			dbase = dbase.split('\n')
-			for i in dbase:
-				_acronym_dic.update({i.split('\t')[0]: i.split('\t')[-1]})
-
-		except: _acronym_dic = {}
 
 
 	def Removeupdate(self):
@@ -317,7 +296,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 							self.dontShowAgain = dontShowAgain
 							#preserve the default zip code and celsius values
 							backup_celsius = self.celsius
-							self.celsius = self.ReadConfig('c')
+							celsius = self.ReadConfig('c')
+							if celsius is not None: self.celsius = celsius
 							backup_zipCode = self.zipCode
 							self.zipCode = Shared().GetZipCode(self.defaultZipCode)
 							self.SaveConfig()
@@ -1148,10 +1128,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			#volume controls
 			self.toAssign = 0 #general audio volume - 1 = current audio volume
 			self.samplesvolumes_dic = dict(samplesvolumes_dic)#set volume from percentage to float (0, 0.1, 0.2, etc. up to 1)
-			global _handle, _curSample
+			global _handle, _curSample, _volume #*
 			self.handle = _handle = None #sound allocated in memory
 			self.curSample = _curSample = None #name of audio effect in memory
-			self.volume = "60%" #default volume of the current sample
+			_volume = self.volume = "60%" #default volume of the current sample
 
 		config_weather = os.path.join(globalVars.appArgs.configPath,"Weather.ini")
 		if os.path.isfile(config_weather):
@@ -1191,6 +1171,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				Shared().Play_sound("warn", 1)
 				return ui.message(_("I can not load the settings!"))
 			except KeyError: pass
+			_volume = self.volume
+
 			if not self.zipCode or self.zipCode.isspace(): return
 			if not self.zipCodesList:
 				#if does not exist the list, picks the name of the city from woeID
@@ -1211,9 +1193,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 						self.defaultZipCode = self.tempZipCode= city
 
 					self.city = city[:city.find(self.zipCode)-1] #takes the name of city and state
-
-		global _volume
-		_volume = self.volume
 
 
 	def SaveConfig(self):
@@ -3525,6 +3504,27 @@ checkbox_values = [],
 
 class Shared:
 	"""shared functions"""
+	def DbaseUpdate(self):
+		"""online update of acronym database"""
+		if "_acronym_dic" not in globals():
+			global _acronym_dic; _acronym_dic = {}
+		#assign addon base url
+		if "_addonBaseUrl" not in globals():
+			data = self.GetUrlData(_addonPage)
+			if not data or data == "no connect": return
+			global _addonBaseUrl
+			_addonBaseUrl = self.GetAddonBaseUrl(data)
+
+		#load acronym database updates
+		try:
+			dbase = self.GetUrlData('%s/%s' % (_addonBaseUrl, "weather.dbase"), verbosity = False) #does not log the error if verbosity is False
+			dbase = dbase.split('\n')
+			for i in dbase:
+				_acronym_dic.update({i.split('\t')[0]: i.split('\t')[-1]})
+
+		except: _acronym_dic = {}
+
+
 	def FindForGeoName(self, real_city_name, city_name, latitude, longitude):
 		"""Retrieve details from geo name with geographic coordinates"""
 		def SplitName(c):
@@ -3983,7 +3983,8 @@ class Shared:
 		'YUKON TERRITORY': 'YT',
 		'YUKON': 'YT'
 		}
-		#adds online updates
+		#adds online acronym database updates
+		self.DbaseUpdate()
 		if len(_acronym_dic):
 			acronym_dic.update(_acronym_dic)
 
@@ -4204,7 +4205,8 @@ class Shared:
 		if "_addonBaseUrl" not in globals(): return "Error"
 		max = 100
 		if "_downloadDialog" not in globals(): global _downloadDialog
-		_downloadDialog = wx.ProgressDialog(title,
+		#*_downloadDialog = wx.ProgressDialog(title,
+		_downloadDialog = wx.GenericProgressDialog(title,
 		message,
 		maximum = max,
 		style = 0
@@ -4408,7 +4410,7 @@ class Shared:
 		lon = int(float(lon))
 		line = ""
 		address = 'http://www.geonames.org/search.html?q=%s&country=%s' % (city, acronym)
-		data = Shared().GetUrlData(address)
+		data = Shared().GetUrlData(address, verbosity = False) #does not log the error if it verbosity is False 
 		if not data: return None
 		if _pyVersion >= 3: data = data.decode()
 		elif _pyVersion <= 2: data = data.decode("utf-8")
@@ -4515,7 +4517,7 @@ class Shared:
 		return value
 
 
-	def GetUrlData(self, address):
+	def GetUrlData(self, address, verbosity = True):
 		"""Gets the contents of a web page"""
 		e = data = ""
 		try:
@@ -4532,7 +4534,7 @@ class Shared:
 				except Exception as e: pass
 
 			elif "failed" in repr(e): data = "no connect"
-			if e:
+			if e and verbosity:
 				e = str(e)
 				if _pyVersion <= 2: e = e.decode("mbcs")
 				log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))
