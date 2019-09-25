@@ -1128,7 +1128,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			#volume controls
 			self.toAssign = 0 #general audio volume - 1 = current audio volume
 			self.samplesvolumes_dic = dict(samplesvolumes_dic)#set volume from percentage to float (0, 0.1, 0.2, etc. up to 1)
-			global _handle, _curSample, _volume #*
+			global _handle, _curSample, _volume
 			self.handle = _handle = None #sound allocated in memory
 			self.curSample = _curSample = None #name of audio effect in memory
 			_volume = self.volume = "60%" #default volume of the current sample
@@ -4205,7 +4205,6 @@ class Shared:
 		if "_addonBaseUrl" not in globals(): return "Error"
 		max = 100
 		if "_downloadDialog" not in globals(): global _downloadDialog
-		#*_downloadDialog = wx.ProgressDialog(title,
 		_downloadDialog = wx.GenericProgressDialog(title,
 		message,
 		maximum = max,
