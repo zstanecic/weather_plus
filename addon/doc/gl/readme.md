@@ -289,10 +289,21 @@ aínda podes gardalo.
   sexa o volume xeral do sistema.
 * "Weather.zipcodes": lista de cidades cos seus códigos postais e
   definicións.
+* "Weather_searchkey": search key saved.
 
 --------------------------------------------------------------------------------
 
 # Que Hai de novo: #
+
+# Version 7.2 #
+* Fixed bug after adding a city, if it is the first one entered it if you
+  press ok button and restart the add-on.
+* Now the progressdialog show again the time remaining and time elapsed.
+* correct Italian translation in the help of the Rename button.
+
+# Version 7.1 #
+* Fixed bug in Removeupdate() during addon restart if the file is set in
+  read only.
 
 # Versión 7.0 #
 * Mellorada xanela de busca, agora é posible administrar toda a tecla de
@@ -300,7 +311,6 @@ aínda podes gardalo.
   contexto.
 * Mellorado o control de apertura de xanelas.
 * arranxados algúns pequenos erros.
-* Weather_searchkey
 
 # Versión 6.9 #
 

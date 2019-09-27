@@ -291,17 +291,28 @@ ricordato e potrete ancora salvarla.
   volume generale.
 * "Weather.zipcodes": lista delle città con rispettivi zip code e
   definizioni.
+* "Weather_searchkey": chiavi di ricerca salvate.
 
 --------------------------------------------------------------------------------
 
 # Novità: #
+
+# Versione 7.2 #
+* Risolto bug dopo l'aggiunta della prima città, quando si preme il pulsante
+  ok e si riavvia il componente aggiuntivo.
+* Ora la finestra progressiva di dialogo mostra nuovamente il tempo
+  rimanente e il tempo trascorso.
+* corretta traduzione in italiano dell'aiuto del pulsante Rinomina.
+
+# Versione 7.1 #
+* Corretto bug in Removeupdate () durante il riavvio del componente
+  aggiuntivo se il file è impostato in sola lettura.
 
 # Versione 7.0 #
 * Finestra di ricerca migliorata, ora è possibile gestire le chiavi di
   ricerca inserire, aggiungere, eliminare e salvarle dal menu contestuale.
 * Controllo dell'apertura delle finestre migliorato.
 * corretti alcuni piccoli bug.
-* Weather_searchkey
 
 # Versione 6.9 #
 

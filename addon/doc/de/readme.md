@@ -298,17 +298,27 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 * "Weather.volumes": Benutzerdefinierte Lautstärkepegel, unabhängig von der
   Gesamtlautstärke.
 * "Weather.zipcodes": Liste der Städte mit Postleitzahl und Definitionen.
+* "Weather_searchkey": search key saved.
 
 --------------------------------------------------------------------------------
 
 # Änderungsverlauf: #
+
+# Version 7.2 #
+* Fixed bug after adding a city, if it is the first one entered it if you
+  press ok button and restart the add-on.
+* Now the progressdialog show again the time remaining and time elapsed.
+* correct Italian translation in the help of the Rename button.
+
+# Version 7.1 #
+* Fixed bug in Removeupdate() during addon restart if the file is set in
+  read only.
 
 # Version 7.0 #
 * Verbessertes Suchfenster. Jetzt kann man alle eingegebenen Suchbegriffe
   verwalten, hinzufügen, löschen und aus dem Kontextmenü speichern.
 * Verbesserte Steuerung beim Öffnen des Fensters.
 * Einige kleinere Fehler behoben.
-* Weather_searchkey
 
 # Version 6.9 #
 

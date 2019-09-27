@@ -297,10 +297,22 @@ averti et vous pourrez quand-même sauvegarder la liste.
   volume général.
 * "Weather.zipcodes" : liste des villes avec leur zip code et leur
   définition.
+* "Weather_searchkey": mots-clés de recherche enregistrées.
 
 --------------------------------------------------------------------------------
 
 # Quoi de neuf : #
+
+# Version 7.2 #
+* Correction d'un bug après avoir ajouté la première ville, lorsque vous
+  appuyez sur le bouton OK et redémarrez l'extension.
+* Maintenant, la boîte de dialogue de progression affiche à nouveau le temps
+  restant et le temps écoulé.
+* traduction correcte en italien dans l'aide du bouton Renommer.
+
+# Version 7.1 #
+* Correction d'un bug Removeupdate () lors du redémarrage de l'extension si
+  le fichier est en lecture seule.
 
 # Version 7.0 #
 * Fenêtre de recherche améliorée. Vous pouvez maintenant gérer tous les
@@ -308,7 +320,6 @@ averti et vous pourrez quand-même sauvegarder la liste.
   du menu contextuel.
 * Amélioration du contrôle d’ouverture des fenêtres.
 * correction de quelques bugs mineurs.
-* Weather_searchkey
 
 # Version 6.9 #
 
@@ -328,8 +339,8 @@ averti et vous pourrez quand-même sauvegarder la liste.
 	* nvda_snapshot_threshold et nvda_snapshot_threshold_py3_staging.
 
 # Version 6.7 #
-* Correction d'un bug survenant lors de l'essai d'une nouvelle ville et de
-  l'utiliser temporairement en appuyant simplement sur "Entrée" et en
+* Correction d'un bug survenant lors du test d'une nouvelle ville et de
+  l'utiliser en mode temporaire en appuyant simplement sur "Entrée" et en
   essayant de l'ajouter plus tard en utilisant le bouton "Ajouter".
 * Les acronymes pour la Géorgie du Sud et les îles Sandwitch du Sud ont été
   ajoutés à la base de données. Malheureusement, à l'heure actuelle, il

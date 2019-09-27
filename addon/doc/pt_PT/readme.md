@@ -295,17 +295,27 @@ alertado para a guardar.
 * "Weather.volumes": níveis de volume de áudio personalizados,
   independentemente do volume total.
 * "Weather.zipcodes": lista de cidades com o seu código postal e definições.
+* "Weather_searchkey": search key saved.
 
 --------------------------------------------------------------------------------
 
 # Novidades: (As mensagens seguintes, até ao final da tradução, são da responsabilidade do Senhor Rémy Ruiz, que as traduziu à revelia da Equipa Portuguesa do NVDA) #
+
+# Version 7.2 #
+* Fixed bug after adding a city, if it is the first one entered it if you
+  press ok button and restart the add-on.
+* Now the progressdialog show again the time remaining and time elapsed.
+* correct Italian translation in the help of the Rename button.
+
+# Version 7.1 #
+* Fixed bug in Removeupdate() during addon restart if the file is set in
+  read only.
 
 # Version 7.0 #
 * Improved search window, now it possible manage all the search key
   inserted, add, delete and save it from context menu.
 * Improved window opening control.
 * some little bugs fixed.
-* Weather_searchkey
 
 # Version 6.9 #
 

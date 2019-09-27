@@ -295,10 +295,22 @@ y podrás guardarla.
   que sea el volumen general.
 * "Weather.zipcodes": lista de las ciudades con su código postal y
   definiciones.
+* "Weather_searchkey": clave de búsqueda guardada.
 
 --------------------------------------------------------------------------------
 
 # Que Hay de nuevo: #
+
+# Versión 7.2 #
+* Corregido un fallo al añadir una ciudad si esta era la primera en
+  introducirse, se pulsaba el botón Aceptar y se reiniciaba el complemento.
+* Ahora el diálogo de progreso muestra de nuevo el tiempo transcurrido y el
+  tiempo restante.
+* corregida la traducción italiana en la ayuda del botón renombrar.
+
+# Versión 7.1 #
+* Corregido fallo en Removeupdate() mientras se reiniciaba el complemento si
+  el archivo era de sólo lectura.
 
 # Versión 7.0 #
 * Mejorada la ventana de búsqueda. Ahora se pueden gestionar todas las
@@ -306,7 +318,6 @@ y podrás guardarla.
   menú de contexto.
 * Mejorado el control de apertura de ventana.
 * corregidos algunos pequeños fallos.
-* Weather_searchkey
 
 # Versión 6.9 #
 
