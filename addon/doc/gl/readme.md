@@ -42,7 +42,7 @@ Vaia a:
 
 Submenú de preferencias
 
-submenú de Opcións de WeatherPlus
+Submenú de Opcións de WeatherPlus
 
 Amosar items de configuración.
 
@@ -133,7 +133,7 @@ importar, activando a caixa de verificación.
 
 # Exportar as súas cidades... #
 
-Permítelle gardar a súa lista de cidades nunha ruta especificada.
+Permítelle gardar a súa lista de cidades nunha ruta especificada
 
 Este botón está activo se engadiu alomenos unha cidade á lista.
 
@@ -163,7 +163,7 @@ Active ou desactive as casillas de verificación para:
 
 # Copia o reporte do clima e o pronóstico do tempo, incluíndo os detalles da cidade ao portapapeis #
 
-Por defecto: non.
+por defecto: non.
 
 # Abilitar efectos de son (só para as condicións climatolóxicas actuais) #
 
@@ -179,30 +179,30 @@ Tamén estará dispoñible unha caixa de verificación adicional:
 Pode cambiar o volume xeral ou o do último son escoitado e filtrar outros
 sons no seu entorno.
 
-Por defecto: non.
+por defecto: non.
 
 # Utilizar só efectos de tempo #
 
-Está dispoñible se os efectos de son están activados;
+está dispoñible se os efectos de son están activados;
 
 Se se habilita, permite escoitar só efectos de tempo como choiva, vento,
 raio, etc., filtrando todos os ambientais.
 
-Por defecto: non.
+por defecto: non.
 
 # Habilitar a lectura das horas en formato 24-horas #
 
 Se non está marcado, anuncia en formato de 12h, por exemplo, 12AM/12PM.
 
-Por defecto: si.
+por defecto: si.
 
 # Habilitar botóns de axuda na ventá de configuración #
 
-Por defecto: si.
+por defecto: si.
 
 # Ler informacións do vento #
 
-Por defecto: non.
+por defecto: non.
 
 Se habilitado, tamén pode activar:
 
@@ -210,25 +210,25 @@ Se habilitado, tamén pode activar:
 
 Indica a proveniencia do vento.
 
-Por defecto: si.
+por defecto: si.
 
 * Engadir velocidade do vento;
 
 Indicates engade a velocidade do vento en quilómetros ou millas por hora.
 
-Por defecto: si.
+por defecto: si.
 
 * Engadir velocidade do vento en metros por segundo;
 
-Por defecto: si.
+por defecto: si.
 
 * Engadir temperatura percibida;
 
-Por defecto: si.
+por defecto: si.
 
 # Ler informacións atmosféricas #
 
-Por defecto: non.
+por defecto: non.
 
 Se habilitado, tamén pode activar:
 
@@ -236,13 +236,13 @@ Se habilitado, tamén pode activar:
 
 Indica a humidade en porcento.
 
-Por defecto: si.
+por defecto: si.
 
 * Engadir valor da visibilidade;
 
 Indicar en quilómetros ou millas a distancia visible.
 
-Por defecto: si.
+por defecto: si.
 
 * Engadir valor da presión atmosférica;
 
@@ -251,31 +251,31 @@ Indica a presión atmosférica en milibares ou polgadas de mercurio.
 Se habilitado, permitir un adicional de caixa de verificación que permite
 indicar a presión en milímetros de mercurio.
 
-Por defecto: si.
+por defecto: si.
 
 * Engadir estado da presión barométrica;
 
-Por defecto: si.
+por defecto: si.
 
 # Ler informacións astronómicas #
 
 Indica a hora da saída e posta do sol.
 
-Por defecto: non.
+por defecto: non.
 
 # Utilizar a coma para separar decimais #
 
 Se está habilitado, utiliza a coma coma separador decimal, doutro xeito
 utilízase o punto.
 
-Por defecto: non.
+por defecto: non.
 
 # Verificar actualizacións #
 
 Se está activa, notifica cando estea dispoñible unha actualización para o
 complemento.
 
-Por defecto: si.
+por defecto: si.
 
 # Prema o botón de Aceptar para confirmar a acción, Cancelar para cancelala. #
 
@@ -289,21 +289,21 @@ aínda podes gardalo.
   sexa o volume xeral do sistema.
 * "Weather.zipcodes": lista de cidades cos seus códigos postais e
   definicións.
-* "Weather_searchkey": search key saved.
+* "Weather_searchkey": tecla de busca gardada.
 
 --------------------------------------------------------------------------------
 
 # Que Hai de novo: #
 
-# Version 7.2 #
-* Fixed bug after adding a city, if it is the first one entered it if you
-  press ok button and restart the add-on.
-* Now the progressdialog show again the time remaining and time elapsed.
-* correct Italian translation in the help of the Rename button.
+# Versión 7.2 #
+* Arranxado erro tras engadir unha cidade, se é a primeira que se introduce,
+  premes o botón Aceptar e reinicias o complemento.
+* Agora o diálogodeprogreso amosa de novo o tempo restante e transcorrido.
+* tradución italiana correcta na axuda do botón renomear.
 
-# Version 7.1 #
-* Fixed bug in Removeupdate() during addon restart if the file is set in
-  read only.
+# Versión 7.1 #
+* Arranxado erro en Removeupdate() durante o reinicio do complemento se o
+  arquivo é de só lectura.
 
 # Versión 7.0 #
 * Mellorada xanela de busca, agora é posible administrar toda a tecla de
@@ -377,7 +377,7 @@ aínda podes gardalo.
   vento en mph era 0.
 * Corrixido erro que causaba inconsistencia entre os efectos de son da zona
   horaria e os reproducidos.
-* Axustado o número de días de previsión de 9 a 6 no readme.
+* axustado o número de días de previsión de 9 a 6 no readme.
 
 # Versión 5.0 #
 * Weather Plus utiliza agora a API de APIXU, na miña opinión mellor que a
@@ -501,7 +501,7 @@ aínda podes gardalo.
 	* Pode habilitar a coma coma separador decimal, doutro modo o separador será o punto.
 
 # Versión 4.5.3 #
-* Corrixidas dúas cadeas nas localizacións para ruso e ucrainiano.
+* corrixidas dúas cadeas nas localizacións para ruso e ucrainiano.
 * Corrixido título da ventá de Verificar actualizacións.
 * Mellorado algoritmo de actualización;
 	* Agora o link para actualizar é lido directamente dende a url do manifest.

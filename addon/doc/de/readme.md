@@ -307,8 +307,9 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 # Version 7.2 #
 * Fixed bug after adding a city, if it is the first one entered it if you
   press ok button and restart the add-on.
-* Now the progressdialog show again the time remaining and time elapsed.
-* correct Italian translation in the help of the Rename button.
+* Nun zeigt der Fortschrittsdialog wieder die verbleibende Zeit und die
+  verstrichene Zeit an.
+* korrekte italienische Hilfe für die Umbenennen-Schaltfläche.
 
 # Version 7.1 #
 * Fixed bug in Removeupdate() during addon restart if the file is set in

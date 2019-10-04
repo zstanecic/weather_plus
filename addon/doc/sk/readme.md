@@ -289,21 +289,21 @@ zapamätaní a môžete ho uložiť.
 * "Weather.volumes": Vlastné nastavenie úrovne hlasitosti nezávisle na
   hlasitosti pre všetky zvukové efekty.
 * "Weather.zipcodes": zoznam miest s ich PSČ a popisom.
-* "Weather_searchkey": search key saved.
+* „Weather_searchkey“: vyhľadávaný kľúč bol uložený.
 
 --------------------------------------------------------------------------------
 
 # Čo je nové: #
 
-# Version 7.2 #
-* Fixed bug after adding a city, if it is the first one entered it if you
-  press ok button and restart the add-on.
-* Now the progressdialog show again the time remaining and time elapsed.
-* correct Italian translation in the help of the Rename button.
+# Verzia 7.2 #
+* Opravená chyba po pridaní mesta, ak bolo zadané ako prvé, keď stlačíte
+  tlačidlo ok a doplnok znova spustíte.
+* Teraz progressdialog opäť ukazuje zostávajúci čas a uplynutý čas.
+* opravený taliansky preklad pomocou tlačidla Premenovať.
 
-# Version 7.1 #
-* Fixed bug in Removeupdate() during addon restart if the file is set in
-  read only.
+# Verzia 7.1 #
+* Opravená chyba v nástroji Removeupdate () počas reštartu doplnku, ak je
+  súbor nastavený len na čítanie.
 
 # Verzia 7.0 #
 * Vylepšené okno vyhľadávania, teraz je možné spravovať celý vložený
