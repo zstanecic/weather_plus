@@ -290,44 +290,45 @@ Ci o zmianach na liście i umożliwi jej zapisanie.
 * "Weather.volumes": Dostosuj poziom głośności dźwięku niezależnie od
   głośności ogólnej.
 * "Weather.zipcodes": Lista miast wraz z kodami pocztowymi i definicjami.
-* "Weather_searchkey": search key saved.
+* "Weather_searchkey": Słowo kluczowe zapisane.
 
 --------------------------------------------------------------------------------
 
 # Co nowego: #
 
 # Version 7.2 #
-* Fixed bug after adding a city, if it is the first one entered it if you
-  press ok button and restart the add-on.
-* Now the progressdialog show again the time remaining and time elapsed.
-* correct Italian translation in the help of the Rename button.
+* Naprawiony błąd, który pojawiał się po dodaniu pierwszego miasta,
+  wciśnięciu przycisku Ok i restarcie dodatku.
+* Na pasku postępu znowu wyświetlany jest czas który upłynął i który
+  pozostał.
+* Poprawione włoskie tłumaczenie przycisku Zmień Nazwę w pomocy
 
 # Version 7.1 #
-* Fixed bug in Removeupdate() during addon restart if the file is set in
-  read only.
+* Naprawiony błąd w Removeupdate() gdy podczas restartu dodatku plik ma
+  atrybut tylko do odczytu.
 
 # Version 7.0 #
-* Improved search window, now it possible manage all the search key
-  inserted, add, delete and save it from context menu.
-* Improved window opening control.
-* some little bugs fixed.
+* Ulepszone okienko wyszukiwania pozwala zarządzać wszystkimi wprowadzonymi
+  słowami kluczamu. Z poziomu meni kontekstowego można dodać, usunąć i
+  zapisać słowo klucz.
+* Ulepszona kontrola otwierania okna
+* Kilka drobnych poprawek
 
 # Version 6.9 #
 
-* Implemented the recursive cities search with the valid system previously
-  used in Weather_Plus Apixu version.
+* Wprowadzono rekurencyjne wyszukiwanie miast z systemem weryfikacji
+  używanym w wersji Weather_Plus Apixu.
 
-	* Press f1 in the settings window for an explanation of the available
-	  commands.
+	* Naciśnij f1 w oknie ustawień, aby uzyskać pomoc.
 
-* Fixed issue with deleting some * .pyc, * .pyo modules during an NVDA
-  update.
+* Naprawiony problem z usuwaniem niektórych modułów * .pyc, * .pyo przy
+  aktualizacji NVDA.
 
 # Version 6.8 #
 
-* updated flag necessary for the branches below;
+* Zaktualizowane flagi dla poniższych gałęzi;
 
-	* nvda_snapshot_threshold and nvda_snapshot_threshold_py3_staging.
+	* nvda_snapshot_threshold i nvda_snapshot_threshold_py3_staging.
 
 # Version 6.7 #
 * Fixed a bug when it is tested a new city and using it in temporary mode by
