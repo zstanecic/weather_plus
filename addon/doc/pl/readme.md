@@ -331,21 +331,21 @@ Ci o zmianach na liście i umożliwi jej zapisanie.
 	* nvda_snapshot_threshold i nvda_snapshot_threshold_py3_staging.
 
 # Version 6.7 #
-* Fixed a bug when it is tested a new city and using it in temporary mode by
-  simply press "enter" and at a later time trying to add it via the "Add"
-  button.
-* Added acronym for SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS to the
-  database, but unfortunately at the moment it seems that the cities of this
-  state do not work or have incomplete data, we hope it will be solved soon.
+* Naprawiono błąd, który pojawiał się podczas sprawdzania nowego miasta w
+  trybie tymczasowym po naciśnięciu klawisza "enter" i przy próbie dodania
+  tego miasta przyciskiem "Dodaj"
+* Dodano skrót dla Georgii Południowej i Sandwichu Południowego do bazy
+  danych. Niestety na chwilę obecną miasta tego obszaru nie działają, lub
+  mają niekompletne dane. Zostanie to wkrótce naprawione.
 
 # Wersja 6.5 #
-* Fixed a couple of bugs in sound effects reproduction;
-	* a couple of "for" cycles with incorrect maximum values caused the call to a non-existent sound effect.
-* Fixed bug in local time in "details";
-	* 12-hour time conversion gave a error.
-* Fixed a bug in the Yahoo Weather Forecast report;
-	* In some cities the forecasts start from the previous day and not from the current one.
-	* The correction of these cities entails the loss of the last days of forecast proportionate to the mismatch of dates (if the forecast days are set to 10).
+* Naprawiono kilka błędów w odtwarzaniu dźwięków;
+	* kilka "for" cykli o niewłaściwych wartościafh spowodowało próbę odtworzenia nieistniejącego efektu dźwiękowego.
+* Naprawiono błąd związany z czasem lokalnym w "szczegółach";
+	* czas 12-godzinny spowodował błąd.
+* Naprawiono błąd w prognozie Yahoo Weather Forecast;
+	* Prognozy dla niektórych miast zaczynają się od poprzedniego, a nie od aktualnego dnia.
+	* Naprawienie tych miast wiąże się z utratą ostatnich dni prognozy proporcjonalnie do niezgodności w datach (jeśli prognoza ustawiona jest na 10 dni).
 
 # Wersja 6.4 #
 * Daylight saving time removed in the "Details" function;
