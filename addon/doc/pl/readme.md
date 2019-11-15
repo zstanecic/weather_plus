@@ -348,84 +348,85 @@ Ci o zmianach na liście i umożliwi jej zapisanie.
 	* Naprawienie tych miast wiąże się z utratą ostatnich dni prognozy proporcjonalnie do niezgodności w datach (jeśli prognoza ustawiona jest na 10 dni).
 
 # Wersja 6.4 #
-* Daylight saving time removed in the "Details" function;
-	* The service used by this function has changed, so it has been removed.
-* Improved audio effects reproduction;
-	* Now they update regularly if the weather conditions change.
+* Czas letni został usunięty z "funkcji" Szczegóły;
+	* Usługa używana przez czas letni uległa zmianie. Dlatego został on usunięty.
+* Ulepszono odtwarzanie efektów dźwiękowych;
+	* Od teraz uaktualniają się one regularnie, wraz ze zmianami warunków pogodowych.
 
 # Wersja 6.3 #
-* Fixed the character encoding in the search results window.
-* Fixed the encoding also in the detail report.
+* Poprawiono kodowanie znaków w wynikach wyszukiwania.
+* Poprawiono kodowanie także w szczegółowej prognozie.
 
 # Wersja 6.2 #
-* Fixed bug in the "Add" function.
-* Fixed bug that did not assign the variable "_volume" when starting the
-  addon.
-* Added missing code from version 6.0;
-	* Now you can recover the saved cities from the version that uses the Apixu API;
-	* The "Test" and "Remove" buttons and non-compatible cities are available in the format: "Ferrara, iter 44.83,11.58 0" (city, geographic coordinates, area definition).
+* Naprawiono błąd w funkcji "Dodaj"
+* Naprawiono błąd, który nie przypisywał zmiennej "_volume" podczas
+  uruchamiania dodatku.
+* Dodano brakujący kod z wersji 6.0;
+	* Od teraz można przywrócić zapisane miasta z wersji, która używa Apixu API;
+	* Przyciski "Testuj" i "Usuń" a także miasta niezgodne z nową wersją dodatku można znaleźć w format: "Ferrara, iter 44.83,11.58 0" (miasto, współrzędne geograficzne, charakterystyka obszaru).
 
 # Wersja 6.1 #
-* Fixed 2 bugs.
+* Naprawiono 2 błędy.
 
 # Wersja 6.0 #
-* Weather Plus returns to using the Yahoo Weather API.
-* Virtually all the features of the previous version 4.8 are back and keeps
-  the "Rename" button.
+* Weather Plus znów będzie używać Yahoo Weather API.
+* Praktycznie wszystkie funkcje z wersji 4.8 znów są dostępne. Przycisk
+  "Zmień nazwę" też został zachowany.
 * Teraz także zgodne z Pythonem 3.
 
 # Wersja 5.0.1 #
-* Fixed bug, that returned an empty string if the wind speed in mph was 0.
-* Fixed bug that caused sound effects not consistent with the time zone to
-  be reproduced.
-* adjusted the number of forecast days from 9 to 6 in readme.
+* Naprawiono błąd, który zwracał pusty ciąg znaków, gdy prędkość wiatru w
+  milach na godzinę wynosiła 0.
+* Naprawiono błąd, który powodował odtwarzanie efektów dźwiękowych
+  niezgodnych ze strefą czasową.
+* Poprawiono ilość prognozowanych dni w pliku czytaj to z 9 na 6.
 
 # Wersja 5.0 #
-* Weather Plus now uses the APIXU API, in my opinion better than the
-  previous one.
+* Od teraz Weather Plus używa APIXU API, które, moim zdaniem, działa lepiej
+  niż poprzednie.
 
-`#`Changes in the Weather Plus Settings window:
+`#`Zmiany w oknie ustawień Weather Plus:
 
-* Removed old checkbox "State of barometric pressure".
-* Replaced with new checkbox "Add cloudiness value";
-	* It gives you the percentage of cloudiness.
-* Added new checkbox "Add precipitation value";
-	* It gives you the amount in millimeters of precipitation.
-* Removed old checkbox "Indicates the wait with a beep while you search for the latest bulletin";
-	* Left active by default.
-* Added to the Astronomic informations;
-	* Time of moonrise and moonset.
-* Added new button "Rename";
-	* To rename cities more conveniently.
-* Improved function of the "Test" button;
-	* Now accept some commands to facilitate the search for cities;
-	* These new commands are described in the help function that can be called up with F1.
+* Usunięto stare pole wyboru "Stan ciśnienia barometrycznego".
+* Zostało ono zastąpione nowym polem wyboru "Dodaj wartość zachmurzenia";
+	* Dzięki niemu dodatek pokazuje wielkość zachmurzenia w procentach.
+* Dodano nowe pole wyboru "Dodaj wartość opadów";
+	* Podaje ono ilość opadów w milimetrach.
+* Usunięto stare pole wyboru "Oznajmia sygnałem dźwiękowym wyszukiwanie najnowszej prognozy pogody";
+	* Domyślnie jest to aktywne.
+* Dodano do informacji astronomicznych;
+	* Czas wschodu i zachodu księżyca.
+* Dodano nowy przycisk "Zmień nazwę";
+	* Pozwala on na wygodniejsze zmienianie nazw miast.
+* Ulepszono funkcjonalność przycisku "Testuj";
+	* Wprowadzono kilka nowych poleceń, które ułatwiają wyszukiwanie miast;
+	* Polecenia te są opisane w pomocy, którą można wywołać klawiszem F1.
 
-# Version 4.8 #
-`#`Changes in the Weather Plus Settings window:
+# Wersja 4.8 #
+`#`Zmiany w oknie ustawień Weather Plus:
 
-* Added new checkbox;
-	* "Use only weather effects";
-	* This allows you to filter out all other environmental effects.
-* Improved random playback and added 71 new sound effects;
-  	* You will need to update them by clicking twice in "enable audio effects" check box.
-* The volume type assigned by the user, between the general and current audio volume, now is maintained when the configuration is saved.
-* Removed useless sound during selection text in edit box by pressing control+a.
-* Improved readability into help window invokable with F1 function key.
-* Added new compatibility flag for NVDA 2019.1, and the current alpha versions.
+* Dodano nowe pole wyboru;
+	* "Używaj tylko efektów dźwiękowych dla pogody";
+	* Pozwala to odfiltrować pozostałe efekty dźwiękowe związane z danym obszarem.
+* Ulepszono odtwarzanie losowe i dodano 71 nowych efektów dźwiękowych;
+  	* Należy je zaktualizować zaznaczając pole wyboru "włącz efekty dźwiękowe".
+* Rodzaj głośności przypisany przez użytkownika, znajdujący się pomiędzy głośnością główną a aktualną głośnością audio, zostaje zachowany po zapisaniu ustawień.
+* Usunięto niepotrzebny dźwięk odtwarzany przy zaznaczaniu tekstu w polu edycyjnym skrótem control+a.
+* Ulepszono czytelność okna pomocy wywoływanego klawiszem funkcyjnym F1.
+* Dodano nową flagę zgodności dla NVDA 2019.1, oraz dla aktualnych wersji alfa.
 
-# Version 4.7.7 #
-* Removed unnecessary notification of download complete when the update of
-  Weather Plus.
-* Added 6 new sound effects;
-	* It will be necessary to update them from the settings of the plugin.
+# Wersja 4.7.7 #
+* Usunięto niepotrzebne powiadomienie o ukończeniu pobierania podczas
+  aktualizacji Weather Plus.
+* Dodano 6 nowych efektów dźwiękowych;
+	* Należy je zaktualizować w ustawieniach dodatku.
 
-# Version 4.7.6 #
-* Fixed a minor bug in the function GetCoords();
-	* 2 values were not returned in the lack of connection.
+# Wersja 4.7.6 #
+* Naprawiono niewielki błąd w funkcji GetCoords();
+	* Dodatek nie zwracał dwóch wartości przy braku połączenia.
 
 # Wersja 4.7.5 #
-* MenuItem.GetLabel() is deprecated and has been replaced by
+* MenuItem.GetLabel() jest przestarzałe i zostało zastąpione przez
   MenuItem.GetItemLabelText().
 * Were correct some declarations of global variables.
 
@@ -495,7 +496,7 @@ Ci o zmianach na liście i umożliwi jej zapisanie.
 * Correct location and documentation in Serbian.
 * Correct the German localization.
 
-`#`Changes in the Weather Plus Settings window:
+`#`Zmiany w oknie ustawień Weather Plus:
 
 * Added new checkbox;
 	* You can enable the comma as the decimal separator, otherwise the separator will be the point.
@@ -509,7 +510,7 @@ Ci o zmianach na liście i umożliwi jej zapisanie.
 # Wersja 4.5 #
 naciśnij NVDA + shift + control + alt + w, aby otworzyć ustawienia Weather plus.
 
-`#`Changes in the Weather Plus Settings window:
+`#`Zmiany w oknie ustawień Weather Plus:
 
 * Added 8 new check boxes;
 	* It is now possible to further customize the output:
@@ -607,7 +608,7 @@ called recursively.
 
 # Wersja 3.9.5 #
 * Added 2 new strings to the list weather reports.
-* Fixed 2 bugs.
+* Naprawiono 2 błędy.
 * Updated running sounds for the effect in conditions of only wind;
 	* Now the sound of the wind can vary randomly.
 
@@ -649,7 +650,7 @@ called recursively.
 * Added possibility to disable the conversion in meters per second of the
   wind.
 * Added possibility to use units of measure in pounds per square inch.
-* Fixed 2 bugs.
+* Naprawiono 2 błędy.
 
 # Wersja 3.6 #
 * Changed the API service (application programming interface);
