@@ -1,3 +1,17 @@
+20/11/2019
+Weather_Plus7.3 update#1
+Adriano said:
+The nvda.it page has had a temporary problem but it has broken Weather_Plus during the automatic search for updates (for those who had this option enabled).
+Now I have fixed this exception not expected.
+
+Note by Rémy:
+I added the changes 7.3 in readme.md file:
+
+# Version 7.3 #
+* Fixed unexpected bug in case of page not found while searching for updates.
+
+Adriano added new string in source code (114 strings total).
+
 25/09/2019
 Weather_Plus7.2 added last modifications in sources sent by Adriano
 

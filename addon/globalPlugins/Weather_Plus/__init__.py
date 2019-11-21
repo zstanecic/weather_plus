@@ -8,7 +8,7 @@
 # Released under GPL 2
 #This file is covered by the GNU General Public License.
 #See the file COPYING for more details.
-#Version 7.2
+#Version 7.3
 # Python 2 and 3 compatible
 
 import os,sys, winsound, config, globalVars, ssl, json
@@ -52,6 +52,7 @@ _addonAuthor = _curAddon.manifest['author']
 _addonSummary = _curAddon.manifest['summary']
 _addonVersion = _curAddon.manifest['version']
 _addonPage = _curAddon.manifest['url']
+_addonBaseUrl = '%s/%s' % (_addonPage[:_addonPage.rfind('/weather')], "files/plugin")
 _zipCodes_path = os.path.join(globalVars.appArgs.configPath,"Weather.zipcodes")
 _volumes_path = os.path.join(globalVars.appArgs.configPath,"Weather.volumes")
 _samples_path = os.path.join(globalVars.appArgs.configPath,"Weather_samples")
@@ -463,18 +464,16 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		title = self.UpgradeAddonItem.GetItemLabelText().rstrip('.').replace("&", "")
 		#read the version from addon page
 		data = Shared().GetUrlData(_addonPage)
-		if _pyVersion >= 3: data = data.decode()
-		if not data or data == "no connect":
+		if isinstance(data, bytes) and _pyVersion >= 3: data = data.decode()
+		if not data or [True for i in ["no connect", "not found"] if i in data]:
 			if evt:
 				Shared().Play_sound("warn", 1)
-				NoteDialog(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"), title)
+				if "not found" in data:
+					NoteDialog(_("Sorry, i can not receive data, problems with the download page, try again later please!"), title)
+				else:
+					NoteDialog(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"), title)
 
 			return
-
-		#assign addon base url
-		if "_addonBaseUrl" not in globals():
-			global _addonBaseUrl
-			_addonBaseUrl = Shared().GetAddonBaseUrl(data)
 
 		#search for new version string
 		try:
@@ -496,7 +495,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def ExtractData(self, v):
 		"""Extract city and woeID from woeID string"""
-		if _pyVersion >= 3 and "bytes" in str(type(v)): v = v.decode("mbcs")
+		if isinstance(v, bytes) and _pyVersion >= 3: v = v.decode("mbcs")
 		self.zipCode = Shared().GetZipCode(v)
 		if _pyVersion >= 3: self.city = v[:-len(self.zipCode)-1]
 		else:
@@ -2732,11 +2731,9 @@ class EnterDataDialog(wx.Dialog):
 			#Innstall button
 			self.CloseWind(dl)
 			#Download and install the Weather_samples folder
-			if "_addonBaseUrl" not in globals():
-				global _addonBaseUrl
-				_addonBaseUrl = Shared().GetAddonBaseUrl()
-
 			source = "/".join((_addonBaseUrl, 'weather_samples2.zip?download=1'))
+
+			#perform target in temporary folder
 			import tempfile
 			if _pyVersion >= 3:
 				target = "/".join((tempfile.gettempdir(), 'Weather_samples.zip'))
@@ -3508,16 +3505,11 @@ class Shared:
 		"""online update of acronym database"""
 		if "_acronym_dic" not in globals():
 			global _acronym_dic; _acronym_dic = {}
-		#assign addon base url
-		if "_addonBaseUrl" not in globals():
-			data = self.GetUrlData(_addonPage)
-			if not data or data == "no connect": return
-			global _addonBaseUrl
-			_addonBaseUrl = self.GetAddonBaseUrl(data)
 
 		#load acronym database updates
 		try:
 			dbase = self.GetUrlData('%s/%s' % (_addonBaseUrl, "weather.dbase"), verbosity = False) #does not log the error if verbosity is False
+			if isinstance(dbase, bytes) and _pyVersion >= 3: dbase = dbase.decode()
 			dbase = dbase.split('\n')
 			for i in dbase:
 				_acronym_dic.update({i.split('\t')[0]: i.split('\t')[-1]})
@@ -4013,20 +4005,6 @@ class Shared:
 		return date, time, action, hour
 
 
-	def GetAddonBaseUrl(self, data = None):
-		"""search addon base url from addon page"""
-		if not data:
-			data = self.GetUrlData(_addonPage)
-			if not data or data == "no connect": return ""
-
-		if 'bytes' in str(type(data)): data = data.decode()
-		try:
-			abl = re.search('<a href="(http([s]*)://www\..+/[Ww]eather.+\d+(\.\d*)\.nvda-addon)"', data).group(1)
-		except AttributeError: return ""
-		abm = abl.upper()
-		return abl[:abm.find('/WEATHER')]
-
-
 	def Add_zero(self, hour, p = True):
 		""" add zero  to left of number with len 1"""
 		if p:
@@ -4041,7 +4019,7 @@ class Shared:
 
 	def To24h(self, hour, viceversa = None):
 		"""Convert from 12 to 24 hours and viceversa"""
-		if 'datetime' in str(type(hour)):
+		if isinstance(hour, datetime):
 			#datetime format get from lastbuilddate returned in 24 hour format
 			hour = '%s:%s' % (hour.hour, hour.minute)
 		else:
@@ -4518,11 +4496,17 @@ class Shared:
 
 	def GetUrlData(self, address, verbosity = True):
 		"""Gets the contents of a web page"""
-		e = data = ""
+		def sendlog(error):
+			e = str(error)
+			if _pyVersion <= 2: e = e.decode("mbcs")
+			log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))
+
+		error = data = ""
 		try:
 			with closing(urlopen(address)) as response:
 				data = response.read()
 		except Exception as e:
+			error = e
 			if "CERTIFICATE_VERIFY_FAILED" in repr(e):
 				#retry using ssl
 				data = "no connect"
@@ -4530,15 +4514,17 @@ class Shared:
 				try:
 					with closing(urlopen(address, context=gcontext)) as response:
 						data = response.read()
-				except Exception as e: pass
+				except Exception as e:
+					error = e
+					data = "no connect"
+					if verbosity: sendlog(error)
 
-			elif "failed" in repr(e): data = "no connect"
-			if e and verbosity:
-				e = str(e)
-				if _pyVersion <= 2: e = e.decode("mbcs")
-				log.info('%s %s: %s' % (_addonSummary, _addonVersion, e))
-
+			elif "failed" in repr(e):
+				data = "no connect"
+				if verbosity: sendlog(e)
+		if "Not Found" in repr(error): data = "not found"
 		return data
+
 
 	def Find_cities(self, value):
 		"""get cities recurrences engine"""
@@ -4549,7 +4535,7 @@ class Shared:
 			country = value[value.find(',')+1:].lstrip(' ')
 		address = 'http://www.geonames.org/postalcode-search.html?q=%s&country=%s' % (city, country)
 		data = self.GetUrlData(address)
-		if "bytes" in str(type(data)) or _pyVersion == 2: data = data.decode("utf-8")
+		if isinstance(data, bytes) or _pyVersion == 2: data = data.decode("utf-8")
 		if not data or "noresult" in data: return ""
 		p = re.compile(r'</small></td><td>(.+)</td><td>(.+)</td><td>(.+)</td><td>(.+)</td><td>(.+)</td>.+<small>(-*\d+\.\d+)/(-*\d+\.\d+)</small>')
 		cities_found = []
@@ -4588,7 +4574,7 @@ class Shared:
 		if _pyVersion <= 2: city = city.encode("mbcs")
 		address ="http://woeid.rosselliot.co.nz/lookup/%s" % city
 		data = self.GetUrlData(address)
-		if data and _pyVersion >= 3: data = data.decode()
+		if isinstance(data, bytes) and _pyVersion >= 3: data = data.decode()
 		if not data: return ""
 		elif "noresult" in data: return "noresult"
 		elif data:
