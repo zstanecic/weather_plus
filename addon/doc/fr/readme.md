@@ -303,6 +303,10 @@ averti et vous pourrez quand-même sauvegarder la liste.
 
 # Quoi de neuf : #
 
+# Version 7.3 #
+* Correction d'un bug inattendu lorsque la page n'a pas été trouvé lors de
+  la recherche des mises à jour.
+
 # Version 7.2 #
 * Correction d'un bug après avoir ajouté la première ville, lorsque vous
   appuyez sur le bouton OK et redémarrez l'extension.

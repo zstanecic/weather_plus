@@ -301,6 +301,10 @@ alertado para a guardar.
 
 # Novidades: (As mensagens seguintes, até ao final da tradução, são da responsabilidade do Senhor Rémy Ruiz, que as traduziu à revelia da Equipa Portuguesa do NVDA) #
 
+# Version 7.3 #
+* Fixed unexpected bug in case of page not found while searching for
+  updates.
+
 # Version 7.2 #
 * Fixed bug after adding a city, if it is the first one entered it if you
   press ok button and restart the add-on.

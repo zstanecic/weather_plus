@@ -295,6 +295,10 @@ zapamätaní a môžete ho uložiť.
 
 # Čo je nové: #
 
+# Version 7.3 #
+* Fixed unexpected bug in case of page not found while searching for
+  updates.
+
 # Verzia 7.2 #
 * Opravená chyba po pridaní mesta, ak bolo zadané ako prvé, keď stlačíte
   tlačidlo ok a doplnok znova spustíte.

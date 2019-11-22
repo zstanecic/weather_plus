@@ -295,6 +295,10 @@ aínda podes gardalo.
 
 # Que Hai de novo: #
 
+# Version 7.3 #
+* Fixed unexpected bug in case of page not found while searching for
+  updates.
+
 # Versión 7.2 #
 * Arranxado erro tras engadir unha cidade, se é a primeira que se introduce,
   premes o botón Aceptar e reinicias o complemento.

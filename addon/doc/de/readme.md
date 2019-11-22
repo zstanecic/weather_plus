@@ -304,6 +304,10 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 
 # Änderungsverlauf: #
 
+# Version 7.3 #
+* Fixed unexpected bug in case of page not found while searching for
+  updates.
+
 # Version 7.2 #
 * Der Fehler nach dem Hinzufügen einer Stadt wurde behoben, wenn es sich um
   die erste Stadt handelt, die Sie eingegeben haben, wenn Sie auf die

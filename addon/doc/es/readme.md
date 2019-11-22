@@ -301,6 +301,10 @@ y podrás guardarla.
 
 # Que Hay de nuevo: #
 
+# Versión 7.3 #
+* Se ha corregido un error inesperado cuando no se encontró la página
+  durante la búsqueda de actualizaciones.
+
 # Versión 7.2 #
 * Corregido un fallo al añadir una ciudad si esta era la primera en
   introducirse, se pulsaba el botón Aceptar y se reiniciaba el complemento.

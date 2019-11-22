@@ -297,6 +297,10 @@ ricordato e potrete ancora salvarla.
 
 # Novità: #
 
+# Versione 7.3 #
+* Corretto bug imprevisto in caso di pagina non trovata durante la ricerca
+  di aggiornamenti.
+
 # Versione 7.2 #
 * Risolto bug dopo l'aggiunta della prima città, quando si preme il pulsante
   ok e si riavvia il componente aggiuntivo.

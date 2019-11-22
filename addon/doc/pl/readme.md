@@ -296,6 +296,10 @@ Ci o zmianach na liście i umożliwi jej zapisanie.
 
 # Co nowego: #
 
+# Version 7.3 #
+* Fixed unexpected bug in case of page not found while searching for
+  updates.
+
 # Version 7.2 #
 * Naprawiony błąd, który pojawiał się po dodaniu pierwszego miasta,
   wciśnięciu przycisku Ok i restarcie dodatku.
