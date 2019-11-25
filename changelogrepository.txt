@@ -1,3 +1,14 @@
+24/11/2019
+Weather_Plus7.3 update #4
+I updated last source code and  added new six.py file sent by Adriano.
+
+24/11/2019
+Weather_Plus7.3 update #3
+Adriano said:
+Now it is really compatible with the nvda 2017 version :)
+I had occasion to use nvda again with XP and so I realized that there were a couple of things to sort out from the library six type required for 2017.3 and wx.adv only if wx >= 4.
+I like to be consistent with what I write.
+
 20/11/2019
 Weather_Plus7.3 update#1
 Adriano said:

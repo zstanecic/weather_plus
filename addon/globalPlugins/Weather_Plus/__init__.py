@@ -13,11 +13,12 @@
 
 import os,sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
-import random, ui, gui, wx,wx.adv, re, calendar, math
+import random, ui, gui, wx, re, calendar, math
 from logHandler import log
 from gui import guiHelper
 from datetime import *
 import api, time, zipimport
+if wx.version().split(".")[0] >= "4": import wx.adv
 from configobj import ConfigObj
 from contextlib import closing
 """other temporary imported libraries in the code
@@ -2108,7 +2109,8 @@ class EnterDataDialog(wx.Dialog):
 		self.details_dic = details_dic
 		self.samplesvolumes_dic = samplesvolumes_dic
 		self.modifiedList = False
-		if wx.version().split(".")[0] >= "4": helpButton = wx.adv.CommandLinkButton
+		if wx.version().split(".")[0] >= "4":
+			helpButton = wx.adv.CommandLinkButton
 		else: helpButton = wx.CommandLinkButton
 		btn_Test = helpButton(self, -1, _("Test"), note = "", style=wx.BU_EXACTFIT)
 		btn_Details = helpButton(self, -1, _("Details"), "", style=wx.BU_EXACTFIT)
@@ -4944,10 +4946,10 @@ class SelectImportDialog(wx.Dialog):
 
 		border.Add(sizer, 0, wx.LEFT, 50)
 		border.Add(self.CreateButtonSizer(wx.OK|wx.CANCEL|wx.APPLY|wx.HELP), 0, wx.CENTRE| wx.ALL|wx.EXPAND, 5)
-		self.btn_ok=self.FindWindowById(wx.ID_OK, self)
-		btns = self.FindWindowById(wx.ID_APPLY, self)
+		self.btn_ok=self.FindWindowById(wx.ID_OK)
+		btns = self.FindWindowById(wx.ID_APPLY)
 		btns.SetLabel(_("&Select all"))
-		btnd = self.FindWindowById(wx.ID_HELP, self)
+		btnd = self.FindWindowById(wx.ID_HELP)
 		btnd.SetLabel(_("&Deselect all"))
 		self.Bind(wx.EVT_BUTTON, self.OnSelectAll, btns)
 		self.Bind(wx.EVT_BUTTON, self.OnDeselectAll, btnd) 
