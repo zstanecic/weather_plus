@@ -5168,8 +5168,8 @@ class FindDialog(wx.Dialog):
 		except IndexError: pass
 		sizer.Add(textEntry, 1, wx.EXPAND|wx.ALL, 5)
 		boxSizerH1.Add(self.CreateButtonSizer(wx.OK|wx.CANCEL), 0, wx.CENTRE| wx.ALL|wx.EXPAND, 5)
-		btn_ok = self.FindWindowById(wx.ID_OK, self)
-		btn_canc = self.FindWindowById(wx.ID_CANCEL, self)
+		btn_ok = self.FindWindowById(wx.ID_OK)
+		btn_canc = self.FindWindowById(wx.ID_CANCEL)
 		if not _defaultStrings or not textEntry.GetValue():
 			btn_ok.Enable(False)
 		sizer.Add(boxSizerH1)

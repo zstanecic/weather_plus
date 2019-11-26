@@ -1,3 +1,13 @@
+25/11/2019
+Weather_Plus7.3 update #5
+Adriano said:
+Thanks for the last update #4, unfortunately the __init__.py file I sent you was still the old one.
+Now I have attached the right one to you.
+Excuse me for these setbacks, but in this period I am very busy with various programs and operating systems that I am arranging and I have gone a little haywire :p
+
+Note by Rémy:
+I updated last source code sent by Adriano.
+
 24/11/2019
 Weather_Plus7.3 update #4
 I updated last source code and  added new six.py file sent by Adriano.
