@@ -11,7 +11,7 @@
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Freigegeben unter der GNU GPL (General Public License) v2
 
-# Weather Plus funktioniert durch die Nutzung und Präsenz folgender Dienste: #
+# Wetter Plus arbeitet durch die Nutzung und Präsenz folgender Dienste: #
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
 * [http://woeid.rosselliot.co.nz/lookup/](http://woeid.rosselliot.co.nz/lookup/)
 * [http://www.geonames.org/](http://www.geonames.org/)
@@ -19,36 +19,35 @@
 * [http://www.nvda.it/](http://www.nvda.it/)
 
 # Nutzung: #
-* Drücken Sie NVDA + w für die aktuelle Temperatur und Wetterbedingungen.
-* Drücken Sie NVDA + Umschalt + W für die Wettervorhersage für 24 Stunden
-  und bis zu 9 zusätzlichen Tagen.
-* Drücken Sie NVDA + Umschalt + Strg + W, um eine temporäre Stadt
-  festzulegen.
-* Drücken Sie NVDA + Umschalt + strg + alt + w, um den Dialog Weather Plus
-  Einstellungen zu öffnen.
-* Drücken Sie NVDA + alt + w, um die letzte Aktualisierung des
-  Wetterberichts zu erfahren.
-* Drücken Sie strg + Umschalt + w, um zwischen Fahrenheit, Celsius oder
-  Kelvin umzuschalten.
+* Drücken Sie NVDA+W für die aktuelle Temperatur und Wetterbedingungen.
+* Drücken Sie NVDA+Umschalt+W für die Wettervorhersage für 24 Stunden und
+  bis zu 9 zusätzlichen Tagen.
+* Drücken Sie NVDA+Umschalt+Strg+W, um eine temporäre Stadt festzulegen.
+* Drücken Sie NVDA+Umschalt+Strg+Alt+W, um die Wetter Plus-Einstellungen zu
+  öffnen.
+* Drücken Sie NVDA+Alt+W, um die letzte Aktualisierung des Wetterberichts zu
+  erfahren.
+* Drücken Sie Strg+Umschalt+W, um zwischen Fahrenheit, Celsius oder Kelvin
+  umzuschalten.
 
-# Um Weather Plus einzustellen: #
-Lesen sie den Abschnitt: Weather Plus erste Einstellungen.
+# Um Wetter Plus einzustellen: #
+Lesen Sie den Abschnitt: Erstmalige Wetter Plus-Einstellungen.
 
 --------------------------------------------------------------------------------
 
-# Weather Plus erste Einstellungen: #
+# Erstmalige Wetter Plus-Einstellungen: #
 
-Sie müssen das Addon vor der ersten Verwendung einstellen!
+Sie müssen die Erweiterung vor der ersten Verwendung einstellen!
 
 Gehen Sie zu:
 
-Einstellungen Untermenü
+Einstellungsmenü
 
-Weather Plus Einstellungen untermenü
+Wetter Plus-Einstellungenmenü
 
 Konfigurationseinträge anzeigen.
 
-# Wählen sie zwischen folgenden Einträgen: #
+# Wählen Sie zwischen folgenden Einträgen aus: #
 
 * Einstellungen und Stadtverwaltung...
 	* Zeigt das Einstellungsfenster für Weather Plus.
@@ -61,7 +60,7 @@ Wählen Sie:
 
 # Einstellungen und Stadtverwaltung... #
 
-Zeigt das Einstellungsfenster für Weather plus
+Zeigt das Einstellungsfenster für Wetter Plus an.
 
 Die folgende Meldung wird nur zum ersten Mal angezeigt!
 
@@ -294,7 +293,7 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 
 # Hinweis: Ihre Einstellungen werden in folgenden Dateien gespeichert: #
 
-* "Weather.ini": Starteinstellungen von Weather Plus.
+* "Weather.ini": Start-Einstellungen von Wetter Plus.
 * "Weather.volumes": Benutzerdefinierte Lautstärkepegel, unabhängig von der
   Gesamtlautstärke.
 * "Weather.zipcodes": Liste der Städte mit Postleitzahl und Definitionen.
@@ -305,8 +304,8 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 # Änderungsverlauf: #
 
 # Version 7.3 #
-* Fixed unexpected bug in case of page not found while searching for
-  updates.
+* Unerwarteter Fehler behoben, falls die Seite bei der Suche nach einer
+  Aktualisierung nicht gefunden wurde.
 
 # Version 7.2 #
 * Der Fehler nach dem Hinzufügen einer Stadt wurde behoben, wenn es sich um

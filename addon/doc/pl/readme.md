@@ -297,8 +297,7 @@ Ci o zmianach na liście i umożliwi jej zapisanie.
 # Co nowego: #
 
 # Version 7.3 #
-* Fixed unexpected bug in case of page not found while searching for
-  updates.
+* Naprawiono niespodziewany błąd podczas wyszukiwania aktualizacji.
 
 # Version 7.2 #
 * Naprawiony błąd, który pojawiał się po dodaniu pierwszego miasta,
@@ -432,150 +431,151 @@ Ci o zmianach na liście i umożliwi jej zapisanie.
 # Wersja 4.7.5 #
 * MenuItem.GetLabel() jest przestarzałe i zostało zastąpione przez
   MenuItem.GetItemLabelText().
-* Were correct some declarations of global variables.
+* Poprawiono niektóre deklaracje zmiennych globalnych.
 
 # Wersja 4.7.3 #
-* For convenience has been updated the function in "details";
-	* The information about the altitude are now provided by veloroutes.org.
-	* This leads to small differences of little relevance.
+* Dla wygody zaktualizowano funkcję w oknie dialogowym "szczegóły";
+	* Informacje o wysokości nad poziomem morza są od tej pory dostarczane przez veloroutes.org.
+	* Nieznacznie zmieni to działanie dodatku.
 
 # Wersja 4.7.2 #
-* Fixed encoding bug in Removeupdate function.
+* Naprawiono błąd kodowania w funkcji Removeupdate function.
 
 # Wersja 4.7.1 #
-* Fixed a bug in GetTimezone;
-	* In case of null data was returned only one value instead of 3 required.
+* Naprawiono błąd w funkcji GetTimezone;
+	* W przypadku pustych danych zwracana była tylko jedna wartość zamiast trzech wymaganych.
 
 # Wersja 4.7 #
-* Simplified the update section;
-	* Now at the start, in case an update is available it will be possible to proceed directly through a single dialog box.
-* removed the file selector in the update section;
-	* Now the update file is uploaded to the temporary folder, thereby solving problems due to non-expert users.
+* Uproszczono aktualizator;
+	* Jeżeli podczas uruchamiania dodatku dostępna jest nowa aktualizacja, wystarczy przejść przez jedno okno dialogowe, aby ją zainstalować.
+* Usunięto listę plików w aktualizatorze;
+	* Plik aktualizacji jest pobierany do folderu tymczasowego, co ułatwia początkującym użytkownikom korzystanie z dodatku.
 
 # Wersja 4.6.9 #
-* Added arab localization (thanks to Wafik Immaculate).
+* Dodano arabskie tłumaczenie (Wafik Immaculate).
 
 # Wersja 4.6.8 #
-* Updated Portuguese and Brasilian localizations (thanks to Alberto
-  Mendonça).
+* Uaktualniono portugalskie i brazylijskie tłumaczenia (Alberto Mendonça).
 
 # Wersja 4.6.7 #
-* Improved the reading of the current time;
-	* In some cities, it was not correct.
-* Added daylight saving time to the details;
-	* Available only for the countries that adopt it.
+* Ulepszono odczytywanie aktualnego czasu;
+	* Dla niektórych miast było ono niepoprawne.
+* Dodano czas letni do funkcji szczegóły;
+	* Jest to dostępne tylko dla krajów, w których on obowiązuje.
 
 # Wersja 4.6.5 #
-* Fixed a small bug during the reading of the current time;
-	* The separator ":" not being removed during conversion to integer.
+* Naprawiono niewielki błąd podczas odczytywania aktualnego czasu;
+	* Separator ":" nie był usuwany w trakcie zamiany na liczbę całkowitą.
 
 # Wersja 4.6.4 #
-* Improved the reading of current local time; search keys are more accurate.
+* Ulepszono odczytywanie aktualnego czasu lokalnego; Słowa kluczowe są
+  lepiej dopasowane.
 
 # Wersja4.6.2 #
-* Fixed bug: after a check for updates, the "set a temporary city..." menu
-  was enabled even if there was no available list of cities.
-* Fixed bug; unable to configure WP when the weather.ini has not been
-  created yet,.
+* Naprawiono błąd, który pojawiał się po sprawdzeniu aktualizacji. Meni
+  "ustaw miasto tymczasowe..." było włączone, nawet gdy żadna lista miast
+  nie była dostępna.
+* Naprawiono błąd; nie można skonfigurować WP, jeśli nie ma jeszcze pliku
+  weather.ini.
 
 # Wersja 4.6 #
-* Added the menu item "Set a temporary city...";
-	* For the sake of completeness, now you can open the temporary city's list  also from the menu.
-* Improved management of temperature scale;
-	* Now the settings window will always return the default value.
-* Improved prevention of the multiple opening of the main windows;
-	* If one of these is already opened, in addition to the sound alert, puts it in foreground.
-* Improved audio effects;
-	* Now are based on the current local time from the city in use.
+* Dodano element meni "Dodaj miasto tymczasowe...";
+	* Dla przejrzystości, listę miast tymczasowych można otwierać również z meni.
+* Ulepszono zarządzanie skalą temperatury;
+	* Okno ustawień będzie zawsze zwracać wartość domyślną.
+* Ulepszono zapobieganie wielokrotnemu otwieraniu okna głównego;
+	* Gdy okno główne dodatku jest już otwarte, przy próbie kolejnego otwarcia pojawia się sygnał dźwiękowy, a kursor zostaje przeniesiony do Wcześniej otwartego okna.
+* Ulepszono efekty dźwiękowe;
+	* Są one oparte na aktualnym czasie lokalnym.
 
-`#`Changes in details button function in settings window:
+`#`Zmiany w funkcji szczegóły w oknie ustawień:
 
-* Added current local time.
-* Fixed altitude value;
-	* Now return the altitude values when the value is less than or equal to zero.
-* Fixed import function;
-	* If it was removed the default city, no longer appears in the title bar.
+* Dodano aktualny czas lokalny.
+* Naprawiono wartość wysokości nad poziomem morza;
+	* Dodatek zwraca wartość wysokości nad poziomem morza, gdy ta wartość jest równa lub mniejsza niż zero.
+* Naprawiono funkcję import;
+	* Jeśli miasto domyślne zostało usunięte, nie będzie się już pojawiało na pasku tytułu.
 
 # Wersja 4.5.5 #
-* Correct location and documentation in Serbian.
-* Correct the German localization.
+* Poprawiono serbskie tłumaczenie i dokumentację.
+* Poprawiono niemieckie tłumaczenie.
 
 `#`Zmiany w oknie ustawień Weather Plus:
 
-* Added new checkbox;
-	* You can enable the comma as the decimal separator, otherwise the separator will be the point.
+* Dodano pole wyboru;
+	* Można włączyć przecinek jako separator dziesiętny. W przeciwnym razie separatorem będzie kropka.
 
 # Wersja 4.5.3 #
-* correct 2 strings in Russian and ukraine localization.
-* Correct title in Check for upgrade window.
-* Improved update algorithm;
-	* Now the link to update is directly read from manifest url.
+* Poprawiono 2 ciągi znaków w rosyjskim i ukraińskim tłumaczeniu.
+* Poprawiono nazwę okna Sprawdź aktualizacje.
+* Poprawiono algorytm aktualizacji;
+	* Link do aktualizacji jest odczytywany bezpośrednio z manifest url.
 
 # Wersja 4.5 #
 naciśnij NVDA + shift + control + alt + w, aby otworzyć ustawienia Weather plus.
 
 `#`Zmiany w oknie ustawień Weather Plus:
 
-* Added 8 new check boxes;
-	* It is now possible to further customize the output:
-* wind direction.
-* wind speed.
-* Perceived temperature.
-* Humidity value.
-* Visibility value.
-* Atmospheric pressure value.
-* Indicates the atmospheric pressure in millimeters of mercury (mmHg).
-* State of the barometric pressure.
+* Dodano 8 pól wyboru;
+	* Można bardziej dostosować wyjście:
+* kierunek wiatru.
+* prędkość wiatru.
+* temperaturę odczuwalną.
+* wartość wilgotności.
+* wartość widoczności.
+* wartość ciśnienia atmosferycznego.
+* Pokazuje ciśnienie atmosferyczne w milimetrach słupa rtęci (mmHg).
+* stan ciśnienia barometrycznego.
 
 # Wersja4.4.8 #
-* Added Polish translation (thanks to Zvonimir Staneczyć).
-* Weather Plus it's now compatible also for future wx version 4;
-	* Note: at the moment  with wx version 4.0.0b1 msw (phoenix) generates an annoying error when using the vertical arrows in many edit boxes:
+* Dodano polskie tłumaczenie (Zvonimir Staneczyć).
+* Weather Plus będzie zgodny także z przyszłą wersją wx 4;
+	* Uwaga: obecnie z wersją wx 4.0.0b1 msw (phoenix) dodatek generuje denerwujący błąd podczas używania strzałek góra dół w wielu polach edycyjnych:
 
 wxAssertionError: C++ assertion "Assert failure" failed at
 ..\..\src\common\evtloopcmn.cpp(110) in wxEventLoopBase::Yield(): wxYield
 called recursively.
 
 # Wersja 4.4.1 #
-* Added SSL support;
-	* Is used only if there is a SSL error certificate verify failed.
+* Dodano wsparcie SSL;
+	* Jest to używane tylko wtedy, gdy pojawia się błąd SSL error certificate verify failed.
 
 # Wersja 4.4 #
-* Fixed bug in the reading of the new version string, during a connection
-  time-out.
-* Improved the upgrade section;
-	* Now the dialog do not interferes with the nvda menu.
-* Revised and corrected russian Localization.
-* Adding Ukrainian translation (thanks to Alex Yeshanu).
+* Naprawiono błąd odczytu informacji o nowej wersji, który pojawiał się po
+  przekroczeniu czasu połączenia.
+* Ulepszono aktualizator;
+	* Okno dialogowe aktualizatora nie nakłada się już na meni nvda.
+* Sprawdzono i poprawiono rosyjskie tłumaczenie.
+* Dodano ukraińskie tłumaczenie (Alex Yeshanu).
 
 # Wersja 4.3.4 #
-* Revised and corrected German Localization.
+* Sprawdzono i poprawiono niemieckie tłumaczenie.
 
 # Wersja 4.3.3 #
-* Added German localization (thanks to Karl Eick).
+* Dodano niemieckie tłumaczenie (Karl Eick).
 
 # Wersja 4.3.2 #
-* Added Romanian localization (thanks to Florian Ionașcu).
+* Dodano rumuńskie tłumaczenie (Florian Ionașcu).
 
 # Wersja 4.3.1 #
-* Fixed a minor bug in the function "details";
-	* The strings "latitude" and "longitude" were reversed compared to the value.
+* Naprawiono niewielki błąd w funkcji "details";
+	* Określenia "szerokość geograficzna" i "długość geograficzna" były odwrotnie użyte, skutkiem czego opisywały nieswoje wartości.
 
 # Wersja 4.3 #
-* The Public folder links will become inactive on March 15.
-	* On that date, the Public folder will become a standard Dropbox folder, and will not be useable by the addon.
-	* The upgrade links of the addon and of the samples have been updated, therefore, from now on, WP will lean completely on the italian page of NVDA.
+* Linki publiczne zostaną zdezaktywowane 15 marca.
+	* Z tą datą Folder publiczny stanie się typowym folderem Dropbox, a dodatek nie będzie go już używał.
+	* Linki publiczne dodatku i efektów dźwiękowych zostały zaktualizowane. Dlatego WP będzie hostowane wyłącznie przez włoską społeczność NVDA.
 
 # Wersja 4.2.4 #
-* Fixed a minor bug when the connection is not active.
+* Naprawiono niewielki błąd pojawiający się gdy połączenie jest nieaktywne.
 
 # Wersja 4.2.3 #
-* Now Weather Plus is able to run some connection attempts before notifying the malfunction of the WoeId in use, it emits a beep at each attempt;
-	* This beep, if you want, can be disabled by using a check box by Weather Plus settings.
+* Weather Plus spróbuje połączyć się ponownie zanim ogłosi, że WoeId nie działa poprawnie. Każda próba połączenia będzie oznajmiana sygnałem dźwiękowym;
+	* Można wyłączyć ten sygnał przełączając pole wyboru w ustawieniach Weather Plus.
 
 # Wersja 4.2.2 #
-* Fixed bug in the translation of the scale measurement.
-	* In some languages, Kelvin, Celsius and Fahrenheit have not been translated.
+* Naprawiono błąd w tłumaczeniu skali pomiaru temperatury.
+	* Skale Kelwina, Celsjusza i Farenhajta nie były przetłumaczone na niektóre języki.
 
 # Wersja4.2.1 #
 * Fixed update notice of Weather Plus during the Windows start-up;
