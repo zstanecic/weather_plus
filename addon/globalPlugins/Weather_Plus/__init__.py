@@ -2235,7 +2235,7 @@ class EnterDataDialog(wx.Dialog):
 		self.OnHelp_notes()
 		self.Bind(wx.EVT_CHECKBOX, self.OnHelp_notes, self.cbt_toHelp)
 
-		self.cbt_toWind = wx.CheckBox(self, -1, _("Read &wind informations"))
+		self.cbt_toWind = wx.CheckBox(self, -1, _("Read &wind information"))
 		self.cbt_toWind.SetValue(bool(toWind))
 		sizer.Add(self.cbt_toWind, 0, wx.LEFT|wx.RIGHT|wx.BOTTOM, 5)
 		self.Bind(wx.EVT_CHECKBOX, self.OnCheckBox3, self.cbt_toWind)
@@ -2257,7 +2257,7 @@ class EnterDataDialog(wx.Dialog):
 		sizer.Add(self.cbt_toPerceived, 0, wx.LEFT|wx.RIGHT|wx.BOTTOM, 5)
 		self.OnCheckBox3(self.cbt_toWind)
 
-		self.cbt_toAtmosphere = wx.CheckBox(self, -1, _("&Read atmospherical informations"))
+		self.cbt_toAtmosphere = wx.CheckBox(self, -1, _("&Read atmospherical information"))
 		self.cbt_toAtmosphere.SetValue(bool(toAtmosphere))
 		sizer.Add(self.cbt_toAtmosphere, 0, wx.LEFT|wx.RIGHT|wx.BOTTOM, 5)
 		self.Bind(wx.EVT_CHECKBOX, self.OnCheckBox4, self.cbt_toAtmosphere)
@@ -2283,7 +2283,7 @@ class EnterDataDialog(wx.Dialog):
 		sizer.Add(self.cbt_toBarometric, 0, wx.LEFT|wx.RIGHT|wx.BOTTOM, 5)
 		self.OnCheckBox4(self.cbt_toAtmosphere)
 
-		self.cbt_toAstronomy = wx.CheckBox(self, -1, _("Read a&stronomical informations"))
+		self.cbt_toAstronomy = wx.CheckBox(self, -1, _("Read a&stronomical information"))
 		self.cbt_toAstronomy.SetValue(bool(toAstronomy))
 		sizer.Add(self.cbt_toAstronomy, 0, wx.LEFT|wx.RIGHT|wx.BOTTOM, 5)
 
@@ -2799,13 +2799,13 @@ class EnterDataDialog(wx.Dialog):
 		atmosphereCheckboxis = [self.cbt_toUmidity, self.cbt_toVisibility, self.cbt_toPressure, self.cbt_toBarometric]
 		if self.last_tab in windCheckboxis:
 			if [x.GetValue() for x in windCheckboxis].count(False) == 4:
-			 	#prevents you from to disable all the check boxes in wind informations
+			 	#prevents you from to disable all the check boxes in wind information
 				wx.Bell()
 				self.last_tab.SetValue(True)
 
 		elif self.last_tab in atmosphereCheckboxis:
 			if [x.GetValue() for x in atmosphereCheckboxis].count(False) == 4:
-				#prevents you from to disable all the check boxes in atmosphere informations
+				#prevents you from to disable all the check boxes in atmosphere information
 				wx.Bell()
 				self.last_tab.SetValue(True)
 
@@ -2815,14 +2815,14 @@ class EnterDataDialog(wx.Dialog):
 
 
 	def OnCheckBox3(self, evt = None):
-		"""disable all items if wind informations is not activate"""
+		"""disable all items if wind information is not activate"""
 		flag = True
 		if not evt.IsChecked(): flag = False
 		[i.Enable(flag) for i in [self.cbt_toWinddir, self.cbt_toWindspeed, self.cbt_toSpeedmeters, self.cbt_toPerceived]]
 
 
 	def OnCheckBox4(self, evt = None):
-		"""disable all items if atmosphere informations is not activate"""
+		"""disable all items if atmosphere information is not activate"""
 		flag = evt.IsChecked()
 		[i.Enable(flag) for i in [self.cbt_toUmidity, self.cbt_toVisibility, self.cbt_toPressure, self.cbt_toMmhgpressure, self.cbt_toBarometric]]
 
