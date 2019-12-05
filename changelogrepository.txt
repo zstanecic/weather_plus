@@ -1,3 +1,16 @@
+04/12/2019
+Weather_Plus correct string for future update
+Note by Rémy:
+I just made the same changes to the readme in English.
+
+Adriano said:
+I just only deleted the "s" in "informations" word in 3 strings, and now I'm like that:
+"Read wind information"
+"Read atmospherical information"
+"Read astronomical information".
+
+Thanks
+
 02/12/2019
 Weather_Plus correct string for future update
 Adriano said:
