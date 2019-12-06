@@ -208,7 +208,7 @@ case à cocher cochée (par défaut)
 
 Case à cocher cochée (par défaut)
 
-# Lire les informations sur le vent #
+# Read wind information #
 
 case à cocher non cochée (par défaut)
 
@@ -234,7 +234,7 @@ case à cocher cochée (par défaut)
 
 case à cocher cochée (par défaut)
 
-# Lire les informations atmosphériques #
+# Read atmospherical information #
 
 case à cocher non cochée (par défaut)
 
@@ -266,7 +266,7 @@ Case à cocher cochée (par défaut)
 
 Case à cocher cochée (par défaut)
 
-# Lire les informations astronomiques #
+# Read astronomical information #
 
 Indique les heures de lever et de coucher du soleil.
 

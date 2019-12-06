@@ -203,7 +203,7 @@ Domyślnie zaznaczone.
 
 Domyślnie zaznaczone.
 
-# Odczytuj informacje o wietrze. #
+# Read wind information #
 
 Domyślnie odznaczone.
 
@@ -229,7 +229,7 @@ Domyślnie zaznaczone.
 
 Domyślnie zaznaczone.
 
-# Odczytuj informacje atmosferyczne. #
+# Read atmospherical information #
 
 Domyślnie odznaczone.
 
@@ -260,7 +260,7 @@ Domyślnie zaznaczone.
 
 Domyślnie zaznaczone.
 
-# Odczytuj informacje astronomiczne. #
+# Read astronomical information #
 
 Podaje czas wschodu i zachodu słońca.
 

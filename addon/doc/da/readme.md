@@ -198,7 +198,7 @@ afkrydsningsfeltet kontrolleres (som standard)
 
 afkrydsningsfeltet kontrolleres (som standard)
 
-# Læs &vindinformationer #
+# Read wind information #
 
 afkrydsningsfeltet ikke markeret (som standard)
 
@@ -224,7 +224,7 @@ afkrydsningsfeltet kontrolleres (som standard)
 
 afkrydsningsfeltet kontrolleres (som standard)
 
-# Oplys &atmosfæriske informationer #
+# Read atmospherical information #
 
 afkrydsningsfeltet ikke markeret (som standard)
 
@@ -255,7 +255,7 @@ afkrydsningsfeltet kontrolleres (som standard)
 
 afkrydsningsfeltet kontrolleres (som standard)
 
-# Læs astronomiske informationer #
+# Read astronomical information #
 
 Indicates the time of sunrise and sunset.
 

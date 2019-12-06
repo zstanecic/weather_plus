@@ -200,7 +200,7 @@ por defecto: si.
 
 por defecto: si.
 
-# Ler informacións do vento #
+# Read wind information #
 
 por defecto: non.
 
@@ -226,7 +226,7 @@ por defecto: si.
 
 por defecto: si.
 
-# Ler informacións atmosféricas #
+# Read atmospherical information #
 
 por defecto: non.
 
@@ -257,7 +257,7 @@ por defecto: si.
 
 por defecto: si.
 
-# Ler informacións astronómicas #
+# Read astronomical information #
 
 Indica a hora da saída e posta do sol.
 
@@ -295,9 +295,9 @@ aínda podes gardalo.
 
 # Que Hai de novo: #
 
-# Version 7.3 #
-* Fixed unexpected bug in case of page not found while searching for
-  updates.
+# Versión 7.3 #
+* Arranxado erro inesperado en caso de que non se atope a páxina ao procurar
+  actualizacións.
 
 # Versión 7.2 #
 * Arranxado erro tras engadir unha cidade, se é a primeira que se introduce,

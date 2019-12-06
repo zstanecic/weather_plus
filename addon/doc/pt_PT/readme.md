@@ -207,7 +207,7 @@ Caixa de marcação marcada, por padrão.
 
 Caixa de marcação marcada, por padrão.
 
-# Ler informações do vento #
+# Read wind information #
 
 Caixa de marcação não marcada, por padrão.
 
@@ -233,7 +233,7 @@ Caixa de marcação marcada, por padrão.
 
 Caixa de marcação marcada, por padrão.
 
-# Lê informações atmosféricas #
+# Read atmospherical information #
 
 Caixa de marcação não marcada, por padrão.
 
@@ -264,7 +264,7 @@ Caixa de marcação marcada, por padrão.
 
 Caixa de marcação marcada, por padrão.
 
-# Ler informações astronómicas #
+# Read astronomical information #
 
 Indica a hora do nascer e pôr do sol.
 

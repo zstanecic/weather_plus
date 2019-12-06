@@ -208,7 +208,7 @@ standardmäßig aktiviert
 
 standardmäßig aktiviert
 
-# Windinformationen ausgeben #
+# Read wind information #
 
 standardmäßig nicht aktiviert
 
@@ -234,7 +234,7 @@ standardmäßig aktiviert
 
 standardmäßig aktiviert
 
-# Atmosphärische Informationen ausgeben #
+# Read atmospherical information #
 
 standardmäßig nicht aktiviert
 
@@ -266,7 +266,7 @@ standardmäßig aktiviert
 
 standardmäßig aktiviert
 
-# Astronomische Informationen ausgeben #
+# Read astronomical information #
 
 Gibt die Zeit des  Sonnenauf- und Untergangs an.
 

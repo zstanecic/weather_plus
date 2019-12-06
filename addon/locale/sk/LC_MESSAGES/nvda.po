@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Weather_Plus\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2019-05-06 12:00+0200\n"
-"PO-Revision-Date: 2019-09-02 16:23+0200\n"
+"PO-Revision-Date: 2019-11-30 12:56+0100\n"
 "Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language-Team: Peter Halada <pietro4044@gmail.com>\n"
 "Language: sk\n"
@@ -111,13 +111,12 @@ msgstr "Zoznam kódov miest je dostupný:"
 msgid "Documentation not available for the current language!"
 msgstr "Nápoveda pre tento jazyk nie je dostupná"
 
-#, fuzzy
 msgid ""
 "Sorry, i can not receive data, problems with the download page, try again "
 "later please!"
 msgstr ""
-"Nemôžem prijímať dáta, overte funkčnosť internetového pripojenia, alebo "
-"skúste neskôr!"
+"Ľutujeme, ale kvôli problémom so stránkou na stiahnutie nemôžem prijímať "
+"údaje,  skúste to znova neskôr, prosím!"
 
 msgid ""
 "Sorry, i can not receive data, verify that your internet connection is "
@@ -763,7 +762,8 @@ msgstr "Aktuálna hlasitosť zvuku"
 msgid "Enable &help buttons in the settings window"
 msgstr "Zapnúť nápovedné popisk&y prvkov v okne pre nastavenie"
 
-msgid "Read &wind informations"
+#, fuzzy
+msgid "Read &wind information"
 msgstr "&Ohlasovať informácie o vetre"
 
 msgid "Add wind directi&on"
@@ -778,7 +778,8 @@ msgstr "Pridať rýchlosť vetra v &metroch za sekundu"
 msgid "Add perceived &temperature"
 msgstr "Pridať &pocitovú teplotu"
 
-msgid "&Read atmospherical informations"
+#, fuzzy
+msgid "&Read atmospherical information"
 msgstr "Ohlasovať &atmosférické informácie/tlak vlhkosť)"
 
 msgid "Add humidity va&lue"
@@ -796,7 +797,8 @@ msgstr "Oznamuje v milimetro&ch ortuti atmosférický tlak(mmHg)"
 msgid "Add status of &barometric pressure"
 msgstr "Pridať stav &barometrického tlaku"
 
-msgid "Read a&stronomical informations"
+#, fuzzy
+msgid "Read a&stronomical information"
 msgstr "Ohla&sovať astronomické informácie (východ / západ slnka)"
 
 msgid "Enable reading of the hours in &24-hour format"

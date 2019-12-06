@@ -201,7 +201,7 @@ začiarkávacie pole začiarknuté (predvolene)
 
 začiarkávacie pole začiarknuté (predvolene)
 
-# Oznamovať informácie o vetre #
+# Read wind information #
 
 pole nezačiarknuté (predvolene)
 
@@ -227,7 +227,7 @@ začiarkávacie pole začiarknuté (predvolene)
 
 začiarkávacie pole začiarknuté (predvolene)
 
-# Oznamovať atmosférické informácie #
+# Read atmospherical information #
 
 pole nezačiarknuté (predvolene)
 
@@ -258,7 +258,7 @@ začiarkávacie pole začiarknuté (predvolene)
 
 začiarkávacie pole začiarknuté (predvolene)
 
-# Oznamovať astronomické informácie #
+# Read astronomical information #
 
 Udáva čas východu a západu slnka.
 
@@ -295,9 +295,9 @@ zapamätaní a môžete ho uložiť.
 
 # Čo je nové: #
 
-# Version 7.3 #
-* Fixed unexpected bug in case of page not found while searching for
-  updates.
+# Verzia 7.3 #
+* Opravená neočakávaná chyba v prípade, že sa stránka pri vyhľadávaní
+  aktualizácií nenašla.
 
 # Verzia 7.2 #
 * Opravená chyba po pridaní mesta, ak bolo zadané ako prvé, keď stlačíte
