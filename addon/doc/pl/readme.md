@@ -1,7 +1,7 @@
 # Weather Plus #
 
 * Autor: Adriano Barbieri
-* NVDA compatibility: 2017.3 to 2019.3
+* Zgodność z wersjami NVDA: 2017.3 to 2019.3
 * Pobierz: [Wersja stabilna][1]
 
 # O Weather Plus: #
@@ -203,7 +203,7 @@ Domyślnie zaznaczone.
 
 Domyślnie zaznaczone.
 
-# Read wind information #
+# Odczytuj informacje o wietrze. #
 
 Domyślnie odznaczone.
 
@@ -229,7 +229,7 @@ Domyślnie zaznaczone.
 
 Domyślnie zaznaczone.
 
-# Read atmospherical information #
+# Odczytuj informacje atmosferyczne. #
 
 Domyślnie odznaczone.
 
@@ -260,7 +260,7 @@ Domyślnie zaznaczone.
 
 Domyślnie zaznaczone.
 
-# Read astronomical information #
+# Odczytuj informacje astronomiczne. #
 
 Podaje czas wschodu i zachodu słońca.
 
@@ -296,28 +296,28 @@ Ci o zmianach na liście i umożliwi jej zapisanie.
 
 # Co nowego: #
 
-# Version 7.3 #
+# Wersja 7.3 #
 * Naprawiono niespodziewany błąd podczas wyszukiwania aktualizacji.
 
-# Version 7.2 #
+# Wersja 7.2 #
 * Naprawiony błąd, który pojawiał się po dodaniu pierwszego miasta,
   wciśnięciu przycisku Ok i restarcie dodatku.
 * Na pasku postępu znowu wyświetlany jest czas który upłynął i który
   pozostał.
 * Poprawione włoskie tłumaczenie przycisku Zmień Nazwę w pomocy
 
-# Version 7.1 #
+# Wersja 7.1 #
 * Naprawiony błąd w Removeupdate() gdy podczas restartu dodatku plik ma
   atrybut tylko do odczytu.
 
-# Version 7.0 #
+# Wersja 7.0 #
 * Ulepszone okienko wyszukiwania pozwala zarządzać wszystkimi wprowadzonymi
   słowami kluczamu. Z poziomu meni kontekstowego można dodać, usunąć i
   zapisać słowo klucz.
 * Ulepszona kontrola otwierania okna
 * Kilka drobnych poprawek
 
-# Version 6.9 #
+# Wersja 6.9 #
 
 * Wprowadzono rekurencyjne wyszukiwanie miast z systemem weryfikacji
   używanym w wersji Weather_Plus Apixu.
@@ -327,13 +327,13 @@ Ci o zmianach na liście i umożliwi jej zapisanie.
 * Naprawiony problem z usuwaniem niektórych modułów * .pyc, * .pyo przy
   aktualizacji NVDA.
 
-# Version 6.8 #
+# Wersja 6.8 #
 
 * Zaktualizowane flagi dla poniższych gałęzi;
 
 	* nvda_snapshot_threshold i nvda_snapshot_threshold_py3_staging.
 
-# Version 6.7 #
+# Wersja 6.7 #
 * Naprawiono błąd, który pojawiał się podczas sprawdzania nowego miasta w
   trybie tymczasowym po naciśnięciu klawisza "enter" i przy próbie dodania
   tego miasta przyciskiem "Dodaj"
@@ -578,63 +578,63 @@ called recursively.
 	* Skale Kelwina, Celsjusza i Farenhajta nie były przetłumaczone na niektóre języki.
 
 # Wersja4.2.1 #
-* Fixed update notice of Weather Plus during the Windows start-up;
-	* This happens when the button was pressed "Use currently saved settings on the logon and other secure screens (requires administrator privileges)" from the general settings of nvda, which copies the configuration, and all of the add-on folder systemConfig, but these are not synchronized with subsequent updates of the add-ons.
-	* If you have ever used at least once this option, you will have to do it again one last time just after to have up-to-date Weather Plus.
+* Naprawiono powiadomienie o aktualizacji Weather Plus podczas uruchamiania systemu Windows;
+	* Ten problem pojawiał się po naciśnięciu przycisku "Używaj zapisanych ustawień NVDA na ekranie logowania i innych zabezpieczonych ekranach (wymaga uprawnień administratora)" znajdującego się w ustawieniach ogólnych NVDA. Wszystkie ustawienia dodatku zostają skopiowane do konfiguracji systemowej, ale nie są synchronizowane z kolejnymi aktualizacjami dodatków.
+	* Jeśli ten przycisk był kiedykolwiek aktywny, należy wcisnąć go jeszcze raz, żeby dodatek Weather Plus był zawsze aktualny.
 
 # Wersja 4.2 #
-* Added 5 new sound effects;
-	* It will be necessary to update them from the settings of the plugin.
-* Fixed bug in the import function;
-	* The list of cities was not sorted alphabetically.
-* Added import mode in the import function;
-	* You may decide to completely replace your own list, or simply add new cities to it.
-* Updated the reading of the weather forecast, current weather report;
-	* Adding the perceived temperature (wind chill).
-* Added new strings to the list weather reports.
+* Dodano 5 efektów dźwiękowych;
+	* Trzeba uaktualnić je w ustawieniach dodatku.
+* Naprawiono błąd w funkcji import;
+	* Miasta na liście nie były sortowane alfabetycznie.
+* Do funkcji import dodano tryb importu;
+	* Można zastąpić własną listę inną listą miast, lub dodać nowe miasta do już istniejącej.
+* Zaktualizowano odczytywanie prognozy pogody;
+	* Dodano temperaturę odczuwalną (efekt chłodzący wiatru).
+* Dodano nowe ciągi znaków do listy prognoz.
 
 # Wersja 4.1 #
-* Fixed bug in the forecast for up to 10 days;
-	* Now if the estimates received are in number less than the request of the user, the missing days are indicated as unknown.
-* Fixed string help entry on the command nvda+shift+w.
-* Revised and updated documentation.
+* Naprawiono błąd w prognozie do 10 dni;
+	* Gdy otrzymana liczba szacunkowa jest mniejsza niż żądana przez użytkownika, brakujące dni są wyświetlane jako stan nieznany.
+* Poprawiono pomoc dla polecenia nvda+shift+w.
+* Dokumentacja dodatku została sprawdzona i uaktualniona.
 
 # wersja 4.0 #
-* Updated some parts of code and replace all instructions eval().
+* Uaktualniono część kodu i wymieniono wszystkie instrukcje eval().
 
 # Wersja 3.9.7 #
-* Fixed bug during the ratio of weather forecasts;
-	* Now the temperatures are read correctly.
+* Naprawiono błąd w proporcji prognoz;
+	* Temperatura jest już odczytywana poprawnie.
 
 # Wersja 3.9.6 #
-* Changed the rounding in the conversion of atmospheric pressure from mbar in inches of mercury;
-	* Now the value is calculated in defect, while before it was in excess.
+* Zmieniono zaokrąglanie podczas zamiany ciśnienia atmosferycznego z milibarów na cale słupa rtęci;
+	* Wartość jest teraz zaokrąglana w dół, chociaż wcześniej była zaokrąglana w górę.
 
 # Wersja 3.9.5 #
-* Added 2 new strings to the list weather reports.
+* Dodano 2 nowe ciągi znaków do listy prognoz.
 * Naprawiono 2 błędy.
-* Updated running sounds for the effect in conditions of only wind;
-	* Now the sound of the wind can vary randomly.
+* Zaktualizowano zmienny dźwięk stosowany tylko dla wiatru;
+	* Dźwięk wiatru może się teraz zmieniać losowo.
 
 # Wersja 3.9.4 #
-* documentation, localizations for Croatian and german language eliminated;
-	* Because they are no longer supported by the respective translators.
-* Fixed bug on Serbian localization.
-* Updated Czech localization.
-* Updated documentation and localization Gallega.
+* Chorwackie oraz niemieckie tłumaczenia i dokumentacje zostały usunięte;
+	* ponieważ nie są już wspierane przez poszczególnych tłumaczy.
+* Naprawiono błąd w serbskim tłumaczeniu.
+* Uaktualniono czeskie tłumaczenie.
+* Naprawiono galicyjską dokumentację i tłumaczenie.
 
 # Wersja 3.9 #
-* Changed again API service;
-	* Weather Plus now uses the new Yahoo Weather API with language Yahoo!Query and JQuery:
+* Ponownie zmieniono serwis API;
+	* Weather Plus używa teraz nowego API pogodowego Yahoo z Yahoo!Query i JQuery:
 	* [yahoo-weather-api-with-yahooquery](http://codesimplified.blogspot.it/2013/10/yahoo-weather-api-with-yahooquery.html)
-* The key-API is no longer required.
-* Restored The search of the homonymous cities;
-	* It will be possible to choose exactly the desired city from a list.
-* Optimized the output of general sounds;
-	* Now they are synchronized with the voice synthesis and are faster.
-* Improved the cache for data off-line;
-	* Is zeroed every 10 minutes or only by changing the city.
-* barometric pressure measured in mbar, or in inches of mercury (if set to Fahrenheit).
+* Klucz API nie jest już wymagany.
+* Przywrócono wyszukiwanie homonimicznych miast;
+	* Będzie można dokładnie wybrać żądane miasto z listy.
+* Zoptymalizowano wyjście dla głównych dźwięków;
+	* Są one teraz synchronizowane z dźwiękiem syntezatora mowy i działają szybciej.
+* Ulepszono haszowanie danych off-line;
+	* Haszowanie ulega wyzerowaniu co 10 minut lub tylko przy zmianie miasta.
+* Ciśnienie barometryczne mierzone w milibarach, lub w calach słupa rtęci gdy temperatura jest podawana w stopniach Farenhajta.
 
 # Wersja 3.8 #
 * Changed the  data package API;
@@ -663,7 +663,7 @@ called recursively.
 * Added a  cloudiness percentage  in the current bulletin.
 * Adopted the units of pressure measurement in hectopascal in the current bulletin.
 
-`#`Changes to the Weather Plus Settings window:
+`#`zmiany dla okna ustawie Wather plus:
 
 * Changed insertion/search from yahoo zipcode/woeId in ID number, Identifier of the city;
 	* ID numbers city are similar to woeid, but the woeId will no longer work, even the old zipcode.
@@ -682,7 +682,7 @@ called recursively.
 	* Allows you to enter or change the key-API.
 
 # Wersja 3.5 #
-* Added Croatian translation (thanks to Gordan Radić).
+* Dodano tłumaczenie chorwackie (dziękuję Gordan Radić).
 * Added control for no longer valid WoeId and Zip Code found in the network;
 	* There have been reports of codes that have stopped working from one day to another, WP now warns if one of these has been inserted from the windows of search on the net.
 	* If this occurs using the function "Find your city...", please report it to me so that I can update the Weather_buffer and remove them from the list.
@@ -692,16 +692,16 @@ called recursively.
 	* Control+F3 = Find..., F3 = Find next, Shift+F3 = Find previous.
 
 # Wersja 3.4 #
-* Added Galician translation (thanks to Iván Novegil).
-* Added Portuguese translation (thanks to Ângelo Miguel Abrantes).
-* Added German translation (incomplete).
+* Dodano tłumaczenie galicyjskie (dziękuję Iván Novegil).
+* Dodano portugalskie tłumaczenie (dziękuję Ângelo Miguel Abrantes).
+* Dodano tłumaczenie niemieckie (niekompletne).
 
 # Wersja 3.3 #
 * Added the measure of the speed of wind in meters per second.
 * Modified the encode in "mbcs";
 	* This permits to use also the diacritical marks in the city names.
 
-# Version 3.2 #
+# Wersja 3.2 #
 * Updated the reading of the weather forecast, current weather report and reading of the date of the current weather report;
 	* Yahoo weather forecast, from a bit of time and in random amounts, allows it to pass a historic from -10 to -5 days of weather forecast to be inserted between the updated data that we want to read;
 	* It was added a filter that allows you to read only the last weather data updated, and a discreet beep alerts when it intervenes;
@@ -719,7 +719,7 @@ called recursively.
 * Added 55 new sound effects;
 	* It will be necessary to update them from the settings of the plugin.
 
-`#`Changes to the Weather Plus Settings window:
+`#`zmiany dla okna ustawie Wather plus:
 
 * Fixed display help on the buttons;
 	* Now disables / enables real-time through the appropriate check box.
@@ -747,7 +747,7 @@ called recursively.
 * Added scriptCategory which shifts in the correct position the rapid keys
   of Weather Plus in "Input gestures..."
 
-`#`Changes to the Weather Plus Settings window:
+`#`zmiany dla okna ustawie Wather plus:
 
 * Added radio button to set how to indicate the temperature scale;
 	* The choice is between:
@@ -768,8 +768,8 @@ called recursively.
 # Wersja 2.9 #
 * Added option when importing to select the contents of the imported file.
 * Four new sounds effects were added.
-* Adding translation into Russian (thanks to Alex Yeshanu).
-* Adding translation into Czech (thanks to Jirimu Holzingerovi).
+* Dodano tłumaczenie rosyjskie i ukraińskie (dziękuję Alex Yeshanu).
+* Dodano czeskie tłumaczenie (dziękuję Jiri Holzinger).
 
 # Wersja 2.8 #
 * Fixed bug in "details", it used to open the window of the occurrences when
@@ -793,7 +793,7 @@ called recursively.
 * Added ability to read the Astronomic informations;
 	* Time of sunrise and sunset.
 
-`#`Changes to the Weather Plus Settings window:
+`#`zmiany dla okna ustawie Wather plus:
 
 * Added 3 check boxes to manage their information listed above.
 * Added button " Details ";
@@ -821,7 +821,7 @@ called recursively.
   the list.
 * Added new strings to the list weather reports.
 
-`#`Changes to the Weather Plus Settings window:
+`#`zmiany dla okna ustawie Wather plus:
 
 * Added button to open a research web page in order to check for the
   world-wide Zip Codes.
@@ -835,9 +835,9 @@ called recursively.
   unrestrained when it is open.
 
 # Wersja 2.4.4 #
-* Added 2 new strings to the list weather reports.
-* Adding translation into Spanish and French (thanks to Pablo Vargas and
-  Rémy Ruiz).
+* Dodano 2 nowe ciągi znaków do listy prognoz.
+* Dodano hiszpańskie i włoskie tłumaczenie (dziękuję Pablo Vargas i Rémy
+  Ruiz).
 
 # Wersja 2.4.3 #
 * Adding up the weather forecast for the next 4 days.
@@ -880,12 +880,12 @@ called recursively.
 * Weather menu added in the System Tray.
 * added setting submenu Zip Code .
 * added sub-setting temperature scale (Fahrenheit or Celsius).
-* added menu Documentation.
-* Added Italian localization.
+* Dodano meni rozwijane pomoc.
+* Dodano tłumaczenie włoskie.
 
-# Previous Version 1.1 #
-* updated NVDA-addon.
-* provisional translation inside the source.
+# Wersja poprzednia 1.1 #
+* Zaktualizowano dodatek.
+* Pierwotne tłumaczenie w kodzie źrudłowym.
 
 --------------------------------------------------------------------------------
 

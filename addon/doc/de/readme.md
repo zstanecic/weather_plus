@@ -60,7 +60,7 @@ Wählen Sie:
 
 # Einstellungen und Stadtverwaltung... #
 
-Zeigt das Einstellungsfenster für Wetter Plus an.
+Zeigt die aktuelle Stadt oder erlaubt es, diese aus einer Liste auszuwählen
 
 Die folgende Meldung wird nur zum ersten Mal angezeigt!
 
@@ -208,7 +208,7 @@ standardmäßig aktiviert
 
 standardmäßig aktiviert
 
-# Read wind information #
+# Windinformationen lesen #
 
 standardmäßig nicht aktiviert
 
@@ -234,7 +234,7 @@ standardmäßig aktiviert
 
 standardmäßig aktiviert
 
-# Read atmospherical information #
+# Atmosphärische Informationen lesen #
 
 standardmäßig nicht aktiviert
 
@@ -266,7 +266,7 @@ standardmäßig aktiviert
 
 standardmäßig aktiviert
 
-# Read astronomical information #
+# Astronomische Informationen lesen #
 
 Gibt die Zeit des  Sonnenauf- und Untergangs an.
 
