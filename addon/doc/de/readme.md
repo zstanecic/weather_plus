@@ -401,19 +401,19 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 `#` Änderungen im Fenster "Weather Plus-Einstellungen":
 
 * Altes Kontrollfeld "Status des Luftdrucks ausgeben" entfernt.
-* Ersetzt durch neues Kontrollkästchen "Trübung ausgeben";
-	* Es gibt Ihnen den Prozentsatz der Trübung.
-* Neues Kontrollkästchen "Niederschlagswert ausgeben" hinzugefügt.
-	* Es gibt Ihnen die Menge in Millimetern des Niederschlags.
-* altes Kontrollkästchen zum Anzeigen des Wartens mit einem Piepton entfernt;
-	* Standardmäßig aktiviert.
-* Zeit von Mondaufgang und Monduntergang zu den astronomischen Informationen hinzugefügt.
-* Neuer Schalter "Umbenennen" hinzugefügt;
-	* Städte bequemer umbenennen.
-* Verbesserte Funktion des "Test" Schalters;
-	* Akzeptiert nun einige Befehle, um die Suche nach Städten zu erleichtern.
-	* Diese neuen Befehle sind in der Hilfefunktion beschrieben, die mit F1 aufgerufen werden kann.
-* Schalter zum Verwalten Ihres API-Schlüssels hinzugefügt
+* Replaced with new checkbox "Add cloudiness value";
+	* It gives you the percentage of cloudiness.
+* Added new checkbox "Add precipitation value";
+	* It gives you the amount in millimeters of precipitation.
+* Removed old checkbox "Indicates the wait with a beep while you search for the latest bulletin";
+	* Left active by default.
+* Added to the Astronomic information;
+	* Time of moonrise and moonset.
+* Added new button "Rename";
+	* To rename cities more conveniently.
+* Improved function of the "Test" button;
+	* Now accept some commands to facilitate the search for cities;
+	* These new commands are described in the help function that can be called up with F1.
 
 # Version 4.8 #
 `#` Änderungen im Fenster "Weather Plus-Einstellungen":
@@ -797,24 +797,24 @@ Control + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = Rückwärts suchen.
 Steuerung + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = rückwärts suchen.
 
 # Version 2.7 #
-* Falscher Name einer Zeichenkette "Motorcycle" korrigiert in "Motorcycle00";
-	* Es wurde nach einer Aktualisierung der Soundeffekte gebeten, da die Datei nicht gefunden werden konnte.
-* Zusätzliche Fähigkeit, Windinformationen zu lesen;
-	* Richtung, Geschwindigkeit und Temperatur des Windes.
-* Fähigkeit, atmosphärische Informationen zu lesen;
-	* Luftfeuchtigkeit, Sicht, Luftdruck und Status des Luftdrucks.
-* Zusätzliche Fähigkeit zum Lesen der astronomischen Informationen;
-	* Zeitpunkt des Sonnenauf- und Untergangs.
+* Fixed wrong name of a string "Motorcycle" in "Motorcycle00";
+	* He asked updated sound effects because they could not find the file.
+* Added ability to read about wind ;
+	* Direction, speed and temperature of the wind.
+* Added ability to read atmospherical information;
+	* Humidity, visibility, pressure and state of the barometric pressure.
+* Added ability to read the Astronomic information;
+	* Time of sunrise and sunset.
 
 `#`Änderungen im Fenster Weather Plus Einstellungen:
 
 * 3 Kontrollkästchen hinzugefügt, um die oben aufgeführten Informationen zu
   verwalten.
-* Schaltfläche "Details" hinzugefügt;  
-	* Bietet einige Informationen wie den tatsächlichen Namen der Stadt (von Yahoo Wetterprognose zugewiesen), den Staat / die Region und die Nation, zu der sie gehört;
-	* Mit geografischen Koordinaten und Höhe über dem Meeresspiegel.
-* Erkennung von WoeID (Ortscodes, zB Bologna entspricht 711080).
-* Jetzt können Sie den Namen der Stadt eingeben. In diesem Fall werden die Vorkommen aufgelistet und Sie können wählen.
+* Added button " Details ";
+	* Provides some information such as the real name of the city ( assigned by Yahoo Weather Forecast), the state / region and the nation to which it belongs;
+	* With geographic coordinates, and height above sea level.
+* Added recognition of WoeID (location codes, eg. Bologna it corresponds to 711080).
+* Now you can type the name of the city, in this case, if any, the occurrences will be listed and you will be able to choose.
 
 # Version 2.6 #
 * Die Funktionen der Schaltflächen "Hinzufügen" und "Entfernen" wurden in der Listenverwaltung der Postleitzahl optimiert;

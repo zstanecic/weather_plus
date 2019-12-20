@@ -390,19 +390,19 @@ aínda podes gardalo.
 `#`Cambios na xanela de Configuración do Weather Plus:
 
 * Eliminada a vella caixa de verificación "Estado da presión barométrica".
-* Remplazada cunha nova caixa de verificación "Engadir valor de nubosidade";
-	* Proporciónalle o valor de nubosidade.
-* Engadida nova caixa de verificación "engadir valor de precipitación";
-	* Proporciónalle a cantidade de percipitación en milímetros.
-* eliminada a vella caixa de verificación "Indica a agarda cun pitido mentres se procura a última predición";
-	* Deixada activa por defecto.
-* Engadido á información astronómica;
-	* Hora da saída e posta da lúa.
-* Engadida novo botón "Renomear";
-	* Para renomear cidades máis facilmente.
-* Mellorada a función do botón "Probar";
-	* Agora acepta algúns comandos para facilitar a busca de cidades;
-	* Estes novos comandos descríbense na función de axuda que se pode invocar premendo F1.
+* Replaced with new checkbox "Add cloudiness value";
+	* It gives you the percentage of cloudiness.
+* Added new checkbox "Add precipitation value";
+	* It gives you the amount in millimeters of precipitation.
+* Removed old checkbox "Indicates the wait with a beep while you search for the latest bulletin";
+	* Left active by default.
+* Added to the Astronomic information;
+	* Time of moonrise and moonset.
+* Added new button "Rename";
+	* To rename cities more conveniently.
+* Improved function of the "Test" button;
+	* Now accept some commands to facilitate the search for cities;
+	* These new commands are described in the help function that can be called up with F1.
 
 # Versión 4.8 #
 `#`Cambios na xanela de Configuración do Weather Plus:
@@ -787,24 +787,24 @@ Zona ártica
 	* Control + F3 = Buscar ..., F3 = Buscar seguinte, Maiús + F3 = Buscar anterior.
 
 # Versión 2.7 #
-* Corrixido o nome incorrecto dunha cadea "Motorcycle" en "Motorcycle00";
-	* Pediu efectos de son actualizados porque non puideron atopar o ficheiro.
-* Engadido a capacidade de ler sobre o vento;
-	* Dirección, velocidade e temperatura do vento.
-* Engadido capacidade para ler información atmosférica;
-	* Humidade, visibilidade, presión e estado da presión barométrica.
-* Engadido a capacidade de ler as informacións astronómicas;
-	* Hora do amencer e do pór do sol.
+* Fixed wrong name of a string "Motorcycle" in "Motorcycle00";
+	* He asked updated sound effects because they could not find the file.
+* Added ability to read about wind ;
+	* Direction, speed and temperature of the wind.
+* Added ability to read atmospherical information;
+	* Humidity, visibility, pressure and state of the barometric pressure.
+* Added ability to read the Astronomic information;
+	* Time of sunrise and sunset.
 
 `#`Cambios na ventá de Opcións do Weather Plus:
 
 * Engadíronse 3 caixas de verificación para xestionar a súa información
   anterior.
-* Engadido o botón "Detalles";
-	* Ofrece algunhas informacións como o nome real da cidade (asignado por Yahoo Weather Forecast), o estado / rexión e a nación á que pertence;
-	* Con coordenadas xeográficas e altura sobre o nivel do mar.
-* Engadido recoñecemento de WoeID (códigos de localización, por exemplo Bologna corresponde a 711080).
-* Agora pode escribir o nome da cidade, neste caso, se o houbera, a aparición da lista e poderá elixir.
+* Added button " Details ";
+	* Provides some information such as the real name of the city ( assigned by Yahoo Weather Forecast), the state / region and the nation to which it belongs;
+	* With geographic coordinates, and height above sea level.
+* Added recognition of WoeID (location codes, eg. Bologna it corresponds to 711080).
+* Now you can type the name of the city, in this case, if any, the occurrences will be listed and you will be able to choose.
 
 # Versión 2.6 #
 * As funcións dos botóns "Engadir" e "Eliminar" foron optimizadas na xestión de listas do código postal;

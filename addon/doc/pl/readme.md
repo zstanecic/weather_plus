@@ -391,19 +391,19 @@ Ci o zmianach na liście i umożliwi jej zapisanie.
 `#`Zmiany w oknie ustawień Weather Plus:
 
 * Usunięto stare pole wyboru "Stan ciśnienia barometrycznego".
-* Zostało ono zastąpione nowym polem wyboru "Dodaj wartość zachmurzenia";
-	* Dzięki niemu dodatek pokazuje wielkość zachmurzenia w procentach.
-* Dodano nowe pole wyboru "Dodaj wartość opadów";
-	* Podaje ono ilość opadów w milimetrach.
-* Usunięto stare pole wyboru "Oznajmia sygnałem dźwiękowym wyszukiwanie najnowszej prognozy pogody";
-	* Domyślnie jest to aktywne.
-* Dodano do informacji astronomicznych;
-	* Czas wschodu i zachodu księżyca.
-* Dodano nowy przycisk "Zmień nazwę";
-	* Pozwala on na wygodniejsze zmienianie nazw miast.
-* Ulepszono funkcjonalność przycisku "Testuj";
-	* Wprowadzono kilka nowych poleceń, które ułatwiają wyszukiwanie miast;
-	* Polecenia te są opisane w pomocy, którą można wywołać klawiszem F1.
+* Replaced with new checkbox "Add cloudiness value";
+	* It gives you the percentage of cloudiness.
+* Added new checkbox "Add precipitation value";
+	* It gives you the amount in millimeters of precipitation.
+* Removed old checkbox "Indicates the wait with a beep while you search for the latest bulletin";
+	* Left active by default.
+* Added to the Astronomic information;
+	* Time of moonrise and moonset.
+* Added new button "Rename";
+	* To rename cities more conveniently.
+* Improved function of the "Test" button;
+	* Now accept some commands to facilitate the search for cities;
+	* These new commands are described in the help function that can be called up with F1.
 
 # Wersja 4.8 #
 `#`Zmiany w oknie ustawień Weather Plus:
@@ -637,49 +637,49 @@ called recursively.
 * Ciśnienie barometryczne mierzone w milibarach, lub w calach słupa rtęci gdy temperatura jest podawana w stopniach Farenhajta.
 
 # Wersja 3.8 #
-* Changed the  data package API;
-	* From the xml format to JSON format, the data are more accurate, especially the time zone.
-* Enabled the automatic setting of the language;
-	* Now the API sends the data of the weather conditions in the language set by nvda.
-* Adding a cache for bulletin and weather forecasts;
-	* If not changed the city, degree scale or the days of forecast set, you will be able to read the data for 10 minutes even when connection off-line.
-	* The cache is reset at each change described above.
-	* This is because the bulletins do not change in this period of time and to reduce the frequent calls to the API, maybe playing with sound effects.
-* Improved search updates;
-	* Now once downloaded, It will be  activated to its installation, or in the case of a portable version of nvda It will be opened the folder where you saved the update.
-* Updated all sounds general notice;
-	* Is no longer used the module "tones", but are used small files in WAV format.
+* Zmieniono pakiet danych API;
+	* Po zmianie formatu z xml na JSON dane są bardziej precyzyjne, zwłaszcza strefa czasowa.
+* Włączone zostało automatyczne ustawianie języka;
+	* API przesyła teraz dane warunków pogodowych w języku aktualnie ustawionym w nvda.
+* Dodano pamięć podręczną dla prognoz pogody;
+	* Jeśli miasto, skala temperatury, lub ustawione dni prognozy nie zostały zmienione, Można będzie odczytać dane do 10 minut, nawet gdy nie ma połączenia z internetem.
+	* Pamięć podręczna jest resetowana po każdej zmianie opisanej powyżej.
+	* Wszystkie te zmiany wprowadzono, aby zapewnić dostęp do starszych prognoz pogody, jeśli nie zmieniają się one z upływem czasu. Zmniejszy to także liczbę wywołań API, co powstrzyma bawienie się efektami dźwiękowymi.
+* Ulepszono wyszukiwanie aktualizacji;
+	* Po pobraniu aktualizacji, zostanie ona zainstalowana. W wersji przenośnej nvda otworzy się folder, w którym aktualizacja została zapisana przez użytkownika.
+* Zaktualizowano wszystkie dźwięki;
+	* Moduł "tones" nie jest już używany i został zastąpiony małymi plikami w formacie WAV.
 
 # Wersja 3.7 #
-* Added possibility to disable the conversion in meters per second of the
-  wind.
-* Added possibility to use units of measure in pounds per square inch.
+* Dodano możliwość wyłączenia zamiany prędkości wiatru na metry na sekundę.
+* Dodano możliwość używania jednostek pomiaru takich jak funty na cal
+  kwadratowy.
 * Naprawiono 2 błędy.
 
 # Wersja 3.6 #
-* Changed the API service (application programming interface);
-	* Now WP uses the service offered by OpenWeatherMap.org instead of Yahoo Weather.com.
-* Added Wind classification in the current bulletin.
-* Added a  cloudiness percentage  in the current bulletin.
-* Adopted the units of pressure measurement in hectopascal in the current bulletin.
+* Zmieniono serwis API (application programming interface);
+	* WP korzysta teraz z usług dostarczanych przez OpenWeatherMap.org a nie Yahoo Weather.com.
+* Dodano klasyfikację wiatru w aktualnej prognozie.
+* Dodano procent zachmurzenia w aktualnej prognozie.
+* Przyjęto jednostkę pomiaru ciśnienia w hektopaskalach w aktualnej prognozie.
 
 `#`zmiany dla okna ustawie Wather plus:
 
-* Changed insertion/search from yahoo zipcode/woeId in ID number, Identifier of the city;
-	* ID numbers city are similar to woeid, but the woeId will no longer work, even the old zipcode.
-	* You will be able to rediscover a great part of the cities by typing the name or part of it.
-* Added insertion/Search for geographical coordinates.
-* Added insertion/search by postal code.
-* Improved the function "details".
-* assigned to F1 key the entry/search help.
-* assigned to F4 key the controls to the forecasts from 1 to 16 days set;
-	* Attention, if you choose to copy to the clipboard a value greater than 10, it will not be read!
-* Assigned F5 key for audio controls.
-* Adding measurement scale degrees Kelvin.
-* Added check for updates;
-	* You can set the control by settings or check manually from menu.
-* reassigned the button "Find your city" in "Management of your API Key...";
-	* Allows you to enter or change the key-API.
+* Zmieniono dodawanie/wyszukiwanie z yahoo zipcode/woeId za pomocą identyfikatora miasta;
+	* Identyfikatory miasta są podobne do woeid, ale woeId przestaje już działać nawet ze starymi kodami pocztowymi.
+	* Można będzie odzyskać większość miast wpisując nazwę danego miasta, lub jej część.
+* Dodane zostało dodawanie/wyszukiwanie współrzędnych geograficznych.
+* Dodane zostało dodawanie/wyszukiwanie po kodzie pocztowym.
+* Ulepszono funkcję "details".
+* Klawisz F1 został przypisany do wpisywania pomocy dotyczącej miast.
+* Klawisz F4 został przypisany do ustawiania terminu prognoz od 1 do 16 dni;
+	* Uwaga! Jeśli skopiujesz do schowka wartość większą niż 10, nie zostanie ona odczytana!
+* Klawisz F5 został przypisany do regulowania głośności.
+* Dodano skalę pomiaru temperatury w stopniach Kelwina.
+* Dodano sprawdzanie aktualizacji;
+	* Można zaznaczyć pole wyboru do automatycznego sprawdzania aktualizacji, lub sprawdzić ręcznie w menu.
+* Przycisk "Znajdź miasto" w grupie "Zarządzanie kluczem API...";
+	* Umożliwia wprowadzenie lub zmianę klucza API.
 
 # Wersja 3.5 #
 * Dodano tłumaczenie chorwackie (dziękuję Gordan Radić).
@@ -788,16 +788,16 @@ called recursively.
 	* He asked updated sound effects because they could not find the file.
 * Added ability to read about wind ;
 	* Direction, speed and temperature of the wind.
-* Added ability to read atmospherical informations;
+* Added ability to read atmospherical information;
 	* Humidity, visibility, pressure and state of the barometric pressure.
-* Added ability to read the Astronomic informations;
+* Added ability to read the Astronomic information;
 	* Time of sunrise and sunset.
 
 `#`zmiany dla okna ustawie Wather plus:
 
 * Added 3 check boxes to manage their information listed above.
 * Added button " Details ";
-	* Provides some informations such as the real name of the city ( assigned by Yahoo Weather Forecast), the state / region and the nation to which it belongs;
+	* Provides some information such as the real name of the city ( assigned by Yahoo Weather Forecast), the state / region and the nation to which it belongs;
 	* With geographic coordinates, and height above sea level.
 * Added recognition of WoeID (location codes, eg. Bologna it corresponds to 711080).
 * Now you can type the name of the city, in this case, if any, the occurrences will be listed and you will be able to choose.

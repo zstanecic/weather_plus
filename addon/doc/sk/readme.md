@@ -389,19 +389,19 @@ zapamätaní a môžete ho uložiť.
 `#`Zmeny v okne nastavenia Weather Plus:
 
 * Odobraté staré začiarkávacie pole "Stav barometrického tlaku".
-* Nahradené novým začiarkávacim poľom "Pridať hodnotu oblačnosti";
-	* Percentuálne vyjadrí úroveň oblačnosti.
-* Pridané nové začiarkávacie pole "Pridať hodnotu zrážok";
-	* Vyjadruje úhrn zrážok v milimetroch.
-* Odobraté staré začiarkávacie pole "Indikujúce čakanie sprevádzané pípaním počas hľadania poslednej správy";
-	* Štandardne je aktívne vľavo.
-* Pridané k astronomickým informáciam;
-	* Čas východu a západu mesiaca.
-* Pridané nové tlačidlo "Premenovať";
-	* Umožní premenovať mestá pohodlňejšie.
-* Zlepšená funkcia tlačidla "Testovanie";
-	* Teraz sú akceptované niektoré príkazy na uľahčenie vyhľadávania miest;
-	* Tieto nové príkazy sú popísané vo funkcii nápovedy, ktorú je možné spustiť pomocou F1.
+* Replaced with new checkbox "Add cloudiness value";
+	* It gives you the percentage of cloudiness.
+* Added new checkbox "Add precipitation value";
+	* It gives you the amount in millimeters of precipitation.
+* Removed old checkbox "Indicates the wait with a beep while you search for the latest bulletin";
+	* Left active by default.
+* Added to the Astronomic information;
+	* Time of moonrise and moonset.
+* Added new button "Rename";
+	* To rename cities more conveniently.
+* Improved function of the "Test" button;
+	* Now accept some commands to facilitate the search for cities;
+	* These new commands are described in the help function that can be called up with F1.
 
 # Verzia 4.8 #
 `#`Zmeny v okne nastavenia Weather Plus:
@@ -781,23 +781,23 @@ Priečinok Public links sa od 15. marca stane neaktívnym.
 	* Control+F3 = nájsť..., F3 = Nájsť ďalší, Shift+F3 = Nájsť predchádzajúci.
 
 # Verzia 2.7 #
-* Oprávený názov reťazca "Motorcycle" in "Motorcycle00";
-	* Program nemohol nájsť súbor s inštaláciou zvukových efektov.
-* Pridaná možnosť ohlasovania informácií o vetre;
-	* Smer, rýchlosť a teplota vetra.
-* Pridaná možnosť ohlasovania informácií o atmosfére;
-	* Vlhkosť, viditeľnosť, tlak a stav barometrického tlaku.
-* Pridaná možnosť ohlasovania informácíí o atmosfére
-	* Čas, kedy vychádza a zapadá slnko.
+* Fixed wrong name of a string "Motorcycle" in "Motorcycle00";
+	* He asked updated sound effects because they could not find the file.
+* Added ability to read about wind ;
+	* Direction, speed and temperature of the wind.
+* Added ability to read atmospherical information;
+	* Humidity, visibility, pressure and state of the barometric pressure.
+* Added ability to read the Astronomic information;
+	* Time of sunrise and sunset.
 
 `#`Zmeny v nastaveniach v okne doplnku Weather Plus:
 
 * Pridané 3 začiarkavacie políčka na úpravu nových nastavení viď. nižšie.
-* Pridané tlačidlo podrobnosti o meste ";
-	* Poskytuje nejaké informácie, napr. úplný názov mesta, ( Podľa služby Yahoo Weather Forecast), štát / región a národnosť, ku ktorej patrí ;
-	* S geografickými koordinátmi, a informáciou o nadmorskej výške.
-* Pridané rozpoznávanie WoeID identifikačného kódu. napr. mesto Bologna tomu napr. zodpovedá 711080).
-* Teraz môžete napísať názov mesta a ak sa nájdu nejaké, zobrazí sa zoznam a môžete si vybrať.
+* Added button " Details ";
+	* Provides some information such as the real name of the city ( assigned by Yahoo Weather Forecast), the state / region and the nation to which it belongs;
+	* With geographic coordinates, and height above sea level.
+* Added recognition of WoeID (location codes, eg. Bologna it corresponds to 711080).
+* Now you can type the name of the city, in this case, if any, the occurrences will be listed and you will be able to choose.
 
 # Verzia 2.6 #
 * The Funkcie tlačidiel pridať a odobrať boli optimalizované;
