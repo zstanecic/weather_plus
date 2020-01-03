@@ -11,279 +11,165 @@
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Vydané pod GNU GPL (General Public License) v2
 
-# Služba Weather Plus funguje prostredníctvom a za prítomnosti nasledujúcich služieb: #
+* Služba Weather Plus funguje prostredníctvom a za prítomnosti nasledujúcich
+  služieb:
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
 * [http://woeid.rosselliot.co.nz/lookup/](http://woeid.rosselliot.co.nz/lookup/)
 * [http://www.geonames.org/](http://www.geonames.org/)
 * [http://veloroutes.org/elevation/](http://veloroutes.org/elevation/)
 * [http://www.nvda.it/](http://www.nvda.it/)
 
-# POUŽITIE: #
-* Stlačte NVDA + w pre aktuálnu teplotu a poveternostné podmienky.
-* Stlačte NVDA + shift + W pre predpoveď na 24 hodín až 9 dní.
-* Stlačte NVDA + shift + ctrl + w pre nastavenie dočasného mesta.
+# USAGE: #
+* Press NVDA+w to get the information about current temperature and weather
+  conditions.
+* Press NVDA+shift+W to get 24 hours forecast and forecast up to 9 days.
+* Press NVDA+shift+ctrl+w to set a temporary city.
 * Stlačte NVDA + shift + control + alt + w na otvorenie dialógu s
   Nastaveniami Weather Plus.
-* Stlačte NVDA + alt + w na zistenie poslednej aktualizácie správy o počasí.
-* Stlačením ctrl+ shift + w prepínate medzi stupňami Fahrenheita, Celsia
-  alebo Kelvina.
+* Press NVDA+alt+w to get the date and time, when the weather report was
+  updated.
+* Press control+shift+w to toggle between Fahrenheit, Celsius or Kelvin
+  temperature scales.
 
-# Nastavenia Weather Plus: #
-Prečítajte si časť: Weather Plus Prvotné nastavenia.
+# Weather Plus setup: #
 
---------------------------------------------------------------------------------
+* You must set the Weather Plus addon before its first use! Go to the
+  Preferences submenu, Weather Plus Settings submenu and choose one of the
+  following options:
 
-# Weather Plus Prvotné nastavenia: #
 
-Pred prvotným použitím musíte doplnok Weather Plus nastaviť!
-
-Prejdite do:
-
-Možnosti podmenu:
-
-nastavenia doplnku Počasie podmenu
-
-Zobraziť položky nastavenia.
-
-# Stlačte položku: #
-
-* Nastaviť a ovládať kód mesta...
-	* Zobrazí sa alebo umožní nastaviť aktuálne mesto zo zoznamu.
-* Nápoveda
-* Otvorí súbor pomocníka pre aktuálny jazyk.
-* Kontrola aktualizácie ...
-* Oznámi, či je k dispozícii aktualizácia.
+* Set and Manage Your Cities... - Displays or allows to set the current city
+  from a list.
+* Documentation - opens the help file for the current language.
+* Check for Update... - notifies about the availability of the new version.
 
 Stlačte položku:
 
-# Nastaviť a ovládať  kód mesta ... #
+* Set and Manage Your Cities... Displays or allows to set the current city
+  from a list
 
-Zobrazí alebo povolí nastavenie aktuálneho mesta zo zoznamu
+* The following message is displayed only for the first time! Settings
+  Preset None F1: help placing, F2: last TAB selection, F3: list and edit
+  box, F4: control duration Weather Forecast, F5: volume controls.
 
-Nasledujúca správa sa zobrazí iba prvýkrát!
+* In the edit box, enter a City, woeID or choose one from the list, if
+  available. Note: The F5 key is available if the sound effects are
+  activated.
 
-Nastavenia predvolené mesto
+* After pressing enter on the item "Set and Manage Your Cities...", you will
+  find other buttons as follows:
 
-Nič
+* Test - testing the validity of woeID entry and find the name of city
+  assigned or vice versa.
 
-F1: nápoveda o umiestnení, F2: posledný výber TAB, F3: zoznam a edit pole,
-F4: ovládanie dĺžky predpovede počasia, F5: ovládanie hlasitosti.
+* Add - adds the current city into your list. This button can be activated
+  if you select a city from the list, when the city entered passed the test.
 
-Zadajte mesto, WoeID alebo vyberte jedno zo zoznamu, ak je k dispozícii.
+* Details - displays information about the current city. This button is
+  activated if you select a city from the list, or it has passed the test.
 
-Poznámka: Klávesa F5 je dostupná, iba ak sú aktivované zvukové efekty.
+* Define - Allows you to define the area, in order to adapt the sound
+  effects. This button can be activated if the audio effects are installed
+  and activated, and you select a city from the list.
 
-Po stlačení položky „Nastaviť a ovládať kód mestá ...“ môžete prechádzať
-nasledujúcimi tlačidlami:
+* Preset - Presets a city as the default, will be used every time you
+  restart the plugin. This button is activated if you select a city
+  previously inserted in the list and not preset, or it has passed the test.
 
-# Testovanie #
+* Remove - Deletes the current city from your list. This button can be
+  activated if you select a city previously inserted in the list.
 
-Slúži na testovanie platnosti kódu daného mesta, a nachádza k nemu priradený
-názov a naopak.
+* Rename - Rename the current city. This button can be activated if you
+  select a city previously inserted in the list.
 
-# Pridať #
+* Import new cities... - This button allows you to import cities from the
+  another list of cities with the extension *.zipcodes; you can select the
+  city you want to import, by turning on the check box associated with it.
 
-Pridá aktuálne mesto do zoznamu.
+* Export your cities... - It allows you to save the cities in the specified
+  file with the extension *.zipcodes. This button is activated if you have
+  added and saved at least one city into the list.
 
-Toto tlačidlo je aktívne, ak vyberiete mesto zo zoznamu, alebo ak prešlo
-testovaním.
+* Scale of temperature measurement: Use the radio button to select between
+  Celsius (by default), Fahrenheit and Kelvin.
 
-# Podrobnosti #
+* Degrees shown as: Use the radio button to select between: Celsius `-`
+  Fahrenheit `-` Kelvin (by default C `-` F `-` K or Don't specify.
 
-Zobrazí informácie o aktuálnom meste.
+* Combo box: Weather Forecasts up to days: 3 You can choose between 1 to 10
+  (3 days by default)
 
-Toto tlačidlo je aktívne, ak vyberiete mesto zo zoznamu, alebo ak prešlo
-testovaním.
+* To perform the following actions, toggle the following checkboxes:
 
-# Definovať #
+* Copy the weather report and weather forecast, including city details to
+  clipboard check box not checked (by default)
 
-Umožňuje definovať oblasť pre prispôsobenie zvukových efektov.
+* Enable audio effects (only for the current weather conditions) This check
+  box also allows you to manage the installation of sound effects; If the
+  sound effects are installed and the check box is activated, the F5 key and
+  the volume setting becomes available.
 
-Toto tlačidlo je aktívne, ak sú zvukové efekty nainštalované a aktivované a
-ak je vybraté mesto zo zoznamu.
+* There will also be available an additional check box: Use only weather
+  effects.
 
-# Predvolené mesto #
+* You can change the overall volume or change the last heard sound effect
+  and filter out the others sounds in your environment. Checkbox is not
+  checked by default.)
 
-Nastaví mesto ako predvolené, použije sa ako predvolené po každom
-reštartovaní pluginu.
+* Use only weather effects - This option is available if sound effects are
+  enabled; If is enabled, allows to listen only weather effects such as
+  rain, wind, thunder, etc., filtering out all environmental
+  ones. (unchecked by default)
 
-Tlačidlo je aktívne v prípade vybratého mesta, ktoré ste predtým pridali a
-uložili do zoznamu a prešlo testovaním.
+* Enable the reading of the hours in 24-hour format. - If this checkbox is
+  unchecked, announces the time in 12-hour format for example, 12 AM `-` 12
+  PM. check box is checked (by default)
 
-# Odobrať #
+* Enable help buttons in the settings window check box checked (by default)
 
-Odstráni aktuálne mesto zo zoznamu.
+* Read wind information check box not checked (by default) If this checkbox
+  is enabled, you can also activate:
 
-tlačidlo je aktívne v prípade vybratého mesta, ktoré ste predtým pridali a
-uložili do zoznamu.
+* Add wind direction; Indicates the provenance of the wind. check box
+  checked (by default)
 
-# Premenovať #
+* Add speed of the wind; Indicates the speed in kilometers or miles per
+  hour. check box checked (by default)
 
-Premenuje aktuálne mesto.
+* Add speed in meters per second of the wind; check box checked (by default)
 
-tlačidlo je aktívne v prípade vybratého mesta, ktoré ste predtým pridali a
-uložili do zoznamu.
+* Add perceived temperature; check box checked (by default)
 
-# Importovať nové mestá ... #
+* Read atmospherical information check box not checked (by default) If
+  enabled, you can also activate:
 
-Umožňuje zahrnúť do zoznamu nové mestá, ktoré sú importované z iného zoznamu
-s príponou * .zipcodes; začiarknutím začiarkavacieho poľa môžete vybrať
-mesto, ktoré chcete importovať.
+* Add humidity value; Indicates the humidity in percent. check box checked
+  (by default)
 
-# Exportovať mestá... #
+* Add visibility value; Indicate in kilometres or miles the distance
+  visible. check box checked (by default)
 
-Povolí uloženie zoznamu miest do zvoleného umiestnenia
+* Add atmospheric pressure value; Indicates the atmospheric pressure in
+  millibars or inches of mercury. If it's checked, enable an additional
+  check box that allows you to indicate the pressure in millimeters of
+  mercury. check box checked (by default)
 
-Tlačidlo je aktívne v prípade pridania a uloženia aspoň jedného mesta do
-zoznamu.
+* Add status of barometric pressure; check box checked (by default)
 
-# Jednotky merania teploty #
+* Read astronomical information Indicates the time of sunrise and
+  sunset. check box not checked (by default)
 
-Vyberte si jednotky pomocou prepínača medzi:
+* Use the comma to separate decimals If enabled, uses the comma as a decimal
+  separator, otherwise, use the point. check box not checked (by default)
 
-* Celzius (predvolené)
-* Fahrenheit
-* Kelvin
+* Check for upgrade If is activated this alerts when there is an update of
+  the addon. check box checked (by default)
 
-# Stupne zobraziť ako: #
+* Stlačením tlačidla OK potvrďte akciu alebo tlačidlom Zrušiť akciu zrušte.
 
-Vyberte si jednotky pomocou prepínača medzi:
-
-* Celzius `-` Fahrenheit `-` Kelvin (predvolene)
-* C `-` F `-` K
-* Neurčovať
-
-Pole so zoznamom:
-
-# Predpoveˇˇď počasia na dní: 3 #
-
-Vyberte si medzi 1 až 10 (predvolene 3 dni)
-
-Začiarknite pole pre:
-
-# Skopírujte správu o počasí a predpoveď počasia, vrátane podrobností mesta do schránky #
-
-pole nezačiarknuté (predvolene)
-
-# Povoliť zvukové efekty (len pre aktuálne poveternostné podmienky) #
-
-Toto začiarkavacie pole tiež umožňuje spravovať inštaláciu zvukových
-efektov;
-
-Ak sú nainštalované zvukové efekty a pole je začiarknuté, klávesa F5 a
-nastavenie hlasitosti budú dostupné.
-
-K dispozícii bude aj ďalšie začiarkavacie pole:
-
-* Použite iba efekty počasia.
-
-Môžete zmeniť celkovú hlasitosť alebo zmeniť posledný zvukový efekt a
-odfiltrovať ostatné zvuky vášho prostredia.
-
-pole nezačiarknuté (predvolene)
-
-# Použite iba efekty počasia #
-
-je k dispozícii, ak sú zapnuté zvukové efekty;
-
-Ak je zapnuté, umožňuje počúvať iba poveternostné efekty, ako je dážď,
-vietor, hrom, atď., odfiltrujúc všetky efekty prostredia.
-
-pole nezačiarknuté (predvolene)
-
-# Povoliť 24-hodinový formát #
-
-Ak je vypnuté, oznámi čas v 12-hodinovom formáte, príklad: 12 AM `-` 12 PM.
-
-začiarkávacie pole začiarknuté (predvolene)
-
-# Zapnúť nápovedné popisky prvkov v okne pre nastavenia #
-
-začiarkávacie pole začiarknuté (predvolene)
-
-# Oznamovať informácie o vetre #
-
-pole nezačiarknuté (predvolene)
-
-Ak je povolené, môžete tiež aktivovať:
-
-* Pridať smer vetra;
-
-Udáva pôvod vetra
-
-začiarkávacie pole začiarknuté (predvolene)
-
-* Pridať rýchlosť vetra;
-
-Udáva rýchlosť v kilometroch alebo míľach za hodinu.
-
-začiarkávacie pole začiarknuté (predvolene)
-
-* Pridať rýchlosť vetra v metroch za sekundu;
-
-začiarkávacie pole začiarknuté (predvolene)
-
-* Pridať pocitovú teplotu;
-
-začiarkávacie pole začiarknuté (predvolene)
-
-# Oznamovať atmosférické informácie #
-
-pole nezačiarknuté (predvolene)
-
-Ak je povolené, môžete tiež aktivovať:
-
-* Pridať hodnotu vlhkosti;
-
-Udáva vlhkosť v percentách.
-
-začiarkávacie pole začiarknuté (predvolene)
-
-* Pridať hodnotu viditeľnosti;
-
-Udáva vzdialenosť viditeľnosti v kilometroch alebo míľach.
-
-začiarkávacie pole začiarknuté (predvolene)
-
-* Pridať hodnotu atmosférického tlaku;
-
-Udáva atmosférický tlak v milibaroch alebo palcoch ortuti.
-
-Ak je začiarknuté, zapnite ďalšie zaškrtávacie políčko, ktoré vám umožní
-označiť tlak v milimetroch ortuti.
-
-začiarkávacie pole začiarknuté (predvolene)
-
-* Pridať stav barometrického tlaku;
-
-začiarkávacie pole začiarknuté (predvolene)
-
-# Oznamovať astronomické informácie #
-
-Udáva čas východu a západu slnka.
-
-pole nezačiarknuté (predvolene)
-
-# Použiť čiarku ako oddeľovač desatinných miest #
-
-Ak je povolené, použije sa čiarka ako oddeľovač desatinných miest, inak sa
-použije bodka.
-
-začiarkávacie pole je nezačiarknuté (predvolene)
-
-# Kontrola aktualizácie #
-
-Ak je aktivované, ozve sa zvukové upozornenie, keď je dostupná aktualizácia
-doplnku.
-
-začiarkávacie pole začiarknuté (predvolene)
-
-# Stlačením tlačidla OK potvrďte akciu alebo tlačidlom Zrušiť akciu zrušte. #
-
-Ak ste zoznam miest zmenili, stlačením tlačidla „Zrušiť“ bude zoznam
-zapamätaní a môžete ho uložiť.
-
-# Poznámka: Vaše nastavenia sa uložia do súboru s názvom: #
+* If you have modified the cities list, by pressing "Cancel", you will be
+  remembered and you can still save it Note: your settings will be save in
+  the file named:
 
 * "Weather.ini": prvotné nastavenia Weather Plus.
 * "Weather.volumes": Vlastné nastavenie úrovne hlasitosti nezávisle na
@@ -302,69 +188,63 @@ zapamätaní a môžete ho uložiť.
 # Verzia 7.2 #
 * Opravená chyba po pridaní mesta, ak bolo zadané ako prvé, keď stlačíte
   tlačidlo ok a doplnok znova spustíte.
-* Teraz progressdialog opäť ukazuje zostávajúci čas a uplynutý čas.
+* Now the progress dialog show again the time remaining and time elapsed.
 * opravený taliansky preklad pomocou tlačidla Premenovať.
 
 # Verzia 7.1 #
-* Opravená chyba v nástroji Removeupdate () počas reštartu doplnku, ak je
-  súbor nastavený len na čítanie.
+* Fixed update bug.
 
 # Verzia 7.0 #
-* Vylepšené okno vyhľadávania, teraz je možné spravovať celý vložený
-  vyhľadávací kľúč, pridať, odstrániť a uložiť ho z kontextového menu.
+* Improved search window, now it is possible to manage all the search key
+  inserted, add, delete and save it from context menu.
 * Vylepšené ovládanie otvárania okien.
 * opravené drobné chyby.
 
 # Verzia 6.9 #
-
 * Implementovalo sa vyhľadávanie rekurzívnych miest pomocou platného
   systému, ktorý sa predtým používal vo verzii Weather_Plus Apixu.
-
-	* Stlačením klávesu f1 v okne nastavení získate vysvetlenie dostupných
-	  príkazov.
-
-* Opravený problém s odstránením niektorých modulov * .pyc, * .pyo počas
-  aktualizácie NVDA.
+* Stlačením klávesu f1 v okne nastavení získate vysvetlenie dostupných
+  príkazov.
 
 # Verzia 6.8 #
-
-* aktualizované označenie potrebné pre vetvy uvedené nižšie;
-
-	* nvda_snapshot_threshold a nvda_snapshot_threshold_py3_staging.
+* Updated compatibility for Python 3
 
 # Verzia 6.7 #
 * Opravená chyba pri testovaní nového mesta v dočasnom režime jednoduchým
   stlačením klávesu „Enter“ a neskorší pokus o pridanie pomocou tlačidla
   „Pridať“.
-* Do databázy bola pridaná skratka pre JUŽNÚ GEORGIU A JUŽNÉ SANDWICHOVÉ
-  OSTROVY, bohužiaľ v súčasnosti sa zdá, že mestá tohto štátu nefungujú
-  alebo nemajú úplné dáta, dúfame však, že toto sa čoskoro vyrieši.
+* Added abbreviation for SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS to the
+  database, but unfortunately at the moment it seems that the cities of this
+  state do not work or have incomplete data, we hope it will be solved soon.
 
 # Verzia 6.5 #
-* Opravených pár chýb pri prehrávaní zvukových efektov;
-	* pár "for" cyklov s nesprávnymi maximálnymi hodnotami zapríčinilo volanie na neexistujúci zvukový efekt.
-* Opravená chyba v lokálnom čase v "podrobnosti";
-	* premena 12-hodinového času spôsobovala chybu.
-* Opravená chyba pri predpovedi počasia služieb Yahoo ;
-	* V niektorých mestách sa predpovede začínajú od predchádzajúceho dňa a nie od aktuálneho.
-	* Korekcia pri týchto mestách znamená stratu posledných dní predpovede, ktorá je primeraná nesúladu termínov (ak sú prognózované dni nastavené na 10).
+* Fixed a couple of bugs in sound effects reproduction; a couple of "for"
+  cycles with incorrect maximum values caused the call to a non-existent
+  sound effect.
+* Fixed bug in local time in "details"; 12-hour time conversion gave a
+  error.
+* Fixed a bug in the Yahoo Weather Forecast report; In some cities the
+  forecasts start from the previous day and not from the current one. The
+  correction of these cities entails the loss of the last days of forecast
+  proportionate to the mismatch of dates (if the forecast days are set to
+  10).
 
 # Verzia 6.4 #
-* Letný čas bol odstránený vo funkcii "Podrobnosti" ;
-	* Služba používaná touto funkciou sa zmenila, takže bola odstránená.
-* Vylepšené prehrávanie zvukových efektov;
-	* Ak sa zmenia poveternostné podmienky, tak sa pravidelne aktualizujú.
+* Daylight saving time removed in the "Details" function; The service used
+  by this function has changed, so it has been removed.
+* Improved audio effects reproduction; Now they update regularly if the
+  weather conditions change.
 
 # Verzia 6.3 #
-* Opravené kódovanie znakov v okne výsledkov vyhľadávania.
-* Opravené kódovanie aj v detailnej správe.
+* Fixed encoding issues.
 
 # Verzia 6.2 #
 * Opravená chyba vo funkcii "Pridať".
 * Opravená chyba, ktorá pri spustení addonu nepriradila premennú "_volume".
-* Pridaný chýbajúci kód z verzie 6.0;
-	* Teraz môžete obnoviť uložené mestá z verzie, ktorá používa Apixu API;
-	* "Testovanie" a "Odstrániť" tlačidlá a nekompatibilné mestá sú k dispozícii vo formáte: "Ferrara, iter 44.83,11.58 0" (mesto, geografické súradnice, definovanie oblasti).
+* Added missing code from version 6.0; Now you can recover the saved cities
+  from the version that uses the Apixu API; The "Test" and "Remove" buttons
+  and non-compatible cities are available in the format: "Ferrara, iter
+  44.83,11.58 0" (city, geographic coordinates, area definition).
 
 # Verzia 6.1 #
 * Opravené 2 chyby.
@@ -373,7 +253,7 @@ zapamätaní a môžete ho uložiť.
 * Weather Plus sa vracia k používaniu Yahoo Weather API.
 * Prakticky všetky funkcie predchádzajúcej verzie 4.8 sú späť a je ponechané
   tlačidlo "Premenovať".
-* Teraz kompatibilný aj s Pythonom 3.
+* Compatibility with Python 3.
 
 # Verzia 5.0.1 #
 * Opravená chyba, ktorá vracala prázdny reťazec pri rýchlosti vetra 0 míľ za
@@ -386,85 +266,82 @@ zapamätaní a môžete ho uložiť.
 * Weather Plus teraz využíva APIXU API, podľa môjho názoru je táto služba
   lepšia ako v predchádzajúcej verzii.
 
-`#`Zmeny v okne nastavenia Weather Plus:
+# Changes in the Weather Plus Settings window: #
 
-* Odobraté staré začiarkávacie pole "Stav barometrického tlaku".
-* Nahradené novým začiarkávacim poľom "Pridať hodnotu oblačnosti";
-	* Percentuálne vyjadrí úroveň oblačnosti.
-* Pridané nové začiarkávacie pole "Pridať hodnotu zrážok";
-	* Vyjadruje úhrn zrážok v milimetroch.
-* Odobraté staré začiarkávacie pole "Indikujúce čakanie sprevádzané pípaním počas hľadania poslednej správy";
-	* Štandardne je aktívne vľavo.
-* Pridané k astronomickým informáciam;
-	* Čas východu a západu mesiaca.
-* Pridané nové tlačidlo "Premenovať";
-	* Umožní premenovať mestá pohodlňejšie.
-* Zlepšená funkcia tlačidla "Testovanie";
-	* Teraz sú akceptované niektoré príkazy na uľahčenie vyhľadávania miest;
-	* Tieto nové príkazy sú popísané vo funkcii nápovedy, ktorú je možné spustiť pomocou F1.
+* Removed old checkbox "State of barometric pressure". Replaced with new
+  checkbox "Add cloudiness value";
+* It gives you the percentage of cloudiness.
+* Added new checkbox "Add precipitation value". It gives you the amount in
+  millimeters of precipitation.
+* Removed old checkbox "Indicates the wait with a beep while you search for
+  the latest bulletin"; Left active by default.
+* Added to the Astronomic information;
+* Time of moonrise and moonset.
+* Added new button "Rename"; To rename cities more conveniently.
+* Improved function of the "Test" button; Now accept some commands to
+  facilitate the search for cities; These new commands are described in the
+  help function that can be called up with F1.
 
 # Verzia 4.8 #
-`#`Zmeny v okne nastavenia Weather Plus:
+# Changes in the Weather Plus Settings window #
 
-* Pridané nové začiarkávacie ppole;
-	* Používajte iba efekty počasia";
-	* To vám umožní odfiltrovať všetky ostatné okolité efekty.
-* Zlepšilo sa náhodné prehrávanie a pridalo sa 71 nových zvukových efektov;
-  	* Ich aktualizáciu budete musieť vykonať dvojitým kliknutím na políčko "povoliť zvukové efekty".
-* Typ hlasitosti pridelený používateľom medzi všeobecnou a aktuálnou hlasitosťou zvuku sa teraz zachováva pri ukladaní konfigurácie.
-* Odstránený zbytočný zvuk pri výbere textu v editačnom poli stlačením control+a.
-* Zlepšená čitateľnosť v okne s nápovedou vyvolaná pomocou funkčnej klávesy F1.
-* Pridaný nový príznak kompatibility pre NVDA 2019.1 a aktuálne alfa verzie.
+* Added new checkbox; "Use only weather effects"; This allows you to filter
+  out all other environmental effects.
+* Improved random playback and added 71 new sound effects; You will need to
+  update them by clicking twice in "enable audio effects" check box.
+* The volume type assigned by the user, between the general and current
+  audio volume, now is maintained when the configuration is saved.
+* Removed useless sound during selection text in edit box by pressing
+  control+a.
+* Improved readability into help window invokable with F1 function key.
+* Added new compatibility flag for NVDA 2019.1, and the current alpha
+  versions.
 
 # Verzia 4.7.7 #
 * Odstránené oznámenie, o dokončenom sťahovaní pri aktualizácii programu
   Weather Plus.
-* Pridaných 6 nových zvukových efektov;
-	* Pre ich zfunkčnenie bude nevyhnutné ich aktualizovať v príslušnom nastavení doplnku.
+* Added 6 new sound effects; It will be necessary to update them from the
+  settings of the plugin.
 
 # Verzia 4.7.6 #
-* Opravená drobná chyba vo funkcii GetCoords();
-	* 2 hodnoty sa nevracali pri nedostatočnom internetovom pripojení.
+* Bugfix release;
 
 # Verzia 4.7.5 #
-* MenuItem.GetLabel() je zastaraná a bola nahradená
-  MenuItem.GetItemLabelText().
-* Opravené niektoré globálne premenné.
+* Bugfix release
 
 # Verzia 4.7.3 #
-* Aktualizovaná funkcia "podrobnosti"";
-	* Informácie o nadmorskej výške sú poskytované komfortnejšou službou veloroutes.org.
-	* Toto spôsobí malé nevýznamné rozdiely.
+* For convenience has been updated the function in "details"; The
+  information about the altitude are now provided by veloroutes.org. This
+  leads to small differences of little relevance.
 
 # Verzia 4.7.2 #
-* Opravená chyba kódovania funkcie Removeupdate.
+* Fixed small encoding bug.
 
 # Verzia 4.7.1 #
-* Opravená chyba v GetTimezone;
-	* V prípade nulových údajov bola vrátená iba jedna hodnota namiesto požadovaných troch.
+* Fixed bug when getting the information about the time zone.
 
 # Verzia 4.7 #
-* Zjednodušená sekcia aktualizácie;
-	* Ak bude na začiatku k dispozícii aktualizácia, bude k nej možné pristúpiť cez jediné okno.
-* Odstránený selektor súborov v sekci aktualizácie;
-	* Aktualizačný súbor sa teraz odovzdá do dočasnej zložky, čím sa vyriešia problémy spôsobené nereagujúcimi používateľmi.
+* Simplified the update section; Now at the start, in case an update is
+  available it will be possible to proceed directly through a single dialog
+  box.
+* removed the file selector in the update section; Now the update file is
+  saved to the temporary folder, thereby solving problems due to non-expert
+  users.
 
 # Verzia 4.6.9 #
-* Pridaná lokalizácia do Arabčiny (vďaka Wafikovi Immaculateovi).
+* Added arabic localization (thanks to Wafik Immaculate).
 
 # Verzia 4.6.8 #
-* Aktualizované lokalizácie do portugalčiny a brazílčiny (vďaka Albertovi
-  Mendonçaovi).
+* Updated localizations for brazilian portuguese and european portuguese
+  localizations (thanks to Alberto Mendonça).
 
 # Verzia 4.6.7 #
-* Vylepšené oznamovanie aktuálneho času;
-	* Pre niektoré mestá nebol oznamovaný správne.
-* Do podrobností pridaný letný čas;
-	* Dostupné len pre krajiny, ktoré ho uplatňujú.
+* Improved the reading of the current time; In some cities, it was not
+  correct. Added daylight saving time to the details; Available only for the
+  countries that adopt it.
 
 # Verzia 4.6.5 #
-* Opravená drobná chyba počas ohlasovania aktuálneho času;
-	* Oddeľovač ":" nebol odstránený počas konverzie na celé číslo.
+* Fixed small bug when reading the time.
 
 # Verzia 4.6.4 #
 * Vylepšené oznamovanie aktuálneho miestneho času; tlačidlá vyhľadávania sú
@@ -477,76 +354,69 @@ zapamätaní a môžete ho uložiť.
   súbor weather.ini,.
 
 # Verzia 4.6 #
-* Pridaná položka v menu "Nastaviť dočasné mesto...";
-	* Pre úplnosť môžete teraz z menu otvoriť aj zoznam dočasných miest.
-* Zlepšená správa pre stupnicu teploty;
-	* Okno s nastaveniami teraz vždy vráti predvolenú hodnotu.
-* Zlepšená prevencia viacnásobného otvárania hlavných okien;
-	* ak je niektoré z nich už otvorené, okrem zvukovej výstrahy je umiestnené do popredia.
-* • Vylepšené zvukové efekty;
-	* Teraz su viazané na miestny čas používaného mesta.
+* Added the menu item "Set a temporary city..."; For the sake of
+  completeness, now you can open the temporary city's list also from the
+  menu.
+* Improved management of temperature scale; Now the settings window will
+  always return the default value.
+* Improved prevention of the multiple opening of the main windows; If one of
+  these is already opened, in addition to the sound alert, puts it in
+  foreground.
+* Improved audio effects; Now are based on the current local time from the
+  city in use.
 
-`#`Zmeny vo funkciách tlačidla podrobnosti v okne nastavenia:
+# Changes in details button function in settings window #
 
 * Pridaný aktuálny miestny čas.
-* Opravená hodnota nadmorskej výšky;
-	* Teraz vracia hodnoty nadmorskej výšky, ak sa jej hodnota rovná alebo je menšia ako nula.
-* Opravená funkcia importu;
-	* Ak bolo odstránené predvolené mesto, už sa nezobrazí v záhlaví.
+* Fixed altitude value; Now return the altitude values when the value is
+  less than or equal to zero.
 
 # Verzia 4.5.5 #
 * Opravená lokalizácia a dokumentácia v srbčine.
 * Opravená lokalizácia v nemčine.
 
-`#`Zmeny v okne nastavenia Weather Plus:
+# Changes in the Weather Plus Settings window #
 
-* Pridané nové začiarkávacie pole;
-	* Začiarknutím môžete povoliť čiarku ako oddeľovač pre desatinné čísla, inak bude za oddeľovač slúžiť bodka.
+* Added new checkbox; You can enable the comma as the decimal separator,
+  otherwise the separator will be the point.
 
 # Verzia 4.5.3 #
-* Opravené 2 reťazce v ruskej a ukrajinskej lokalizácii.
+* correct 2 strings in Russian and ukrainian localization.
 * Opravený titulok okna kontrola aktualizácie.
-* Zlepšený algoritmus aktualizácie;
-	* Teraz je odkaz url na aktualizáciu čítaný priamo zo súboru manifest.
+* Improved update algorithm;
 
 # Verzia 4.5 #
-* Pridaná horúca klávesa NVDA+shift+control+alt+w;
-	* Otvorí dialóg nastavení doplnku Weather Plus.
-* Opravené niektoré anglické reťazce.
+* Added hotkey NVDA+shift+control+alt+w; Open the Weather Plus settings
+  dialog.
+* Correct some English strings.
 
-`#`Zmeny v okne nastavenia Weather Plus:
+# Changes in the Weather Plus Settings window #
 
-* Pridaných 8 nových začiarkávacich polí;
-	* Teraz je možné ďalšie prispôsobenie výstupu:
-* Smer vetra.
-* Rýchlosť vetra.
-* Pocitová teplota.
-* Hodnota vlhkosti.
-* Hodnota viditeľnosti.
-* Hodnota atmosférického tlaku.
-* Oznamuje atmosférický tlak v milimetroch ortuti (mmHg).
-* Stav barometrického tlaku.
+* Added 8 new check boxes It is now possible to further customize the
+  readout:
+* wind direction.
+* wind speed.
+* Perceived temperature.
+* Humidity value.
+* Visibility value.
+* Atmospheric pressure value.
+* Indicates the atmospheric pressure in millimeters of mercury (mmHg).
+* State of the barometric pressure.
 
 # Verzia 4.4.8 #
 * Pridaný preklad do poľštiny (vďaka Zvonimirovi Staneczymuć).
-* Weather Plus je teraz kompatibilný aj pre budúcu wx verziu 4;
-	* Poznámka: v súčasnosti wx version 4.0.0b1 msw (phoenix) generuje nepríjemnú chybu pri použití vertikálnych šípok v editovacích poliach.
-
-wxAssertionError: C++ assertion "Assert failure" failed at
-..\..\src\common\evtloopcmn.cpp(110) in wxEventLoopBase::Yield(): wxYield
-called recursively.
+* Compatibility with wx python version 4;
 
 # Verzia 4.4.1 #
-* Pridaná podpora pre SSL;
-	* Použije sa iba v prípade ak sa objaví chyba, že zlyhalo overenie certifikátu SSL.
+* Added SSL support;
 
 # Verzia 4.4 #
 * Opravená chyba pri čítaní reťazca novej verzie počas časového limitu
   pripojenia.
-* Vylepšená sekcia inovácie;
-	* okno dialógu teraz nezasahuje do menu NVDA.
-* Revidovaná a opravená ruská lokalizácia.
-* Pridaný preklad do ukrajinčiny (vďaka Alexovi Yeshanuovi).
+* Improved the upgrade section; Now the dialog do not interferes with the
+  nvda menu.
+* Revised and corrected russian Localization.
+* Adding Ukrainian translation (thanks to Alex Yeshanu).
 
 # Verzia 4.3.4 #
 * Revidovaná a opravená nemecká lokalizácia.
@@ -558,97 +428,105 @@ called recursively.
 * Pridaná lokalizácia do rumunčiny (vďaka Florianovi Ionascuovi).
 
 # Verzia 4.3.1 #
-* Opravená drobná chyba vo funkcii "podrobnosti";
-	* reťazce zemepisná šírka a zemepisná dĺžka boli prehodené v porovnaní s hodnotou.
+* Fixed a minor bug in the function "details"; The strings "latitude" and
+  "longitude" were reversed compared to the value.
 
 # Verzia 4.3 #
-Priečinok Public links sa od 15. marca stane neaktívnym.
-	* V tento deň sa stane priečinok Public štandardným priečinkom Dropboxu a viac nebude použiteľný pre addon.
-	* Odkazy pre upgrade addonu a vzoriek boli aktualizované a odteraz sa adon WP pre NVDA bude úplne opierať o talianskú stránku.
+* Weather plus moved to the "nvda.it" as it's default hosting provider
 
 # Verzia 4.2.4 #
 * Opravená drobná chyba, keď je neaktívne pripojenie.
 
 # Verzia 4.2.3 #
-* • Teraz je doplnok Weather Plus schopný spustiť pokus o pripojenie pred oznámením poruchy pri používaní WoeId, ozve sa pípnutie pri každom pokuse;
-	* Pípnutie sa ozve len ak chcete, môžete ho vypnúť v nastaveniach Weather Plus použitím začiarkávacieho poľa.
+* Now Weather Plus is able to run some connection attempts before notifying
+  the malfunction of the WoeId in use, it emits a beep at each attempt; This
+  beep, if you want, can be disabled by using a check box by Weather Plus
+  settings.
 
 # Verzia 4.2.2 #
-* Opravená chyba pri meraní v preklade.
-	* V niektorých jazykoch nebolo meranie v stupňoch Kelvina, Celzia a Fahrenheita preložené.
+* Fixed bug in the translation of the scale measurement. In some languages,
+  Kelvin, Celsius and Fahrenheit have not been translated.
 
 # Verzia 4.2.1 #
-* Opravené upozornenie na aktualizáciu doplnku Weather Plus počas štartu Windows;
-	* K tomu dôjde pri stlačení tlačidla "použiť aktuálne nastavenia NVDA na prihlasovacej a zabezpečených obrazovkách (vyžaduje administrátorské práva)" vo všeobecných nastaveniach nvda, ktoré kopírujú konfiguráciu a celý priečinok s nastaveniami doplnkov systemConfig, ale tieto neboli synchronizované s následovnými aktualizáciami doplnkov.
-	* Ak ste niekedy použili túto možnosť, budete tak musieť urobiť ešte raz po aktualizácii Weather Plus.
+* Fixed update notice of Weather Plus during the Windows start-up; This
+  happens when the button was pressed "Use currently saved settings on the
+  logon and other secure screens (requires administrator privileges)" from
+  the general settings of nvda, which copies the configuration, and all of
+  the add-on folder systemConfig, but these are not synchronized with
+  subsequent updates of the add-ons. If you have ever used at least once
+  this option, you will have to do it again one last time just after to have
+  up-to-date Weather Plus.
 
 # Verzia 4.2 #
-* Pridaných 5 nových zvukových efektov;
-	* Pre ich zfunkčnenie bude nevyhnutné ich aktualizovať v nastaveniach.
-* Opravená chyba vo funkcii importu;
-	* Zoznam miest nebol radený abecedne.
-* Pridaný režim importu vo funkcii importovania;;
-	* Môžete sa rozhodnúť, či úplne nahradíte vlastný zoznam miest alebo si do svojho zoznamu budete pridávať nové mestá.
-* Aktualizované oznamovanie predpovede počasia, aktuálnej predpovede počasia;
-	* Pridaná pocitová teplota (wind chill).
-* Pridané nové reťazce do zoznamu správ o počasí.
+* Added 5 new sound effects; It will be necessary to update them from the
+  settings of the plugin.
+* Fixed bug in the import function; The list of cities was not sorted
+  alphabetically.
+* Added import mode in the import function; You may decide to completely
+  replace your own list, or simply add new cities to it.
+* Updated the reading of the weather forecast, current weather report;
+  Adding the perceived temperature (wind chill).
+* Pridané nové reťazce do zoznamu weather reports.
 
 # Verzia 4.1 #
-* Opravená chyba v predpovedi na 10 dní;
-	* Teraz ak sú dni indikované ako chybné, sú oznámené ako neznáme.
-* Opravený reťazec pre Nápovedu klávesovej skratky nvda+shift+w.
-* Revidovaná a aktualizovaná nápoveda.
+* Fixed bug in the forecast for up to 10 days; Now if the estimates received
+  are in number less than the request of the user, the missing days are
+  indicated as unknown.
+* Fixed string help entry on the command nvda+shift+w.
+* Revised and updated documentation.
 
 # Verzia 4.0 #
 * Aktualizované niektoré časti kódu a nahradené všetky inštrukcie eval().
 
 # Verzia 3.9.7 #
-* Opravená chyba v priebehu stupňov predpovede počasia;
-	* Teraz je teplota oznamovaná správne.
+* Fixed bug during the ratio of weather forecasts; Now the temperatures are
+  read correctly.
 
 # Verzia 3.9.6 #
-* Zmenené zaokrúhľovanie pri konverzii atmosferického tlaku z milibarov na jednotky ortuťového stĺpca;
-	* Teraz sa hodnota vypočítava pred tým.
+* Changed the rounding in the conversion of atmospheric pressure from mbar
+  in inches of mercury; * Now the value is calculated in defect, while
+  before it was in excess.
 
 # Verzia 3.9.5 #
 * Pridané 2 nové reťazce do zoznamu správ o oznamovaní počasia.
 * Opravené 2 chyby.
-* Aktualizované zvukové efekty spúšťajúce sa len pri vetre;
-	* Teras sa zvuk vetra mení náhodne.
+* Updated running sounds for the effect in conditions of only wind; * Now
+  the sound of the wind can vary randomly.
 
 # Verzia 3.9.4 #
-* Boli vyradené nápoveda a lokalizácia pre chorvátčinu a nemčinu;
-	* pretože ich prestali podporovať jednotliví prekladatelia.
-* Bola opravená chyba v srbskej lokalizácii.
-* Bola aktualizovaná lokalizácia v češtine.
-* Bola aktualizovaná nápoveda a lokalizácia v galícijčine.
+* documentation, localizations for Croatian and german language eliminated;
+  Because they are no longer supported by the respective translators.
+* Fixed bug on Serbian localization.
+* Updated Czech localization.
+* Updated documentation and localization for Galego.
 
 # Verzia 3.9 #
-* Opäť zmenená služba rozhrania API;
-	* Weather Plus teraz využíva nové rozhranie API počasie Yahoo s jazykom Yahoo!Query a JQuery:
-	* [yahoo-weather-api-with-yahooquery](http://codesimplified.blogspot.it/2013/10/yahoo-weather-api-with-yahooquery.html)
-* Kľúč pre klávesu API už nie je požadovaný.
-* Obnovené vyhľadávanie podobných miest a k nim podobných miest;;
-	* Bude možné nájsť presne hľadané mesto zo zoznamu.
-* Optimalizovaný výstup všeobecných zvukov;
-	* Teraz sú zosynchronizované s hlasovou syntézou a sú rýchlejšie.
-* Zlepšená pamäť pre dáta v režime off-line;
-	* Je vynulovaná každých 10 minút alebo zmenou mesta.
-* barometrický tlak je meraný v milibaroch alebo v palcoch ortuťového stĺpca (ak sú nastavené jednotky Fahrenheita).
+* Changed again API service; Weather Plus now uses the new Yahoo Weather API
+  with language Yahoo!Query and JQuery:
+* The key-API is no longer required.
+* Restored The search of the homonymous cities; It will be possible to
+  choose exactly the desired city from a list.
+* Optimized the output of general sounds; Now they are synchronized with the
+  voice synthesis and are faster.
+* Improved the cache for data off-line; Is zeroed every 10 minutes or only
+  by changing the city.
+* barometric pressure measured in mbar, or in inches of mercury (if set to
+  Fahrenheit).
 
 # Verzia 3.8 #
-* Zmenený balík dát pre rozhranie API;
-	* Z xml formátu na JSON formát, dáta sú presnejšie, obzvlášť pri časovom pásme.
-* Aktivované automatické nastavenie jazyka;
-	* Rozhranie API teraz posiela dáta o stave počasia v jazyku nastavenom NVDA.
-* Pridaná pamäť pre správu a predpoveď počasia;
-	* Ak sa nezmenilo nastavené mesto, stupnica alebo dni predpovede, bude umožnené oznámenie dát počas 10 minút v režime off-line.
-	* Pamäť je resetovaná pri každej zmene ako je popísané vyššie.
-	* Je to preto, lebo správa sa nemení v tejto dobe, čo zníži frekvenciu volanní na rozhranie API, je umožnené prehrávanie zvukových efektov.
-* Vylepšené vyhľadávanie aktualizácií;
-	* Len čo sa stiahne, bude aktivovaná inštalácia,alebo v prípade prenosnej verzie NVDA sa otvorí zložka s uloženou aktualizáciou doplnku.
-* Aktualizované všetky zvuky Poznámka;
-	* ďalej sa už nevyužíva modul "tones", ale sa používaju malé súbory vo formáte WAV .
+* data accuracy fixes
+* Enabled the automatic setting of the language; Now the API sends the data
+  of the weather conditions in the language set by nvda.
+* Added the cache for bulletin and weather forecasts; If not changed the
+  city, degree scale or the days of forecast set, you will be able to read
+  the data for 10 minutes even when connection off-line The cache is reset
+  at each change described above. This is because the bulletins do not
+  change in this period of time and to reduce the frequent calls to the API,
+  maybe playing with sound effects.
+* Improved searching for updates; Now once downloaded, It will be activated
+  to its installation, or in the case of a portable version of nvda It will
+  be opened the folder where you saved the update.
+* Updated all sounds. Now the sounds are in the wave format.
 
 # Verzia 3.7 #
 * Pridaná možnosť vypnúť pri vetre prepočet v metroch za sekundu.
@@ -656,39 +534,45 @@ Priečinok Public links sa od 15. marca stane neaktívnym.
 * Opravené 2 chyby.
 
 # Verzia 3.6 #
-* Zmenené rozhranie služby APIChanged the API (application programming interface);
-	* Doplnok Počasie teraz používa službu, ktorú ponúka penWeatherMap.org namiesto dovtedajšej služby od Yahoo Weather.com.
-* V aktuálnej správe boli pridané klasifikácie vetra.
-* V aktuálnej správe bola pridaná informácia o oblačnosti v percentách.
-* V aktuálnej správe boli prevzaté aj jednotky merania tlaku v hektopascaloch.
+* Changed the API service (application programming interface); Now WP uses
+  the service offered by OpenWeatherMap.org instead of Yahoo Weather.com.
+* Added Wind classification in the current bulletin.
+* Added a cloudiness percentage in the current bulletin.
+* Adopted the units of pressure measurement in hectopascal in the current
+  bulletin.
 
-`#`Zmeny v nastaveniach v okne doplnku Weather Plus:
+# Changes to the Weather Plus Settings window #
 
-* Bolo zmenené vkladanie/hladanie rozdielne od dovtedajšieho yahoo zipcode/woeId in ID number, Identifikátor miest;
-	* ID čísla miest sú podobné ako predchádzajúce woeid, ale woeId už nebudú fungovať, dokonca ani staré zipcode.
-	* Budete mať možnosť znovu objaviť veľkú časť miest zadaním ich názvu, alebo ich časti.
-* Pridané vvkladanie/hladanie podľa zemepisných súradníc.
-* Pridané vkladanie/hľadanie podľa PSČ.
-* Vylepšená funkcia "podrobnosti".
-* Ku klávese F1 priradená funkcia vstup do/hľadanie v nápovede.
-* Ku klávese F4 je priradené nastavenie ovládania počasia na 1 až 16 dní;
-	* upozornenie, ak do schránky skopírujete hodnotu vyššiu ako 10, toto nebude oznámené!
-* Ku klávese F5 bolo priradené ovládanie zvuku.
-* Pridané jednotky merania v stupňoch Kelvina.
-* Pridaná kontrola aktualizácií;
-	* môžete nastaviť ovládanie cez nastavenia alebo ručne kontrolou z menu.
-* preradené tlačidlo "Nájsť mesto" v "Správe vašich kláves k rozhraniu API..."
-	* umožní zadávať alebo meniť klávesy k rozhraniu API.
+* Changed insertion/search from yahoo zipcode/woeId in ID number, Identifier
+  of the city; * ID numbers city are similar to woeid, but the woeId will no
+  longer work, even the old zipcode. You will be able to rediscover a great
+  part of the cities by typing the name or part of it.
+* Added insertion/Search for geographical coordinates.
+* Added insertion/search by postal code.
+* Improved the function "details".
+* assigned to F1 key the entry/search help.
+* assigned to F4 key the controls to the forecasts from 1 to 16 days set;
+  Attention, if you choose to copy to the clipboard a value greater than 10,
+  it will not be read!
+* Assigned F5 key for audio controls.
+* Adding measurement scale degrees Kelvin.
+* Added check for updates; You can set the control by settings or check
+  manually from menu.
+* reassigned the button "Find your city" in "Management of your API Key...";
+  Allows you to enter or change the key-API.
 
 # Verzia 3.5 #
 * Pridaný preklad do Chorvátčiny (vďaka Gordanovi Radičović).
-* Pridaná možnosť nenachádzať už nie platný WoeId a kód mesta nájdený v sieti;
-	* Bolo pridané reportovanie kódov, ktoré prestali pracovať pre jeden alebo viac dní, Doplnok Počasie teraz upozorní, ak bol niektorý z nich vložený z okien hľadania zo siete.
-	* Ak toto nastane, oznámte mi to použitím funkcie "Hľadať svoje mesto...", takto môžem aktualizovať Weather_buffer a odstrániť ich zo zoznamu.
-* Opravená chyba vo funkcii hľadať ďalší a predchádzajúci; nedostatok v kódovaní databázy MBCS nemôže rozpoznať písmena s diakritikou.
-* Aktualizované okno s dočasným kódom mesta;
-	* Pridaný prvok"Hľadať" Ako v iných oknách doplnku Počasie:
-	* Control+F3 = Hľadať..., F3 = Hľadať ďalší, Shift+F3 = Hľadať predchádzajúci.
+* Added control for no longer valid WoeId and Zip Code found in the network;
+  There have been reports of codes that have stopped working from one day to
+  another, WP now warns if one of these has been inserted from the windows
+  of search on the net. If this occurs using the function "Find your
+  city...", please report it to me so that I can update the Weather_buffer
+  and remove them from the list.
+* Fixed encoding bug in the search functionality.
+* Updated the window to set one temporary zip code; Added feature "Find" As
+  in the other windows of Weather Plus: Control+F3 = Find..., F3 = Find
+  next, Shift+F3 = Find previous.
 
 # Verzia 3.4 #
 * Pridaný preklad do Galicijčiny (vďaka Ivánovi Novegilovi).
@@ -697,41 +581,51 @@ Priečinok Public links sa od 15. marca stane neaktívnym.
 
 # Verzia 3.3 #
 * Pridané meranie rýchlosti vetra v metroch za sekundu.
-* Upravené kódovanie v "mbcs";
-	* Toto umožní používať diakritiku v názvoch miest.
+* encoding fixes
 
 # Verzia 3.2 #
-* Aktualizované oznamovanie súčasnej predpovede a oznamovanie aktuálneho stavu a dátumu predpovede počasia;
-	* Služba Yahoo weather forecast, občas a úplne náhodne nereflektuje na dátové obmedzenia a dochádza tak k mylnému ohlasovaniu od 10 do 5 dní predpovede v rámci aktualizovanej predpovede;
-	* bol vložený filter, ktorý umožní oznamovanie iba posledných aktualizovaných dát o počasí a zvukové upozornenie, ktoré sa diskrétne ohlási pri intervencii;
-	* toto pípnutie môže byť vypnuté odčiarknutím príslušného začiarkávacieho poľa v nastavení doplnku Weather Plus.
-	* Filtrovanie dát môže zrejme občas mať oneskorenú odozvu, ale to je prijateľné.
-* Predpoveď je rozšírená na 10 dní.
+* Updated the reading of the weather forecast, current weather report and
+  reading of the date of the current weather report; Yahoo weather forecast,
+  from a bit of time and in random amounts, allows it to pass a historic
+  from -10 to -5 days of weather forecast to be inserted between the updated
+  data that we want to read; It was added a filter that allows you to read
+  only the last weather data updated, and a discreet beep alerts when it
+  intervenes; This beep, if you want, can be disabled by using a check box
+  by Weather Plus settings. Obviously, the filtering of data sometimes
+  involves a short delay in reply, but is still acceptable.
+* Forecasts of the time extended to 10 days.
 
 # Verzia 3.1 #
-* Pridaný preklad do srbčiny (vďaka láskavej spolupráci Dejana Gašiča).
-* Opravená klávesová skratka insert+alt+w;
-	* Nebola vykonávana kontrola platného kódu mesta, a takisto ani kontrola internetového pripojenia na rozdiel od ostatných skratiek.
-* Aktualizované funkcie prehrávania zvukových efektov;
-	* Kvôli značne veľkému miestu na disku a času sťahovania zvukov je použitý formát Mp3, vďaka zmenšeniu objemu komprimovanej veľkosti dát.
-* Pridaných 55 nových zvukových efektov;
-	* V nastaveniach doplnku ich bude nutné aktualizovať.
+* Added translation in Serbian (thanks to the kind cooperation of Dejan
+  Gasic.
+* Fixed command insert+alt+w; It did not check the validity of the zipcode
+  in use and did not check if the connection was active as the other
+  commands do.
+* Updated the playback function of sound effects; Mp3 format is now used,
+  with a considerable saving on the download time and disk space, thanks to
+  the reduced size of compressed files.
+* Added 55 new sound effects; It will be necessary to update them from the
+  settings of the plugin.
 
-`#`Zmeny v nastaveniach v okne doplnku Weather Plus:
+# Changes to the Weather Plus Settings window #
 
-* Opravené zobrazenie nápovedných popiskov tlačidiel;
-	* Teraz sa vypína/zapína skutočný čas v požadovanom začiarkavacom políčku.
-* Pridané 3 skratkové klávesy pre rýchlejšiu navigáciu v okne nastavenia:
-* F1 skočí do zoznamu a editačného poľa kódov miest.
-* F2 vracia späť do posledného výberu klávesou tab.
-* F3 skočí na nastavenie hlasitosti (ak sú zvukové efekty nainštalované a aktivované).
-* Pridané klávesové skratky pre všetky začiarkavacie políčka a tlačidlá;
-	* Sú vynechané dve prepínacie tlačidlá, lebo sú zoradené za sebou, a prvé je možné aktivovať klávesami ctrl+shift+w.
-* Zmenené tlačidlo "definovať", ktoré je teraz vypnuté, ak zvuky nie su nainštalované a aktivované.
-* Pridané nastavenie hlasitosti;
-	* Môžete upraviť hlasitosť pre všetky zvuky naraz, alebo iba pre posledný prehratý zvuk;
-	* Táto funkcia je zapnutá, ak sú zvuky nainštalované a aktivované.
-* Pridaná možnosť nastavenia 12-hodinového formátu času (12:30 AM `-` 12:30 PM) , alebo 24-hodinového formátu času (12:30 `-` 00:30).
+* Fixed display help on the buttons; Now disables / enables real-time
+  through the appropriate check box.
+* Added 3 shortcut commands to navigate more quickly in the window:
+* F1 jumps into list and edit box of zip code.
+* F2 returns to the last selection reached with TAB.
+* F3 jumps into volume controls (if the sound effects are installed and
+  activated).
+* Added shortcut commands for all check boxes and buttons; Omitted the two
+  radio buttons as they are present in succession and the first is reachable
+  with the command control+shift+w.
+* Changed, the button "define" is now disabled if the sound effects are not
+  installed and activated.
+* Added volume controls; You can adjust the overall volume and the last
+  heard sound effect; This option is enabled if the sound effects are
+  installed and activated.
+* Added ability to set the system time in 12-hour format (12:30 AM `-` 12:30
+  PM) , or the 24-hour system (12:30 `-` 00:30).
 
 # Verzia 3.0 #
 * Pridaný preklad do slovenčiny (vďaka láskavej spolupráci Vítka Jiráska *
@@ -745,23 +639,23 @@ Priečinok Public links sa od 15. marca stane neaktívnym.
 * Pridaný scriptCategory, ktorý posunie skratkové klávesy doplnku Weather
   Plus na správnu pozíciu (vo vstupných príkazoch)...
 
-`#`Zmeny v nastaveniach v okne doplnku Weather Plus:
+# Changes to the Weather Plus Settings window #
 
-* Pridané prepínacie tlačidlo pre nastavenie spôsobu zobrazenia stupňov;
-	* Výber je medzi:
-* Celzius - Fahrenheit
-* C - F
-* žiadne zobrazenia
-* Pridané tlačidlo pre "upresnenie";
-	* Umožňuje upresniť pásmo pre jedno mesto medzi:
-* Vnútrozemské
-* prímorská oblasť
-* púštne pásmo
-* arktické pásmo
-* horské pásmo
-	* Výber vyhodnotí, aby Weather Plus používal viac príznačné zvukové efekty pre každé mesto zvlášť;
-	* To je dôvod pre tak veľký nárast zvukových efektov pre túto verziu doplnku;
-	* Mnoho z týchto nových zvukov som získal od Tapina, ktorému srdečne ďakujem.
+* Added radio button to set how to indicate the temperature scale;
+* The choice is between:
+* Celsius `-` Fahrenheit
+* C `-` F
+* No indication
+* Added button " Define"; It permits to define the zone of one city between:
+* Hinterland
+* Maritime area
+* Desert zone
+* Arctic zone
+* Mountain zone
+* The choice will consent to Weather Plus to use more appropriate sound
+  effects for every single city; * This is the reason for the boost of the
+  number of new sound effects in this versione of the addon; * Many of the
+  new sound effects I got them from Tapin, whom I thank sincerely.
 
 # Verzia 2.9 #
 * Pridaná možnosť zvolenia obsahu súboru, z ktorého sa importujú kódy mesta.
@@ -771,43 +665,49 @@ Priečinok Public links sa od 15. marca stane neaktívnym.
 
 # Verzia 2.8 #
 * Opravená chyba v detailoch pri otvorení okna s výskytmi pri hľadaní mesta.
-* Opravené regulárne reťazce pre hľadanie nadmorskej výšky;
-	* Program správne nepracoval s jednoduchými číslicami.
-* Vylepšené parsovanie poľa pre vyhľadávanie mesta;
-	* Mesto by sa malo hľadať lepšie.
-* • Na pripojenie sa teraz používa urllib2, namiesto urllib;
-	* Toto by malo povoliť používanie doplnku v korporátnej sieti používajúcej server proxy .
-* Pridaná možnosť hľadania pomocou klávesových skratiek;
-	* Control+F3 = nájsť..., F3 = Nájsť ďalší, Shift+F3 = Nájsť predchádzajúci.
+* Fixed regexp to search for the altitude; It did not accept parameters of
+  single digits.
+* Improved parser of the edit box; It should find more easily the city.
+* Connections now handled by urllib2, instead of urllib; * This should allow
+  the functioning of the addon even on a computer connected to the corporate
+  network protected by proxy.
+* Added feature "Find"; Control+F3 = Find..., F3 = Find next, Shift+F3 =
+  Find previous.
 
 # Verzia 2.7 #
-* Opravený názov reťazca "Motorcycle" in "Motorcycle00";
-	* Požiadal o aktualizáciu zvukových efektov, pretože nemohol nájsť príslušný súbor .
-* Pridaná možnosť ohlasovania informácií o vetre;
-	* Smer, rýchlosť a teplota vetra.
-* Pridaná možnosť ohlasovania informácií o atmosfére;
-	* Vlhkosť, viditeľnosť, tlak a stav barometrického tlaku.
-* Pridaná možnosť ohlasovania informácíí o atmosfére
-	* Čas, kedy vychádza a zapadá slnko.
+* Fixed wrong name of a string "Motorcycle" in "Motorcycle00"; He asked
+  updated sound effects because they could not find the file.
+* Added ability to read about wind ; Direction, speed and temperature of the
+  wind.
+* Added ability to read atmospherical information; Humidity, visibility,
+  pressure and state of the barometric pressure.
+* Added ability to read the Astronomic information; * Time of sunrise and
+  sunset.
 
-`#`Zmeny v nastaveniach v okne doplnku Weather Plus:
+# Changes to the Weather Plus Settings window #
 
 * Pridané 3 začiarkavacie políčka na úpravu nových nastavení viď. nižšie.
-* Pridané tlačidlo podrobnosti o meste ";
-	* Poskytuje nejaké informácie, napr. úplný názov mesta, ( Podľa služby Yahoo Weather Forecast), štát / región a národnosť, ku ktorej patrí ;
-	* S geografickými koordinátmi, a informáciou o nadmorskej výške.
-* Pridané rozpoznávanie WoeID identifikačného kódu. napr. mesto Bologna tomu napr. zodpovedá 711080).
-* Teraz môžete napísať názov mesta a ak sa nejaké nájdu, zobrazí sa zoznam a môžete si vybrať.
+* Added button " Details "; * Provides some information such as the real
+  name of the city ( assigned by Yahoo Weather Forecast), the state / region
+  and the nation to which it belongs; With geographic coordinates, and
+  height above sea level.
+* Added recognition of WoeID (location codes, eg. Bologna it corresponds to
+  711080).
+* Now you can type the name of the city, in this case, if any, the
+  occurrences will be listed and you will be able to choose.
 
 # Verzia 2.6 #
-* The Funkcie tlačidiel pridať a odobrať boli optimalizované;
-	* načítanie zoznamu je oveľa rýchlejšie!
-* Funkcia tlačidla "Test" bola optimalizovaná, teraz využíva až 13 preskúmaných kľúčov;
-	* Ak sa teraz nenájde názov mesta, je to naozaj smola!
-* Funkcia pre nájdenie mesta bola rozšírena o tlačidlo nájdite svoju krajinu/mesto, kde program automaticky hľadá a testuje kódy miest. (Nemusia to však byť všetky mestá či krajiny.;
-	* Bol pridaný automatický test, ktorý zbiera funkčné poštové smerovacie čísla, a ďalej dáva súhlas s rýchlou vizualizáciou vďaka vytvoreniu malého buffera zodpovedajúceho názvu konkrétnej krajiny.
-* Pridané tri nové zvukové efekty;
-	* je nutné ich aktualizovať z nastavenia doplnku.
+* The functions of the buttons "Add" and "Remove" were optimized in the zip
+  code's list management; Now the operation are a lot more fast!
+* The function of the button "Test" was optimized, now it exploits until 13
+  research keys; Now if it doesn't find the name of the city it is a real
+  bad luck!
+* The function of the button "Find your city...", now finds more countries;
+  It was added an automatic test that collects the functioning zip codes,
+  and it further consents a rapid visualization thanks to the creation of a
+  little buffer corresponding to the name of the specific country.
+* Three new sounds effects were added; It will be necessary to update them
+  from the settings of the plugin.
 
 # Verzia 2.5 #
 * Pridaná klávesová skratka na prepínanie medzi jednotkami teploty
@@ -816,7 +716,7 @@ Priečinok Public links sa od 15. marca stane neaktívnym.
   už bolo zaradené, program však neohlásil, že už tam je.
 * Pridané nové reťazce do zoznamu weather reports.
 
-`#`Zmeny v nastaveniach v okne doplnku Weather Plus:
+# Changes to the Weather Plus Settings window #
 
 * Pridané tlačidlo na otvorenie webovej stránky pre hľadania kódov miest pre
   rôzne krajiny a mestá.
@@ -860,8 +760,8 @@ Priečinok Public links sa od 15. marca stane neaktívnym.
 # Verzia 2.0 #
 * Presunuté menu Weather do menu nastavenia a opravené ukladanie dočasného
   mesta
-* správny vstup za letu sa už neukladá, takže je dočasný;
-	* Ak chcete zavolať mesto, ktoré ste nastavili v preferenciách, stlačte INSERT + control + f3.
+* correct input on the fly is no longer saved, so it is temporary; To call
+  the city set in the preferences, press INSERT + control + f3.
 
 # Verzia 1.9 #
 * Pridaná funkcia pre otváranie nápovedy
@@ -874,9 +774,9 @@ Priečinok Public links sa od 15. marca stane neaktívnym.
 * Pridané menu nápoveda.
 * Pridaný preklad taliančiny.
 
-# Predchádzajúca verzia 1.1 #
-* aktualizovaný NVDA-addon.
-* Aktualizovaný preklad zdrojového kódu.
+# Initial Version 1.1 #
+* updated the NVDA-addon.
+* Translation support has been added.
 
 --------------------------------------------------------------------------------
 
