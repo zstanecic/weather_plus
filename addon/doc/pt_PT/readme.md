@@ -43,7 +43,7 @@
 * Documentation - opens the help file for the current language.
 * Check for Update... - notifies about the availability of the new version.
 
-Pressione o item para:
+To add a new city: press the following item:
 
 * Set and Manage Your Cities... Displays or allows to set the current city
   from a list
@@ -94,7 +94,7 @@ Pressione o item para:
   Celsius (by default), Fahrenheit and Kelvin.
 
 * Degrees shown as: Use the radio button to select between: Celsius `-`
-  Fahrenheit `-` Kelvin (by default C `-` F `-` K or Don't specify.
+  Fahrenheit `-` Kelvin (by default C `-` F `-` K or unspecified.
 
 * Combo box: Weather Forecasts up to days: 3 You can choose between 1 to 10
   (3 days by default)
@@ -128,7 +128,7 @@ Pressione o item para:
 * Enable help buttons in the settings window check box checked (by default)
 
 * Read wind information check box not checked (by default) If this checkbox
-  is enabled, you can also activate:
+  is enabled, you can also activate the following checkboxes:
 
 * Add wind direction; Indicates the provenance of the wind. check box
   checked (by default)
@@ -141,7 +141,7 @@ Pressione o item para:
 * Add perceived temperature; check box checked (by default)
 
 * Read atmospherical information check box not checked (by default) If
-  enabled, you can also activate:
+  enabled, you can also check the following checkboxes:
 
 * Add humidity value; Indicates the humidity in percent. check box checked
   (by default)
@@ -187,8 +187,8 @@ Pressione o item para:
   updates.
 
 # Version 7.2 #
-* Fixed bug after adding a city, if it is the first one entered it if you
-  press ok button and restart the add-on.
+* Fixed bug after adding a city, if it is the first one entered if you press
+  ok button and restart the add-on.
 * Now the progress dialog show again the time remaining and time elapsed.
 * correct Italian translation in the help of the Rename button.
 
@@ -222,7 +222,7 @@ Pressione o item para:
 * Fixed a couple of bugs in sound effects reproduction; a couple of "for"
   cycles with incorrect maximum values caused the call to a non-existent
   sound effect.
-* Fixed bug in local time in "details"; 12-hour time conversion gave a
+* Fixed bug in local time in "details"; 12-hour time conversion gave an
   error.
 * Fixed a bug in the Yahoo Weather Forecast report; In some cities the
   forecasts start from the previous day and not from the current one. The
@@ -231,8 +231,7 @@ Pressione o item para:
   10).
 
 # Versão 6.4 #
-* Daylight saving time removed in the "Details" function; The service used
-  by this function has changed, so it has been removed.
+* Daylight saving time removed in the "Details" function.
 * Improved audio effects reproduction; Now they update regularly if the
   weather conditions change.
 
@@ -240,7 +239,7 @@ Pressione o item para:
 * Fixed encoding issues.
 
 # Versão 6.2 #
-* Corrigido o erro na função "Adicionar".
+* Fixed bug in the "Add city" function.
 * Corrigido o erro que não atribuía a variável "_volume" ao iniciar o addon.
 * Added missing code from version 6.0; Now you can recover the saved cities
   from the version that uses the Apixu API; The "Test" and "Remove" buttons
@@ -264,8 +263,7 @@ Pressione o item para:
 * Ajustou o número de dias de previsão de 9 para 6 em readme.
 
 # Versão 5.0 #
-* Agora, O Weather Plus usa a API do APIXU, a qual, em minha opinião,  é
-  melhor que a anterior.
+* Weather Plus now uses the APIXU API.
 
 # Changes in the Weather Plus Settings window: #
 
@@ -276,7 +274,7 @@ Pressione o item para:
   millimeters of precipitation.
 * Removed old checkbox "Indicates the wait with a beep while you search for
   the latest bulletin"; Left active by default.
-* Added to the Astronomic information;
+* added the astronomic information;
 * Time of moonrise and moonset.
 * Added new button "Rename"; To rename cities more conveniently.
 * Improved function of the "Test" button; Now accept some commands to
@@ -291,7 +289,7 @@ Pressione o item para:
 * Improved random playback and added 71 new sound effects; You will need to
   update them by clicking twice in "enable audio effects" check box.
 * The volume type assigned by the user, between the general and current
-  audio volume, now is maintained when the configuration is saved.
+  audio volume, is now maintained when the configuration is saved.
 * Removed useless sound during selection text in edit box by pressing
   control+a.
 * Improved readability into help window invokable with F1 function key.
@@ -311,9 +309,9 @@ Pressione o item para:
 * Bugfix release
 
 # Versão 4.7.3 #
-* For convenience has been updated the function in "details"; The
-  information about the altitude are now provided by veloroutes.org. This
-  leads to small differences of little relevance.
+* "Details" function was updated for convenience; The information about the
+  altitude are now provided by veloroutes.org. This leads to small
+  differences of little relevance.
 
 # Versão 4.7.2 #
 * Fixed small encoding bug.
@@ -326,8 +324,8 @@ Pressione o item para:
   available it will be possible to proceed directly through a single dialog
   box.
 * removed the file selector in the update section; Now the update file is
-  saved to the temporary folder, thereby solving problems due to non-expert
-  users.
+  saved to the temporary folder, It open the possibility to install the
+  update automatically, good for beginners.
 
 # Versão 4.6.9 #
 * Added arabic localization (thanks to Wafik Immaculate).
@@ -384,12 +382,12 @@ Pressione o item para:
   otherwise the separator will be the point.
 
 # Versão 4.5.3 #
-* correct 2 strings in Russian and ukrainian localization.
-* Corrigido o título da janela de marcação para actualização.
+* correct 2 strings in Russian and ukrainian localizations.
+* Corrected title of the Check for upgrade window.
 * Improved update algorithm;
 
 # Versão 4.5 #
-* Added hotkey NVDA+shift+control+alt+w; Open the Weather Plus settings
+* Added hotkey NVDA+shift+control+alt+w; it Opens the Weather Plus settings
   dialog.
 * Correct some English strings.
 
@@ -439,7 +437,7 @@ Pressione o item para:
 * Weather plus moved to the "nvda.it" as it's default hosting provider
 
 # Versão 4.2.4 #
-* Resolvido um pequeno bug quando a conexão não está activa.
+* Fixed a minor bug when the connection was not active.
 
 # Versão 4.2.3 #
 * Now Weather Plus is able to run some connection attempts before notifying
@@ -448,8 +446,8 @@ Pressione o item para:
   settings.
 
 # Versão 4.2.2 #
-* Fixed bug in the translation of the scale measurement. In some languages,
-  Kelvin, Celsius and Fahrenheit have not been translated.
+* Fixed bug in the translation strings for the scale measurement. In some
+  languages, Kelvin, Celsius and Fahrenheit have not been translated.
 
 # Versão 4.2.1 #
 * Fixed update notice of Weather Plus during the Windows start-up; This
@@ -480,12 +478,11 @@ Pressione o item para:
 * Revised and updated documentation.
 
 # Versão 4.0 #
-* Modificadas algumas partes do código, alterando as instruções constantes
-  da função eval().
+* Updated some parts of code and replaced all instructions eval().
 
 # Versão 3.9.7 #
-* Fixed bug during the ratio of weather forecasts; Now the temperatures are
-  read correctly.
+* Fixed bug during the reading of weather forecasts; Now the temperatures
+  are read correctly.
 
 # Versão 3.9.6 #
 * Changed the rounding in the conversion of atmospheric pressure from mbar
@@ -500,16 +497,17 @@ Pressione o item para:
   the sound of the wind can vary randomly.
 
 # Versão 3.9.4 #
-* documentation, localizations for Croatian and german language eliminated;
-  Because they are no longer supported by the respective translators.
-* Fixed bug on Serbian localization.
+* documentation, localizations for Croatian and german language were
+  removed; Because they are no longer supported by the respective
+  translators.
+* Fixed bug in Serbian localization.
 * Updated Czech localization.
-* Updated documentation and localization for Galego.
+* Updated documentation and localization for Galician.
 
 # Versão 3.9 #
 * Changed again API service; Weather Plus now uses the new Yahoo Weather API
   with language Yahoo!Query and JQuery:
-* The key-API is no longer required.
+* The api key is no longer required.
 * Restored The search of the homonymous cities; It will be possible to
   choose exactly the desired city from a list.
 * Optimized the output of general sounds; Now they are synchronized with the
@@ -610,9 +608,8 @@ Pressione o item para:
 * Fixed command insert+alt+w; It did not check the validity of the zipcode
   in use and did not check if the connection was active as the other
   commands do.
-* Updated the playback function of sound effects; Mp3 format is now used,
-  with a considerable saving on the download time and disk space, thanks to
-  the reduced size of compressed files.
+* Updated the playback function of sound effects; Mp3 format is now
+  used. Now the files will be much smaller.
 * Added 55 new sound effects; It will be necessary to update them from the
   settings of the plugin.
 
@@ -637,7 +634,7 @@ Pressione o item para:
   PM) , or the 24-hour system (12:30 `-` 00:30).
 
 # Versão 3.0 #
-* Adicionada tradução para eslovaco (graças a amável cooperação de Vitek
+* Added the slovak translation (thanks to the kind cooperation of Vitek
   Jirasek).
 * Adicionadas traduções para Português do Brasil e de Portugal (graças a
   amável cooperação de Adair Knaesel).
