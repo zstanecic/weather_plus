@@ -2169,7 +2169,7 @@ class EnterDataDialog(wx.Dialog):
 			wx.DefaultPosition, wx.DefaultSize,
 			['%s - %s - %s' % (_tempScale[1], _tempScale[0], _tempScale[-1]),
 			_("C - F - K"),
-			_("Don't specify")],
+			_("Unspecified")],
 			3, style=wx.RB_GROUP)
 		self.rb1.SetSelection(scaleAs)
 		sizer.Add(self.rb1, 0, wx.LEFT|wx.RIGHT|wx.BOTTOM, 5)
