@@ -8,7 +8,7 @@
 # Released under GPL 2
 #This file is covered by the GNU General Public License.
 #See the file COPYING for more details.
-#Version 7.3
+#Version 7.4
 # Python 2 and 3 compatible
 
 import os,sys, winsound, config, globalVars, ssl, json
@@ -4391,7 +4391,7 @@ class Shared:
 		address = 'http://www.geonames.org/search.html?q=%s&country=%s' % (city, acronym)
 		data = Shared().GetUrlData(address, verbosity = False) #does not log the error if it verbosity is False 
 		if not data: return None
-		if _pyVersion >= 3: data = data.decode()
+		if isinstance(data, bytes) and _pyVersion >= 3: data = data.decode()
 		elif _pyVersion <= 2: data = data.decode("utf-8")
 		for m in data.split('\n'):
 			if "geonames" and "latitude" in m:
