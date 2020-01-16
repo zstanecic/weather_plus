@@ -1,4 +1,4 @@
-#Weather Plus #
+# Weather Plus #
 
 * Author: Adriano Barbieri
 * NVDA compatibility: 2017.3 to 2019.3
@@ -9,7 +9,6 @@
 * This plugin adds local temperature and forecasts to 24 hours up to 9 additional days for NVDA.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Released under the GNU GPL (General Public License) v2
-
 * Weather Plus works through the use and presence of the following services:
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
 * [http://woeid.rosselliot.co.nz/lookup/](http://woeid.rosselliot.co.nz/lookup/)
@@ -18,6 +17,7 @@
 * [http://www.nvda.it/](http://www.nvda.it/)
 
 # USAGE: #
+
 * Press NVDA+w to get the information about current temperature and weather conditions.
 * Press NVDA+shift+W to get 24 hours forecast and forecast up to 9 days.
 * Press NVDA+shift+ctrl+w to set a temporary city.
@@ -30,9 +30,9 @@
 * You must set the Weather Plus addon before its first use! Go to the Preferences submenu, Weather Plus Settings submenu and choose one of the following options:
 
 
-* Set and Manage Your Cities... - Displays or allows to set the current city from a list.
-* Documentation - opens the help file for the current language.
-* Check for Update... - notifies about the availability of the new version.
+ * Set and Manage Your Cities... - Displays or allows to set the current city from a list.
+ * Documentation - opens the help file for the current language.
+ * Check for Update... - notifies about the availability of the new version.
 
 To add a new city: press the following item:
 
