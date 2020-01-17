@@ -93,29 +93,28 @@ To add a new city: press the following item:
   (predvolené), Fahrenheit a Kelvin.
 
 * Degrees shown as: Use the radio button to select between: Celsius `-`
-  Fahrenheit `-` Kelvin (by default C `-` F `-` K or unspecified.
+  Fahrenheit `-` Kelvin (by default) C `-` F `-` K or Unspecified.
 
-* Kombinovaný rámik: Predpovede počasia na dni: 3 Môžete si vybrať medzi 1
-  až 10 (predvolene 3 dni)
+* Combo box: Weather Forecasts up to days: 3; You can choose between 1 to 10
+  (3 days by default)
 
 * Vykonanie nasledujúcich akcií vykonáte prepnutím nasledujúcich
   začiarkávacich polí:
 
-* Začiarknite políčko skopírovať správu o počasí a predpoveď počasia vrátane
-  podrobností mesta do schránky; začiarkávacie pole nezačiarknuté
-  (predvolené)
+* Copy the weather report and weather forecast, including city details to
+  clipboard; check box not checked (by default)
 
-* Povoliť zvukové efekty (iba pre aktuálne poveternostné podmienky) Toto
-  začiarkavacie pole tiež umožňuje spravovať inštaláciu zvukových efektov;
-  Ak sú nainštalované zvukové efekty a pole je začiarknuté, bude k
-  dispozícii kláves F5 a nastavenie hlasitosti.
+* Enable audio effects (only for the current weather conditions); This check
+  box also allows you to manage the installation of sound effects; If the
+  sound effects are installed and the check box is activated, the F5 key and
+  the volume setting becomes available.
 
 * K dispozícii bude aj ďalšie začiarkavacie políčko: Používajte iba efekty
   počasia.
 
-* Môžete zmeniť celkovú hlasitosť alebo zmeniť naposledy počutý zvukový
-  efekt a odfiltrovať ostatné zvuky prostredia; začiarkávacie pole
-  nezačiarknuté (predvolené)
+* You can change the overall volume or change the last heard sound effect
+  and filter out the others sounds in your environment. Checkbox is not
+  checked by default.
 
 * Použiť iba efekty počasia - Táto možnosť je k dispozícii, ak sú zvukové
   efekty povolené; Ak sú povolené, umožňuje počúvať iba poveternostné
@@ -126,11 +125,10 @@ To add a new city: press the following item:
   pole nezačiarknuté, oznámi čas v 12-hodinovom formáte, napríklad, 12 AM
   `-` 12 PM. začiarkávacie pole začiarknuté (predvolené)
 
-* Zapnúť nápovedné popisky prvkov v okne pre nastavenia  začiarkávacie pole
-  začiarknuté (predvolené)
+* Enable help buttons in the settings window; check box checked (by default)
 
-* Read wind information check box not checked (by default) If this checkbox
-  is enabled, you can also activate the following checkboxes:
+* Read wind information; check box not checked (by default). If this
+  checkbox is enabled, you can also activate the following checkboxes:
 
 * Pridať smer vetra; Označuje pôvod vetra. začiarkavacie pole
   začiarknuté. (predvolené)
@@ -144,7 +142,7 @@ To add a new city: press the following item:
 
 * Pridať pocitovú teplotu; začiarkavacie pole začiarknuté (predvolené(
 
-* Read atmospherical information check box not checked (by default) If
+* Read atmospherical information; check box not checked (by default). If
   enabled, you can also check the following checkboxes:
 
 * Pridať hodnotu vlhkosti; Označuje vlhkosť v percentách. začiarkavacie pole
@@ -161,21 +159,21 @@ To add a new city: press the following item:
 * Pridať stav barometrického tlaku; začiarkávacie pole začiarknuté
   (predvolené)
 
-* Oznamovať astronomické informácie. Oznamuje čas východu a západu
-  slnka. Začiarkávacie pole nezačiarknuté. (predvolené)
+* Read astronomical information; Indicates the time of sunrise and
+  sunset. check box not checked (by default)
 
-* Ak je povolené, použije sa čiarka ako oddeľovač desatinných miest, inak sa
-  použije bodka. nezačiarknuté  pole (predvolené)
+* Use the comma to separate decimals; If enabled, uses the comma as a
+  decimal separator, otherwise, use the point. check box not checked (by
+  default)
 
-* Skontrolovať aktualizáciu, Ak je aktivovaná táto výstraha, keď je k
-  dispozícii aktualizácia doplnku. začiarkavacie pole začiarknuté
-  (predvolené)
+* Check for upgrade; If is activated this alerts when there is an update of
+  the addon. check box checked (by default)
 
 * Stlačením tlačidla OK potvrďte akciu alebo tlačidlom Zrušiť akciu zrušte.
 
-* Ak ste upravili zoznam miest, stlačením tlačidla „Zrušiť“ sa zapamätá a
-  stále ho môžete uložiť. Poznámka: vaše nastavenia sa uložia do súboru s
-  názvom:
+* If you have modified the cities list, by pressing "Cancel", you will be
+  remembered and you can still save it. Note: your settings will be save in
+  the file named:
 
 * "Weather.ini": prvotné nastavenia Weather Plus.
 * "Weather.volumes": Vlastné nastavenie úrovne hlasitosti nezávisle na
@@ -186,6 +184,9 @@ To add a new city: press the following item:
 --------------------------------------------------------------------------------
 
 # Čo je nové: #
+
+# Version 7.4 #
+* Fixed a bug in a city search function.
 
 # Verzia 7.3 #
 * Opravená neočakávaná chyba v prípade, že sa stránka pri vyhľadávaní
@@ -308,10 +309,10 @@ To add a new city: press the following item:
   potrebné aktualizovať.
 
 # Verzia 4.7.6 #
-* Vydané opravy chýb;
+* Bugfix release.
 
 # Verzia 4.7.5 #
-* Vydané opravy chýb
+* Bugfix release.
 
 # Verzia 4.7.3 #
 * "Details" function was updated for convenience; The information about the
@@ -373,7 +374,7 @@ To add a new city: press the following item:
   ak sa jej hodnota rovná alebo je menšia ako nula.
 
 # Verzia 4.5.5 #
-* Opravená lokalizácia a dokumentácia v srbčine.
+* Correct localization and documentation in Serbian.
 * Opravená lokalizácia v nemčine.
 
 # Zmeny v okne Weather Plus nastavenia #
@@ -384,7 +385,7 @@ To add a new city: press the following item:
 # Verzia 4.5.3 #
 * correct 2 strings in Russian and ukrainian localizations.
 * Corrected title of the Check for upgrade window.
-* Vylepšený algoritmus aktualizácie;
+* Improved update algorithm.
 
 # Verzia 4.5 #
 * Added hotkey NVDA+shift+control+alt+w; it Opens the Weather Plus settings
@@ -393,8 +394,8 @@ To add a new city: press the following item:
 
 # Zmeny v okne Weather Plus nastavenia #
 
-* Pridaných 8 nových začiarkavacích polí. Teraz je možné údaje ďalej
-  prispôsobovať:
+* Added 8 new check boxes; It is now possible to further customize the
+  readout:
 * Smer vetra.
 * rýchlosť vetra.
 * Pocitová teplota.
@@ -406,16 +407,16 @@ To add a new city: press the following item:
 
 # Verzia 4.4.8 #
 * Pridaný preklad do poľštiny (vďaka Zvonimirovi Staneczymuć).
-* Kompatibilné s wx python verzia 4;
+* Compatibility with wx python version 4.
 
 # Verzia 4.4.1 #
-* Pridaná podpora SSL;
+* Added SSL support.
 
 # Verzia 4.4 #
 * Opravená chyba pri čítaní reťazca novej verzie počas časového limitu
   pripojenia.
 * Vylepšená sekcia aktualizácie; Teraz dialóg nezasahuje do ponuky nvda.
-* Revidovaná a opravená ruská lokalizácia.
+* Revised and corrected russian localization.
 * Pridaný ukrajinský preklad (vďaka Alexovi Yeshanuovi).
 
 # Verzia 4.3.4 #
@@ -432,8 +433,7 @@ To add a new city: press the following item:
   „zemepisná dĺžka“ boli navzájom s hodnotami obrátené.
 
 # Verzia 4.3 #
-* Weather plus bolo presunuté na adresu „nvda.it“ ako predvoleného
-  poskytovateľa hostingu
+* Weather plus moved to the "nvda.it" as it's default hosting provider.
 
 # Verzia 4.2.4 #
 * Fixed a minor bug when the connection was not active.
@@ -483,9 +483,9 @@ To add a new city: press the following item:
   are read correctly.
 
 # Verzia 3.9.6 #
-* Zmenené zaokrúhlenie pri prepočte atmosférického tlaku z mbarov v palcoch
-  ortuti; * Teraz je hodnota vypočítaná pri nedostatku, zatiaľ čo predtým
-  bola pri nadbytku.
+* Changed the rounding in the conversion of atmospheric pressure from mbar
+  in inches of mercury; Now the value is calculated in defect, while before
+  it was in excess.
 
 # Verzia 3.9.5 #
 * Pridané 2 nové reťazce do zoznamu správ o oznamovaní počasia.
@@ -515,20 +515,19 @@ To add a new city: press the following item:
   Fahrenheit).
 
 # Verzia 3.8 #
-* opravy presnosti údajov
+* data accuracy fixes.
 * Povolené automatické nastavenie jazyka; API teraz posiela údaje o počasí v
   jazyku, ktorý nastavilo nvda.
-* Pridaná vyrovnávacia pamäť pre správy a predpovede počasia; Ak sa nezmení
-  mesto, stupnica stupnice alebo nastavené dni prognózy, budete si môcť
-  údaje prečítať po dobu 10 minút, aj keď je pripojenie
-  offline. Vyrovnávacia pamäť sa vynuluje pri každej vyššie uvedenej
-  zmene. Je to z toho dôvodu, že sa správy v tomto časovom období nemenia a
-  znižujú časté volania do rozhrania API, napríklad pri hraní so zvukovými
-  efektmi.
+* Added the cache for bulletin and weather forecasts; If not changed the
+  city, degree scale or the days of forecast set, you will be able to read
+  the data for 10 minutes even when connection off-line. The cache is reset
+  at each change described above. This is because the bulletins do not
+  change in this period of time and to reduce the frequent calls to the API,
+  maybe playing with sound effects.
 * Vylepšené vyhľadávanie aktualizácií; Po stiahnutí sa aktivuje jej
   inštalácia alebo v prípade prenosnej verzie nvda Otvorí sa priečinok, do
   ktorého ste aktualizáciu uložili.
-* Aktualizované všetky zvuky. Teraz sú zvuky vo formáte wave.
+* Updated all sounds. Now the sounds are in the wav format.
 
 # Verzia 3.7 #
 * Pridaná možnosť vypnúť pri vetre prepočet v metroch za sekundu.
@@ -544,10 +543,10 @@ To add a new city: press the following item:
 
 # Zmeny v okne nastavenia Weather Plus #
 
-* Zmenené vkladanie / vyhľadávanie z yahoo zipcode/woeId v ID čísle,
-  Identifikátor mesta; * ID čísla mesta sú podobné woeid, ale woeId už
-  nebudú fungovať, dokonca ani staré zipcode. Zadaním názvu alebo jeho časti
-  budete môcť znovu objaviť veľkú časť miest.
+* Changed insertion/search from yahoo zipcode/woeId in ID number, Identifier
+  of the city; ID numbers city are similar to woeid, but the woeId will no
+  longer work, even the old zipcode. You will be able to rediscover a great
+  part of the cities by typing the name or part of it.
 * Pridané vloženie / hľadanie geografických súradníc.
 * Pridané vkladanie / vyhľadávanie podľa poštového smerovacieho čísla.
 * Vylepšená funkcia „podrobnosti“.
@@ -589,7 +588,7 @@ To add a new city: press the following item:
 
 # Verzia 3.3 #
 * Pridané meranie rýchlosti vetra v metroch za sekundu.
-* opravy kódovania
+* encoding fixes.
 
 # Verzia 3.2 #
 * * Aktualizované oznamovanie súčasnej predpovede a oznamovanie aktuálneho
@@ -608,7 +607,8 @@ To add a new city: press the following item:
 * Predpovede sa časovo predĺžili na 10 dní.
 
 # Verzia 3.1 #
-* Pridaný preklad do srbčiny (vďaka láskavej spolupráci Dejana Gašiča).
+* Added translation in Serbian (thanks to the kind cooperation of Dejan
+  Gasic).
 * Opravený príkaz insert + alt + w; Nebola kontrolovaná platnosť používaného
   PSČ a nebolo kontrolované, či bolo pripojenie aktívne ako ostatné príkazy.
 * Updated the playback function of sound effects; Mp3 format is now
@@ -655,30 +655,16 @@ To add a new city: press the following item:
 * Celsius `-` Fahrenheit
 * C `-` F
 * Žiadna indikácia
-* Pridané tlačidlo „Definovať“; Umožňuje definovať zónu jedného mesta medzi:
+* Added button "Define"; It permits to define the zone of one city between:
 * Vnútrozemie
 * Prímorská oblasť
 * Púštna zóna
 * Arktická zóna
 * Horská zóna
-* * Pridané prepínacie tlačidlo pre nastavenie spôsobu zobrazenia stupňov;
-  	* Výber je medzi:
-  * Celzius - Fahrenheit
-  * C - F
-  * žiadne zobrazenia
-  * Pridané tlačidlo pre "upresnenie";
-  	* Umožňuje upresniť pásmo pre jedno mesto medzi:
-  * Vnútrozemské
-  * prímorská oblasť
-  * púštne pásmo
-  * arktické pásmo
-  * horské pásmo
-  	* Výber vyhodnotí, aby Weather Plus používal viac príznačné zvukové
-  efekty pre každé mesto zvlášť;
-  	* To je dôvod pre tak veľký nárast zvukových efektov pre túto verziu
-  doplnku;
-  	* Mnoho z týchto nových zvukov som získal od Tapina, ktorému srdečne
-  ďakujem.
+* The choice will consent to Weather Plus to use more appropriate sound
+  effects for every single city; This is the reason for the boost of the
+  number of new sound effects in this version of the addon; Many of the new
+  sound effects I got them from Tapin, whom I thank sincerely.
 
 # Verzia 2.9 #
 * Pridaná možnosť zvolenia obsahu súboru, z ktorého sa importujú kódy mesta.
@@ -691,9 +677,9 @@ To add a new city: press the following item:
 * Opravený regexp na hľadanie nadmorskej výšky; Nepríjmal parametre
   jednotlivých číslic.
 * Vylepšený parser textového poľa; Malo by  sa ľahšie nájsť mesto.
-* Prepojenia, ktoré teraz spravuje program urllib2, namiesto servera urllib;
-  * To by malo umožniť fungovanie doplnku aj na počítači pripojenom k
-  ​​podnikovej sieti chránenej serverom proxy.
+* Connections now handled by urllib2, instead of urllib; This should allow
+  the functioning of the addon even on a computer connected to the corporate
+  network protected by proxy.
 * Pridaná funkcia „Nájsť“; Control + F3 = Nájsť ..., F3 = Nájsť ďalšie,
   Shift + F3 = Nájsť predchádzajúce.
 
@@ -704,20 +690,16 @@ To add a new city: press the following item:
   vetra.
 * Pridaná možnosť oznamovať atmosférické informácie; Vlhkosť, viditeľnosť,
   tlak a stav barometrického tlaku.
-* Pridaná možnosť oznamovať astronomické informácie; * Čas východu a západu
-  slnka.
+* Added ability to read the Astronomic information; Time of sunrise and
+  sunset.
 
 # Zmeny v okne nastavenia Weather Plus #
 
 * Pridané 3 začiarkavacie políčka na úpravu nových nastavení viď. nižšie.
-* * Pridané tlačidlo podrobnosti o meste ";
-  	* Poskytuje nejaké informácie, napr. úplný názov mesta, ( Podľa služby
-  Yahoo Weather Forecast), štát / región a národnosť, ku ktorej patrí ;
-  	* S geografickými koordinátmi, a informáciou o nadmorskej výške.
-  * Pridané rozpoznávanie WoeID identifikačného kódu. napr. mesto Bologna
-  tomu napr. zodpovedá 711080).
-  * Teraz môžete napísať názov mesta a ak sa nejaké nájdu, zobrazí sa zoznam
-  a môžete si vybrať.
+* Added button "Details"; Provides some information such as the real name of
+  the city ( assigned by Yahoo Weather Forecast), the state / region and the
+  nation to which it belongs; With geographic coordinates, and height above
+  sea level.
 * Pridané rozpoznávanie WoeID (lokalizačné kódy, napr. Bologna, zodpovedá
   711080).
 * Teraz môžete zadať názov mesta. V tomto prípade, ak sú nejaké výskyty,

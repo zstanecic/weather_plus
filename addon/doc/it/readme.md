@@ -19,156 +19,168 @@
 * [http://www.nvda.it/](http://www.nvda.it/)
 
 # USAGE: #
-* Press NVDA+w to get the information about current temperature and weather
-  conditions.
-* Press NVDA+shift+W to get 24 hours forecast and forecast up to 9 days.
-* Press NVDA+shift+ctrl+w to set a temporary city.
+* Premere NVDA+w per ottenere le informazioni sulla temperatura attuale e
+  condizione meteo.
+* Premere NVDA+shift+W per ottenere la previsione a 24 ore e previsione fino
+  a 9 giorni successivi.
+* Premere NVDA+shift+control+w per impostare una città temporanea.
 * Premere NVDA + shift + control + alt + w per aprire la finestra
   impostazioni di Weather Plus.
-* Press NVDA+alt+w to get the date and time, when the weather report was
-  updated.
-* Press control+shift+w to toggle between Fahrenheit, Celsius or Kelvin
-  temperature scales.
+* Premere NVDA+alt+w per ottenere la data e l'ora quando il bollettino meteo
+  è stato aggiornato.
+* Premere shift+control+w per alternare la scala di misura tra Fahrenheit,
+  Centigradi o Kelvin.
 
-# Weather Plus setup: #
+# Impostare Weather Plus: #
 
-* You must set the Weather Plus addon before its first use! Go to the
-  Preferences submenu, Weather Plus Settings submenu and choose one of the
-  following options:
+* È necessario impostare l'addon Weather Plus prima del primo utilizzo! Vai
+  al sottomenu Preferenze, sottomenu Impostazioni Weather Plus e scegliere
+  una delle seguenti opzioni:
 
 
-* Set and Manage Your Cities... - Displays or allows to set the current city
-  from a list.
-* Documentation - opens the help file for the current language.
-* Check for Update... - notifies about the availability of the new version.
+* Impostazioni e Gestione delle tue città... - Visualizza o consente di
+  impostare una città da un elenco.
+* Documentazione - Apre la documentazione per la lingua corrente.
+* Controllo presenza aggiornamenti... - Notifica se è disponibile una
+  versione aggiornata.
 
-To add a new city: press the following item:
+Per aggiungere una nuova città: premere il seguente elemento:
 
-* Set and Manage Your Cities... Displays or allows to set the current city
-  from a list
+* Impostazioni e Gestione delle tue città... Visualizza o consente di
+  impostare una città da un elenco
 
-* The following message is displayed only for the first time! Settings
-  Preset None F1: help placing, F2: last TAB selection, F3: list and edit
-  box, F4: control duration Weather Forecast, F5: volume controls.
+* Solo per la prima volta, viene visualizzato il messaggio seguente!
+  Impostazioni Preimpostato Nessuno F1: aiuto immissione, F2: ultima
+  selezione con TAB, F3: elenco e casella di editazione, f4: controllo
+  durata previsioni meteo, F5: controlli volume.
 
-* In the edit box, enter a City, woeID or choose one from the list, if
-  available. Note: The F5 key is available if the sound effects are
-  activated.
+* Immettere una città, woeId o sceglierne uno dall'elenco, se
+  disponibile. Nota: Il tasto F5 è disponibile se gli effetti sonori sono
+  attivati.
 
-* After pressing enter on the item "Set and Manage Your Cities...", you will
-  find other buttons as follows:
+* Dopo aver premuto Invio sulla voce  "Impostazioni e Gestione delle tue
+  città...", si trova altri pulsanti come segue:
 
-* Test - testing the validity of woeID entry and find the name of city
-  assigned or vice versa.
+* Testa - Testa la validità del woeID immesso e trova il nome della città
+  assegnatogli, o viceversa.
 
-* Add - adds the current city into your list. This button can be activated
-  if you select a city from the list, when the city entered passed the test.
+* Aggiungi - Aggiunge la città corrente al tuo elenco. Questo pulsante viene
+  attivato se si seleziona una città dall'elenco, o ha superato il test.
 
-* Details - displays information about the current city. This button is
-  activated if you select a city from the list, or it has passed the test.
+* Dettagli - Visualizza informazioni sulla città corrente. Questo pulsante
+  viene attivato se si seleziona una città dall'elenco, o ha superato il
+  test.
 
-* Define - Allows you to define the area, in order to adapt the sound
-  effects. This button can be activated if the audio effects are installed
-  and activated, and you select a city from the list.
+* Definisci - Permette di definire l'area, al fine di adeguare gli effetti
+  sonori. Questo pulsante viene attivato se gli effetti sonori sono
+  installati e attivati, e si seleziona una città dall'elenco.
 
-* Preset - Presets a city as the default, will be used every time you
-  restart the plugin. This button is activated if you select a city
-  previously inserted in the list and not preset, or it has passed the test.
+* Preimpostato - Predispone la città come predefinita, verrà utilizzata ogni
+  volta che si riavvia il plugin. Questo pulsante viene attivato se si
+  seleziona una città precedentemente inserita nell'elenco e non
+  preimpostata o ha superato il test.
 
-* Remove - Deletes the current city from your list. This button can be
-  activated if you select a city previously inserted in the list.
+* Rimuovi - Elimina la città corrente dall'elenco. Questo pulsante viene
+  attivato se si seleziona una città precedentemente inserita nell'elenco.
 
-* Rename - Rename the current city. This button can be activated if you
-  select a city previously inserted in the list.
+* Rinomina - Rinomina la città corrente. Questo pulsante viene attivato se
+  si seleziona una città precedentemente inserita nell'elenco.
 
-* Import new cities... - This button allows you to import cities from the
-  another list of cities with the extension *.zipcodes; you can select the
-  city you want to import, by turning on the check box associated with it.
+* Importa nuove città... - Permette di incorporare nella tua lista nuove
+  città importandole da un altro elenco con estensione * .zipcodes; puoi
+  selezionare la città che vuoi importare, attivando la casella di controllo
+  associata.
 
-* Export your cities... - It allows you to save the cities in the specified
-  file with the extension *.zipcodes. This button is activated if you have
-  added and saved at least one city into the list.
+* Esporta le tue città... - Esso consente di salvare le città nel file
+  specificato con estensione * .zipcodes. Questo pulsante viene attivato se
+  avete aggiunto e salvato almeno una città nell'elenco.
 
-* Scale of temperature measurement: Use the radio button to select between
-  Celsius (by default), Fahrenheit and Kelvin.
+* Scala di misura della temperatura: Utilizzare il Pulsante radio per
+  selezionare tra Centigradi (predefinito), Fahrenheit e Kelvin.
 
 * Degrees shown as: Use the radio button to select between: Celsius `-`
-  Fahrenheit `-` Kelvin (by default C `-` F `-` K or unspecified.
+  Fahrenheit `-` Kelvin (by default) C `-` F `-` K or Unspecified.
 
-* Combo box: Weather Forecasts up to days: 3 You can choose between 1 to 10
+* Combo box: Weather Forecasts up to days: 3; You can choose between 1 to 10
   (3 days by default)
 
-* To perform the following actions, toggle the following checkboxes:
+* Per eseguire le seguenti azioni, attivare o disattivare il seguenti
+  caselle di controllo:
 
 * Copy the weather report and weather forecast, including city details to
-  clipboard check box not checked (by default)
+  clipboard; check box not checked (by default)
 
-* Enable audio effects (only for the current weather conditions) This check
+* Enable audio effects (only for the current weather conditions); This check
   box also allows you to manage the installation of sound effects; If the
   sound effects are installed and the check box is activated, the F5 key and
   the volume setting becomes available.
 
-* There will also be available an additional check box: Use only weather
-  effects.
+* Sarà inoltre disponibile una casella di controllo aggiuntiva: Usa solo
+  effetti atmosferici.
 
 * You can change the overall volume or change the last heard sound effect
   and filter out the others sounds in your environment. Checkbox is not
-  checked by default.)
+  checked by default.
 
-* Use only weather effects - This option is available if sound effects are
-  enabled; If is enabled, allows to listen only weather effects such as
-  rain, wind, thunder, etc., filtering out all environmental
-  ones. (unchecked by default)
+* Usa solo effetti atmosferici - Questa opzione è disponibile se gli effetti
+  sonori sono abilitati; Se attivatta permette di ascoltare solo effetti
+  atmosferici come pioggia, vento, tuoni, ecc., Filtrando tutti quelli
+  ambientali. (non abilitata per impostazione predefinita)
 
-* Enable the reading of the hours in 24-hour format. - If this checkbox is
-  unchecked, announces the time in 12-hour format for example, 12 AM `-` 12
-  PM. check box is checked (by default)
+* Abilitare la lettura delle ore in formato 24-ore. -Se questa casella di
+  controllo non è abilitata, annuncia l'ora in 12-ore formato, esempio: 12
+  AM - 12 PM.
 
-* Enable help buttons in the settings window check box checked (by default)
+* Enable help buttons in the settings window; check box checked (by default)
 
-* Read wind information check box not checked (by default) If this checkbox
-  is enabled, you can also activate the following checkboxes:
+* Read wind information; check box not checked (by default). If this
+  checkbox is enabled, you can also activate the following checkboxes:
 
-* Add wind direction; Indicates the provenance of the wind. check box
-  checked (by default)
+* Aggiungi la direzione del vento; Indica la provvenienza del vento. casella
+  di controllo attivata (per impostazione predefinita)
 
-* Add speed of the wind; Indicates the speed in kilometers or miles per
-  hour. check box checked (by default)
+* Aggiungi la velocità del vento; Indica la velocità in chilometri o miglia
+  orarie. casella di controllo attivata (per impostazione predefinita)
 
-* Add speed in meters per second of the wind; check box checked (by default)
+* Aggiungi la velocità del vento in metri al secondo; casella di controllo
+  attivata (per impostazione predefinita)
 
-* Add perceived temperature; check box checked (by default)
+* Aggiungi la temperatura percepita; casella di controllo attivata (per
+  impostazione predefinita)
 
-* Read atmospherical information check box not checked (by default) If
+* Read atmospherical information; check box not checked (by default). If
   enabled, you can also check the following checkboxes:
 
-* Add humidity value; Indicates the humidity in percent. check box checked
-  (by default)
+* Aggiungi valore dell'umidità; Indica l'umidità in percentuale. casella di
+  controllo attivata (per impostazione predefinita)
 
-* Add visibility value; Indicate in kilometres or miles the distance
-  visible. check box checked (by default)
+* Aggiungi valore della visibilità; Indica in chilometri o miglia la
+  distanza visibile. casella di controllo attivata (per impostazione
+  predefinita)
 
-* Add atmospheric pressure value; Indicates the atmospheric pressure in
-  millibars or inches of mercury. If it's checked, enable an additional
-  check box that allows you to indicate the pressure in millimeters of
-  mercury. check box checked (by default)
+* Aggiungi valore della pressione atmosferica; Indica la pressione in
+  millibar o pollici di mercurio. Se è attivata, abilita una ulteriore
+  casella di controllo che permette di indicare la pressione in millimetri
+  di mercurio. casella di controllo attivata (per impostazione predefinita)
 
-* Add status of barometric pressure; check box checked (by default)
+* Aggiungi lo stato della pressione barometrica; casella di controllo
+  attivata (per impostazione predefinita)
 
-* Read astronomical information Indicates the time of sunrise and
+* Read astronomical information; Indicates the time of sunrise and
   sunset. check box not checked (by default)
 
-* Use the comma to separate decimals If enabled, uses the comma as a decimal
-  separator, otherwise, use the point. check box not checked (by default)
+* Use the comma to separate decimals; If enabled, uses the comma as a
+  decimal separator, otherwise, use the point. check box not checked (by
+  default)
 
-* Check for upgrade If is activated this alerts when there is an update of
+* Check for upgrade; If is activated this alerts when there is an update of
   the addon. check box checked (by default)
 
 * Premere il pulsante OK per confermare l'azione o il pulsante Annulla per
   annullare l'azione.
 
 * If you have modified the cities list, by pressing "Cancel", you will be
-  remembered and you can still save it Note: your settings will be save in
+  remembered and you can still save it. Note: your settings will be save in
   the file named:
 
 * "Weather.ini": impostazioni di avvio di Weather Plus.
@@ -182,22 +194,26 @@ To add a new city: press the following item:
 
 # Novità: #
 
+# Versione 7.4 #
+* Corretto un bug nella funzione di ricerca delle città.
+
 # Versione 7.3 #
 * Corretto bug imprevisto in caso di pagina non trovata durante la ricerca
   di aggiornamenti.
 
 # Versione 7.2 #
-* Fixed bug after adding a city, if it is the first one entered if you press
-  ok button and restart the add-on.
-* Now the progress dialog show again the time remaining and time elapsed.
+* Risolto bug dopo l'aggiunta della prima città, quando si preme il pulsante
+  ok e si riavvia il componente aggiuntivo.
+* Ora la finestra progressiva di dialogo mostra nuovamente il tempo
+  rimanente e il tempo trascorso.
 * corretta traduzione in italiano dell'aiuto del pulsante Rinomina.
 
 # Versione 7.1 #
-* Fixed update bug.
+* Corretto bug di aggiornamento.
 
 # Versione 7.0 #
-* Improved search window, now it is possible to manage all the search key
-  inserted, add, delete and save it from context menu.
+* Finestra di ricerca migliorata, ora è possibile gestire le chiavi di
+  ricerca inserire, aggiungere, eliminare e salvarle dal menu contestuale.
 * Controllo dell'apertura delle finestre migliorato.
 * corretti alcuni piccoli bug.
 
@@ -208,44 +224,45 @@ To add a new city: press the following item:
   comandi disponibili.
 
 # Versione 6.8 #
-* Updated compatibility for Python 3
+* Aggiornata compatibilità per Python 3
 
 # Versione 6.7 #
 * Risolto un bug che si manifestava testando una nuova città e usandola in
   modalità temporanea premendo semplicemente "invio" e in un secondo momento
   provando ad aggiungerla tramite il bottone "Aggiungi".
-* Added abbreviation for SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS to the
-  database, but unfortunately at the moment it seems that the cities of this
-  state do not work or have incomplete data, we hope it will be solved soon.
+* Aggiunto abbreviazione per SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS al
+  database, ma purtroppo al momento sembra che le città di questo stato non
+  funzioni o ha dati incompleti, speriamo che sarà risolto presto.
 
 # Versione 6.5 #
-* Fixed a couple of bugs in sound effects reproduction; a couple of "for"
-  cycles with incorrect maximum values caused the call to a non-existent
-  sound effect.
-* Fixed bug in local time in "details"; 12-hour time conversion gave an
-  error.
-* Fixed a bug in the Yahoo Weather Forecast report; In some cities the
-  forecasts start from the previous day and not from the current one. The
-  correction of these cities entails the loss of the last days of forecast
-  proportionate to the mismatch of dates (if the forecast days are set to
-  10).
+* Corretti un paio di bug nella riproduzione degli effetti sonori; un paio
+  di cicli "for" con valore massimo errato causavano la chiamata ad un
+  effetto sonoro inesistente.
+* Corretto bug nell'ora locale in "dettagli"; La conversione del tempo in 12
+  ore dava un errore.
+* Corretto un bug nelreport di Yahoo Weather Forecast; In alcune città le
+  previsioni partono dal giorno precedente e non da quello attuale. La
+  correzione di queste città comporta la perdita degli ultimi giorni di
+  previsione proporzionale alla mancata corrispondenza delle date (se i
+  giorni di previsione sono impostati su 10).
 
 # Versione 6.4 #
-* Daylight saving time removed in the "Details" function.
-* Improved audio effects reproduction; Now they update regularly if the
-  weather conditions change.
+* Rimossa l'ora legale nella funzione "Dettagli".
+* Migliorata la riproduzione degli effetti audio; Ora si aggiornano
+  regolarmente se cambiano le condizioni meteorologiche.
 
 # Versione 6.3 #
-* Fixed encoding issues.
+* Risolto problemi di codifica.
 
 # Versione 6.2 #
-* Fixed bug in the "Add city" function.
+* Corretto bug nella funzione "Aggiungi città".
 * Corretto bug che non assegnava la variabile "_volume" all'avvio
   dell'addon.
-* Added missing code from version 6.0; Now you can recover the saved cities
-  from the version that uses the Apixu API; The "Test" and "Remove" buttons
-  and non-compatible cities are available in the format: "Ferrara, iter
-  44.83,11.58 0" (city, geographic coordinates, area definition).
+* Aggiunto codice mancante dalla versione 6.0; Ora è possibile recuperare le
+  città salvate dalla versione che utilizza l'API di Apixu; Vengono resi
+  disponibili i pulsanti "Testa" e "Rimuovi" e le città non compatibili nel
+  formato :"Ferrara, iter 44.83,11.58 0" (città, coordinategeografiche,
+  definizione area).
 
 # Versione 6.1 #
 * Coorretti 2 bug.
@@ -254,7 +271,7 @@ To add a new city: press the following item:
 * Weather Plus torna a utilizzare l'API di Yahoo Weather.
 * Praticamente tutte le funzionalità della precedente versione 4.8 sono
   tornate e mantiene il pulsante "Rinomina".
-* Compatibility with Python 3.
+* Compatibilità con Python 3.
 
 # Versione 5.0.1 #
 * Corretto bug che restituiva una stringa vuota se la velocità del vento in
@@ -264,84 +281,91 @@ To add a new city: press the following item:
 * corretto il numero di giorni di previsione da 9 a 6 in readme.
 
 # Versione 5.0 #
-* Weather Plus now uses the APIXU API.
+* Weather Plus ora utilizza l'API APIXU.
 
-# Changes in the Weather Plus Settings window: #
+# Modifiche nella finestra Impostazioni di Weather Plus #
 
-* Removed old checkbox "State of barometric pressure". Replaced with new
-  checkbox "Add cloudiness value";
-* It gives you the percentage of cloudiness.
-* Added new checkbox "Add precipitation value". It gives you the amount in
-  millimeters of precipitation.
-* Removed old checkbox "Indicates the wait with a beep while you search for
-  the latest bulletin"; Left active by default.
-* added the astronomic information;
-* Time of moonrise and moonset.
-* Added new button "Rename"; To rename cities more conveniently.
-* Improved function of the "Test" button; Now accept some commands to
-  facilitate the search for cities; These new commands are described in the
-  help function that can be called up with F1.
+* Rimossa la vecchia casella di controllo "Stato della pressione
+  barometrica". Sostituito con la nuova casella di controllo "Aggiungi
+  valore della nuvolosità";
+* Dà la percentuale di nuvolosità atmosferica.
+* Aggiunta nuova casella di controllo "Aggiungi valore di
+  precipitazione". Dà la quantità in millimetri di precipitazione
+  atmosferica.
+* Rimossa la casella di controllo "Indica l'attesa con un segnale acustico
+  durante la ricerca dell'ultimo bollettino"; Ora è attiva per impostazione
+  predefinita.
+* Aggiunto alle informazioni astronomiche;
+* Orario del sorgere e tramonto della luna.
+* Aggiunto nuovo pulsante "Rinomina"; Per rinominare le città più
+  convenientemente.
+* Funzione migliorata del pulsante "Test"; Ora accetta alcuni comandi per
+  facilitare la ricerca delle città; Questi nuovi comandi sono descritti
+  nella funzione di aiuto che può essere richiamata con F1.
 
 # Versione 4.8 #
-# Changes in the Weather Plus Settings window #
+# Modifiche nella finestra Impostazioni di Weather Plus #
 
-* Added new checkbox; "Use only weather effects"; This allows you to filter
-  out all other environmental effects.
-* Improved random playback and added 71 new sound effects; You will need to
-  update them by clicking twice in "enable audio effects" check box.
-* The volume type assigned by the user, between the general and current
-  audio volume, is now maintained when the configuration is saved.
-* Removed useless sound during selection text in edit box by pressing
-  control+a.
-* Improved readability into help window invokable with F1 function key.
-* Added new compatibility flag for NVDA 2019.1, and the current alpha
-  versions.
+* Aggiunta nuova casella di controllo; "Usa solo effetti atmosferici";
+  Questo permette di filtrare tutti gli altri effetti ambientali.
+* Migliorata la riproduzione casuale e sono stati aggiunti 71 nuovi effetti
+  sonori; Sarà necessario aggiornarli dalle impostazioni del plugin
+  cliccando due volte la casella di controllo "Abilita effetti audio".
+* Il tipo di volume assegnato dall'utente, tra generale e corrente, ora è
+  mantenuto quando la configurazione viene salvata.
+* Rimosso l'inutile suono durante la selezione di testo nella casella di
+  editazione premendo ctrl+a.
+* Migliorata la leggibilità nella finestra di aiuto richiamabile con il
+  tasto funzione F1.
+* Aggiunti nuovi flag di compatibilità per NVDA 2019.1, e le attuali
+  versioni alpha.
 
 # Versione 4.7.7 #
 * Rimossa la superflua notifica di download completato durante
   l'aggiornamento di Weather Plus.
-* Added 6 new sound effects; It will be necessary to update them from the
-  settings of the plugin.
+* Aggiunti 6 nuovi effetti sonori; Sarà necessario aggiornarli dalle
+  impostazioni del plugin.
 
 # Versione 4.7.6 #
-* Bugfix release;
+* Bugfix release.
 
 # Versione 4.7.5 #
-* Bugfix release
+* Bugfix release.
 
 # Versione 4.7.3 #
-* "Details" function was updated for convenience; The information about the
-  altitude are now provided by veloroutes.org. This leads to small
-  differences of little relevance.
+* Per convenienza è stata aggiornata la funzione "dettagli"; Le informazioni
+  sull'altitudine sono ora fornite da veloroutes.org. Questo porta a piccole
+  differenze di poca rilevanza.
 
 # Versione 4.7.2 #
-* Fixed small encoding bug.
+* Corretto piccolo bug di codifica.
 
 # Versione 4.7.1 #
-* Fixed bug when getting the information about the time zone.
+* Risolto un bug quando ottiene le informazioni sul fuso orario.
 
 # Versione 4.7 #
-* Simplified the update section; Now at the start, in case an update is
-  available it will be possible to proceed directly through a single dialog
-  box.
-* removed the file selector in the update section; Now the update file is
-  saved to the temporary folder, It open the possibility to install the
-  update automatically, good for beginners.
+* Semplificata la sezione di aggiornamento; Ora all'avvio, in caso di
+  aggiornamento disponibile sarà possibile procedere direttamente tramite
+  un'unica finestra di dialogo.
+* rimosso il file selettore nella sezione di aggiornamento; Ora il file di
+  aggiornamento viene salvato nella cartella temporanea, si apre la
+  possibilità di installare l'aggiornamento automatico, buono per i
+  principianti.
 
 # Versione 4.6.9 #
-* Added arabic localization (thanks to Wafik Immaculate).
+* Aggiunta localizzazzione in arabo (grazie a Wafik Immaculate).
 
 # Versione 4.6.8 #
-* Updated localizations for brazilian portuguese and european portuguese
-  localizations (thanks to Alberto Mendonça).
+* Aggiornata localizzazione portoghese brasiliano e portoghese europee
+  (grazie ad Alberto Mendonça).
 
 # Versione 4.6.7 #
-* Improved the reading of the current time; In some cities, it was not
-  correct. Added daylight saving time to the details; Available only for the
-  countries that adopt it.
+* Migliorata ulteriormente la lettura dell'ora corrente; In alcune città non
+  era corretta. Aggiunta l'ora legale ai dettagli; Disponibile solo per i
+  paesi che la adottano.
 
 # Versione 4.6.5 #
-* Fixed small bug when reading the time.
+* Corretto bug durante lettura dell'ora corrente.
 
 # Versione 4.6.4 #
 * Migliorata la lettura dell'ora locale corrente; le chiavi di ricerca sono
@@ -355,69 +379,68 @@ To add a new city: press the following item:
   stato creato,.
 
 # Versione 4.6 #
-* Added the menu item "Set a temporary city..."; For the sake of
-  completeness, now you can open the temporary city's list also from the
-  menu.
-* Improved management of temperature scale; Now the settings window will
-  always return the default value.
-* Improved prevention of the multiple opening of the main windows; If one of
-  these is already opened, in addition to the sound alert, puts it in
-  foreground.
-* Improved audio effects; Now are based on the current local time from the
-  city in use.
+* Aggiunta la voce di menu "Imposta una città temporanea..."; Per
+  completezza, ora si può aprire una città temporanea anche dal menu.
+* Migliorata la gestione della scala di temperatura; Ora la finestra
+  impostazioni restituisce sempre il valore di default.
+* Miglioramento nella prevenzione di multiple aperture delle finestre
+  principali; Se una di queste è già aperta, oltre al suono di avviso, la
+  pone in primo piano.
+* Miglioramento negli effetti audio; Ora sono basati sull'ora locale
+  corrente della città in uso.
 
-# Changes in details button function in settings window #
+# Modifiche nella funzione del pulsante dettagli nella finestra impostazioni #
 
 * Aggiunta l'ora locale corrente.
-* Fixed altitude value; Now return the altitude values when the value is
-  less than or equal to zero.
+* Corretto il valore di altitudine; Ora riporta i valori di altitudine anche
+  quando il valore è minore o uguale a zero.
 
 # Versione 4.5.5 #
-* Corretta localizzazione e la documentazione in serbo.
+* Correct localization and documentation in Serbian.
 * Corretta la localizzazione in tedesco.
 
-# Changes in the Weather Plus Settings window #
+# Modifiche nella finestra Impostazioni di Weather Plus #
 
-* Added new checkbox; You can enable the comma as the decimal separator,
-  otherwise the separator will be the point.
+* Aggiunto una nuova casella di controllo; È possibile attivare la virgola
+  come separatore decimale, altrimenti il separatore sarà il punto.
 
 # Versione 4.5.3 #
-* correct 2 strings in Russian and ukrainian localizations.
-* Corrected title of the Check for upgrade window.
-* Improved update algorithm;
+* corrette 2 stringhe in localizzazione russa e ucraina.
+* Corretto il titolo della finestra di aggiornamento.
+* Improved update algorithm.
 
 # Versione 4.5 #
-* Added hotkey NVDA+shift+control+alt+w; it Opens the Weather Plus settings
-  dialog.
-* Correct some English strings.
+* Aggiunto il tasto di scelta rapida NVDA+shift+control+alt+w; Si apre la
+  finestra di dialogo impostazioni di Weather Plus.
+* Corrette alcune stringhe inglesi.
 
-# Changes in the Weather Plus Settings window #
+# Modifiche nella finestra Impostazioni di Weather Plus #
 
-* Added 8 new check boxes It is now possible to further customize the
+* Added 8 new check boxes; It is now possible to further customize the
   readout:
-* wind direction.
-* wind speed.
-* Perceived temperature.
-* Humidity value.
-* Visibility value.
-* Atmospheric pressure value.
-* Indicates the atmospheric pressure in millimeters of mercury (mmHg).
-* State of the barometric pressure.
+* Direzione del vento.
+* Velocità del vento.
+* Temperatura percepita.
+* Valore dell'umidità.
+* Valore della visibilità.
+* Valore della pressione atmosferica.
+* Indicare la pressione in millimetri di mercurio (mmHg).
+* Stato della pressione barometrica.
 
 # Versione 4.4.8 #
 * Aggiunta la traduzione in polacco (grazie a Zvonimir Staneczyć).
-* Compatibility with wx python version 4;
+* Compatibility with wx python version 4.
 
 # Versione 4.4.1 #
-* Added SSL support;
+* Added SSL support.
 
 # Versione 4.4 #
 * Corretto bug nella lettura della nuova stringa di versione, durante un
   time-out della connessione.
-* Improved the upgrade section; Now the dialog do not interferes with the
-  nvda menu.
-* Revised and corrected russian Localization.
-* Adding Ukrainian translation (thanks to Alex Yeshanu).
+* Migliorata la sezione aggiornamento; Ora la finestra di dialogo non
+  interferisce con il menu di nvda.
+* Revised and corrected russian localization.
+* Aggiunta la traduzione in ucraino (grazie ad Alex Yeshanu).
 
 # Versione 4.3.4 #
 * Riveduta e corretta la localizzazione Tedesca.
@@ -429,106 +452,108 @@ To add a new city: press the following item:
 * Aggiunta localizzazione Rumena (grazie a Florian Ionașcu).
 
 # Versione 4.3.1 #
-* Fixed a minor bug in the function "details"; The strings "latitude" and
-  "longitude" were reversed compared to the value.
+* Corretto un bug minore nella funzione "dettagli"; Le stringhe "latitudine"
+  e "longitudine" erano invertite rispetto al valore.
 
 # Versione 4.3 #
-* Weather plus moved to the "nvda.it" as it's default hosting provider
+* Weather plus moved to the "nvda.it" as it's default hosting provider.
 
 # Versione 4.2.4 #
-* Fixed a minor bug when the connection was not active.
+* Corretto un bug minore quando la connessione non era  attiva.
 
 # Versione 4.2.3 #
-* Now Weather Plus is able to run some connection attempts before notifying
-  the malfunction of the WoeId in use, it emits a beep at each attempt; This
-  beep, if you want, can be disabled by using a check box by Weather Plus
-  settings.
+* Ora, Weather Plus esegue alcuni tentativi di connessione prima di
+  notificare il malfunzionamento del WoeId in uso, con l'emissione di un
+  beep ad ogni tentativo; Questo segnale acustico, se si desidera, può
+  essere disattivato tramite una casella di controllo dalle impostazioni di
+  Weather Plus.
 
 # Versione 4.2.2 #
-* Fixed bug in the translation strings for the scale measurement. In some
-  languages, Kelvin, Celsius and Fahrenheit have not been translated.
+* Corretto un bug nella traduzione della scala di misura; In alcune lingue,
+  Kelvin, Celsius e Fahrenheit non sono stati tradotti.
 
 # Versione 4.2.1 #
-* Fixed update notice of Weather Plus during the Windows start-up; This
-  happens when the button was pressed "Use currently saved settings on the
-  logon and other secure screens (requires administrator privileges)" from
-  the general settings of nvda, which copies the configuration, and all of
-  the add-on folder systemConfig, but these are not synchronized with
-  subsequent updates of the add-ons. If you have ever used at least once
-  this option, you will have to do it again one last time just after to have
-  up-to-date Weather Plus.
+* Risolto avviso di aggiornamento di Weather Plus durante l'avvio di
+  Windows; Questo accade quando è stato premuto il pulsante "Utilizza le
+  impostazioni di configurazione salvate nella finestra di logon (richiede
+  privilegi di amministratore)" dalle impostazioni generali di nvda, che
+  copia la configurazione e tutti gli add-on nella cartella systemConfig, ma
+  questi non vengono sincronizzati con i successivi aggiornamenti dei
+  componenti aggiuntivi. Se avete usato almeno una volta questa opzione,
+  dovrete farlo di nuovo per l'ultima volta, solo dopo aver aggiornato
+  Weather Plus.
 
 # Versione 4.2 #
-* Added 5 new sound effects; It will be necessary to update them from the
-  settings of the plugin.
-* Fixed bug in the import function; The list of cities was not sorted
-  alphabetically.
-* Added import mode in the import function; You may decide to completely
-  replace your own list, or simply add new cities to it.
-* Updated the reading of the weather forecast, current weather report;
-  Adding the perceived temperature (wind chill).
+* Aggiunti 5 nuovi effetti sonori; Sarà necessario aggiornarli dalle
+  impostazioni del plugin.
+* Corretto un bug nella funzione di importazione; L'elenco delle città non
+  veniva ordinato alfabeticamente.
+* Aggiunta modalità di importazione nella funzione di importazione; Si può
+  decidere se sostituire completamente la propria lista, o semplicemente
+  aggiungere nuove città ad essa.
+* Aggiornata la lettura del bollettino corrente; Aggiunta la temperatura
+  percepita (wind chill).
 * Aggiunte nuove stringhe alla lista per i rapporti meteo.
 
 # Versione 4.1 #
-* Fixed bug in the forecast for up to 10 days; Now if the estimates received
-  are in number less than the request of the user, the missing days are
-  indicated as unknown.
-* Fixed string help entry on the command nvda+shift+w.
-* Revised and updated documentation.
+* Corretto bug nelle previsioni fino a 10 giorni; Ora se le previsioni
+  ricevute sono in numero inferiore alla richiesta dell'utente, i giorni
+  mancanti vengono indicati come sconosciuto.
+* Corretta stringa di aiuto immissione sul comando nvda+shift+w.
+* Documentazione rivista e aggiornata.
 
 # Versione 4.0 #
-* Updated some parts of code and replaced all instructions eval().
+* Aggiornate alcune parti di codice e sostituite tutte le istruzioni eval().
 
 # Versione 3.9.7 #
-* Fixed bug during the reading of weather forecasts; Now the temperatures
-  are read correctly.
+* Corretto bug nelle previsioni del tempo; Ora le temperature vengono
+  aggiornate correttamente.
 
 # Versione 3.9.6 #
 * Changed the rounding in the conversion of atmospheric pressure from mbar
-  in inches of mercury; * Now the value is calculated in defect, while
-  before it was in excess.
+  in inches of mercury; Now the value is calculated in defect, while before
+  it was in excess.
 
 # Versione 3.9.5 #
 * Aggiunte 2 nuove stringhe alla lista rapporti meteo.
 * Coorretti 2 bug.
-* Updated running sounds for the effect in conditions of only wind; * Now
-  the sound of the wind can vary randomly.
+* Aggiornata l'esecuzione suoni per l'effetto in condizioni di solo vento; *
+  Ora il suono del vento può variare in modo casuale.
 
 # Versione 3.9.4 #
-* documentation, localizations for Croatian and german language were
-  removed; Because they are no longer supported by the respective
-  translators.
-* Fixed bug in Serbian localization.
-* Updated Czech localization.
-* Updated documentation and localization for Galician.
+* Documentazione, localizzazioni per lingue croata e tedesca eliminate;
+  Perché non sono più supportate dai rispettivi traduttori.
+* Corretto un bug sulla localizzazione serba.
+* Aggiornata la localizzazione ceca.
+* Aggiornata la documentazione e localizzazione Gallega.
 
 # Versione 3.9 #
-* Changed again API service; Weather Plus now uses the new Yahoo Weather API
-  with language Yahoo!Query and JQuery:
-* The api key is no longer required.
-* Restored The search of the homonymous cities; It will be possible to
-  choose exactly the desired city from a list.
-* Optimized the output of general sounds; Now they are synchronized with the
-  voice synthesis and are faster.
-* Improved the cache for data off-line; Is zeroed every 10 minutes or only
-  by changing the city.
-* barometric pressure measured in mbar, or in inches of mercury (if set to
-  Fahrenheit).
+* Cambiato nuovamente servizio API; Weather Plus ora usa le nuove Yahoo
+  Weather API con linguaggio Yahoo!Query e JQuery:
+* La chiave-API non è più richiesta.
+* Ripristinata la ricerca delle città omonime; Sarà possibile scegliere
+  esattamente la città desiderata da un elenco.
+* Ottimizzato l'output dei suoni generali; Ora sono sincronizzati con la
+  sintesi vocale e sono più veloci.
+* Migliorata la cache per i dati off-line; Viene azzerata ogni 10 minuti o
+  solo cambiando la città.
+* Pressione barometrica misurata in millibars, o in pollici di mercurio (se
+  impostato su Fahrenheit).
 
 # Versione 3.8 #
-* data accuracy fixes
-* Enabled the automatic setting of the language; Now the API sends the data
-  of the weather conditions in the language set by nvda.
+* data accuracy fixes.
+* Abilitata l'impostazione automatica della lingua; Ora l'API invia i dati
+  delle condizioni meteo nella lingua impostata da nvda.
 * Added the cache for bulletin and weather forecasts; If not changed the
   city, degree scale or the days of forecast set, you will be able to read
-  the data for 10 minutes even when connection off-line The cache is reset
+  the data for 10 minutes even when connection off-line. The cache is reset
   at each change described above. This is because the bulletins do not
   change in this period of time and to reduce the frequent calls to the API,
   maybe playing with sound effects.
-* Improved searching for updates; Now once downloaded, It will be activated
-  to its installation, or in the case of a portable version of nvda It will
-  be opened the folder where you saved the update.
-* Updated all sounds. Now the sounds are in the wave format.
+* Migliorata la ricerca degli aggiornamenti; Ora una volta scaricato, viene
+  attivata la sua installazione, o nel caso di una versione portable di nvda
+  viene aperta la cartella dove è stato salvato l'aggiornamento.
+* Aggiornati tutti i suoni. Ora i suoni sono in formato wav.
 
 # Versione 3.7 #
 * Aggiunta possibilità di disattivare la conversione in metri al secondo del
@@ -538,45 +563,45 @@ To add a new city: press the following item:
 * Coorretti 2 bug.
 
 # Versione 3.6 #
-* Changed the API service (application programming interface); Now WP uses
-  the service offered by OpenWeatherMap.org instead of Yahoo Weather.com.
-* Added Wind classification in the current bulletin.
-* Added a cloudiness percentage in the current bulletin.
-* Adopted the units of pressure measurement in hectopascal in the current
-  bulletin.
+* Cambiato servizio API (Application programming interface); Ora WP usa il
+  servizio offerto da OpenWeatherMap.org al posto di Yahoo Weather.com.
+* Aggiunta classificazione vento nel bollettino corrente.
+* Aggiunta percentuale di nuvolosità nelbollettino corrente.
+* Adottata unità di misura unica della pressione in ettopascal nelbollettino
+  corrente.
 
-# Changes to the Weather Plus Settings window #
+# Modifiche nella finestra Impostazioni Weather Plus #
 
 * Changed insertion/search from yahoo zipcode/woeId in ID number, Identifier
-  of the city; * ID numbers city are similar to woeid, but the woeId will no
+  of the city; ID numbers city are similar to woeid, but the woeId will no
   longer work, even the old zipcode. You will be able to rediscover a great
   part of the cities by typing the name or part of it.
-* Added insertion/Search for geographical coordinates.
-* Added insertion/search by postal code.
-* Improved the function "details".
-* assigned to F1 key the entry/search help.
-* assigned to F4 key the controls to the forecasts from 1 to 16 days set;
-  Attention, if you choose to copy to the clipboard a value greater than 10,
-  it will not be read!
-* Assigned F5 key for audio controls.
-* Adding measurement scale degrees Kelvin.
-* Added check for updates; You can set the control by settings or check
-  manually from menu.
-* reassigned the button "Find your city" in "Management of your API Key...";
-  Allows you to enter or change the key-API.
+* Aggiunto inserimento/ricerca per coordinate geografiche.
+* Aggiunto inserimento/ricerca per codice postale.
+* Migliorata la funzione "dettagli".
+* Assegnato al tasto F1 l'aiuto immissione/ricerca.
+* Assegnato al tasto F4 i controlli per impostare le previsioni da 1 a 16
+  giorni; Attenzione, un valore superiore a 10, se si sceglie di copiare
+  negli appunti, questi non verranno letti!
+* Assegnato il tasto F5 per i controlli audio.
+* Aggiunta scala di misura in gradi Kelvin.
+* Aggiunto controllo presenza aggiornamenti; Si può settare dalle
+  impostazioni o controllare manualmente da menu.
+* Riassegnato il pulsante "trova la tua città" in "Gestione della tua chiave
+  API..."; Permette di inserire o modificare la chiave-API.
 
 # Versione 3.5 #
-* Aggiunta localizzazione croata (grazie a Gordan Radić).
-* Added control for no longer valid WoeId and Zip Code found in the network;
-  There have been reports of codes that have stopped working from one day to
-  another, WP now warns if one of these has been inserted from the windows
-  of search on the net. If this occurs using the function "Find your
-  city...", please report it to me so that I can update the Weather_buffer
-  and remove them from the list.
-* Fixed encoding bug in the search functionality.
-* Updated the window to set one temporary zip code; Added feature "Find" As
-  in the other windows of Weather Plus: Control+F3 = Find..., F3 = Find
-  next, Shift+F3 = Find previous.
+* Aggiunta traduzione croata (grazie a Gordan Radić).
+* Aggiunto controllo per WoeId e zip code non più validi trovati in rete; vi
+  sono state segnalazioni di codici che da un giorno all'altro hanno smesso
+  di funzionare, WP ora avvisa se uno di questi è stato inserito dalle
+  finestre di ricerca sulla rete. Se questo si verifica utilizzando la
+  funzione "Trova la tua città...", si prega di segnalarlo in modo che io
+  possa aggiornare il Weather_buffer e rimuoverli dall'elenco.
+* Corretto un bug di codifica nella funzione di ricerca.
+* Aggiornata la finestra per impostare un zip code temporaneo; Aggiunta
+  funzione di ricerca come nelle altre fiinestre di Weather Plus: Control+F3
+  = Trova..., F3 = Trova successivo, Shift+F3 = Trova precedente.
 
 # Versione 3.4 #
 * Aggiunta traduzione galiziana (grazie a Iván Novegil).
@@ -585,56 +610,57 @@ To add a new city: press the following item:
 
 # Versione 3.3 #
 * Aggiunta misura della velocità del vento in metri al secondo.
-* encoding fixes
+* encoding fixes.
 
 # Versione 3.2 #
-* Updated the reading of the weather forecast, current weather report and
-  reading of the date of the current weather report; Yahoo weather forecast,
-  from a bit of time and in random amounts, allows it to pass a historic
-  from -10 to -5 days of weather forecast to be inserted between the updated
-  data that we want to read; It was added a filter that allows you to read
-  only the last weather data updated, and a discreet beep alerts when it
-  intervenes; This beep, if you want, can be disabled by using a check box
-  by Weather Plus settings. Obviously, the filtering of data sometimes
-  involves a short delay in reply, but is still acceptable.
-* Forecasts of the time extended to 10 days.
+* Aggiornata la lettura delle previsioni meteo, bollettino corrente e
+  lettura data dell'attuale bollettino meteo; Yahoo weather forecast da un
+  po' di tempo e in quantità casuale fa passare uno storico a -10 - -5
+  giorni delle previsioni meteo che si vanno a inserire tra i dati
+  aggiornati che vogliamo leggere; E' stato aggiunto un filtro che permette
+  di leggere solo gli ultimi dati meteo aggiornati, e un discreto segnale
+  acustico avvisa quando interviene; Questo segnale acustico, volendo è
+  possibile disattivarlo tramite una casella di controllo dalle impostazioni
+  di Weather Plus. Ovviamente il filtraggio dei dati qualche volta comporta
+  un breve ritardo nella risposta, comunque accettabile.
+* Previsioni del tempo estese a 10 giorni.
 
 # Versione 3.1 #
 * Added translation in Serbian (thanks to the kind cooperation of Dejan
-  Gasic.
-* Fixed command insert+alt+w; It did not check the validity of the zipcode
-  in use and did not check if the connection was active as the other
-  commands do.
-* Updated the playback function of sound effects; Mp3 format is now
-  used. Now the files will be much smaller.
-* Added 55 new sound effects; It will be necessary to update them from the
-  settings of the plugin.
+  Gasic).
+* Corretto il comando insert+alt+w; Non verificava la validità del zipcode
+  in uso, ne se la connessione era attiva come già fanno gli altri comandi.
+* Aggiornata la funzione di riproduzione degli effetti sonori; Il formato
+  Mp3 è ora utilizzato. Ora i file sono molto più piccoli.
+* Aggiunti 55 nuovi effetti sonori; Sarà necessario aggiornarli dalle
+  impostazioni del plugin.
 
-# Changes to the Weather Plus Settings window #
+# Modifiche nella finestra Impostazioni Weather Plus #
 
-* Fixed display help on the buttons; Now disables / enables real-time
-  through the appropriate check box.
-* Added 3 shortcut commands to navigate more quickly in the window:
-* F1 jumps into list and edit box of zip code.
-* F2 returns to the last selection reached with TAB.
-* F3 jumps into volume controls (if the sound effects are installed and
-  activated).
-* Added shortcut commands for all check boxes and buttons; Omitted the two
-  radio buttons as they are present in succession and the first is reachable
-  with the command control+shift+w.
-* Changed, the button "define" is now disabled if the sound effects are not
-  installed and activated.
-* Added volume controls; You can adjust the overall volume and the last
-  heard sound effect; This option is enabled if the sound effects are
-  installed and activated.
-* Added ability to set the system time in 12-hour format (12:30 AM `-` 12:30
-  PM) , or the 24-hour system (12:30 `-` 00:30).
+* Corretta visualizzazione aiuto sui bottoni; Ora si disabilita/abilita in
+  tempo reale tramite l'apposita casella di controllo.
+* Aggiunti 3 comandi di scelta rapida per navigare più velocemente nella
+  finestra:
+* F1 salta all'elenco e casella di modifica dei zip code.
+* F2 ritorna all'ultima selezione raggiunta con TAB.
+* F3 salta ai controlli del volume (se gli effetti sonori sono installati e
+  attivati).
+* Aggiunti comandi di scelta rapida per tutte le caselle di controllo e i
+  bottoni; Omessi i due pulsanti radio in quanto sono presenti in
+  successione e il primo è raggiungibile con il comando control + shift + w.
+* Modificato, il bottone "definisci" ora viene disabilitato se gli effetti
+  sonori non sono installati e attivati.
+* Aggiunto controlli del volume; Si può regolare il volume generale e
+  dell'ultimo effetto sonoro ascoltato; L'opzione è abilitata se gli effetti
+  sonori sono installati e attivati.
+* Aggiunta possibilità di impostare il sistema orario nel formato a 12 ore
+  (12:30 AM - 12:30 PM) , o il sistema a 24 ore (12:30 - 00:30).
 
 # Versione 3.0 #
-* Added the slovak translation (thanks to the kind cooperation of Vitek
-  Jirasek).
-* Aggiunta traduzione in portoghese-brasiliano e portogallo (grazie aAdair
-  Knaesel).
+* Aggiunta traduzione in slovacco (grazie alla gentile collaborazione di
+  Vitek Jirasek).
+* Aggiunta traduzione in portoghese-brasiliano e portogallo (grazie alla
+  gentile collaborazione di Adair Knaesel).
 * Aggiunte nuove stringhe alla lista per i rapporti meteo.
 * Aggiunti 171 nuovi effetti sonori, ora sono 213 in totale.
 * Aggiunto il comando insert + alt + w in gesture, annuncia la data
@@ -642,78 +668,79 @@ To add a new city: press the following item:
 * Aggiunto scriptCategory che sposta nella corretta posizione i tasti rapidi
   di Weather Plus in "gesti e tasti di immissione".
 
-# Changes to the Weather Plus Settings window #
+# Modifiche nella finestra Impostazioni Weather Plus #
 
-* Added radio button to set how to indicate the temperature scale;
-* The choice is between:
-* Celsius `-` Fahrenheit
+* Aggiunto un pulsante radio per impostare come indicare la scala di
+  temperatura;
+* La scelta è tra:
+* Centigradi `-` Fahrenheit
 * C `-` F
-* No indication
-* Added button " Define"; It permits to define the zone of one city between:
-* Hinterland
-* Maritime area
-* Desert zone
-* Arctic zone
-* Mountain zone
+* Nessuna indicazione
+* Added button "Define"; It permits to define the zone of one city between:
+* Entroterra
+* Zona marittima
+* Zona del deserto
+* Zona artica
+* Zona montana
 * The choice will consent to Weather Plus to use more appropriate sound
-  effects for every single city; * This is the reason for the boost of the
-  number of new sound effects in this versione of the addon; * Many of the
-  new sound effects I got them from Tapin, whom I thank sincerely.
+  effects for every single city; This is the reason for the boost of the
+  number of new sound effects in this version of the addon; Many of the new
+  sound effects I got them from Tapin, whom I thank sincerely.
 
 # Versione 2.9 #
 * Aggiunta possibilità durante l'importazione di selezionare il contenuto
   del file importato.
 * Aggiunti 4 nuovi effetti sonori.
-* Aggiunta traduzione in Russo (grazie a Alex Yeshanu).
+* Aggiunta traduzione in Russo (grazie ad Alex Yeshanu).
 * Aggiunta traduzione in ceco (grazie a Jirimu Holzingerovi).
 
 # Versione 2.8 #
 * Corretto bug in "dettagli", apriva finestra delle ricorrenze quando non
   trovava la località.
-* Fixed regexp to search for the altitude; It did not accept parameters of
-  single digits.
-* Improved parser of the edit box; It should find more easily the city.
-* Connections now handled by urllib2, instead of urllib; * This should allow
+* Corretto regexp per ricerca altitudine; Non accettava parametri a una sola
+  cifra.
+* Migliorato il parser della casella di editazione; Dovrebbe trovare più
+  facilmente le città.
+* Connections now handled by urllib2, instead of urllib; This should allow
   the functioning of the addon even on a computer connected to the corporate
   network protected by proxy.
-* Added feature "Find"; Control+F3 = Find..., F3 = Find next, Shift+F3 =
-  Find previous.
+* Aggiunta funzione "Trova"; Control+F3 = Trova..., F3 = Trova successivo,
+  Shift+F3 = Trova precedente.
 
 # Versione 2.7 #
-* Fixed wrong name of a string "Motorcycle" in "Motorcycle00"; He asked
-  updated sound effects because they could not find the file.
-* Added ability to read about wind ; Direction, speed and temperature of the
-  wind.
-* Added ability to read atmospherical information; Humidity, visibility,
-  pressure and state of the barometric pressure.
-* Added ability to read the Astronomic information; * Time of sunrise and
+* Corretto nome errato di una stringa "Motorcycle" in "Motorcycle00";
+  Chiedeva aggiornamento degli effetti sonori perché non trovava il file.
+* Aggiunta possibilità lettura informazioni vento; Direzione, velocità e
+  temperatura del vento.
+* Aggiunta possibilità lettura informazioni atmosferiche; Umidità,
+  visibilità, pressione e stato della pressione barometrica.
+* Added ability to read the Astronomic information; Time of sunrise and
   sunset.
 
-# Changes to the Weather Plus Settings window #
+# Modifiche nella finestra Impostazioni Weather Plus #
 
 * Aggiunte 3 caselle di controllo per gestire le rispettive informazioni
   sopra elencate.
-* Added button " Details "; * Provides some information such as the real
-  name of the city ( assigned by Yahoo Weather Forecast), the state / region
-  and the nation to which it belongs; With geographic coordinates, and
-  height above sea level.
-* Added recognition of WoeID (location codes, eg. Bologna it corresponds to
-  711080).
-* Now you can type the name of the city, in this case, if any, the
-  occurrences will be listed and you will be able to choose.
+* Added button "Details"; Provides some information such as the real name of
+  the city ( assigned by Yahoo Weather Forecast), the state / region and the
+  nation to which it belongs; With geographic coordinates, and height above
+  sea level.
+* Aggiunto riconoscimento dei WoeID (codici di luogo, es. Bologna it
+  corrisponde a 711080).
+* Ora è possibile digitare il nome della città, in questo caso se presenti,
+  saranno elencate le ricorrenze e si potrà scegliere.
 
 # Versione 2.6 #
-* The functions of the buttons "Add" and "Remove" were optimized in the zip
-  code's list management; Now the operation are a lot more fast!
-* The function of the button "Test" was optimized, now it exploits until 13
-  research keys; Now if it doesn't find the name of the city it is a real
-  bad luck!
-* The function of the button "Find your city...", now finds more countries;
-  It was added an automatic test that collects the functioning zip codes,
-  and it further consents a rapid visualization thanks to the creation of a
-  little buffer corresponding to the name of the specific country.
-* Three new sounds effects were added; It will be necessary to update them
-  from the settings of the plugin.
+* Ottimizzate funzioni dei pulsanti "Aggiungi" e "Rimuovi" nella gestione
+  lista dei zip code; Ora le operazioni sono molto più veloci!
+* Ottimizzata la funzione del pulsante "Test", ora sfrutta fino a 13 chiavi
+  di ricerca; Ora se non trova il nome della città è una vera sfiga!
+* La funzione del pulsante "Trova la tua città...", ora trova più paesi; È
+  stato aggiunto un test automatico che raccoglie gli zip code al momento
+  funzionanti, e consente la successiva rapida visualizzazione grazie alla
+  creazione di un piccolo buffer corrispondente al nome del paese specifico.
+* Sono stati aggiunti tre nuovi effetti sonori; Sarà necessario aggiornarli
+  dalle impostazioni del plugin.
 
 # Versione 2.5 #
 * Aggiunto comando nella gesture per alternare temporaneamente la scala
@@ -723,7 +750,7 @@ To add a new city: press the following item:
   permetteva di vocalizzare il nome della città perché non in lista.
 * Aggiunte nuove stringhe alla lista per i rapporti meteo.
 
-# Changes to the Weather Plus Settings window #
+# Modifiche nella finestra Impostazioni Weather Plus #
 
 * Aggiunto pulsante per aprire una pagina web di ricerca dei Zip Code
   mondiali.
@@ -775,8 +802,9 @@ To add a new city: press the following item:
 
 # Versione 2.0 #
 * Menu Weather Plus Impostazioni spostato in Preferenze sottomenu.
-* correct input on the fly is no longer saved, so it is temporary; To call
-  the city set in the preferences, press INSERT + control + f3.
+* Corretto immissione al volo, non viene più salvata, è quindi temporanea;
+  Per richiamare la città impostata nelle preferenze premere
+  insert+control+f3.
 
 # Versione 1.9 #
 * aggiunti aiuto immissione delle funzioni.
@@ -790,9 +818,9 @@ To add a new city: press the following item:
 * aggiunto menu Documentazione.
 * Aggiunta localizzazione italiana.
 
-# Initial Version 1.1 #
-* updated the NVDA-addon.
-* Translation support has been added.
+# Versione iniziale 1.1 #
+* aggiornato il nvda-addon.
+* Il supporto alla traduzione è stato aggiunto.
 
 --------------------------------------------------------------------------------
 

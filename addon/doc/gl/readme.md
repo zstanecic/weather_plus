@@ -94,17 +94,17 @@ To add a new city: press the following item:
   Celsius (by default), Fahrenheit and Kelvin.
 
 * Degrees shown as: Use the radio button to select between: Celsius `-`
-  Fahrenheit `-` Kelvin (by default C `-` F `-` K or unspecified.
+  Fahrenheit `-` Kelvin (by default) C `-` F `-` K or Unspecified.
 
-* Combo box: Weather Forecasts up to days: 3 You can choose between 1 to 10
+* Combo box: Weather Forecasts up to days: 3; You can choose between 1 to 10
   (3 days by default)
 
 * To perform the following actions, toggle the following checkboxes:
 
 * Copy the weather report and weather forecast, including city details to
-  clipboard check box not checked (by default)
+  clipboard; check box not checked (by default)
 
-* Enable audio effects (only for the current weather conditions) This check
+* Enable audio effects (only for the current weather conditions); This check
   box also allows you to manage the installation of sound effects; If the
   sound effects are installed and the check box is activated, the F5 key and
   the volume setting becomes available.
@@ -114,7 +114,7 @@ To add a new city: press the following item:
 
 * You can change the overall volume or change the last heard sound effect
   and filter out the others sounds in your environment. Checkbox is not
-  checked by default.)
+  checked by default.
 
 * Use only weather effects - This option is available if sound effects are
   enabled; If is enabled, allows to listen only weather effects such as
@@ -125,10 +125,10 @@ To add a new city: press the following item:
   unchecked, announces the time in 12-hour format for example, 12 AM `-` 12
   PM. check box is checked (by default)
 
-* Enable help buttons in the settings window check box checked (by default)
+* Enable help buttons in the settings window; check box checked (by default)
 
-* Read wind information check box not checked (by default) If this checkbox
-  is enabled, you can also activate the following checkboxes:
+* Read wind information; check box not checked (by default). If this
+  checkbox is enabled, you can also activate the following checkboxes:
 
 * Add wind direction; Indicates the provenance of the wind. check box
   checked (by default)
@@ -140,7 +140,7 @@ To add a new city: press the following item:
 
 * Add perceived temperature; check box checked (by default)
 
-* Read atmospherical information check box not checked (by default) If
+* Read atmospherical information; check box not checked (by default). If
   enabled, you can also check the following checkboxes:
 
 * Add humidity value; Indicates the humidity in percent. check box checked
@@ -156,19 +156,20 @@ To add a new city: press the following item:
 
 * Add status of barometric pressure; check box checked (by default)
 
-* Read astronomical information Indicates the time of sunrise and
+* Read astronomical information; Indicates the time of sunrise and
   sunset. check box not checked (by default)
 
-* Use the comma to separate decimals If enabled, uses the comma as a decimal
-  separator, otherwise, use the point. check box not checked (by default)
+* Use the comma to separate decimals; If enabled, uses the comma as a
+  decimal separator, otherwise, use the point. check box not checked (by
+  default)
 
-* Check for upgrade If is activated this alerts when there is an update of
+* Check for upgrade; If is activated this alerts when there is an update of
   the addon. check box checked (by default)
 
 * Prema o botón de Aceptar para confirmar a acción, Cancelar para cancelala.
 
 * If you have modified the cities list, by pressing "Cancel", you will be
-  remembered and you can still save it Note: your settings will be save in
+  remembered and you can still save it. Note: your settings will be save in
   the file named:
 
 * "Weather.ini": configuración de inicio do Weather Plus.
@@ -181,6 +182,9 @@ To add a new city: press the following item:
 --------------------------------------------------------------------------------
 
 # Que Hai de novo: #
+
+# Version 7.4 #
+* Fixed a bug in a city search function.
 
 # Versión 7.3 #
 * Arranxado erro inesperado en caso de que non se atope a páxina ao procurar
@@ -265,7 +269,7 @@ To add a new city: press the following item:
 # Versión 5.0 #
 * Weather Plus now uses the APIXU API.
 
-# Changes in the Weather Plus Settings window: #
+# Changes in the Weather Plus Settings window #
 
 * Removed old checkbox "State of barometric pressure". Replaced with new
   checkbox "Add cloudiness value";
@@ -303,10 +307,10 @@ To add a new city: press the following item:
   settings of the plugin.
 
 # Versión 4.7.6 #
-* Bugfix release;
+* Bugfix release.
 
 # Versión 4.7.5 #
-* Bugfix release
+* Bugfix release.
 
 # Versión 4.7.3 #
 * "Details" function was updated for convenience; The information about the
@@ -371,7 +375,7 @@ To add a new city: press the following item:
   less than or equal to zero.
 
 # Versión 4.5.5 #
-* Corrixidas tradución e documentación serbias.
+* Correct localization and documentation in Serbian.
 * Corrixida a tradución alemá.
 
 # Changes in the Weather Plus Settings window #
@@ -382,7 +386,7 @@ To add a new city: press the following item:
 # Versión 4.5.3 #
 * correct 2 strings in Russian and ukrainian localizations.
 * Corrected title of the Check for upgrade window.
-* Improved update algorithm;
+* Improved update algorithm.
 
 # Versión 4.5 #
 * Added hotkey NVDA+shift+control+alt+w; it Opens the Weather Plus settings
@@ -391,7 +395,7 @@ To add a new city: press the following item:
 
 # Changes in the Weather Plus Settings window #
 
-* Added 8 new check boxes It is now possible to further customize the
+* Added 8 new check boxes; It is now possible to further customize the
   readout:
 * wind direction.
 * wind speed.
@@ -404,17 +408,17 @@ To add a new city: press the following item:
 
 # Versión 4.4.8 #
 * Engadida tradución polaca (grazas a Zvonimir Staneczyć).
-* Compatibility with wx python version 4;
+* Compatibility with wx python version 4.
 
 # Versión 4.4.1 #
-* Added SSL support;
+* Added SSL support.
 
 # Versión 4.4 #
 * Arranxado un erro na lectura da cadea da nova versión durante unha
   conexión expirada.
 * Improved the upgrade section; Now the dialog do not interferes with the
   nvda menu.
-* Revised and corrected russian Localization.
+* Revised and corrected russian localization.
 * Adding Ukrainian translation (thanks to Alex Yeshanu).
 
 # Versión 4.3.4 #
@@ -431,7 +435,7 @@ To add a new city: press the following item:
   "longitude" were reversed compared to the value.
 
 # Versión 4.3 #
-* Weather plus moved to the "nvda.it" as it's default hosting provider
+* Weather plus moved to the "nvda.it" as it's default hosting provider.
 
 # Versión 4.2.4 #
 * Fixed a minor bug when the connection was not active.
@@ -483,8 +487,8 @@ To add a new city: press the following item:
 
 # Versión 3.9.6 #
 * Changed the rounding in the conversion of atmospheric pressure from mbar
-  in inches of mercury; * Now the value is calculated in defect, while
-  before it was in excess.
+  in inches of mercury; Now the value is calculated in defect, while before
+  it was in excess.
 
 # Versión 3.9.5 #
 * Engadidas dúas novas cadeas á lista reportes do tempo.
@@ -514,19 +518,19 @@ To add a new city: press the following item:
   Fahrenheit).
 
 # Versión 3.8 #
-* data accuracy fixes
+* data accuracy fixes.
 * Enabled the automatic setting of the language; Now the API sends the data
   of the weather conditions in the language set by nvda.
 * Added the cache for bulletin and weather forecasts; If not changed the
   city, degree scale or the days of forecast set, you will be able to read
-  the data for 10 minutes even when connection off-line The cache is reset
+  the data for 10 minutes even when connection off-line. The cache is reset
   at each change described above. This is because the bulletins do not
   change in this period of time and to reduce the frequent calls to the API,
   maybe playing with sound effects.
 * Improved searching for updates; Now once downloaded, It will be activated
   to its installation, or in the case of a portable version of nvda It will
   be opened the folder where you saved the update.
-* Updated all sounds. Now the sounds are in the wave format.
+* Updated all sounds. Now the sounds are in the wav format.
 
 # Versión 3.7 #
 * Engadida a posibilidade de deshabilitar a conversión a metros por segundo
@@ -546,7 +550,7 @@ To add a new city: press the following item:
 # Changes to the Weather Plus Settings window #
 
 * Changed insertion/search from yahoo zipcode/woeId in ID number, Identifier
-  of the city; * ID numbers city are similar to woeid, but the woeId will no
+  of the city; ID numbers city are similar to woeid, but the woeId will no
   longer work, even the old zipcode. You will be able to rediscover a great
   part of the cities by typing the name or part of it.
 * Added insertion/Search for geographical coordinates.
@@ -583,7 +587,7 @@ To add a new city: press the following item:
 
 # Versión 3.3 #
 * Agregouse a medida da velocidade do vento en metros por segundo.
-* encoding fixes
+* encoding fixes.
 
 # Versión 3.2 #
 * Updated the reading of the weather forecast, current weather report and
@@ -599,7 +603,7 @@ To add a new city: press the following item:
 
 # Versión 3.1 #
 * Added translation in Serbian (thanks to the kind cooperation of Dejan
-  Gasic.
+  Gasic).
 * Fixed command insert+alt+w; It did not check the validity of the zipcode
   in use and did not check if the connection was active as the other
   commands do.
@@ -647,16 +651,16 @@ To add a new city: press the following item:
 * Celsius `-` Fahrenheit
 * C `-` F
 * No indication
-* Added button " Define"; It permits to define the zone of one city between:
+* Added button "Define"; It permits to define the zone of one city between:
 * Hinterland
 * Maritime area
 * Desert zone
 * Arctic zone
 * Mountain zone
 * The choice will consent to Weather Plus to use more appropriate sound
-  effects for every single city; * This is the reason for the boost of the
-  number of new sound effects in this versione of the addon; * Many of the
-  new sound effects I got them from Tapin, whom I thank sincerely.
+  effects for every single city; This is the reason for the boost of the
+  number of new sound effects in this version of the addon; Many of the new
+  sound effects I got them from Tapin, whom I thank sincerely.
 
 # Versión 2.9 #
 * Engadido a opción ao importar para seleccionar o contido do ficheiro
@@ -671,7 +675,7 @@ To add a new city: press the following item:
 * Fixed regexp to search for the altitude; It did not accept parameters of
   single digits.
 * Improved parser of the edit box; It should find more easily the city.
-* Connections now handled by urllib2, instead of urllib; * This should allow
+* Connections now handled by urllib2, instead of urllib; This should allow
   the functioning of the addon even on a computer connected to the corporate
   network protected by proxy.
 * Added feature "Find"; Control+F3 = Find..., F3 = Find next, Shift+F3 =
@@ -684,17 +688,17 @@ To add a new city: press the following item:
   wind.
 * Added ability to read atmospherical information; Humidity, visibility,
   pressure and state of the barometric pressure.
-* Added ability to read the Astronomic information; * Time of sunrise and
+* Added ability to read the Astronomic information; Time of sunrise and
   sunset.
 
 # Changes to the Weather Plus Settings window #
 
 * Engadíronse 3 caixas de verificación para xestionar a súa información
   anterior.
-* Added button " Details "; * Provides some information such as the real
-  name of the city ( assigned by Yahoo Weather Forecast), the state / region
-  and the nation to which it belongs; With geographic coordinates, and
-  height above sea level.
+* Added button "Details"; Provides some information such as the real name of
+  the city ( assigned by Yahoo Weather Forecast), the state / region and the
+  nation to which it belongs; With geographic coordinates, and height above
+  sea level.
 * Added recognition of WoeID (location codes, eg. Bologna it corresponds to
   711080).
 * Now you can type the name of the city, in this case, if any, the
