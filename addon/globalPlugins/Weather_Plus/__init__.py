@@ -470,9 +470,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if evt:
 				Shared().Play_sound("warn", 1)
 				if "not found" in data:
-					NoteDialog(_("Sorry, i can not receive data, problems with the download page, try again later please!"), title)
+					NoteDialog(_("Sorry, I can not receive data, problems with the download page, try again later please!"), title)
 				else:
-					NoteDialog(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"), title)
+					NoteDialog(_("Sorry, I can not receive data, verify that your internet connection is active, or try again later!"), title)
 
 			return
 
@@ -1669,7 +1669,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not dom: return self.ZipCodeError(), ""
 		elif "no connect" in dom:
 			Shared().Play_sound("warn", 1)
-			wx.CallAfter(ui.message, _("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"))
+			wx.CallAfter(ui.message, _("Sorry, I can not receive data, verify that your internet connection is active, or try again later!"))
 			return "no connect", ""
 
 		t = 0; repeat = attempts
@@ -2636,7 +2636,7 @@ class EnterDataDialog(wx.Dialog):
 		if cityName == "no connect":
 			self.Disable_all(False)
 			Shared().Play_sound("warn", 1)
-			return ui.message(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"))
+			return ui.message(_("Sorry, I can not receive data, verify that your internet connection is active, or try again later!"))
 		elif not cityName:
 			self.Disable_all()
 			if (woeID == value) and value.isdigit() and not ',' in value:
@@ -2842,7 +2842,7 @@ class EnterDataDialog(wx.Dialog):
 		message = _("Verify that your internet connection is active, or try again later.")
 		if e: message = _("File corrupted or not available!")
 		wx.MessageBox('%s\n%s' %
-			(_("Sorry, i could not complete the installation of the sound effects!"), message),
+			(_("Sorry, I could not complete the installation of the sound effects!"), message),
 			'%s %s' % (_addonSummary, _("Installation Error!")),
 			wx.ICON_ERROR)
 
@@ -2926,7 +2926,7 @@ class EnterDataDialog(wx.Dialog):
 				connect, n = Shared().ParseEntry(code)
 				if connect == "no connect":
 					Shared().Play_sound("warn", 1)
-					ui.message(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"))
+					ui.message(_("Sorry, I can not receive data, verify that your internet connection is active, or try again later!"))
 					return self.cbx.SetFocus()
 
 				if "ramdetails_dic" in globals() and code in ramdetails_dic:
@@ -2938,7 +2938,7 @@ class EnterDataDialog(wx.Dialog):
 				connect, n = Shared().ParseEntry(code)
 				if connect == "no connect":
 					Shared().Play_sound("warn", 1)
-					ui.message(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"))
+					ui.message(_("Sorry, I can not receive data, verify that your internet connection is active, or try again later!"))
 					return self.cbx.SetFocus()
 
 				if "ramdetails_dic" in globals() and code in ramdetails_dic:
@@ -2968,7 +2968,7 @@ class EnterDataDialog(wx.Dialog):
 		if elevation is None:elevation = _nr
 		elif elevation == "no connect":
 			Shared().Play_sound("warn", 1)
-			ui.message(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"))
+			ui.message(_("Sorry, I can not receive data, verify that your internet connection is active, or try again later!"))
 			return self.cbx.SetFocus()
 
 		city_details = ""
