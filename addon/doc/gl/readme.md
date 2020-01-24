@@ -23,9 +23,8 @@
 * Press NVDA+w to get the information about current temperature and weather
   conditions.
 * Press NVDA+shift+W to get 24 hours forecast and forecast up to 9 days.
-* Press NVDA+shift+ctrl+w to set a temporary city.
-* Prema  NVDA + shift + control + alt + w para abrir o diálogo de
-  configuración do Weather Plus.
+* Press NVDA+shift+control+w to set a temporary city.
+* Press NVDA+shift+control+alt+w to open the Weather Plus settings dialog.
 * Press NVDA+alt+w to get the date and time, when the weather report was
   updated.
 * Press control+shift+w to toggle between Fahrenheit, Celsius or Kelvin
@@ -45,8 +44,8 @@
 
 To add a new city: press the following item:
 
-* Set and Manage Your Cities... Displays or allows to set the current city
-  from a list
+* Set and Manage Your Cities... - Displays or allows to set the current city
+  from a list.
 
 * The following message is displayed only for the first time! Settings
   Preset None F1: help placing, F2: last TAB selection, F3: list and edit
@@ -493,8 +492,8 @@ To add a new city: press the following item:
 # Versión 3.9.5 #
 * Engadidas dúas novas cadeas á lista reportes do tempo.
 * Arranxados dous erros.
-* Updated running sounds for the effect in conditions of only wind; * Now
-  the sound of the wind can vary randomly.
+* Updated running sounds for the effect in conditions of only wind; Now the
+  sound of the wind can vary randomly.
 
 # Versión 3.9.4 #
 * documentation, localizations for Croatian and german language were

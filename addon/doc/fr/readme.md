@@ -25,10 +25,10 @@
 * Appuyez sur NVDA +maj+W pour obtenir les prévisions à 24 heures et à 9
   jours au-delà.
 * Appuyez sur NVDA+maj+contrôle+w pour définir une ville temporaire.
-* Appuyez sur NVDA + maj + contrôle + alt + w pour ouvrir le dialogue
-  Paramètres Weather Plus.
-* Appuyez sur NVDA+alt+w pour obtenir la date et l'heure lorsque le bulletin
-  météo a été mis à jour.
+* Appuyez sur NVDA+maj+contrôle+alt+w pour ouvrir le dialogue Paramètres
+  Weather Plus.
+* Appuyez sur NVDA+alt+w pour obtenir la date et l'heure de la dernière mise
+  à jour du bulletin météo.
 * Appuyez sur Contrôle+maj+w pour basculer entre les échelles de température
   Fahrenheit, Celsius ou Kelvin.
 
@@ -47,17 +47,17 @@
 
 Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 
-* Définir et gérer vos villes... Afficher ou définir la ville en cours
-  depuis une liste
+* Définir et gérer vos villes... - Afficher ou définir la ville en cours
+  depuis une liste.
 
 * Le message suivant est affiché seulement la première fois ! Paramètres
   Prédéfinis Aucun F1: aide à la localisation, F2: dernière sélection avec
   TAB, F3: liste et zone d'édition, F4: contrôle de la durée des Prévisions
   Météo, F5: contrôles du volume.
 
-* Saisissez une ville, un weoID ou choisissez-en une dans la liste, si
-  disponible. Remarque : La touche f5 est disponible si les effets sonores
-  sont activés.
+* Dans la zone d'édition, saisissez une ville, un weoID ou choisissez-en une
+  dans la liste, si disponible. Remarque : La touche f5 est disponible si
+  les effets sonores sont activés.
 
 * Une fois appuyé sur Entrée sur l'élément "Définir et Gérer Vos Villes...",
   vous trouverez d'autres boutons comme suit :
@@ -88,55 +88,59 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 * Renommer - Renommer la vile en cours. Ce bouton est activé si vous
   sélectionnez une ville préalablement insérée dans votre liste.
 
-* Importer de nouvelles villes... - Vous permet d'intégrer dans votre liste
-  de nouvelles villes importées d'une autre liste avec l'extension
-  *.zipcodes ; vous pouvez choisir la ville que vous souhaitez importer, en
-  activant la case à cocher associée.
+* Importer de nouvelles villes... - Ce bouton vous permet d'importer des
+  villes d'une autre liste de viles avec l'extension *.zipcodes ; vous
+  pouvez choisir la ville que vous souhaitez importer, en activant la case à
+  cocher associée.
 
-* Exporter vos villes... - Vous permet d'enregistrer votre liste de villes
-  dans le fichier spécifié avec l'extension * .zipcodes. Ce bouton est
-  activé si vous avez ajouté et enregistré au moins une ville dans la liste.
+* Exporter vos villes... - Vous permet d'enregistrer des villes dans le
+  fichier spécifié avec l'extension * .zipcodes. Ce bouton est activé si
+  vous avez ajouté et enregistré au moins une ville dans la liste.
 
 * Échelle de mesure de la température : Utiliser le bouton radio pour
   choisir entre Celsius (par défaut), Fahrenheit et Kelvin.
 
-* Degrees shown as: Use the radio button to select between: Celsius `-`
-  Fahrenheit `-` Kelvin (by default) C `-` F `-` K or Unspecified.
+* Degrés affichés comme : Utiliser le bouton radio pour choisir entre :
+  Celsius `-` Fahrenheit `-` Kelvin (par défaut) C `-` F `-` K ou Non
+  spécifié.
 
-* Combo box: Weather Forecasts up to days: 3; You can choose between 1 to 10
-  (3 days by default)
+* Liste déroulante : Prévisions Météo jusqu'à jours : 3; Choisissez une
+  valeur entre 1 et 10 (3 jours par défaut)
 
 * Pour effectuer les actions suivantes, activer ou désactiver les cases à
   cocher suivantes :
 
-* Copy the weather report and weather forecast, including city details to
-  clipboard; check box not checked (by default)
+* Copier le Bulletin météo et les prévisions météo, ainsi que les détails de
+  la ville dans le presse-papiers; case à cocher non cochée (par défaut)
 
-* Enable audio effects (only for the current weather conditions); This check
-  box also allows you to manage the installation of sound effects; If the
-  sound effects are installed and the check box is activated, the F5 key and
-  the volume setting becomes available.
+* Activer les effets sonores (seulement pour les conditions météo en cours);
+  Cette case à cocher vous permet également de gérer l'installation des
+  effets sonores; Si les effets sonores sont installés et que la case à
+  cocher est activée, la touche F5 et les paramètres de volume deviennent
+  disponibles.
 
 * Une case à cocher supplémentaire sera également disponible : N'utiliser
   que des effets météo.
 
-* You can change the overall volume or change the last heard sound effect
-  and filter out the others sounds in your environment. Checkbox is not
-  checked by default.
+* Vous pouvez modifier le volume général ou modifier le dernier effet sonore
+  entendu et filtrer les autres sons de votre environnement. Cette case à
+  cocher est non cochée par défaut.
 
 * N'utiliser que des effets météo - Cette option est disponible si les
   effets sonores sont activés; S'il est activé, permet de n'entendre que les
   effets tels que pluie, vent, tonnerre, etc., filtrant tous les effets
-  environnementaux. Case à cocher non cochée (par défaut)
+  environnementaux. (non cochée par défaut)
 
-* Activer la lecture de l'heure au format 24-heures - Si désactivé l'heure
-  est annoncée au format 12-heures, exemple : 12 AM - 12 PM. Case à
-  cocher cochée (par défaut)
+* Activer la lecture de l'heure au format 24-heures. - Si cette case à
+  cocher est désactivée, l'heure est annoncée au format 12-heures, exemple :
+  12 AM - 12 PM. Cette case à cocher est cochée (par défaut)
 
-* Enable help buttons in the settings window; check box checked (by default)
+* Activer le bouton aide dans la fenêtre de paramètres; case à cocher cochée
+  (par défaut)
 
-* Read wind information; check box not checked (by default). If this
-  checkbox is enabled, you can also activate the following checkboxes:
+* Lire les informations sur le vent; case à cocher non cochée (par
+  défaut). Si activée, vous pouvez également cocher les cases à cocher
+  suivantes :
 
 * Ajouter la direction du vent; Indique la provenance du vent. Case à cocher
   cochée (par défaut)
@@ -149,8 +153,9 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 
 * Ajouter la température ressentie; case à cocher cochée (par défaut)
 
-* Read atmospherical information; check box not checked (by default). If
-  enabled, you can also check the following checkboxes:
+* Lire les informations atmosphériques; case à cocher non cochée (par
+  défaut). Si activée, vous pouvez également cocher les cases à cocher
+  suivantes :
 
 * Ajouter le taux d'humidité; Indique le taux d'humidité. Case à cocher
   cochée (par défaut)
@@ -167,22 +172,22 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 * Ajouter l'état de la pression barométrique; case à cocher cochée (par
   défaut)
 
-* Read astronomical information; Indicates the time of sunrise and
-  sunset. check box not checked (by default)
+* Lire les informations astronomiques; Indique les heures de lever et de
+  coucher du soleil. Case à cocher non cochée (par défaut)
 
-* Use the comma to separate decimals; If enabled, uses the comma as a
-  decimal separator, otherwise, use the point. check box not checked (by
-  default)
+* Utiliser la virgule pour séparer les décimales; Si activée, utilise la
+  virgule pour séparer les décimales, sinon utilise le point. Case à cocher
+  non cochée (par défaut)
 
-* Check for upgrade; If is activated this alerts when there is an update of
-  the addon. check box checked (by default)
+* Recherche d'une mise à jour; Si activée, alerte en cas de mise à jour de
+  l'extension. Case à cocher cochée (par défaut)
 
 * Presser le bouton OK pour confirmer l'action ou le bouton Annuler pour
   l'annuler.
 
-* If you have modified the cities list, by pressing "Cancel", you will be
-  remembered and you can still save it. Note: your settings will be save in
-  the file named:
+* Si vous avez modifié la liste des villes, en pressant "Annuler", vous
+  serez averti et vous pourrez quand-même sauvegarder la liste. Note : Vos
+  paramètres seront sauvegardés dans le fichier nommé :
 
 * "Weather.ini" : paramètres de démarrage de Weather Plus.
 * "Weather.volumes" : niveaux de volume audio personnalisés, indépendant du
@@ -196,8 +201,7 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 # Quoi de neuf : #
 
 # Version 7.4 #
-* Correction d'un bogue dans la fonction de recherche de la ville. dans la
-  fonction de recherche.
+* Correction d'un bug dans une fonction de recherche de la ville.
 
 # Version 7.3 #
 * Correction d'un bug inattendu lorsque la page n'a pas été trouvé lors de
@@ -288,7 +292,7 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 # Version 5.0 #
 * Weather Plus utilise maintenant l'API APIXU.
 
-# Changements dans la fenêtre de paramètres Weather Plus  #
+# Changements dans la fenêtre de paramètres Weather Plus #
 
 * Suppression de l'ancienne case à cocher "état de la pression
   barométrique". Remplacée par la nouvelle case à cocher "Ajouter la valeur
@@ -308,7 +312,7 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
   sont décrites dans la fonction d'aide appelée en pressant F1.
 
 # Version 4.8 #
-# Changements dans la fenêtre de paramètres Weather Plus  #
+# Changements dans la fenêtre de paramètres Weather Plus #
 
 * Ajout d'une nouvelle case à cocher; "N'utiliser que des effets météo";
   Cela vous permet de supprimer tous les autres effets environnementaux.
@@ -332,10 +336,10 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
   jour depuis les paramètres de l'extension.
 
 # Version 4.7.6 #
-* Bugfix release.
+* Version de correction d'un bug.
 
 # Version 4.7.5 #
-* Bugfix release.
+* Version de correction d'un bug.
 
 # Version 4.7.3 #
 * Pour plus de facilité la fonction dans "Détails" a été mis à jour;
@@ -354,9 +358,9 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
   jour est disponible, il sera possible de l'installer directement via une
   simple boîte de dialogue.
 * Suppression de la sélection de fichier dans la section de mise à jour;
-  Maintenant, le fichier de mise à jour est enregistré dans le dossier
+  Maintenant, le fichier de mise à jour est sauvegardé dans le dossier
   temporaire, Il ouvre la possibilité d'installer la mise à jour
-  automatiquement, bon pour les débutants
+  automatiquement, bon pour les débutants.
 
 # Version 4.6.9 #
 * Ajout de la localisation en Arabe (Grâce à Wafik Immaculate).
@@ -371,7 +375,7 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
   Disponible seulement pour les pays l'ayant adoptée.
 
 # Version 4.6.5 #
-* Correction d'un petit bogue à la lecture de l'heure courante.
+* Correction d'un petit bogue à la lecture de l'heure.
 
 # Version 4.6.4 #
 * Amélioration de la lecture de l'heure locale; Les touches de recherches
@@ -403,28 +407,28 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
   quand sa valeur est inférieure ou égale à 0.
 
 # Version 4.5.5 #
-* Correct localization and documentation in Serbian.
-* Correction de la traduction en Allemand.
+* Correction de la localisation et de la documentation en Serbe.
+* Correction de la localisation en Allemand.
 
-# Changements dans la fenêtre de paramètres Weather Plus  #
+# Changements dans la fenêtre de paramètres Weather Plus #
 
 * Ajout d'une nouvelle case à cocher; Vous pouvez utiliser la virgule comme
   séparateur décimal, sinon le séparateur sera le point.
 
 # Version 4.5.3 #
 * Correction de deux chaînes dans les localisations Russes et Ukrainiennes.
-* Correction du titre de la fenêtre de mise à jour.
-* Improved update algorithm.
+* Correction du titre de la fenêtre Recherche d'une mise à jour.
+* Amélioration de l'algorithme de mise à jour.
 
 # Version 4.5 #
 * Ajout du raccourci NVDA+maj+contrôle+alt+w; Il ouvre le dialogue
   paramètres de Weather Plus.
 * Correction de quelques chaînes en Anglais.
 
-# Changements dans la fenêtre de paramètres Weather Plus  #
+# Changements dans la fenêtre de paramètres Weather Plus #
 
-* Added 8 new check boxes; It is now possible to further customize the
-  readout:
+* Ajout de 8 nouvelles cases à cocher; Il est maintenant possible de
+  personnaliser davantage le rapport :
 * Direction du vent.
 * Vitesse du vent.
 * Température ressentie.
@@ -436,34 +440,35 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 
 # Version 4.4.8 #
 * Ajout de la traduction Polonaise (grâce à Zvonimir Staneczyć).
-* Compatibility with wx python version 4.
+* Compatibilité avec wx python version 4.
 
 # Version 4.4.1 #
-* Added SSL support.
+* Ajout du support SSL.
 
 # Version 4.4 #
 * Correction d'un bogue à la lecture de la nouvelle chaîne de version,
   durant un dépassement du temps de connexion.
 * Amélioration de la section de mise à jour; Maintenant le dialogue
   n'interfère plus avec le menu NVDA.
-* Revised and corrected russian localization.
+* Localisation Russe revue et corrigée.
 * Ajout de la traduction Ukrainienne (grâce à Alex Yeshanu).
 
 # Version 4.3.4 #
-* Traduction Allemande revue et corrigée.
+* Localisation Allemande revue et corrigée.
 
 # Version 4.3.3 #
-* Ajout de la traduction en Allemand (grâce à Karl Eick).
+* Ajout de la localisation en Allemand (grâce à Karl Eick).
 
 # Version 4.3.2 #
-* Ajout de la traduction en Roumain (Grâce à Florian Ionașcu).
+* Ajout de la localisation en Roumain (Grâce à Florian Ionașcu).
 
 # Version 4.3.1 #
 * Correction d'un bogue mineur dans la fonction "détails"; Les chaînes
   "latitude" et "longitude" étaient inversées par rapport aux valeurs.
 
 # Version 4.3 #
-* Weather plus moved to the "nvda.it" as it's default hosting provider.
+* Weather plus déplacé sur "nvda.it" comme il est son fournisseur
+  d'hébergement par défaut.
 
 # Version 4.2.4 #
 * Correction d'un bogue mineur quand la connexion n'a pas été active.
@@ -498,7 +503,7 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
   de complètement remplacer votre liste, ou simplement d'y ajouter de
   nouvelles villes.
 * Mise à jour de la lecture du bulletin météo, bulletin en cours; Ajout de
-  la température ressentie.
+  la température ressentie (wind chill).
 * Ajout de nouvelles chaînes à la liste bulletin météo.
 
 # Version 4.1 #
@@ -509,17 +514,17 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 * Documentation revue et mise à jour.
 
 # Version 4.0 #
-* Mise à jour de certaines parties du code et remplacement de toutes les
+* Mise à jour de certaines parties du code et remplacé toutes les
   instructions eval().
 
 # Version 3.9.7 #
-* Correction d'un bogue durant la lecture du bulletin météo; Maintenant, les
-  températures sont lues correctement.
+* Correction d'un bogue durant la lecture des bulletins météos; Maintenant,
+  les températures sont lues correctement.
 
 # Version 3.9.6 #
-* Changed the rounding in the conversion of atmospheric pressure from mbar
-  in inches of mercury; Now the value is calculated in defect, while before
-  it was in excess.
+* Changement de l'arrondi dans la conversion de la pression atmosphérique de
+  mbar en pouces de mercure; Maintenant la valeur est calculée en défaut,
+  alors qu'avant elle l'était en excès.
 
 # Version 3.9.5 #
 * Ajout de deux nouvelles chaînes à la liste bulletin météo.
@@ -536,8 +541,8 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 * Mise à jour de la documentation et de la localisation en Gallicien.
 
 # Version 3.9 #
-* De nouveau, changement d'API de service; Weather Plus utilise maintenant
-  la nouvelle API Yahoo Weather avec language Yahoo!Query et JQuery:
+* Changé à nouveau de service API; Weather Plus utilise maintenant la
+  nouvelle API Yahoo Weather avec language Yahoo!Query et JQuery:
 * La clé API n'est plus requise.
 * Réintroduction de la recherche de villes homonymes; Il sera possible de
   choisir exactement la ville désirée depuis une liste.
@@ -549,15 +554,16 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
   Fahrenheit).
 
 # Version 3.8 #
-* data accuracy fixes.
+* corrections de précision des données.
 * Ajout du choix automatique de la langue; Maintenant l'API renvoie les
   données des conditions météo dans la langue définie pour NVDA.
-* Added the cache for bulletin and weather forecasts; If not changed the
-  city, degree scale or the days of forecast set, you will be able to read
-  the data for 10 minutes even when connection off-line. The cache is reset
-  at each change described above. This is because the bulletins do not
-  change in this period of time and to reduce the frequent calls to the API,
-  maybe playing with sound effects.
+* Ajout d'un cache pour le bulletin et les prévisions météo; Si vous n'avez
+  pas changé de ville, d'échelle de degrés ou le nombre de jours pour la
+  prévision, vous pourrez lire la prévision pendant 10 minutes même si vous
+  êtes hors-ligne. Le cache est réinitialisé à chaque changement décrit
+  ci-dessus. C'est parce que les bulletins ne changent pas sur une telle
+  période et pour réduire la fréquence des appels à l'API, peut-être en
+  jouant avec les effets sonores.
 * Amélioration de la recherche de mises à jour; Maintenant, une fois
   téléchargé, l'installation sera activée, ou, dans le cas d'une version
   portable de NVDA, le dossier où vous avez sauvegardé la mise à jour sera
@@ -582,10 +588,11 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 
 # Changements dans la fenêtre de paramètres de Weather Plus #
 
-* Changed insertion/search from yahoo zipcode/woeId in ID number, Identifier
-  of the city; ID numbers city are similar to woeid, but the woeId will no
-  longer work, even the old zipcode. You will be able to rediscover a great
-  part of the cities by typing the name or part of it.
+* Changement de l'insertion/recherche de yahoo zipcode/woeId vers ID number,
+  Identifieur de la ville; Les ID numbers city sont similaires aux woeid,
+  mais le woeId ne fonctionnera plus, même l'ancien zipcode. Vous pourrez
+  retrouver une grande partie des villes en tapant son nom ou une partie de
+  son nom.
 * Ajout de la recherche/insertion pour les coordonnées géographiques.
 * Ajout de la recherche/insertion par code postal.
 * Amélioration de la fonction "details".
@@ -622,7 +629,7 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 
 # Version 3.3 #
 * Ajout de la mesure de la vitesse du vent en mètres par seconde.
-* encoding fixes.
+* corrections d'encodage.
 
 # Version 3.2 #
 * Mise à jour de la lecture des prévisions météo, bulletin météo en cours et
@@ -639,7 +646,7 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 * Prévisions météo étendue jusq'à 10 jours.
 
 # Version 3.1 #
-* Added translation in Serbian (thanks to the kind cooperation of Dejan
+* Ajout de la traduction en Serbe (grâce à l'aimable coopération de Dejan
   Gasic).
 * Correction de la commande insert+alt+w; Ni la validité du code postal en
   cours d'utilisation ni la validité de la connexion n'étaient vérifiées
@@ -658,13 +665,13 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
   fenêtre:
 * F1 saute dans la liste et la zone d'édition du code postal.
 * F2 renvoie à la dernière sélection réalisé avec TAB.
-* Changé, le bouton "Définir" est maintenant désactivé si les effets sonores
-  ne sont pas installés et activés.
+* F3 saute dans les contrôles du volume (si les effets sonores sont
+  installés et activés).
 * Ajout d'un raccourcis clavier pour toutes les cases à cocher et les
   boutons; Omis des deux boutons radio car ils sont présents dans la
   succession et le premier est accessible avec la commande contrôle+maj+w.
-* Changé, le bouton "Définir" est maintenant désactivé si les effets sonores
-  ne sont pas installés et activés.
+* Modifié, le bouton "Définir" est maintenant désactivé si les effets
+  sonores ne sont pas installés et activés.
 * Ajout du Contrôles du volume; Vous pouvez régler le volume général et le
   dernier effet sonore entendue; Cette option est activée si les effets
   sonores sont installés et activés.
@@ -691,16 +698,18 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 * Celsius `-` Fahrenheit
 * C `-` F
 * Aucune indication
-* Added button "Define"; It permits to define the zone of one city between:
+* Ajout du bouton "Définir"; Il permet de définir la zone d'une ville entre
+  :
 * Arrière-pays
 * Zone maritime
 * Zone de désert
 * Zone arctique
 * Zone de montagne
-* The choice will consent to Weather Plus to use more appropriate sound
-  effects for every single city; This is the reason for the boost of the
-  number of new sound effects in this version of the addon; Many of the new
-  sound effects I got them from Tapin, whom I thank sincerely.
+* Le choix permettra à Weather Plus d'utiliser des effets sonores plus
+  appropriés pour chaque ville individuel; Voici la raison de l'augmentation
+  du nombre de nouveaux effets sonores dans cette version de l'extension;
+  Beaucoup de nouveaux effets sonores que j'ai obtenu de Tapin, que je
+  remercie sincèrement.
 
 # Version 2.9 #
 * Ajout d'une option lors de l'importation pour sélectionner le contenu du
@@ -716,9 +725,9 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
   les paramètres d'un seul chiffre.
 * Amélioration de l'analyseur de la zone d'édition; Il devrait retrouver
   plus facilement la ville.
-* Connections now handled by urllib2, instead of urllib; This should allow
-  the functioning of the addon even on a computer connected to the corporate
-  network protected by proxy.
+* Connexions maintenant gérées par urllib2, Au lieu de urllib; Cela devrait
+  permettre le fonctionnement de l'extension même sur un ordinateur connecté
+  au réseau d'entreprise protégé par un proxy.
 * Ajout de la fonction "Trouver"; Contrôle+F3 = Trouver..., F3 = Trouver
   suivant, Maj+F3 = Trouver précédent.
 
@@ -731,16 +740,16 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 * Ajout de la possibilité de lire les informations atmosphériques ;
   Humidité, la visibilité, la pression et l'état de la pression
   barométrique.
-* Added ability to read the Astronomic information; Time of sunrise and
-  sunset.
+* Ajout de la possibilité de lire les informations astronomiques ; Heure du
+  lever et du coucher du soleil.
 
 # Changements dans la fenêtre de paramètres de Weather Plus #
 
 * Ajout de 3 cases à cocher pour gérer les informations énumérées ci-dessus.
-* Added button "Details"; Provides some information such as the real name of
-  the city ( assigned by Yahoo Weather Forecast), the state / region and the
-  nation to which it belongs; With geographic coordinates, and height above
-  sea level.
+* Ajout du bouton "Détails" ; Fournit des informations telles que le vrai
+  nom de la ville (assigné par Yahoo Weather Forecast), l'état / région et
+  la nation à laquelle il appartien ; Avec les coordonnées géographiques et
+  la hauteur au-dessus du niveau de la mer.
 * Ajout de la reconnaissance des WoeID (codes de localisation, par
   exemple. Bologna correspond à 711080).
 * Maintenant, vous pouvez taper le nom de la ville, dans ce cas, si le cas
@@ -749,7 +758,7 @@ Pour ajouter une nouvelle ville : appuyer sur l'élément suivant :
 
 # Version 2.6 #
 * Les fonctions des boutons "Ajouter" et "Supprimer" ont été optimisées dans
-  la gestion de la liste des codes postaux;  Maintenant les opérations sont
+  la gestion de la liste des codes postaux; Maintenant les opérations sont
   beaucoup plus rapide !
 * La fonction du bouton "Tester" a été optimisé, maintenant jusqu'à 13 Mots
   clés sont utilisés; Maintenant, si il ne trouve pas le nom de la ville,

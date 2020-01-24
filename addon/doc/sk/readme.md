@@ -22,9 +22,8 @@
 # POUŽITIE: #
 * Stlačte NVDA + w pre aktuálnu teplotu a poveternostné podmienky.
 * Stlačte NVDA + shift + W pre predpoveď na 24 hodín až 9 dní.
-* Stlačte NVDA + shift + ctrl + w pre nastavenie dočasného mesta.
-* Stlačte NVDA + shift + control + alt + w na otvorenie dialógu s
-  Nastaveniami Weather Plus.
+* Press NVDA+shift+control+w to set a temporary city.
+* Press NVDA+shift+control+alt+w to open the Weather Plus settings dialog.
 * Stlačte NVDA + alt + w na zistenie poslednej aktualizácie správy o počasí.
 * Stlačte ctrl+ shift + w na prepnutie medzi stupňami Fahrenheita, Celsia
   alebo Kelvina.
@@ -490,8 +489,8 @@ To add a new city: press the following item:
 # Verzia 3.9.5 #
 * Pridané 2 nové reťazce do zoznamu správ o oznamovaní počasia.
 * Opravené 2 chyby.
-* Aktualizované zvuky spustené pre efekt vetra; * Teraz sa zvuk vetra môže
-  meniť náhodne.
+* Updated running sounds for the effect in conditions of only wind; Now the
+  sound of the wind can vary randomly.
 
 # Verzia 3.9.4 #
 * documentation, localizations for Croatian and german language were
