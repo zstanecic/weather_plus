@@ -1,3 +1,11 @@
+28/01/2020
+
+Adriano said:
+
+I made the changes suggested by Noelia to the source code.
+
+Rémy made significant corrections in the documentation following Noelia's review.
+
 21/01/2020
 
 Rémy said:
