@@ -1,3 +1,38 @@
+28/01/2020
+
+Adriano said:
+
+I made the changes suggested by Noelia to the source code.
+
+Rémy made significant corrections in the documentation following Noelia's review.
+
+21/01/2020
+
+Rémy said:
+
+This is a small update ( corrected typo in  new documentation for Weather_Plus). 
+before: 
+* Press NVDA+shift+ctrl+w to set a temporary city. 
+* Press NVDA + shift + control + alt + w to open the Weather Plus settings dialog. 
+* Set and Manage Your Cities... Displays or allows to set the current city from a list 
+* Updated running sounds for the effect in conditions of only wind; * Now the sound of the wind can vary randomly. 
+now: 
+* Press NVDA+shift+control+w to set a temporary city. 
+* Press NVDA+shift+control+alt+w to open the Weather Plus settings dialog. 
+* Set and Manage Your Cities... - Displays or allows to set the current city from a list. 
+* Updated running sounds for the effect in conditions of only wind; Now the sound of the wind can vary randomly. 
+
+Thanks very much. 
+
+07/01/2020
+
+Adriano said:
+The fixed source code is attached
+@Zvonimir, 
+This is to be added in the change chronology please:
+# Version 7.4 # 
+* Fixed a bug in a city search function.
+
 04/12/2019
 Weather_Plus correct string for future update
 Note by Rémy:

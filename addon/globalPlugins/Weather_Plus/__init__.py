@@ -8,10 +8,10 @@
 # Released under GPL 2
 #This file is covered by the GNU General Public License.
 #See the file COPYING for more details.
-#Version 7.3
+#Version 7.4
 # Python 2 and 3 compatible
 
-import os,sys, winsound, config, globalVars, ssl, json
+import os, sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
 import random, ui, gui, wx, re, calendar, math
 from logHandler import log
@@ -98,15 +98,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
 		self.menu = gui.mainFrame.sysTrayIcon.menu.GetMenuItems()[0].GetSubMenu()
 		self.WeatherMenu = wx.Menu()
+		#Translators: the configuration submenu in NVDA Preferences menu
 		self.mainItem = self.menu.AppendSubMenu(self.WeatherMenu, _("Weather Plus &Settings"), _("Show configuration items."))
+		#Translators: item to open primary configuration window
 		self.setZipCodeItem = self.WeatherMenu.Append(wx.ID_ANY, _("Set and &manage your cities..."), _("Displays or allows to set the current cities from a list"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSetZipCodeDialog, self.setZipCodeItem)
+		#Translators: item to open window to set up a temporary city
 		self.setTempZipCodeItem = self.WeatherMenu.Append(wx.ID_ANY, _("Set a &temporary city..."), _("Allows to set one temporary city from a list"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.setZipCodeDialog, self.setTempZipCodeItem)
 		if not self.zipCodesList: self.setTempZipCodeItem.Enable(False)
+		#Translators: item to open the help file for the current language
 		self.AboutItem = self.WeatherMenu.Append(wx.ID_ANY, _("&Documentation"), _("Opens the help file for the current language"))
 		self.AboutItem.Enable(self.isDocFolder())
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onAbout, self.AboutItem)
+		#Translators: item to notify if there is an upgraded version available
 		self.UpgradeAddonItem = self.WeatherMenu.Append(wx.ID_ANY, _("&Check for Upgrade..."), _("Notify if there is an upgraded version available"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onUpgrade, self.UpgradeAddonItem)
 		#check if a new version is available
@@ -155,7 +160,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				preset = self.defaultZipCode
 		except (UnicodeEncodeError, UnicodeDecodeError): preset = self.defaultZipCode
 		#opens the Weather Plus settings window
+		#Translators: the title of main settings window
 		title = '%s - %s - (%s: %s)' % (_addonSummary, _("Settings"), _("Preset"), preset or _("None"))
+		#Translators: the message in the main settings window
 		message = _("Enter a City, woeId or choose one from the list, if available.")
 		saved_celsius = self.ReadConfig("c") or self.celsius
 		if "_mainSettingsDialog" not in globals(): global _mainSettingsDialog
@@ -286,12 +293,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				#Set temporary Zip Code
 				test = self.ExtractData(self.tempZipCode)
 				if (not self.defaultZipCode or self.city != "Error" and not save and self.defaultZipCode != test) and not self.dontShowAgain:
+					#Translators: dialog message that advise that the city will be used in temporarily mode
 					message = '%s "%s" %s "%s", %s\n%s' % (
 					_("The woeID"), self.zipCode,
 					_("assigned to"), self.city,
 					_("has not been preset."),
 					_("Will be used in temporary mode!"))
-					dlg = NoticeAgainDialog(gui.mainFrame, message = message, title = '%s %s' % (_addonSummary, _("Notice!")))
+					dlg = NoticeAgainDialog(gui.mainFrame, message = message,
+					#Translators: the dialog title
+					title = '%s %s' % (_addonSummary, _("Notice!")))
 					if dlg.ShowModal():
 						dontShowAgain = dlg.GetValue()
 						if dontShowAgain != self.dontShowAgain:
@@ -318,7 +328,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				samplesvolumes_dic = dict(self.samplesvolumes_dic)
 				if modifiedList:
 					#offers to save the list changed
+					#Translators: the window title
 					title = '%s %s' % (_addonSummary, _("Notice!"))
+					#Translators: dialog message to warn that the list has not been saved
 					message = '%s.\n%s' % (_("You have modified the list of your cities"), _("Do you want to save it?"))
 					winsound.MessageBeep(winsound.MB_ICONEXCLAMATION)
 					dlg= wx.MessageBox(message, title, wx.YES_NO | wx.YES_DEFAULT | wx.ICON_QUESTION)
@@ -373,9 +385,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		s = sel = 0
 		zipCodesList = sorted([i for i in self.zipCodesList if not Shared().GetCoords(i)])
 		if not zipCodesList:
+			#Translators: dialog message of invalid woeid code
 			message = '%s\n%s' % (
 			_("The cities on your list are not compatible with the Yahoo API!"),
 			_("They have to be tested and validated, you can do it from the addon settings window."))
+			#Translators: the dialog title
 			title = '%s %s' % (_addonSummary, _("Notice!"))
 			gui.mainFrame.prePopup()
 			dialog = MyDialog(gui.mainFrame, message, title, zipCodesList = None, newVersion = '', setZipCodeItem = self.setZipCodeItem, setTempZipCodeItem = self.setTempZipCodeItem, UpgradeAddonItem = self.UpgradeAddonItem, buttons = None, simple = True)
@@ -387,7 +401,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if s == None:
 			s = Find_index(zipCodesList, self.defaultZipCode)
 
+		#Translators: the window title to  setting a temporary city
 		title = '%s - %s' % (_addonSummary, _("Setting up a temporary city"))
+		#Translators: dialog message to  setting a temporary city
 		message = '%s\n%s %d' % (
 		Shared().Find_keys(),
 		_("Cities List available:"),
@@ -470,9 +486,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if evt:
 				Shared().Play_sound("warn", 1)
 				if "not found" in data:
-					NoteDialog(_("Sorry, i can not receive data, problems with the download page, try again later please!"), title)
+					#Translators: dialog message and title used when it was not possible to find data
+					NoteDialog(_("Sorry, I can not receive data, problems with the download page, try again later please!"), title)
 				else:
-					NoteDialog(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"), title)
+					#Translators: dialog message and title used when it not possible to connect and receive data 
+					NoteDialog(_("Sorry, I can not receive data, verify that your internet connection is active, or try again later!"), title)
 
 			return
 
@@ -482,13 +500,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except AttributeError: newVersion = ""
 		#finally checks to see if a new version is available
 		if newVersion and (float(newVersion.split()[0]) > float(_addonVersion.split()[0])):
+			#Translators: dialog message that notifying the availability of a new version
 			message = '%s %s %s %s\r\n%s: %s.\n%s' % (
 			_addonSummary, _("version"), newVersion, _("is available."),
 			_("Installed version"), _addonVersion,
 			_("Do you want to download and install it?"))
 			ask= view = True
 		else:
-			if evt: return NoteDialog(_("Sorry, at the time an update is not available."), title)
+			if evt: return NoteDialog(
+			#Translators: dialog message used when a new version is not available
+			_("Sorry, at the time an update is not available."),
+			#Translators: the window title
+			title)
 
 		if ask:
 			return NoteDialog(message, title, newVersion, True)
@@ -1043,11 +1066,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			else:
 				#sample not found, notify and disable audio check box
 				self.toSample = 0
+				#Translators: dialog message used when audio file is not found
 				message = '"%s%s" %s\n%s %s.\n%s %s.' % (
 				v, ext, _("not found!"),
 				_("You need to upgrade the sound effects by reactivating the appropriate option from the settings of"),
 				_addonSummary,
-				_("But if these are already updated, then you need to update"), _addonSummary)
+				_("But if these are already updated, then you need to update"),
+				#Translators: the window title
+				_addonSummary)
 				wx.CallAfter(gui.messageBox, message, _addonSummary, wx.ICON_EXCLAMATION)
 				#Try to disable the audio controls in the Settings window
 				if "_mainSettingsDialog" in globals() and _mainSettingsDialog:
@@ -1252,7 +1278,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					try:
 						file.write(r)
 					except (UnicodeDecodeError, UnicodeEncodeError):
-						file.write('%s, %s\t%s\n' % (_("invalid name").capitalize(), r.split()[1].lower(), r.split()[-1]))
+						file.write('%s, %s\t%s\n' % (
+						_("invalid name").capitalize(), r.split()[1].lower(), r.split()[-1]))
 
 			#adds cities definitions
 			with open(_zipCodes_path, 'a') as file:
@@ -1354,8 +1381,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					visibility = self.Speedtometers(vis)
 
 				if not self.toSpeedmeters: sptm = ""
-				weatherReport = '%s %s %s %s, %s.' % \
-				(_("the weather report is currently"),
+				weatherReport = '%s %s %s %s, %s.' % (
+				_("the weather report is currently"),
 				temperature, _("degrees"),
 				scale_as,
 				condition
@@ -1474,8 +1501,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				if self.celsius != 0: #conversion only for Celsius and Kelvin degrees scale
 					high = self.Temperature_convert(high, self.celsius)
 					low = self.Temperature_convert(low, self.celsius)
-				weatherReport = '%s %s %s %s %s %s %s %s.' % \
-				(_("the forecast for today is"),
+				weatherReport = '%s %s %s %s %s %s %s %s.' % (
+				_("the forecast for today is"),
 				self.dom['forecasts'][start_forecastDay]['text'],
 				_("with a maximum temperature of"), high,
 				_("and a minimum of"), low,
@@ -1511,6 +1538,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				#Adds warning if it's missing a forecast of the day
 				if error:
 					for i in range(int(self.forecast_days) - error):
+						#replace the missing prediction with a description
 						weatherReport += '\n%s, %s.' % (_nr, _("not available"))
 
 				weatherReport = self.WeatherReport(weatherReport)
@@ -1529,7 +1557,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 
 	def WeatherReport(self, weatherReport):
-		"""These are necessary for the localization"""
+		"""Translators: these are necessary for the localization"""
 		weatherReport = weatherReport.replace("km/h", _("kilometers per hour"))
 		weatherReport = weatherReport.replace("mi/h", _("miles per hour"))
 		#weather condition
@@ -1669,7 +1697,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not dom: return self.ZipCodeError(), ""
 		elif "no connect" in dom:
 			Shared().Play_sound("warn", 1)
-			wx.CallAfter(ui.message, _("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"))
+			wx.CallAfter(ui.message, _("Sorry, I can not receive data, verify that your internet connection is active, or try again later!"))
 			return "no connect", ""
 
 		t = 0; repeat = attempts
@@ -1807,11 +1835,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		winsound.MessageBeep(winsound.MB_ICONEXCLAMATION)
 		self.EnableMenu(False)
 		self.woeIdDialog = wx.MessageDialog(gui.mainFrame, '%s "%s" %s "%s".\n%s "%s".\n%s\n%s' % (
+		#Translators: dialog message in case of invalid woeid or with incomplete data
 		_("The woeID"), self.zipCode, _("assigned to"), self.city,
 		_("Is not working properly, contains incomplete data or has been removed from the database of"),
 		"Yahoo Weather Forecast",
 		_("It could be a temporary problem and you may wait a while '..."),
 		_("Do you want to delete it from your list?")),
+		#Translators: the window title
 		'%s %s' % (_addonSummary, _("Notice!")),
 		wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
 
@@ -2169,7 +2199,7 @@ class EnterDataDialog(wx.Dialog):
 			wx.DefaultPosition, wx.DefaultSize,
 			['%s - %s - %s' % (_tempScale[1], _tempScale[0], _tempScale[-1]),
 			_("C - F - K"),
-			_("Don't specify")],
+			_("Unspecified")],
 			3, style=wx.RB_GROUP)
 		self.rb1.SetSelection(scaleAs)
 		sizer.Add(self.rb1, 0, wx.LEFT|wx.RIGHT|wx.BOTTOM, 5)
@@ -2433,6 +2463,7 @@ class EnterDataDialog(wx.Dialog):
 			_("The city can be preceded by the region and / or state, separated by a comma or space"),
 			_("Australia, Queensland, Cona Creek"))
 			global _helpDialog
+			#Translators: help window used by user in the setting window
 			_helpDialog = HelpEntryDialog(gui.mainFrame, message = '%s:\n%s.\n%s.\n%s.\n%s.\n%s.\n%s.\n%s\n%s:\n%s.\n%s.\n%s.\n%s.\n%s.\n%s.' % (
 			_("You can enter or search for a city"),
 			_("By city woeID: 715399"),
@@ -2450,6 +2481,7 @@ class EnterDataDialog(wx.Dialog):
 			_("Try to change in English some parts"),
 			_("Try with a closest location")
 			),
+			#Translators: the help window title
 			title = _("Help placing")
 			)
 			if _helpDialog.ShowModal()is not None:
@@ -2544,9 +2576,11 @@ class EnterDataDialog(wx.Dialog):
 
 	def Warn_curSample(self):
 		"""no sound effect into memory"""
+		#Translators: dialog used when there is no sound in memory
 		wx.MessageBox('%s\n%s' % (
 		_("No sound effect in memory!"),
 		_("I can't reproduce the sound.")),
+		#Translators: the dialog title
 		'%s - %s' % (_addonSummary, _("Notice!")), wx.ICON_EXCLAMATION)
 
 
@@ -2636,7 +2670,7 @@ class EnterDataDialog(wx.Dialog):
 		if cityName == "no connect":
 			self.Disable_all(False)
 			Shared().Play_sound("warn", 1)
-			return ui.message(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"))
+			return ui.message(_("Sorry, I can not receive data, verify that your internet connection is active, or try again later!"))
 		elif not cityName:
 			self.Disable_all()
 			if (woeID == value) and value.isdigit() and not ',' in value:
@@ -2672,9 +2706,11 @@ class EnterDataDialog(wx.Dialog):
 			text = _("Is no longer valid!")
 
 		wx.MessageBox('%s "%s"\n%s' % (
+		#Translators: dialog message used to describe one of the 2 types of errors in woeid
 		_("The woeID"), v,
 		text,
 		),
+		#Translators: the dialog title
 		_addonSummary, wx.ICON_EXCLAMATION)
 
 
@@ -2698,6 +2734,7 @@ class EnterDataDialog(wx.Dialog):
 			self.AudioControlsEnable(reload)
 
 		if not reload:
+			#Translators: dialog message and title to manage the sound effects
 			message = '%s.\n%s' % (
 			_("This option requires the installation of some audio effects"),
 			_("Do you want to install them?"))
@@ -2740,6 +2777,7 @@ class EnterDataDialog(wx.Dialog):
 			if _pyVersion >= 3:
 				target = "/".join((tempfile.gettempdir(), 'Weather_samples.zip'))
 			else: target = "/".join((tempfile.gettempdir().decode("mbcs"), 'Weather_samples.zip'))
+			#Translators: title and message used in tthe progress qdialog
 			title = _("Update in progress")
 			if not reload: title = _("Installation in progress")
 			message = _("Please wait...")
@@ -2775,6 +2813,8 @@ class EnterDataDialog(wx.Dialog):
 				if reload:
 					info_string = _("The upgrade of audio effects has been completed successfully!")
 					path_string = ""
+
+				#Translators: dialog message and title used when the sound effects installation or upgrade is finished
 				message = '%s\n%s%s\n%s' % (
 				info_string,
 				path_string,
@@ -2839,10 +2879,11 @@ class EnterDataDialog(wx.Dialog):
 
 
 	def ErrorMessage(self, e = None):
+		#Translators: dialog message and title used to notify lack of connection or corrupt file, during the sound effects installation
 		message = _("Verify that your internet connection is active, or try again later.")
 		if e: message = _("File corrupted or not available!")
 		wx.MessageBox('%s\n%s' %
-			(_("Sorry, i could not complete the installation of the sound effects!"), message),
+			(_("Sorry, I could not complete the installation of the sound effects!"), message),
 			'%s %s' % (_addonSummary, _("Installation Error!")),
 			wx.ICON_ERROR)
 
@@ -2926,7 +2967,7 @@ class EnterDataDialog(wx.Dialog):
 				connect, n = Shared().ParseEntry(code)
 				if connect == "no connect":
 					Shared().Play_sound("warn", 1)
-					ui.message(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"))
+					ui.message(_("Sorry, I can not receive data, verify that your internet connection is active, or try again later!"))
 					return self.cbx.SetFocus()
 
 				if "ramdetails_dic" in globals() and code in ramdetails_dic:
@@ -2938,7 +2979,7 @@ class EnterDataDialog(wx.Dialog):
 				connect, n = Shared().ParseEntry(code)
 				if connect == "no connect":
 					Shared().Play_sound("warn", 1)
-					ui.message(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"))
+					ui.message(_("Sorry, I can not receive data, verify that your internet connection is active, or try again later!"))
 					return self.cbx.SetFocus()
 
 				if "ramdetails_dic" in globals() and code in ramdetails_dic:
@@ -2968,7 +3009,7 @@ class EnterDataDialog(wx.Dialog):
 		if elevation is None:elevation = _nr
 		elif elevation == "no connect":
 			Shared().Play_sound("warn", 1)
-			ui.message(_("Sorry, i can not receive data, verify that your internet connection is active, or try again later!"))
+			ui.message(_("Sorry, I can not receive data, verify that your internet connection is active, or try again later!"))
 			return self.cbx.SetFocus()
 
 		city_details = ""
@@ -3002,9 +3043,11 @@ class EnterDataDialog(wx.Dialog):
 		def_define = 0
 		if code in self.define_dic: def_define = int(self.define_dic[code])
 		Shared().Play_sound("subwindow", 1)
+		#Translators: dialog message used in the setting window to specify a certain one area
 		dl = wx.SingleChoiceDialog(
 		self, '%s: "%s"' % (
 		_("Define the area for"), city),
+		#Translators: dialog title
 		_addonSummary,
 		choices=[
 		_("Hinterland"),
@@ -3134,7 +3177,7 @@ class EnterDataDialog(wx.Dialog):
 			self.zipCodesList.remove(encoded_value)
 			if value == self.defaultZipCode:
 				self.defaultZipCode = ""
-				self.ReTitle(_("None"))
+				self.ReTitle(_("None")) #removes the city from the title bar
 				self.btn_Apply.Enable(True)
 
 			self.cbx.Delete(index)
@@ -3159,6 +3202,7 @@ class EnterDataDialog(wx.Dialog):
 		name = value.split(', ')[0]
 		part_right = value.split(', ')[-1]
 		Shared().Play_sound("subwindow", 1)
+		#Translators: dialog message and title to change the city name
 		dl = wx.TextEntryDialog(self,
 		_("Enter new name."),
 		_addonSummary,
@@ -3266,6 +3310,7 @@ class EnterDataDialog(wx.Dialog):
 		"""Proposes an alternative name, but by offering the correct name"""
 
 		winsound.MessageBeep(winsound.MB_ICONEXCLAMATION)
+		#Translators: dialog message used when the city name already exists
 		dl =wx.MessageDialog(self, '%s "%s" %s.\n%s "%s" %s.\n%s\n%s "%s".\n%s' % (
 		_("The woeID"), v, _("is correct"),
 		_("But the name"),
@@ -3275,6 +3320,7 @@ class EnterDataDialog(wx.Dialog):
 		_("The city proper is"),
 		cityName[:cityName.rfind(' ')],
 		_("Want to use the suggested name?")),
+		#Translators: dialog title
 		'%s %s' % (_addonSummary, _("Notice!")),
 		wx.YES_NO |wx.CANCEL| wx.ICON_QUESTION)
 		result = dl.ShowModal()
@@ -3284,7 +3330,6 @@ class EnterDataDialog(wx.Dialog):
 
 	def OnImport(self, evt):
 		"""Import data from a file Weather.zipcodes"""
-
 		dlg = wx.FileDialog(self,
 		_("Import cities"),
 		defaultDir = os.path.expanduser('~/~'),
@@ -3311,7 +3356,7 @@ class EnterDataDialog(wx.Dialog):
 			return evt.GetEventObject().SetFocus()
 
 		if self.zipCodesList:
-			#Allows you to choose the import mode
+			#Translators: dialog message and title that allows you to choose the import mode
 			message = '%s\n%s\n%s' % (
 			_("Do you want to replace your list with this?"),
 			_("If you select yes, your list will be completely replaced."),
@@ -3441,12 +3486,14 @@ checkbox_values = [],
 		file = "Weather.zipcodes"
 		if self.modifiedList:
 			winsound.MessageBeep(winsound.MB_ICONEXCLAMATION)
+			#Translators: dialog message used if the user has he added cities but hasn't saved them yet
 			if wx.MessageBox('%s "%s" %s\n%s\n%s' % (
 			_("A copy of"),
 			file,
 			_("It will be exported"),
 			_("But it does not yet contain the changes you just made the list!"),
 			_("I proceed?")),
+			#Translators: the dialog title
 			'%s - %s' % (_addonSummary, _("Notice!")), wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION) == 8:
 				return evt.GetEventObject()
 
@@ -3472,6 +3519,7 @@ checkbox_values = [],
 		if os.path.isfile(_zipCodes_path):
 			import shutil 
 			try:
+				#copy the cities list to the destination chosen by the user
 				shutil .copy(_zipCodes_path, destPath)
 				winsound.MessageBeep(winsound.MB_ICONASTERISK)
 			except Exception as e:
@@ -4148,6 +4196,7 @@ class Shared:
 		if country and not country_acronym:
 			country_acronym = Shared().GetAcronym(country)
 		if country and not country_acronym:
+			#Translators: diaalog message that asks the user to report to author the city code whose country could not be determined
 			dl = HelpEntryDialog(gui.mainFrame,message ='%s' % (
 			_("It was not possible find the acronym of %s!") % country+'\n'+
 			_("This does not allow to get the city details.")+'\n'+
@@ -4250,7 +4299,8 @@ class Shared:
 
 
 	def Find_keys(self):
-		 return '%s = %s, %s = %s, %s = %s.' % (
+		"""hotkeys string that is added in the lookback windows"""
+		return '%s = %s, %s = %s, %s = %s.' % (
 		"Control+f3", _("Find..."),
 		"f3", _("Find next"),
 		"Shift+f3", _("Find previous"))
@@ -4391,7 +4441,7 @@ class Shared:
 		address = 'http://www.geonames.org/search.html?q=%s&country=%s' % (city, acronym)
 		data = Shared().GetUrlData(address, verbosity = False) #does not log the error if it verbosity is False 
 		if not data: return None
-		if _pyVersion >= 3: data = data.decode()
+		if isinstance(data, bytes) and _pyVersion >= 3: data = data.decode()
 		elif _pyVersion <= 2: data = data.decode("utf-8")
 		for m in data.split('\n'):
 			if "geonames" and "latitude" in m:
