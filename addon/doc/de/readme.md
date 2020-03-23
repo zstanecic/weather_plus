@@ -2,297 +2,154 @@
 
 * Autor: Adriano Barbieri
 * NVDA-Kompatibilität: 2017.3 bis 2019.3
-* Download: [Stabile Version][1]
+* [Stabile Version herunterladen][1]
 
-# Über WEATHER PLUS: #
+# INFORMATIONEN ZU WEATHER PLUS: #
 
 * Dieses Plugin fügt die Anzeige der aktuellen Wetterbedingungen und
   Vorhersagen für 24 Stunden und bis zu 9 zusätzlichen Tagen zu NVDA hinzu.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Freigegeben unter der GNU GPL (General Public License) v2
-
-# Wetter Plus arbeitet durch die Nutzung und Präsenz folgender Dienste: #
+* Wetter Plus arbeitet durch die Nutzung und Präsenz folgender Dienste:
 * [https://developer.yahoo.com/weather/](https://developer.yahoo.com/weather/)
 * [http://woeid.rosselliot.co.nz/lookup/](http://woeid.rosselliot.co.nz/lookup/)
 * [http://www.geonames.org/](http://www.geonames.org/)
 * [http://veloroutes.org/elevation/](http://veloroutes.org/elevation/)
 * [http://www.nvda.it/](http://www.nvda.it/)
 
-# Nutzung: #
-* Drücken Sie NVDA+W für die aktuelle Temperatur und Wetterbedingungen.
-* Drücken Sie NVDA+Umschalt+W für die Wettervorhersage für 24 Stunden und
-  bis zu 9 zusätzlichen Tagen.
+# VERWENDUNG: #
+
+* Drücken Sie NVDA+W, um Informationen über die aktuellen Temperatur- und
+  Wetterbedingungen zu erhalten.
+* Drücken Sie NVDA+Shift+W, um eine 24-Stunden-Vorhersage und eine
+  Vorhersage von bis zu neun Tagen zu erhalten.
 * Drücken Sie NVDA+Umschalt+Strg+W, um eine temporäre Stadt festzulegen.
-* Drücken Sie NVDA+Umschalt+Strg+Alt+W, um die Wetter Plus-Einstellungen zu
-  öffnen.
-* Drücken Sie NVDA+Alt+W, um die letzte Aktualisierung des Wetterberichts zu
-  erfahren.
-* Drücken Sie Strg+Umschalt+W, um zwischen Fahrenheit, Celsius oder Kelvin
-  umzuschalten.
+* Drücken Sie NVDA+Umschalt+Strg+Alt+W, um die Einstellungwn von Weather
+  Plus zu öffnen.
+* Drücken Sie NVDA+Alt+W, um das Datum und die Uhrzeit zu erhalten, zu der
+  der Wetterbericht aktualisiert wurde.
+* Drücken Sie Strg+Umschalt+W, um zwischen den Temperaturskalen Fahrenheit,
+  Celsius oder Kelvin umzuschalten.
 
-# Um Wetter Plus einzustellen: #
-Lesen Sie den Abschnitt: Erstmalige Wetter Plus-Einstellungen.
-
---------------------------------------------------------------------------------
-
-# Erstmalige Wetter Plus-Einstellungen: #
-
-Sie müssen die Erweiterung vor der ersten Verwendung einstellen!
-
-Gehen Sie zu:
-
-Einstellungsmenü
-
-Wetter Plus-Einstellungenmenü
-
-Konfigurationseinträge anzeigen.
-
-# Wählen Sie zwischen folgenden Einträgen aus: #
+# Weather Plus-Einstellungen: #
 
 * Einstellungen und Stadtverwaltung...
-	* Zeigt das Einstellungsfenster für Weather Plus.
+	* Zeigt das Einstellungsfenster für Weather Plus an.
 * Dokumentation
 	* Öffnet den Ordner mit den Hilfedateien für die aktuelle Sprache
-* Nach Aktualisierung suchen...
-	* Benachrichtigt, ob eine Aktualisierung zur verfügung steht.
-
-Wählen Sie:
-
-# Einstellungen und Stadtverwaltung... #
-
-Zeigt die aktuelle Stadt oder erlaubt es, diese aus einer Liste auszuwählen
-
-Die folgende Meldung wird nur zum ersten Mal angezeigt!
-
-Einstellungen - voreinstellung
-
-Keine
-
-F1: Hilfe, F2: Letzte Auswahl, F3: Stadtauswahl bzw. Suche, F4: Dauer der
-Wettervorhersage einstellen, F5: Lautstärkeregler.
-
-Geben Sie einen Stadtnamen oder eine WOE-ID ein oder wählen Sie, falls Sie
-schon Städte hinzugefügt haben, eine mit den Pfeiltasten rauf und runter
-aus.
-
-Hinweis: Die Taste F5 ist verfügbar, wenn die Soundeffekte aktiviert sind.
-
-Nachdem Sie den Eintrag "Einstellungen und Stadtverwaltung..." gewählt
-haben, finden Sie weitere Schaltflächen wie:
-
-# Test #
-
-Testet die Gültigkeit der WOE-ID und findet den Namen der Stadt heraus, und
-umgekehrt.
-
-# Hinzufügen #
-
-Fügt die ausgewählte Stadt Ihrer Liste hinzu.
-
-Diese Schaltfläche ist aktiv, wenn Sie eine Stadt aus der Liste ausgewählt
-haben, die in der Ergebnisliste angezeigt wurde.
-
-# Details #
-
-Zeigt Details zur aktuellen Stadt.
-
-Diese Schaltfläche ist aktiv, wenn Sie eine Stadt aus der Liste ausgewählt
-haben, die in der Ergebnisliste angezeigt wurde.
-
-# Definieren #
-
-Dies lässt Sie die Gegend definieren, um die Soundeffekte entsprechend
-anzupassen.
-
-Diese Schaltfläche ist aktiv, wenn die Audioeffekte installiert und
-aktiviert sind und Sie eine Stadt aus der Liste auswählen.
-
-# Voreinstellung #
-
-Dadurch wird eine Stadt als Standardeinstellung festgelegt, die bei jedem
-Neustart des Plugins verwendet wird.
-
-Diese Schaltfläche ist aktiv, wenn Sie eine Stadt ausgewählt haben, die
-zuvor in der Liste eingefügt und nicht voreingestellt wurde.
-
-# Entfernen #
-
-Löscht die ausgewählte Stadt aus Ihrer Liste.
-
-Diese Schaltfläche ist aktiv, wenn Sie eine Stadt auswählen, die zuvor in
-der Liste eingefügt wurde.
-
-# Umbenennen #
-
-Aktuelle Stadt umbenennen.
-
-Diese Schaltfläche ist aktiv, wenn Sie eine Stadt auswählen, die zuvor in
-der Liste eingefügt wurde.
-
-# Neue Städte importieren ... #
-
-Hiermit kann eine Städteliste durch Importieren von Dateien mit der
-Erweiterung * .zipcodes hinzugefügt werden. Sie können die zu importierenden
-Städte auswählen, indem Sie das entsprechende Kontrollfeld für die  Stadt
-aktivieren.
-
-# Städte exportieren... #
-
-Hiermit kann die Stadt an einem bestimmten Ort gespeichert werden
-
-Diese Schaltfläche ist aktiv, wenn Sie mindestens eine Stadt zur Liste
-hinzugefügt haben.
-
-# Temperaturskala: #
-
-Wählen Sie durch Nutzen des Auswahlschalters zwischen:
-
-* Celsius (standard)
-* Fahrenheit
-* Kelvin
-
-# Grad anzeigen als: #
-
-Wählen Sie durch Nutzen des Auswahlschalters zwischen:
-
-* Celsius `-` Fahrenheit` -` Kelvin (standard)
-* C `-` F `-` K
-* Nicht spezifizieren
-
-Kombinationsfeld:
-
-# Wettervorhersage bis Tage: 3 #
-
-Wählen Sie zwischen 1 und 10 (standardmäßig 3 Tage)
-
-Des weiteren gibt es folgende Kontrollkästchen:
-
-# Wetterbericht und Stadtdetails in die Zwischenablage kopieren #
-
-standardmäßig nicht aktiviert
-
-# Soundeffekte aktivieren (nur für aktuelle Wetterbedingungen) #
-
-Mit diesem Kontrollkästchen können Sie auch die Installation von
-Soundeffekten verwalten;
-
-Wenn die Soundeffekte installiert sind und das Kontrollkästchen aktiviert
-ist, stehen die Taste F5 und somit die Lautstärkeregelung zur Verfügung.
-
-Es wird auch ein zusätzliches Kontrollkästchen verfügbar:
-
-* Nur Wetter-Effekte verwenden.
-
-Sie können die Gesamtlautstärke oder den zuletzt gehörten Soundeffekt ändern
-und die anderen Sounds in Ihrer Umgebung herausfiltern.
-
-standardmäßig nicht aktiviert
-
-# Nur Wetter-Effekte verwenden #
-
-Ist verfügbar, wenn die Soundeffekte aktiviert sind;
-
-Wenn aktiviert, werden nur Wetterklänge wie Regen, Wind, Donner
-usw. abgespielt und alle Umgebungsgereusche weggelassen.
-
-standardmäßig nicht aktiviert
-
-# Stunden im 24-Stunden-Format ausgeben #
-
-Wenn deaktiviert, wird die Uhrzeit im 12-Stunden-Format ausgegeben,
-Beispiel: 12 AM `-` 12 PM.
-
-standardmäßig aktiviert
-
-# Hilfetexte für die Schalter in den Einstellungen zeigen #
-
-standardmäßig aktiviert
-
-# Windinformationen lesen #
-
-standardmäßig nicht aktiviert
-
-Wenn aktiviert, können Sie auch Folgendes aktivieren:
-
-* Windrichtung ausgeben;
-
-Zeigt die Richtung des Windes an.
-
-standardmäßig aktiviert
-
-* Windgeschwindigkeit ausgeben;
-
-Zeigt die Geschwindigkeit in Kilometern oder Meilen pro Stunde an.
-
-standardmäßig aktiviert
-
-* Meter pro Sekunde bei der Ausgabe der Windgeschwindigkeit hinzufügen;
-
-standardmäßig aktiviert
-
-* Gefühlte Temperatur ausgeben;
-
-standardmäßig aktiviert
-
-# Atmosphärische Informationen lesen #
-
-standardmäßig nicht aktiviert
-
-Wenn aktiviert, können Sie auch Folgendes aktivieren:
-
-* Feuchtigkeit ausgeben;
-
-Zeigt die Luftfeuchtigkeit in Prozent an.
-
-standardmäßig aktiviert
-
-* Sichtweite ausgeben;
-
-Gibt die maximale Sicht in Kilometern oder Meilen an.
-
-standardmäßig aktiviert
-
-* Luftdruck ausgeben;
-
-Zeigt den Luftdruck in Millibar oder Zoll Quecksilbersäule an.
-
-Wenn dies aktiviert ist, wird ein zusätzliches Kontrollkästchen sichtbar,
-mit dem Sie die Ausgabe des Luftdrucks in Millimeter Quecksilbersäule ein-
-oder ausschalten können.
-
-standardmäßig aktiviert
-
-* Status des Luftdrucks ausgeben;
-
-standardmäßig aktiviert
-
-# Astronomische Informationen lesen #
-
-Gibt die Zeit des  Sonnenauf- und Untergangs an.
-
-standardmäßig nicht aktiviert
-
-# Komma als Dezimaltrennzeichen benutzen #
-
-Wenn diese Option aktiviert ist, wird das Komma als Dezimaltrennzeichen
-verwendet, andernfalls der Punkt .
-
-Standardmäßig nicht aktiviert
-
-# Automatisch nach Aktualisierungen suchen #
-
-Wenn aktiviert, wird gemeldet, wenn eine neue Version der Erweiterung
-verfügbar ist.
-
-standardmäßig aktiviert
-
-# Drücken Sie OK, um Ihre Änderungen zu speichern, oder Abbrechen, um sie zu verwerfen. #
-
-Wenn Sie die Städte-Liste geändert haben und auf "abbrechen" drücken, werden
-Sie daran Erinnert, sodass sie dies trotzdem speichern können.
-
-# Hinweis: Ihre Einstellungen werden in folgenden Dateien gespeichert: #
-
+* Nach Updates suchen...
+	* Benachrichtigt, ob Updates zur Verfügung stehen.
+
+Um eine neue Stadt hinzuzufügen: klicken Sie auf den folgenden Eintrag:
+
+* Städte verwalten - Zeigt die aktuelle Stadt aus einer Liste an oder
+  ermöglicht sie einzustellen.
+* Die folgende Meldung wird nur beim ersten Mal angezeigt! Einstellungen,
+  Voreinstellung oder Keine. F1: Hilfe, F2: Letzte TAB-Auswahl, F3: Liste
+  und Bearbeitungsfeld, F4: Dauer der Wettervorhersage, F5:
+  Lautstärkeregler.
+* Geben Sie im Bearbeitungsfeld eine Stadt, eine WOE-ID ein oder wählen Sie
+  eine aus der Liste aus, falls verfügbar. Hinweis: Die F5-Taste ist
+  verfügbar, wenn die Sound-Effekte aktiviert sind.
+* Nachdem Sie die Eingabetaste auf dem Punkt "Städte verwalten" gedrückt
+  haben, finden Sie weitere Schaltflächen wie folgt:
+* Testen - Testet die Gültigkeit des WOE-ID-Eintrags und finden Sie den
+  Namen der zugewiesenen Stadt oder umgekehrt.
+* Hinzufügen - Fügt die aktuelle Stadt in der Liste hinzu. Diese
+  Schaltfläche kann aktiviert werden, wenn Sie eine Stadt aus der Liste
+  ausgewählt haben, wenn die eingegebene Stadt den Test bestanden hat.
+* Informationen - Zeigt Informationen über die aktuelle Stadt an. Diese
+  Schaltfläche wird aktiviert, wenn Sie eine Stadt aus der Liste auswählen
+  oder wenn diese den Test bestanden hat.
+* Festlegen - Ermöglicht den Bereich zu definieren, um die Sound-Effekte
+  anzupassen. Diese Schaltfläche kann aktiviert werden, wenn diese
+  installiert und aktiviert sind und Sie eine Stadt aus der Liste auswählen.
+* Voreingestellung - Legt eine Stadt als Standard fest, wird bei jedem
+  Neustart der Erweiterung verwendet. Diese Schaltfläche wird aktiviert,
+  wenn Sie eine zuvor in die Liste übernommene und nicht voreingestellte
+  Stadt auswählen oder der Test nicht bestanden wurde.
+* Entfernen - Löscht die aktuelle Stadt aus Ihrer Liste. Diese Schaltfläche
+  kann aktiviert werden, wenn Sie eine zuvor in die Liste eingefügte Stadt
+  auswählen.
+* Umbenennen - Benennen Sie die aktuelle Stadt um. Diese Schaltfläche kann
+  aktiviert werden, wenn Sie eine zuvor in die Liste eingefügte Stadt
+  auswählen.
+* Städte importieren - Mit dieser Schaltfläche können Sie Städte aus einer
+  anderen Liste von Städten mit der Erweiterung *.zipcodes importieren; Sie
+  können die zu importierende Stadt auswählen, indem Sie das zugehörige
+  Kontrollkästchen aktivieren.
+* Städte exportieren - Sie können un die Städte in der Datei mit der
+  Erweiterung *.zipcodes speichern. Diese Schaltfläche wird aktiviert, wenn
+  Sie mindestens eine Stadt in die Liste vorhanden ist.
+* Temperaturskala: Verwenden Sie die Auswahlschalter, um Celsius (Standard),
+  Fahrenheit oder Kelvin auszuwählen.
+* Grad-Einheit anzeigen als: Verwenden Sie den Auswahlschalter, um die
+  verschiedenen Grad-Einheiten auszuwählen: Celsius `-` Fahrenheit `-`
+  Kelvin (Standard), C `-` F `-` K oder Nicht angeben.
+* Kombinationsfeld: Wettervorhersagen bis zu Tagen: 3. Sie können zwischen
+  ein bis zehn wählen (Standard ist 3 Tage)
+* Um die folgenden Aktionen durchzuführen, können Sie die folgenden
+  Kontrollkästchen ein- oder ausschalten:
+* Wetterbericht und Wettervorhersage einschließlich der Stadt-Informationen
+  in die Zwischenablage kopieren, dieses Kontrollkästchen ist standardmäßig
+  nicht aktiviert.
+* Sound-Effekte nur für die aktuellen Wetterbedingungen aktivieren. Mit
+  diesem Kontrollkästchen können Sie auch die Installation von
+  Sound-Effekten verwalten. Wenn die Sound-Effekte installiert sind und das
+  Kontrollkästchen aktiviert ist, ist die F5-Taste und die
+  Lautstärke-Einstellung verfügbar.
+* Es wird auch eine zusätzliche Kontrolfeld zur Verfügung stehen: "Nur
+  Wettereffekte verwenden".
+* Sie können die Gesamtlautstärke ändern oder den zuletzt gehörten
+  Sound-Effekt ändern und die anderen Geräusche in Ihrer Umgebung
+  herausfiltern. Das Kontrollfeld ist standardmäßig nicht aktiviert.
+* Nur Wettereffekte verwenden - Diese Option ist verfügbar, wenn
+  Sound-Effekte aktiviert sind. Wenn diese aktiviert ist, können nur
+  Wettereffekte wie Regen, Wind, Donner, etc. gehört werden, wobei alle
+  Umgebungseffekte herausgefiltert werden (ist standardmäßig nicht
+  aktiviert).
+* 24-Stunden-Format. Wenn dieses Kontrollkästchen nicht markiert ist, wird
+  die Uhrzeit im 12-Stunden-Format angegeben, z. B. 12 Uhr morgens `-` 12
+  Uhr abends. Das Kontrollkästchen ist standardmäßig aktiviert.
+* Schaltflächen in den Einstellungen. Dieses Kontrollfeld ist standardmäßig
+  aktiviert.
+* Windinformationen ausgeben. Das Kontrollkästchen ist standardmäßig nicht
+  aktiviert. Wenn dieses Kontrollfeld aktiviert ist, können Sie auch die
+  folgenden Felder aktivieren:
+* Windrichtung ergänzen. Gibt die Herkunft des Windes an. Das Kontrollfeld
+  ist standardmäßig nicht aktiviert.
+* Windgeschwindigkeit ergänzen. Gibt die Geschwindigkeit in Kilometern oder
+  Meilen pro Stunde an. Das Kontrollfeld ist standardmäßig aktiviert.
+* Windgeschwindigkeit in Meter pro Sekunde ergänzen. Das Kontrollfeld ist
+  standardmäßig aktiviert.
+* Gefühlte Temperatur ergänzen. Das Kontrollfeld ist standardmäßig
+  aktiviert.
+* Atmosphärische Informationen ausgeben. Das Kontrollfeld ist standardmäßig
+  nicht aktiviert. Wenn es aktiviert ist, können Sie auch die folgenden
+  Kontrollfelder aktivieren:
+* Wert für Luftfeuchtigkeit ergänzen. Gibt die Feuchtigkeit in Prozent
+  an. Das Kontrollfeld ist standardmäßig aktiviert.
+* Wert für Sichtweite ergänzen. Geben Sie die sichtbare Entfernung in
+  Kilometern oder Meilen an. Das Kontrollfeld ist standardmäßig aktiviert.
+* Wert für Luftdruck ergänzen. Gibt den Luftdruck in Millibar oder Zoll
+  Quecksilber an. Wenn es markiert ist, aktivieren Sie ein zusätzliches
+  Kontrollkästchen, mit dem Sie den Luftdruck in Millimetern Quecksilber
+  angeben können. Das Kontrollkästchen ist standardmäßig aktiviert.
+* Status des Luftdrucks ergänzen. Das Kontrollfeld ist standardmäßig
+  aktiviert.
+* Astronomische Informationen ausgeben. Gibt die Zeit des Sonnenauf- und
+  -untergangs an. Das Kontrollfeld ist standardmäßig nicht aktiviert.
+* Verwenden Sie das Komma, um Dezimalstellen zu trennen. Wenn es aktiviert
+  ist, wird das Komma als Dezimaltrennzeichen verwendet, andernfalls wird
+  der Punkt verwendet. Das Kontrollfeld ist standardmäßig nicht aktiviert.
+* Nach Updates suchen. Wenn aktiviert, wird bei einem Update der Erweiterung
+  eine Warnung ausgegeben. Kontrollfeld standardmäßig aktiviert.
+* Drücken Sie OK, um Ihre Änderungen zu speichern, oder Abbrechen, um sie zu
+  verwerfen.
+* Wenn Sie die Liste der Städte geändert haben, werden Sie durch Klicken auf
+  "Abbrechen" daran erinnert und Sie können sie immer noch
+  speichern. Hinweis: Ihre Einstellungen werden in der genannten Datei
+  gespeichert:
 * "Weather.ini": Start-Einstellungen von Wetter Plus.
 * "Weather.volumes": Benutzerdefinierte Lautstärkepegel, unabhängig von der
   Gesamtlautstärke.
@@ -301,27 +158,36 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 
 --------------------------------------------------------------------------------
 
-# Änderungsverlauf: #
+# Was ist neu: #
+
+# Version 7.4 #
+
+* Ein Fehler in der Suchfunktion für die Städte wurde behoben.
 
 # Version 7.3 #
+
 * Unerwarteter Fehler behoben, falls die Seite bei der Suche nach einer
   Aktualisierung nicht gefunden wurde.
 
 # Version 7.2 #
-* Der Fehler nach dem Hinzufügen einer Stadt wurde behoben, wenn es sich um
-  die erste Stadt handelt, die Sie eingegeben haben, wenn Sie auf die
-  Schaltfläche "OK" klicken und die Erweiterung neu starten.
-* Nun zeigt der Fortschrittsdialog wieder die verbleibende Zeit und die
-  verstrichene Zeit an.
-* korrekte italienische Hilfe für die Umbenennen-Schaltfläche.
+
+* Fehler nach dem Hinzufügen einer Stadt behoben, wenn es die erste
+  eingegebene Stadt ist, wenn Sie auf "OK" klicken und die Erweiterung neu
+  starten.
+* Nun zeigt das Dialogfeld für den Fortschritt wieder die Restzeit und die
+  Laufzeit an.
+* Italienische Übersetzung in der Hilfe für die Schaltfläche zum Umbenennen
+  korrigiert.
 
 # Version 7.1 #
-* Fehler in der Funktion Removeupdate() beim Neustart der Erweiterung
-  behoben, wenn die Datei schreibgeschützt ist.
+
+* Update-Fehler behoben.
 
 # Version 7.0 #
-* Verbessertes Suchfenster. Jetzt kann man alle eingegebenen Suchbegriffe
-  verwalten, hinzufügen, löschen und aus dem Kontextmenü speichern.
+
+* Verbessertes Suchfenster. Es ist nun möglich, alle eingegebenen
+  Suchbegriffe zu verwalten, hinzuzufügen, zu löschen und über das
+  Kontextmenü zu speichern.
 * Verbesserte Steuerung beim Öffnen des Fensters.
 * Einige kleinere Fehler behoben.
 
@@ -329,160 +195,183 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
 
 * Rekursive Städtesuche mit dem  System Implementiert , das zuvor in der
   Weather_Plus Apixu-Version verwendet wurde.
-
-	* Drücken Sie f1 im Einstellungsfenster, um eine Erläuterung der
-	  verfügbaren Befehle zu erhalten.
-
-* Es wurde ein Problem beim Löschen einiger *.pyc, * .pyo-Module während
-  eines NVDA-Updates behoben.
+* Drücken Sie f1 im Einstellungsfenster, um eine Erläuterung der verfügbaren
+  Befehle zu erhalten.
 
 # Version 6.8 #
 
-* Aktualisiertes Flag notwendig für die untenstehenden Zweige;
-
-	* nvda_snapshot_threshold und nvda_snapshot_threshold_py3_staging.
+* Kompatibilität für Python 3 aktualisiert.
 
 # Version 6.7 #
+
 * Ein Fehler wurde behoben, wenn eine neue Stadt getestet wurde und sie im
   temporären Modus verwendet wurde, indem man einfach "Enter" drückte und zu
   einem späteren Zeitpunkt versuchte, sie über die Schaltfläche "Hinzufügen"
   ergänzte.
-* Das Akronym für SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS wurde der
-  Datenbank hinzugefügt, aber leider scheinen die Städte dieses Staates
-  nicht zu funktionieren oder sie enthalten unvollständige Daten. Wir
-  hoffen, dass es bald behoben wird.
+* Abkürzung für Südgeorgien und die Südlichen Sandwichinseln in die
+  Datenbank aufgenommen, aber leider scheint es im Moment so zu sein, dass
+  die Städte dieses Staates nicht funktionieren oder unvollständige Daten
+  enthalten. Eine Lösung des Problems steht noch aus.
 
 # Version 6.5 #
-* Einige Fehler bei der Wiedergabe von Soundeffekten wurden behoben.
-	* Einige "for" -Zyklen mit falschen Maximalwerten verursachten einen nicht existierenden Soundeffekt.
-* Fehler in der Ortszeit in "Details" behoben;
-	* Bei der  12-Stunden-Zeitumrechnung trat ein Fehler auf.
-* Ein Fehler im Yahoo-Wetterbericht wurde behoben;
-	* In einigen Städten beginnen die Vorhersagen mit dem Vortag und nicht mit dem aktuellen.
-	* Die Korrektur dieser Städte hat den Verlust der letzten Tage der Vorhersage proportional zur Nichtübereinstimmung der Daten zur Folge (wenn die Prognosetage auf 10 gesetzt sind).
+
+* Einige Fehler in der Wiedergabe der Sound-Effekte wurden behoben. Ein paar
+  "for"-Schleifen mit falschen Maximalwerten führten zum Aufruf eines nicht
+  vorhandenen Sound-Effekts.
+* Fehler in der Ortszeit in "Informationen" behoben. Die
+  12-Stunden-Zeitkonvertierung hatte einen Fehler.
+* Ein Fehler in der Yahoo-Wettervorhersage wurde behoben; in einigen Städten
+  gehen die Vorhersagen vom Vortag und nicht vom aktuellen Tag aus. Die
+  Korrektur dieser Städte führt dazu, dass die letzten Tage der Vorhersage
+  proportional zur Abweichung der Daten verloren gehen (wenn die
+  Vorhersagetage auf 10 gesetzt werden).
 
 # Version 6.4 #
-* Sommerzeit in der Funktion "Details" entfernt.
-	* Der von dieser Funktion verwendete Dienst wurde geändert und daher entfernt.
-* Verbesserte Wiedergabe von Audioeffekten;
-	* Jetzt werden sie regelmäßig aktualisiert, wenn sich die Wetterbedingungen ändern.
+
+* Die Sommerzeit wurde in der Funktion "Informationen" entfernt.
+* Verbesserte Wiedergabe von Sound-Effekten; jetzt werden sie regelmäßig
+  aktualisiert, wenn sich die Wetterbedingungen ändern.
 
 # Version 6.3 #
-* Zeichenkodierung im Fenster der Suchergebnisse behoben.
-* In der Detailausgabe ebenfalls.
+
+* Kodierungsprobleme behoben.
 
 # Version 6.2 #
-* Fehler in der Funktion "hinzufügen" behoben.
+
+* Fehler in der Funktion "Stadt hinzufügen" behoben.
 * Fehler behoben, bei dem die Variable "_volume" beim Start der Erweiterung
   nicht zugewiesen wurde.
-* Fehlender Code aus Version 6.0 hinzugefügt;
-	* Jetzt können Sie die gespeicherten Städte von der Version wiederherstellen, die die Apixu-API verwendet.
-	* Die Schaltflächen "Test" und "Entfernen" sowie nicht kompatible Städte sind im folgenden Format verfügbar: "Ferrara, iter 44.83,11.58 0" (Stadt, geografische Koordinaten, Gebietsdefinition).
+* Fehlender Code aus Version 6.0 hinzugefügt. Nun können Sie die
+  gespeicherten Städte aus der Version, die die Apixu-API verwendet,
+  wiederherstellen. Die Schaltflächen "Testen" und "Entfernen" sowie nicht
+  kompatible Städte sind im Format verfügbar: "Ferrara, iter 44.83,11.58 0"
+  (Stadt, geografische Koordinaten, Gebietsdefinition).
 
 # Version 6.1 #
+
 * 2 Fehler behoben.
 
 # Version 6.0 #
+
 * Weather Plus kehrt zur Verwendung der Yahoo Weather API zurück.
 * Praktisch alle Funktionen der Vorgängerversion 4.8 sind zurück unter dem
   Behalt der "Umbenennen" Schaltfläche.
-* Jetzt auch mit Python 3 kompatibel.
+* Kompatibilität mit Python 3.
 
 # Version 5.0.1 #
+
 * Fehler behoben, der bei einer Windgeschwindigkeit von 0 mph eine leere
   Zeichenkette zurückgeben ließ.
 * Fehler korrigiert, der die Soundeffekte nicht folgerichtig mit der
   Zeitzone abspielen ließ.
-* Taganzahl der Wettervohersage im Liesmich von 9 auf 6 korrigiert.
+* In der Readme-Datei wurde die Anzahl der Vorhersagetage von 9 auf 6
+  angepasst.
 
 # Version 5.0 #
-* Weather Plus verwendet jetzt das bessere APIXU-API.
 
-`#` Änderungen im Fenster "Weather Plus-Einstellungen":
+* Weather Plus verwendet nun die APIXU-API.
 
-* Altes Kontrollfeld "Status des Luftdrucks ausgeben" entfernt.
-* Replaced with new checkbox "Add cloudiness value";
-	* It gives you the percentage of cloudiness.
-* Added new checkbox "Add precipitation value";
-	* It gives you the amount in millimeters of precipitation.
-* Removed old checkbox "Indicates the wait with a beep while you search for the latest bulletin";
-	* Left active by default.
-* Added to the Astronomic information;
-	* Time of moonrise and moonset.
-* Added new button "Rename";
-	* To rename cities more conveniently.
-* Improved function of the "Test" button;
-	* Now accept some commands to facilitate the search for cities;
-	* These new commands are described in the help function that can be called up with F1.
+# Änderungen in den Weather Plus-Einstellungen #
+
+* Kontrollfeld "Status des Luftdrucks ergänzen" entfernt.
+* Zeigt den Bewölkungsgrad in Prozent an.
+* Kontrollfeld "Wert für Niederschlag ergänzen" hinzugefügt. Gibt die Menge
+  in Millimeter an.
+* Kontrollkästchen "Zeigt die Wartezeit mit einem Piepton an, während Sie
+  nach dem neuesten Bulletin suchen" entfernt, ist nun standardmäßig aktiv.
+* Astronomische Informationen hinzugefügt.
+* Zeit des Mondauf- und -Untergangs.
+* Neue Schaltfläche "Umbenennen" hinzugefügt, um Städte bequemer
+  umzubenennen.
+* Verbesserte Funktion der Schaltfläche "Testen". Jetzt können einige
+  Befehle akzeptiert werden, um die Suche nach Städten zu erleichtern; diese
+  neuen Befehle werden in der Hilfefunktion beschrieben, die mit der
+  F1-Taste aufgerufen werden kann.
 
 # Version 4.8 #
-`#` Änderungen im Fenster "Weather Plus-Einstellungen":
 
-* Neues Kontrollkästchen hinzugefügt.
-	* "Nur Wetter-Effekte verwenden";
-	* Dadurch können Sie alle anderen Umgebungsgeräusche herausfiltern.
-* Verbesserte Zufallswiedergabe und 71 neue Soundeffekte hinzugefügt;
-	* Sie müssen sie aktualisieren, indem Sie zweimal auf das Kontrollkästchen "soundeffekte aktivieren" klicken.
-* Der vom Benutzer zugewiesene Lautstärketyp, die allgemeine und die aktuelle Audio-Lautstärke, wird jetzt beibehalten, wenn die Konfiguration gespeichert wird.
-* Unnötiger Sound während des Auswahltexts im Eingabefeld durch Drücken von Strg + a entfernt.
-* Verbesserte Lesbarkeit des Hilfefensters, das mit der Funktionstaste F1 aufgerufen werden kann.
-* Kompatibilitätskenzeichnung für NVDA 2019.1 und die aktuellen Alpha-Versionen hinzugefügt.
+# Änderungen in den Weather Plus-Einstellungen #
+
+* Neues Kontrollkästchen "Nur Wettereffekte verwenden" hinzugefügt. damit
+  können Sie alle anderen Umwelteffekte herausfiltern.
+* Die Zufallswiedergabe wurde verbessert und 71 neue Sound-Effekte
+  hinzugefügt; Sie müssen diese aktualisieren, indem Sie zweimal in das
+  Kontrollkästchen "Audioeffekte aktivieren" klicken.
+* Die vom Benutzer zugewiesene Lautstärke zwischen der allgemeinen und der
+  aktuellen Lautstärke wird nun beim Speichern der Konfiguration
+  beibehalten.
+* Unnötige Ton-Ausgabe während der Auswahl von Text im Bearbeitungsfeld
+  durch Drücken von Strg+a wurde entfernt.
+* Verbesserte Lesbarkeit im Hilfefenster, das mit der Funktionstaste F1
+  aufgerufen werden kann.
+* Neues Kompatibilitätsflag für NVDA 2019.1 und die aktuellen
+  Alpha-Versionen hinzugefügt.
 
 # Version 4.7.7 #
+
 * Die überflüssige Benachrichtigung des erfolgreichen Downloads eines
   Updates wurde entfernt.
-* 6 neue Soundeffekte hinzugefügt;
-	* Es ist notwendig, sie von den Einstellungen des Plugins zu aktualisieren.
+* Es wurden sechs neue Sound-Effekte hinzugefügt. Es ist notwendig, diese
+  über die Einstellungen der Erweiterung zu aktualisieren.
 
 # Version 4.7.6 #
-* Ein kleiner Fehler in der Funktion GetCoords() wurde behoben;
-	* 2 Werte wurden bei fehlender Verbindung nicht zurückgegeben.
+
+* Bugfix-Release.
 
 # Version 4.7.5 #
-* MenuItem.GetLabel () ist veraltet und wurde durch
-  MenuItem.GetItemLabelText () ersetzt.
-* Einige Deklarationen von globalen Variablen korrigiert.
+
+* Bugfix-Release.
 
 # Version 4.7.3 #
-* Die Funktion "Details" wurde aktualisiert;
-	* Der Einfachheit halber werden die Informationen zur Höhe jetzt von veloroutes.org zur Verfügung gestellt.
-	* Dies führt zu kleinen Unterschieden von geringer Relevanz.
+
+* Die Funktion "Informationen" wurde der Einfachheit halber
+  aktualisiert. Die Informationen über die Höhe werden nun von
+  veloroutes.org bereitgestellt. Dies führt zu kleinen Unterschieden von
+  geringer Relevanz.
 
 # Version 4.7.2 #
-* Ein Codierungsfehler wurde bei der Removeupdate-Funktion behoben.
+
+* Kleiner Kodierungsfehler behoben.
 
 # Version 4.7.1 #
-* Ein Fehler in GetTimezone wurde behoben;  
-	* Im Fall von Nulldaten wurde ein Wert zurückgegeben, nicht drei wie erforderlich.
+
+* Fehler beim Abrufen der Informationen von Zeitzonen behoben.
 
 # Version 4.7 #
-* Aktualisierungsprozedere vereinfacht;
-	* Falls beim Start von NVDA ein Update durch die automatische überprüfung gefunden wird, ist es nun möglich, es sofort von diesem Dialog aus herunterzuladen.
-* Die Dateiauswahl beim Aktualisierungsvorgang wurde entfernt;
-	* Die neue Version wird jetzt in einen temporären Ordner geladen. Dies macht das aktualisieren für Einsteiger einfacher.
+
+* Der Aktualisierungsabschnitt wurde vereinfacht. Nun ist es zu Beginn
+  möglich, im Falle eines Updates direkt über ein einziges Dialogfeld
+  fortzufahren.
+* Die Datei-Auswahl im Update-Bereich wurde entfernt. Es wird nun die
+  Update-Datei im temporären Ordner gespeichert, was die Möglichkeit
+  eröffnet, das Update automatisch zu installieren, leichter für Neulinge.
 
 # Version 4.6.9 #
-* Arabische Lokalisierung hinzugefügt (dank Wafik Immaculate).
+
+* Arabische Übersetzungen hinzugefügt (Dank an Wafik Immaculate).
 
 # Version 4.6.8 #
-* Die Portugiesisch-Portugiesischen- und Brasilianisch-Portugiesischen
-  Übersetzungen wurden, dank Alberto Mendonça, aktualisiert.
+
+* Übersetzungen für Portugiesisch (Brasilien) und Portugiesisch (Portugal)
+  aktualisiert (Dank an Alberto Mendonça).
 
 # Version 4.6.7 #
-* Fehler in der Uhrzeitausgabe behoben;
-	* In manchen Städten war sie nicht korrekt.
-* Sommerzeit hinzugefügt;
-	* Nur verfügbar für die Länder, bei denen sie auch eingesetzt wird.
+
+* Die Anzeige der aktuellen Ortszeit wurde verbessert; in einigen Städten
+  war sie nicht korrekt. Die Details wurden um die Sommerzeit erweitert; sie
+  ist nur für die Länder verfügbar, die sie übernehmen.
 
 # Version 4.6.5 #
-* Fehler beim Ausgeben der aktuellen Uhrzeit behoben;
-	* Das Trennzeichen ":" wurde bei der Umwandlung in Integer nicht entfernt.
+
+* Kleiner Fehler beim Lesen der Uhrzeit behoben.
 
 # Version 4.6.4 #
+
 * Die lokale Uhrzeitausgabe wurde verbessert; die Suchschlüsselwörter sind
   jetzt genauer.
 
 # Version 4.6.2 #
+
 * Fehler behoben: Nach einer Überprüfung auf Aktualisierungen war der
   Menüpunkt "Eine temporäre Stadt festlegen..." aktiv, auch wenn keine
   Städte in der Liste vorhanden waren.
@@ -490,267 +379,337 @@ Sie daran Erinnert, sodass sie dies trotzdem speichern können.
   weather.ini-Datei vorhanden war.
 
 # Version 4.6 #
-* Der Menüpunkt "Eine temporäre Stadt festlegen ..." wurde hinzugefügt;
-	* Der Vollständigkeit halber können Sie nun auch die temporäre Stadtliste aus dem Menü öffnen.
-* Verbesserte Verwaltung der Temperaturskala;
-	* Das Einstellungsfenster gibt immer den Standardwert zurück.
-* Verbesserte Verhinderung der mehrfachen Öffnung der Hauptfenster;
-	* Wenn eine dieser Optionen bereits geöffnet ist, wird sie zusätzlich zum akustischen Alarm in den Vordergrund gestellt.
-* Verbesserte Audioeffekte;
-	* Sie basieren nun auf der aktuellen Ortszeit der verwendeten Stadt.
 
-`#` Änderungen im Einstellungsfenster und der Detailausgabe:
+* Der Menüpunkt "Temporäre Stadt einstellen..." wurde hinzugefügt. Der
+  Vollständigkeit halber können Sie nun auch die Liste der temporären Stadt
+  aus dem Menü heraus öffnen.
+* Verbesserte Verwaltung der Temperaturskala. Das Einstellungsfenster gibt
+  jetzt immer den Standardwert zurück.
+* Verbesserte Verhinderung des mehrfachen Öffnens der Hauptfenster; wenn
+  eines davon bereits geöffnet ist, wird es zusätzlich zum akustischen Alarm
+  in den Vordergrund geschoben.
+* Verbesserte Sound-Effekte. Diese basieren jetzt auf der aktuellen Ortszeit
+  der verwendeten Stadt.
+
+# Änderungen der Funktion für die Schaltfläche "Informationen" in den Einstellungen #
 
 * Aktuelle Uhrzeit hinzugefügt.
-* Fehler im Höhenwert behoben;
-	* Er wird jetzt zurückgesetzt, wenn der Wert kleiner oder gleich Null ist.
-* Fehler in der Importfunktion behoben;
-	* Wenn die Standardstadt entfernt wurde, wird sie nicht mehr in der Titelleiste angezeigt.
+* Fester Höhenwert. Es werden nun die Höhenwerte zurückgegeben, wenn der
+  Wert kleiner oder gleich Null ist.
 
 # Version 4.5.5 #
-* Fehlerkorrekturen in der serbischen Lokalisierung und Dokumentation.
+
+* Serbische Übersetzung und Dokumentation korrigiert.
 * Fehlerkorrekturen in der deutschen Lokalisierung.
 
-`#` Änderungen im Fenster "Weather Plus-Einstellungen":
+# Änderungen in den Weather Plus-Einstellungen #
 
-* Neues Kontrollfeld hinzugefügt;
-	* Sie können das Komma als Dezimaltrennzeichen aktivieren, andernfalls ist das Trennzeichen der Punkt.
+* Kontrollkästchen hinzugefügt. Sie können das Komma als Dezimaltrennzeichen
+  aktivieren, ansonsten wird das Trennzeichen als Punkt behandelt.
 
 # Version 4.5.3 #
-* 2 Zeichenketten in russischer und ukrainischer Lokalisierung korrigiert.
-* Der Titel im Fenster "Nach Aktualisierung suchen" wurde korrigiert.
-* Verbesserter Update-Algorithmus;
-	* Jetzt wird der Link zum Update direkt aus der URL der Manifest.ini-Datei gelesen.
+
+* Zwei russiche und ukrainische Übersetzungsfehler korrigiert.
+* Der Titel des Fensters für Updates wurde korrigiert.
+* Verbesserter Update-Algorithmus.
 
 # Version 4.5 #
-* Kurztaste NVDA + Umschalt + Strg + Alt + w hinzugefügt;
-	* der Einstellungsdialog von Weather Plus wird damit geöffnet.
-* einige englische Prompts korrigiert.
 
-`#` Änderungen im Fenster "Weather Plus-Einstellungen":
+* NVDA+Umschalt+Strg+Alt+W wurde hinzugefügt. Damit öffnen Sie nun die
+  Weather Plus-Einstellungen.
+* Einige englische Strings korrigiert.
 
-* 8 neue Kontrollkästchen hinzugefügt;
-	* Es ist jetzt möglich, die Ausgabe weiter anzupassen:
+# Änderungen in den Weather Plus-Einstellungen #
+
+* Es wurden acht neue Kontrollfelder hinzugefügt. Es ist nun möglich, die
+  Anzeige weiter anzupassen:
 * Windrichtung.
 * Windgeschwindigkeit.
 * Gefühlte Temperatur.
-* Luftfeuchtigkeit.
-* Sichtweite.
-* Luftdruck.
-* den Druck in Millimeter Quecksilbersäule (mmHg) ausgeben.
-* Status des Luftdrucks.
+* Wert für Luftfeuchigkeit.
+* Wert für die Sichtweite.
+* Wert für den Luftdruck.
+* Gibt den Luftdruck in Millimetern Quecksilber (mmHg) an.
+* Zustand des Luftdrucks.
 
 # Version 4.4.8 #
-* Polnische Übersetzung hinzugefügt (dank Zvonimir Staneczyć).
-* Weather Plus ist jetzt auch mit der zukünftigen wx Version 4 kompatibel;
-	* Hinweis: Im Moment wird in Version 4.0.0b1 msw (phoenix) bei der Verwendung der Pfeiltasten rauf/runter in vielen Eingabefeldern ein lästiger Fehler erzeugt:  
-wxAssertionError: C ++ - Assertion "Assert failure" failed at .. \ .. \ src \ common \ evtloopcmn.cpp (110) in wxEventLoopBase :: Yield (): wxYield called recursively.
 
-wxAssertionError: C++ assertion "Assert failure" failed at
-..\..\src\common\evtloopcmn.cpp(110) in wxEventLoopBase::Yield(): wxYield
-called recursively.
+* Polnische Übersetzung hinzugefügt (dank Zvonimir Staneczyć).
+* Kompatibilität mit wxPython Version 4.
 
 # Version 4.4.1 #
-* SSL-Unterstützung hinzugefügt;
-	* Wird nur verwendet, wenn eine SSL-zertifikatüberprüfung fehlgeschlagen ist.
+
+* SSL-Unterstützung hinzugefügt.
 
 # Version 4.4 #
+
 * Fehler beim Lesen der neuen Versionszeichenfolge während einer
   Verbindungszeitüberschreitung behoben.
-* Verbessertes Upgrade-Fenster;
-	* Der Dialog stört nun nicht mehr das NVDA-Menü.
-* Fehlerkorrekturen in der russischen Lokalisierung.
-* ukrainische Übersetzung Hinzugefügt (dank Alex Yeshanu).
+* Der Update-Abschnitt wurde verbessert. Es wird damit nicht mehr das
+  NVDA-Menü beeinträchtigt.
+* Überarbeitete und korrigierte russische Übersetzung.
+* Ukrainische Übersetzung hinzugefügt (Dank an Alex Yeshanu).
 
 # Version 4.3.4 #
+
 * Fehlerkorrekturen in der deutschen Lokalisierung.
 
 # Version 4.3.3 #
+
 * Deutsche Lokalisierung hinzugefügt (dank Karl Eick).
 
 # Version 4.3.2 #
+
 * Rumänische Lokalisierung hinzugefügt (dank Florian Ionaşcu).
 
 # Version 4.3.1 #
-* Ein kleiner Fehler in der Funktion "Details" wurde behoben;
-	* Breiten- und Längengrad wurden im Vergleich zum richtigen Wert umgekehrt.
+
+* Ein kleiner Fehler in der Funktion "Informationen" wurde behoben. Die
+  Breitengrade und Längengrade wurden gegenüber dem Wert vertauscht.
 
 # Version 4.3 #
-* Der Öffentliche Ordner Links wird am 15. März inaktiv sein.  
-	* Er  wird dann zu einem Standard-Dropbox-Ordner und kann vom Addon nicht mehr verwendet werden.
-	* Die Upgrade-Links des Addons und der Samples wurden aktualisiert, deshalb werden diese Sachen ab jetzt vollständig von der italienischen Seite von NVDA aus verwaltet.
+
+* Weather Plus ist zu "nvda.it" als Standard-Hosting-Provider umgezogen.
 
 # Version 4.2.4 #
-* Ein kleiner Fehler wurde behoben, wenn die Verbindung nicht aktiv ist.
+
+* Ein kleiner Fehler wurde behoben, sobald die Verbindung nicht aktiv war.
 
 # Version 4.2.3 #
-* Nun kann Weather Plus einige Verbindungsversuche ausführen, bevor über die Ungültigkeit der Daten informiert wird. Bei jedem Versuch ertönt ein Signalton;
-	* Dieser Signalton kann, wenn Sie möchten, mithilfe eines neuen Kontrollkästchens in den Einstellungen deaktiviert werden.
+
+* Weather Plus führt nun einige Verbindungsversuche durch, bevor die
+  Fehlfunktion des verwendeten WOE-ID gemeldet wird. Bei jedem Versuch wird
+  ein Signalton ausgegeben. Diesen Signalton können Sie mit Hilfe des
+  Kontrollfeldes über die Weather Plus-Einstellungen deaktivieren.
 
 # Version 4.2.2 #
-* Fehler in der Übersetzung der Temperaturskala behoben;  
-	* In einigen Sprachen wurden Kelvin, Celsius und Fahrenheit nicht übersetzt.
+
+* Fehler in den Übersetzungen für die Messung der Skalen behoben. In einigen
+  Sprachen sind Kelvin, Celsius und Fahrenheit nicht übersetzt worden.
 
 # Version 4.2.1 #
-* Update-Benachrichtigung von Weather Plus während des Windows-Starts behoben;
-	* Wenn Sie eine neue Version von Weather Plus installieren, wird die Version in der Systemkonfiguration nicht beeinträchtigt. Um die neueste Version in der Systemkonfiguration nutzen zu können, müssen sie die Einstellungen erneut mithilfe der allgemeinen Einstellungen von NVDA in die Systemkonfiguration kopieren.
+
+* Der Update-Hinweis von Weather Plus nach der Windows-Anmeldung wurde
+  korrigiert. Dies geschieht, wenn die Schaltfläche "Aktuell gespeicherte
+  Einstellungen für die Windows-Anmeldung und andere Sicheritsmeldungen
+  verwenden (erfordert Administratorrechte)" aus den allgemeinen
+  NVDA-Einstellungen betätigt wurde, die die Konfiguration und den gesamten
+  Ordner mit den Erweiterungen kopiert, aber diese werden nicht mit späteren
+  Updates der Erweiterung synchronisiert. Wenn Sie diese Option bereits
+  einmal verwendet haben, sollten Sie diese Option danach erneut verwenden,
+  um Weather Plus auf dem neuesten Stand zu halten.
 
 # Version 4.2 #
-* 5 neue Soundeffekte hinzugefügt;  
-	* Es ist notwendig, sie von den Einstellungen des Plugins zu aktualisieren.
-* Fehler in der Importfunktion behoben;
-	* Die Liste der Städte wird nun alphabetisch sortiert.
-* Importmodus in der Importfunktion hinzugefügt;
-	* Sie können Ihre eigene Liste vollständig ersetzen oder einfach neue Städte hinzufügen.
-* das Lesen der Wettervorhersage, aktueller Wetterbericht, wurde aktualisiert;
-	* Die gefühlte Temperatur (Wind Chill) wurde hinzugefügt.
-* Neue Strings zur Liste "Weather reports" hinzugefügt.
+
+* Es wurden fünf neue Sound-Effekte hinzugefügt. Es ist notwendig, diese in
+  den Einstellungen der Erweiterung zu aktualisieren.
+* Fehler in der Import-Funktion behoben. Die Liste der Städte war nicht
+  alphabetisch sortiert.
+* Import-Modus in der Import-Funktion hinzugefügt. Sie können sich nun
+  entscheiden, Ihre eigene Liste vollständig zu ersetzen oder einfach neue
+  Städte zu ergänzen.
+* Lesen der Wettervorhersage, aktueller Wetterberichte
+  aktualisiert. Hinzufügen der gefühlten Temperatur.
+* Neue Strings zur Liste Wetterberichte hinzugefügt.
 
 # Version 4.1 #
-* Fehler in der Wettervorhersage für bis zu 10 Tage behoben;
-	* Wenn nicht für alle Tage Daten abgerufen werden konnten, werden die fehlenden Tage als unbekannt ausgegeben.
-* Fehler beim drücken von NVDA + Umschalt + W behoben.
+
+* Fehler in der Wettervorhersage für bis zu zehn Tage behoben. Die fehlenden
+  Tage werden nun als Unbekannt angezeigt, wenn die Anzahl der eingegangenen
+  Schätzungen geringer ist als die Anfrage des Benutzers.
+* Der String-Hilfe-Eintrag bei dem Befehl NVDA+Shift+W wurde korrigiert.
 * Überarbeitete und aktualisierte Dokumentation.
 
 # Version 4.0 #
-* Einige Teile des Codes wurden aktualisiert und alle Anweisungen dem
-  entsprechend  ersetzt.
+
+* Einige Teile des Codes wurden aktualisiert und alle eval()-Anweisungen
+  ersetzt.
 
 # Version 3.9.7 #
-* Fehler im Verhältnis der Wettervorhersagen behoben;
-	* Jetzt werden die Temperaturen korrekt gelesen.
+
+* Fehler beim Auslesen der Wettervorhersagen behoben; jetzt werden die
+  Temperaturen korrekt wiedergegeben.
 
 # Version 3.9.6 #
-* Die Rundung bei der Umwandlung des Drucks von mbar in Zoll Quecksilbersäule wurde geändert;
-	* Jetzt wird der Wert im Defekt berechnet, während er vorher überschritten wurde.
+
+* Die Rundung bei der Umrechnung des Luftdrucks von mBar in Zoll Quecksilber
+  wurde geändert. Nun wird der Wert im Fehlerfall berechnet, während dieser
+  vorher im Überschuss lag.
 
 # Version 3.9.5 #
+
 * Die Liste der Wetterberichte wurde um 2 neue Strings erweitert.
 * 2 Fehler behoben.
-* Aktualisierte Sounds für den Effekt bei nur Wind;
-	* Jetzt kann der Klang des Windes zufällig variieren.
+* Laufgeräusche für die Wirkung nur bei Wind aktualisiert. Nun kann das
+  Geräusch des Windes zufällig variieren.
 
 # Version 3.9.4 #
-* Dokumentationen und Lokalisierungen auf Kroatisch und Deutsch entfernt, Weil sie nicht mehr von den jeweiligen Übersetzern unterstützt werden.
-* Fehler in der Serbischen Lokalisierung behoben.
-* Aktualisierte tschechische Lokalisierung.
-* Galizische Dokumentation und Lokalisierung aktualisiert.
+
+* Dokumentationen, Übersetzungen für die kroatische und deutsche Sprache
+  wurden entfernt; denn sie werden von den jeweiligen Übersetzern nicht mehr
+  unterstützt.
+* Fehler in der serbischen Übersetzung behoben.
+* Tschechische Übersetzung aktualisiert.
+* Dokumentation und Lokalisierung für Galicisch aktualisiert.
 
 # Version 3.9 #
-* Erneut geänderter API-Service;  
-	* Weather Plus verwendet jetzt das neue Yahoo Weather API mit Language Yahoo!Query und JQuery:
-[yahoo-weather-api-with-yahooquery] (http://codesimplified.blogspot.it/2013/10/yahoo-weather-api-with-yahooquery.html)
-* Die Eingabe eines Schlüssels ist nicht mehr notwendig.
-* Die Suche nach gleichnamigen Städten wurde verbessert;
-	* Es ist möglich, aus einer Liste genau die gewünschte Stadt auszuwählen.
-* Optimierung der Ausgabe von allgemeinen Klängen;
-	* Jetzt sind sie mit der Sprachsynthese synchronisiert und schneller.
-* Der Cache für Offline-Daten wurde verbessert;
-	* Er wird jetzt nur noch alle 10 Minuten oder durch Ändern der Stadt geleert.
-* Der Druck wird jetzt in mbar oder in Zoll Quecksilbersäule (falls auf Fahrenheit eingestellt) gemessen.
+
+* Erneut API-Dienst geändert. Weather Plus verwendet nun die neue Yahoo
+  Weather API mit der Sprache Yahoo!Query und JQuery:
+* Einen API-Schlüssel wird nicht mehr benötigt.
+* Die Suche der gleichnamigen Städte wiederhergestellt. Es wird möglich
+  sein, genau die gewünschte Stadt aus einer Liste auszuwählen.
+* Die Ausgabe von allgemeinen Signaltönen wurde optimiert; sie sind nun mit
+  der Sprachausgabe synchronisiert und schneller.
+* Der Cache für Offline-Daten wurde verbessert. Dieser wird alle zehn
+  Minuten oder nur durch Änderung der Stadt auf Null gesetzt.
+* Der Luftdruck wird in mBar oder in Zoll Quecksilber gemessen (falls auf
+  Fahrenheit eingestellt).
 
 # Version 3.8 #
-* Das Datenpaket-API wurde vom XML-Format ins JSON-Format geändert;
-	* Die Daten sind jetzt genauer, insbesondere die Zeitzone.
-* die automatische Einstellung der Sprache wurde aktiviert;
-	* Das API sendet nun die Daten der Wetterbedingungen in der von NVDA eingestellten Sprache.
-* Cache für Wettervorhersagen hinzugefügt;
-	* Wenn die Stadt, die Gradskala oder die Taganzahl der Wettervorhersage nicht geändert wurden, können Sie die Daten auch ohne eine Verbindung offline für 10 Minuten lesen.
-	* Der Cache wird bei jeder oben beschriebenen Änderung zurückgesetzt.
-	* Er wurde hinzugefügt, da sich die Wetterbedingungen in dieser Zeitspanne nicht ändern. Außerdem werden die häufigen Anfragen an das API reduziert, sodass mit Soundeffekten gespielt werden kann.
-* Verbessertes Updaten;
-	* Wenn der Download abgeschlossen ist, wird die Installation automatisch aktiviert bzw. bei einer portablen Version von NVDA der Ordner geöffnet, in dem die Erweiterung gespeichert wurde.
-* Alle Sounds wurden aktualisiert;  
-	* Statt dem Tongenerator von NVDA werden jetzt kleine Dateien im Wav-Format verwendet.
+
+* Die Datengenauigkeit wurde korrigiert.
+* Die automatische Einstellung der Sprache wurde aktiviert. Nun sendet die
+  API die Daten der Wetterbedingungen in der von NVDA eingestellten Sprache.
+* Der Cache für Bulletin und Wettervorhersagen wurde hinzugefügt. Wenn die
+  Stadt, die Gradskala oder die eingestellten Vorhersagetage nicht geändert
+  werden, können Sie die Daten zehn Minuten lang lesen, auch wenn die
+  Verbindung offline ist. Der Cache wird bei jeder oben beschriebenen
+  Änderung zurückgesetzt. Das liegt daran, dass sich die Bulletins in dieser
+  Zeitspanne nicht ändern und um die häufigen Aufrufe an die API zu
+  reduzieren, eventuell mit Sound-Effekten.
+* Die Update-Suche wurde verbessert. Nach dem Herunterladen wird nun die
+  Installation aktiviert, oder im Falle einer portablen Version von NVDA,
+  wird der Ordner geöffnet, in dem das Update gespeichert wurde.
+* Sounds wurden aktualisiert. Alle sind nun im Wave-Format.
 
 # Version 3.7 #
+
 * Möglichkeit, die Umwandlung in Meter pro Sekunde des Windes zu
   deaktivieren.
 * Möglichkeit, Maßeinheiten in Pfund pro Quadratzoll zu verwenden.
 * 2 Fehler behoben.
 
 # Version 3.6 #
-* Der API-Dienst (Anwendungsprogrammierschnittstelle) wurde geändert.
-	* Jetzt verwendet WP den von OpenWeatherMap.org angebotenen Service statt Yahoo Weather.com.
-* Die Windklassifikation wurde bei dem detailierten Wetterbericht für den heutigen Tag hinzugefügt.
-* Ein Trübungsgrad im detailierten Wetterbericht für den heutigen Tag wurde hinzugefügt.
-* Im detailierten Wetterbericht für den heutigen Tag wurde die Druckmessung in Hektopascal hinzugefügt.
 
-`#`Änderungen im Fenster Weather Plus Einstellungen:
+* Der API-Dienst (Application Programming Interface) wurde geändert. Es wird
+  nun der Dienst OpenWeatherMap.org verwendet anstelle YahooWeather.com.
+* Windklassifizierung im aktuellen Bulletin hinzugefügt.
+* Im aktuellen Bulletin wurde ein Bewölkungsanteil hinzugefügt.
+* Einheit für die Druckmessung in Hektopascal im aktuellen Bulletin
+  übernommen.
 
-* Geänderte Einfügung / Suche aus Yahoo Postleitzahl / WoeId in ID Nummer, Identifizierer der Stadt;
-	* ID Nummern ähneln der woeid, aber die WoeId funktioniert nicht mehr, auch nicht die alte Postleitzahl.
-	* Sie können einen großen Teil der Städte wiederfinden, indem Sie den Namen oder einen Teil davon eingeben.
-* Einfügung / Suche nach geografischen Koordinaten hinzugefügt.
-* Einfügung / Suche nach Postleitzahl hinzugefügt.
-* Die Funktion "Details" wurde verbessert.
-* Die Taste F1 wurde für die Eingabe / Suchhilfe zugewiesen.
-* Taste f4 zugewiesen, um in das Kombinationsfeld für die Einstellung der Dauer der Wettervorhersage zu kommen.
-	* Achtung, wenn Sie eine Wettervorhersage für mehr als 10 Tage in die Zwischenablage kopieren möchten, wird dies nicht funktionieren!
-* Zugewiesen F5-Taste für Audio-Steuerelemente.
-* Temperaturskala Kelvin hinzugefügt.
-* Überprüfung auf Updates hinzugefügt;
-	* Sie können über Einstellungen festlegen, ob automatisch auf Aktualisierungen geprüft werden soll oder manuell über das Menü prüfen.
-* die Schaltfläche "Finden Sie Ihre Stadt" in "Verwaltung ihres API-Schlüssels ..." umbenannt;
-	* ermöglicht es Ihnen, den API-Schlüssel einzugeben oder zu ändern.
+# Änderungen im Fenster für die Wetter Plus-Einstellungen #
+
+* Geändertes Einfügen/Suchen von Yahoo Postleitzahl bzw. WOE-ID in
+  ID-Nummer, Identifikator der Stadt. Diese ID-Nummern sind ähnlich wie
+  WOE-ID, aber die sie wird nicht mehr funktionieren, auch nicht die alte
+  Postleitzahl. Sie können einen großen Teil der Städte wiederfinden, indem
+  Sie den Namen oder einen Teil des Namens eingeben.
+* Einfügen/Suchen nach geographischen Koordinaten hinzugefügt.
+* Einfügen/Suchen nach Postleitzahl hinzugefügt.
+* Die Funktion "Informationen" wurde verbessert.
+* Der F1-Taste ist die Eingabe-/Suchhilfe zugeordnet.
+* Mit der F4-Taste werden die Kontrolle für die Vorhersagen von 1 bis 16
+  Tagen festgelegt. Achtung, wenn Sie einen Wert von mehr als 10 in die
+  Zwischenablage kopieren, wird dieser nicht gelesen!
+* F5-Taste für Audio-Steuerung zugeordnet.
+* Hinzufügen der Messskala Grad Kelvin.
+* Prüfung auf Updates hinzugefügt. Sie können die Steuerung durch
+  Einstellungen oder manuell über das Menü ausführen.
+* Die Schaltfläche "Stadt ermitteln" in
+  "API-Schlüsselverwaltung". Ermöglicht Ihnen die Eingabe oder das Ändern
+  des API-Schlüssels.
 
 # Version 3.5 #
+
 * Kroatische Übersetzung hinzugefügt (dank Gordan Radić).
-* Zusätzliche Kontrolle für nicht mehr gültige WoeId und Postleitzahl im Netzwerk hinzugefügt;
-	* Es gab Berichte über Codes, die aufgehört haben, von einem Tag auf den anderen zu funktionieren. WP warnt nun, wenn einer dieser Einträge im Suchfenster eingefügt wurde.  
-	* Wenn dies mit der Funktion "Finden Sie ihre Stadt..." geschieht, melden Sie es mir bitte, damit ich den Weather_buffer aktualisieren und aus der Liste entfernen kann.
-* Ein Fehler in der Suchfunktion wurde behoben. Es fehlte die mbcs Codierung, daher konnten keine akzentuierten Zeichen erkannt werden.
-* Das Fenster zum Festlegen einer Postleitzahl wurde aktualisiert;
-	* Zusätzliche Funktion "Suchen" Wie in den anderen Fenstern von Weather Plus:
-Control + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = Rückwärts suchen.
+* * Zusätzliche Kontrolle für nicht mehr gültige WoeId und Postleitzahl im
+  Netzwerk hinzugefügt;
+  	* Es gab Berichte über Codes, die aufgehört haben, von einem Tag auf den
+  anderen zu funktionieren. WP warnt nun, wenn einer dieser Einträge im
+  Suchfenster eingefügt wurde.
+  	* Wenn dies mit der Funktion "Finden Sie ihre Stadt..." geschieht, melden
+  Sie es mir bitte, damit ich den Weather_buffer aktualisieren und aus der
+  Liste entfernen kann.
+  * Ein Fehler in der Suchfunktion wurde behoben. Es fehlte die mbcs
+  Codierung, daher konnten keine akzentuierten Zeichen erkannt werden.
+  * Das Fenster zum Festlegen einer Postleitzahl wurde aktualisiert;
+  	* Zusätzliche Funktion "Suchen" Wie in den anderen Fenstern von Weather
+  Plus:
+  Control + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = Rückwärts
+  suchen.
+* Kodierungsfehler in der Suchfunktionalität behoben.
+* Das Fenster wurde aktualisiert, um eine temporäre Postleitzahl
+  einzustellen. Funktion "Suchen" hinzugefügt wie in den anderen Fenstern
+  von Weather Plus: Strg+F3 = Suchen, F3 = Nächstes Ergebnis, Umschalt+F3 =
+  Vorheriges Ergebnis.
 
 # Version 3.4 #
+
 * Galizische Übersetzung hinzugefügt (dank Iván Novegil).
 * Portugiesische Übersetzung hinzugefügt (dank Ângelo Miguel Abrantes).
 * Deutsche Übersetzung hinzugefügt (unvollständig).
 
 # Version 3.3 #
+
 * Das Maß der Windgeschwindigkeit in Metern pro Sekunde hinzugefügt.
-* Kodierung in "mbcs" geändert;
-	* Dies erlaubt, auch die diakritischen Zeichen in den Städtenamen zu verwenden.
+* Kodierung behoben.
 
 # Version 3.2 #
-* Aktualisierung der Wettervorhersagen, des aktuellen Wetterberichts und des Datums des aktuellen Wetterberichts;  
-	* Die Yahoo Wetterprognose ermöglicht es, ab einiger Zeit und in zufälligen Beträgen, eine historische Wettervorhersage von -10 bis -5 Tagen, die zwischen den aktualisierten Daten eingefügt werden soll, die  gelesen werden soll, anzuzeigen.
-	* es wurde ein Filter hinzugefügt, der es Ihnen ermöglicht, nur die letzten aktualisierten Wetterdaten zu lesen und einen diskreten Signalton abzuspielen, wenn er eingreift;
-	* Dieser Signalton kann bei Bedarf durch ein Kontrollkästchen in den Weather Plus-Einstellungen deaktiviert werden.
-	* Offensichtlich beinhaltet das Filtern von Daten manchmal eine kurze Antwortverzögerung, ist jedoch immer noch akzeptabel.
-* Wettervorhersagen auf 10 Tage verlängert.
+
+* Das Auslesen der Wettervorhersage, des aktuellen Wetterberichts und das
+  Auslesen des Datums des aktuellen Wetterberichts wurden aktualisiert. Die
+  Yahoo-Wettervorhersage ermöglicht es, aus einer Zeitspanne und in
+  zufälligen Mengen eine historische Wettervorhersage von -10 bis -5 Tagen
+  zwischen den aktualisierten Daten, die ausgelesen werden sollen,
+  einzufügen. Es wurde ein Filter hinzugefügt, der es ermöglicht, nur die
+  zuletzt aktualisierten Wetterdaten zu erfassen und ein Signalton warnt
+  davor, wenn dieser eingreift. Diesen Signalton können Sie mit Hilfe des
+  Kontrollfeldes in den Weather Plus-Einstellungen deaktivieren. Natürlich
+  ist das Filtern von Daten manchmal mit einigen kurzen Verzögerung bei der
+  Antwort zu rechnen, aber dennoch fällt es kaum ins Gewicht.
+* Die Vorhersagen für die Zeit wurden auf zehn Tage verlängert.
 
 # Version 3.1 #
-* Übersetzung auf Serbisch (Dank der freundlichen Zusammenarbeit von Gašić
-  Dejan `-` Gashich Deyan) hinzugefügt.
-* Behoben: Befehl einfügen + alt + w;
-	* Es überprüfte nicht die Gültigkeit der verwendeten Postleitzahl und überprüfte nicht, ob die Verbindung aktiv war, wie es die anderen Befehle tun.
-* Die Wiedergabefunktion von Soundeffekten wurde aktualisiert;
-	* Mp3 wird jetzt verwendet, mit einer beträchtlichen Einsparung an Downloadzeit und Speicherplatz, dank der reduzierten Größe der komprimierten Dateien.
-* 55 neue Soundeffekte hinzugefügt;
-	* Es ist notwendig, sie von den Einstellungen des Plugins zu aktualisieren.
 
-`#`Änderungen im Fenster Weather Plus Einstellungen:
+* Übersetzung ins Serbische hinzugefügt (dank der freundlichen
+  Zusammenarbeit von Dejan Gasic).
+* Der Befehl NVDA+Alt+W wurde korrigiert. Dieser Befehl überprüfte nicht die
+  Gültigkeit der verwendeten Postleitzahl und prüfte nicht wie die anderen
+  Befehle, ob die Verbindung aktiv war.
+* Die Wiedergabefunktion von Sound-Effekten wurde aktualisiert. Es wird nun
+  das MP3-Format verwendet. Die Dateien werden nun viel kleiner sein.
+* Es wurden 55 neue Sound-Effekte hinzugefügt. Es ist notwendig, diese über
+  die Einstellungen der Erweiterung zu aktualisieren.
 
-* Hilfetexte für die Schalter in den Einstellungen hinzugefügt;
-	* Diese können nun durch ein neues Kontrollkästchen ein- oder ausgeschaltet werden.
-* 3 Kurztasten hinzugefügt, um schneller im Fenster zu navigieren:
-* F1 springt in die Liste und bearbeitet die Postleitzahl.
+# Änderungen im Fenster für die Wetter Plus-Einstellungen #
+
+* Die Anzeigehilfe der Schaltflächen wurde korrigiert. Nun wird die Echtzeit
+  durch das entsprechende Kontrollkästchen deaktiviert bzw. aktiviert.
+* Es wurden drei Kurzbefehle hinzugefügt, um schneller im Fenster zu
+  navigieren:
+* F1 springt in die Liste und das Bearbeitungsfeld der Postleitzahl.
 * F2 kehrt zur letzten mit TAB erreichten Auswahl zurück.
-* F3 springt zum Lautstärkeregler (wenn die Soundeffekte installiert und aktiviert sind).
-* Verknüpfungsbefehle für alle Kontrollkästchen und Schaltflächen hinzugefügt;
-	* Die beiden Optionsknöpfe, so wie sie nacheinander vorhanden sind, sind weggelassen und die erste ist mit dem Befehl Steuerung + shift + w erreichbar.
-* Geändert, die Schaltfläche "Gegend definieren" ist jetzt deaktiviert, wenn die Soundeffekte nicht installiert und aktiviert sind.
-* Zusätzliche Lautstärkeregelungen hinzugefügt;
-	* Sie können die Gesamtlautstärke und den zuletzt gehörten Klangeffekt einstellen.
-	* Diese Option ist aktiviert, wenn die Soundeffekte installiert und aktiviert sind.
-* Möglichkeit, die Systemzeit im 12-Stunden-Format (12:30 AM `- '12:30 PM) oder im 24-Stunden-System (12:30` -' 00:30 Uhr) einzustellen.
+* F3 springt in die Lautstärkeregelung (wenn die Sound-Effekte installiert
+  und aktiviert sind).
+* Es wurden Kurzbefehle für alle Kontrollkästchen und Schaltflächen
+  hinzugefügt; die beiden Auswahlschalter wurden weggelassen, da sie
+  nacheinander vorhanden sind und der erste mit dem Befehl Strg+Umschalt+W
+  erreichbar ist.
+* Die Schaltfläche "Festlegen" ist nun deaktiviert, wenn die Sound-Effekte
+  nicht installiert und aktiviert wurden. 
+* Lautstärkeregler hinzugefügt. Sie können die Gesamtlautstärke und den
+  zuletzt gehörten Sound-Effekt einstellen. Diese Option ist aktiviert, wenn
+  die Sound-Effekte installiert und aktiviert wurden.
+* Auswahlmöglichkeit hinzugefügt, die Systemzeit im 12-Stunden-Format (12:30
+  `-` 12:30 Uhr) oder im 24-Stunden-System (12:30 `-` 00:30 Uhr)
+  einzustellen.
 
 # Version 3.0 #
-* Übersetzung ins Slowakische (dank der freundlichen Zusammenarbeit von
-  Vitek Jirasek).
+
+* Die slowakische Übersetzung wurde hinzugefügt (dank der freundlichen
+  Mitarbeit von Vitek Jirasek).
 * Übersetzung ins brasilianisch-portugiesische und
   portugiesisch-portugiesische (dank der freundschaftlichen Zusammenarbeit
   von Adair Knaesel).
@@ -762,22 +721,29 @@ Control + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = Rückwärts suchen.
 * Im dialog "Eingaben" hat Weather Plus jetzt eine eigene Kategorie, in der
   alle Kurztasten aufgeführt sind.
 
-`#`Änderungen im Fenster Weather Plus Einstellungen:
+# Änderungen im Fenster für die Wetter Plus-Einstellungen #
 
-* Auswahlschalter hinzugefügt, um einzustellen, wie die Temperaturskala angezeigt wird;
-	* Die Wahl ist zwischen:
+* Es wurde ein Optionsfeld hinzugefügt, um einzustellen, wie die
+  Temperaturskala angezeigt werden soll;
+* Sie haben nun die Auswahl zwischen:
 * Celsius `-` Fahrenheit
 * C `-` F
-* Nicht spezifizieren
-* Schaltfläche "Gegend definieren" hinzugefügt;
-	* Diese  erlaubt, die Zone einer Stadt zu definieren als:  
+* Keine Angabe
+* Die Schaltfläche "Festlegen" wurde hinzugefügt. Mit diesem Schalter kann
+  das Gebiet einer Stadt definieren werden:
 * Hinterland
-* Meeresgebiet
-* Wüste
-* Arktische Zone
-* Gebirgszone
+* Meresgebiet
+* Wüstengebiet
+* Arktisches Gebiet
+* Gebirge
+* Die Auswahl wird Weather Plus zustimmen, für jede einzelne Stadt
+  angemessenere Soundeffekte zu verwenden; dies ist der Grund für den
+  Anstieg der Anzahl der neuen Sound-Effekte in dieser Version der
+  Erweiterung. Viele der neuen Sound-Effekte stammen von Tapin, dem der
+  aufrichtige Dank gebührt.
 
 # Version 2.9 #
+
 * Option beim Import hinzugefügt, um den Inhalt der importierten Datei
   auszuwählen.
 * Vier neue Soundeffekte wurden hinzugefügt.
@@ -785,48 +751,61 @@ Control + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = Rückwärts suchen.
 * Übersetzung ins Tschechische (dank Jirimu Holzingerovi).
 
 # Version 2.8 #
+
 * Fehler in "Details" behoben, der das Fenster der Ereignisse öffnen ließ,
   als die Stadt nicht gefunden werden konnte.
-* Regexp korrigiert, um nach der Höhe zu suchen;  
-	* Es hat keine einstelligen Parameter akzeptiert.
-* Verbesserter Parser von Eingabefeldern;  
-	* Es sollte leichter die Stadt finden.
-* Verbindungen werden jetzt von urllib2 statt von urllib gehandhabt;
-	* Dies sollte das Funktionieren des Addons auch auf einem Computer ermöglichen, der mit einem durch Proxy geschützten Firmennetzwerk verbunden ist.
-* Feature "Suchen" hinzugefügt;
-Steuerung + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = rückwärts suchen.
+* Die Suche nach der Höhe wurde korrigiert; es wurden keine Parameter mit
+  einzelnen Ziffern akzeptiert.
+* Der Parser des Bearbeitungsfeldes wurde verbessert; es sollte leichter
+  sein, die Stadt zu finden.
+* Die Verbindungen werden nun über das Paket urllib2 statt über das Paket
+  urllib abgewickelt. Damit funktioniert die Erweiterung auch auf Computern,
+  die in Firmennetzwerken hinter einem Proxy liegen.
+* Funktion "Suchen" hinzugefügt. Strg+F3 = Suchen, F3 = Nächstes Ergebnis,
+  Umschalt+F3 = Vorheriges Ergebnis.
 
 # Version 2.7 #
-* Fixed wrong name of a string "Motorcycle" in "Motorcycle00";
-	* He asked updated sound effects because they could not find the file.
-* Added ability to read about wind ;
-	* Direction, speed and temperature of the wind.
-* Added ability to read atmospherical information;
-	* Humidity, visibility, pressure and state of the barometric pressure.
-* Added ability to read the Astronomic information;
-	* Time of sunrise and sunset.
 
-`#`Änderungen im Fenster Weather Plus Einstellungen:
+* Falscher Name eines Strings korrigiert, "Motorcycle" in
+  "Motorcycle00". Dieser fragte nach aktualisierten Sound-Effekten, weil die
+  Datei nicht gefunden werden konnte.
+* Windinformationen hinzugefügt, Richtung, Geschwindigkeit und Temperatur.
+* Atmosphärische Informationen auszugeben. Luftfeuchtigkeit, Sicht, Druck
+  und Zustand des Luftdrucks.
+* Astronomische Informationen hinzugefügt, Zeit des Sonnenauf- und
+  -untergangs.
 
-* 3 Kontrollkästchen hinzugefügt, um die oben aufgeführten Informationen zu
-  verwalten.
-* Added button " Details ";
-	* Provides some information such as the real name of the city ( assigned by Yahoo Weather Forecast), the state / region and the nation to which it belongs;
-	* With geographic coordinates, and height above sea level.
-* Added recognition of WoeID (location codes, eg. Bologna it corresponds to 711080).
-* Now you can type the name of the city, in this case, if any, the occurrences will be listed and you will be able to choose.
+# Änderungen im Fenster für die Wetter Plus-Einstellungen #
+
+* Es wurden drei Kontrollkästchen zur Verwaltung der oben aufgeführten
+  Informationen hinzugefügt.
+* Schaltfläche "Informationen" hinzugefügt, liefert einige Informationen wie
+  den tatsächlichen Namen der Stadt (von Yahoo-Wettervorhersage zugewiesen),
+  den Bundesstaat bzw. die Region und die dazugehörige Nation mit
+  geografischen Koordinaten und der Höhe über dem Meeresspiegel.
+* Die Erkennung von WOE-ID wurde hinzugefügt (Ortskennungen, z. B. Bologna
+  entspricht 711080).
+* Nun können Sie den Namen der Stadt eingeben, in diesem Fall werden, falls
+  vorhanden, die Ergebnisse aufgelistet und Sie können auswählen.
 
 # Version 2.6 #
-* Die Funktionen der Schaltflächen "Hinzufügen" und "Entfernen" wurden in der Listenverwaltung der Postleitzahl optimiert;
-	* Jetzt sind die Operationen viel schneller!
-* Die Funktion des Schalters "Test" wurde optimiert, jetzt werden bis zu 13 Suchschlüssel benutzt;
-	* Eigendlich sollten so alle Städte gefunden werden.
-* Die Funktion der Schaltfläche "Finden sie ihre Stadt ...", findet jetzt mehr Länder;
-	* Es wurde ein automatischer Test hinzugefügt, der die funktionsfähigen Postleitzahlen sammelt und eine schnelle Visualisierung dank der Erstellung eines kleinen Puffers entsprechend dem Namen des jeweiligen Landes erlaubt.
-* Drei neue Klangeffekte wurden hinzugefügt;
-	* Es ist notwendig, sie von den Einstellungen des Plugins zu aktualisieren.
+
+* Die Funktionen der Schaltflächen "Hinzufügen" und "Entfernen" wurden in
+  der Listenverwaltung der Postleitzahl optimiert; jetzt ist die Bedienung
+  wesentlich schneller!
+* Die Funktion des Buttons "Testen" wurde optimiert, jetzt nutzt dieser bis
+  zu 13 Forschungsschlüsseln aus, wenn nun weiterhin der Namen der Stadt
+  nicht gefunden werden kann, ist das wirklich Pech!
+* Die Funktion des Schalters "Stadt ermitteln", findet nun weitere
+  Länder. Es wurde ein automatischer Test hinzugefügt, der die
+  funktionierenden Postleitzahlen sammelt und ermöglicht außerdem eine
+  schnelle Visualisierung eines kleinen Puffers, der dem Namen des
+  spezifischen Landes entspricht.
+* Drei neue Sound-Effekte wurden hinzugefügt. Es ist notwendig, diese in den
+  Einstellungen der Erweiterung zu aktualisieren.
 
 # Version 2.5 #
+
 * Befehl hinzugefügt, um vorübergehend die Temperaturskala von Celsius in
   Fahrenheit umzuschalten, der Befehl ist auch im Einstellungsfenster
   wirksam.
@@ -835,7 +814,7 @@ Steuerung + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = rückwärts suchen.
   gesprochen werden, da er nicht in der Liste enthalten war.
 * Neue Strings zur Liste Wetterberichte hinzugefügt.
 
-`#`Änderungen im Fenster Weather Plus Einstellungen:
+# Änderungen im Fenster für die Wetter Plus-Einstellungen #
 
 * Schaltfläche hinzugefügt, um eine Recherche-Webseite zu öffnen, um nach
   den weltweiten Postleitzahlen zu suchen.
@@ -851,16 +830,19 @@ Steuerung + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = rückwärts suchen.
   nicht eingeschränkt, wenn es geöffnet ist.
 
 # Version 2.4.4 #
+
 * Die Liste der Wetterberichte wurde um 2 neue Strings erweitert.
 * Übersetzung in Spanisch und Französisch (dank Pablo Vargas und Rémy Ruiz).
 
 # Version 2.4.3 #
+
 * Hinzufügen der Wettervorhersage für die nächsten 4 Tage.
 * Hinzufügen eines Strings zur Liste Wetterberichte.
 * Die Liste der temporären Postleitzahlen wird jetzt zu jeder neuen
   Einfügung geordnet.
 
 # Version 2.4 #
+
 * Ein Fehler wurde behoben, durch den die Stadtnamen mit akzentuierten
   Vokalen nicht richtig gespeichert und verwaltet werden konnten.
 
@@ -877,34 +859,41 @@ Steuerung + F3 = Suchen ..., F3 = weitersuchen, Shift + F3 = rückwärts suchen.
   Spracheinstellung nicht in den Dokumenten enthalten ist.
 
 # Version 2.2 #
+
 * Fehler behoben, durch den Sie die Dokumentation für die endgültigen
   Versionen von NVDA nicht öffnen konnten.
 
 # Version 2.1 #
+
 * Ein Fehler wurde behoben, durch den das Plugin nicht ordnungsgemäß
   geschlossen wurde. Dadurch wurde das Symbol NVDA aktualisieren in der
   Taskleiste nicht angezeigt.
 
 # Version 2.0 #
+
 * Weather Plus Einstellungen in das Untermenü "Einstellungen" verschoben.
-* Die Korrektur der Eingabe auf die Schnelle wird nicht mehr gespeichert, daher ist es vorübergehend;
-	* Um die in den Einstellungen eingestellte Stadt anzurufen, drücken Sie INSERT + control + f3.
+* Korrekte Eingaben werden nicht mehr gespeichert und sind daher nur
+  vorübergehend. Um diese in den Einstellungen eingestellte Stadt
+  aufzurufen, drücken Sie NVDA+Strg+F3.
 
 # Version 1.9 #
-* Zusätzliche Hilfe bei der Eingabe von Funktionen.
-* Hinzufügung einer neuen Funktion für die schnelle Eingabe von
-  Postleitzahlen.
-* Die read / write-Konfiguration weather.ini wurde hinzugefügt. Die
-  Quelldatei muss nun nicht mehr bearbeitet werden.
+
+* Hilfe bei der Eingabe von Funktionen hinzugefügt.
+* Eine neue Funktion zur besseren Eingabe der Postleitzahl wurde
+  hinzugefügt.
+* Konfiguration für das Lesen und Schreiben der Datei "weather.ini"
+  hinzugefügt. Die Quelldatei muss nun nicht mehr manuell bearbeitet werden.
 * Das Wettermenü wurde im Infobereich hinzugefügt.
-* hinzugefügt Einstellung Untermenü Postleitzahl.
-* Untertemperatur-Skala (Fahrenheit oder Celsius) hinzugefügt.
-* hinzugefügter Menüpunkt Dokumentation.
+* Untermenü für die Postleitzahlen in den Einstellungen hinzugefügt.
+* Untermenü für die Temperaturskala (Fahrenheit oder Celsius) in den
+  Einstellungen hinzugefügt.
+* Dokumentation im Menü hinzugefügt.
 * Italienische Lokalisierung hinzugefügt.
 
-# Vorherige Version 1.1 #
-* aktualisierte NVDA-Erweiterung..
-* provisorische Übersetzung in der Quelle.
+# Erste Version 1.1 #
+
+* Aktualisierte NVDA-Erweiterung.
+* Die Unterstützung von Übersetzungen wurde hinzugefügt.
 
 --------------------------------------------------------------------------------
 

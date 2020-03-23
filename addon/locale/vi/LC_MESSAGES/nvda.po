@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Weather_Plus 7.2\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2019-09-27 22:05+1000\n"
-"PO-Revision-Date: 2019-12-09 15:40+0700\n"
+"PO-Revision-Date: 2020-02-16 16:29+0700\n"
 "Last-Translator: Dang Manh Cuong <dangmanhcuong@gmail.com>\n"
 "Language-Team: Sao Mai Center for the blind <danghoaiphuc@gmail.com>\n"
 "Language: vi\n"
@@ -673,10 +673,10 @@ msgid "Allows you to set a temporary city."
 msgstr "Cho phép bạn đặt một tỉnh thành tạm"
 
 msgid "Scale of temperature measurement set into"
-msgstr ""
+msgstr "Đã thiết lập đơn vị đo nhiệt độ là"
 
 msgid "Allows you to set a temporary scale of temperature mesurement."
-msgstr ""
+msgstr "Cho phép bạn đặt một đơn vị đo nhiệt độ tạm thời."
 
 msgid "at"
 msgstr "tại"
@@ -685,7 +685,7 @@ msgid "Last update of the current weather report"
 msgstr "Lần cập nhật cuối cùng của thời tiết hiện tại"
 
 msgid "Announces the date of the last update of the weather report."
-msgstr ""
+msgstr "Thông báo ngày cập nhật cuối cùng của dự báo thời tiết."
 
 msgid "Open the Weather Plus settings dialog."
 msgstr "Mở hộp thoại cài đặt Weather Plus."
@@ -694,11 +694,15 @@ msgid ""
 "f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
 "duration Weather Forecast, f5: volume controls."
 msgstr ""
+"f1: thông tin giúp đỡ, f2: TAB được chọn cuối cùng, f3: danh sách và ô nhập "
+"liệu, f4: điều khiển thời gian dự báo thời tiết, f5: điều khiển âm lượng."
 
 msgid ""
 "f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
 "duration Weather Forecast."
 msgstr ""
+"f1: thông tin giúp đỡ, f2: TAB cuối cùng được chọn, f3: danh sách và ô nhập "
+"liệu, f4: điều khiển thời gian dự báo thời tiết."
 
 msgid "Test"
 msgstr "Thử nghiệm"
@@ -725,7 +729,7 @@ msgid "&Export your cities..."
 msgstr "&Xuất các tỉnh thành của bạn..."
 
 msgid "Scale of temperature measurement:"
-msgstr ""
+msgstr "Đơn vị nhiệt độ:"
 
 msgid "Degrees shown as:"
 msgstr "Nhiệt độ hiển thị là:"
@@ -744,12 +748,14 @@ msgid ""
 "&Copy the weather report and weather forecast, including city details to "
 "clipboard"
 msgstr ""
+"&Sao chép thông tin và dự báo thời tiết, bao gồm chi tiết tỉnh thành vào bộ "
+"nhớ tạm"
 
 msgid "Enable &audio effects (only for the current weather conditions)"
-msgstr ""
+msgstr "Bật hiệu ứng âm thanh (chỉ cho điều kiện thời tiết hiện tại)"
 
 msgid "Use only &weather effects"
-msgstr ""
+msgstr "Chỉ dùng hiệu ứng &thời tiết"
 
 msgid "General audio volume"
 msgstr "Âm lượng audio chung"
@@ -759,49 +765,49 @@ msgstr "Âm lượng audio hiện tại"
 
 #. check boxes
 msgid "Enable &help buttons in the settings window"
-msgstr ""
+msgstr "Bật nút &trợ giúp trong cửa sổ thiết lập"
 
-msgid "Read &wind informations"
-msgstr ""
+msgid "Read &wind information"
+msgstr "Đọc thông tin &gió"
 
 msgid "Add wind directi&on"
-msgstr ""
+msgstr "Thêm &hướng gió"
 
 msgid "Add wi&nd speed"
-msgstr ""
+msgstr "Thêm tốc độ &gió"
 
 msgid "Add speed in &meters per second of the wind"
-msgstr ""
+msgstr "Thêm tốc độ gió tính bằng &mét trên giây"
 
 msgid "Add perceived &temperature"
-msgstr ""
+msgstr "Thêm &nhiệt độ nhận thức"
 
-msgid "&Read atmospherical informations"
-msgstr ""
+msgid "&Read atmospherical information"
+msgstr "Đọc &thông tin không khí"
 
 msgid "Add humidity va&lue"
-msgstr ""
+msgstr "Thêm &giá trị độ ẩm"
 
 msgid "Add &visibility value"
-msgstr ""
+msgstr "Thêm giá trị &tầm nhìn"
 
 msgid "Add atmospheric &pressure value"
-msgstr ""
+msgstr "Thêm giá trị á&p suất khí quyển"
 
 msgid "Indicates the atmospheric pressure in millimeters of mercur&y (mmHg)"
 msgstr ""
 
 msgid "Add status of &barometric pressure"
-msgstr ""
+msgstr "Thêm trạng thái của á&p xuất không khí"
 
-msgid "Read a&stronomical informations"
-msgstr ""
+msgid "Read a&stronomical information"
+msgstr "Đọc các thông tin &thiên văn"
 
 msgid "Enable reading of the hours in &24-hour format"
 msgstr "Bật đọc giờ ở định dạng &24-giờ"
 
 msgid "Use the comma to separate decimals, example (4,&15)"
-msgstr ""
+msgstr "Dùng dấu phảy để phân cách các số thập phân. Ví dụ: 4,&15"
 
 msgid "Check for &upgrade"
 msgstr "Kiểm tra &cập nhật"
@@ -815,7 +821,7 @@ msgid "Displays information on the current city."
 msgstr "Hiển thị thông tin của tỉnh thành hiện tại."
 
 msgid "Allows you to define the area, in order to adapt the sound effects."
-msgstr ""
+msgstr "Cho phép bạn định nghĩa một khu vực để gán hiệu ứng âm thanh."
 
 msgid "Add the current city into your list."
 msgstr "Thêm tỉnh thành hiện tại vào danh sách của bạn"
@@ -824,6 +830,8 @@ msgid ""
 "Presets the current city as the default, will be used every time you restart "
 "the plugin."
 msgstr ""
+"Đặt sẵn tỉnh thành hiện tại làm mặc định, sẽ dùng mỗi khi khởi động lại "
+"plugin."
 
 msgid "Delete  the current city from your list."
 msgstr "Xóa tỉnh thành hiện tại vào danh sách của bạn"
@@ -862,22 +870,22 @@ msgid ""
 msgstr ""
 
 msgid "Australia, Queensland, Cona Creek"
-msgstr ""
+msgstr "Australia, Queensland, Cona Creek"
 
 msgid "You can enter or search for a city"
-msgstr ""
+msgstr "Bạn có thể nhập hoặc tìm một tỉnh thành"
 
 msgid "By city woeID: 715399"
 msgstr ""
 
 msgid "By only city name: Ferrara"
-msgstr ""
+msgstr "Bằng tên tỉnh thành: Ferrara"
 
 msgid "By state or region and city name: Emilia Romagna Ferrara"
 msgstr ""
 
 msgid "By city name and country: Ferrara,it"
-msgstr ""
+msgstr "Bằng tên tỉnh thành và quốc gia: Ferrara,it"
 
 msgid "By postal code: 44100,it"
 msgstr ""
@@ -889,43 +897,43 @@ msgid "If the city is not found"
 msgstr "Nếu không tìm thấy thành phố"
 
 msgid "Try with or without the country of origin"
-msgstr ""
+msgstr "Thử bao gồm hoặc không bao gồm nguồn gốc địa phương"
 
 msgid "Try to merge the name with hyphens, or separate it with spaces"
-msgstr ""
+msgstr "Cố gắng ghép tên này với dấu trừ hoặc phân cách bằng khoảng trắng"
 
 msgid "Try deleting apostrophes"
-msgstr ""
+msgstr "Thử xóa đi dấu phảy trên"
 
 msgid "Try changing the vowels accented with normal vowels"
 msgstr ""
 
 msgid "Try to change in English some parts"
-msgstr ""
+msgstr "Thử đổi sang tiếng Anh phần nào"
 
 msgid "Try with a closest location"
-msgstr ""
+msgstr "Thử với một vị trí gần nhất"
 
 msgid "Help placing"
-msgstr ""
+msgstr "Thông tin trợ giúp"
 
 msgid "No sound effect in memory!"
-msgstr ""
+msgstr "Không có hiệu ứng âm thanh trong bộ nhớ!"
 
 msgid "I can't reproduce the sound."
-msgstr ""
+msgstr "Tôi không thể tái tạo âm thanh."
 
 msgid "not found! Press F1 for help on entering data."
-msgstr ""
+msgstr "Không tìm thấy! Bấm F1 để được trợ giúp về nhập dữ liệu."
 
 msgid "Is not working properly or has been removed from the database of"
 msgstr ""
 
 msgid "Is no longer valid!"
-msgstr ""
+msgstr "Không còn giá trị!"
 
 msgid "This option requires the installation of some audio effects"
-msgstr ""
+msgstr "Tùy chọn này yêu cầu cài đặt vài hiệu ứng audio"
 
 msgid "Do you want to install them?"
 msgstr "Bạn có muốn cài đặt chúng không?"
@@ -959,16 +967,16 @@ msgid "Adding folder:"
 msgstr "Đang thêm thư mục:"
 
 msgid "The upgrade of audio effects has been completed successfully!"
-msgstr ""
+msgstr "Việc cập nhật hiệu ứng audio đã hoàn tất!"
 
 msgid "These sound effects are subject to change by the author."
 msgstr ""
 
 msgid "Disable and re-enable this option in order to update or uninstall them."
-msgstr ""
+msgstr "Tắt và bật lại tùy chọn này để cập nhật hay gỡ cài đặt chúng."
 
 msgid "Verify that your internet connection is active, or try again later."
-msgstr ""
+msgstr "Chắc rằng bạn đang có kết nối mạng hoặc thử lại sau."
 
 msgid "File corrupted or not available!"
 msgstr "Tập tin bị lỗi hoặc không tồn tại!"
@@ -1009,19 +1017,19 @@ msgid "meters"
 msgstr "mét"
 
 msgid "Define the area for"
-msgstr ""
+msgstr "quy định vùng miền cho"
 
 msgid "Hinterland"
-msgstr ""
+msgstr "Nội địa"
 
 msgid "Maritime area"
-msgstr ""
+msgstr "Khu vực Maritime"
 
 msgid "Desert zone"
-msgstr ""
+msgstr "vùng sa mạc"
 
 msgid "Arctic zone"
-msgstr ""
+msgstr "vùng Bắc Cực"
 
 msgid "Mountain zone"
 msgstr "Vùng núi"
@@ -1030,7 +1038,7 @@ msgid "Enter new name."
 msgstr "Nhập tên mới."
 
 msgid "it can't be used because it already exists!"
-msgstr ""
+msgstr "không thể dùng vì nó đã tồn tại!"
 
 msgid "is correct"
 msgstr "chính xác"
@@ -1048,19 +1056,19 @@ msgid "The city proper is"
 msgstr ""
 
 msgid "Want to use the suggested name?"
-msgstr ""
+msgstr "Có muốn dùng tên được gợi ý không?"
 
 msgid "Import cities"
 msgstr "Nạp tỉnh thành"
 
 msgid "Do you want to replace your list with this?"
-msgstr ""
+msgstr "Bạn có muốn thay thế danh sách của bạn bằng cái này không?"
 
 msgid "If you select yes, your list will be completely replaced."
-msgstr ""
+msgstr "Nếu chọn có, danh sách của bạn sẽ bị thay thế hoàn toàn."
 
 msgid "If you select no, the new cities will be added to your list."
-msgstr ""
+msgstr "Nếu chọn không, tỉnh thành mới sẽ được thêm vào danh sách của bạn."
 
 msgid "Select import mode"
 msgstr "Chọn chế độ nạp"
@@ -1072,25 +1080,25 @@ msgid "cities"
 msgstr "Tỉnh thành"
 
 msgid "Activate the check boxes of the cities you want to import."
-msgstr ""
+msgstr "Kích hoạt hộp kiểm của các tỉnh thành bạn muốn nạp."
 
 msgid "Importing cities in progress"
-msgstr ""
+msgstr "Đang tiến hành nạp các tỉnh thành"
 
 msgid "Were added"
 msgstr "Đã thêm"
 
 msgid "new cities to the list"
-msgstr ""
+msgstr "tỉnh thành mới vào danh sách"
 
 msgid "Have been ignored because existing"
-msgstr ""
+msgstr "Bị bỏ qua vì đã tồn tại"
 
 msgid "Content of imported list"
-msgstr ""
+msgstr "Nội dung danh sách đã nạp"
 
 msgid "selected by the user"
-msgstr ""
+msgstr "đã chọn bởi nguio72 dùng"
 
 msgid "Import finished"
 msgstr "Đã nạp xong"
@@ -1105,13 +1113,13 @@ msgid "But it does not yet contain the changes you just made the list!"
 msgstr ""
 
 msgid "I proceed?"
-msgstr ""
+msgstr "Có tiến hành không?"
 
 msgid "Export cities"
-msgstr ""
+msgstr "Xuất các tỉnh thành"
 
 msgid "You can not export the same file at the same path!"
-msgstr ""
+msgstr "Bạn không thể xuất các tập tin giống nhau ra cùng đường dẫn!"
 
 msgid "january"
 msgstr "tháng 01"
@@ -1175,18 +1183,20 @@ msgid "It was not possible find the acronym of %s!"
 msgstr ""
 
 msgid "This does not allow to get the city details."
-msgstr ""
+msgstr "Nó không cho thu thập thông tin chi tiết của tỉnh thành."
 
 msgid ""
 "Please report this to the author so he can add this country in database."
 msgstr ""
+"Vui lòng thông báo điều này cho tác giả để chúng tôi có thể thêm tên này vào "
+"cơ sở dữ liệu."
 
 #, python-format
 msgid "Send an email to %s"
 msgstr "Gửi một thư điện tử đến %s"
 
 msgid "With  object the line below, thanks."
-msgstr ""
+msgstr "Với đối tượng dòng bên dưới. Xin cảm ơn."
 
 msgid "Downloaded"
 msgstr "Đã tải"
@@ -1207,7 +1217,7 @@ msgid "Empty file or not in cities woeID format compatible!"
 msgstr ""
 
 msgid "Be an error has occurred."
-msgstr ""
+msgstr "Có lỗi xảy ra."
 
 msgid "See the log for more information."
 msgstr "Xem log để biết thêm thông tin"
@@ -1216,7 +1226,7 @@ msgid "Error: failure writing file!"
 msgstr "Lỗi: ghi tập tin thật bại!"
 
 msgid "occurrences found"
-msgstr ""
+msgstr "Đã xảy ra lỗi"
 
 msgid "for"
 msgstr "cho"
@@ -1282,7 +1292,7 @@ msgid "check boxes not checked"
 msgstr "các hộp kiểm chưa chọn"
 
 msgid "Saving in progress"
-msgstr ""
+msgstr "Đang lưu"
 
 msgid "Download canceled."
 msgstr "Đã hủy tải về."
@@ -1295,7 +1305,7 @@ msgid ""
 msgstr ""
 
 msgid "NVDA+w for the current bulletin.\n"
-msgstr ""
+msgstr "NVDA+w để biết thông tin hiện tại.\n"
 
 msgid ""
 "NVDA+shift+w for the prediction in the current 24 hours and prediction up to "
@@ -1313,7 +1323,7 @@ msgid ""
 msgstr ""
 
 msgid "Shift+control+w alternates between Fahrenheit, Celsius and Kelvin.\n"
-msgstr ""
+msgstr "Shift+control+w chuyển giữa Fahrenheit, Celsius và Kelvin.\n"
 
 msgid ""
 "For other instructions, you can also press Add-on Help button in Add-ons "
