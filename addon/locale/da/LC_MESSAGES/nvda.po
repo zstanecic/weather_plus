@@ -5,17 +5,17 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Weather_Plus 5.0\n"
+"Project-Id-Version: Weather_Plus\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2019-06-05 20:05+0200\n"
-"PO-Revision-Date: 2019-06-05 20:05+0200\n"
-"Last-Translator: Nicolai Svendsen <chojiro1990@gmail.com>\n"
+"PO-Revision-Date: 2020-02-29 14:17+0100\n"
+"Last-Translator: Daniel Gartmann <lists@danielgartmann.dk>\n"
 "Language-Team: Dansk NVDA\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.3\n"
 
 msgid "Fahrenheit"
 msgstr "Fahrenheit"
@@ -36,7 +36,7 @@ msgid "Show configuration items."
 msgstr "Vis konfigurationselementer."
 
 msgid "Set and &manage your cities..."
-msgstr "Indstil og administrér dine byer ..."
+msgstr "Indstil og &administrér dine byer ..."
 
 msgid "Displays or allows to set the current cities from a list"
 msgstr "Viser eller giver mulighed for at indstille aktuelle byer fra en liste"
@@ -69,21 +69,21 @@ msgstr "Forudindstilling"
 msgid "None"
 msgstr "Ingen"
 
-#, fuzzy
 msgid "Enter a City, woeId or choose one from the list, if available."
-msgstr "Indtast en by eller vælg en fra listen, hvis den er tilgængelig."
+msgstr ""
+"Indtast en by, wordID eller vælg en fra listen, hvis den er tilgængelig."
 
 msgid "The woeID"
-msgstr ""
+msgstr "WordID"
 
 msgid "assigned to"
-msgstr ""
+msgstr "tildelt "
 
 msgid "has not been preset."
 msgstr "er ikke forudindstillet."
 
 msgid "Will be used in temporary mode!"
-msgstr "vil bruges i midlertidig tilstand!"
+msgstr "vil blive brugt i midlertidig tilstand!"
 
 #. offers to save the list changed
 msgid "Notice!"
@@ -93,11 +93,10 @@ msgid "You have modified the list of your cities"
 msgstr "Du har ændret listen over dine byer"
 
 msgid "Do you want to save it?"
-msgstr "Vil du gemme?"
+msgstr "Vil du gemme den?"
 
-#, fuzzy
 msgid "The cities on your list are not compatible with the Yahoo API!"
-msgstr "Byerne på din liste er ikke kompatible med Apixu API!"
+msgstr "Byerne på din liste er ikke kompatible med Yahoo API'et!"
 
 msgid ""
 "They have to be tested and validated, you can do it from the addon settings "
@@ -115,11 +114,18 @@ msgid "Documentation not available for the current language!"
 msgstr "Dokumentation er ikke tilgængelig for det aktuelle sprog!"
 
 msgid ""
+"Sorry, i can not receive data, problems with the download page, try again "
+"later please!"
+msgstr ""
+"Beklager, jeg kan ikke modtage data. Problemer med download-siden. Prøv igen "
+"senere!"
+
+msgid ""
 "Sorry, i can not receive data, verify that your internet connection is "
 "active, or try again later!"
 msgstr ""
-"Beklager, jeg kan ikke modtage data. Kontrollér, at din internetforbindelse "
-"er aktiv, eller prøv igen senere!"
+"Beklager. Kan ikke hente data. Tjek venligst, at din internetforbindelse er "
+"aktiv, eller prøv i gen senere!"
 
 msgid "version"
 msgstr "Version"
@@ -134,7 +140,7 @@ msgid "Do you want to download and install it?"
 msgstr "Vil du downloade og installere den?"
 
 msgid "Sorry, at the time an update is not available."
-msgstr "Ingen tilgængelig opdatering."
+msgstr "Ingen tilgængelig opdatering i øjeblikket."
 
 msgid "not found!"
 msgstr "Ikke fundet!"
@@ -156,7 +162,7 @@ msgid "I can not save the settings!"
 msgstr "Jeg kan ikke gemme indstillingerne!"
 
 msgid "invalid name"
-msgstr ""
+msgstr "ugyldigt navn"
 
 msgid "miles"
 msgstr "mil"
@@ -195,13 +201,13 @@ msgstr "Den opfattede temperatur er"
 
 #. adds information on the atmosphere
 msgid "steady"
-msgstr ""
+msgstr "stabil"
 
 msgid "rising"
-msgstr ""
+msgstr "stigende "
 
 msgid "falling"
-msgstr ""
+msgstr "faldende "
 
 msgid "The humidity is"
 msgstr "Fugtigheden er"
@@ -216,13 +222,13 @@ msgid "The pressure is"
 msgstr "Trykket er"
 
 msgid "and the state of the barometric pressure is"
-msgstr ""
+msgstr "og barometertrykket er"
 
 msgid "The state of the barometric pressure is"
-msgstr ""
+msgstr "barometertrykket er"
 
 msgid "The sun rises at"
-msgstr "Solen stiger op"
+msgstr "Solen står op"
 
 msgid "and sets at"
 msgstr "og går ned"
@@ -246,9 +252,8 @@ msgstr "I"
 msgid "Unnamed"
 msgstr "unavngivet"
 
-#, fuzzy
 msgid "Sorry, the woeID is not set!"
-msgstr "Beklager, byen er ikke indstillet!"
+msgstr "Beklager, woeID er ikke indstillet!"
 
 msgid "kilometers per hour"
 msgstr "kilometer i timen"
@@ -258,98 +263,93 @@ msgstr "mil i timen"
 
 #. weather condition
 msgid "in the morning"
-msgstr ""
+msgstr "om morgenen"
 
 msgid "in the evening"
-msgstr ""
+msgstr "om aftenen "
 
 msgid " and "
-msgstr ""
+msgstr "og "
 
 msgid " to "
-msgstr ""
+msgstr "til "
 
 msgid "in the vicinity"
-msgstr ""
+msgstr "i omegnen "
 
 msgid "tornado"
-msgstr ""
+msgstr "tornado "
 
 msgid "tropical storm"
-msgstr ""
+msgstr "tropisk storm"
 
 msgid "hurricane"
-msgstr ""
+msgstr "orkan "
 
 msgid "severe thunderstorms"
-msgstr ""
+msgstr "kraftigt tordenvejr"
 
 msgid "mixed rain and snow"
-msgstr ""
+msgstr "blandet regn og sne "
 
 msgid "mixed rain and hail"
-msgstr ""
+msgstr "blandet regn og hagl "
 
 msgid "mixed rain and sleet"
-msgstr ""
+msgstr "blandet regn og slud"
 
 msgid "mixed snow and sleet"
-msgstr ""
+msgstr "blandet sne og slud "
 
 msgid "snow flurries"
-msgstr ""
+msgstr "snebyger"
 
 msgid "smoke"
-msgstr ""
+msgstr "røg"
 
 msgid "smoky"
-msgstr ""
+msgstr "røgfyldt"
 
-#, fuzzy
 msgid "precipitation"
-msgstr "Nedbør er"
+msgstr "Nedbør "
 
 msgid "sunny intervals"
-msgstr ""
+msgstr "perioder med solskin"
 
 msgid "sunny period"
-msgstr ""
+msgstr "periode med solskin "
 
 msgid "light snow"
 msgstr "svagt snevejr"
 
-#, fuzzy
 msgid "scattered snow showers"
-msgstr "få snebyger"
+msgstr "spredte snebyger"
 
-#, fuzzy
 msgid "snow showers"
-msgstr "få snebyger"
+msgstr "snebyger"
 
-#, fuzzy
 msgid "snow shower"
-msgstr "få snebyger"
+msgstr "snebyge"
 
 msgid "snowstorm"
-msgstr ""
+msgstr "Snestorm "
 
 msgid "snowdrift"
-msgstr ""
+msgstr "snefygning"
 
 #, fuzzy
 msgid "drifting snow"
 msgstr "fygesne"
 
 msgid "wintry Mix"
-msgstr ""
+msgstr "blandet vintervejr"
 
 #, fuzzy
 msgid "ice to rain"
 msgstr "svag regn"
 
-#, fuzzy
 msgid "ice"
-msgstr "tommer"
+msgstr "is"
 
 msgid "blizzard"
 msgstr "snestorm"
@@ -358,42 +358,37 @@ msgid "blowing snow"
 msgstr "fygesne"
 
 msgid "snow"
-msgstr ""
+msgstr "Sne"
 
-#, fuzzy
 msgid "light rain with thunder"
-msgstr "delvis let regn med torden"
+msgstr "let regn med torden"
 
-#, fuzzy
 msgid "few showers"
-msgstr "få snebyger"
+msgstr "få byger"
 
-#, fuzzy
 msgid "heavy showers"
-msgstr "kraftigt snevejr"
+msgstr "kraftige byger"
 
 msgid "heavy thunderstorms"
-msgstr ""
+msgstr "Kraftigt tordenvejr"
 
 msgid "heavy thunderstorm"
-msgstr ""
+msgstr "Kraftigt tordenvejr "
 
-#, fuzzy
 msgid "lightning"
-msgstr "svag regn"
+msgstr "lyn"
 
 msgid "isolated clouds"
-msgstr ""
+msgstr "spredte skyer"
 
 msgid "partly cloudy"
 msgstr "delvist skyet"
 
-#, fuzzy
 msgid "partly bright"
-msgstr "delvis svagt snevejr"
+msgstr "delivs klart"
 
 msgid "showers early"
-msgstr ""
+msgstr "byger tidligt"
 
 msgid "light rain"
 msgstr "svag regn"
@@ -406,89 +401,82 @@ msgid "isolated showers"
 msgstr "lidt slud og byger"
 
 msgid "isolated thunderstorms"
-msgstr ""
+msgstr "stedvis torden"
 
 msgid "isolated thundershowers"
-msgstr ""
+msgstr "spredte tordenbyger"
 
-#, fuzzy
 msgid "mostly cloudy"
-msgstr "delvist skyet"
+msgstr "overvejende skyet"
 
 msgid "mostly dry"
-msgstr ""
+msgstr "overvejende tørt"
 
 msgid "mostly clear"
-msgstr ""
+msgstr "overvejende klart "
 
-#, fuzzy
 msgid "clearing"
-msgstr "klart"
+msgstr "klarer op"
 
-#, fuzzy
 msgid "no rain"
-msgstr "moderat regn"
+msgstr "ingen regn"
 
-#, fuzzy
 msgid "sleet"
-msgstr "lidt slud"
+msgstr "slud"
 
-#, fuzzy
 msgid "blowing dust"
-msgstr "fygesne"
+msgstr "flyvende støv"
 
 msgid "widespread dust"
-msgstr ""
+msgstr "udbredt støv"
 
-#, fuzzy
 msgid "low drifting sand"
-msgstr "fygesne"
+msgstr "lavt flyvesand"
 
 msgid "sandstorm"
-msgstr ""
+msgstr "sandstorm"
 
 msgid "sand storm"
-msgstr ""
+msgstr "sandstorm"
 
 msgid "dust"
-msgstr ""
+msgstr "Støv"
 
 msgid "sand"
-msgstr ""
+msgstr "sand"
 
 msgid "thundery showers"
-msgstr ""
+msgstr "byger med torden"
 
 msgid "thundershowers"
-msgstr ""
+msgstr "tordenbyger"
 
 msgid "scattered thunderstorms"
-msgstr ""
+msgstr "spredt tordenvejr"
 
-#, fuzzy
 msgid "scattered showers"
-msgstr "lidt slud og byger"
+msgstr "spredte byger"
 
 msgid "thunderstorms"
-msgstr ""
+msgstr "tordenvejr"
 
 msgid "thunderstorm"
-msgstr ""
+msgstr "tordenvejr"
 
 msgid "storm"
-msgstr ""
+msgstr "storm"
 
 msgid "hail"
-msgstr ""
+msgstr "hagl"
 
 msgid "foggy"
-msgstr ""
+msgstr "tåget "
 
 msgid "fog"
 msgstr "tåge"
 
 msgid "haze"
-msgstr ""
+msgstr "dis "
 
 msgid "mist"
 msgstr "tåge"
@@ -497,53 +485,48 @@ msgid "clear"
 msgstr "klart"
 
 msgid "fair"
-msgstr ""
+msgstr "pænt "
 
-#, fuzzy
 msgid "fine"
-msgstr "Definér"
+msgstr "Fint "
 
 msgid "overcast"
 msgstr "overskyet"
 
-#, fuzzy
 msgid "light showers"
-msgstr "få snebyger"
+msgstr "lette byger"
 
 #, fuzzy
 msgid "light drizzle"
 msgstr "svag støvregn"
 
-#, fuzzy
 msgid "freezing rain"
-msgstr "svag frysende regn"
+msgstr "Isslag"
 
-#, fuzzy
 msgid "frequent showers"
-msgstr "lidt slud og byger"
+msgstr "hyppige byger"
 
-#, fuzzy
 msgid "rain shower"
-msgstr "svag regnvejr"
+msgstr "regnbyge "
 
 msgid "rain"
-msgstr ""
+msgstr "regn"
 
 msgid "freezing drizzle"
 msgstr "frysende støvregn"
 
 msgid "showers"
-msgstr ""
+msgstr "byger"
 
 #, fuzzy
 msgid "drizzle"
 msgstr "svag støvregn"
 
 msgid "dry"
-msgstr ""
+msgstr "tørt"
 
 msgid "mild"
-msgstr ""
+msgstr "mildt"
 
 #, fuzzy
 msgid "clouds"
@@ -553,60 +536,59 @@ msgid "cloudy"
 msgstr "overskyet"
 
 msgid "mostly sunny"
-msgstr ""
+msgstr "Overvejende solskin"
 
 msgid "sunny"
 msgstr "solrigt"
 
-#, fuzzy
 msgid "sun"
-msgstr "solrigt"
+msgstr "sol"
 
 msgid "bright"
-msgstr ""
+msgstr "lyst "
 
 msgid "thunder"
-msgstr ""
+msgstr "torden"
 
 msgid "shower"
-msgstr ""
+msgstr "byge "
 
 msgid "breezy"
-msgstr ""
+msgstr "let vind"
 
 msgid "blustery"
-msgstr ""
+msgstr "stormende "
 
 msgid "windy"
-msgstr ""
+msgstr "blæsende "
 
 msgid "wind"
-msgstr ""
+msgstr "vind"
 
 msgid "flurries"
-msgstr ""
+msgstr "let snefald"
 
 msgid "late"
-msgstr ""
+msgstr "sent"
 
 msgid "early"
-msgstr ""
+msgstr "tidligt"
 
 msgid "isolated"
-msgstr ""
+msgstr "spredt"
 
 msgid "shallow fog"
-msgstr ""
+msgstr "lavthængende tåge"
 
 #, fuzzy
 msgid "heavy"
 msgstr "kraftig regn"
 
 msgid "cold"
-msgstr ""
+msgstr "koldt"
 
 msgid "hot"
-msgstr ""
+msgstr "varmt"
 
 msgid "Sorry, it was not possible to load the most recent update!"
 msgstr "Beklager, det var ikke muligt at indlæse den seneste opdatering!"
@@ -669,11 +651,12 @@ msgstr "nord Vest"
 msgid "north northwest"
 msgstr "nord nordvest"
 
-#, fuzzy
 msgid ""
 "Is not working properly, contains incomplete data or has been removed from "
 "the database of"
-msgstr "Fungerer ikke korrekt eller er blevet fjernet fra databasen af"
+msgstr ""
+"Fungerer ikke korrekt, indeholder ufuldstændige oplysninger eller er blevet "
+"fjernet fra databasen"
 
 msgid "It could be a temporary problem and you may wait a while '..."
 msgstr ""
@@ -796,7 +779,8 @@ msgstr "Aktuelle lydstyrke"
 msgid "Enable &help buttons in the settings window"
 msgstr "Aktivér &hjælpeknapper i indstillingsvinduet"
 
-msgid "Read &wind informations"
+#, fuzzy
+msgid "Read &wind information"
 msgstr "Læs &vindinformationer"
 
 msgid "Add wind directi&on"
@@ -811,7 +795,8 @@ msgstr "Oplys vindhastigheden i &meter per sekund"
 msgid "Add perceived &temperature"
 msgstr "Tilføj opfattet &temperatur"
 
-msgid "&Read atmospherical informations"
+#, fuzzy
+msgid "&Read atmospherical information"
 msgstr "Oplys &atmosfæriske informationer"
 
 msgid "Add humidity va&lue"
@@ -830,7 +815,8 @@ msgstr "Angiver det atmosfæriske tryk i millimeter &kviksølv (mmHg)"
 msgid "Add status of &barometric pressure"
 msgstr "Oplys atmosfærisk &trykværdi"
 
-msgid "Read a&stronomical informations"
+#, fuzzy
+msgid "Read a&stronomical information"
 msgstr "Oplys &astronomisk informationer"
 
 msgid "Enable reading of the hours in &24-hour format"
@@ -846,10 +832,11 @@ msgid ""
 "Testing the validity of city woeID entry and find the name of city assigned, "
 "or viceversa."
 msgstr ""
+"Tester gyldigheden for byens woeID element og finder det tildelte bynavn "
+"eller omvendt."
 
-#, fuzzy
 msgid "Displays information on the current city."
-msgstr "Viser eller giver mulighed for at indstille aktuelle byer fra en liste"
+msgstr "Viser oplysninger om den aktuelle by."
 
 msgid "Allows you to define the area, in order to adapt the sound effects."
 msgstr ""
@@ -885,18 +872,46 @@ msgstr ""
 msgid "Permits to save your list of cities in a specified path."
 msgstr "Dette lader dig gemme din liste over byer på en bestemt sti."
 
+msgid ""
+"You can also indicate how to proceed by prefixing the following commands"
+msgstr ""
+"Det er også muligt at angive, hvordan der skal fortsættes, ved at sætte "
+"følgende kommandoer foran"
+
+msgid "Direct (the Recursive cities they will not appear), by typing D:City"
+msgstr "Direkte (de underliggende byer fremkommer ikke), ved at skrive D:By"
+
+msgid "Geographic coordinates, by typing G:City"
+msgstr "Geografiske koordinater, ved at skrive G:By"
+
+msgid "Postal code, by typing P:City"
+msgstr "Postnummer, ved at skrive P:By"
+
+msgid "Text string, by typing T:City"
+msgstr "Tekststreng, ved at skrive T:By"
+
+msgid ""
+"The city can be preceded by the region and / or state, separated by a comma "
+"or space"
+msgstr ""
+"Foran byen kan man angive regionen og / eller staten adskilt enten med et "
+"komma eller mellemrum"
+
+msgid "Australia, Queensland, Cona Creek"
+msgstr "Australia, Queensland, Cona Creek"
+
 msgid "You can enter or search for a city"
 msgstr "Du kan indtaste eller søge efter en by"
 
 msgid "By city woeID: 715399"
-msgstr ""
+msgstr "Efter byens woeID: 715399"
 
 #, fuzzy
 msgid "By only city name: Ferrara"
 msgstr "Efter Byens navn: Paris"
 
 msgid "By state or region and city name: Emilia Romagna Ferrara"
-msgstr ""
+msgstr "Efter stat eller region og bynavn: "
 
 #, fuzzy
 msgid "By city name and country: Ferrara,it"
@@ -907,7 +922,7 @@ msgid "By postal code: 44100,it"
 msgstr "Ved UK postnummer: SW1"
 
 msgid "By geographic coordinates: latitude, longitude"
-msgstr ""
+msgstr "Efter geografiske koordinater: breddegrad, længdegrad"
 
 msgid "If the city is not found"
 msgstr "Hvis byen ikke findes"
@@ -926,6 +941,9 @@ msgstr "Prøv at slette apostrofer"
 msgid "Try changing the vowels accented with normal vowels"
 msgstr ""
 "Prøv at erstat accentueret vokaler (f.eks. é) med normale vokaler (f.eks. e)."
+
+msgid "Try to change in English some parts"
+msgstr "Prøv at ændre nogle dele til engelsk"
 
 msgid "Try with a closest location"
 msgstr "Prøv med den nærmeste placering"
@@ -1009,6 +1027,8 @@ msgid ""
 "The details of this city are not in the database and so I added them to the "
 "list. Try again!"
 msgstr ""
+"Detaljerne for denne by findes ikke i databasen, så de er føjet til listen. "
+"Prøv igen!"
 
 msgid "Cannot identify your location, due to insufficient data."
 msgstr "Kan ikke identificere din placering på grund af utilstrækkelige data."
@@ -1059,29 +1079,28 @@ msgid "it can't be used because it already exists!"
 msgstr "Denne indtastning kan ikke bruges, fordi den allerede eksisterer!"
 
 msgid "is correct"
-msgstr ""
+msgstr "er korrekt"
 
 msgid "But the name"
-msgstr ""
+msgstr "Men navnet"
 
 msgid "already exists"
-msgstr ""
+msgstr "findes allerede"
 
 msgid "You have to change it!"
-msgstr ""
+msgstr "Du skal ændre det!"
 
-#, fuzzy
 msgid "The city proper is"
-msgstr "Trykket er"
+msgstr "Selve byen er "
 
 msgid "Want to use the suggested name?"
-msgstr ""
+msgstr "Vil du bruge det foreslåede navn?"
 
 msgid "Import cities"
 msgstr "Importér byer"
 
 msgid "Do you want to replace your list with this?"
-msgstr "Vil du erstatte din liste med dette?"
+msgstr "Vil du erstatte din liste med denne?"
 
 msgid "If you select yes, your list will be completely replaced."
 msgstr "Hvis du vælger ja, vil din liste blive helt erstattet."
@@ -1093,7 +1112,7 @@ msgid "Select import mode"
 msgstr "Vælg importtilstand"
 
 msgid "File contents"
-msgstr "Filindhold"
+msgstr "Indholdet af filen"
 
 msgid "cities"
 msgstr "byer"
@@ -1114,7 +1133,7 @@ msgid "Have been ignored because existing"
 msgstr "er ignoreret fordi eksisterende"
 
 msgid "Content of imported list"
-msgstr ""
+msgstr "Indholdet af den iporterede liste"
 
 msgid "selected by the user"
 msgstr "valgt af brugeren"
@@ -1199,21 +1218,23 @@ msgstr "Søndag"
 
 #, python-format
 msgid "It was not possible find the acronym of %s!"
-msgstr ""
+msgstr "Det var ikke muligt at finde akronymet for %s!"
 
 msgid "This does not allow to get the city details."
-msgstr ""
+msgstr "Dette får ikke detaljerne i byen."
 
 msgid ""
 "Please report this to the author so he can add this country in database."
 msgstr ""
+"Giv venligst forfatteren besked om dette, så landet kan blive føjet til "
+"databasen."
 
 #, python-format
 msgid "Send an email to %s"
-msgstr ""
+msgstr "Send en email til %s"
 
 msgid "With  object the line below, thanks."
-msgstr ""
+msgstr "Med linjen nedenunder i emnefeltet. Tak."
 
 msgid "Downloaded"
 msgstr "Hentet"
@@ -1235,10 +1256,10 @@ msgid "Empty file or not in cities woeID format compatible!"
 msgstr "Tøm fil eller inkompatibelt format!"
 
 msgid "Be an error has occurred."
-msgstr ""
+msgstr "En fejl er opstået."
 
 msgid "See the log for more information."
-msgstr ""
+msgstr "Se i loggen for yderligere information."
 
 msgid "Error: failure writing file!"
 msgstr "Fejl: Fejl under filskrivning!"
@@ -1316,35 +1337,42 @@ msgid "Download canceled."
 msgstr "Download annulleret."
 
 msgid "&Copy to clipboard"
-msgstr ""
+msgstr "&Kopiér til udklipsholder"
 
 msgid ""
 "Adds local temperature and forecast 24 ours and prediction up to 9 days.\n"
 msgstr ""
+"Tilføjer lokal temperatur og vejrudsigt 24 timer frem og prognose op til 9 "
+"dage frem.\n"
 
 msgid "NVDA+w for the current bulletin.\n"
-msgstr ""
+msgstr "NVDA+w for den aktuelle melding.\n"
 
 msgid ""
 "NVDA+shift+w for the prediction in the current 24 hours and prediction up to "
 "9 days.\n"
 msgstr ""
+"NVDA+shift+w for prognosen for de næste 24 timer og prognosen op til 9 dage "
+"frem.\n"
 
 msgid "NVDA+shift+control+w for quickly enter a temporary city.\n"
-msgstr ""
+msgstr "NVDA+shift+control+w for hurtigt at indtaste en midlertidig by.\n"
 
 msgid "NVDA + shift + control + alt + w for open the Weather Plus settings.\n"
 msgstr ""
+"NVDA + shift + control + alt + w for at åbne indstillingerne i Vejret Plus.\n"
 
-#, fuzzy
 msgid ""
 "NVDA+alt+w announces the date of the last update of the weather report.\n"
-msgstr "Anoncerer datoen for den sidste opdatering af vejrudsigten."
+msgstr ""
+"NVDA+alt+w Anoncerer datoen for den sidste opdatering af vejrudsigten.\n"
 
 msgid "Shift+control+w alternates between Fahrenheit, Celsius and Kelvin.\n"
-msgstr ""
+msgstr "Shift+control+w skifter imellem Fahrenheit, Celsius og Kelvin.\n"
 
 msgid ""
 "For other instructions, you can also press Add-on Help button in Add-ons "
 "manager."
 msgstr ""
+"Du kan også finde yderligere instruktioner ved at trykke knappen Hjælp til "
+"tilføjelsesprogram i værktøjet Administrér tilføjelsesprogrammer."

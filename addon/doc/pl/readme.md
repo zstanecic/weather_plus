@@ -710,8 +710,8 @@ called recursively.
 * Forecasts of the time extended to 10 days.
 
 # Wersja 3.1 #
-* Added translation in Serbian (thanks to the kind cooperation of Gašić
-  Dejan `-` Gashich Deyan).
+* Dodano serbskie tłumaczenie (doceniając współpracę Gašić Dejan `-` Gashich
+  Deyan).
 * Fixed command insert+alt+w;
 	* It did not check the validity of the zipcode in use and did not check if the connection was active as the other commands do.
 * Updated the playback function of sound effects;
