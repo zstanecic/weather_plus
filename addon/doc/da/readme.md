@@ -1,7 +1,7 @@
 # Vejret Plus #
 
 * Forfatter: Adriano Barbieri
-* NVDA compatibility: 2017.3 to 2019.3
+* NVDA compatibility: 2017.3 to 2021.2
 * Download: [Stable Version][1]
 
 # ABOUT WEATHER PLUS: #
@@ -290,6 +290,14 @@ du kan stadig gemme den.
 --------------------------------------------------------------------------------
 
 # What's new: #
+
+# Version 7.7 #
+
+* Now also compatible with new nvda Alpha version.
+
+# Version 7.4 #
+
+* Fixed a bug in a city search function.
 
 # Version 7.3 #
 * Fixed unexpected bug in case of page not found while searching for

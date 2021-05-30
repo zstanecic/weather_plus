@@ -72,8 +72,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	scriptCategory = _addonSummary
 	def __init__(self):
 		#variables definition
-		if "_key" not in globals():
-			global _key; _key = Shared().Open_key()
+		if "_wbdat" not in globals():
+			global _wbdat; _wbdat = Shared().Weather_PlusDat()
 
 		self.note = [1, ''] #errors counter and city in use
 		self.cityDialog = None #city error dialog opened
@@ -415,7 +415,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		title = '%s - %s' % (_addonSummary, _("Setting up a temporary city"))
 		#Translators: dialog message to  setting a temporary city
 		message = '%s\n%s %d' % (
-		Shared().Find_keys(), #addss short cut keys
+		Shared().Find_wbdats(), #addss short cut keys
 		_("Cities List available:"),
 		len(zipCodesList))
 		choices=zipCodesList
@@ -2223,7 +2223,7 @@ class EnterDataDialog(wx.Dialog):
 		sizer.Add(self.CreateButtonSizer(wx.OK|wx.CANCEL), 0, wx.CENTRE| wx.ALL|wx.EXPAND, 5)
 		self.btn_Ok = self.FindWindowById(wx.ID_OK)
 		self.btn_Cancel = self.FindWindowById(wx.ID_CANCEL)
-		self.Bind(wx.EVT_BUTTON, self.OnEnter_key, self.btn_Ok)
+		self.Bind(wx.EVT_BUTTON, self.OnEnter_wbdat, self.btn_Ok)
 		self.cbx = cbx
 		self.f1 = 0 #after a few errors recommend you press F1
 		self.WidgetFocusControl()
@@ -2280,9 +2280,9 @@ class EnterDataDialog(wx.Dialog):
 		self.btn_Import.Bind(wx.EVT_CHAR, self.OnKey)
 		self.btn_Export.Bind(wx.EVT_CHAR, self.OnKey)
 		self.cb_days.Bind(wx.EVT_CHAR, self.OnKey)
-		self.Bind(wx.EVT_TEXT_ENTER, self.OnEnter_key, self.cb_days)
+		self.Bind(wx.EVT_TEXT_ENTER, self.OnEnter_wbdat, self.cb_days)
 		self.cb_apilang.Bind(wx.EVT_CHAR, self.OnKey)
-		self.Bind(wx.EVT_TEXT_ENTER, self.OnEnter_key, self.cb_apilang)
+		self.Bind(wx.EVT_TEXT_ENTER, self.OnEnter_wbdat, self.cb_apilang)
 		self.cbt_toClip.Bind(wx.EVT_CHAR, self.OnKey)
 		self.Bind(wx.EVT_CHECKBOX, self.OnCheckBox2, self.cbt_toClip)
 		self.cbt_toSample.Bind(wx.EVT_CHAR, self.OnKey)
@@ -2540,7 +2540,7 @@ class EnterDataDialog(wx.Dialog):
 			self.btn_Ok.Enable(True)
 
 
-	def OnEnter_key(self, evt):
+	def OnEnter_wbdat(self, evt):
 		"""enter key event"""
 		evt.Skip()
 		self.EndModal(wx.ID_OK)
@@ -2556,15 +2556,15 @@ class EnterDataDialog(wx.Dialog):
 			#create a search key list from the city details if available
 			c = value.split(',')[0] #get city name
 			z = value.split()[-1] #get zipcode number
-			search_keys = []
+			search_wbdats = []
 			self.testDefine = '0'
 			if z in self.define_dic: self.testDefine = self.define_dic[z]['define'] #get a define value from old zipcode if available
 			if z in self.details_dic:
-				search_keys.append('%s, %s, %s' % (
+				search_wbdats.append('%s, %s, %s' % (
 				self.details_dic[z]['city'],
 				self.details_dic[z]['region'],
 				self.details_dic[z]['country']))
-				search_keys.append('%s, %s' % (
+				search_wbdats.append('%s, %s' % (
 				self.details_dic[z]['lat'],
 				self.details_dic[z]['lon']))
 				#allows you to choose how to search for the city
@@ -2576,13 +2576,13 @@ class EnterDataDialog(wx.Dialog):
 				_("Choose search key for"), c),
 				#Translators: title dialog
 				_addonSummary,
-				choices=search_keys)
+				choices=search_wbdats)
 				dl.SetSelection(0)
 				if dl.ShowModal() == wx.ID_CANCEL:
 					dl.Destroy()
 					return Shared().Play_sound("subwindow", 1)
 
-				value = search_keys[dl.GetSelection()]
+				value = search_wbdats[dl.GetSelection()]
 				value2 = value
 
 			else:
@@ -4208,13 +4208,14 @@ class Shared:
 		except Exception: return None
 
 
-	def Open_key(self):
-		apikey_path = _addonDir.replace('..\..', "") + "key.key"
+	def Weather_PlusDat(self):
+		apikey_path = _addonDir.replace('..\..', "") + "wp.dat"
+		import pickle
 		try:
 			with open(apikey_path, 'rb') as r:
-				apy_key = r.read()
-		except: self.apy_key = ''
-		return apy_key
+				data = pickle.load(r)
+				return data['wpd']
+		except: return ''
 
 
 	def ParseEntry(self, value, dom = None):
@@ -4278,7 +4279,7 @@ class Shared:
 		"""return Weather API values"""
 		base_url = "https://api.weatherapi.com/v1/forecast.json"
 		keywords ={
-		"key":_key,
+		"key":_wbdat,
 		"q": api_query,
 		"lang": GlobalPlugin().apilang[-2:],
 		"days": _maxDaysApi}
@@ -4357,7 +4358,7 @@ class Shared:
 			return "Error"
 
 
-	def Find_keys(self):
+	def Find_wbdats(self):
 		"""hotkeys string that is added in the lookback windows"""
 		return '%s = %s, %s = %s, %s = %s.' % (
 		"Control+f3", _("Find..."),
@@ -4753,7 +4754,7 @@ class Shared:
 			(_addonSummary, lrl, _("occurrences found"), _("for"), city)
 			message = '%s.\n%s\n%s:' % (
 			_("Choose a city."),
-			Shared().Find_keys(),
+			Shared().Find_wbdats(),
 			_("List of availables Cities"))
 			if "_searchDialog" not in globals(): global _searchDialog
 			_searchDialog = SelectDialog(gui.mainFrame, title = title, message = message, choices = recurrences_list, last = [0], sel = 0)
@@ -5517,6 +5518,3 @@ class FindDialog(wx.Dialog):
 
 	def GetValue(self):
 		return self.textEntry.GetValue()
-		#*Da fare:
-				#1 aggiungere previsioni Hourly forecast premendo il comando insert+alt+w
-				#2 aggiungere controllo errori api come chiave non valida, eccetera, vedere dati api

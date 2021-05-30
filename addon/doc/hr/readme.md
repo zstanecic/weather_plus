@@ -1,7 +1,7 @@
 # Vremenska prognoza plus (Weather Plus) #
 
 * Autor: Adriano Barbieri
-* NVDA kompatibilnost: 2017.3 do 2019.3
+* NVDA kompatibilnost: 2017.3 do 2021.2
 * Preuzmi [stabilnu verziju][1]
 
 # INFORMACIJE O VREMENSKOJ PROGNOZI PLUS: #
@@ -140,6 +140,10 @@ Za dodavanje novog grada: pritisni sljedeću stavku:
 --------------------------------------------------------------------------------
 
 # Što je novo: #
+
+# Version 7.7 #
+
+* Now also compatible with new nvda Alpha version.
 
 # Verzija 7.4 #
 

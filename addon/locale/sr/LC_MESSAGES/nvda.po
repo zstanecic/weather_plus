@@ -1,149 +1,186 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Weather_Plus\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2019-05-06 12:10+0200\n"
-"PO-Revision-Date: 2019-06-23 12:32+0200\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2021-05-30 15:39+0200\n"
+"PO-Revision-Date: 2021-05-30 15:39+0200\n"
 "Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language-Team: Gašić Dejan <Gashich Deyan <gasicd@gmail.com>>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.2\n"
+"X-Generator: Poedit 1.8.13\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: ../../../globalPlugins/Weather_Plus\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: __init__.py\n"
+"X-Poedit-SearchPath-1: buildVars.py\n"
 
+#: __init__.py:58
 msgid "Fahrenheit"
 msgstr "Farenhajt"
 
+#: __init__.py:58
 msgid "Celsius"
 msgstr "Celzijus"
 
+#: __init__.py:58
 msgid "Kelvin"
 msgstr "Kelvin"
 
+#: __init__.py:60
 msgid "unknown"
 msgstr "Nepoznato"
 
+#: __init__.py:99
 msgid "Weather Plus &Settings"
 msgstr "&Podešavanja Weather Plus"
 
+#: __init__.py:99
 msgid "Show configuration items."
 msgstr "Prikaži stavke konfiguracije."
 
+#: __init__.py:101
 msgid "Set and &manage your cities..."
 msgstr "Pos&tavi gradove i upravljaj njima..."
 
+#: __init__.py:101
 msgid "Displays or allows to set the current cities from a list"
 msgstr "Prikazuje ili dozvoljava postavljanje trenutnih gradova sa liste"
 
+#: __init__.py:104
 msgid "Set a &temporary city..."
 msgstr "po&stavite privremeni grad."
 
+#: __init__.py:104
 msgid "Allows to set one temporary city from a list"
 msgstr "Dozvoljava vam da postavite privremeni grad sa liste"
 
+#: __init__.py:108
 msgid "&Documentation"
 msgstr "&Dokumentacija"
 
+#: __init__.py:108
 msgid "Opens the help file for the current language"
 msgstr "Otvara datoteku pomoći za trenutni jezik"
 
+#: __init__.py:112
 msgid "&Check for Upgrade..."
 msgstr "&Proveri ima li nove verzije..."
 
+#: __init__.py:112
 msgid "Notify if there is an upgraded version available"
 msgstr "Obavesti ako je dostupna nova verzija"
 
-#. opens the Weather Plus settings window
+#: __init__.py:160
 msgid "Settings"
 msgstr "Podešavanja"
 
+#: __init__.py:160 __init__.py:2016
 msgid "Preset"
 msgstr "Zadato Podešavanje"
 
+#: __init__.py:160 __init__.py:3095 __init__.py:3417
 msgid "None"
 msgstr "Nema"
 
-msgid "Enter a City, woeId or choose one from the list, if available."
-msgstr "Unesite Grad, voeID, ili izaberite sa liste, ako postoji"
+#: __init__.py:162
+msgid "Enter a City or choose one from the list, if available."
+msgstr ""
 
-msgid "The woeID"
-msgstr "voeID"
+#: __init__.py:308 __init__.py:1705 __init__.py:2649 __init__.py:3245
+msgid "The city"
+msgstr ""
 
-msgid "assigned to"
-msgstr "dodeljeno"
-
+#: __init__.py:309
 msgid "has not been preset."
 msgstr "Nije zadato podešeno."
 
+#: __init__.py:310
 msgid "Will be used in temporary mode!"
 msgstr "Biće korišćeno u privremenom režimu!"
 
-#. offers to save the list changed
+#: __init__.py:313 __init__.py:341 __init__.py:403 __init__.py:1711
+#: __init__.py:2486 __init__.py:2687 __init__.py:2692 __init__.py:2762
+#: __init__.py:3133 __init__.py:3254 __init__.py:3444 __init__.py:3463
+#: __init__.py:4259
 msgid "Notice!"
 msgstr "Pažnja!"
 
+#: __init__.py:343
 msgid "You have modified the list of your cities"
 msgstr "Izmenili ste vašu listu gradova"
 
+#: __init__.py:343
 msgid "Do you want to save it?"
 msgstr "Želite li da sačuvate?"
 
-msgid "The cities on your list are not compatible with the Yahoo API!"
-msgstr "Gradovi na vašem popisu nisu kompatibilni s Yahoo API-jem!"
+#: __init__.py:400
+msgid "The cities on your list are not compatible with the Weather API!"
+msgstr ""
 
+#: __init__.py:401
 msgid ""
 "They have to be tested and validated, you can do it from the addon settings "
 "window."
 msgstr ""
 "Moraju se testirati i potvrditi, to možete učiniti u prozoru addon settings."
 
+#: __init__.py:415
 msgid "Setting up a temporary city"
 msgstr "Postavljanje privremenog grada"
 
+#: __init__.py:419
 msgid "Cities List available:"
 msgstr "Dostupna je lista gradova:"
 
+#: __init__.py:451
 msgid "Documentation not available for the current language!"
 msgstr "Dokumentacija nije dostupna za trenutni jezik!"
 
-#, fuzzy
+#: __init__.py:500
 msgid ""
-"Sorry, i can not receive data, problems with the download page, try again "
+"Sorry, I can not receive data, problems with the download page, try again "
 "later please!"
 msgstr ""
-"Na žalost nije moguće preuzeti podatke. Proverite internet vezu ili "
-"pokušajte ponovo kasnije!"
+"Žao mi je, ne mogu da primim podatke, problemi sa stranicom za preuzimanje, "
+"pokušajte ponovo kasnije molim vas!Na žalost nije moguće preuzeti podatke. "
+"Proverite internet vezu ili pokušajte ponovo kasnije!"
 
+#: __init__.py:503 __init__.py:1572 __init__.py:2610 __init__.py:2923
 msgid ""
-"Sorry, i can not receive data, verify that your internet connection is "
+"Sorry, I can not receive data, verify that your internet connection is "
 "active, or try again later!"
 msgstr ""
 "Na žalost nije moguće preuzeti podatke. Proverite internet vezu ili "
 "pokušajte ponovo kasnije!"
 
+#: __init__.py:515
 msgid "version"
 msgstr "Verzija"
 
+#: __init__.py:515
 msgid "is available."
 msgstr "je dostupna."
 
+#: __init__.py:516
 msgid "Installed version"
 msgstr "Instalirana verzija"
 
+#: __init__.py:517
 msgid "Do you want to download and install it?"
 msgstr "Da li želite da preuzmete i instalirate?"
 
+#: __init__.py:522
 msgid "Sorry, at the time an update is not available."
 msgstr "Na žalost nadogradnja trenutno nije dostupna."
 
+#: __init__.py:1000 __init__.py:2618 __init__.py:4958
 msgid "not found!"
 msgstr "Nije pronađeno!"
 
+#: __init__.py:1001
 msgid ""
 "You need to upgrade the sound effects by reactivating the appropriate option "
 "from the settings of"
@@ -151,544 +188,312 @@ msgstr ""
 "Treba da nadogradite zvučne efekte reaktiviranjem odgovarajuće opcije iz "
 "podešavanja"
 
+#: __init__.py:1003
 msgid "But if these are already updated, then you need to update"
 msgstr "ali ako su već nadograđeni, treba ponovo da ih nadogradite"
 
+#: __init__.py:1156
 msgid "I can not load the settings!"
 msgstr "Ne mogu daučitam podešavanja!"
 
+#: __init__.py:1156
+msgid "Attenction!"
+msgstr ""
+
+#: __init__.py:1217
 msgid "I can not save the settings!"
 msgstr "Ne mogu da sačuvam podešavanja!"
 
+#: __init__.py:1232
 msgid "invalid name"
 msgstr "Neispravno ime"
 
-msgid "miles"
-msgstr "milja"
+#: __init__.py:1304
+msgid "The cloudiness is"
+msgstr ""
 
-#. takes the value in mmHg
-msgid "millimeters of mercury"
-msgstr "milimetara živinog stuba"
+#: __init__.py:1305
+msgid "The precipitation is"
+msgstr ""
 
-msgid "inches of mercury"
-msgstr "Inča živinog stuba"
-
-msgid "kilometers"
-msgstr "kilometara"
-
-msgid "millibars"
-msgstr "milibara"
-
-msgid "the weather report is currently"
-msgstr "Trenutni vremenski izveštaj glasi "
-
-msgid "degrees"
-msgstr "stepeni"
-
-#. adds wind information to the string
-msgid "The wind direction is from"
-msgstr "Pravac vetra je sa"
-
-msgid "with speed of"
-msgstr "I brzina mu je"
-
-msgid "The wind speed is"
-msgstr "Brzina vetra je"
-
-msgid "The perceived temperature is"
-msgstr "Subjektivni osećaj temperature je"
-
-#. adds information on the atmosphere
-msgid "steady"
-msgstr "stabilan"
-
-msgid "rising"
-msgstr "u porastu"
-
-msgid "falling"
-msgstr "u opadanju"
-
-msgid "The humidity is"
-msgstr "Vlažnost vazduha je"
-
-msgid "and the visibility is up to"
-msgstr "a vidljivost je do"
-
-msgid "The visibility is up to"
-msgstr "a vidljivost je do"
-
-msgid "The pressure is"
-msgstr "Pritisak je"
-
-msgid "and the state of the barometric pressure is"
-msgstr "I status barometarskog pritiska je"
-
-msgid "The state of the barometric pressure is"
-msgstr "I status barometarskog pritiska je:"
-
-msgid "The sun rises at"
-msgstr "Sunce izlazi u"
-
-msgid "and sets at"
-msgstr "i zalazi u"
-
-msgid "the forecast for today is"
-msgstr "Prognoza za danas glasi"
-
-msgid "with a maximum temperature of"
-msgstr "sa maksimalnom temperaturom od"
-
-msgid "and a minimum of"
-msgstr "i minimalnom od"
-
-msgid "not available"
-msgstr "Nije dostupna."
-
-#. this does not replace the name of the city
-msgid "In"
-msgstr "Za"
-
-msgid "Unnamed"
-msgstr "Neimenovan"
-
-msgid "Sorry, the woeID is not set!"
-msgstr "Na žalost, voeID nije postavljen!"
-
-msgid "kilometers per hour"
-msgstr "kilometara na čas"
-
+#: __init__.py:1311
 msgid "miles per hour"
 msgstr "milja na čas"
 
-#. weather condition
-msgid "in the morning"
-msgstr "ujutro"
-
-msgid "in the evening"
-msgstr "uveče"
-
-msgid " and "
-msgstr " i "
-
-msgid " to "
-msgstr " u "
-
-msgid "in the vicinity"
-msgstr "približno"
-
-msgid "tornado"
-msgstr "Tornado"
-
-msgid "tropical storm"
-msgstr "Tropska oluja"
-
-msgid "hurricane"
-msgstr "Uragan"
-
-msgid "severe thunderstorms"
-msgstr "Mestimične oluje sa grmljavinom"
-
-msgid "mixed rain and snow"
-msgstr "Sneg i kiša"
-
-msgid "mixed rain and hail"
-msgstr "Kiša i grad"
-
-msgid "mixed rain and sleet"
-msgstr "Kiša i susnežica"
-
-msgid "mixed snow and sleet"
-msgstr "Sneg i susnežica"
-
-msgid "snow flurries"
-msgstr "Snežna mećava"
-
-msgid "smoke"
-msgstr "smog"
-
-msgid "smoky"
-msgstr "Zadimljeno"
-
-msgid "precipitation"
-msgstr "padavine"
-
-msgid "sunny intervals"
-msgstr "sunčani intervali"
-
-msgid "sunny period"
-msgstr "sunčani period"
-
-msgid "light snow"
-msgstr "lagani sneg"
-
-msgid "scattered snow showers"
-msgstr "snežne padavine"
-
-msgid "snow showers"
-msgstr "Snežne padavine"
-
-msgid "snow shower"
-msgstr "snežna padavina"
-
-msgid "snowstorm"
-msgstr "snežna oluja"
-
-msgid "snowdrift"
-msgstr "smetovi"
-
-msgid "drifting snow"
-msgstr "pojava smetova"
-
-msgid "wintry Mix"
-msgstr "susnežica"
-
-msgid "ice to rain"
-msgstr "ledena kiša"
-
-msgid "ice"
-msgstr "led"
-
-msgid "blizzard"
-msgstr "mećava"
-
-msgid "blowing snow"
-msgstr "sneg i vetar"
-
-msgid "snow"
-msgstr "sneg"
-
-msgid "light rain with thunder"
-msgstr "blaga kiša i grmljavina"
-
-msgid "few showers"
-msgstr "povremeni pljuskovi"
-
-msgid "heavy showers"
-msgstr "jaki pljuskovi"
-
-msgid "heavy thunderstorms"
-msgstr "jake oluje sa grmljavinom"
-
-msgid "heavy thunderstorm"
-msgstr "jaka oluja sa grmljavinom"
-
-msgid "lightning"
-msgstr "sevanje"
-
-msgid "isolated clouds"
-msgstr "mestimično oblačno"
-
-msgid "partly cloudy"
-msgstr "delimično oblačno"
-
-msgid "partly bright"
-msgstr "delimično vedro"
-
-msgid "showers early"
-msgstr "jutarnji pljuskovi"
-
-msgid "light rain"
-msgstr "lagana kiša"
-
-msgid "heavy rain"
-msgstr "jaka kiša"
-
-msgid "isolated showers"
-msgstr "mestimično kišovito"
-
-msgid "isolated thunderstorms"
-msgstr "Izolovane oluje sa grmljavinom"
-
-msgid "isolated thundershowers"
-msgstr "Izolovana kiša sa grmljavinom"
-
-msgid "mostly cloudy"
-msgstr "pretežno oblačno"
-
-msgid "mostly dry"
-msgstr "pretežno suvo"
-
-msgid "mostly clear"
-msgstr "pretežno vedro"
-
-msgid "clearing"
-msgstr "razvedravanje"
-
-msgid "no rain"
-msgstr "bez kiše"
-
-msgid "sleet"
-msgstr "susnežica"
-
-msgid "blowing dust"
-msgstr "vrtlog prašine"
-
-msgid "widespread dust"
-msgstr "rasprostiranje prašine"
-
-msgid "low drifting sand"
-msgstr "niski nanosi peska"
-
-msgid "sandstorm"
-msgstr "peščana oluja"
-
-msgid "sand storm"
-msgstr "Peščana oluja"
-
-msgid "dust"
-msgstr "prašina"
-
-msgid "sand"
-msgstr "pesak"
-
-msgid "thundery showers"
-msgstr "pljuskovi sa grmljavinom"
-
-msgid "thundershowers"
-msgstr "pljuskovi sa grmljavinom"
-
-msgid "scattered thunderstorms"
-msgstr "mestimične oluje sa grmljavinom"
-
-msgid "scattered showers"
-msgstr "mestimični pljuskovi"
-
-msgid "thunderstorms"
-msgstr "oluje sa grmljavinom"
-
-msgid "thunderstorm"
-msgstr "oluja sa grmljavinom"
-
-msgid "storm"
-msgstr "oluja"
-
-msgid "hail"
-msgstr "grad"
-
-msgid "foggy"
-msgstr "maglovito"
-
-msgid "fog"
-msgstr "magla"
-
-msgid "haze"
-msgstr "izmaglica"
-
-msgid "mist"
-msgstr "zamagljenje"
-
-msgid "clear"
-msgstr "vedro"
-
-msgid "fair"
-msgstr "lepo vreme"
-
-msgid "fine"
-msgstr "prijatno vreme"
-
-msgid "overcast"
-msgstr "oblačnost"
-
-msgid "light showers"
-msgstr "lagane kiše"
-
-msgid "light drizzle"
-msgstr "laka rosulja"
-
-msgid "freezing rain"
-msgstr "ledena kiša"
-
-msgid "frequent showers"
-msgstr "mestimično kišovito"
-
-msgid "rain shower"
-msgstr "pljusak"
-
-msgid "rain"
-msgstr "kiša"
-
-msgid "freezing drizzle"
-msgstr "ledena rosulja"
-
-msgid "showers"
-msgstr "pljuskovi"
-
-msgid "drizzle"
-msgstr "rosulja"
-
-msgid "dry"
-msgstr "suvo"
-
-msgid "mild"
-msgstr "blag"
-
-msgid "clouds"
-msgstr "oblaci"
-
-msgid "cloudy"
-msgstr "oblačno"
-
-msgid "mostly sunny"
-msgstr "pretežno sunčano"
-
-msgid "sunny"
-msgstr "sunčano"
-
-msgid "sun"
-msgstr "sunce"
-
-msgid "bright"
-msgstr "svetlo"
-
-msgid "thunder"
-msgstr "grmljavina"
-
-msgid "shower"
-msgstr "pljusak"
-
-msgid "breezy"
-msgstr "vetrovito"
-
-msgid "blustery"
-msgstr "Vetrovito"
-
-msgid "windy"
-msgstr "vetrovito"
-
-msgid "wind"
-msgstr "vetar"
-
-msgid "flurries"
-msgstr "nalet"
-
-msgid "late"
-msgstr "kasno"
-
-msgid "early"
-msgstr "rano"
-
-msgid "isolated"
-msgstr "izolovano"
-
-msgid "shallow fog"
-msgstr "niska magla"
-
-msgid "heavy"
-msgstr "jak"
-
-msgid "cold"
-msgstr "hladno"
-
-msgid "hot"
-msgstr "Toplo"
-
+#: __init__.py:1312
+msgid "miles"
+msgstr "milja"
+
+#: __init__.py:1314
+msgid "inches of mercury"
+msgstr "Inča živinog stuba"
+
+#: __init__.py:1317
+msgid "millimeters of mercury"
+msgstr "milimetara živinog stuba"
+
+#: __init__.py:1321
+msgid "inches"
+msgstr ""
+
+#: __init__.py:1324
+msgid "nanometers"
+msgstr ""
+
+#: __init__.py:1336
+msgid "kilometers per hour"
+msgstr "kilometara na čas"
+
+#: __init__.py:1337
+msgid "kilometers"
+msgstr "kilometara"
+
+#: __init__.py:1339
+msgid "millibars"
+msgstr "milibara"
+
+#: __init__.py:1344
+msgid "millimeters"
+msgstr ""
+
+#: __init__.py:1356
+msgid "the weather report is currently"
+msgstr "Trenutni vremenski izveštaj glasi "
+
+#: __init__.py:1357 __init__.py:1401 __init__.py:1503 __init__.py:1530
+msgid "degrees"
+msgstr "stepeni"
+
+#: __init__.py:1364
+msgid "The wind direction is from"
+msgstr "Pravac vetra je sa"
+
+#: __init__.py:1370 __init__.py:1383
+msgid "with speed of"
+msgstr "I brzina mu je"
+
+#: __init__.py:1376 __init__.py:1388
+msgid "The wind speed is"
+msgstr "Brzina vetra je"
+
+#: __init__.py:1398
+msgid "With gusts of"
+msgstr ""
+
+#: __init__.py:1401
+msgid "The perceived temperature is"
+msgstr "Subjektivni osećaj temperature je"
+
+#: __init__.py:1408
+msgid "The humidity is"
+msgstr "Vlažnost vazduha je"
+
+#: __init__.py:1410
+msgid "The cloudiness is of"
+msgstr ""
+
+#: __init__.py:1412
+msgid "The precipitation is of"
+msgstr ""
+
+#: __init__.py:1417
+msgid "and the visibility is up to"
+msgstr "a vidljivost je do"
+
+#: __init__.py:1427
+msgid "The visibility is up to"
+msgstr "a vidljivost je do"
+
+#: __init__.py:1432
+msgid "and the precipitation is"
+msgstr ""
+
+#: __init__.py:1446
+msgid "The pressure is"
+msgstr "Pritisak je"
+
+#: __init__.py:1450
+msgid "The UV radiation is of"
+msgstr ""
+
+#: __init__.py:1470
+msgid "The sun rises at"
+msgstr "Sunce izlazi u"
+
+#: __init__.py:1471 __init__.py:1473
+msgid "and sets at"
+msgstr "i zalazi u"
+
+#: __init__.py:1472
+msgid "The moon rises at"
+msgstr ""
+
+#: __init__.py:1499
+msgid "the forecast for today is"
+msgstr "Prognoza za danas glasi"
+
+#: __init__.py:1501 __init__.py:1528
+msgid "with a maximum temperature of"
+msgstr "sa maksimalnom temperaturom od"
+
+#: __init__.py:1502 __init__.py:1529
+msgid "and a minimum of"
+msgstr "i minimalnom od"
+
+#: __init__.py:1536
+msgid "not available"
+msgstr "Nije dostupna."
+
+#: __init__.py:1540
+msgid "In"
+msgstr "Za"
+
+#: __init__.py:1540
+msgid "Unnamed"
+msgstr "Neimenovan"
+
+#: __init__.py:1548 __init__.py:1857
+msgid "Sorry, the city is not set!"
+msgstr ""
+
+#: __init__.py:1596
 msgid "Sorry, it was not possible to load the most recent update!"
 msgstr "Na žalost, nije bilo moguće učitati zadnju nadogradnju!"
 
+#: __init__.py:1597
 msgid "Please try again later."
 msgstr "Molimo pokušajte ponovo kasnije."
 
+#: __init__.py:1640 __init__.py:1641
 msgid "meters per second"
 msgstr "metara u sekundi"
 
-msgid "Sorry, the woeID set is not valid or contains incomplete data!"
+#: __init__.py:1680
+msgid "Sorry, the city set is not valid or contains incomplete data!"
 msgstr ""
-"Na žalost, postavljeni voeID nije ispravan ili sadrži nepotpune podatke!"
 
+#: __init__.py:1688
 msgid "north"
 msgstr "severa"
 
+#: __init__.py:1688
 msgid "north northeast"
 msgstr "severa severoistoka"
 
+#: __init__.py:1688
 msgid "northeast"
 msgstr "severoistoka"
 
+#: __init__.py:1688
 msgid "east northeast"
 msgstr "istoka severoistoka"
 
+#: __init__.py:1688
 msgid "east"
 msgstr "istoka"
 
+#: __init__.py:1688
 msgid "east southeast"
 msgstr "istoka jugoistoka"
 
+#: __init__.py:1688
 msgid "southeast"
 msgstr "jugoistoka"
 
+#: __init__.py:1688
 msgid "south southeast"
 msgstr "juga jugoistoka"
 
+#: __init__.py:1689
 msgid "south"
 msgstr "juga"
 
+#: __init__.py:1689
 msgid "south southwest"
 msgstr "juga jugozapada"
 
+#: __init__.py:1689
 msgid "southwest"
 msgstr "jugozapada"
 
+#: __init__.py:1689
 msgid "west southwest"
 msgstr "zapada jugozapada"
 
+#: __init__.py:1689
 msgid "west"
 msgstr "zapada"
 
+#: __init__.py:1689
 msgid "west northwest"
 msgstr "zapada severozapada"
 
+#: __init__.py:1689
 msgid "northwest"
 msgstr "severozapada"
 
+#: __init__.py:1689
 msgid "north northwest"
 msgstr "severa severozapada"
 
+#: __init__.py:1706
 msgid ""
 "Is not working properly, contains incomplete data or has been removed from "
-"the database of"
+"the"
 msgstr ""
-"Ne radi pravilno, sadrži nepotpune podatke ili je uklonjeno iz baze podataka"
 
+#: __init__.py:1708 __init__.py:2643
 msgid "It could be a temporary problem and you may wait a while '..."
 msgstr "mogao bi biti privremeni problem i možda morate da sačekate malo..."
 
+#: __init__.py:1709
 msgid "Do you want to delete it from your list?"
 msgstr "Želite li da obrišete sa liste?"
 
+#: __init__.py:1775
 msgid "Provides the current temperature and weather conditions."
 msgstr "Pruža trenutnu vremensku prognozu i vrednosti temperature"
 
+#: __init__.py:1787
+#, python-format
 msgid ""
 "Provides the weather forecast and current temperature for 24 hours and the "
-"next 9 days."
+"next %d days."
 msgstr ""
-"Pruža vremensku prognozu i vrednosti temperature za 24 sata i sledećih 9 "
-"dana."
 
+#: __init__.py:1795
 msgid "Sorry, no list available!"
 msgstr "Na žalost, nema dostupne liste!"
 
+#: __init__.py:1828
 msgid "Allows you to set a temporary city."
 msgstr "Dozvoljava vam da postavite privremeni grad."
 
+#: __init__.py:1842
 msgid "Scale of temperature measurement set into"
 msgstr "Postavljanje merne jedinice za temperaturu u"
 
+#: __init__.py:1844
 msgid "Allows you to set a temporary scale of temperature mesurement."
 msgstr "Dozvoljava vam postavljanje privremene merne jedinice za temperaturu."
 
+#: __init__.py:1871
 msgid "at"
 msgstr "u"
 
+#: __init__.py:1874
 msgid "Last update of the current weather report"
 msgstr "Zadnje ažuriranje trenutnog vremenskog izveštaja"
 
+#: __init__.py:1876
 msgid "Announces the date of the last update of the weather report."
 msgstr "Izgovara datum zadnjeg ažuriranja vremenskog izveštaja."
 
+#: __init__.py:1936
 msgid "Open the Weather Plus settings dialog."
 msgstr "Otvara prozor podešavanja za Weather Plus."
 
+#: __init__.py:1968
 msgid ""
 "f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
 "duration Weather Forecast, f5: volume controls."
@@ -696,6 +501,7 @@ msgstr ""
 "f1: pomoć u postavljanju, f2: zadnji tab položaj, f3: lista i edit polje, "
 "f4: kontrola trajanja vremenske prognoze"
 
+#: __init__.py:1969
 msgid ""
 "f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
 "duration Weather Forecast."
@@ -703,46 +509,63 @@ msgstr ""
 "f1: pomoć u postavljanju, f2: zadnji tab položaj, f3: lista i edit polje, "
 "f4: kontrola trajanja vremenske prognoze"
 
+#: __init__.py:2012
 msgid "Test"
 msgstr "Testiranje"
 
+#: __init__.py:2013
 msgid "Details"
 msgstr "Detalji"
 
+#: __init__.py:2014
 msgid "Define"
 msgstr "Odredi"
 
+#: __init__.py:2015
 msgid "Add"
 msgstr "Dodaj"
 
+#: __init__.py:2017
 msgid "Remove"
 msgstr "Ukloni"
 
+#: __init__.py:2018
 msgid "Rename"
 msgstr "Preimenovati"
 
+#: __init__.py:2044
 msgid "&Import new cities..."
 msgstr "Uvez&ite nove gradove..."
 
+#: __init__.py:2045
 msgid "&Export your cities..."
 msgstr "Izv&ezite vaše gradove..."
 
+#: __init__.py:2057
 msgid "Scale of temperature measurement:"
 msgstr "Jedinica za merenje temperature:"
 
+#: __init__.py:2065
 msgid "Degrees shown as:"
 msgstr "Stepeni prikazani kao:"
 
+#: __init__.py:2068
 msgid "C - F - K"
 msgstr "C - F - K"
 
-msgid "Don't specify"
-msgstr "Nije određeno"
+#: __init__.py:2069
+msgid "Unspecified"
+msgstr "Neodređeno"
 
+#: __init__.py:2075
 msgid "Weather Forecasts up to days:"
 msgstr "Vremenska prognoza do dana:"
 
-#. check boxes
+#: __init__.py:2084
+msgid "API response language:"
+msgstr ""
+
+#: __init__.py:2093
 msgid ""
 "&Copy the weather report and weather forecast, including city details to "
 "clipboard"
@@ -750,86 +573,115 @@ msgstr ""
 "&Kopiraj vremenski izveštaj i prognozu, uključujući i podatke o gradu u "
 "međuspremnik"
 
+#: __init__.py:2098
 msgid "Enable &audio effects (only for the current weather conditions)"
 msgstr "Omogući &audio efekte (samo za trenutne vremenske uslove)"
 
+#: __init__.py:2101
 msgid "Use only &weather effects"
 msgstr "Koristite samo &Vremenske efekte"
 
+#: __init__.py:2106
 msgid "General audio volume"
 msgstr "Glavna jačina zvuka"
 
+#: __init__.py:2107
 msgid "Current audio volume"
 msgstr "Trenutna jačina zvuka"
 
-#. check boxes
+#: __init__.py:2139
 msgid "Enable &help buttons in the settings window"
 msgstr "Omogući dugme &pomoći u prozoru za podešavanja"
 
-#, fuzzy
+#: __init__.py:2146
 msgid "Read &wind information"
 msgstr "Pročitaj izveštaj o &vetru"
 
+#: __init__.py:2151
 msgid "Add wind directi&on"
 msgstr "Doda&j pravac vetra"
 
+#: __init__.py:2155
 msgid "Add wi&nd speed"
 msgstr "&Dodaj brzinu vetra"
 
+#: __init__.py:2159
 msgid "Add speed in &meters per second of the wind"
 msgstr "Dodaj brzinu vetra u &metrima po sekundi"
 
+#: __init__.py:2163
+msgid "Add wind &gust speed"
+msgstr ""
+
+#: __init__.py:2167
 msgid "Add perceived &temperature"
 msgstr "Dodaj subjektivni osećaj &temperature"
 
-#, fuzzy
+#: __init__.py:2172
 msgid "&Read atmospherical information"
 msgstr "P&ročitaj atmosferski izveštaj"
 
+#: __init__.py:2177
 msgid "Add humidity va&lue"
 msgstr "Dodaj vrednost vlažnosti va&zduha"
 
+#: __init__.py:2181
 msgid "Add &visibility value"
 msgstr "Dodaj vred&nost vidljivosti"
 
+#: __init__.py:2185
+msgid "Add cloudiness &value"
+msgstr ""
+
+#: __init__.py:2189
+msgid "Add precipitation &value"
+msgstr ""
+
+#: __init__.py:2193
+msgid "Add &ultraviolet radiation value"
+msgstr ""
+
+#: __init__.py:2197
 msgid "Add atmospheric &pressure value"
 msgstr "Dodaj vrednost atmos&ferskog pritiska"
 
+#: __init__.py:2201
 msgid "Indicates the atmospheric pressure in millimeters of mercur&y (mmHg)"
 msgstr "Prikazuje atmosferski pritisak u milimetrima živinog stuba (mm&Hg)"
 
-msgid "Add status of &barometric pressure"
-msgstr "Dodaj status &barometarskog pritiska"
-
-#, fuzzy
+#: __init__.py:2206
 msgid "Read a&stronomical information"
 msgstr "Pročitaj a&stronomski izveštaj"
 
+#: __init__.py:2210
 msgid "Enable reading of the hours in &24-hour format"
 msgstr "Omo&gući dvadesetčetvoročasovno očitavanje vremena"
 
+#: __init__.py:2215
 msgid "Use the comma to separate decimals, example (4,&15)"
 msgstr "Koristite zarez za razdvajanje decimala, na primer (4,&15)"
 
+#: __init__.py:2219
 msgid "Check for &upgrade"
 msgstr "proveri ima &li nove verzije"
 
-msgid ""
-"Testing the validity of city woeID entry and find the name of city assigned, "
-"or viceversa."
+#: __init__.py:2246
+msgid "Test the city validity  and find the data of it."
 msgstr ""
-"Testira validnost voeID_a grada i nalazi ga prema dodeljenom imenu ili "
-"obrnuto."
 
-msgid "Displays information on the current city."
-msgstr "Prikazuje informaciju o trenutnom gradu."
-
-msgid "Allows you to define the area, in order to adapt the sound effects."
-msgstr "Omogućuje vam određivanje regiona, da bi se primenila zvučna šema."
-
+#: __init__.py:2247
 msgid "Add the current city into your list."
 msgstr "Dodaje trenutni grad u vašu listu."
 
+#: __init__.py:2248
+msgid "Displays information about the current city."
+msgstr ""
+
+#: __init__.py:2249
+msgid "Allows you to define the area, in order to adapt the sound effects."
+msgstr "Omogućuje vam određivanje regiona, da bi se primenila zvučna šema."
+
+#: __init__.py:2250
 msgid ""
 "Presets the current city as the default, will be used every time you restart "
 "the plugin."
@@ -837,12 +689,15 @@ msgstr ""
 "Postavlja trenutni grad kao podrazumevani, što znači da će isti biti učitan "
 "svaki put kad se restartuje dodatak."
 
+#: __init__.py:2251
 msgid "Delete  the current city from your list."
 msgstr "Brisanje grada iz vaše liste."
 
+#: __init__.py:2252
 msgid "Rename the current city."
 msgstr "Preimenujte trenutni grad."
 
+#: __init__.py:2253
 msgid ""
 "Permits to incorporate in your list new cities importing them from another "
 "list with the extension *.zipcodes; you can select the city you want to "
@@ -852,493 +707,1143 @@ msgstr ""
 "sa ekstenzijom * .zipcodes; možete odabrati grad koji želite uvesti "
 "uključivanjem potvrdnog okvira."
 
+#: __init__.py:2254
 msgid "Permits to save your list of cities in a specified path."
 msgstr "Dozvoljava vam da sačuvate vašu listu gradova na određenom mestu."
 
-msgid ""
-"You can also indicate how to proceed by prefixing the following commands"
-msgstr ""
-
-msgid "Direct (the Recursive cities they will not appear), by typing D:City"
-msgstr ""
-
-#, fuzzy
-msgid "Geographic coordinates, by typing G:City"
-msgstr "Prema geografskim koordinatama: geografskoj širini, geografskoj dužini"
-
-msgid "Postal code, by typing P:City"
-msgstr ""
-
-msgid "Text string, by typing T:City"
-msgstr ""
-
-msgid ""
-"The city can be preceded by the region and / or state, separated by a comma "
-"or space"
-msgstr ""
-
-msgid "Australia, Queensland, Cona Creek"
-msgstr ""
-
+#: __init__.py:2356
 msgid "You can enter or search for a city"
 msgstr "Možete upisati ili potražiti grad"
 
-msgid "By city woeID: 715399"
-msgstr "Po voeID_u grada: 3177090"
+#: __init__.py:2357
+msgid "By Latitude and Longitude: 48.8567,2.3508"
+msgstr ""
 
-msgid "By only city name: Ferrara"
-msgstr "Samo po imenu grada: Ferrara"
+#: __init__.py:2358
+msgid "By City name: Paris"
+msgstr ""
 
-msgid "By state or region and city name: Emilia Romagna Ferrara"
-msgstr "prema državi ili regiji i imenu grada: Emilia Romagna Ferrara"
+#: __init__.py:2359
+msgid "By City name and country: Toronto,Canada"
+msgstr ""
 
-msgid "By city name and country: Ferrara,it"
-msgstr "Po imenu grada i države: Ferrara,It"
+#: __init__.py:2360
+msgid "Or Toronto,CA"
+msgstr ""
 
-msgid "By postal code: 44100,it"
-msgstr "Po Zip kodu: 44100,it"
+#: __init__.py:2361
+msgid "By City name and region: Toronto,Ontario"
+msgstr ""
 
-msgid "By geographic coordinates: latitude, longitude"
-msgstr "Prema geografskim koordinatama: geografskoj širini, geografskoj dužini"
+#: __init__.py:2362
+msgid "By US zip: 10001"
+msgstr ""
 
+#: __init__.py:2363
+msgid "By UK postcode: SW1"
+msgstr ""
+
+#: __init__.py:2364
+msgid "By Canada postal code: G2J"
+msgstr ""
+
+#: __init__.py:2365
+msgid "By metar:<metar code>: metar:EGLL"
+msgstr ""
+
+#: __init__.py:2366
+msgid "By iata:<3 digit airport code>: iata:DXB"
+msgstr ""
+
+#: __init__.py:2367
+msgid "By auto:ip IP lookup: auto:ip"
+msgstr ""
+
+#: __init__.py:2368
+msgid "By IP address (IPv4 and IPv6 supported): 100.0.0.1"
+msgstr ""
+
+#: __init__.py:2369
+msgid "if there will be cities with the same name, will be listed"
+msgstr ""
+
+#: __init__.py:2370
+msgid "By default, confirming a selection, is used the postal code"
+msgstr ""
+
+#: __init__.py:2371
+msgid ""
+"If the postal code is not valid, will be used a text string: city, state, "
+"region"
+msgstr ""
+
+#: __init__.py:2372
+msgid "You can indicate how to proceed by prefixing the following commands"
+msgstr ""
+
+#: __init__.py:2373
+msgid ""
+"Direct (cities with the same name, will not listed), by typing D:City: D:"
+"Paris"
+msgstr ""
+
+#: __init__.py:2374
+msgid "Geographic coordinates, by typing G:City: G:Venezia"
+msgstr ""
+
+#: __init__.py:2375
+msgid "Text string, by typing T:City: T:Bologna"
+msgstr ""
+
+#: __init__.py:2376
 msgid "If the city is not found"
 msgstr "Ako grad nije pronađen"
 
+#: __init__.py:2377
+msgid "Try to reverse the order in the search key"
+msgstr ""
+
+#: __init__.py:2378
 msgid "Try with or without the country of origin"
 msgstr "Pokušajte sa ili bez zemlje porekla"
 
-msgid "Try to merge the name with hyphens, or separate it with spaces"
-msgstr "Pokušajte da spojite ime crticama ili da ga razdvojite razmacima"
+#: __init__.py:2379
+msgid "Try to merge the name with hyphens, or separate it with separator"
+msgstr ""
 
+#: __init__.py:2380
 msgid "Try deleting apostrophes"
 msgstr "Pokušajte da izbrišete apostrofe"
 
+#: __init__.py:2381
 msgid "Try changing the vowels accented with normal vowels"
 msgstr "Probajte da zamenite akcentovane samoglasnike sa običnima"
 
+#: __init__.py:2382
 msgid "Try to change in English some parts"
-msgstr ""
+msgstr "Pokušajte da promenite neke delove na engleskom"
 
+#: __init__.py:2383
 msgid "Try with a closest location"
 msgstr "Probajte sa najbližom lokacijom"
 
+#: __init__.py:2386
 msgid "Help placing"
 msgstr "Pomoć za postavljanje"
 
+#: __init__.py:2483
 msgid "No sound effect in memory!"
 msgstr "Nema zvučnih efekata u memoriji!"
 
+#: __init__.py:2484
 msgid "I can't reproduce the sound."
 msgstr "Ne mogu da reprodukujem zvuk."
 
+#: __init__.py:2576
+msgid "Choose search key for"
+msgstr ""
+
+#: __init__.py:2593
+msgid "Unfortunately I could not recover enough data to find the city."
+msgstr ""
+
+#: __init__.py:2594
+msgid "Do I try anyway?"
+msgstr ""
+
+#: __init__.py:2617
 msgid "not found! Press F1 for help on entering data."
 msgstr "Nije pronađeno! Pritisnite F1 za pomoć oko upisivanja podataka."
 
+#: __init__.py:2641
 msgid "Is not working properly or has been removed from the database of"
 msgstr "ne radi pravilno ili je uklonjeno iz baze podataka"
 
+#: __init__.py:2645
 msgid "Is no longer valid!"
 msgstr "Više nije važeće!"
 
+#: __init__.py:2678
 msgid "This option requires the installation of some audio effects"
 msgstr "Ova opcija zahteva instaliranje dodatnih audio efekata"
 
+#: __init__.py:2679
 msgid "Do you want to install them?"
 msgstr "Želite li da ih instalirate?"
 
+#: __init__.py:2683
 msgid "The audio effects are installed!"
 msgstr "Audio efekti su instalirani!"
 
+#: __init__.py:2684
 msgid "Would you like to update?"
 msgstr "Želite li da ažurirate?"
 
+#: __init__.py:2685
 msgid "Or do you want to uninstall them?"
 msgstr "Ili da ih deinstalirate?"
 
+#: __init__.py:2692
 msgid "Are you sure you want to uninstall the sound effects?"
 msgstr "Jeste li sigurni da želite da deinstalirate zvučne efekte?"
 
+#: __init__.py:2720
 msgid "Update in progress"
 msgstr "Napredak ažuriranja"
 
+#: __init__.py:2721
 msgid "Installation in progress"
 msgstr "Napredak instalacije"
 
+#: __init__.py:2722 __init__.py:2895 __init__.py:3330 __init__.py:3465
+#: __init__.py:5132
 msgid "Please wait..."
 msgstr "Molimo sačekajte..."
 
-#. Installation Complete
+#: __init__.py:2750
 msgid "The installation of audio effects has been completed successfully!"
 msgstr "Instalacija zvučnih efekata je uspešno završena!"
 
+#: __init__.py:2751
 msgid "Adding folder:"
 msgstr "Dodavanje foldera:"
 
+#: __init__.py:2753
 msgid "The upgrade of audio effects has been completed successfully!"
 msgstr "Nadogradnja zvučnih efekata je uspešno završena!"
 
+#: __init__.py:2760
 msgid "These sound effects are subject to change by the author."
 msgstr "Ovi zvučni efekti se menjaju od strane autora."
 
+#: __init__.py:2761
 msgid "Disable and re-enable this option in order to update or uninstall them."
 msgstr "Isključi pa uključi ovu opciju radi ažuriranja."
 
+#: __init__.py:2822
 msgid "Verify that your internet connection is active, or try again later."
 msgstr "Proverite internet vezu ili pokušajte kasnije ponovo."
 
+#: __init__.py:2823
 msgid "File corrupted or not available!"
 msgstr "Datoteka je oštećena ili nije dostupna!"
 
-msgid "Sorry, i could not complete the installation of the sound effects!"
+#: __init__.py:2825
+msgid "Sorry, I could not complete the installation of the sound effects!"
 msgstr "Na žalost nije bilo moguće dovršiti instalaciju zvučnih efekata!"
 
+#: __init__.py:2826
 msgid "Installation Error!"
 msgstr "Greška pri instalaciji!"
 
-msgid ""
-"The details of this city are not in the database and so I added them to the "
-"list. Try again!"
-msgstr ""
-"Detalji ovog grada nisu u bazi podataka pa sam ih dodao na popis. Pokušajte "
-"ponovno!"
-
+#: __init__.py:2908
 msgid "Cannot identify your location, due to insufficient data."
 msgstr "Nije moguće pronaći vašu lokaciju, nema dovoljno podataka."
 
+#: __init__.py:2936
 msgid "Details of"
 msgstr "Detalji za"
 
+#: __init__.py:2939
 msgid "Place"
 msgstr "Mesto"
 
+#: __init__.py:2940
 msgid "Current local time"
 msgstr "Trenutno lokalno vreme"
 
+#: __init__.py:2941
 msgid "Degrees latitude"
 msgstr "Stepeni geografske širine"
 
+#: __init__.py:2942
 msgid "Degrees longitude"
 msgstr "Stepeni geografske dužine"
 
+#: __init__.py:2943
 msgid "Elevation above sea level"
 msgstr "Nadmorska visina"
 
+#: __init__.py:2943
 msgid "meters"
 msgstr "Metara"
 
+#: __init__.py:2964
 msgid "Define the area for"
 msgstr "Definiši region za"
 
+#: __init__.py:2968
 msgid "Hinterland"
 msgstr "Zaleđe"
 
+#: __init__.py:2969
 msgid "Maritime area"
 msgstr "Priobalno područje"
 
+#: __init__.py:2970
 msgid "Desert zone"
 msgstr "Pustinjska zona"
 
+#: __init__.py:2971
 msgid "Arctic zone"
 msgstr "Arktička zona"
 
+#: __init__.py:2972
 msgid "Mountain zone"
 msgstr "Planinska zona"
 
+#: __init__.py:3124
 msgid "Enter new name."
 msgstr "Unesite novo ime."
 
+#: __init__.py:3133
 msgid "it can't be used because it already exists!"
 msgstr "ne može se koristiti jer već postoji!"
 
+#: __init__.py:3245
 msgid "is correct"
 msgstr "je tačno"
 
+#: __init__.py:3246
 msgid "But the name"
 msgstr "ali ime"
 
+#: __init__.py:3248
 msgid "already exists"
 msgstr "već postoji"
 
+#: __init__.py:3249
 msgid "You have to change it!"
 msgstr "Treba da ga promenite!"
 
+#: __init__.py:3250
 msgid "The city proper is"
 msgstr "Grad pravilno je"
 
+#: __init__.py:3252
 msgid "Want to use the suggested name?"
 msgstr "Želite li da koristite predloženo ime?"
 
+#: __init__.py:3264
 msgid "Import cities"
 msgstr "uvezite gradove"
 
+#: __init__.py:3282
+msgid "Empty file or not in cities format compatible!"
+msgstr ""
+
+#: __init__.py:3288
 msgid "Do you want to replace your list with this?"
 msgstr "Da li želite da zamenite svoju listu gradova sa ovim?"
 
+#: __init__.py:3289
 msgid "If you select yes, your list will be completely replaced."
 msgstr "Ako odaberete Da, lista će biti kompletno zamenjena."
 
+#: __init__.py:3290
 msgid "If you select no, the new cities will be added to your list."
 msgstr "Ako odaberete ne, gradovi će biti dodati u listu."
 
+#: __init__.py:3293
 msgid "Select import mode"
 msgstr "Odaberite uvozni režim"
 
+#: __init__.py:3304
 msgid "File contents"
 msgstr "Datoteka sadrži"
 
+#: __init__.py:3305
 msgid "cities"
 msgstr "città"
 
+#: __init__.py:3308
 msgid "Activate the check boxes of the cities you want to import."
 msgstr "Štiklirajte čekboksove pored gradova koje hoćete da uvezete."
 
+#: __init__.py:3329
 msgid "Importing cities in progress"
 msgstr "Uvoženje gradova u toku"
 
+#: __init__.py:3421
 msgid "Were added"
 msgstr "je dodato"
 
+#: __init__.py:3421
 msgid "new cities to the list"
 msgstr "Novi gradovi u listi"
 
+#: __init__.py:3422
 msgid "Have been ignored because existing"
 msgstr "su bili ignorisani zbog postojećeg"
 
+#: __init__.py:3423
 msgid "Content of imported list"
 msgstr "sadržaja uvezene liste"
 
+#: __init__.py:3424
+msgid "Containing incomplete data"
+msgstr ""
+
+#: __init__.py:3425
 msgid "selected by the user"
 msgstr "Odabrano od korisnika"
 
+#: __init__.py:3426
 msgid "Import finished"
 msgstr "Uvoz je završen"
 
+#: __init__.py:3438
 msgid "A copy of"
 msgstr "Kopija"
 
+#: __init__.py:3440
 msgid "It will be exported"
 msgstr "Biće izvezeno"
 
+#: __init__.py:3441
 msgid "But it does not yet contain the changes you just made the list!"
 msgstr "Ali još ne sadrži promene koje ste upravo napravili u listi!"
 
+#: __init__.py:3442
 msgid "I proceed?"
 msgstr "Da nastavim?"
 
+#: __init__.py:3448
 msgid "Export cities"
 msgstr "Izvezite gradove"
 
+#: __init__.py:3463
 msgid "You can not export the same file at the same path!"
 msgstr "Ne možete izvesti istu datoteku na istu putanju!"
 
+#: __init__.py:4178
 msgid "january"
 msgstr "januar"
 
+#: __init__.py:4179
 msgid "february"
 msgstr "februar"
 
+#: __init__.py:4180
 msgid "march"
 msgstr "mart"
 
+#: __init__.py:4181
 msgid "april"
 msgstr "april"
 
+#: __init__.py:4182
 msgid "may"
 msgstr "maj"
 
+#: __init__.py:4183
 msgid "june"
 msgstr "juni"
 
+#: __init__.py:4184
 msgid "july"
 msgstr "juli"
 
+#: __init__.py:4185
 msgid "august"
 msgstr "avgust"
 
+#: __init__.py:4186
 msgid "september"
 msgstr "septembar"
 
+#: __init__.py:4187
 msgid "october"
 msgstr "oktobar"
 
+#: __init__.py:4188
 msgid "november"
 msgstr "novembar"
 
+#: __init__.py:4189
 msgid "december"
 msgstr "decembar"
 
+#: __init__.py:4190
 msgid "Monday"
 msgstr "Ponedeljak"
 
+#: __init__.py:4191
 msgid "Tuesday"
 msgstr "Utorak"
 
+#: __init__.py:4192
 msgid "Wednesday"
 msgstr "Sreda"
 
+#: __init__.py:4193
 msgid "Thursday"
 msgstr "Četvrtak"
 
+#: __init__.py:4194
 msgid "Friday"
 msgstr "Petak"
 
+#: __init__.py:4195
 msgid "Saturday"
 msgstr "Subota"
 
+#: __init__.py:4196
 msgid "Sunday"
 msgstr "Nedelja"
 
+#: __init__.py:4253
 #, python-format
-msgid "It was not possible find the acronym of %s!"
-msgstr "Nije bilo moguće pronaći skraćenicu od %s!"
+msgid "It was not possible find the acronym of \"%s\"!"
+msgstr ""
 
-msgid "This does not allow to get the city details."
-msgstr "Ovo ne treba da biste nabavili detalje o gradu."
+#: __init__.py:4254
+msgid "This may not allow you to get the city details."
+msgstr ""
 
+#: __init__.py:4255
 msgid ""
 "Please report this to the author so he can add this country in database."
 msgstr "Prijavite to autoru kako bi dodao ovu zemlju u bazu podataka."
 
+#: __init__.py:4256
 #, python-format
 msgid "Send an email to %s"
 msgstr "Pošaljite poruku e-pošte na %s"
 
+#: __init__.py:4257
 msgid "With  object the line below, thanks."
 msgstr "S objektom ispod linije, hvala."
 
+#: __init__.py:4324 __init__.py:4342
 msgid "Downloaded"
 msgstr "Preuzeto"
 
+#: __init__.py:4325
 msgid "of"
 msgstr "od"
 
+#: __init__.py:4363
 msgid "Find..."
 msgstr "Pronađi..."
 
+#: __init__.py:4364
 msgid "Find next"
 msgstr "Pronađi sledeće"
 
+#: __init__.py:4365
 msgid "Find previous"
 msgstr "Pronađi predhodno"
 
-msgid "Empty file or not in cities woeID format compatible!"
-msgstr "Prazna datoteka ili nevažeći voeID za mesto ili grad!"
-
+#: __init__.py:4564
 msgid "Be an error has occurred."
 msgstr "Došlo je do pogreške."
 
+#: __init__.py:4565
 msgid "See the log for more information."
 msgstr "Dodatne informacije potražite u zapisniku."
 
+#: __init__.py:4566
 msgid "Error: failure writing file!"
 msgstr "Greška: nije moguće izmeniti datoteku!"
 
+#: __init__.py:4753
 msgid "occurrences found"
 msgstr "Pojave su pronađene"
 
+#: __init__.py:4753
 msgid "for"
 msgstr "za"
 
+#: __init__.py:4755
 msgid "Choose a city."
 msgstr "Izaberite grad."
 
+#: __init__.py:4757
 msgid "List of availables Cities"
 msgstr "Lista dostupnih gradova"
 
+#: __init__.py:4789
 msgid "Do not show this message again!"
 msgstr "Ne prikazuj ponovo ovu poruku!"
 
+#: __init__.py:4799
 msgid "&Install..."
 msgstr "&Instaliraj..."
 
+#: __init__.py:4799
 msgid "Upd&ate..."
 msgstr "A&žuriraj..."
 
+#: __init__.py:4801
 msgid "&Close"
 msgstr "&Zatvori"
 
+#: __init__.py:4802
 msgid "&Uninstall..."
 msgstr "&Deinstaliraj..."
 
+#: __init__.py:4904
 msgid "Type the search string"
 msgstr "Upišite pojam za pretragu"
 
+#: __init__.py:4904 __init__.py:4958
 msgid "Find"
 msgstr "Pronađi"
 
+#: __init__.py:4955
 msgid "next"
 msgstr "Sledeće"
 
+#: __init__.py:4955
 msgid "previous"
 msgstr "Predhodno"
 
+#: __init__.py:4962
 msgid "No results next for"
 msgstr "Nema rezultata za sledeće"
 
+#: __init__.py:4962
 msgid "No previous results for"
 msgstr "Nema rezultata za predhodno"
 
+#: __init__.py:5004
 msgid "&Select all"
 msgstr "&Selektuj sve"
 
+#: __init__.py:5006
 msgid "&Deselect all"
 msgstr "D&eselektuj sve"
 
+#: __init__.py:5046
 msgid "not checked"
 msgstr "Nije štiklirano"
 
+#: __init__.py:5048
 msgid "checked"
 msgstr "Štiklirano"
 
+#: __init__.py:5052
 msgid "check box"
 msgstr "Čekboks"
 
+#: __init__.py:5062
 msgid "check boxes checked"
 msgstr "Čekboksovi su štiklirani"
 
+#: __init__.py:5071
 msgid "check boxes not checked"
 msgstr "Čekboksovi nisu štiklirani"
 
+#: __init__.py:5133
 msgid "Saving in progress"
 msgstr "Preuzimanje je u toku"
 
+#: __init__.py:5135
 msgid "Download canceled."
 msgstr "Preuzimanje je odkazano."
 
+#: __init__.py:5189
 msgid "&Copy to clipboard"
 msgstr "&Kopirati u međuspremnik"
 
+#: buildVars.py:23
 msgid ""
-"Adds local temperature and forecast 24 ours and prediction up to 9 days.\n"
-msgstr "Daje dvadesetčetvoročasovni izveštaj i prognozu za narednih 9 dana.\n"
+"Adds local temperature and forecast 24 ours and prediction up to 2 days.\n"
+msgstr ""
 
+#: buildVars.py:24
 msgid "NVDA+w for the current bulletin.\n"
 msgstr "NVDA+w za trenutnu prognozu.\n"
 
+#: buildVars.py:25
 msgid ""
 "NVDA+shift+w for the prediction in the current 24 hours and prediction up to "
-"9 days.\n"
-msgstr "NVDA+shift+w prognoza za 24 časa i narednih 9 dana.\n"
+"2 days.\n"
+msgstr ""
 
+#: buildVars.py:26
 msgid "NVDA+shift+control+w for quickly enter a temporary city.\n"
 msgstr "NVDA+shift+control+w Brzo unošenje privremenog grada.\n"
 
+#: buildVars.py:27
 msgid "NVDA + shift + control + alt + w for open the Weather Plus settings.\n"
 msgstr "NVDA+shift+control+alt+w Otvara Weather Plus prozor za podešavanje.\n"
 
+#: buildVars.py:28
 msgid ""
 "NVDA+alt+w announces the date of the last update of the weather report.\n"
 msgstr "NVDA+alt+w Izgovara vreme ažuriranja zadnjeg meteo izveštaja.\n"
 
+#: buildVars.py:29
 msgid "Shift+control+w alternates between Fahrenheit, Celsius and Kelvin.\n"
 msgstr "Shift+control+w Izbor između Farenhajta, Celzijusa i Kelvina.\n"
 
+#: buildVars.py:30
 msgid ""
 "For other instructions, you can also press Add-on Help button in Add-ons "
 "manager."
 msgstr ""
 "Za dodatna uputstva, pritisnite dugme Pomoć u menadžeru (upravljaču) NVDA "
 "dodataka."
+
+#~ msgid "Enter a City, woeId or choose one from the list, if available."
+#~ msgstr "Unesite Grad, voeID, ili izaberite sa liste, ako postoji"
+
+#~ msgid "The woeID"
+#~ msgstr "voeID"
+
+#~ msgid "assigned to"
+#~ msgstr "dodeljeno"
+
+#~ msgid "The cities on your list are not compatible with the Yahoo API!"
+#~ msgstr "Gradovi na vašem popisu nisu kompatibilni s Yahoo API-jem!"
+
+#~ msgid "steady"
+#~ msgstr "stabilan"
+
+#~ msgid "rising"
+#~ msgstr "u porastu"
+
+#~ msgid "falling"
+#~ msgstr "u opadanju"
+
+#~ msgid "and the state of the barometric pressure is"
+#~ msgstr "I status barometarskog pritiska je"
+
+#~ msgid "The state of the barometric pressure is"
+#~ msgstr "I status barometarskog pritiska je:"
+
+#~ msgid "Sorry, the woeID is not set!"
+#~ msgstr "Na žalost, voeID nije postavljen!"
+
+#~ msgid "in the morning"
+#~ msgstr "ujutro"
+
+#~ msgid "in the evening"
+#~ msgstr "uveče"
+
+#~ msgid " and "
+#~ msgstr " i "
+
+#~ msgid " to "
+#~ msgstr " u "
+
+#~ msgid "in the vicinity"
+#~ msgstr "približno"
+
+#~ msgid "tornado"
+#~ msgstr "Tornado"
+
+#~ msgid "tropical storm"
+#~ msgstr "Tropska oluja"
+
+#~ msgid "hurricane"
+#~ msgstr "Uragan"
+
+#~ msgid "severe thunderstorms"
+#~ msgstr "Mestimične oluje sa grmljavinom"
+
+#~ msgid "mixed rain and snow"
+#~ msgstr "Sneg i kiša"
+
+#~ msgid "mixed rain and hail"
+#~ msgstr "Kiša i grad"
+
+#~ msgid "mixed rain and sleet"
+#~ msgstr "Kiša i susnežica"
+
+#~ msgid "mixed snow and sleet"
+#~ msgstr "Sneg i susnežica"
+
+#~ msgid "snow flurries"
+#~ msgstr "Snežna mećava"
+
+#~ msgid "smoke"
+#~ msgstr "smog"
+
+#~ msgid "smoky"
+#~ msgstr "Zadimljeno"
+
+#~ msgid "precipitation"
+#~ msgstr "padavine"
+
+#~ msgid "sunny intervals"
+#~ msgstr "sunčani intervali"
+
+#~ msgid "sunny period"
+#~ msgstr "sunčani period"
+
+#~ msgid "light snow"
+#~ msgstr "lagani sneg"
+
+#~ msgid "scattered snow showers"
+#~ msgstr "snežne padavine"
+
+#~ msgid "snow showers"
+#~ msgstr "Snežne padavine"
+
+#~ msgid "snow shower"
+#~ msgstr "snežna padavina"
+
+#~ msgid "snowstorm"
+#~ msgstr "snežna oluja"
+
+#~ msgid "snowdrift"
+#~ msgstr "smetovi"
+
+#~ msgid "drifting snow"
+#~ msgstr "pojava smetova"
+
+#~ msgid "wintry Mix"
+#~ msgstr "susnežica"
+
+#~ msgid "ice to rain"
+#~ msgstr "ledena kiša"
+
+#~ msgid "ice"
+#~ msgstr "led"
+
+#~ msgid "blizzard"
+#~ msgstr "mećava"
+
+#~ msgid "blowing snow"
+#~ msgstr "sneg i vetar"
+
+#~ msgid "snow"
+#~ msgstr "sneg"
+
+#~ msgid "light rain with thunder"
+#~ msgstr "blaga kiša i grmljavina"
+
+#~ msgid "few showers"
+#~ msgstr "povremeni pljuskovi"
+
+#~ msgid "heavy showers"
+#~ msgstr "jaki pljuskovi"
+
+#~ msgid "heavy thunderstorms"
+#~ msgstr "jake oluje sa grmljavinom"
+
+#~ msgid "heavy thunderstorm"
+#~ msgstr "jaka oluja sa grmljavinom"
+
+#~ msgid "lightning"
+#~ msgstr "sevanje"
+
+#~ msgid "isolated clouds"
+#~ msgstr "mestimično oblačno"
+
+#~ msgid "partly cloudy"
+#~ msgstr "delimično oblačno"
+
+#~ msgid "partly bright"
+#~ msgstr "delimično vedro"
+
+#~ msgid "showers early"
+#~ msgstr "jutarnji pljuskovi"
+
+#~ msgid "light rain"
+#~ msgstr "lagana kiša"
+
+#~ msgid "heavy rain"
+#~ msgstr "jaka kiša"
+
+#~ msgid "isolated showers"
+#~ msgstr "mestimično kišovito"
+
+#~ msgid "isolated thunderstorms"
+#~ msgstr "Izolovane oluje sa grmljavinom"
+
+#~ msgid "isolated thundershowers"
+#~ msgstr "Izolovana kiša sa grmljavinom"
+
+#~ msgid "mostly cloudy"
+#~ msgstr "pretežno oblačno"
+
+#~ msgid "mostly dry"
+#~ msgstr "pretežno suvo"
+
+#~ msgid "mostly clear"
+#~ msgstr "pretežno vedro"
+
+#~ msgid "clearing"
+#~ msgstr "razvedravanje"
+
+#~ msgid "no rain"
+#~ msgstr "bez kiše"
+
+#~ msgid "sleet"
+#~ msgstr "susnežica"
+
+#~ msgid "blowing dust"
+#~ msgstr "vrtlog prašine"
+
+#~ msgid "widespread dust"
+#~ msgstr "rasprostiranje prašine"
+
+#~ msgid "low drifting sand"
+#~ msgstr "niski nanosi peska"
+
+#~ msgid "sandstorm"
+#~ msgstr "peščana oluja"
+
+#~ msgid "sand storm"
+#~ msgstr "Peščana oluja"
+
+#~ msgid "dust"
+#~ msgstr "prašina"
+
+#~ msgid "sand"
+#~ msgstr "pesak"
+
+#~ msgid "thundery showers"
+#~ msgstr "pljuskovi sa grmljavinom"
+
+#~ msgid "thundershowers"
+#~ msgstr "pljuskovi sa grmljavinom"
+
+#~ msgid "scattered thunderstorms"
+#~ msgstr "mestimične oluje sa grmljavinom"
+
+#~ msgid "scattered showers"
+#~ msgstr "mestimični pljuskovi"
+
+#~ msgid "thunderstorms"
+#~ msgstr "oluje sa grmljavinom"
+
+#~ msgid "thunderstorm"
+#~ msgstr "oluja sa grmljavinom"
+
+#~ msgid "storm"
+#~ msgstr "oluja"
+
+#~ msgid "hail"
+#~ msgstr "grad"
+
+#~ msgid "foggy"
+#~ msgstr "maglovito"
+
+#~ msgid "fog"
+#~ msgstr "magla"
+
+#~ msgid "haze"
+#~ msgstr "izmaglica"
+
+#~ msgid "mist"
+#~ msgstr "zamagljenje"
+
+#~ msgid "clear"
+#~ msgstr "vedro"
+
+#~ msgid "fair"
+#~ msgstr "lepo vreme"
+
+#~ msgid "fine"
+#~ msgstr "prijatno vreme"
+
+#~ msgid "overcast"
+#~ msgstr "oblačnost"
+
+#~ msgid "light showers"
+#~ msgstr "lagane kiše"
+
+#~ msgid "light drizzle"
+#~ msgstr "laka rosulja"
+
+#~ msgid "freezing rain"
+#~ msgstr "ledena kiša"
+
+#~ msgid "frequent showers"
+#~ msgstr "mestimično kišovito"
+
+#~ msgid "rain shower"
+#~ msgstr "pljusak"
+
+#~ msgid "rain"
+#~ msgstr "kiša"
+
+#~ msgid "freezing drizzle"
+#~ msgstr "ledena rosulja"
+
+#~ msgid "showers"
+#~ msgstr "pljuskovi"
+
+#~ msgid "drizzle"
+#~ msgstr "rosulja"
+
+#~ msgid "dry"
+#~ msgstr "suvo"
+
+#~ msgid "mild"
+#~ msgstr "blag"
+
+#~ msgid "clouds"
+#~ msgstr "oblaci"
+
+#~ msgid "cloudy"
+#~ msgstr "oblačno"
+
+#~ msgid "mostly sunny"
+#~ msgstr "pretežno sunčano"
+
+#~ msgid "sunny"
+#~ msgstr "sunčano"
+
+#~ msgid "sun"
+#~ msgstr "sunce"
+
+#~ msgid "bright"
+#~ msgstr "svetlo"
+
+#~ msgid "thunder"
+#~ msgstr "grmljavina"
+
+#~ msgid "shower"
+#~ msgstr "pljusak"
+
+#~ msgid "breezy"
+#~ msgstr "vetrovito"
+
+#~ msgid "blustery"
+#~ msgstr "Vetrovito"
+
+#~ msgid "windy"
+#~ msgstr "vetrovito"
+
+#~ msgid "wind"
+#~ msgstr "vetar"
+
+#~ msgid "flurries"
+#~ msgstr "nalet"
+
+#~ msgid "late"
+#~ msgstr "kasno"
+
+#~ msgid "early"
+#~ msgstr "rano"
+
+#~ msgid "isolated"
+#~ msgstr "izolovano"
+
+#~ msgid "shallow fog"
+#~ msgstr "niska magla"
+
+#~ msgid "heavy"
+#~ msgstr "jak"
+
+#~ msgid "cold"
+#~ msgstr "hladno"
+
+#~ msgid "hot"
+#~ msgstr "Toplo"
+
+#~ msgid "Sorry, the woeID set is not valid or contains incomplete data!"
+#~ msgstr ""
+#~ "Na žalost, postavljeni voeID nije ispravan ili sadrži nepotpune podatke!"
+
+#~ msgid ""
+#~ "Is not working properly, contains incomplete data or has been removed "
+#~ "from the database of"
+#~ msgstr ""
+#~ "Ne radi pravilno, sadrži nepotpune podatke ili je uklonjeno iz baze "
+#~ "podataka"
+
+#~ msgid ""
+#~ "Provides the weather forecast and current temperature for 24 hours and "
+#~ "the next 9 days."
+#~ msgstr ""
+#~ "Pruža vremensku prognozu i vrednosti temperature za 24 sata i sledećih 9 "
+#~ "dana."
+
+#~ msgid "Add status of &barometric pressure"
+#~ msgstr "Dodaj status &barometarskog pritiska"
+
+#~ msgid ""
+#~ "Testing the validity of city woeID entry and find the name of city "
+#~ "assigned, or viceversa."
+#~ msgstr ""
+#~ "Testira validnost voeID_a grada i nalazi ga prema dodeljenom imenu ili "
+#~ "obrnuto."
+
+#~ msgid "Displays information on the current city."
+#~ msgstr "Prikazuje informaciju o trenutnom gradu."
+
+#~ msgid ""
+#~ "You can also indicate how to proceed by prefixing the following commands"
+#~ msgstr "Takođe možete naznačiti kako postupiti prefiksom sledećih komandi"
+
+#~ msgid "Direct (the Recursive cities they will not appear), by typing D:City"
+#~ msgstr "Direktno (rekurzivni gradovi se neće pojaviti) ukucavanjem D: Grad"
+
+#~ msgid "Geographic coordinates, by typing G:City"
+#~ msgstr "Po geografskim koordinatama: geografska širina, dužina"
+
+#~ msgid "Postal code, by typing P:City"
+#~ msgstr "Poštanski broj upisivanjem P: Grad"
+
+#~ msgid "Text string, by typing T:City"
+#~ msgstr "Tekstualni niz upišite T: Grad"
+
+#~ msgid ""
+#~ "The city can be preceded by the region and / or state, separated by a "
+#~ "comma or space"
+#~ msgstr ""
+#~ "Gradu može prethoditi regija i / ili država, odvojen zarezom ili razmakom"
+
+#~ msgid "Australia, Queensland, Cona Creek"
+#~ msgstr "Australija, Kueensland, Cona Creek"
+
+#~ msgid "By city woeID: 715399"
+#~ msgstr "Po voeID_u grada: 3177090"
+
+#~ msgid "By only city name: Ferrara"
+#~ msgstr "Samo po imenu grada: Ferrara"
+
+#~ msgid "By state or region and city name: Emilia Romagna Ferrara"
+#~ msgstr "prema državi ili regiji i imenu grada: Emilia Romagna Ferrara"
+
+#~ msgid "By city name and country: Ferrara,it"
+#~ msgstr "Po imenu grada i države: Ferrara,It"
+
+#~ msgid "By postal code: 44100,it"
+#~ msgstr "Po Zip kodu: 44100,it"
+
+#~ msgid "By geographic coordinates: latitude, longitude"
+#~ msgstr ""
+#~ "Prema geografskim koordinatama: geografskoj širini, geografskoj dužini"
+
+#~ msgid "Try to merge the name with hyphens, or separate it with spaces"
+#~ msgstr "Pokušajte da spojite ime crticama ili da ga razdvojite razmacima"
+
+#~ msgid ""
+#~ "The details of this city are not in the database and so I added them to "
+#~ "the list. Try again!"
+#~ msgstr ""
+#~ "Detalji ovog grada nisu u bazi podataka pa sam ih dodao na popis. "
+#~ "Pokušajte ponovno!"
+
+#~ msgid "It was not possible find the acronym of %s!"
+#~ msgstr "Nije bilo moguće pronaći skraćenicu od %s!"
+
+#~ msgid "This does not allow to get the city details."
+#~ msgstr "Ovo ne treba da biste nabavili detalje o gradu."
+
+#~ msgid "Empty file or not in cities woeID format compatible!"
+#~ msgstr "Prazna datoteka ili nevažeći voeID za mesto ili grad!"
+
+#~ msgid ""
+#~ "Adds local temperature and forecast 24 ours and prediction up to 9 days.\n"
+#~ msgstr ""
+#~ "Daje dvadesetčetvoročasovni izveštaj i prognozu za narednih 9 dana.\n"
+
+#~ msgid ""
+#~ "NVDA+shift+w for the prediction in the current 24 hours and prediction up "
+#~ "to 9 days.\n"
+#~ msgstr "NVDA+shift+w prognoza za 24 časa i narednih 9 dana.\n"
+
+#~ msgid "Don't specify"
+#~ msgstr "Nije određeno"
 
 #~ msgid ""
 #~ "You have installed the Weather Plus add-on which is incompatible with "

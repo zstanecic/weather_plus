@@ -160,6 +160,10 @@ Um eine neue Stadt hinzuzufügen: klicken Sie auf den folgenden Eintrag:
 
 # Was ist neu: #
 
+# Version 7.7 #
+
+* Now also compatible with new nvda Alpha version.
+
 # Version 7.4 #
 
 * Ein Fehler in der Suchfunktion für die Städte wurde behoben.
@@ -273,13 +277,13 @@ Um eine neue Stadt hinzuzufügen: klicken Sie auf den folgenden Eintrag:
 
 # Änderungen in den Weather Plus-Einstellungen #
 
-* Kontrollfeld "Status des Luftdrucks ergänzen" entfernt;
+* Kontrollfeld "Status des Luftdrucks ergänzen" entfernt.
 * Zeigt den Bewölkungsgrad in Prozent an.
 * Kontrollfeld "Wert für Niederschlag ergänzen" hinzugefügt. Gibt die Menge
   in Millimeter an.
 * Kontrollkästchen "Zeigt die Wartezeit mit einem Piepton an, während Sie
   nach dem neuesten Bulletin suchen" entfernt, ist nun standardmäßig aktiv.
-* Astronomische Informationen hinzugefügt;
+* Astronomische Informationen hinzugefügt.
 * Zeit des Mondauf- und -Untergangs.
 * Neue Schaltfläche "Umbenennen" hinzugefügt, um Städte bequemer
   umzubenennen.
@@ -698,7 +702,7 @@ Um eine neue Stadt hinzuzufügen: klicken Sie auf den folgenden Eintrag:
   nacheinander vorhanden sind und der erste mit dem Befehl Strg+Umschalt+W
   erreichbar ist.
 * Die Schaltfläche "Festlegen" ist nun deaktiviert, wenn die Sound-Effekte
-  nicht installiert und aktiviert wurden.
+  nicht installiert und aktiviert wurden. 
 * Lautstärkeregler hinzugefügt. Sie können die Gesamtlautstärke und den
   zuletzt gehörten Sound-Effekt einstellen. Diese Option ist aktiviert, wenn
   die Sound-Effekte installiert und aktiviert wurden.
