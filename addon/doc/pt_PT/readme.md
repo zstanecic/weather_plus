@@ -1,7 +1,7 @@
 # Weather Plus #
 
 * Autor: Adriano Barbieri
-* NVDA compatibility: 2017.3 to 2019.3
+* NVDA compatibility: 2017.3 to 2021.2
 * Baixar: [versão estável][1]
 
 # Acerca do WEATHER PLUS: #
@@ -181,6 +181,14 @@ To add a new city: press the following item:
 --------------------------------------------------------------------------------
 
 # Novidades: (As mensagens seguintes, até ao final da tradução, são da responsabilidade do Senhor Rémy Ruiz, que as traduziu à revelia da Equipa Portuguesa do NVDA) #
+
+# Version 7.7 #
+
+* Now also compatible with new nvda Alpha version.
+
+# Version 7.4 #
+
+* Fixed a bug in a city search function.
 
 # Version 7.3 #
 * Fixed unexpected bug in case of page not found while searching for

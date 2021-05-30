@@ -160,6 +160,10 @@ Um eine neue Stadt hinzuzufügen: klicken Sie auf den folgenden Eintrag:
 
 # Was ist neu: #
 
+# Version 7.7 #
+
+* Now also compatible with new nvda Alpha version.
+
 # Version 7.4 #
 
 * Ein Fehler in der Suchfunktion für die Städte wurde behoben.
