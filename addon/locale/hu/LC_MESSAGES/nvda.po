@@ -5,17 +5,17 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Weather_Plus\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2019-06-05 20:05+0200\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Nicolai Svendsen <chojiro1990@gmail.com>\n"
+"Project-Id-Version: Weather_Plus 6.2\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2019-05-13 15:54+1000\n"
+"PO-Revision-Date: 2021-01-01 13:49+0100\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: da\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 1.8.6\n"
 
 msgid "Fahrenheit"
 msgstr "Fahrenheit"
@@ -27,1148 +27,1140 @@ msgid "Kelvin"
 msgstr "Kelvin"
 
 msgid "unknown"
-msgstr "Ukendt"
+msgstr "ismeretlen"
 
 msgid "Weather Plus &Settings"
-msgstr "Indstillinger for &Vejret Plus"
+msgstr "Időjárás-előrejelző"
 
 msgid "Show configuration items."
-msgstr "Vis konfigurationselementer."
+msgstr "Beállítások megjelenítése"
 
 msgid "Set and &manage your cities..."
-msgstr "Indstil og &administrér dine byer ..."
+msgstr "&Városok beállítása és kezelése"
 
 msgid "Displays or allows to set the current cities from a list"
-msgstr "Viser eller giver mulighed for at indstille aktuelle byer fra en liste"
+msgstr "Városok megjelenítése, vagy importálása egy listából"
 
 msgid "Set a &temporary city..."
-msgstr "Indstil en &midlertidig by..."
+msgstr "&Ideiglenes város beállítása..."
 
 msgid "Allows to set one temporary city from a list"
-msgstr "Giver mulighed for at indstille en midlertidig by fra en liste"
+msgstr "Ideiglenes város beállítása listából"
 
 msgid "&Documentation"
-msgstr "&Dokumentation"
+msgstr "&Súgó"
 
 msgid "Opens the help file for the current language"
-msgstr "Åbner hjælpefilen til det aktuelle sprog"
+msgstr "Megnyitja a súgót a jelenlegi nyelvhez"
 
 msgid "&Check for Upgrade..."
-msgstr "&Søg efter opdatering..."
+msgstr "&Frissítések keresése..."
 
 msgid "Notify if there is an upgraded version available"
-msgstr "Meddel hvis der er en opdateret version tilgængelig"
+msgstr "Figyelmeztessen, ha van új verzió"
 
 #. opens the Weather Plus settings window
 msgid "Settings"
-msgstr "Indstillinger"
+msgstr "Beállítások"
 
 msgid "Preset"
-msgstr "Forudindstilling"
+msgstr "Alapértelmezett"
 
 msgid "None"
-msgstr "Ingen"
+msgstr "Nincs megadva"
 
 msgid "Enter a City, woeId or choose one from the list, if available."
-msgstr ""
-"Indtast en by, wordID eller vælg en fra listen, hvis den er tilgængelig."
+msgstr "Írjon be egy várost vagy WoeID értéket, vagy válasszon a listából"
 
 msgid "The woeID"
-msgstr "WoeID"
+msgstr "A WoeID"
 
 msgid "assigned to"
-msgstr "tildelt "
+msgstr "Társítva"
 
 msgid "has not been preset."
-msgstr "er ikke forudindstillet."
+msgstr "nem lett beállítva alapértelmezett helynek,"
 
 msgid "Will be used in temporary mode!"
-msgstr "vil blive brugt i midlertidig tilstand!"
+msgstr "ezért ideiglenes módban lesz használva."
 
 #. offers to save the list changed
 msgid "Notice!"
-msgstr "Bemærk!"
+msgstr "Figyelem!"
 
 msgid "You have modified the list of your cities"
-msgstr "Du har ændret listen over dine byer"
+msgstr "Módosította a városok listáját"
 
 msgid "Do you want to save it?"
-msgstr "Vil du gemme den?"
+msgstr "Szeretné elmenteni?"
 
 msgid "The cities on your list are not compatible with the Yahoo API!"
-msgstr "Byerne på din liste er ikke kompatible med Yahoo API'et!"
+msgstr "A listáján szereplő városok nem kompatibilisek a Yahoo felületével!"
 
 msgid ""
 "They have to be tested and validated, you can do it from the addon settings "
 "window."
 msgstr ""
-"De skal testes og valideres, du kan gøre det fra tilføjelsens indstillinger."
+"Ellenőrizni és hitelesíteni kell őket! Ezt megteheti a bővítmény beállításai "
+"közt."
 
 msgid "Setting up a temporary city"
-msgstr "Indstiller en midlertidig by"
+msgstr "Ideiglenes város beállítása"
 
 msgid "Cities List available:"
-msgstr "Liste over byer tilgængelig:"
+msgstr "Elérhető városok"
 
 msgid "Documentation not available for the current language!"
-msgstr "Dokumentation er ikke tilgængelig for det aktuelle sprog!"
+msgstr "Nincs súgó a jelenlegi nyelven."
 
 msgid ""
 "Sorry, i can not receive data, problems with the download page, try again "
 "later please!"
 msgstr ""
-"Beklager, jeg kan ikke modtage data. Problemer med download-siden. Prøv igen "
-"senere!"
+"Nem tudok adatokat fogadni, probléma van a letöltési oldallal, próbálja meg "
+"később!"
 
 msgid ""
 "Sorry, i can not receive data, verify that your internet connection is "
 "active, or try again later!"
 msgstr ""
-"Beklager. Kan ikke hente data. Tjek venligst, at din internetforbindelse er "
-"aktiv, eller prøv i gen senere!"
+"Nem tudok adatokat fogadni, kérem ellenőrizze az internetkapcsolatot, vagy "
+"próbálja meg később."
 
 msgid "version"
-msgstr "Version"
+msgstr "Verzió"
 
 msgid "is available."
-msgstr "er tilgængelig.Ingen opdatering tilgængelig."
+msgstr "elérhető."
 
 msgid "Installed version"
-msgstr "Installeret version"
+msgstr "Telepített verzió"
 
 msgid "Do you want to download and install it?"
-msgstr "Vil du downloade og installere den?"
+msgstr "Szeretné letölteni és telepíteni?"
 
 msgid "Sorry, at the time an update is not available."
-msgstr "Ingen tilgængelig opdatering i øjeblikket."
+msgstr "Jelenleg nincs elérhető frissítés."
 
 msgid "not found!"
-msgstr "Ikke fundet!"
+msgstr "Nem található!"
 
 msgid ""
 "You need to upgrade the sound effects by reactivating the appropriate option "
 "from the settings of"
-msgstr ""
-"Du skal opgradere lydeffekterne ved at genaktivere den relevante indstilling "
-"fra indstillingerne for"
+msgstr "Frissítenie kell a hangeffekteket a beállítás újboli bekapcsolásával."
 
 msgid "But if these are already updated, then you need to update"
-msgstr "Men hvis disse allerede er opdateret, skal du opdatere"
+msgstr "Akkor is ha ezek korábban már frissítve lettek."
 
 msgid "I can not load the settings!"
-msgstr "Jeg kan ikke indlæse indstillingerne!"
+msgstr "Nem tudom betölteni a beállításokat!"
 
 msgid "I can not save the settings!"
-msgstr "Jeg kan ikke gemme indstillingerne!"
+msgstr "Nem tudom elmenteni a beállításokat!"
 
 msgid "invalid name"
-msgstr "ugyldigt navn"
+msgstr "Érvénytelen név"
 
 msgid "miles"
-msgstr "mil"
+msgstr "mérföld"
 
 #. takes the value in mmHg
 msgid "millimeters of mercury"
-msgstr "millimeter kviksølv"
+msgstr "higanymilliméter"
 
 msgid "inches of mercury"
-msgstr "tommer kviksølv"
+msgstr "higanyhüvelyk"
 
 msgid "kilometers"
-msgstr "kilometer"
+msgstr "Kilométer"
 
 msgid "millibars"
-msgstr "millibar"
+msgstr "Millibár"
 
 msgid "the weather report is currently"
-msgstr "Vejrudsigten er i øjeblikket"
+msgstr "Az időjárás"
 
 msgid "degrees"
-msgstr "grader"
+msgstr "Fok"
 
 #. adds wind information to the string
 msgid "The wind direction is from"
-msgstr "Vindretningen er "
+msgstr "A szél iránya"
 
 msgid "with speed of"
-msgstr "med hastighed på"
+msgstr "sebessége"
 
 msgid "The wind speed is"
-msgstr "Vindhastigheden er"
+msgstr "A szél sebessége"
 
 msgid "The perceived temperature is"
-msgstr "Den opfattede temperatur er"
+msgstr "A hőérzet"
 
 #. adds information on the atmosphere
 msgid "steady"
-msgstr "stabil"
+msgstr "Stagnáló"
 
 msgid "rising"
-msgstr "stigende "
+msgstr "Emelkedő"
 
 msgid "falling"
-msgstr "faldende "
+msgstr "Csökkenő"
 
 msgid "The humidity is"
-msgstr "Fugtigheden er"
+msgstr "a páratartalom"
 
 msgid "and the visibility is up to"
-msgstr "og sigtbarheden er op til"
+msgstr "és a látótávolság"
 
 msgid "The visibility is up to"
-msgstr "Sigtbarheden er op til"
+msgstr "a látótávolság"
 
 msgid "The pressure is"
-msgstr "Trykket er"
+msgstr "a légnyomás"
 
 msgid "and the state of the barometric pressure is"
-msgstr "og barometertrykket er"
+msgstr "tendenciája"
 
 msgid "The state of the barometric pressure is"
-msgstr "Status for barometertrykket er"
+msgstr "a légköri nyomás tendenciája"
 
 msgid "The sun rises at"
-msgstr "Solen står op"
+msgstr "napkelte"
 
 msgid "and sets at"
-msgstr "og går ned"
+msgstr "napnyugta"
 
 msgid "the forecast for today is"
-msgstr "Vejrudsigten for i dag er"
+msgstr "a mai előrejelzés"
 
 msgid "with a maximum temperature of"
-msgstr "med den højeste temperatur på"
+msgstr "a legmagasabb hőmérséklet"
 
 msgid "and a minimum of"
-msgstr "og den laveste temperatur på"
+msgstr "és a legalacsonyabb hőmérséklet"
 
 msgid "not available"
-msgstr "ikke tilgængelig"
+msgstr "nem érhető el"
 
 #. this does not replace the name of the city
 msgid "In"
-msgstr "I"
+msgstr " "
 
 msgid "Unnamed"
-msgstr "unavngivet"
+msgstr "Névtelen"
 
 msgid "Sorry, the woeID is not set!"
-msgstr "Beklager: WoeID er ikke indstillet!"
+msgstr "A WOEID nincs beállítva!"
 
 msgid "kilometers per hour"
-msgstr "kilometer i timen"
+msgstr "Kilométer per óra"
 
 msgid "miles per hour"
-msgstr "mil i timen"
+msgstr "Mérföld per óra"
 
 #. weather condition
 msgid "in the morning"
-msgstr "om morgenen"
+msgstr "Reggel"
 
 msgid "in the evening"
-msgstr "om aftenen "
+msgstr "Este"
 
 msgid " and "
-msgstr "og "
+msgstr " és "
 
 msgid " to "
-msgstr "til "
+msgstr " eddig "
 
 msgid "in the vicinity"
-msgstr "i omegnen "
+msgstr "a környéken"
 
 msgid "tornado"
-msgstr "tornado "
+msgstr "tornádó"
 
 msgid "tropical storm"
-msgstr "tropisk storm"
+msgstr "trópusi vihar"
 
 msgid "hurricane"
-msgstr "orkan "
+msgstr "hurrikán"
 
 msgid "severe thunderstorms"
-msgstr "kraftigt tordenvejr"
+msgstr "erős viharok"
 
 msgid "mixed rain and snow"
-msgstr "blandet regn og sne "
+msgstr "havaseső"
 
 msgid "mixed rain and hail"
-msgstr "blandet regn og hagl "
+msgstr "eső, jégeső"
 
 msgid "mixed rain and sleet"
-msgstr "blandet regn og slud"
+msgstr "havaseső záporral"
 
 msgid "mixed snow and sleet"
-msgstr "blandet sne og slud "
+msgstr "hó, havaseső"
 
 msgid "snow flurries"
-msgstr "snebyger"
+msgstr "hóförgetegek"
 
 msgid "smoke"
-msgstr "røg"
+msgstr "füst"
 
 msgid "smoky"
-msgstr "røgfyldt"
+msgstr "füstös"
 
 msgid "precipitation"
-msgstr "Nedbør "
+msgstr "csapadék"
 
 msgid "sunny intervals"
-msgstr "perioder med solskin"
+msgstr "napos időszakok"
 
 msgid "sunny period"
-msgstr "periode med solskin "
+msgstr "napsütés időtartama"
 
 msgid "light snow"
-msgstr "svagt snevejr"
+msgstr "hószállingózás"
 
 msgid "scattered snow showers"
-msgstr "spredte snebyger"
+msgstr "elszórt hózáporok"
 
 msgid "snow showers"
-msgstr "snebyger"
+msgstr "hózáporok"
 
 msgid "snow shower"
-msgstr " snebyge"
+msgstr "hózápor"
 
 msgid "snowstorm"
-msgstr "Snestorm "
+msgstr "hóvihar"
 
 msgid "snowdrift"
-msgstr "snefygning"
+msgstr "hóátfúvás"
 
 msgid "drifting snow"
-msgstr "fygesne"
+msgstr "hóátfúvás"
 
 msgid "wintry Mix"
-msgstr "blandet vintervejr"
+msgstr "havaseső"
 
 msgid "ice to rain"
-msgstr "is til regn"
+msgstr "jégeső"
 
 msgid "ice"
-msgstr "is"
+msgstr "jég"
 
 msgid "blizzard"
-msgstr "snestorm"
+msgstr "hóförgeteg"
 
 msgid "blowing snow"
-msgstr "fygesne"
+msgstr "hófúvás"
 
 msgid "snow"
-msgstr "Sne"
+msgstr "havazás"
 
 msgid "light rain with thunder"
-msgstr "let regn med torden"
+msgstr "zivatar"
 
 msgid "few showers"
-msgstr "få byger"
+msgstr "szórványos záporok"
 
 msgid "heavy showers"
-msgstr "kraftige byger"
+msgstr "heves záporok"
 
 msgid "heavy thunderstorms"
-msgstr "Kraftigt tordenvejr"
+msgstr "heves zivatarok"
 
 msgid "heavy thunderstorm"
-msgstr "Kraftigt tordenvejr "
+msgstr "heves zivatar"
 
 msgid "lightning"
-msgstr "lyn"
+msgstr "villámlás"
 
 msgid "isolated clouds"
-msgstr "spredte skyer"
+msgstr "elszigetelt felhők"
 
 msgid "partly cloudy"
-msgstr "delvist skyet"
+msgstr "közepesen felhős"
 
 msgid "partly bright"
-msgstr "delivs klart"
+msgstr "részben napos"
 
 msgid "showers early"
-msgstr "byger tidligt"
+msgstr "korai záporok"
 
 msgid "light rain"
-msgstr "svag regn"
+msgstr "gyenge eső"
 
 msgid "heavy rain"
-msgstr "kraftig regn"
+msgstr "intenzív eső"
 
 msgid "isolated showers"
-msgstr "isolerede byger"
+msgstr "elszigetelt záporok"
 
 msgid "isolated thunderstorms"
-msgstr "stedvis torden"
+msgstr "elszigetelt zivatarok"
 
 msgid "isolated thundershowers"
-msgstr "spredte tordenbyger"
+msgstr "elszigetelt zivatarok"
 
 msgid "mostly cloudy"
-msgstr "overvejende skyet"
+msgstr "erősen felhős"
 
 msgid "mostly dry"
-msgstr "overvejende tørt"
+msgstr "jobbára száraz"
 
 msgid "mostly clear"
-msgstr "overvejende klart "
+msgstr "jobbára derült"
 
 msgid "clearing"
-msgstr "klarer op"
+msgstr "derült"
 
 msgid "no rain"
-msgstr "ingen regn"
+msgstr "nincs eső"
 
 msgid "sleet"
-msgstr "slud"
+msgstr "havaseső"
 
 msgid "blowing dust"
-msgstr "flyvende støv"
+msgstr "porvihar"
 
 msgid "widespread dust"
-msgstr "udbredt støv"
+msgstr "kiterjedt porvihar"
 
 msgid "low drifting sand"
-msgstr "lavt flyvesand"
+msgstr "talajközeli homokvihar"
 
 msgid "sandstorm"
-msgstr "sandstorm"
+msgstr "homokvihar"
 
 msgid "sand storm"
-msgstr "sandstorm"
+msgstr "homok vihar"
 
 msgid "dust"
-msgstr "Støv"
+msgstr "por"
 
 msgid "sand"
-msgstr "sand"
+msgstr "homok"
 
 msgid "thundery showers"
-msgstr "byger med torden"
+msgstr "zivatarok"
 
 msgid "thundershowers"
-msgstr "tordenbyger"
+msgstr "zivatarok"
 
 msgid "scattered thunderstorms"
-msgstr "spredt tordenvejr"
+msgstr "elszórt zivatarok"
 
 msgid "scattered showers"
-msgstr "spredte byger"
+msgstr "elszórt záporok"
 
 msgid "thunderstorms"
-msgstr "tordenvejr"
+msgstr "zivatarok"
 
 msgid "thunderstorm"
-msgstr "tordenvejr"
+msgstr "zivatar"
 
 msgid "storm"
-msgstr "storm"
+msgstr "vihar"
 
 msgid "hail"
-msgstr "hagl"
+msgstr "jégeső"
 
 msgid "foggy"
-msgstr "tåget "
+msgstr "ködös"
 
 msgid "fog"
-msgstr "tåge"
+msgstr "köd"
 
 msgid "haze"
-msgstr "dis "
+msgstr "ködfátyol"
 
 msgid "mist"
-msgstr "tåge"
+msgstr "ködszitálás"
 
 msgid "clear"
-msgstr "klart"
+msgstr "derült"
 
 msgid "fair"
-msgstr "pænt "
+msgstr "derült"
 
 msgid "fine"
-msgstr "Fint "
+msgstr "derült"
 
 msgid "overcast"
-msgstr "overskyet"
+msgstr "borús"
 
 msgid "light showers"
-msgstr "lette byger"
+msgstr "gyenge záporok"
 
 msgid "light drizzle"
-msgstr "svag støvregn"
+msgstr "enyhe szitálás"
 
 msgid "freezing rain"
-msgstr "Isslag"
+msgstr "ónoseső"
 
 msgid "frequent showers"
-msgstr "hyppige byger"
+msgstr "állandó záporok"
 
 msgid "rain shower"
-msgstr "regnbyge "
+msgstr "felhőszakadás"
 
 msgid "rain"
-msgstr "regn"
+msgstr "eső"
 
 msgid "freezing drizzle"
-msgstr "frysende støvregn"
+msgstr "ónos szitálás"
 
 msgid "showers"
-msgstr "byger"
+msgstr "záporok"
 
 msgid "drizzle"
-msgstr "støvregn"
+msgstr "szitáló eső"
 
 msgid "dry"
-msgstr "tørt"
+msgstr "száraz"
 
 msgid "mild"
-msgstr "mildt"
+msgstr "enyhe"
 
 msgid "clouds"
-msgstr "skyer"
+msgstr "felhők"
 
 msgid "cloudy"
-msgstr "skyet"
+msgstr "felhős"
 
 msgid "mostly sunny"
-msgstr "Overvejende solskin"
+msgstr "jobbára napos"
 
 msgid "sunny"
-msgstr "solrigt"
+msgstr "napos"
 
 msgid "sun"
-msgstr "sol"
+msgstr "napsütés"
 
 msgid "bright"
-msgstr "lyst "
+msgstr "derült"
 
 msgid "thunder"
-msgstr "torden"
+msgstr "mennydörgés"
 
 msgid "shower"
-msgstr "byge "
+msgstr "zápor"
 
 msgid "breezy"
-msgstr "let vind"
+msgstr "szeles"
 
 msgid "blustery"
-msgstr "stormende "
+msgstr "viharos"
 
 msgid "windy"
-msgstr "blæsende "
+msgstr "szeles"
 
 msgid "wind"
-msgstr "vind"
+msgstr "szél"
 
 msgid "flurries"
-msgstr "let snefald"
+msgstr "széllökések"
 
 msgid "late"
-msgstr "sent"
+msgstr "kései"
 
 msgid "early"
-msgstr "tidligt"
+msgstr "korai"
 
 msgid "isolated"
-msgstr "isoleret"
+msgstr "elszigetelt"
 
 msgid "shallow fog"
-msgstr "lavthængende tåge"
+msgstr "sekély köd"
 
 msgid "heavy"
-msgstr "kraftig"
+msgstr "heves"
 
 msgid "cold"
-msgstr "koldt"
+msgstr "hideg"
 
 msgid "hot"
-msgstr "varmt"
+msgstr "forró"
 
 msgid "Sorry, it was not possible to load the most recent update!"
-msgstr "Beklager, det var ikke muligt at indlæse den seneste opdatering!"
+msgstr "Nem sikerült betölteni a legújabb frissítést."
 
 msgid "Please try again later."
-msgstr "Prøv venligst igen senere."
+msgstr "Próbálkozzon később."
 
 msgid "meters per second"
-msgstr "meter per sekund"
+msgstr "méter per szekumdum"
 
 msgid "Sorry, the woeID set is not valid or contains incomplete data!"
-msgstr ""
-"Beklager, men den angivne woeID er ikke gyldig eller indeholder "
-"ufuldstændige oplysninger!"
+msgstr "A WOEID érték nem teljes vagy hibás."
 
 msgid "north"
-msgstr "nord"
+msgstr "északi"
 
 msgid "north northeast"
-msgstr "nord nordøst"
+msgstr "észak-északkeleti"
 
 msgid "northeast"
-msgstr "nordøst"
+msgstr "északkeleti"
 
 msgid "east northeast"
-msgstr "øst nordøst"
+msgstr "kelet-északkeleti"
 
 msgid "east"
-msgstr "øst"
+msgstr "keleti"
 
 msgid "east southeast"
-msgstr "øst sydøst"
+msgstr "kelet-délkeleti"
 
 msgid "southeast"
-msgstr "sydøst"
+msgstr "délkeleti"
 
 msgid "south southeast"
-msgstr "syd sydøst"
+msgstr "dél-délkeleti"
 
 msgid "south"
-msgstr "syd"
+msgstr "déli"
 
 msgid "south southwest"
-msgstr "syd sydvest"
+msgstr "dél-délnyugati"
 
 msgid "southwest"
-msgstr "sydvest"
+msgstr "délnyugati"
 
 msgid "west southwest"
-msgstr "vest sydvest"
+msgstr "nyugat-délnyugati"
 
 msgid "west"
-msgstr "vest"
+msgstr "nyugati"
 
 msgid "west northwest"
-msgstr "vest nordvest"
+msgstr "nyugat-északnyugati"
 
 msgid "northwest"
-msgstr "nord Vest"
+msgstr "északnyugati"
 
 msgid "north northwest"
-msgstr "nord nordvest"
+msgstr "észak-északnyugati"
 
 msgid ""
 "Is not working properly, contains incomplete data or has been removed from "
 "the database of"
 msgstr ""
-"Fungerer ikke korrekt, indeholder ufuldstændige oplysninger eller er blevet "
-"fjernet fra databasen"
+"nem működik megfelelően, hibás adatokat tartalmaz vagy el lett távolítva az "
+"adatbázisból"
 
 msgid "It could be a temporary problem and you may wait a while '..."
-msgstr ""
-"Det kan være et midlertidigt problem, og du kan vente et stykke tid ..."
+msgstr "Ideiglenes hiba történhetett, várjon néhány percet '..."
 
 msgid "Do you want to delete it from your list?"
-msgstr "Vil du slette den fra din liste?"
+msgstr "Szeretné törölni a listáról?"
 
 msgid "Provides the current temperature and weather conditions."
-msgstr "Oplyser de aktuelle temperatur- og vejrforhold."
+msgstr "Hőmérséklet és időjárási viszonyok lekérdezése"
 
 msgid ""
 "Provides the weather forecast and current temperature for 24 hours and the "
 "next 9 days."
-msgstr ""
-"Oplyser vejrudsigten og nuværende temperatur i 24 timer og for de næste 9 "
-"dage."
+msgstr "előrejelzés a következő 24 órára és a következő napokra"
 
 msgid "Sorry, no list available!"
-msgstr "Beklager, ingen liste tilgængelig!"
+msgstr "Nincs elérhető lista!"
 
 msgid "Allows you to set a temporary city."
-msgstr "Tillader dig at angive en midlertidig by."
+msgstr "Ideiglenes város kiválasztása"
 
 msgid "Scale of temperature measurement set into"
-msgstr "Måling af temperaturmåling indstillet i"
+msgstr "Hőmérsékleti skála beállítva "
 
 msgid "Allows you to set a temporary scale of temperature mesurement."
-msgstr "Lader dig indstille den midlertidige temperaturenhed"
+msgstr "Ideiglenes hőmérsékleti skála beállítása"
 
 msgid "at"
-msgstr "kl."
+msgstr " "
 
 msgid "Last update of the current weather report"
-msgstr "Sidste opdatering af den aktuelle vejrudsigt"
+msgstr "Az időjárási adatok utolsó frissítése: "
 
 msgid "Announces the date of the last update of the weather report."
-msgstr "Anoncerer datoen for den sidste opdatering af vejrudsigten."
+msgstr "Az időjárási adatok utolsó frissítésének lekérdezése"
 
 msgid "Open the Weather Plus settings dialog."
-msgstr "Åbn dialogboksen Vejret Plus-indstillinger."
+msgstr "A bővítmény beállításai"
 
 msgid ""
 "f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
 "duration Weather Forecast, f5: volume controls."
 msgstr ""
-"F1: hjælp til at placere, F2: sidste TAB-valg, F3: liste og redigeringsboks, "
-"F4: Kontrollen til perioden for vejrudsigten, F5: lydstyrkekontrol."
+"F1: Súgó, F2: utolsó kijelölt lapfül, F3: Lista és szerkesztőmező, F4: "
+"Előrejelzés napok száma, F5: Hangerő."
 
 msgid ""
 "f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
 "duration Weather Forecast."
 msgstr ""
-"F1: hjælp til at placere, F2: sidste TAB-valg, F3: liste og redigeringsboks, "
-"F4: Kontrollen til perioden for vejrudsigten."
+"F1: Súgó, F2: utolsó kijelölt lapfül, F3: Lista és szerkesztőmező, F4: "
+"Előrejelzés napok száma."
 
 msgid "Test"
-msgstr "Test"
+msgstr "Ellenőrzés"
 
 msgid "Details"
-msgstr "Detaljer"
+msgstr "Részletek"
 
 msgid "Define"
-msgstr "Definér"
+msgstr "definiálás"
 
 msgid "Add"
-msgstr "Tilføj"
+msgstr "Hozzáadás"
 
 msgid "Remove"
-msgstr "Fjern"
+msgstr "Eltávolítás"
 
 msgid "Rename"
-msgstr "Omdøb"
+msgstr "Átnevezés"
 
 msgid "&Import new cities..."
-msgstr "&Importér nye byer ..."
+msgstr "Városok importálása..."
 
 msgid "&Export your cities..."
-msgstr "&Eksportér dine byer ..."
+msgstr "Városok exportálása..."
 
 msgid "Scale of temperature measurement:"
-msgstr "Måleenhed for temperatur:"
+msgstr "hőmérsékleti skála:"
 
 msgid "Degrees shown as:"
-msgstr "Grader vist som:"
+msgstr "mértékegység megjelenítése:"
 
 msgid "C - F - K"
 msgstr "C - F - K"
 
 msgid "Don't specify"
-msgstr "Angiv ikke"
+msgstr "ne jelenítse meg"
 
 msgid "Weather Forecasts up to days:"
-msgstr "Vejrudsigt op til dage:"
+msgstr "Előrejelzett napok száma"
 
 #. check boxes
 msgid ""
 "&Copy the weather report and weather forecast, including city details to "
 "clipboard"
 msgstr ""
-"&Kopier vejrrapporten og vejrudsigten, herunder byoplysninger til "
-"udklipsholder"
+"Időjárás-előrejelzés másolása a vágólapra, a város részletes adataival együtt"
 
 msgid "Enable &audio effects (only for the current weather conditions)"
-msgstr "Aktivér &lydeffekter (kun for de aktuelle vejrforhold)"
+msgstr "&Hangeffektek az időjárási viszonyokhoz"
 
 msgid "Use only &weather effects"
-msgstr "Brug kun &vejreffekter"
+msgstr "Csak időjárási hangok"
 
 msgid "General audio volume"
-msgstr "Generel lydstyrke"
+msgstr "Általános hangerő"
 
 msgid "Current audio volume"
-msgstr "Aktuelle lydstyrke"
+msgstr "jelenlegi hangerő"
 
 #. check boxes
 msgid "Enable &help buttons in the settings window"
-msgstr "Aktivér &hjælpeknapper i indstillingsvinduet"
+msgstr "Súgószövegek a gombokon"
 
+#, fuzzy
 msgid "Read &wind information"
-msgstr "Læs &vindinformationer"
+msgstr "&Szélviszonyok"
 
 msgid "Add wind directi&on"
-msgstr "Oplys vind&retning"
+msgstr "Szél&irány"
 
 msgid "Add wi&nd speed"
-msgstr "Oplys vind&hastighed"
+msgstr "Szélsebesség"
 
 msgid "Add speed in &meters per second of the wind"
-msgstr "Oplys vindhastigheden i &meter per sekund"
+msgstr "Szélsebesség méter per szekundumban"
 
 msgid "Add perceived &temperature"
-msgstr "Tilføj opfattet &temperatur"
+msgstr "Hőérzet"
 
+#, fuzzy
 msgid "&Read atmospherical information"
-msgstr "Oplys &atmosfæriske informationer"
+msgstr "Légköri viszonyok"
 
 msgid "Add humidity va&lue"
-msgstr "Oplys &fugtighed"
+msgstr "Páratartalom"
 
 msgid "Add &visibility value"
-msgstr "Oplys &sigtbarhed"
+msgstr "Látótávolság"
 
 msgid "Add atmospheric &pressure value"
-msgstr "Oplys atmosfærisk &trykværdi"
+msgstr "Légnyomás"
 
 msgid "Indicates the atmospheric pressure in millimeters of mercur&y (mmHg)"
-msgstr "Angiver det atmosfæriske tryk i millimeter &kviksølv (mmHg)"
+msgstr "Légnyomás higanymilliméterben (mmHg)"
 
 msgid "Add status of &barometric pressure"
-msgstr "Tilføj status for &barometrisk tryk"
+msgstr "légköri nyomás tendenciája"
 
+#, fuzzy
 msgid "Read a&stronomical information"
-msgstr "Oplys &astronomisk informationer"
+msgstr "Csillagászati információk"
 
 msgid "Enable reading of the hours in &24-hour format"
-msgstr "Aktivér læsning af timerne i &fireogtyve-timers format"
+msgstr "&Huszonnégy órás formátum"
 
 msgid "Use the comma to separate decimals, example (4,&15)"
-msgstr "Brug komma til at adskille decimaler, eksempel (4,&15)"
+msgstr "Tizedesvessző használata pont helyett, például (4,15)"
 
 msgid "Check for &upgrade"
-msgstr "Søg  &opdatér"
+msgstr "&Frissítések keresése"
 
 msgid ""
 "Testing the validity of city woeID entry and find the name of city assigned, "
 "or viceversa."
 msgstr ""
-"Tester gyldigheden for byens woeID element og finder det tildelte bynavn "
-"eller omvendt."
+"Ellenőrzi a megadott WOEID érték vagy városnév érvényességét az adatbázisban."
 
 msgid "Displays information on the current city."
-msgstr "Viser oplysninger om den aktuelle by."
+msgstr "Részleteket jelenít meg a jelenlegi városról."
 
 msgid "Allows you to define the area, in order to adapt the sound effects."
-msgstr ""
-"Giver dig mulighed for at definere området for at tilpasse lydeffekterne."
+msgstr "Megadható a régió típusa a hangeffektek hozzárendeléséhez."
 
 msgid "Add the current city into your list."
-msgstr "Tilføj den aktuele by til din liste."
+msgstr "Hozzáadja a jelenlegi várost a listához."
 
 msgid ""
 "Presets the current city as the default, will be used every time you restart "
 "the plugin."
 msgstr ""
-"Forudindstiller den aktuelle by som standard. Denne vil blive brugt hver "
-"gang du genstarter tilføjelsen."
+"Beállítja a jelenlegi várost alapértelmezett helyként, mindig ez fog "
+"megjelenni, amikor a bővítmény elindul."
 
 msgid "Delete  the current city from your list."
-msgstr "Slet den aktuel by fra din liste."
+msgstr "Eltávolítja a jelenlegi várost a listáról."
 
 msgid "Rename the current city."
-msgstr "Omdøb den aktuel by."
+msgstr "Átnevezi a jelenlegi várost"
 
 msgid ""
 "Permits to incorporate in your list new cities importing them from another "
 "list with the extension *.zipcodes; you can select the city you want to "
 "import, by turning on the check box associated."
 msgstr ""
-"Denne indstilling lader dig importere en liste over byer fra filer hvis "
-"filtypenavn er *.zipcode; Du kan vælge hvilke byer der skal importeres ved "
-"at benytte den tilsvarende boks."
+"Új városokat adhat hozzá *.zipcodes kiterjesztésű fájlokból. Csak azok a "
+"városok kerülnek fel a saját városok listájára, amiknél bejelöli a megfelelő "
+"jelölőnégyzetet."
 
 msgid "Permits to save your list of cities in a specified path."
-msgstr "Dette lader dig gemme din liste over byer på en bestemt sti."
+msgstr "Elmenti a városlistát egy megadott fájlba."
 
 msgid ""
 "You can also indicate how to proceed by prefixing the following commands"
 msgstr ""
-"Det er også muligt at angive, hvordan der skal fortsættes, ved at sætte "
-"følgende kommandoer foran"
+"Az alábbi paraméterek megadásával segítheti a listán megadott adatok "
+"feldolgozását."
 
 msgid "Direct (the Recursive cities they will not appear), by typing D:City"
-msgstr "Direkte (de underliggende byer fremkommer ikke), ved at skrive D:By"
+msgstr "Közvetlenül (az ismétlődő városok nem jelennek meg) D:City"
 
 msgid "Geographic coordinates, by typing G:City"
-msgstr "Geografiske koordinater, ved at skrive G:By"
+msgstr "Földrajzi koordinátákkal G:City"
 
 msgid "Postal code, by typing P:City"
-msgstr "Postnummer, ved at skrive P:By"
+msgstr "Irányítószámmal P:City"
 
 msgid "Text string, by typing T:City"
-msgstr "Tekststreng, ved at skrive T:By"
+msgstr "Szövegrésszel T:City"
 
 msgid ""
 "The city can be preceded by the region and / or state, separated by a comma "
 "or space"
 msgstr ""
-"Foran byen kan man angive regionen og / eller staten adskilt enten med et "
-"komma eller mellemrum"
+"A várost megelőzheti a régió és/vagy az állam vesszővel vagy szóközzel "
+"elválasztva"
 
 msgid "Australia, Queensland, Cona Creek"
 msgstr "Australia, Queensland, Cona Creek"
 
 msgid "You can enter or search for a city"
-msgstr "Du kan indtaste eller søge efter en by"
+msgstr "Városokat az alábbi módokon kereshet"
 
 msgid "By city woeID: 715399"
-msgstr "Efter byens woeID: 715399"
+msgstr "A város WOEID kódja alapján: 715399"
 
 msgid "By only city name: Ferrara"
-msgstr "Kun efter bynavn: Ferrara"
+msgstr "Csak városnév alapján: Ferrara"
 
 msgid "By state or region and city name: Emilia Romagna Ferrara"
-msgstr "Efter stat eller region og bynavn: : Emilia Romagna Ferrara"
+msgstr "Állam, régió, városnév alapján: Emilia Romagna Ferrara"
 
 msgid "By city name and country: Ferrara,it"
-msgstr "Efter bynavn og land: Ferrara,it"
+msgstr "Város és országnév alapján: Ferrara,it"
 
 msgid "By postal code: 44100,it"
-msgstr "Ved postnummer: 44100,it"
+msgstr "Irányítószám alapján: 44100,it"
 
 msgid "By geographic coordinates: latitude, longitude"
-msgstr "Efter geografiske koordinater: breddegrad, længdegrad"
+msgstr "Földrajzi koordináták alapján: Hosszúság, Szélesség"
 
 msgid "If the city is not found"
-msgstr "Hvis byen ikke findes"
+msgstr "Ha nem található a város az adatbázisban"
 
 msgid "Try with or without the country of origin"
-msgstr "Prøv med eller uden oprindelsesland"
+msgstr "Próbálja meg az ország megadásával és anélkül"
 
 msgid "Try to merge the name with hyphens, or separate it with spaces"
-msgstr ""
-"Prøv at opdele navnet med bindestreger eller adskille det med mellemrum"
+msgstr "Próbálja meg a nevet kötőjellel vagy szóközzel elválasztva"
 
 msgid "Try deleting apostrophes"
-msgstr "Prøv at slette apostrofer"
+msgstr "Adja meg a nevet aposztrófok nélkül."
 
 msgid "Try changing the vowels accented with normal vowels"
-msgstr ""
-"Prøv at erstat accentueret vokaler (f.eks. é) med normale vokaler (f.eks. e)."
+msgstr "Cserélje le az ékezetes betűket ékezet nélküliekre."
 
 msgid "Try to change in English some parts"
-msgstr "Prøv at ændre nogle dele til engelsk"
+msgstr "Adja meg angolul az ország vagy régió nevét."
 
 msgid "Try with a closest location"
-msgstr "Prøv med den nærmeste placering"
+msgstr "Keressen egy közeli helyet."
 
 msgid "Help placing"
-msgstr "Hjælp med at placere"
+msgstr "Segítség a hely megadásához"
 
 msgid "No sound effect in memory!"
-msgstr "Ingen lydeffekt i hukommelsen!"
+msgstr "Nincs hang betöltve a memóriába!"
 
 msgid "I can't reproduce the sound."
-msgstr "Jeg kan ikke gengive lyden."
+msgstr "Nem tudom lejátszani a hangot."
 
 msgid "not found! Press F1 for help on entering data."
-msgstr "ikke fundet! Tryk på F1 for at få hjælp til at indtaste data."
+msgstr ""
+"Nem található! Az F1 billentyűvel segítséget kaphat az adatok megadásához."
 
 msgid "Is not working properly or has been removed from the database of"
-msgstr "Fungerer ikke korrekt eller er blevet fjernet fra databasen af"
+msgstr "Nem működik, vagy el lett távolítva az adatbázisból"
 
 msgid "Is no longer valid!"
-msgstr "er ikke længere gyldig!"
+msgstr "Már nem érvényes!"
 
 msgid "This option requires the installation of some audio effects"
-msgstr "Denne indstilling kræver installation af nogle lydeffekter"
+msgstr "Ez a beállítás hangeffektek telepítését igényli."
 
 msgid "Do you want to install them?"
-msgstr "Vil du installere dem?"
+msgstr "Szeretné feltelepíteni őket?"
 
 msgid "The audio effects are installed!"
-msgstr "Lyd effekterne er installeret!"
+msgstr "A hangeffektek már telepítve vannak."
 
 msgid "Would you like to update?"
-msgstr "Ønsker du at opdatere?"
+msgstr "Szeretné frissíteni?"
 
 msgid "Or do you want to uninstall them?"
-msgstr "eller vil du afinstallere dem?"
+msgstr "Vagy inkább eltávolítaná őket?"
 
 msgid "Are you sure you want to uninstall the sound effects?"
-msgstr "Er du sikker på, at du vil afinstallere lydeffekterne?"
+msgstr "Biztos, hogy eltávolítja a hangeffekteket?"
 
 msgid "Update in progress"
-msgstr "Opdatering i gang"
+msgstr "Frissítés folyamatban"
 
 msgid "Installation in progress"
-msgstr "Installation i gang"
+msgstr "Telepítés folyamatban"
 
 msgid "Please wait..."
-msgstr "Vent venligst..."
+msgstr "Kérem várjon..."
 
 #. Installation Complete
 msgid "The installation of audio effects has been completed successfully!"
-msgstr "Installationen af lydeffekter er blevet gennemført med succes!"
+msgstr "A hangefektek telepítése sikeresen befejeződött."
 
 msgid "Adding folder:"
-msgstr "Tilføjer mappe:"
+msgstr "Mappa hozzáadása:"
 
 msgid "The upgrade of audio effects has been completed successfully!"
-msgstr "Opdateringen af lydeffekter er blevet gennemført med succes!"
+msgstr "A hangok frissítése sikeresen megtörtént!"
 
 msgid "These sound effects are subject to change by the author."
-msgstr "Disse lydeffekter kan ændres af forfatteren."
+msgstr "A hangok változtatásának jogát a szerző fenntartja."
 
 msgid "Disable and re-enable this option in order to update or uninstall them."
 msgstr ""
-"Deaktiver og genaktiver denne indstilling for at opdatere eller afinstallere "
-"dem."
+"Kapcsolja ki majd aktiválja újra a beállítást, hogy eltávolítsa, telepítse, "
+"vagy frissítse őket."
 
 msgid "Verify that your internet connection is active, or try again later."
-msgstr "Bekræft, at din internetforbindelse er aktiv, eller prøv igen senere."
+msgstr "Ellenőrizze, hogy van-e internetkapcsolat, és próbálja újra."
 
 msgid "File corrupted or not available!"
-msgstr "Fil beskadiget eller ikke tilgængelig!"
+msgstr "a Fájl sérült vagy nem érhető el!"
 
 msgid "Sorry, i could not complete the installation of the sound effects!"
-msgstr "Beklager, men jeg kunne ikke fuldføre installationen af lydeffekterne!"
+msgstr "A hangok telepítését nem tudtam befejezni!"
 
 msgid "Installation Error!"
-msgstr "Installationsfejl!"
+msgstr "Telepítési hiba!"
 
 msgid ""
 "The details of this city are not in the database and so I added them to the "
 "list. Try again!"
 msgstr ""
-"Detaljerne for denne by findes ikke i databasen, så de er føjet til listen. "
-"Prøv igen!"
+"A város részletes adatai nincsenek az adatbázisban, így adtam hozzá a "
+"listához. Próbálja meg később."
 
 msgid "Cannot identify your location, due to insufficient data."
-msgstr "Kan ikke identificere din placering på grund af utilstrækkelige data."
+msgstr "Nem lehet a helyet meghatározni, az adatok nem megfelelőek."
 
 msgid "Details of"
-msgstr "Detaljer for"
+msgstr "Részletek"
 
 msgid "Place"
-msgstr "Sted"
+msgstr "Hely"
 
 msgid "Current local time"
-msgstr "Nuværende lokal tid"
+msgstr "Helyi idő"
 
 msgid "Degrees latitude"
-msgstr "Grader breddegrad"
+msgstr "Szélességi fok"
 
 msgid "Degrees longitude"
-msgstr "Grader længdegrad"
+msgstr "Hosszúsági fok"
 
 msgid "Elevation above sea level"
-msgstr "Højde over havets overflade"
+msgstr "Tengerszint feletti magasság"
 
 msgid "meters"
-msgstr "meter"
+msgstr "méter"
 
 msgid "Define the area for"
-msgstr "Definér området for"
+msgstr "A környék..."
 
 msgid "Hinterland"
-msgstr "Hinterland"
+msgstr "Hátország"
 
 msgid "Maritime area"
-msgstr "Søfartsområde"
+msgstr "Tengerpart"
 
 msgid "Desert zone"
-msgstr "Ørkenzone"
+msgstr "Sivatag"
 
 msgid "Arctic zone"
-msgstr "Arktiske zone"
+msgstr "Sarkvidék"
 
 msgid "Mountain zone"
-msgstr "Bjergzone"
+msgstr "Hegyvidék"
 
 msgid "Enter new name."
-msgstr "Indtast nyt navn:"
+msgstr "Adjon meg új nevet."
 
 msgid "it can't be used because it already exists!"
-msgstr "Denne indtastning kan ikke bruges, fordi den allerede eksisterer!"
+msgstr "Nem használható, mert már létezik ilyen!"
 
 msgid "is correct"
-msgstr "er korrekt"
+msgstr "Helyes"
 
 msgid "But the name"
-msgstr "Men navnet"
+msgstr "De a név"
 
 msgid "already exists"
-msgstr "findes allerede"
+msgstr "Már létezik"
 
 msgid "You have to change it!"
-msgstr "Du skal ændre det!"
+msgstr "Meg kell változtatni"
 
 msgid "The city proper is"
-msgstr "Selve byen er "
+msgstr "A város helyes neve"
 
 msgid "Want to use the suggested name?"
-msgstr "Vil du bruge det foreslåede navn?"
+msgstr "Szeretné használni a javasolt nevet?"
 
 msgid "Import cities"
-msgstr "Importér byer"
+msgstr "Városok importálása"
 
 msgid "Do you want to replace your list with this?"
-msgstr "Vil du erstatte din liste med denne?"
+msgstr "Szeretné ezzel lecserélni a listáját?"
 
 msgid "If you select yes, your list will be completely replaced."
-msgstr "Hvis du vælger ja, vil din liste blive helt erstattet."
+msgstr "Ha az igent választja, a listája teljesen kicserélődik."
 
 msgid "If you select no, the new cities will be added to your list."
-msgstr "Hvis du vælger nej, tilføjes de nye byer til din liste."
+msgstr "Ha a nemet, az új városok hozzá lesznek adva a listájához."
 
 msgid "Select import mode"
-msgstr "Vælg importtilstand"
+msgstr "Importálási mód kiválasztása"
 
 msgid "File contents"
-msgstr "Indholdet af filen"
+msgstr "fájl tartalma"
 
 msgid "cities"
-msgstr "byer"
+msgstr "városok"
 
 msgid "Activate the check boxes of the cities you want to import."
-msgstr "Aktivér check boxene for de byer, du vil importere."
+msgstr "Jelölje be az importálni kívánt városok jelölőnégyzeteit."
 
 msgid "Importing cities in progress"
-msgstr "I gang med at importerer byer"
+msgstr "A városok importálása folyamatban van"
 
 msgid "Were added"
-msgstr "blev tilføjet"
+msgstr "Hozzáadtam"
 
 msgid "new cities to the list"
-msgstr "nye byer til listen"
+msgstr "Új városokat a listához"
 
 msgid "Have been ignored because existing"
-msgstr "er ignoreret fordi eksisterende"
+msgstr "Kihagytam, mert már létezik"
 
 msgid "Content of imported list"
-msgstr "Indholdet af den iporterede liste"
+msgstr "Az importált lista tartalma"
 
 msgid "selected by the user"
-msgstr "valgt af brugeren"
+msgstr "A felhasználó kijelölései"
 
 msgid "Import finished"
-msgstr "Importeringen er færdig"
+msgstr "Az importálás befejeződött"
 
 msgid "A copy of"
-msgstr "En kopi af"
+msgstr "másolatát"
 
 msgid "It will be exported"
-msgstr "Denne vil blive eksporteret"
+msgstr "Exportálni fogom kijelölve"
 
 msgid "But it does not yet contain the changes you just made the list!"
-msgstr "men den indeholder ikke de ændringer, du lige har lavet i listen!"
+msgstr "de Nem tartalmazza a listáján mostanában végzett változtatásokat"
 
 msgid "I proceed?"
-msgstr "jeg fortsætte?"
+msgstr "Folytassam?"
 
 msgid "Export cities"
-msgstr "Eksportér byer"
+msgstr "Városok exportálása"
 
 msgid "You can not export the same file at the same path!"
-msgstr "Du kan ikke eksportere den samme fil til den samme sti!"
+msgstr "Ugyanazt a fájlt nem mentheti ugyanabba a mappába!"
 
 msgid "january"
-msgstr "januar"
+msgstr "január"
 
 msgid "february"
-msgstr "februar"
+msgstr "február"
 
 msgid "march"
-msgstr "marts"
+msgstr "március"
 
 msgid "april"
-msgstr "april"
+msgstr "április"
 
 msgid "may"
-msgstr "maj"
+msgstr "május"
 
 msgid "june"
-msgstr "juni"
+msgstr "június"
 
 msgid "july"
-msgstr "juli"
+msgstr "július"
 
 msgid "august"
-msgstr "august"
+msgstr "augusztus"
 
 msgid "september"
-msgstr "september"
+msgstr "szeptember"
 
 msgid "october"
-msgstr "oktober"
+msgstr "október"
 
 msgid "november"
 msgstr "november"
@@ -1177,182 +1169,179 @@ msgid "december"
 msgstr "december"
 
 msgid "Monday"
-msgstr "Mandag"
+msgstr "Hétfő"
 
 msgid "Tuesday"
-msgstr "Tirsdag"
+msgstr "Kedd"
 
 msgid "Wednesday"
-msgstr "Onsdag"
+msgstr "Szerda"
 
 msgid "Thursday"
-msgstr "Torsdag"
+msgstr "Csütörtök"
 
 msgid "Friday"
-msgstr "Fredag"
+msgstr "Péntek"
 
 msgid "Saturday"
-msgstr "Lørdag"
+msgstr "Szombat"
 
 msgid "Sunday"
-msgstr "Søndag"
+msgstr "Vasárnap"
 
 #, python-format
 msgid "It was not possible find the acronym of %s!"
-msgstr "Det var ikke muligt at finde akronymet for %s!"
+msgstr "Nem található  %s rövidítése!"
 
 msgid "This does not allow to get the city details."
-msgstr "Dette får ikke detaljerne i byen."
+msgstr "Nem lehetséges a város részleteinek megjelenítése"
 
 msgid ""
 "Please report this to the author so he can add this country in database."
 msgstr ""
-"Giv venligst forfatteren besked om dette, så landet kan blive føjet til "
-"databasen."
+"Kérem jelezze a fejlesztőnek, hogy hozzáadhassa ezt az országot az "
+"adatbázishoz."
 
 #, python-format
 msgid "Send an email to %s"
-msgstr "Send en email til %s"
+msgstr "E-mail küldése a %s címre."
 
 msgid "With  object the line below, thanks."
-msgstr "Med linjen nedenunder i emnefeltet. Tak."
+msgstr "tárgyként az alábbi sort adja meg, köszönöm."
 
 msgid "Downloaded"
-msgstr "Hentet"
+msgstr "Letöltve"
 
 msgid "of"
-msgstr "af"
+msgstr " "
 
 msgid "Find..."
-msgstr "Finde..."
+msgstr "Keresés..."
 
 msgid "Find next"
-msgstr "Find næste"
+msgstr "Következő keresése"
 
 msgid "Find previous"
-msgstr "Find forrige"
+msgstr "Előző keresése"
 
 msgid "Empty file or not in cities woeID format compatible!"
-msgstr "Tøm fil eller ikke i byens woeID-kompatible format!"
+msgstr "Üres fájl, vagy nem kompatibilis a woeID formátummal."
 
 msgid "Be an error has occurred."
-msgstr "En fejl er opstået."
+msgstr "Hiba történt."
 
 msgid "See the log for more information."
-msgstr "Se i loggen for yderligere information."
+msgstr "Tekintse meg a naplót a részletekért."
 
 msgid "Error: failure writing file!"
-msgstr "Fejl: Fejl under filskrivning!"
+msgstr "Hiba: A fájl írásvédett."
 
 msgid "occurrences found"
-msgstr "forekomster fundet"
+msgstr "A következők már megtalálhatók"
 
 msgid "for"
-msgstr "for"
+msgstr " "
 
 msgid "Choose a city."
-msgstr "Vælg en by:"
+msgstr "Válasszon ki egy várost."
 
 msgid "List of availables Cities"
-msgstr "liste over tilgængelige byer"
+msgstr "Választható városok"
 
 msgid "Do not show this message again!"
-msgstr "Vis ikke denne besked igen"
+msgstr "Ne mutassa ismét ezt az üzenetet!"
 
 msgid "&Install..."
-msgstr "&Installér..."
+msgstr "&Telepítés..."
 
 msgid "Upd&ate..."
-msgstr "&Opdatér"
+msgstr "&Frissítés..."
 
 msgid "&Close"
-msgstr "&Luk"
+msgstr "&Bezárás"
 
 msgid "&Uninstall..."
-msgstr "&Afinstallér..."
+msgstr "&Eltávolítás..."
 
 msgid "Type the search string"
-msgstr "Indtast søgestrengen"
+msgstr "Írja be a keresőszót"
 
 msgid "Find"
-msgstr "Find"
+msgstr "Keresés"
 
 msgid "next"
-msgstr "Næste"
+msgstr "következő"
 
 msgid "previous"
-msgstr "Forrige"
+msgstr "előző"
 
 msgid "No results next for"
-msgstr "Ingen resultater fremad for"
+msgstr "nincs következő találat"
 
 msgid "No previous results for"
-msgstr "Ingen resultater bagud for"
+msgstr "nincs előző találat"
 
 msgid "&Select all"
-msgstr "&Vælg alle"
+msgstr "&Összes kijelölése"
 
 msgid "&Deselect all"
-msgstr "&Fravælg alle"
+msgstr "&kijelölés megszűntetése"
 
 msgid "not checked"
-msgstr "ikke markeret"
+msgstr "nincs bejelölve"
 
 msgid "checked"
-msgstr "markeret"
+msgstr "bejelölve"
 
 msgid "check box"
-msgstr "check box"
+msgstr "jelölőnégyzet"
 
 msgid "check boxes checked"
-msgstr "check boxe markeret"
+msgstr "jelölőnégyzet bejelölve"
 
 msgid "check boxes not checked"
-msgstr "checkboxe ikke markeret"
+msgstr "jelölőnégyzet nincs bejelölve"
 
 msgid "Saving in progress"
-msgstr "I gang med at gemme"
+msgstr "Mentés folyamatban"
 
 msgid "Download canceled."
-msgstr "Download annulleret."
+msgstr "Letöltés megszakítva."
 
 msgid "&Copy to clipboard"
-msgstr "&Kopiér til udklipsholder"
+msgstr "&Másolás a vágólapra"
 
 msgid ""
 "Adds local temperature and forecast 24 ours and prediction up to 9 days.\n"
-msgstr ""
-"Tilføjer lokal temperatur og vejrudsigt 24 timer frem og prognose op til 9 "
-"dage frem.\n"
+msgstr "helyi hőmérséklet, 24 órás és többnapos előrejelzés lekérdezése.\n"
 
 msgid "NVDA+w for the current bulletin.\n"
-msgstr "NVDA+w for den aktuelle melding.\n"
+msgstr "NVDA+w: Aktuális hőmérséklet és időjárási viszonyok lekérdezése.\n"
 
 msgid ""
 "NVDA+shift+w for the prediction in the current 24 hours and prediction up to "
 "9 days.\n"
 msgstr ""
-"NVDA+shift+w for prognosen for de næste 24 timer og prognosen op til 9 dage "
-"frem.\n"
+"NVDA+Shift+w: 24 órás időjárás-előrejelzés és a beállítás szerinti többnapos "
+"előrejelzés, maximum 9 napos.\n"
 
 msgid "NVDA+shift+control+w for quickly enter a temporary city.\n"
-msgstr "NVDA+shift+control+w for hurtigt at indtaste en midlertidig by.\n"
+msgstr "NVDA+Shift+Ctrl+w: ideiglenes város beálítása\n"
 
 msgid "NVDA + shift + control + alt + w for open the Weather Plus settings.\n"
-msgstr ""
-"NVDA + shift + control + alt + w for at åbne indstillingerne i Vejret Plus.\n"
+msgstr "NVDA+shift+ctrl+alt+w: Az időjárás-előrejelző beállításai\n"
 
 msgid ""
 "NVDA+alt+w announces the date of the last update of the weather report.\n"
 msgstr ""
-"NVDA+alt+w Anoncerer datoen for den sidste opdatering af vejrudsigten.\n"
+"NVDA+Alt+w: megadja, hogy mikor frissültek legutóbb az időjárási adatok.\n"
 
 msgid "Shift+control+w alternates between Fahrenheit, Celsius and Kelvin.\n"
-msgstr "Shift+control+w skifter imellem Fahrenheit, Celsius og Kelvin.\n"
+msgstr ""
+"Ctrl+Shift+w: Váltás a hőmérsékleti skálák között (Fahrenheit, Celsius és "
+"Kelvin).\n"
 
 msgid ""
 "For other instructions, you can also press Add-on Help button in Add-ons "
 "manager."
-msgstr ""
-"Du kan også finde yderligere instruktioner ved at trykke knappen Hjælp til "
-"tilføjelsesprogram i værktøjet Administrér tilføjelsesprogrammer."
+msgstr "További információért nyomja meg a Súgó gombot a bővítménykezelőben."

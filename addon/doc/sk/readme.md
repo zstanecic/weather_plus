@@ -1,7 +1,7 @@
 # Počasie Plus #
 
 * Autor: Adriano Barbieri
-* Funguje s NVDA od verzie 2021.2
+* Funguje s NVDA od verzie 2017.3
 * Stiahnuť: [Stabilnú verziu] [1]
 
 # O doplnku #
@@ -122,10 +122,6 @@ Nové mesto na sledovanie pridáte nasledovne:
 --------------------------------------------------------------------------------
 
 # Novinky #
-
-# Version 7.7 #
-
-* Now also compatible with new nvda Alpha version.
 
 # Verzia 7.4 #
 
