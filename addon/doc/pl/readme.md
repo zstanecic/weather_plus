@@ -1,7 +1,7 @@
 # Weather Plus #
 
 * Autor: Adriano Barbieri
-* Zgodność z wersjami NVDA: 2017.3 to 2021.2
+* Zgodność z wersjami NVDA: 2017.3 to 2019.3
 * Pobierz: [Wersja stabilna][1]
 
 # O Weather Plus: #
@@ -295,14 +295,6 @@ Ci o zmianach na liście i umożliwi jej zapisanie.
 --------------------------------------------------------------------------------
 
 # Co nowego: #
-
-# Version 7.7 #
-
-* Now also compatible with new nvda Alpha version.
-
-# Version 7.4 #
-
-* Fixed a bug in a city search function.
 
 # Wersja 7.3 #
 * Naprawiono niespodziewany błąd podczas wyszukiwania aktualizacji.
