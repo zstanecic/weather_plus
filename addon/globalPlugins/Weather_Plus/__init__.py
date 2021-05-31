@@ -266,6 +266,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				if toPressure != self.toPressure: self.toPressure = toPressure; save = True
 				if toMmhgpressure != self.toMmhgpressure: self.toMmhgpressure = toMmhgpressure; save = True
 				if toCloud != self.toCloud: self.toCloud = toCloud; save = True
+				if toPrecip != self.toPrecip: self.toPrecip = toPrecip; save = True
 				if toUltraviolet != self.toUltraviolet: self.toUltraviolet = toUltraviolet; save = True
 				if toAtmosphere != self.toAtmosphere: self.toAtmosphere = toAtmosphere; save = True
 				if toAstronomy != self.toAstronomy: self.toAstronomy = toAstronomy; save = True
@@ -1273,6 +1274,23 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		return self.zipCodesList[i]
 
 
+	def GetPressure(self):
+		"""calculate the atmosferic pressure"""
+		press_dic ={'mb': '', 'in': ''}
+		latitude = self.dom['location']['lat']
+		longitude = self.dom['location']['lon']
+		elevation = Shared().GetElevation(latitude, longitude)
+		if elevation is None: return press_dic
+		elevation = float(elevation)
+		#calculate pressure
+		i = [0.01, #increment for millibars
+		0.0002952998307144] #increment for inches of mercury
+		f =(100 * ((44331.514 - elevation) / 11880.516) ** (1 / 0.1902632))
+		press_dic['mb'] = round(f*i[0], 2)
+		press_dic['in'] = round(f*i[-1], 2)
+		return press_dic
+
+
 	def getWeather(self, zip_code, forecast = False):
 		"""Main getWeather function gets weather from Weather API"""
 		if zip_code != "" and not zip_code.isspace():
@@ -1310,7 +1328,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				wind_gust = self.dom['current']['gust_mph']
 				unit_speed = _("miles per hour")
 				unit_distance = _("miles")
-				pressure = self.dom['current']['pressure_in']
+				pressure_dic = self.GetPressure()
+				pressure = pressure_dic['in']
 				unit_pressure = _("inches of mercury")
 				if self.toMmhgpressure == True:
 					pressure = self.Pressure_convert(pressure, mmHg = True) #takes the value in mmHg
@@ -1337,7 +1356,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					unit_distance = _("kilometers")
 					if not self.toMmhgpressure:
 						unit_pressure = _("millibars")
-						pressure = self.dom['current']['pressure_mb']
+						pressure = pressure_dic['mb']
 
 					visibility = self.dom['current']['vis_km']
 					precipitation = self.dom['current']['precip_mm']
@@ -1368,8 +1387,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 						weatherReport += '\n%s %s %s %s %s %s.' % (
 						winddirstring, winddirvalue,
 						_("with speed of"), wind_speed or _nr, unit_speed,
-						sptm
-						)
+						sptm)
 					elif self.toWindspeed and not self.toWinddir:
 						#adds only wind speed
 						weatherReport += '\n%s %s %s %s.' % (
@@ -1380,18 +1398,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 						#adds wind direction and speed in meters per seconds
 						weatherReport += '\n%s %s, %s %s.' % (
 						winddirstring, winddirvalue,
-						_("with speed of"), sptm[2:-1]
-						)
+						_("with speed of"), sptm[2:-1])
 					elif self.toSpeedmeters and not self.toWindspeed and not self.toWinddir:
 						#adds only wind speed
 						weatherReport += '\n%s %s.' % (
-						_("The wind speed is"), sptm[2:-1]
-						)
+						_("The wind speed is"), sptm[2:-1])
 					elif self.toWinddir and not self.toWindspeed and not self.toSpeedmeters:
 					#adds only wind direction
 						weatherReport += '\n%s %s.' % (
-						winddirstring, winddirvalue
-						)
+						winddirstring, winddirvalue)
 					if self.toWindgust:
 						#adds wind gust
 						weatherReport += '\n%s %s %s.' % (
@@ -1415,8 +1430,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 						weatherReport += '\n%s %s%%, %s %s %s.' % (
 						humiditystring, humidityvalue,
 						_("and the visibility is up to"),
-						visibility or _nr, unit_distance
-						)
+						visibility or _nr, unit_distance)
 					elif self.toHumidity and not self.toVisibility:
 						#adds only humidity
 						weatherReport += '\n%s %s%%.' % (
@@ -1438,7 +1452,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 						precipitation or _nr, unitprecip)
 					elif self.toCloud and not self.toPrecip:
 						#adds only cloudines
-						weatherReport += '\n%s %d.' % (
+						weatherReport += '\n%s %d%%.' % (
 						cloudiness_string, cloudiness_value)
 					if self.toPressure:
 						#adds pressure
@@ -2803,7 +2817,7 @@ class EnterDataDialog(wx.Dialog):
 	def OnCheckBox4(self, evt = None):
 		"""disable all items if atmosphere information is not activate"""
 		flag = evt.IsChecked()
-		[i.Enable(flag) for i in [self.cbt_toHumidity, self.cbt_toVisibility, self.cbt_toPressure, self.cbt_toMmhgpressure, self.cbt_toCloud, self.cbt_toPrecip]]
+		[i.Enable(flag) for i in [self.cbt_toHumidity, self.cbt_toVisibility, self.cbt_toPressure, self.cbt_toMmhgpressure, self.cbt_toCloud, self.cbt_toPrecip, self.cbt_toUltraviolet]]
 
 
 	def AudioControlsEnable(self, f5):
@@ -3525,7 +3539,6 @@ class Shared:
 		"""load defined area assigned to city"""
 		if not zip_code in define_dic: return None
 		return define_dic[zip_code]["define"]
-
 
 
 	def DbaseUpdate(self):
