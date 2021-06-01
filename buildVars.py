@@ -20,7 +20,7 @@ addon_info = {
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : [
-	_("Adds local temperature and forecast 24 ours and prediction up to 9 days.\n"),
+	_("Adds local temperature and forecast 24 ours and prediction up to 3 days.\n"),
 	_("NVDA+w for the current bulletin.\n"),
 	_("NVDA+shift+w for the prediction in the current 24 hours and prediction up to 9 days.\n"),
 	_("NVDA+shift+control+w for quickly enter a temporary city.\n"),
@@ -40,7 +40,7 @@ addon_info = {
 	# Minimum NVDA version supported (e.g. "2012.2.1")
 	"addon_minimumNVDAVersion" : "2017.3.0",
 	# Last NVDA version supported/tested (e.g. "2018.4", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion" : "2019.3.0",
+	"addon_lastTestedNVDAVersion" : "2021.1",
 	# Add-on update channel (default is stable or None)
 	"addon_updateChannel" : None,
 }
