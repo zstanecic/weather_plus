@@ -1,7 +1,6 @@
 # Weather Plus #
 
 * Author: Adriano Barbieri
-* NVDA compatibility: 2017.3 to 2021.1
 * Download: [Stable Version][1]
 
 # ABOUT WEATHER PLUS: #
