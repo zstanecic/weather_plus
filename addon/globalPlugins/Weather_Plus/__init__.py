@@ -8,7 +8,7 @@
 # Released under GPL 2
 #This file is covered by the GNU General Public License.
 #See the file COPYING for more details.
-#Version 7.4
+#Version 7.5
 # Python 2 and 3 compatible
 
 import os, sys, winsound, config, globalVars, ssl, json
