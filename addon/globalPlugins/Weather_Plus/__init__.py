@@ -9,9 +9,9 @@
 # Released under GPL 2
 #This file is covered by the GNU General Public License.
 #See the file COPYING for more details.
-#Version 8.0.
+#Version 8.1.
 # Python 2 and 3+ compatible
-#edit date Jun, 10, 2021
+#Last edit date Jun, 15, 2021
 
 import os, sys, winsound, config, globalVars, ssl, json
 import globalPluginHandler, scriptHandler, languageHandler, addonHandler
@@ -1234,7 +1234,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				self.zipCode = self.MyDefault()
 			except IOError:
 				Shared().Play_sound("warn", 1)
-				return wx.CallAfter(wx.MessageBox, _("I can not load the settings!"), '%s - %s' % (_addonSummary, _("Attenction!")))
+				return wx.CallAfter(wx.MessageBox, _("I can not load the settings!"), '%s - %s' % (_addonSummary, _("Attention!")))
 			_volume = self.volume
 
 			if not self.zipCode or self.zipCode.isspace(): return
@@ -1646,11 +1646,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def Open_Dom(self, zip_code):
 		"""Upload DOM data from the Yahoo API"""
+		ui.message(_("Please wait..."))
 		attempts = 2 #connection attempts
 		curDate = datetime.now()
 		api_query = Shared().GetLocation(zip_code, self.define_dic) or _testCode
 		if not api_query: return '', self.ZipCodeError()
-		def Read_API(): return Shared().WeatherConnect(api_query)
+		def Read_API(): return Shared().WeatherConnect(api_query, self.apilang)
 		dom = Read_API()
 		if not dom:
 			#If it doesn't receive data, try again a few times
@@ -2157,6 +2158,7 @@ class EnterDataDialog(wx.Dialog):
 		wx.Dialog.__init__(self, parent=parent, id=id, title=title, pos=pos,
 		size=size, style=style)
 
+		self.apilang = apilang
 		self.toWinddir_hf = toWinddir_hf
 		self.toWindspeed_hf = toWindspeed_hf
 		self.toWindgust_hf = toWindgust_hf
@@ -2791,19 +2793,23 @@ class EnterDataDialog(wx.Dialog):
 				#allows you to choose how to search for the city
 				Shared().Play_sound("subwindow", 1)
 				#Translators: dialog message used in the setting window to specify a certain one area
-				dl = wx.SingleChoiceDialog(
-				self, '%s: "%s"' % (
-				#Translators: message dialog
-				_("Choose search key for"), c),
-				#Translators: title dialog
-				_addonSummary,
-				choices=search_keys)
-				dl.SetSelection(0)
-				if dl.ShowModal() == wx.ID_CANCEL:
-					dl.Destroy()
-					return Shared().Play_sound("subwindow", 1)
+				try:
+					dlc = wx.SingleChoiceDialog(
+					self, '%s: "%s"' % (
+					#Translators: message dialog
+					_("Choose search key for"), c),
+					#Translators: title dialog
+					_addonSummary,
+					choices=search_keys)
+					dlc.SetSelection(0)
+					if dlc.ShowModal() == wx.ID_CANCEL:
+						dlc.Destroy()
+						return Shared().Play_sound("subwindow", 1)
+				finally:
+					dlc.Destroy
+					Shared().Play_sound("subwindow", 1)
 
-				value = search_keys[dl.GetSelection()]
+				value = search_keys[dlc.GetSelection()]
 				value2 = value
 
 			else:
@@ -2824,7 +2830,7 @@ class EnterDataDialog(wx.Dialog):
 			elif selected_city not in ["Error", "noresult"]: value2 = value = selected_city
 
 		#Test as Cityname
-		cityName, v = Shared().ParseEntry(value)
+		cityName, v = Shared().ParseEntry(value, self.apilang)
 		if cityName == "no connect":
 			self.Disable_all(False)
 			Shared().Play_sound("warn", 1)
@@ -4475,7 +4481,7 @@ class Shared:
 		except: return ''
 
 
-	def ParseEntry(self, value, dom = None):
+	def ParseEntry(self, value, apilang, dom = None):
 		"""parse type city name"""
 		api_query = ""
 		if value.isdigit(): api_query = '%s' % value
@@ -4488,7 +4494,7 @@ class Shared:
 			else:
 				api_query = '%s' % value
 
-		dom = self.WeatherConnect(api_query)
+		dom = self.WeatherConnect(api_query, apilang)
 		if dom == "no connect": return dom, None
 		elif not dom: return "", None
 		try:
@@ -4532,13 +4538,13 @@ class Shared:
 		return city, acronym
 
 
-	def WeatherConnect(self, api_query):
+	def WeatherConnect(self, api_query, apilang):
 		"""return Weather API values"""
 		base_url = "http://api.weatherapi.com/v1/forecast.json"
 		keywords ={
 		"key":_wbdat,
 		"q": api_query,
-		"lang": GlobalPlugin().apilang[-2:],
+		"lang": apilang[-2:],
 		"days": _maxDaysApi
 		}
 		weather_url = base_url + "?" + urlencode(keywords, "mbcs")
