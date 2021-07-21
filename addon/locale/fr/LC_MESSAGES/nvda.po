@@ -1,21 +1,22 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Weather_Plus\n"
-"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2019-03-16 07:20+1000\n"
-"PO-Revision-Date: 2019-12-06 14:13+0100\n"
-"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2021-06-10 09:24+0200\n"
+"PO-Revision-Date: 2021-06-26 09:46+0200\n"
+"Last-Translator: Michel Such <michelsuch93@gmail.com>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
-"X-Poedit-Basepath: ../../../globalPlugins/weather plus\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ../../../globalPlugins/Weather_Plus\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Bookmarks: -1,6,-1,-1,-1,-1,-1,-1,-1,-1\n"
-"X-Poedit-SearchPath-0: __init__.py\n"
+"X-Poedit-SearchPath-0: buildVars.py\n"
+"X-Poedit-SearchPath-1: __init__.py\n"
 
 msgid "Fahrenheit"
 msgstr "Fahrenheit"
@@ -29,30 +30,35 @@ msgstr "Kelvin"
 msgid "unknown"
 msgstr "inconnu"
 
+#. Translators: the configuration submenu in NVDA Preferences menu
 msgid "Weather Plus &Settings"
 msgstr "&Paramètres Weather Plus"
 
 msgid "Show configuration items."
 msgstr "Afficher les éléments de configuration."
 
+#. Translators: item to open primary configuration window
 msgid "Set and &manage your cities..."
 msgstr "Définir et &gérer vos villes..."
 
 msgid "Displays or allows to set the current cities from a list"
 msgstr "Afficher ou définir la ville courante depuis une liste"
 
+#. Translators: item to open window to set up a temporary city
 msgid "Set a &temporary city..."
 msgstr "Définir une ville &temporaire..."
 
 msgid "Allows to set one temporary city from a list"
 msgstr "Permet de définir une ville temporaire depuis une liste"
 
+#. Translators: item to open the help file for the current language
 msgid "&Documentation"
 msgstr "&Documentation"
 
 msgid "Opens the help file for the current language"
 msgstr "Ouvrir le fichier d'aide pour la langue en cours"
 
+#. Translators: item to notify if there is an upgraded version available
 msgid "&Check for Upgrade..."
 msgstr "&Rechercher une Mise à jour..."
 
@@ -60,6 +66,7 @@ msgid "Notify if there is an upgraded version available"
 msgstr "Signaler si une nouvelle version est disponible"
 
 #. opens the Weather Plus settings window
+#. Translators: the title of main settings window
 msgid "Settings"
 msgstr "Paramètres"
 
@@ -69,16 +76,15 @@ msgstr "Prédéfini"
 msgid "None"
 msgstr "Aucun"
 
-msgid "Enter a City, woeId or choose one from the list, if available."
+#. Translators: the message in the main settings window
+msgid "Enter a City or choose one from the list, if available."
 msgstr ""
-"Saisissez une Ville, un weoID, ou sélectionnez-en une dans la liste, si "
-"disponible."
+"Saisissez une Ville ou sélectionnez-en une dans la liste, si disponible."
 
-msgid "The woeID"
-msgstr "Le woeID"
-
-msgid "assigned to"
-msgstr "Assigné à"
+#. Translators: dialog message in case of invalid city or with incomplete data
+#. Translators: dialog message used to describe one of the 2 types of errors in city
+msgid "The city"
+msgstr "La ville"
 
 msgid "has not been preset."
 msgstr "n'a pas été définie."
@@ -86,18 +92,24 @@ msgstr "n'a pas été définie."
 msgid "Will be used in temporary mode!"
 msgstr "Sera utilisé en mode temporaire !"
 
+#. Translators: the dialog title
 #. offers to save the list changed
+#. Translators: the dialog title
+#. Translators: title dialog
+#. Translators: the dialog title
 msgid "Notice!"
 msgstr "Attention !"
 
+#. Translators: dialog message to warn that the list has not been saved
 msgid "You have modified the list of your cities"
 msgstr "Vous avez modifié la liste de vos villes"
 
 msgid "Do you want to save it?"
 msgstr "Voulez-vous l'enregistrer ?"
 
-msgid "The cities on your list are not compatible with the Yahoo API!"
-msgstr "Les villes de votre liste ne sont pas compatibles avec l'API Yahoo !"
+msgid "The cities on your list are not compatible with the Weather API!"
+msgstr ""
+"Les villes de votre liste ne sont pas compatibles avec l'API de Weather !"
 
 msgid ""
 "They have to be tested and validated, you can do it from the addon settings "
@@ -106,24 +118,28 @@ msgstr ""
 "Ils doivent être testés et validés, vous pouvez le faire à partir de la "
 "fenêtre de paramètres de l'extension."
 
+#. Translators: the dialog title to  setting a temporary city
 msgid "Setting up a temporary city"
 msgstr "Définir une ville temporaire"
 
+#. addss short cut keys
 msgid "Cities List available:"
 msgstr "Liste des Villes disponibles :"
 
 msgid "Documentation not available for the current language!"
 msgstr "La documentation n'est pas disponible pour la langue en cours !"
 
+#. Translators: dialog message and title used when it was not possible to find data
 msgid ""
-"Sorry, i can not receive data, problems with the download page, try again "
+"Sorry, I can not receive data, problems with the download page, try again "
 "later please!"
 msgstr ""
 "Désolé, je ne peux pas recevoir les données, des problèmes avec la page de "
 "téléchargement, réessayez plus tard  s'il vous plaît !"
 
+#. Translators: dialog message and title used when it not possible to connect and receive data
 msgid ""
-"Sorry, i can not receive data, verify that your internet connection is "
+"Sorry, I can not receive data, verify that your internet connection is "
 "active, or try again later!"
 msgstr ""
 "Désolé, je ne peux pas recevoir les données, vérifiez que votre connexion à "
@@ -141,6 +157,7 @@ msgstr "Version installée"
 msgid "Do you want to download and install it?"
 msgstr "Voulez-vous la télécharger et l'installer ?"
 
+#. Translators: dialog message used when a new version is not available
 msgid "Sorry, at the time an update is not available."
 msgstr "Désolé, aucune mise à jour disponible."
 
@@ -160,21 +177,42 @@ msgstr "Mais si ceux-ci sont déjà jour, alors vous devez mettre à jour"
 msgid "I can not load the settings!"
 msgstr "Je ne peux pas charger les paramètres !"
 
+msgid "Attenction!"
+msgstr "Attention !"
+
 msgid "I can not save the settings!"
 msgstr "Je ne peux pas enregistrer les paramètres !"
 
 msgid "invalid name"
 msgstr "Nom invalide"
 
+msgid "The cloudiness is"
+msgstr "La nébulosité est"
+
+msgid "The precipitation is"
+msgstr "La précipitation est"
+
+msgid "miles per hour"
+msgstr "milles à l'heure"
+
 msgid "miles"
 msgstr "milles"
+
+msgid "inches of mercury"
+msgstr "pouces de mercure"
 
 #. takes the value in mmHg
 msgid "millimeters of mercury"
 msgstr "millimètres de mercure"
 
-msgid "inches of mercury"
-msgstr "pouces de mercure"
+msgid "inches"
+msgstr "pouces"
+
+msgid "nanometers"
+msgstr "nanomètres"
+
+msgid "kilometers per hour"
+msgstr "kilomètres heure"
 
 msgid "kilometers"
 msgstr "kilomètres"
@@ -182,13 +220,16 @@ msgstr "kilomètres"
 msgid "millibars"
 msgstr "millibars"
 
+msgid "millimeters"
+msgstr "millimètres"
+
 msgid "the weather report is currently"
 msgstr "il fait actuellement"
 
 msgid "degrees"
 msgstr "degrés"
 
-#. adds wind information to the string
+#. addss wind information to the string
 msgid "The wind direction is from"
 msgstr "La direction du vent est de"
 
@@ -198,21 +239,21 @@ msgstr "avec une vitesse de"
 msgid "The wind speed is"
 msgstr "La vitesse du vent est"
 
+msgid "With gusts of"
+msgstr "avec des rafales de"
+
 msgid "The perceived temperature is"
 msgstr "La température ressentie est"
 
-#. adds information on the atmosphere
-msgid "steady"
-msgstr "stable"
-
-msgid "rising"
-msgstr "lever"
-
-msgid "falling"
-msgstr "couchant"
-
+#. addss information on the atmosphere
 msgid "The humidity is"
 msgstr "L'humidité est"
+
+msgid "The cloudiness is of"
+msgstr "La nébulosité est de"
+
+msgid "The precipitation is of"
+msgstr "La précipitation est de"
 
 msgid "and the visibility is up to"
 msgstr "et la visibilité maximale est de"
@@ -220,20 +261,23 @@ msgstr "et la visibilité maximale est de"
 msgid "The visibility is up to"
 msgstr "La visibilité maximale est de"
 
+msgid "and the precipitation is"
+msgstr "et la précipitation est"
+
 msgid "The pressure is"
 msgstr "La pression est"
 
-msgid "and the state of the barometric pressure is"
-msgstr "et l'état de la pression barométrique est"
-
-msgid "The state of the barometric pressure is"
-msgstr "L'état de la pression barométrique est"
+msgid "The UV radiation is of"
+msgstr "Le rayonnement UV est de"
 
 msgid "The sun rises at"
 msgstr "Le soleil se lève à"
 
 msgid "and sets at"
 msgstr "et se couche à"
+
+msgid "The moon rises at"
+msgstr "La lune se lève à"
 
 msgid "the forecast for today is"
 msgstr "les prévisions pour aujourd'hui sont"
@@ -244,6 +288,7 @@ msgstr "avec une température maximale de"
 msgid "and a minimum of"
 msgstr "et une minimale de"
 
+#. replace the missing prediction with a description
 msgid "not available"
 msgstr "indisponible"
 
@@ -254,336 +299,8 @@ msgstr "À"
 msgid "Unnamed"
 msgstr "Sans nom"
 
-msgid "Sorry, the woeID is not set!"
-msgstr "Désolé, le woeID n'est pas défini !"
-
-msgid "kilometers per hour"
-msgstr "kilomètres heure"
-
-msgid "miles per hour"
-msgstr "milles à l'heure"
-
-#. weather condition
-msgid "in the morning"
-msgstr "le matin"
-
-msgid "in the evening"
-msgstr "le soir"
-
-msgid " and "
-msgstr "et"
-
-msgid " to "
-msgstr "à"
-
-msgid "in the vicinity"
-msgstr "dans les environs"
-
-msgid "tornado"
-msgstr "tornade"
-
-msgid "tropical storm"
-msgstr "tempête tropicale"
-
-msgid "hurricane"
-msgstr "ouragan"
-
-msgid "severe thunderstorms"
-msgstr "orages violents"
-
-msgid "mixed rain and snow"
-msgstr "pluie et neige mélangées"
-
-msgid "mixed rain and hail"
-msgstr "pluie et grêle mélangées"
-
-msgid "mixed rain and sleet"
-msgstr "pluie et neige fondue mélangées"
-
-msgid "mixed snow and sleet"
-msgstr "neige et neige fondue mélangées"
-
-msgid "snow flurries"
-msgstr "rafales de neige"
-
-msgid "smoke"
-msgstr "fumée"
-
-msgid "smoky"
-msgstr "enfumé"
-
-msgid "precipitation"
-msgstr "précipitations"
-
-msgid "sunny intervals"
-msgstr "périodes ensoleillées"
-
-msgid "sunny period"
-msgstr "périodes ensoleillées"
-
-msgid "light snow"
-msgstr "neige légère"
-
-msgid "scattered snow showers"
-msgstr "chutes de neige éparses"
-
-msgid "snow showers"
-msgstr "averses de neige"
-
-msgid "snow shower"
-msgstr "averse de neige"
-
-msgid "snowstorm"
-msgstr "tempête de neige"
-
-msgid "snowdrift"
-msgstr "chute de neige"
-
-msgid "drifting snow"
-msgstr "bourrasques de neige"
-
-msgid "wintry Mix"
-msgstr "conditions hivernales"
-
-msgid "ice to rain"
-msgstr "pluie ferglaçante"
-
-msgid "ice"
-msgstr "verglas"
-
-msgid "blizzard"
-msgstr "bourrasques de neige"
-
-msgid "blowing snow"
-msgstr "bourrasques de neige"
-
-msgid "snow"
-msgstr "neige"
-
-msgid "light rain with thunder"
-msgstr "pluie légère avec orage"
-
-msgid "few showers"
-msgstr "quelques averses"
-
-msgid "heavy showers"
-msgstr "fortes averses"
-
-msgid "heavy thunderstorms"
-msgstr "orages violents"
-
-msgid "heavy thunderstorm"
-msgstr "orage violent"
-
-msgid "lightning"
-msgstr "éclair"
-
-msgid "isolated clouds"
-msgstr "nuages épars"
-
-msgid "partly cloudy"
-msgstr "partiellement nuageux"
-
-msgid "partly bright"
-msgstr "partiellement clair"
-
-msgid "showers early"
-msgstr "averses matinales"
-
-msgid "light rain"
-msgstr "pluie légère"
-
-msgid "heavy rain"
-msgstr "fortes pluies"
-
-msgid "isolated showers"
-msgstr "averses éparses"
-
-msgid "isolated thunderstorms"
-msgstr "orages épars"
-
-msgid "isolated thundershowers"
-msgstr "averses orageuses éparses"
-
-msgid "mostly cloudy"
-msgstr "principalement nuageux"
-
-msgid "mostly dry"
-msgstr "généralement sec"
-
-msgid "mostly clear"
-msgstr "généralement clair"
-
-msgid "clearing"
-msgstr "éclaircie"
-
-msgid "no rain"
-msgstr "pas de pluie"
-
-msgid "sleet"
-msgstr "neige fondue"
-
-msgid "blowing dust"
-msgstr "vent de poussière"
-
-msgid "widespread dust"
-msgstr "poussière généralisée"
-
-msgid "low drifting sand"
-msgstr "Congères de sables basses"
-
-msgid "sandstorm"
-msgstr "tempête de sable"
-
-msgid "sand storm"
-msgstr "tempête de sable"
-
-msgid "dust"
-msgstr "poussière"
-
-msgid "sand"
-msgstr "sable"
-
-msgid "thundery showers"
-msgstr "averses orageuses"
-
-msgid "thundershowers"
-msgstr "averses orageuses"
-
-msgid "scattered thunderstorms"
-msgstr "orages intermittents"
-
-msgid "scattered showers"
-msgstr "averses éparses"
-
-msgid "thunderstorms"
-msgstr "orages"
-
-msgid "thunderstorm"
-msgstr "orage"
-
-msgid "storm"
-msgstr "tempête"
-
-msgid "hail"
-msgstr "grêle"
-
-msgid "foggy"
-msgstr "brumeux"
-
-msgid "fog"
-msgstr "brouillard"
-
-msgid "haze"
-msgstr "brume"
-
-msgid "mist"
-msgstr "brume"
-
-msgid "clear"
-msgstr "clair"
-
-msgid "fair"
-msgstr "beau"
-
-msgid "fine"
-msgstr "beau"
-
-msgid "overcast"
-msgstr "couvert"
-
-msgid "light showers"
-msgstr "averses légères"
-
-msgid "light drizzle"
-msgstr "bruine légère"
-
-msgid "freezing rain"
-msgstr "pluie verglaçante"
-
-msgid "frequent showers"
-msgstr "averses fréquentes"
-
-msgid "rain shower"
-msgstr "averse de pluie"
-
-msgid "rain"
-msgstr "pluie"
-
-msgid "freezing drizzle"
-msgstr "pluie verglaçante"
-
-msgid "showers"
-msgstr "averses"
-
-msgid "drizzle"
-msgstr "bruine"
-
-msgid "dry"
-msgstr "sec"
-
-msgid "mild"
-msgstr "doux"
-
-msgid "clouds"
-msgstr "nuages"
-
-msgid "cloudy"
-msgstr "nuageux"
-
-msgid "mostly sunny"
-msgstr "généralement ensoleillé"
-
-msgid "sunny"
-msgstr "ensoleillé"
-
-msgid "sun"
-msgstr "ensoleillé"
-
-msgid "bright"
-msgstr "clair"
-
-msgid "thunder"
-msgstr "tonnerre"
-
-msgid "shower"
-msgstr "averse"
-
-msgid "breezy"
-msgstr "venteux"
-
-msgid "blustery"
-msgstr "venteux"
-
-msgid "windy"
-msgstr "venteux"
-
-msgid "wind"
-msgstr "vent"
-
-msgid "flurries"
-msgstr "rafales"
-
-msgid "late"
-msgstr "tard"
-
-msgid "early"
-msgstr "tôt"
-
-msgid "isolated"
-msgstr "isolé"
-
-msgid "shallow fog"
-msgstr "brouillard léger"
-
-msgid "heavy"
-msgstr "fortes"
-
-msgid "cold"
-msgstr "froid"
-
-msgid "hot"
-msgstr "chaud"
+msgid "Sorry, the city is not set!"
+msgstr "Désolé, la ville n'est pas définie !"
 
 msgid "Sorry, it was not possible to load the most recent update!"
 msgstr "Désolé, impossible de charger la dernière mise à jour !"
@@ -594,9 +311,9 @@ msgstr "Veuillez réessayez plus tard."
 msgid "meters per second"
 msgstr "mètres par seconde"
 
-msgid "Sorry, the woeID set is not valid or contains incomplete data!"
+msgid "Sorry, the city set is not valid or contains incomplete data!"
 msgstr ""
-"Désolé, le woeID défini n'est pas valide ou contient des données "
+"Désolé, la ville définie n'est pas valide ou contient des données "
 "incomplètes !"
 
 msgid "north"
@@ -649,9 +366,10 @@ msgstr "Nord Nord-Ouest"
 
 msgid ""
 "Is not working properly, contains incomplete data or has been removed from "
-"the database of"
+"the"
 msgstr ""
-"Ne fonctionne pas correctement ou a été supprimée de la base de données de"
+"Ne fonctionne pas correctement, contient des données incomplètes ou a été "
+"supprimée de"
 
 msgid "It could be a temporary problem and you may wait a while '..."
 msgstr ""
@@ -664,12 +382,13 @@ msgstr "Voulez-vous le supprimer de votre liste ?"
 msgid "Provides the current temperature and weather conditions."
 msgstr "Indique les conditions de température et de météo actuelles."
 
+#, python-format
 msgid ""
 "Provides the weather forecast and current temperature for 24 hours and the "
-"next 9 days."
+"next %d days."
 msgstr ""
-"Indique les prévisions météo et la température actuelle pendant 24 heures et "
-"les 9 prochains jours."
+"Fournit les prévisions météorologiques et la température pour 24 heures et "
+"les %d jours suivants."
 
 msgid "Sorry, no list available!"
 msgstr "Désolé, aucune liste disponible !"
@@ -743,11 +462,14 @@ msgstr "Indiquer les degrés comme:"
 msgid "C - F - K"
 msgstr "C - F - K"
 
-msgid "Don't specify"
+msgid "Unspecified"
 msgstr "Non spécifié"
 
 msgid "Weather Forecasts up to days:"
 msgstr "Prévisions Météo jusqu'à jours:"
+
+msgid "API response language:"
+msgstr "Langue de réponse de l'API:"
 
 #. check boxes
 msgid ""
@@ -786,6 +508,9 @@ msgstr "Ajouter la vitesse du ve&nt"
 msgid "Add speed in &meters per second of the wind"
 msgstr "Ajouter la vitesse du vent en &mètres par seconde"
 
+msgid "Add wind &gust speed"
+msgstr "Ajouter la vitesse &rafale de vent"
+
 msgid "Add perceived &temperature"
 msgstr "Ajouter la &température ressentie"
 
@@ -798,14 +523,20 @@ msgstr "Ajouter le taux d'&humidité"
 msgid "Add &visibility value"
 msgstr "A&jouter la valeur de visibilité"
 
+msgid "Add cloudiness &value"
+msgstr "Ajouter la &valeur de nébulosité"
+
+msgid "Add precipitation &value"
+msgstr "Ajouter la &valeur de précipitation"
+
+msgid "Add &ultraviolet radiation value"
+msgstr "Ajouter la valeur du rayonnement &ultraviolet"
+
 msgid "Add atmospheric &pressure value"
 msgstr "Ajouter la valeur de la &pression atmosphérique"
 
 msgid "Indicates the atmospheric pressure in millimeters of mercur&y (mmHg)"
 msgstr "Indique la pression atmosphérique en millimètres de mercure (mmH&g)"
-
-msgid "Add status of &barometric pressure"
-msgstr "Ajouter l'état de la &pression barométrique"
 
 msgid "Read a&stronomical information"
 msgstr "Lire les informations astronomi&ques"
@@ -819,21 +550,17 @@ msgstr "Utiliser la virgule pour séparer les décimales, exemple (4,&15)"
 msgid "Check for &upgrade"
 msgstr "Recherche d'une mise à jo&ur"
 
-msgid ""
-"Testing the validity of city woeID entry and find the name of city assigned, "
-"or viceversa."
-msgstr ""
-"Test de la validité du woeID de ville saisi et recherche du nom de la ville "
-"assignée, ou viceversa."
+msgid "Test the city validity  and find the data of it."
+msgstr "Testez la validité de la ville et trouvez les données de celle-ci."
 
-msgid "Displays information on the current city."
+msgid "Add the current city into your list."
+msgstr "Ajoute la ville en cours dans votre liste."
+
+msgid "Displays information about the current city."
 msgstr "Affiche les informations sur la ville en cours."
 
 msgid "Allows you to define the area, in order to adapt the sound effects."
 msgstr "Vous permet de définir la région, afin d'adapter les effets sonores."
-
-msgid "Add the current city into your list."
-msgstr "Ajoute la ville en cours dans votre liste."
 
 msgid ""
 "Presets the current city as the default, will be used every time you restart "
@@ -862,65 +589,87 @@ msgstr ""
 "Vous permet d'enregistrer votre liste de villes dans un chemin d'accès "
 "spécifié."
 
-msgid ""
-"You can also indicate how to proceed by prefixing the following commands"
-msgstr ""
-"Vous pouvez également indiquer comment procéder en préfixant les commandes "
-"suivantes"
-
-msgid "Direct (the Recursive cities they will not appear), by typing D:City"
-msgstr ""
-"Direct (les villes récursives elles n'apparaîtront pas), en tapant D:Ville"
-
-msgid "Geographic coordinates, by typing G:City"
-msgstr "Coordonnées géographiques, en tapant G:Ville"
-
-msgid "Postal code, by typing P:City"
-msgstr "Code postal, en tapant P:Ville"
-
-msgid "Text string, by typing T:City"
-msgstr "Chaîne de texte, en tapant T:Ville"
-
-msgid ""
-"The city can be preceded by the region and / or state, separated by a comma "
-"or space"
-msgstr ""
-"La ville peut être précédée de la région et / ou de l'état, séparés par une "
-"virgule ou un espace"
-
-msgid "Australia, Queensland, Cona Creek"
-msgstr "Australia, Queensland, Cona Creek"
-
 msgid "You can enter or search for a city"
 msgstr "Vous pouvez saisir ou rechercher une ville"
 
-msgid "By city woeID: 715399"
-msgstr "Par woeID de ville : 715399"
+msgid "By Latitude and Longitude: 48.8567,2.3508"
+msgstr "Par Latitude et Longitude: 48.8567,2.3508"
 
-msgid "By only city name: Ferrara"
-msgstr "Par nom de ville seulement : Paris"
+msgid "By City name: Paris"
+msgstr "Par Nom de ville: Paris"
 
-msgid "By state or region and city name: Emilia Romagna Ferrara"
-msgstr "Par nom de pays ou région et ville : France Marseille"
+msgid "By City name and country: Toronto,Canada"
+msgstr "Par nom de ville et pays: Toronto,Canada"
 
-msgid "By city name and country: Ferrara,it"
-msgstr "Par nom de ville et pays : Toronto,Canada"
+msgid "Or Toronto,CA"
+msgstr "Ou Toronto,CA"
 
-msgid "By postal code: 44100,it"
-msgstr "Par code postal : 75009,fr"
+msgid "By City name and region: Toronto,Ontario"
+msgstr "Par nom de ville et région: Toronto,Ontario"
 
-msgid "By geographic coordinates: latitude, longitude"
-msgstr "Par coordonnées géographiques : latitude, longitude"
+msgid "By US zip: 10001"
+msgstr "Par code postal Américain: 10001"
+
+msgid "By UK postcode: SW1"
+msgstr "Par code postal Britannique: SW1"
+
+msgid "By Canada postal code: G2J"
+msgstr "Par code postal du Canada: G2J"
+
+msgid "By metar:<metar code>: metar:EGLL"
+msgstr "Par metar:<code metar>: metar:EGLL"
+
+msgid "By iata:<3 digit airport code>: iata:DXB"
+msgstr "Par iata:<3 chiffres code aéroport>: iata:DXB"
+
+msgid "By auto:ip IP lookup: auto:ip"
+msgstr "Par auto:ip recherche IP: auto:ip"
+
+msgid "By IP address (IPv4 and IPv6 supported): 100.0.0.1"
+msgstr "Par adresse IP (IPv4 et IPv6 pris en charge): 100.0.0.1"
+
+msgid "if there will be cities with the same name, will be listed"
+msgstr "s'il y aura des villes avec le même nom, sera listé"
+
+msgid "By default, confirming a selection, is used the postal code"
+msgstr "Par défaut, confirmer une sélection quand est utilisé le code postal"
+
+msgid ""
+"If the postal code is not valid, will be used a text string: city, state, "
+"region"
+msgstr ""
+"Si le code postal n'est pas valide, sera utilisé une chaîne de texte: ville, "
+"état, région"
+
+msgid "You can indicate how to proceed by prefixing the following commands"
+msgstr ""
+"Vous pouvez indiquer comment procéder en préfixant les commandes suivantes"
+
+msgid ""
+"Direct (cities with the same name, will not listed), by typing D:City: D:"
+"Paris"
+msgstr ""
+"Direct (villes avec le même nom, ne sera pas listé), en tapant D:Ville: D:"
+"Paris"
+
+msgid "Geographic coordinates, by typing G:City: G:Venezia"
+msgstr "Coordonnées géographiques, en tapant G:Ville: G:Venezia"
+
+msgid "Text string, by typing T:City: T:Bologna"
+msgstr "Chaîne de texte, en tapant T:Ville: T:Bologna"
 
 msgid "If the city is not found"
 msgstr "Si la ville est introuvable"
 
+msgid "Try to reverse the order in the search key"
+msgstr "Essayez d'inverser l'ordre dans les mots-clés de recherche"
+
 msgid "Try with or without the country of origin"
 msgstr "Essayez avec ou sans le pays d'origine"
 
-msgid "Try to merge the name with hyphens, or separate it with spaces"
+msgid "Try to merge the name with hyphens, or separate it with separator"
 msgstr ""
-"Essayez de combiner le nom avec des tirets ou de le séparer par des espaces"
+"Essayez de combiner le nom avec des tirets ou de le séparer par un séparateur"
 
 msgid "Try deleting apostrophes"
 msgstr "Essayez de supprimer les apostrophes"
@@ -934,6 +683,7 @@ msgstr "Essayez de changer certaines parties en anglais"
 msgid "Try with a closest location"
 msgstr "Essayez avec une localisation plus proche"
 
+#. Translators: the title of the help window
 msgid "Help placing"
 msgstr "Aide à la localisation"
 
@@ -942,6 +692,19 @@ msgstr "Aucun effet sonore en mémoire !"
 
 msgid "I can't reproduce the sound."
 msgstr "Je ne peux pas reproduire le son."
+
+#. Translators: message dialog
+msgid "Choose search key for"
+msgstr "Choisissez les mots-clés de recherche pour"
+
+#. Translators: the dialog message
+msgid "Unfortunately I could not recover enough data to find the city."
+msgstr ""
+"Malheureusement, je ne pouvais pas récupérer suffisamment de données pour "
+"trouver la ville."
+
+msgid "Do I try anyway?"
+msgstr "Est-ce que j'essaie de toute façon?"
 
 msgid "not found! Press F1 for help on entering data."
 msgstr ""
@@ -972,6 +735,7 @@ msgstr "Ou voulez-vous les désinstaller ?"
 msgid "Are you sure you want to uninstall the sound effects?"
 msgstr "Êtes-vous sûr de vouloir désinstaller les effets sonores ?"
 
+#. Translators: title and message used in tthe progress qdialog
 msgid "Update in progress"
 msgstr "Mise à jour en cours"
 
@@ -999,6 +763,7 @@ msgstr ""
 "Désactiver et réactiver cette option pour les mettre à jour ou pour les "
 "désinstaller."
 
+#. Translators: dialog message and title used to notify lack of connection or corrupt file, during the sound effects installation
 msgid "Verify that your internet connection is active, or try again later."
 msgstr ""
 "Vérifiez que votre connexion à internet est active, ou réessayez plus tard."
@@ -1006,18 +771,11 @@ msgstr ""
 msgid "File corrupted or not available!"
 msgstr "Fichier corrompu ou non disponible !"
 
-msgid "Sorry, i could not complete the installation of the sound effects!"
+msgid "Sorry, I could not complete the installation of the sound effects!"
 msgstr "Désolé, je n'ai pas pu terminer l'installation des effets sonores !"
 
 msgid "Installation Error!"
 msgstr "Erreur d'installation !"
-
-msgid ""
-"The details of this city are not in the database and so I added them to the "
-"list. Try again!"
-msgstr ""
-"Les détails de cette ville ne sont pas dans la base de données, je les ai "
-"donc ajoutés à la listes. Veuillez réessayer !"
 
 msgid "Cannot identify your location, due to insufficient data."
 msgstr ""
@@ -1063,6 +821,7 @@ msgstr "Zone arctique"
 msgid "Mountain zone"
 msgstr "Zone de montagne"
 
+#. Translators: the dialog message
 msgid "Enter new name."
 msgstr "Saisissez le nouveau nom."
 
@@ -1090,6 +849,9 @@ msgstr "Voulez-vous utiliser le nom suggéré ?"
 msgid "Import cities"
 msgstr "Importer des villes"
 
+msgid "Empty file or not in cities format compatible!"
+msgstr "Fichier vide ou format de villes non compatible !"
+
 msgid "Do you want to replace your list with this?"
 msgstr "Voulez-vous remplacer votre liste par ceci ?"
 
@@ -1100,6 +862,7 @@ msgid "If you select no, the new cities will be added to your list."
 msgstr ""
 "Si vous sélectionnez non, les nouvelles villes seront ajoutées à votre liste."
 
+#. Translators: the title window
 msgid "Select import mode"
 msgstr "Sélectionnez le mode d'importation"
 
@@ -1126,6 +889,9 @@ msgstr "Ont été ignorées parce qu'elles existent"
 
 msgid "Content of imported list"
 msgstr "Contenu de la liste importée"
+
+msgid "Containing incomplete data"
+msgstr "Contenant des données incomplètes"
 
 msgid "selected by the user"
 msgstr "sélectionné par l'utilisateur"
@@ -1211,11 +977,11 @@ msgid "Sunday"
 msgstr "Dimanche"
 
 #, python-format
-msgid "It was not possible find the acronym of %s!"
-msgstr "Impossible de trouver l'acronyme de %s :"
+msgid "It was not possible find the acronym of \"%s\"!"
+msgstr "Impossible de trouver l'acronyme de \"%s\" !"
 
-msgid "This does not allow to get the city details."
-msgstr "Cela ne permet pas d'obtenir les détails de la ville."
+msgid "This may not allow you to get the city details."
+msgstr "Cela peut ne pas permettre d'obtenir les détails de la ville."
 
 msgid ""
 "Please report this to the author so he can add this country in database."
@@ -1244,9 +1010,6 @@ msgstr "Trouver suivant"
 
 msgid "Find previous"
 msgstr "Trouver précédent"
-
-msgid "Empty file or not in cities woeID format compatible!"
-msgstr "Fichier vide ou format de villes / woeID non compatible !"
 
 msgid "Be an error has occurred."
 msgstr "une erreur s'est produite."
@@ -1333,9 +1096,9 @@ msgid "&Copy to clipboard"
 msgstr "&Copier dans le presse-papiers"
 
 msgid ""
-"Adds local temperature and forecast 24 ours and prediction up to 9 days.\n"
+"Adds local temperature and forecast 24 ours and prediction up to 3 days.\n"
 msgstr ""
-"Ajoute la température locale et les prévisions à 24 heures et jusqu'à 9 "
+"Ajoute la température locale et les prévisions à 24 heures et jusqu'à 3 "
 "jours au-delà.\n"
 
 msgid "NVDA+w for the current bulletin.\n"
