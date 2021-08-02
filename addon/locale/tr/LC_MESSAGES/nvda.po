@@ -2,23 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeatherPlus\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2019-05-13 15:54+1000\n"
-"PO-Revision-Date: 2019-12-07 14:03+0300\n"
+"POT-Creation-Date: 2021-07-06 20:27+0200\n"
+"PO-Revision-Date: 2021-07-06 20:27+0200\n"
 "Last-Translator: Çağrı Doğan <cagrid@hotmail.com>\n"
 "Language-Team: Çağrı DOğan <cagrid@hotmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 1.8.13\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
-"X-Poedit-Basepath: ../../../globalPlugins\n"
+"X-Poedit-Basepath: ../../../globalPlugins/Weather_Plus\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPath-1: .\n"
-"X-Poedit-SearchPath-2: weather plus/urllib2\n"
-"X-Poedit-SearchPath-3: .\n"
-"X-Poedit-SearchPath-4: weather plus/urllib2\n"
 
 msgid "Fahrenheit"
 msgstr "fahrenhayt"
@@ -79,15 +75,13 @@ msgid "None"
 msgstr "Yok"
 
 #. Translators: the message in the main settings window
-#, fuzzy
 msgid "Enter a City or choose one from the list, if available."
-msgstr "Bir şehir, woeID girin ya da mevcutsa listeden seçin."
+msgstr "Bir Şehir girin veya varsa listeden birini seçin."
 
 #. Translators: dialog message in case of invalid city or with incomplete data
 #. Translators: dialog message used to describe one of the 2 types of errors in city
-#, fuzzy
 msgid "The city"
-msgstr "Bir şehir seçin."
+msgstr "Şehir"
 
 msgid "has not been preset."
 msgstr "Ön ayarlara yüklenmedi."
@@ -110,9 +104,8 @@ msgstr "Şehir listenizde değişiklik yaptınız"
 msgid "Do you want to save it?"
 msgstr "Kaydetmek ister misiniz?"
 
-#, fuzzy
 msgid "The cities on your list are not compatible with the Weather API!"
-msgstr "Listenizdeki şehirler Yahoo API ile uyumlu değil!"
+msgstr "Listenizdeki şehirler Hava Durumu API'si ile uyumlu değil!"
 
 msgid ""
 "They have to be tested and validated, you can do it from the addon settings "
@@ -133,7 +126,6 @@ msgid "Documentation not available for the current language!"
 msgstr "Dokümantasyon Geçerli dil için kullanılabilir değil!"
 
 #. Translators: dialog message and title used when it was not possible to find data
-#, fuzzy
 msgid ""
 "Sorry, I can not receive data, problems with the download page, try again "
 "later please!"
@@ -142,13 +134,12 @@ msgstr ""
 "tekrar deneyin!"
 
 #. Translators: dialog message and title used when it not possible to connect and receive data
-#, fuzzy
 msgid ""
 "Sorry, I can not receive data, verify that your internet connection is "
 "active, or try again later!"
 msgstr ""
-"Üzgünüm, veriler alınamıyor, internet bağlantısı etkin olduğundan emin olun, "
-"ya da daha sonra tekrar deneyin!"
+"Üzgünüm, veriler alınamıyor, internet bağlantısının etkin olduğundan emin "
+"olun, ya da daha sonra tekrar deneyin!"
 
 msgid "version"
 msgstr "versiyon"
@@ -183,7 +174,7 @@ msgid "I can not load the settings!"
 msgstr "Ayarlar yüklenemedi!"
 
 msgid "Attenction!"
-msgstr ""
+msgstr "Uyarı!"
 
 msgid "I can not save the settings!"
 msgstr "Ayarlar kaydedilemedi!"
@@ -191,11 +182,9 @@ msgstr "Ayarlar kaydedilemedi!"
 msgid "invalid name"
 msgstr "geçersiz isim"
 
-#, fuzzy
 msgid "The cloudiness is"
 msgstr "Bulutluluk"
 
-#, fuzzy
 msgid "The precipitation is"
 msgstr "Yağış"
 
@@ -213,11 +202,10 @@ msgid "millimeters of mercury"
 msgstr "milimetre cıva"
 
 msgid "inches"
-msgstr ""
+msgstr "inch"
 
-#, fuzzy
 msgid "nanometers"
-msgstr "metre"
+msgstr "nanometre"
 
 msgid "kilometers per hour"
 msgstr "Kilometre bölü saat"
@@ -228,9 +216,8 @@ msgstr "Kilometre"
 msgid "millibars"
 msgstr "milibar"
 
-#, fuzzy
 msgid "millimeters"
-msgstr "Kilometre"
+msgstr "milimetre"
 
 msgid "the weather report is currently"
 msgstr "Mevcut hava durumu:"
@@ -250,7 +237,7 @@ msgstr "Rüzgar hızı:"
 
 #, fuzzy
 msgid "With gusts of"
-msgstr "Rüzgar hızı:"
+msgstr "rüzgar kuvveti"
 
 msgid "The perceived temperature is"
 msgstr "Hissedilen sıcaklık:"
@@ -262,7 +249,6 @@ msgstr "Nem oranı:"
 msgid "The cloudiness is of"
 msgstr "Bulutluluk"
 
-#, fuzzy
 msgid "The precipitation is of"
 msgstr "Yağış"
 
@@ -272,26 +258,23 @@ msgstr "Görüş mesafesi:"
 msgid "The visibility is up to"
 msgstr "Görüş mesafesi:"
 
-#, fuzzy
 msgid "and the precipitation is"
-msgstr "Yağış"
+msgstr "ve yağış"
 
 msgid "The pressure is"
 msgstr "Basınç:"
 
-#, fuzzy
 msgid "The UV radiation is of"
-msgstr "Rüzgar yönü"
+msgstr "UV radyasyonu"
 
 msgid "The sun rises at"
 msgstr "Gün doğumu:"
 
 msgid "and sets at"
-msgstr "Gün batımı:"
+msgstr "batımı:"
 
-#, fuzzy
 msgid "The moon rises at"
-msgstr "Gün doğumu:"
+msgstr "Ay doğumu"
 
 msgid "the forecast for today is"
 msgstr "Bugün için hava raporu"
@@ -313,9 +296,8 @@ msgstr "Bölge"
 msgid "Unnamed"
 msgstr "İsimsiz"
 
-#, fuzzy
 msgid "Sorry, the city is not set!"
-msgstr "Üzgünüm, KİMLİK ayarlanmamış. "
+msgstr "Üzgünüm, şehir ayarlanmamış!"
 
 msgid "Sorry, it was not possible to load the most recent update!"
 msgstr "Üzgünüm, son güncelleme yüklenemedi"
@@ -326,9 +308,8 @@ msgstr "Lütfen daha sonra tekrar deneyin."
 msgid "meters per second"
 msgstr "Metre bölü saniye"
 
-#, fuzzy
 msgid "Sorry, the city set is not valid or contains incomplete data!"
-msgstr "Üzgünüm, woeID geçerli değil ya da geçersiz very içeriyor."
+msgstr "Üzgünüm, belirlenen şehir geçerli değil veya eksik veriler içeriyor!"
 
 msgid "north"
 msgstr "Kuzey"
@@ -378,7 +359,6 @@ msgstr "kuzeybatı"
 msgid "north northwest"
 msgstr "kuzey ve kuzeybatı"
 
-#, fuzzy
 msgid ""
 "Is not working properly, contains incomplete data or has been removed from "
 "the"
@@ -398,8 +378,7 @@ msgid ""
 "Provides the weather forecast and current temperature for 24 hours and the "
 "next %d days."
 msgstr ""
-"24 saat için geçerli sıcaklık durumunu ve sonraki 9 gün için Hava tahminini "
-"seslendirir."
+"Önümüzdeki 24 saat ve 4 gün için hava tahmini ve sıcaklık bilgisi verir"
 
 msgid "Sorry, no list available!"
 msgstr "Üzgünüm, liste mevcut değil"
@@ -473,13 +452,13 @@ msgid "C - F - K"
 msgstr "C - F - K"
 
 msgid "Unspecified"
-msgstr ""
+msgstr "Belirlenmemiş"
 
 msgid "Weather Forecasts up to days:"
 msgstr "Şu kadar günlük hava tahmini:"
 
 msgid "API response language:"
-msgstr ""
+msgstr "API yanıt dili:"
 
 #. check boxes
 msgid ""
@@ -516,9 +495,8 @@ msgstr "&rüzgar hızını ekle"
 msgid "Add speed in &meters per second of the wind"
 msgstr "&Rüzgarın saniyede kaç metre hızla estiği  bilgisini ekle"
 
-#, fuzzy
 msgid "Add wind &gust speed"
-msgstr "&rüzgar hızını ekle"
+msgstr "Rüzgar &esinti hızını ekle"
 
 msgid "Add perceived &temperature"
 msgstr "Hissedilen s&ıcaklık bilgisini ekle"
@@ -532,17 +510,14 @@ msgstr "nem de&ğerini ekle"
 msgid "Add &visibility value"
 msgstr "&görüş mesafe değerini ekle"
 
-#, fuzzy
 msgid "Add cloudiness &value"
-msgstr "nem de&ğerini ekle"
+msgstr "Bulutluluk &değerini ekle"
 
-#, fuzzy
 msgid "Add precipitation &value"
-msgstr "Yağış"
+msgstr "&Yağış değerini ekle"
 
-#, fuzzy
 msgid "Add &ultraviolet radiation value"
-msgstr "&görüş mesafe değerini ekle"
+msgstr "&Ultraviyole radyasyon değerini ekle"
 
 msgid "Add atmospheric &pressure value"
 msgstr "Atmosferik &basınç değerini ekle"
@@ -562,18 +537,14 @@ msgstr "Ondalık ayracı olarak virgül kullanın, örnek (4,&15)"
 msgid "Check for &upgrade"
 msgstr "&Güncelleme olup olmadığını denetle"
 
-#, fuzzy
 msgid "Test the city validity  and find the data of it."
-msgstr ""
-"Bununla, şehir KİMLİĞİ giriş geçerliliğini sınayıp atanan şehrin adını "
-"bulabilirsiniz."
+msgstr "Şehir geçerliliğini test edin ve verilerini bulun."
 
 msgid "Add the current city into your list."
 msgstr "Mevcut şehri listenize ekler."
 
-#, fuzzy
 msgid "Displays information about the current city."
-msgstr "Seçili şehirle ilgili ayrıntıları görüntüler."
+msgstr "Seçili şehirle ilgili ayrıntıları gösterir"
 
 msgid "Allows you to define the area, in order to adapt the sound effects."
 msgstr ""
@@ -609,86 +580,79 @@ msgid "You can enter or search for a city"
 msgstr "Bir şehir girebilir ya da arayabilirsiniz"
 
 msgid "By Latitude and Longitude: 48.8567,2.3508"
-msgstr ""
+msgstr "Enlem ve Boylam ile: 48.8567,2.3508"
 
-#, fuzzy
 msgid "By City name: Paris"
-msgstr "Sadece şehir adı ile: Ankara"
+msgstr "şehir adı ile: Paris"
 
-#, fuzzy
 msgid "By City name and country: Toronto,Canada"
-msgstr "Şehir ve ülke adı ile: Ankara,tr"
+msgstr "Şehir ve ülke adı ile: Ankara,Turkey"
 
 msgid "Or Toronto,CA"
-msgstr ""
+msgstr "Or Diyarbakır,TR"
 
-#, fuzzy
 msgid "By City name and region: Toronto,Ontario"
-msgstr "Şehir ve ülke adı ile: Ankara,tr"
+msgstr "Şehir adına ve bölgeye göre: Toronto, Ontario"
 
 msgid "By US zip: 10001"
-msgstr ""
+msgstr "ABD posta kodu ile: 10001"
 
-#, fuzzy
 msgid "By UK postcode: SW1"
-msgstr "Posta kodu ile: 34100,tr"
+msgstr "Birleşik Krallık posta koduna göre: SW1"
 
-#, fuzzy
 msgid "By Canada postal code: G2J"
-msgstr "Posta kodu ile: 34100,tr"
+msgstr "Kanada posta koduna göre: G2J"
 
 msgid "By metar:<metar code>: metar:EGLL"
-msgstr ""
+msgstr "metar ile:<metar code>: metar:EGLL"
 
 msgid "By iata:<3 digit airport code>: iata:DXB"
-msgstr ""
+msgstr "iata ile:<3 haneli havaalanı kodu>: iata:DXB"
 
 msgid "By auto:ip IP lookup: auto:ip"
-msgstr ""
+msgstr "Auto:ip IP araması: auto:ip"
 
 msgid "By IP address (IPv4 and IPv6 supported): 100.0.0.1"
-msgstr ""
+msgstr "IP adresine göre (IPv4 ve IPv6 desteklenir): 100.0.0.1"
 
 msgid "if there will be cities with the same name, will be listed"
-msgstr ""
+msgstr "aynı isimde şehirler varsa listelenecektir"
 
 msgid "By default, confirming a selection, is used the postal code"
-msgstr ""
+msgstr "Varsayılan olarak, bir seçimi onaylamak için posta kodu kullanılır"
 
 msgid ""
 "If the postal code is not valid, will be used a text string: city, state, "
 "region"
 msgstr ""
+"Posta kodu geçerli değilse, bir metin dizesi kullanılacaktır: şehir, eyalet, "
+"bölge"
 
-#, fuzzy
 msgid "You can indicate how to proceed by prefixing the following commands"
 msgstr ""
 "Aşağıdaki komutlara şu ön eklerle nasıl devam edeceğinizi belirleyebilirsiniz"
 
-#, fuzzy
 msgid ""
 "Direct (cities with the same name, will not listed), by typing D:City: D:"
 "Paris"
-msgstr "Doğrudan (aynı ada sahip şehirler listelenmeyecek), D:Şehir yazarak"
+msgstr ""
+"Doğrudan (aynı ada sahip şehirler listelenmeyecek), D:Şehir yazarak, d:ankara"
 
-#, fuzzy
 msgid "Geographic coordinates, by typing G:City: G:Venezia"
-msgstr "Coğrafik koordinatlar, G:Şehir yazarak"
+msgstr "Coğrafik koordinatlar, G:Şehir yazarak: g:ankara"
 
-#, fuzzy
 msgid "Text string, by typing T:City: T:Bologna"
-msgstr "Metin dizesi, T:Şehir yazarak"
+msgstr "Metin dizesi, T:Şehir yazarak: t:ankara"
 
 msgid "If the city is not found"
 msgstr "Şehir bulunamazsa"
 
 msgid "Try to reverse the order in the search key"
-msgstr ""
+msgstr "Arama dizgesindeki sırayı tersine çevirmeyi deneyin"
 
 msgid "Try with or without the country of origin"
 msgstr "Menşe ülke ile veya olmadan deneyin "
 
-#, fuzzy
 msgid "Try to merge the name with hyphens, or separate it with separator"
 msgstr "Adı tire ile birleştirmeyi deneyin, ya da boşluk ile ayırın "
 
@@ -717,13 +681,12 @@ msgstr "sesi yeniden üretemiyorum."
 
 #. Translators: message dialog
 msgid "Choose search key for"
-msgstr ""
+msgstr "için arama dizgesini seçin"
 
 #. Translators: the dialog message
 msgid "Unfortunately I could not recover enough data to find the city."
-msgstr ""
+msgstr "Maalesef şehri bulmak için yeterli veriyi kurtaramadım."
 
-#, fuzzy
 msgid "Do I try anyway?"
 msgstr "Tekrar deneyeyim mi?"
 
@@ -791,7 +754,6 @@ msgstr ""
 msgid "File corrupted or not available!"
 msgstr "Dosya bozuk veya mevcut değil!"
 
-#, fuzzy
 msgid "Sorry, I could not complete the installation of the sound effects!"
 msgstr "Üzgünüm, ses efektleri kurulumunu tamamlayamadım!"
 
@@ -868,9 +830,8 @@ msgstr "Önerilen adı kullanmak ister misiniz?"
 msgid "Import cities"
 msgstr "Şehirleri içe aktar"
 
-#, fuzzy
 msgid "Empty file or not in cities format compatible!"
-msgstr "Boş dosya veya şehir woeID biçim uyumlu değil!"
+msgstr "Boş dosya veya şehirler formatına uyumlu değil!"
 
 msgid "Do you want to replace your list with this?"
 msgstr "Listenizi bununla değiştirmek ister misiniz?"
@@ -910,7 +871,7 @@ msgid "Content of imported list"
 msgstr "İçe aktarılan liste içeriği"
 
 msgid "Containing incomplete data"
-msgstr ""
+msgstr "Eksik veri içeriyor"
 
 msgid "selected by the user"
 msgstr "Kullanıcı tarafından seçilen"
@@ -993,13 +954,12 @@ msgstr "Cumartesi"
 msgid "Sunday"
 msgstr "Pazar"
 
-#, fuzzy, python-format
+#, python-format
 msgid "It was not possible find the acronym of \"%s\"!"
-msgstr "%s ile ilgili kısaltma bulunamadı!"
+msgstr "\"%s\" kısaltmasını bulamadım!"
 
-#, fuzzy
 msgid "This may not allow you to get the city details."
-msgstr "Bu, şehir detaylarını almanıza izin vermiyor."
+msgstr "Bu, şehir detaylarını almanıza izin vermeyebilir."
 
 msgid ""
 "Please report this to the author so he can add this country in database."
@@ -1115,8 +1075,8 @@ msgstr "&Panoya kopyala"
 msgid ""
 "Adds local temperature and forecast 24 ours and prediction up to 3 days.\n"
 msgstr ""
-"24 saat için Yerell hava durumu bilgisini ve 9 güne kadar hava tahmin "
-"raporunu sunar.\n"
+"Seçili şehrin sıcaklık bilgisini; 24 saatlik ve sonraki iki gün için hava "
+"tahmin raporunu verir.\n"
 
 msgid "NVDA+w for the current bulletin.\n"
 msgstr "NVDA+w mevcut bülten için.\n"
@@ -1146,6 +1106,84 @@ msgid ""
 msgstr ""
 "Diğer talimatlar için, Eklenti yöneticisi içindeki Yardım düğmesine de "
 "basabilirsiniz."
+
+#~ msgid "Attention!"
+#~ msgstr "Dikkat!"
+
+#~ msgid "The wind gusts are of"
+#~ msgstr "Rüzgar kuvveti"
+
+#~ msgid "Chance of rain"
+#~ msgstr "Yağmur olasılığı"
+
+#~ msgid "Chance of snow"
+#~ msgstr "Kar olasılığı"
+
+#~ msgid "Wind speed"
+#~ msgstr "Rüzgar hızı"
+
+#~ msgid "Direction"
+#~ msgstr "yön"
+
+#~ msgid "Wind direction"
+#~ msgstr "Rüzgar yönü"
+
+#~ msgid "Cloudiness"
+#~ msgstr "bulutluluk"
+
+#~ msgid "Precipitation"
+#~ msgstr "Yağış"
+
+#~ msgid "Humidity"
+#~ msgstr "Nem"
+
+#~ msgid "Visibility"
+#~ msgstr "Görüş"
+
+#~ msgid "Hourly forecast for"
+#~ msgstr "Saatlik tahmin"
+
+#~ msgid ""
+#~ "If pressed once, announce the weather forecast and current temperature "
+#~ "for 24 hours and the next %d days. If pressed twice announce the "
+#~ "hourlyforecast temperature and weather conditions."
+#~ msgstr ""
+#~ "Bir kez basılırsa, 24 saat ve sonraki %d gün için hava durumu tahminini "
+#~ "ve sıcaklık bilgisini verir. İki kez basılırsa, sıcaklık ve hava "
+#~ "koşullarını saatlik tahmin olarak verir."
+
+#~ msgid "&hourlyforecast setting..."
+#~ msgstr "&saatlik tahmin ayarı..."
+
+#~ msgid "&Displays output in a window"
+#~ msgstr "&Çıktıyı bir pencerede görüntüler"
+
+#~ msgid "Allows you to choose the contents of the hourly forecast report."
+#~ msgstr "Saatlik tahmin raporunun içeriğini belirlemenizi sağlar."
+
+#~ msgid ""
+#~ "The details of this city are not in the database and so I added them to "
+#~ "the list."
+#~ msgstr "Bölgeyle ilgili veri tabanında bulunmayan detaylar listeye eklendi."
+
+#~ msgid "Hourlyforecast data report values."
+#~ msgstr "Saatlik tahmin veri raporu değerleri."
+
+#~ msgid "Disable the data you don't want to be processed:"
+#~ msgstr "İşlenmesini istemediğiniz verileri devre dışı bırakın:"
+
+#~ msgid ""
+#~ "NVDA+shift+w for the prediction in the current 24 hours and prediction up "
+#~ "to 2 days.\n"
+#~ msgstr ""
+#~ "NVDA+shift+w 24 saatlik ve sonraki iki gün için hava tahmin raporunu "
+#~ "sunar.\n"
+
+#~ msgid ""
+#~ "NVDA+shift+w, pressed twice provides the hourlyforecast of the weather "
+#~ "conditions.\n"
+#~ msgstr ""
+#~ "NVDA+shift+w, iki kez basıldığında, saatlik hava durumu bilgisini verir.\n"
 
 #~ msgid "The woeID"
 #~ msgstr "woeID"
@@ -1248,9 +1286,6 @@ msgstr ""
 
 #~ msgid "wintry Mix"
 #~ msgstr "soğukla birlikte"
-
-#~ msgid "ice to rain"
-#~ msgstr "Dolu"
 
 #~ msgid "ice"
 #~ msgstr "Buz"
@@ -1530,6 +1565,12 @@ msgstr ""
 #~ "Tekrar deneyin!"
 
 #~ msgid ""
+#~ "Adds local temperature and forecast 24 ours and prediction up to 9 days.\n"
+#~ msgstr ""
+#~ "24 saat için Yerell hava durumu bilgisini ve 9 güne kadar hava tahmin "
+#~ "raporunu sunar.\n"
+
+#~ msgid ""
 #~ "You have installed the Weather Plus add-on which is incompatible with "
 #~ "this one. The new name of this add-on is Weather_Plus with an underscore. "
 #~ "Click OK to update it."
@@ -1669,11 +1710,6 @@ msgstr ""
 
 #~ msgid "Use unit o&f pressure in pounds per square inch"
 #~ msgstr "İnç kare başına pound basınç birimini &kullan"
-
-#, fuzzy
-#~| msgid "Allows you to insert or modify your free api key"
-#~ msgid "Allows you to insert or modify your free api key."
-#~ msgstr "Ücretsiz apı anahtarı eklemenize veya değiştirmenize olanak tanır "
 
 #~ msgid "Insert"
 #~ msgstr "Ekle "
@@ -2016,9 +2052,6 @@ msgstr ""
 
 #~ msgid "pressure"
 #~ msgstr "pressione"
-
-#~ msgid "Umidity"
-#~ msgstr "Umidità"
 
 #~ msgid "Wind coming from"
 #~ msgstr "Vento proveniente da"
@@ -2374,12 +2407,6 @@ msgstr ""
 #~ msgid "F1 = list and edit box, F2 = last TAB selection, F3 volume controls."
 #~ msgstr ""
 #~ "F1 = liste ve düzenleme kutusu, F2 = son TAB seçimi, F3 ses kontrolleri."
-
-#~ msgid ""
-#~ "Provides the weather forecast and current temperature for 24 hours and "
-#~ "the next 4 days."
-#~ msgstr ""
-#~ "Önümüzdeki 24 saat ve 4 gün için hava tahmini ve sıcaklık bilgisi verir"
 
 #~ msgid "Find your city..."
 #~ msgstr "Şehrinizi bulun..."
