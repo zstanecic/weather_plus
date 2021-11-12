@@ -6,11 +6,12 @@
 
 # INFORMATIONEN ZU WEATHER PLUS: #
 
-* This plugin adds local temperature and forecasts to 24 hours up to 2
-  additional days and hourlyforecast for NVDA.
+* Diese Erweiterung stellt lokale Temperatur und Wettervorhersagen von 24
+  Stunden bis zu 2 zusätzlichen Tagen sowie stündliche  Prognosen in NVDA
+  zur Verfügung.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Freigegeben unter der GNU GPL (General Public License) v2
-* Wetter Plus arbeitet durch die Nutzung und Präsenz folgender Dienste:
+* Wetter Plus arbeitet nutzt und benötigt folgende Dienste:
 * [https://www.weatherapi.com/](https://www.weatherapi.com/)
 * [http://www.geonames.org/](http://www.geonames.org/)
 * [http://veloroutes.org/elevation/](http://veloroutes.org/elevation/)
@@ -25,7 +26,7 @@
 * Drücken Sie zweimal NVDA+Umschalt+W, um eine stündliche Vorhersage der
   Temperatur und der atmosphärischen Bedingungen zu erhalten.
 * Drücken Sie NVDA+Umschalt+Strg+W, um eine temporäre Stadt festzulegen.
-* Drücken Sie NVDA+Umschalt+Strg+Alt+W, um die Einstellungwn von Weather
+* Drücken Sie NVDA+Umschalt+Strg+Alt+W, um die Einstellungen von Weather
   Plus zu öffnen.
 * Drücken Sie NVDA+Alt+W, um das Datum und die Uhrzeit zu erhalten, zu der
   der Wetterbericht aktualisiert wurde.
@@ -34,16 +35,15 @@
 
 # Weather Plus-Einstellungen: #
 
-* Sie müssen Weather Plus vor der ersten Verwendung einstellen! Gehen Sie zum Untermenü Einstellungen, Untermenü Wetter Plus-Einstellungen und wählen Sie eine der folgenden Optionen aus:
-
- * Städte festlegen und verwalten... - Zeigt die aktuelle Stadt aus einer Liste an oder ermöglicht deren Einstellung.
- * Temporäre Stadt festlegen... - Zeigt eine temporäre Stadt aus einer Liste an und ermöglicht das Festlegen, falls verfügbar.
- * Dokumentation - Öffnet die Hilfedatei für die aktuelle Sprache.
+* Sie müssen Weather Plus vor der ersten Verwendung einrichten! Gehen Sie zum Untermenü Einstellungen, Untermenü Wetter Plus-Einstellungen und wählen Sie eine der folgenden Optionen aus:
+ * Städte festlegen und verwalten... - Zeigt die aktuelle Stadt in einer Liste an oder ermöglicht deren Einstellung.
+ * Temporäre Stadt festlegen... - Zeigt eine temporäre Stadt in einer Liste an und ermöglicht das Festlegen, falls verfügbar.
+ * Dokumentation - Öffnet die Hilfedatei für die verwendete Sprache.
  * Nach Updates suchen... - Benachrichtigt über die Verfügbarkeit neuer Versionen.
 
 Um eine neue Stadt hinzuzufügen: klicken Sie auf den folgenden Eintrag:
 
-* Städte verwalten - Zeigt die aktuelle Stadt aus einer Liste an oder
+* Städte verwalten - Zeigt die aktuelle Stadt in einer Liste an oder
   ermöglicht sie einzustellen.
 * Die folgende Meldung wird nur beim ersten Mal angezeigt! Einstellungen,
   Voreinstellung oder Keine. F1: Hilfe, F2: Letzte TAB-Auswahl, F3: Liste
@@ -65,7 +65,7 @@ Um eine neue Stadt hinzuzufügen: klicken Sie auf den folgenden Eintrag:
 * Festlegen - Ermöglicht den Bereich zu definieren, um die Sound-Effekte
   anzupassen. Diese Schaltfläche kann aktiviert werden, wenn diese
   installiert und aktiviert sind und Sie eine Stadt aus der Liste auswählen.
-* Voreingestellung - Legt eine Stadt als Standard fest, wird bei jedem
+* Voreinstellung - Legt eine Stadt als Standard fest, wird bei jedem
   Neustart der Erweiterung verwendet. Diese Schaltfläche wird aktiviert,
   wenn Sie eine zuvor in die Liste übernommene und nicht voreingestellte
   Stadt auswählen oder der Test nicht bestanden wurde.
@@ -91,8 +91,8 @@ Um eine neue Stadt hinzuzufügen: klicken Sie auf den folgenden Eintrag:
   Kelvin (Standard), C `-` F `-` K oder Nicht angeben.
 * Kombinationsfeld: Wettervorhersagen bis zu Tage: 1; Sie können zwischen 1
   bis 3 auswählen (standardmäßig ist 1 Tag voreingestellt)
-* Combo box: API response language: English, en; you can choose the language
-  of the weather conditions text.
+* Kombinationsfeld: Antwort der API-Sprache: Englisch, en; Sie können die
+  Sprache des Wettertextes auswählen.
 * Um die folgenden Aktionen durchzuführen, können Sie die folgenden
   Kontrollkästchen ein- oder ausschalten:
 * Wetterbericht und Wettervorhersage einschließlich der Stadt-Informationen
@@ -116,8 +116,8 @@ Um eine neue Stadt hinzuzufügen: klicken Sie auf den folgenden Eintrag:
 * 24-Stunden-Format. Wenn dieses Kontrollkästchen nicht markiert ist, wird
   die Uhrzeit im 12-Stunden-Format angegeben, z. B. 12 Uhr morgens `-` 12
   Uhr abends. Das Kontrollkästchen ist standardmäßig aktiviert.
-* Schaltflächen in den Einstellungen. Dieses Kontrollfeld ist standardmäßig
-  aktiviert.
+* Zeige Hilfe-Schaltflächen in den Einstellungen. Dieses Kontrollfeld ist
+  standardmäßig aktiviert.
 * Windinformationen ausgeben. Das Kontrollkästchen ist standardmäßig nicht
   aktiviert. Wenn dieses Kontrollfeld aktiviert ist, können Sie auch die
   folgenden Felder aktivieren:
