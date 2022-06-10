@@ -18,12 +18,12 @@
 
 # Käyttö: #
 
-* Saat selville nykyisen lämpötilan ja sääolosuhteet painamalla NVDA+W.
+* Saat selville nykyisen lämpö- ja säätilan painamalla NVDA+W.
 * Saat ennusteen 24 tunnin ajalle aina 2 päivään saakka painamalla
   NVDA+Vaihto+W.
 * Saat selville tuntiennusteen lämpötilasta ja ilmakehän olosuhteista
   painamalla kahdesti NVDA+Vaihto+W.
-* Aseta väliaikainen kaupunki painamalla NVDA+Vaihto+Ctrl+W.
+* Määritä väliaikainen kaupunki painamalla NVDA+Vaihto+Ctrl+W.
 * Avaa Weather Plus:n asetusvalintaikkuna painamalla NVDA+Vaihto+Ctrl+Alt+W.
 * Saat selville sääennusteen päivitysajankohdan painamalla NVDA+Alt+W.
 * Vaihda Fahrenheit-, celsius- tai Kelvin-asteikon välillä painamalla
@@ -32,14 +32,14 @@
 # Weather Plus:n asetusten määritys: #
 
 * Weather Plus:n asetukset on määritettävä ennen sen ensimmäistä käyttökertaa. Valitse NVDA-valikosta Asetukset -> Weather Plus ja valitse sitten jokin seuraavista vaihtoehdoista:
- * Aseta ja hallinnoi kaupunkeja...: Näyttää nykyisen kaupungin tai mahdollistaa sen valitsemisen luettelosta.
- * Aseta väliaikainen kaupunki...: Näyttää nykyisen väliaikaisen kaupungin tai mahdollistaa sen valitsemisen luettelosta.
+ * Määritä ja hallinnoi kaupunkeja...: Näyttää nykyisen kaupungin tai mahdollistaa sen valitsemisen luettelosta.
+ * Määritä väliaikainen kaupunki...: Näyttää nykyisen väliaikaisen kaupungin tai mahdollistaa sen valitsemisen luettelosta.
  * Dokumentaatio: Avaa ohjetiedoston nykyisellä kielellä.
  * Tarkista päivitys...: Ilmoittaa, jos uusi versio on saatavilla.
 
 Lisää uusi kaupunki painamalla seuraavaa painiketta:
 
-* Aseta ja hallinnoi kaupunkeja...: Näyttää nykyisen kaupungin tai
+* Määritä ja hallinnoi kaupunkeja...: Näyttää nykyisen kaupungin tai
   mahdollistaa sen valitsemisen luettelosta.
 * Seuraava ilmoitus näytetään vain ensimmäisellä
   käyttökerralla. Oletuskaupunki Ei mitään F1: ohje, F2: viimeisimmän
@@ -47,7 +47,7 @@ Lisää uusi kaupunki painamalla seuraavaa painiketta:
   sääennusteen kestoa, F5: äänenvoimakkuuden säätimet.
 * Kirjoita tähän muokkauskenttään kaupunki tai valitse se luettelosta. Huom:
   F5-näppäin on käytettävissä, mikäli äänitehosteet on otettu käyttöön.
-* Kun olet valinnut "Aseta ja hallinnoi kaupunkeja..." -kohdan,
+* Kun olet valinnut "Määritä ja hallinnoi kaupunkeja..." -kohdan,
   käytettävissä ovat seuraavat painikkeet:
 * Testaa: Testaa kaupungin kelvollisuus ja hae sen tiedot.
 * Lisää: Lisää nykyisen kaupungin luetteloon. Tämä painike on käytettävissä,
@@ -57,7 +57,7 @@ Lisää uusi kaupunki painamalla seuraavaa painiketta:
 * Määritä: Voit määrittää alueen äänitehosteiden mukauttamiseksi. Tämä
   painike on käytettävissä, mikäli äänitehosteet on asennettu ja ne ovat
   käytettävissä, ja valitset luettelosta kaupungin.
-* Aseta oletukseksi: Asettaa kaupungin oletukseksi, jolloin sitä käytetään
+* Aseta oletukseksi: Määrittää kaupungin oletukseksi, jolloin sitä käytetään
   aina, kun käynnistät lisäosan uudelleen. Tämä painike on käytettävissä,
   mikäli valitset luetteloon aiemmin lisätyn kaupungin, jota ei ole asetettu
   oletukseksi, tai joka on läpäissyt testin.
@@ -83,11 +83,11 @@ Lisää uusi kaupunki painamalla seuraavaa painiketta:
 * Sääennuste näin monelle päivälle: Tästä yhdistelmäruudusta voit valita
   sääennusteen 1-3 päivälle (oletusarvoisesti yksi päivä)
 * Ohjelmointirajapinnan vastauksen kieli: Tästä yhdistelmäruudusta voit
-  valita sääolosuhteiden tekstin kielen (oletusarvoisesti englanti).
+  valita säätilan tekstin kielen (oletusarvoisesti englanti).
 * Valitse seuraavat valintaruudut suorittaaksesi niiden toiminnot:
 * Kopioi sääraportti ja -ennuste leikepöydälle (kaupungin tiedot mukaan
   lukien): Tätä valintaruutua ei ole oletusarvoisesti valittu.
-* Ota käyttöön äänitehosteet (vain nykyiselle sääolosuhteille): Tällä
+* Ota käyttöön äänitehosteet (vain nykyiselle säätilalle): Tällä
   valintaruudulla voit myös hallita äänitehosteiden asennusta. Mikäli
   äänitehosteet on asennettu ja valintaruutu valitaan, F5-näppäin ja
   äänenvoimakkuusasetus ovat käytettävissä.
