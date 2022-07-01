@@ -6,16 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Weather_Plus\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2019-06-06 19:39+0200\n"
-"PO-Revision-Date: 2019-06-06 19:39+0200\n"
+"PO-Revision-Date: 2022-06-25 20:09+0200\n"
 "Last-Translator: Jani Kinnunen <janikinnunen340@gmail.com>\n"
 "Language-Team: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.6.11\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -31,976 +31,799 @@ msgstr "Kelvin"
 msgid "unknown"
 msgstr "tuntematon"
 
+#. Translators: the configuration submenu in NVDA Preferences menu
 msgid "Weather Plus &Settings"
-msgstr "Weather Plus -&asetukset"
+msgstr "We&ather Plus"
 
 msgid "Show configuration items."
-msgstr ""
+msgstr "Näytä asetuskohteet."
 
+#. Translators: item to open primary configuration window
 msgid "Set and &manage your cities..."
-msgstr ""
+msgstr "Määritä ja &hallinnoi kaupunkeja..."
 
 msgid "Displays or allows to set the current cities from a list"
 msgstr ""
+"Näyttää nykyiset kaupungit tai mahdollistaa niiden määrittämisen luettelosta"
 
+#. Translators: item to open window to set up a temporary city
 msgid "Set a &temporary city..."
-msgstr ""
+msgstr "Määritä v&äliaikainen kaupunki..."
 
 msgid "Allows to set one temporary city from a list"
-msgstr ""
+msgstr "Mahdollistaa väliaikaisen kaupungin määrittämisen luettelosta"
 
+#. Translators: item to open the help file for the current language
 msgid "&Documentation"
-msgstr ""
+msgstr "&Dokumentaatio"
 
 msgid "Opens the help file for the current language"
-msgstr ""
+msgstr "Avaa ohjetiedoston nykyisellä kielellä"
 
+#. Translators: item to notify if there is an upgraded version available
 msgid "&Check for Upgrade..."
-msgstr ""
+msgstr "Ta&rkista päivitykset..."
 
 msgid "Notify if there is an upgraded version available"
-msgstr ""
+msgstr "Ilmoita, jos uusi versio on saatavilla"
 
 #. opens the Weather Plus settings window
+#. Translators: the title of main settings window
 msgid "Settings"
-msgstr ""
+msgstr "Asetukset"
 
 msgid "Preset"
-msgstr ""
+msgstr "Oletus"
 
 msgid "None"
-msgstr ""
+msgstr "Ei mitään"
 
-msgid "Enter a City, woeId or choose one from the list, if available."
-msgstr ""
+#. Translators: the message in the main settings window
+msgid "Enter a City or choose one from the list, if available."
+msgstr "Kirjoita kaupunki tai valitse se luettelosta."
 
-msgid "The woeID"
-msgstr ""
-
-msgid "assigned to"
-msgstr ""
+#. Translators: dialog message in case of invalid city or with incomplete data
+#. Translators: dialog message used to describe one of the 2 types of errors in city
+msgid "The city"
+msgstr "Kaupunkia"
 
 msgid "has not been preset."
-msgstr ""
+msgstr "ei ole asetettu oletukseksi."
 
 msgid "Will be used in temporary mode!"
-msgstr ""
+msgstr "käytetään väliaikaistilassa."
 
+#. Translators: the dialog title
 #. offers to save the list changed
+#. Translators: the dialog title
+#. Translators: title dialog
+#. Translators: the dialog title
 msgid "Notice!"
-msgstr ""
+msgstr "Ilmoitus"
 
+#. Translators: dialog message to warn that the list has not been saved
 msgid "You have modified the list of your cities"
-msgstr ""
+msgstr "Olet muokannut kaupunkien luetteloa."
 
 msgid "Do you want to save it?"
-msgstr ""
+msgstr "Haluatko tallentaa muutokset?"
 
-msgid "The cities on your list are not compatible with the Yahoo API!"
+msgid "The cities on your list are not compatible with the Weather API!"
 msgstr ""
+"Luettelossa olevat kaupungit eivät ole yhteensopivia Weather API -"
+"ohjelmointirajapinnan kanssa."
 
 msgid ""
 "They have to be tested and validated, you can do it from the addon settings "
 "window."
 msgstr ""
+"Ne on testattava ja todennettava. Voit tehdä sen lisäosan asetusikkunasta."
 
+#. Translators: the dialog title to  setting a temporary city
 msgid "Setting up a temporary city"
-msgstr ""
+msgstr "Väliaikaisen kaupungin määrittäminen"
 
+#. addss short cut keys
 msgid "Cities List available:"
-msgstr ""
+msgstr "Kaupunkiluetteloita käytettävissä:"
 
 msgid "Documentation not available for the current language!"
-msgstr ""
+msgstr "Dokumentaatiota ei ole saatavilla nykyisellä kielellä."
 
+#. Translators: dialog message and title used when it was not possible to find data
 msgid ""
-"Sorry, i can not receive data, verify that your internet connection is "
+"Sorry, I can not receive data, problems with the download page, try again "
+"later please!"
+msgstr ""
+"Valitettavasti tietojen vastaanottaminen ei onnistu, koska lataussivulla on "
+"ongelmia. Yritä myöhemmin uudelleen."
+
+#. Translators: dialog message and title used when it not possible to connect and receive data
+msgid ""
+"Sorry, I can not receive data, verify that your internet connection is "
 "active, or try again later!"
 msgstr ""
+"Valitettavasti tietojen vastaanottaminen ei onnistu. Varmista, että internet-"
+"yhteys on käytettävissä tai yritä myöhemmin uudelleen."
 
 msgid "version"
-msgstr ""
+msgstr "Versio"
 
 msgid "is available."
-msgstr ""
+msgstr "on saatavilla."
 
 msgid "Installed version"
-msgstr ""
+msgstr "Asennettu versio"
 
 msgid "Do you want to download and install it?"
-msgstr ""
+msgstr "Haluatko ladata ja asentaa sen?"
 
+#. Translators: dialog message used when a new version is not available
 msgid "Sorry, at the time an update is not available."
-msgstr ""
+msgstr "Päivitystä ei ole tällä hetkellä saatavilla."
 
 msgid "not found!"
-msgstr ""
+msgstr "ei löydy."
 
 msgid ""
 "You need to upgrade the sound effects by reactivating the appropriate option "
 "from the settings of"
 msgstr ""
+"Äänitehosteet on päivitettävä valitsemalla asianmukainen vaihtoehto "
+"asetuksista"
 
 msgid "But if these are already updated, then you need to update"
-msgstr ""
+msgstr "Jos ne on kuitenkin jo päivitetty, sitten sinun on päivitettävä"
 
 msgid "I can not load the settings!"
-msgstr ""
+msgstr "Asetuksia ei voi ladata."
+
+msgid "Attenction!"
+msgstr "Huomio"
 
 msgid "I can not save the settings!"
-msgstr ""
+msgstr "Asetuksia ei voi tallentaa."
 
 msgid "invalid name"
-msgstr ""
+msgstr "Virheellinen nimi"
+
+msgid "The cloudiness is"
+msgstr "Pilvisyys on"
+
+msgid "The precipitation is"
+msgstr "Sademäärä on"
+
+msgid "miles per hour"
+msgstr "mailia tunnissa"
 
 msgid "miles"
-msgstr ""
+msgstr "mailia"
+
+msgid "inches of mercury"
+msgstr "elohopeatuumaa"
 
 #. takes the value in mmHg
 msgid "millimeters of mercury"
-msgstr ""
+msgstr "elohopeamillimetriä"
 
-msgid "inches of mercury"
-msgstr ""
+msgid "inches"
+msgstr "tuumaa"
+
+msgid "nanometers"
+msgstr "nanometriä"
+
+msgid "kilometers per hour"
+msgstr "kilometriä tunnissa"
 
 msgid "kilometers"
-msgstr ""
+msgstr "kilometriä"
 
 msgid "millibars"
-msgstr ""
+msgstr "millibaaria"
+
+msgid "millimeters"
+msgstr "millimetriä"
 
 msgid "the weather report is currently"
-msgstr ""
+msgstr "Sää on tällä hetkellä"
 
 msgid "degrees"
-msgstr ""
+msgstr "astetta"
 
-#. adds wind information to the string
+#. addss wind information to the string
 msgid "The wind direction is from"
-msgstr ""
+msgstr "Tuulen suunta on"
 
 msgid "with speed of"
-msgstr ""
+msgstr "ja nopeus on"
 
 msgid "The wind speed is"
-msgstr ""
+msgstr "Tuulen nopeus on"
+
+msgid "With gusts of"
+msgstr "Puuskissa"
 
 msgid "The perceived temperature is"
-msgstr ""
+msgstr "Tunnettu lämpötila on"
 
-#. adds information on the atmosphere
-msgid "steady"
-msgstr ""
-
-msgid "rising"
-msgstr ""
-
-msgid "falling"
-msgstr ""
-
+#. addss information on the atmosphere
 msgid "The humidity is"
-msgstr ""
+msgstr "Kosteus on"
+
+msgid "The cloudiness is of"
+msgstr "Pilvisyys on"
+
+msgid "The precipitation is of"
+msgstr "Sademäärä on"
 
 msgid "and the visibility is up to"
-msgstr ""
+msgstr "ja näkyvyys on"
 
 msgid "The visibility is up to"
-msgstr ""
+msgstr "Näkyvyys on"
+
+msgid "and the precipitation is"
+msgstr "ja sademäärä on"
 
 msgid "The pressure is"
-msgstr ""
+msgstr "Ilmanpaine on"
 
-msgid "and the state of the barometric pressure is"
-msgstr ""
-
-msgid "The state of the barometric pressure is"
-msgstr ""
+msgid "The UV radiation is of"
+msgstr "UV-säteily on"
 
 msgid "The sun rises at"
-msgstr ""
+msgstr "Aurinko nousee kello"
 
 msgid "and sets at"
-msgstr ""
+msgstr "ja laskee kello"
+
+msgid "The moon rises at"
+msgstr "Kuu nousee kello"
 
 msgid "the forecast for today is"
-msgstr ""
+msgstr "Ennuste tälle päivälle on"
 
 msgid "with a maximum temperature of"
-msgstr ""
+msgstr "enimmäislämpötila on"
 
 msgid "and a minimum of"
-msgstr ""
+msgstr "ja vähimmäislämpötila"
 
+#. replace the missing prediction with a description
 msgid "not available"
-msgstr ""
+msgstr "ei käytettävissä"
 
 #. this does not replace the name of the city
 msgid "In"
-msgstr ""
+msgstr "Kaupungissa"
 
 msgid "Unnamed"
-msgstr ""
+msgstr "Nimetön"
 
-msgid "Sorry, the woeID is not set!"
-msgstr ""
-
-msgid "kilometers per hour"
-msgstr ""
-
-msgid "miles per hour"
-msgstr ""
-
-#. weather condition
-msgid "in the morning"
-msgstr ""
-
-msgid "in the evening"
-msgstr ""
-
-msgid " and "
-msgstr ""
-
-msgid " to "
-msgstr ""
-
-msgid "in the vicinity"
-msgstr ""
-
-msgid "tornado"
-msgstr ""
-
-msgid "tropical storm"
-msgstr ""
-
-msgid "hurricane"
-msgstr ""
-
-msgid "severe thunderstorms"
-msgstr ""
-
-msgid "mixed rain and snow"
-msgstr ""
-
-msgid "mixed rain and hail"
-msgstr ""
-
-msgid "mixed rain and sleet"
-msgstr ""
-
-msgid "mixed snow and sleet"
-msgstr ""
-
-msgid "snow flurries"
-msgstr ""
-
-msgid "smoke"
-msgstr ""
-
-msgid "smoky"
-msgstr ""
-
-msgid "precipitation"
-msgstr ""
-
-msgid "sunny intervals"
-msgstr ""
-
-msgid "sunny period"
-msgstr ""
-
-msgid "light snow"
-msgstr ""
-
-msgid "scattered snow showers"
-msgstr ""
-
-msgid "snow showers"
-msgstr ""
-
-msgid "snow shower"
-msgstr ""
-
-msgid "snowstorm"
-msgstr ""
-
-msgid "snowdrift"
-msgstr ""
-
-msgid "drifting snow"
-msgstr ""
-
-msgid "wintry Mix"
-msgstr ""
-
-msgid "ice to rain"
-msgstr ""
-
-msgid "ice"
-msgstr ""
-
-msgid "blizzard"
-msgstr ""
-
-msgid "blowing snow"
-msgstr ""
-
-msgid "snow"
-msgstr ""
-
-msgid "light rain with thunder"
-msgstr ""
-
-msgid "few showers"
-msgstr ""
-
-msgid "heavy showers"
-msgstr ""
-
-msgid "heavy thunderstorms"
-msgstr ""
-
-msgid "heavy thunderstorm"
-msgstr ""
-
-msgid "lightning"
-msgstr ""
-
-msgid "isolated clouds"
-msgstr ""
-
-msgid "partly cloudy"
-msgstr ""
-
-msgid "partly bright"
-msgstr ""
-
-msgid "showers early"
-msgstr ""
-
-msgid "light rain"
-msgstr ""
-
-msgid "heavy rain"
-msgstr ""
-
-msgid "isolated showers"
-msgstr ""
-
-msgid "isolated thunderstorms"
-msgstr ""
-
-msgid "isolated thundershowers"
-msgstr ""
-
-msgid "mostly cloudy"
-msgstr ""
-
-msgid "mostly dry"
-msgstr ""
-
-msgid "mostly clear"
-msgstr ""
-
-msgid "clearing"
-msgstr ""
-
-msgid "no rain"
-msgstr ""
-
-msgid "sleet"
-msgstr ""
-
-msgid "blowing dust"
-msgstr ""
-
-msgid "widespread dust"
-msgstr ""
-
-msgid "low drifting sand"
-msgstr ""
-
-msgid "sandstorm"
-msgstr ""
-
-msgid "sand storm"
-msgstr ""
-
-msgid "dust"
-msgstr ""
-
-msgid "sand"
-msgstr ""
-
-msgid "thundery showers"
-msgstr ""
-
-msgid "thundershowers"
-msgstr ""
-
-msgid "scattered thunderstorms"
-msgstr ""
-
-msgid "scattered showers"
-msgstr ""
-
-msgid "thunderstorms"
-msgstr ""
-
-msgid "thunderstorm"
-msgstr ""
-
-msgid "storm"
-msgstr ""
-
-msgid "hail"
-msgstr ""
-
-msgid "foggy"
-msgstr ""
-
-msgid "fog"
-msgstr ""
-
-msgid "haze"
-msgstr ""
-
-msgid "mist"
-msgstr ""
-
-msgid "clear"
-msgstr ""
-
-msgid "fair"
-msgstr ""
-
-msgid "fine"
-msgstr ""
-
-msgid "overcast"
-msgstr ""
-
-msgid "light showers"
-msgstr ""
-
-msgid "light drizzle"
-msgstr ""
-
-msgid "freezing rain"
-msgstr ""
-
-msgid "frequent showers"
-msgstr ""
-
-msgid "rain shower"
-msgstr ""
-
-msgid "rain"
-msgstr ""
-
-msgid "freezing drizzle"
-msgstr ""
-
-msgid "showers"
-msgstr ""
-
-msgid "drizzle"
-msgstr ""
-
-msgid "dry"
-msgstr ""
-
-msgid "mild"
-msgstr ""
-
-msgid "clouds"
-msgstr ""
-
-msgid "cloudy"
-msgstr ""
-
-msgid "mostly sunny"
-msgstr ""
-
-msgid "sunny"
-msgstr ""
-
-msgid "sun"
-msgstr ""
-
-msgid "bright"
-msgstr ""
-
-msgid "thunder"
-msgstr ""
-
-msgid "shower"
-msgstr ""
-
-msgid "breezy"
-msgstr ""
-
-msgid "blustery"
-msgstr ""
-
-msgid "windy"
-msgstr ""
-
-msgid "wind"
-msgstr ""
-
-msgid "flurries"
-msgstr ""
-
-msgid "late"
-msgstr ""
-
-msgid "early"
-msgstr ""
-
-msgid "isolated"
-msgstr ""
-
-msgid "shallow fog"
-msgstr ""
-
-msgid "heavy"
-msgstr ""
-
-msgid "cold"
-msgstr ""
-
-msgid "hot"
-msgstr ""
+msgid "Sorry, the city is not set!"
+msgstr "Kaupunkia ei ole määritetty."
 
 msgid "Sorry, it was not possible to load the most recent update!"
-msgstr ""
+msgstr "Uusimman päivityksen lataaminen ei onnistunut."
 
 msgid "Please try again later."
-msgstr ""
+msgstr "Yritä myöhemmin uudelleen."
 
 msgid "meters per second"
-msgstr ""
+msgstr "metriä sekunnissa"
 
-msgid "Sorry, the woeID set is not valid or contains incomplete data!"
+msgid "Sorry, the city set is not valid or contains incomplete data!"
 msgstr ""
+"Määritetty kaupunki on virheellinen tai sisältää puutteellisia tietoja."
 
 msgid "north"
-msgstr ""
+msgstr "pohjoinen"
 
 msgid "north northeast"
-msgstr ""
+msgstr "pohjois-koillinen"
 
 msgid "northeast"
-msgstr ""
+msgstr "koillinen"
 
 msgid "east northeast"
-msgstr ""
+msgstr "itä-koillinen"
 
 msgid "east"
-msgstr ""
+msgstr "itä"
 
 msgid "east southeast"
-msgstr ""
+msgstr "itä-kaakko"
 
 msgid "southeast"
-msgstr ""
+msgstr "kaakko"
 
 msgid "south southeast"
-msgstr ""
+msgstr "etelä-kaakko"
 
 msgid "south"
-msgstr ""
+msgstr "etelä"
 
 msgid "south southwest"
-msgstr ""
+msgstr "etelä-lounas"
 
 msgid "southwest"
-msgstr ""
+msgstr "lounas"
 
 msgid "west southwest"
-msgstr ""
+msgstr "länsi-lounas"
 
 msgid "west"
-msgstr ""
+msgstr "länsi"
 
 msgid "west northwest"
-msgstr ""
+msgstr "länsi-luode"
 
 msgid "northwest"
-msgstr ""
+msgstr "luode"
 
 msgid "north northwest"
-msgstr ""
+msgstr "pohjois-luode"
 
 msgid ""
 "Is not working properly, contains incomplete data or has been removed from "
-"the database of"
-msgstr ""
+"the"
+msgstr "ei toimi kunnolla, sisältää puutteellisia tietoja tai se on poistettu"
 
 msgid "It could be a temporary problem and you may wait a while '..."
-msgstr ""
+msgstr "Ongelma voi olla tilapäinen, joten odota hetki."
 
 msgid "Do you want to delete it from your list?"
-msgstr ""
+msgstr "Haluatko poistaa sen luettelosta?"
 
 msgid "Provides the current temperature and weather conditions."
-msgstr ""
+msgstr "Ilmoittaa nykyisen lämpötilan ja sääolosuhteet."
 
+#, python-format
 msgid ""
 "Provides the weather forecast and current temperature for 24 hours and the "
-"next 9 days."
+"next %d days."
 msgstr ""
+"Tarjoaa sääennusteen ja nykyisen lämpötilan 24 tunniksi ja seuraavaksi %d "
+"päiväksi."
 
 msgid "Sorry, no list available!"
-msgstr ""
+msgstr "Luetteloa ei käytettävissä."
 
 msgid "Allows you to set a temporary city."
-msgstr ""
+msgstr "Mahdollistaa väliaikaisen kaupungin määrittämisen."
 
 msgid "Scale of temperature measurement set into"
-msgstr ""
+msgstr "Lämpötila-asteikoksi määritetty"
 
 msgid "Allows you to set a temporary scale of temperature mesurement."
-msgstr ""
+msgstr "Mahdollistaa väliaikaisen lämpötila-asteikon määrittämisen."
 
 msgid "at"
-msgstr ""
+msgstr "kello"
 
 msgid "Last update of the current weather report"
-msgstr ""
+msgstr "Tämänhetkinen säätiedote päivitetty viimeksi"
 
 msgid "Announces the date of the last update of the weather report."
-msgstr ""
+msgstr "Ilmoittaa säätiedotteen viimeisen päivityksen päivämäärän."
 
 msgid "Open the Weather Plus settings dialog."
-msgstr ""
+msgstr "Avaa Weather Plus:n asetusvalintaikkunan."
 
 msgid ""
 "f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
 "duration Weather Forecast, f5: volume controls."
 msgstr ""
+"F1: ohje, F2: viimeisimmän välilehden valinta, F3: luettelo- ja "
+"muokkausruutu, F4: muuta sääennusteen kestoa, F5: äänenvoimakkuuden säätimet."
 
 msgid ""
 "f1: help placing, f2: last TAB selection, f3: list and edit box, f4: control "
 "duration Weather Forecast."
 msgstr ""
+"F1: ohje, F2: viimeisimmän välilehden valinta, F3: luettelo- ja "
+"muokkausruutu, F4: muuta sääennusteen kestoa."
 
 msgid "Test"
-msgstr ""
+msgstr "Kokeile"
 
 msgid "Details"
-msgstr ""
+msgstr "Tiedot"
 
 msgid "Define"
-msgstr ""
+msgstr "Määritä"
 
 msgid "Add"
-msgstr ""
+msgstr "Lisää"
 
 msgid "Remove"
-msgstr ""
+msgstr "Poista"
 
 msgid "Rename"
-msgstr ""
+msgstr "Nimeä uudelleen"
 
 msgid "&Import new cities..."
-msgstr ""
+msgstr "Tuo &uusia kaupunkeja..."
 
 msgid "&Export your cities..."
-msgstr ""
+msgstr "V&ie kaupungit..."
 
 msgid "Scale of temperature measurement:"
-msgstr ""
+msgstr "Lämpötila-asteikko:"
 
 msgid "Degrees shown as:"
-msgstr ""
+msgstr "Asteet näytetään muodossa:"
 
 msgid "C - F - K"
-msgstr ""
+msgstr "C - F - K"
 
-msgid "Don't specify"
-msgstr ""
+msgid "Unspecified"
+msgstr "Ei määritetty"
 
 msgid "Weather Forecasts up to days:"
-msgstr ""
+msgstr "Sääennusteet näin monelle päivälle:"
+
+msgid "API response language:"
+msgstr "Ohjelmointirajapinnan vastauksen kieli:"
 
 #. check boxes
 msgid ""
 "&Copy the weather report and weather forecast, including city details to "
 "clipboard"
 msgstr ""
+"&Kopioi sääraportti ja -ennuste (kaupungin tiedot mukaan lukien) "
+"leikepöydälle"
 
 msgid "Enable &audio effects (only for the current weather conditions)"
-msgstr ""
+msgstr "Ota käyttöön &äänitehosteet (vain tämänhetkiselle säätilalle)"
 
 msgid "Use only &weather effects"
-msgstr ""
+msgstr "Käytä vain &säätehosteita"
 
 msgid "General audio volume"
-msgstr ""
+msgstr "Yleinen äänien voimakkuus"
 
 msgid "Current audio volume"
-msgstr ""
+msgstr "Nykyinen äänien voimakkuus"
 
 #. check boxes
 msgid "Enable &help buttons in the settings window"
-msgstr ""
+msgstr "Ota käyttöön &ohje-painikkeet asetusikkunassa"
 
-msgid "Read &wind informations"
-msgstr ""
+msgid "Read &wind information"
+msgstr "Lue &tuulen tiedot"
 
 msgid "Add wind directi&on"
-msgstr ""
+msgstr "Lisää tuulen suu&nta"
 
 msgid "Add wi&nd speed"
-msgstr ""
+msgstr "Lisää tuu&len nopeus"
 
 msgid "Add speed in &meters per second of the wind"
-msgstr ""
+msgstr "Lisää tuulen nopeus &metreinä sekunnissa"
+
+msgid "Add wind &gust speed"
+msgstr "Lisää tuulen nopeus &puuskissa"
 
 msgid "Add perceived &temperature"
-msgstr ""
+msgstr "Lisää tunnettu l&ämpötila"
 
-msgid "&Read atmospherical informations"
-msgstr ""
+msgid "&Read atmospherical information"
+msgstr "Lue ilmake&hän tiedot"
 
 msgid "Add humidity va&lue"
-msgstr ""
+msgstr "Lisää kosteus&arvo"
 
 msgid "Add &visibility value"
-msgstr ""
+msgstr "Lisää Nä&kyvyys"
+
+msgid "Add cloudiness &value"
+msgstr "Lisää pil&visyys"
+
+msgid "Add precipitation &value"
+msgstr "Lisää sa&demäärä"
+
+msgid "Add &ultraviolet radiation value"
+msgstr "Lisää &ultraviolettisäteilyn arvo"
 
 msgid "Add atmospheric &pressure value"
-msgstr ""
+msgstr "Lisää ilman&paine"
 
 msgid "Indicates the atmospheric pressure in millimeters of mercur&y (mmHg)"
-msgstr ""
+msgstr "Ilmaisee ilmanpaineen elohopeamillimetreinä (mmHg)"
 
-msgid "Add status of &barometric pressure"
-msgstr ""
-
-msgid "Read a&stronomical informations"
-msgstr ""
+msgid "Read a&stronomical information"
+msgstr "Lue tähtitieteelli&set tiedot"
 
 msgid "Enable reading of the hours in &24-hour format"
-msgstr ""
+msgstr "Ota käyttöön ajan lukeminen &24 tunnin muodossa"
 
 msgid "Use the comma to separate decimals, example (4,&15)"
-msgstr ""
+msgstr "Käytä pilkkua desimaalierottimena (esim. 4,&15)"
 
 msgid "Check for &upgrade"
-msgstr ""
+msgstr "Tarkista &päivitykset"
 
-msgid ""
-"Testing the validity of city woeID entry and find the name of city assigned, "
-"or viceversa."
-msgstr ""
+msgid "Test the city validity  and find the data of it."
+msgstr "Testaa kaupungin kelvollisuus ja etsi sen tiedot."
 
-msgid "Displays information on the current city."
-msgstr ""
+msgid "Add the current city into your list."
+msgstr "Lisää nykyinen kaupunki luetteloon."
+
+msgid "Displays information about the current city."
+msgstr "Näyttää nykyisen kaupungin tiedot."
 
 msgid "Allows you to define the area, in order to adapt the sound effects."
 msgstr ""
-
-msgid "Add the current city into your list."
-msgstr ""
+"Mahdollistaa alueen määrittämisen äänitehosteiden mukauttamista varten."
 
 msgid ""
 "Presets the current city as the default, will be used every time you restart "
 "the plugin."
 msgstr ""
+"Määrittää nykyisen kaupungin oletukseksi, jolloin sitä käytetään aina kun "
+"käynnistät lisäosan uudelleen."
 
 msgid "Delete  the current city from your list."
-msgstr ""
+msgstr "Poista nykyinen kaupunki luettelosta."
 
 msgid "Rename the current city."
-msgstr ""
+msgstr "Nimeä nykyinen kaupunki uudelleen."
 
 msgid ""
 "Permits to incorporate in your list new cities importing them from another "
 "list with the extension *.zipcodes; you can select the city you want to "
 "import, by turning on the check box associated."
 msgstr ""
+"Sisällyttää luetteloon uusia kaupunkeja tuomalla ne *.zipcodes-päätteisestä "
+"tiedostosta. Voit valita tuotavan kaupungin valitsemalla sen valintaruudun."
 
 msgid "Permits to save your list of cities in a specified path."
-msgstr ""
+msgstr "Tallentaa kaupunkiluettelon määritettyyn hakemistopolkuun."
 
 msgid "You can enter or search for a city"
-msgstr ""
+msgstr "Etsi kaupunki"
 
-msgid "By city woeID: 715399"
-msgstr ""
+msgid "By Latitude and Longitude: 48.8567,2.3508"
+msgstr "Leveys- ja pituusasteen mukaan (esim. 48.8567,2.3508):"
 
-msgid "By only city name: Ferrara"
-msgstr ""
+msgid "By City name: Paris"
+msgstr "Kaupungin nimen mukaan (esim. Paris):"
 
-msgid "By state or region and city name: Emilia Romagna Ferrara"
-msgstr ""
+msgid "By City name and country: Toronto,Canada"
+msgstr "Kaupungin nimen ja maan mukaan (esim. Toronto,Canada):"
 
-msgid "By city name and country: Ferrara,it"
-msgstr ""
+msgid "Or Toronto,CA"
+msgstr "Tai Toronto,CA"
 
-msgid "By postal code: 44100,it"
-msgstr ""
+msgid "By City name and region: Toronto,Ontario"
+msgstr "Kaupungin nimen ja alueen mukaan (esim. Toronto,Ontario):"
 
-msgid "By geographic coordinates: latitude, longitude"
+msgid "By US zip: 10001"
+msgstr "Yhdysvaltain postinumeron mukaan (esim. 10001):"
+
+msgid "By UK postcode: SW1"
+msgstr "Yhdistyneen kuningaskunnan postinumeron mukaan (esim. SW1):"
+
+msgid "By Canada postal code: G2J"
+msgstr "Kanadan postinumeron mukaan (esim. G2J):"
+
+msgid "By metar:<metar code>: metar:EGLL"
+msgstr "Metar-koodin mukaan (esim. metar:EGLL):"
+
+msgid "By iata:<3 digit airport code>: iata:DXB"
+msgstr "Lentokenttäkoodin mukaan (esim. iata:DXB):"
+
+msgid "By auto:ip IP lookup: auto:ip"
+msgstr "IP-haun mukaan (esim. auto:ip):"
+
+msgid "By IP address (IPv4 and IPv6 supported): 100.0.0.1"
+msgstr "IP--osoitteen mukaan (tukee IPv4:ää ja IPv6:ta, esim. 100.0.0.1):"
+
+msgid "if there will be cities with the same name, will be listed"
+msgstr "Jos samannimisiä kaupunkeja löytyy, niistä näytetään luettelo."
+
+msgid "By default, confirming a selection, is used the postal code"
+msgstr "Valinnan vahvistamiseen käytetään oletusarvoisesti postinumeroa."
+
+msgid ""
+"If the postal code is not valid, will be used a text string: city, state, "
+"region"
 msgstr ""
+"Jos postinumero ei ole kelvollinen, sen sijaan käytetään merkkijonoa "
+"kaupunki, osavaltio, alue"
+
+msgid "You can indicate how to proceed by prefixing the following commands"
+msgstr ""
+"Voit ilmoittaa, miten edetä lisäämällä etuliitteen seuraaviin komentoihin"
+
+msgid ""
+"Direct (cities with the same name, will not listed), by typing D:City: D:"
+"Paris"
+msgstr ""
+"Suora (samannimisiä kaupunkeja ei näytetä) kirjoittamalla D:Kaupunki: D:Paris"
+
+msgid "Geographic coordinates, by typing G:City: G:Venezia"
+msgstr "Maantieteelliset koordinaatit kirjoittamalla G:Kaupunki: G:Venezia"
+
+msgid "Text string, by typing T:City: T:Bologna"
+msgstr "Merkkijono kirjoittamalla t:kaupunki: t:bologna"
 
 msgid "If the city is not found"
-msgstr ""
+msgstr "Jos kaupunkia ei löydy"
+
+msgid "Try to reverse the order in the search key"
+msgstr "Yritä kääntää hakuavaimen järjestys päinvastaiseksi"
 
 msgid "Try with or without the country of origin"
-msgstr ""
+msgstr "Kokeile alkuperämaalla tai ilman sitä"
 
-msgid "Try to merge the name with hyphens, or separate it with spaces"
-msgstr ""
+msgid "Try to merge the name with hyphens, or separate it with separator"
+msgstr "Yritä yhdistää nimi viivoilla tai erottaa se erottimella"
 
 msgid "Try deleting apostrophes"
-msgstr ""
+msgstr "Yritä poistaa heittomerkit"
 
 msgid "Try changing the vowels accented with normal vowels"
 msgstr ""
+"Yritä käyttää vain normaaleja vokaaleja aksenttimerkkejä sisältävien asemesta"
+
+msgid "Try to change in English some parts"
+msgstr "Yritä muuttaa joitakin osia englanninkielisiksi"
 
 msgid "Try with a closest location"
-msgstr ""
+msgstr "Kokeile lähimmällä paikalla"
 
+#. Translators: the title of the help window
 msgid "Help placing"
-msgstr ""
+msgstr "Ohje"
 
 msgid "No sound effect in memory!"
-msgstr ""
+msgstr "Äänitehosteita ei löydy"
 
 msgid "I can't reproduce the sound."
-msgstr ""
+msgstr "Ääniä ei voitu toistaa."
+
+#. Translators: message dialog
+msgid "Choose search key for"
+msgstr "Valitse hakuavain"
+
+#. Translators: the dialog message
+msgid "Unfortunately I could not recover enough data to find the city."
+msgstr "Tietoja ei ole tarpeeksi kaupungin löytämiseen."
+
+msgid "Do I try anyway?"
+msgstr "Yritetäänkö joka tapauksessa?"
 
 msgid "not found! Press F1 for help on entering data."
-msgstr ""
+msgstr "Ei löydy. Saat ohjeita tietojen syöttämisestä painamalla F1."
 
 msgid "Is not working properly or has been removed from the database of"
-msgstr ""
+msgstr "Ei toimi oikein tai on poistettu tietokannasta lisäosassa"
 
 msgid "Is no longer valid!"
-msgstr ""
+msgstr "Ei ole enää kelvollinen."
 
 msgid "This option requires the installation of some audio effects"
-msgstr ""
+msgstr "Tämä vaihtoehto edellyttää äänitehosteiden asentamista"
 
 msgid "Do you want to install them?"
-msgstr ""
+msgstr "Haluatko asentaa ne?"
 
 msgid "The audio effects are installed!"
-msgstr ""
+msgstr "Äänitehosteet on asennettu."
 
 msgid "Would you like to update?"
-msgstr ""
+msgstr "Haluatko päivittää?"
 
 msgid "Or do you want to uninstall them?"
-msgstr ""
+msgstr "Vai haluatko poistaa ne?"
 
 msgid "Are you sure you want to uninstall the sound effects?"
-msgstr ""
+msgstr "Haluatko varmasti poistaa äänitehosteet?"
 
+#. Translators: title and message used in tthe progress qdialog
 msgid "Update in progress"
-msgstr ""
+msgstr "Päivitys käynnissä"
 
 msgid "Installation in progress"
-msgstr ""
+msgstr "Asennus käynnissä"
 
 msgid "Please wait..."
-msgstr ""
+msgstr "Odota..."
 
 #. Installation Complete
 msgid "The installation of audio effects has been completed successfully!"
-msgstr ""
+msgstr "Äänitehosteet on asennettu onnistuneesti."
 
 msgid "Adding folder:"
-msgstr ""
+msgstr "Lisätään kansio:"
 
 msgid "The upgrade of audio effects has been completed successfully!"
-msgstr ""
+msgstr "Äänitehosteet on päivitetty onnistuneesti."
 
 msgid "These sound effects are subject to change by the author."
-msgstr ""
+msgstr "Tekijä voi muuttaa näitä äänitehosteita."
 
 msgid "Disable and re-enable this option in order to update or uninstall them."
 msgstr ""
+"Päivitä tai poista ne poistamalla tämä asetus käytöstä ja ottamalla se "
+"uudelleen käyttöön."
 
+#. Translators: dialog message and title used to notify lack of connection or corrupt file, during the sound effects installation
 msgid "Verify that your internet connection is active, or try again later."
 msgstr ""
+"Varmista, että internet-yhteytesi on käytössä tai yritä myöhemmin uudelleen."
 
 msgid "File corrupted or not available!"
-msgstr ""
+msgstr "Tiedosto vahingoittunut tai ei käytettävissä."
 
-msgid "Sorry, i could not complete the installation of the sound effects!"
-msgstr ""
+msgid "Sorry, I could not complete the installation of the sound effects!"
+msgstr "Äänitehosteiden asennusta ei voitu suorittaa."
 
 msgid "Installation Error!"
-msgstr ""
-
-msgid ""
-"The details of this city are not in the database and so I added them to the "
-"list. Try again!"
-msgstr ""
+msgstr "Asennusvirhe"
 
 msgid "Cannot identify your location, due to insufficient data."
-msgstr ""
+msgstr "Sijaintiasi ei tunnistettu riittämättömien tietojen vuoksi."
 
 msgid "Details of"
-msgstr ""
+msgstr "Tiedot kohteesta"
 
 msgid "Place"
-msgstr ""
+msgstr "Paikka"
 
 msgid "Current local time"
-msgstr ""
+msgstr "Paikallinen aika"
 
 msgid "Degrees latitude"
-msgstr ""
+msgstr "Leveysaste"
 
 msgid "Degrees longitude"
-msgstr ""
+msgstr "Pituusaste"
 
 msgid "Elevation above sea level"
-msgstr ""
+msgstr "Korkeus merenpinnasta"
 
 msgid "meters"
-msgstr ""
+msgstr "metriä"
 
 msgid "Define the area for"
-msgstr ""
+msgstr "Määritä alue kohteelle"
 
 msgid "Hinterland"
-msgstr ""
+msgstr "Sisämaa"
 
 msgid "Maritime area"
-msgstr ""
+msgstr "Merialue"
 
 msgid "Desert zone"
-msgstr ""
+msgstr "Aavikkovyöhyke"
 
 msgid "Arctic zone"
-msgstr ""
+msgstr "Arktinen alue"
 
 msgid "Mountain zone"
-msgstr ""
+msgstr "Vuoristoalue"
 
+#. Translators: the dialog message
 msgid "Enter new name."
-msgstr ""
+msgstr "Syötä uusi nimi."
 
 msgid "it can't be used because it already exists!"
-msgstr ""
+msgstr "Antamasi nimi on jo käytössä."
 
 msgid "is correct"
-msgstr ""
+msgstr "on oikein"
 
 msgid "But the name"
-msgstr ""
+msgstr "mutta nimi"
 
 msgid "already exists"
-msgstr ""
+msgstr "on jo käytössä"
 
 msgid "You have to change it!"
-msgstr ""
+msgstr "Sinun on muutettava sitä."
 
 msgid "The city proper is"
 msgstr ""
@@ -1009,6 +832,9 @@ msgid "Want to use the suggested name?"
 msgstr ""
 
 msgid "Import cities"
+msgstr ""
+
+msgid "Empty file or not in cities format compatible!"
 msgstr ""
 
 msgid "Do you want to replace your list with this?"
@@ -1020,6 +846,7 @@ msgstr ""
 msgid "If you select no, the new cities will be added to your list."
 msgstr ""
 
+#. Translators: the title window
 msgid "Select import mode"
 msgstr ""
 
@@ -1045,6 +872,9 @@ msgid "Have been ignored because existing"
 msgstr ""
 
 msgid "Content of imported list"
+msgstr ""
+
+msgid "Containing incomplete data"
 msgstr ""
 
 msgid "selected by the user"
@@ -1129,10 +959,10 @@ msgid "Sunday"
 msgstr ""
 
 #, python-format
-msgid "It was not possible find the acronym of %s!"
+msgid "It was not possible find the acronym of \"%s\"!"
 msgstr ""
 
-msgid "This does not allow to get the city details."
+msgid "This may not allow you to get the city details."
 msgstr ""
 
 msgid ""
@@ -1159,9 +989,6 @@ msgid "Find next"
 msgstr ""
 
 msgid "Find previous"
-msgstr ""
-
-msgid "Empty file or not in cities woeID format compatible!"
 msgstr ""
 
 msgid "Be an error has occurred."
@@ -1249,7 +1076,7 @@ msgid "&Copy to clipboard"
 msgstr ""
 
 msgid ""
-"Adds local temperature and forecast 24 ours and prediction up to 9 days.\n"
+"Adds local temperature and forecast 24 ours and prediction up to 3 days.\n"
 msgstr ""
 
 msgid "NVDA+w for the current bulletin.\n"
