@@ -6,8 +6,8 @@
 
 # Tietoa Weather Plus:sta: #
 
-* Tämä lisäosa lisää NVDA:han paikallisen lämpötila- ja sääennusteet 24
-  tunnin ajalta aina 2 päivään saakka kuten myös tuntiennusteen.
+* Tämä lisäosa lisää NVDA:han paikalliset lämpötila- ja sääennusteet 24
+  tunnin ajalta aina 2 päivään saakka, ja lisäksi tuntiennusteen.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Julkaistu GNU GPL (General Public License) v2 -lisenssin alaisuudessa
 * Weather Plus käyttää seuraavia palveluita:
