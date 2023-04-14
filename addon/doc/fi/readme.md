@@ -4,10 +4,10 @@
 * Yhteensopivuus: NVDA 2017.3 ja uudemmat
 * Lataa [vakaa versio][1]
 
-# Tietoa Weather Plus:sta: #
+# Tietoa Weather Plus -lisäosasta: #
 
 * Tämä lisäosa lisää NVDA:han paikalliset lämpötila- ja sääennusteet 24
-  tunnin ajalta aina 2 päivään saakka, ja lisäksi tuntiennusteen.
+  tunnin ajalta aina 2 päivään saakka sekä lisäksi tuntiennusteen.
 * Copyright (C) [Adriano Barbieri](mailto:adrianobarb@yahoo.it)
 * Julkaistu GNU GPL (General Public License) v2 -lisenssin alaisuudessa
 * Weather Plus käyttää seuraavia palveluita:
@@ -19,7 +19,7 @@
 # Käyttö: #
 
 * Saat selville nykyisen lämpö- ja säätilan painamalla NVDA+W.
-* Saat ennusteen 24 tunnin ajalle aina 2 päivään saakka painamalla
+* Saat ennusteen alkaen 24 tunnin ajalle aina 2 päivään saakka painamalla
   NVDA+Vaihto+W.
 * Saat selville tuntiennusteen lämpötilasta ja ilmakehän olosuhteista
   painamalla kahdesti NVDA+Vaihto+W.
