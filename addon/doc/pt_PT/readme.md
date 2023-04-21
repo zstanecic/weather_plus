@@ -166,4 +166,4 @@ Para acrescentar uma nova cidade: prima o seguinte item:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=wetp
+[1]: https://www.nvaccess.org/addonStore/legacy?file=wetp

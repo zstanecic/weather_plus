@@ -78,7 +78,7 @@ Para añadir una nueva Ciudad: pulsa el siguiente elemento:
 * Exportar tus ciudades... - Permite guardar las ciudades en el archivo
   especificado con la extensión * .zipcodes. Este botón se activa si tienes
   añadido y guardado al menos una ciudad en la lista.
-* Configuración del pronóstico horario... - Este botón te permite elegir los
+* configuración del pronóstico horario... - Este botón te permite elegir los
   contenidos del boletín del pronóstico horario.
 * Escala de medición de la temperatura: Utiliza los botones de opciones para
   seleccionar entre Celsius (por defecto), Fahrenheit y Kelvin.
@@ -171,4 +171,4 @@ Para añadir una nueva Ciudad: pulsa el siguiente elemento:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=wetp
+[1]: https://www.nvaccess.org/addonStore/legacy?file=wetp
