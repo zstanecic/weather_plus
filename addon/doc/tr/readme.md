@@ -118,7 +118,7 @@ Yeni bir şehir eklemek için: aşağıdaki öğeye basın:
 * Rüzgar esinti hızını ekle;  Varsayılan olarak onay kutusu  işaretlidir.
 * Hissedilen sıcaklığı ekle; Varsayılan olarak onay kutusu işaretlidir.
 * Atmosferik bilgileri seslendir;  Varsayılan olarak onay kutusu  işaretli
-  değildir.
+  değildir. İşaretlenirse, aşağıdaki onay kutuları da işaretlenebilir:
 * Nem değerini ekle; yüzde olarak nemi gösterir. Varsayılan olarak Onay
   kutusu işaretlidir.
 * Görüş mesafesi değerini ekle; görünür mesafeyi kilometre veya mil olarak
@@ -157,4 +157,4 @@ Yeni bir şehir eklemek için: aşağıdaki öğeye basın:
 
 [[!tag dev stable]]
 
-[1]: https://www.nvaccess.org/addonStore/legacy?file=wetp
+[1]: https://www.nvaccess.org/addonStore/legacy?file=Weather_Plus
