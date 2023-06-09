@@ -114,7 +114,7 @@ Yeni bir şehir eklemek için: aşağıdaki öğeye basın:
 * Rüzgar hızını ekle; hızı kilometre veya mil/saat olarak
   gösterir. Varsayılan olarak onay kutusu işaretlidir.
 * Rüzgarın saniyede kaç metre hızda estiği bilgisini ekle;Varsayılan olarak
-  onay kutusu işaretlidir. 
+  onay kutusu işaretlidir.
 * Rüzgar esinti hızını ekle;  Varsayılan olarak onay kutusu  işaretlidir.
 * Hissedilen sıcaklığı ekle; Varsayılan olarak onay kutusu işaretlidir.
 * Atmosferik bilgileri seslendir;  Varsayılan olarak onay kutusu  işaretli
